@@ -1,0 +1,79 @@
+---
+title: Egyéni alkalmazások kezelése a HoloLenshez (1. generációs)
+description: Megtudhatja, hogyan telepíthet, távolíthat el és telepíthet saját holografikus alkalmazásokat HoloLens-eszközökön a Eszközportál és Visual Studio.
+ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
+ms.date: 12/10/2020
+manager: v-miegge
+keywords: hololens, sideload, side load, side-load, store, uwp, app, install
+ms.prod: hololens
+ms.sitesec: library
+author: mattzmsft
+ms.author: mazeller
+ms.topic: article
+ms.localizationpriority: medium
+ms.custom:
+- CI 111456
+- CSSTroubleshooting
+appliesto:
+- HoloLens (1st gen)
+ms.openlocfilehash: 721c169c8ad34acab6914448af8ffc6ceec97a0e
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.translationtype: MT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "111378061"
+---
+# <a name="manage-custom-apps-for-hololens-1st-gen"></a><span data-ttu-id="b8c08-104">Egyéni alkalmazások kezelése a HoloLenshez (1. generációs)</span><span class="sxs-lookup"><span data-stu-id="b8c08-104">Manage custom apps for HoloLens (1st gen)</span></span>
+
+<span data-ttu-id="b8c08-105">A HoloLens számos meglévő alkalmazást támogat a Microsoft Store, valamint a kifejezetten a HoloLenshez készült új alkalmazásokat.</span><span class="sxs-lookup"><span data-stu-id="b8c08-105">HoloLens supports many existing applications from the Microsoft Store, as well as new apps built specifically for HoloLens.</span></span> <span data-ttu-id="b8c08-106">Ez a cikk az egyéni holografikus alkalmazásokkal foglalkozik.</span><span class="sxs-lookup"><span data-stu-id="b8c08-106">This article focuses on custom holographic applications.</span></span>  
+
+<span data-ttu-id="b8c08-107">További információ az áruházbeli alkalmazásokról: [Alkalmazások kezelése az áruházban.](holographic-store-apps.md)</span><span class="sxs-lookup"><span data-stu-id="b8c08-107">For more information about store apps, see [Manage apps with the store](holographic-store-apps.md).</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="b8c08-108">Az alábbi információk a HoloLens (1. generációs), más néven HoloLens Developer Edition kiadáshoz készültek.</span><span class="sxs-lookup"><span data-stu-id="b8c08-108">The following information was created for the HoloLens (1st gen), also called the HoloLens Developer Edition at the time.</span></span> <span data-ttu-id="b8c08-109">Az ilyen alkalmazások eszközportálon keresztüli telepítése és az alkalmazások Visual Studio történő telepítése gyakori volt.</span><span class="sxs-lookup"><span data-stu-id="b8c08-109">As such sideloading apps via device portal and installing apps via Visual Studio were commonplace then.</span></span> <span data-ttu-id="b8c08-110">Nagyvállalati környezetek esetén nem javasoljuk a Fejlesztői mód engedélyezését, amelyet mindkét módszer használ.</span><span class="sxs-lookup"><span data-stu-id="b8c08-110">For enterprise deployments we do not recommend enabling Developer Mode, which both of these methods use.</span></span> <span data-ttu-id="b8c08-111">Ha érdekli egy biztonságos alkalmazástelepítési módszer, tekintse át az [Alkalmazáskezelés: Áttekintés témakört.](app-deploy-overview.md)</span><span class="sxs-lookup"><span data-stu-id="b8c08-111">If you are interested in a secure app deployment method please review our [App Management: Overview](app-deploy-overview.md).</span></span>
+>
+> <span data-ttu-id="b8c08-112">Ha a HoloLens 2-eszközök alkalmazástelepítésének fejlesztői módszerét keresi, tekintse meg a következőt:</span><span class="sxs-lookup"><span data-stu-id="b8c08-112">If you are looking for either developer method of app installation for HoloLens 2 devices please refer to:</span></span>
+> - [<span data-ttu-id="b8c08-113">Eszközportál: Alkalmazás telepítése</span><span class="sxs-lookup"><span data-stu-id="b8c08-113">Device Portal: Installing an App</span></span>](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
+> - [<span data-ttu-id="b8c08-114">Alkalmazások Visual Studio és hibakeresése a Visual Studio használatával</span><span class="sxs-lookup"><span data-stu-id="b8c08-114">Using Visual Studio to deploy and debug Apps</span></span>](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
+
+## <a name="install-custom-apps"></a><span data-ttu-id="b8c08-115">Egyedi alkalmazások telepítése</span><span class="sxs-lookup"><span data-stu-id="b8c08-115">Install custom apps</span></span>
+
+<span data-ttu-id="b8c08-116">Saját alkalmazásokat telepíthet a HoloLensre a Eszközportál vagy az alkalmazások központi telepítéssel a Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="b8c08-116">You can install your own applications on HoloLens either by using the Device Portal or by deploying the apps from Visual Studio.</span></span>
+
+### <a name="installing-an-application-package-with-the-device-portal"></a><span data-ttu-id="b8c08-117">Alkalmazáscsomag telepítése a Eszközportál</span><span class="sxs-lookup"><span data-stu-id="b8c08-117">Installing an application package with the Device Portal</span></span>
+
+1. <span data-ttu-id="b8c08-118">Hozzon létre kapcsolatot a [Eszközportál](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) a cél HoloLenshez.</span><span class="sxs-lookup"><span data-stu-id="b8c08-118">Establish a connection from [Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) to the target HoloLens.</span></span>
+
+1. <span data-ttu-id="b8c08-119">A bal oldali navigációs sávon lépjen az **Alkalmazások lapra.**</span><span class="sxs-lookup"><span data-stu-id="b8c08-119">In the left navigation, navigate to the **Apps** page.</span></span>
+
+1. <span data-ttu-id="b8c08-120">Az **Alkalmazáscsomag alatt** keresse meg az alkalmazáshoz társított .appx fájlt.</span><span class="sxs-lookup"><span data-stu-id="b8c08-120">Under **App Package** browse to the .appx file that is associated with your application.</span></span>
+
+   > [!IMPORTANT]
+   > <span data-ttu-id="b8c08-121">Győződjön meg arról, hogy a társított függőségi és tanúsítványfájlokra hivatkozik.</span><span class="sxs-lookup"><span data-stu-id="b8c08-121">Make sure to reference any associated dependency and certificate files.</span></span>
+
+1. <span data-ttu-id="b8c08-122">Válassza a **Go lehetőséget.**</span><span class="sxs-lookup"><span data-stu-id="b8c08-122">Select **Go**.</span></span>
+
+   > [!div class="mx-imgBorder"]
+   > <span data-ttu-id="b8c08-123">![Alkalmazásűrlap telepítése Windows eszközportál a Microsoft HoloLens](images/deviceportal-appmanager.jpg)</span><span class="sxs-lookup"><span data-stu-id="b8c08-123">![Install app form in Windows Device Portal on Microsoft HoloLens](images/deviceportal-appmanager.jpg)</span></span>
+
+### <a name="deploying-from-microsoft-visual-studio-2015"></a><span data-ttu-id="b8c08-124">Üzembe helyezés a Microsoft Visual Studio 2015-ről</span><span class="sxs-lookup"><span data-stu-id="b8c08-124">Deploying from Microsoft Visual Studio 2015</span></span>
+
+1. <span data-ttu-id="b8c08-125">Nyissa meg az alkalmazás Visual Studio megoldását (.sln-fájl).</span><span class="sxs-lookup"><span data-stu-id="b8c08-125">Open your app's Visual Studio solution (.sln file).</span></span>
+
+1. <span data-ttu-id="b8c08-126">Nyissa meg a projekt **Properties (Tulajdonságok) tulajdonságát.**</span><span class="sxs-lookup"><span data-stu-id="b8c08-126">Open the project's **Properties**.</span></span>
+
+1. <span data-ttu-id="b8c08-127">Válassza ki a következő buildkonfigurációt: **Master/x86/Remote Machine.**</span><span class="sxs-lookup"><span data-stu-id="b8c08-127">Select the following build configuration: **Master/x86/Remote Machine**.</span></span>
+
+1. <span data-ttu-id="b8c08-128">A Távoli gép **kiválasztásakor:**</span><span class="sxs-lookup"><span data-stu-id="b8c08-128">When you select **Remote Machine**:</span></span>
+   - <span data-ttu-id="b8c08-129">Győződjön meg arról, hogy a cím Wi-Fi HoloLens IP-címére mutat.</span><span class="sxs-lookup"><span data-stu-id="b8c08-129">Make sure the address points to the Wi-Fi IP address of your HoloLens.</span></span>
+   - <span data-ttu-id="b8c08-130">Állítsa a **hitelesítést Universal (Unencrypted Protocol) (Univerzális (titkosítatlan protokoll) ) beállításra.**</span><span class="sxs-lookup"><span data-stu-id="b8c08-130">Set authentication to **Universal (Unencrypted Protocol)**.</span></span>
+   
+1. <span data-ttu-id="b8c08-131">Készítse el a megoldást.</span><span class="sxs-lookup"><span data-stu-id="b8c08-131">Build your solution.</span></span>
+
+1. <span data-ttu-id="b8c08-132">Az alkalmazásnak a fejlesztői számítógépről a HoloLensben való üzembe helyezéséhez válassza a **Távoli gép lehetőséget.**</span><span class="sxs-lookup"><span data-stu-id="b8c08-132">To deploy the app from your development PC to your HoloLens, select **Remote Machine**.</span></span> <span data-ttu-id="b8c08-133">Ha már rendelkezik meglévő buildel a HoloLensen, válassza az **Igen** lehetőséget az újabb verzió telepítéséhez.</span><span class="sxs-lookup"><span data-stu-id="b8c08-133">If you already have an existing build on the HoloLens, select **Yes** to install this newer version.</span></span>  
+
+   ![Távoli gép üzembe helyezése az alkalmazások Microsoft HoloLens a Visual Studio](images/vs2015-remotedeployment.jpg)  
+   
+1. <span data-ttu-id="b8c08-135">Az alkalmazás automatikusan telepítve és automatikusan elindul a HoloLensen.</span><span class="sxs-lookup"><span data-stu-id="b8c08-135">The application will install and auto launch on your HoloLens.</span></span>
+
+<span data-ttu-id="b8c08-136">Miután telepítette az alkalmazást, az a következő listában **Minden alkalmazás** meg: (**Start**  >  **Minden alkalmazás**).</span><span class="sxs-lookup"><span data-stu-id="b8c08-136">After you've installed an app, you'll find it in the **All apps** list (**Start** > **All apps**).</span></span>

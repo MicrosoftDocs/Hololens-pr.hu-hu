@@ -1,0 +1,152 @@
+### YamlMime:Landing
+title: Microsoft HoloLens
+summary: Microsoft HoloLens az első teljesen önálló holografikus számítógép, amely a Windows 10. A HoloLens 2 bevezetésével minden HoloLens-eszköz kereskedelmi használatra kész felügyeleti képességeket biztosít, amelyek a Microsoft felhőalapú és AI-szolgáltatásainak megbízhatóságával, biztonságával és méretezhetőségével egészulnak ki.
+metadata:
+  title: Microsoft HoloLens
+  description: A Microsoft HoloLens.
+  ms.prod: hololens
+  ms.subservice: subservice
+  ms.topic: landing-page
+  author: mccoybot
+  ms.author: v-todmc
+  ms.date: 5/22/2020
+  ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
+  ms.openlocfilehash: 040e353d42c97aa6387e5611a3479464cf5ae2e8
+  ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+  ms.translationtype: MT
+  ms.contentlocale: hu-HU
+  ms.lasthandoff: 05/25/2021
+  ms.locfileid: "111378101"
+landingContent:
+- title: HoloLens – áttekintés
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: A HoloLens 2 áttekintése
+      url: hololens2-options.md
+    - text: HoloLens 2 hardver
+      url: hololens2-hardware.md
+    - text: Microsoft Mesh (előzetes verzió)
+      url: /mesh/overview
+    - text: A Start menü vegyes valóság kezdőlapja
+      url: holographic-home.md
+    - text: Alkalmazások megkeresheti, telepítheti és eltávolíthatja őket
+      url: holographic-store-apps.md
+    - text: A vizualizáció minőségének és kényelmi javítására
+      url: hololens-calibration.md
+    - text: A HoloLens frissítése
+      url: hololens-update-hololens.md
+- title: Üzembe helyezési útmutatók
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Gyakori üzembehelyezési forgatókönyvek
+      url: common-scenarios.md
+    - text: Felhőhöz csatlakoztatott HoloLens 2 üzembe helyezése nagy méretekben a Remote Assist segítségével
+      url: hololens2-cloud-connected-overview.md
+    - text: A céghez csatlakoztatott HoloLens 2 üzembe helyezése Dynamics 365-útmutatók segítségével
+      url: hololens2-corp-connected-overview.md
+    - text: Külső ügyfelek telepítési útmutatója
+      url: hololens2-deployment-guide.md
+    - text: Offline biztonságos üzembe helyezés
+      url: hololens-common-scenarios-offline-secure.md
+- title: Előkészítés
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: A HoloLens üzembe helyezése kereskedelmi környezetben
+      url: hololens-requirements.md
+    - text: Biztonsági áttekintés
+      url: security-overview.md
+    - text: Licenckövetelmények
+      url: hololens-licenses-requirements.md
+    - text: HoloLens-környezettel kapcsolatos szempontok
+      url: hololens-environment-considerations.md
+    - text: Kereskedelmi funkciók
+      url: hololens-commercial-features.md
+- title: Konfigurálás
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: A holoLens felhasználói identitásának és bejelentkezésének kezelése
+      url: hololens-identity.md
+    - text: A hálózat konfigurálása a HoloLenshez
+      url: hololens-commercial-infrastructure.md
+    - text: A HoloLens csatlakoztatása hálózathoz
+      url: hololens-network.md
+    - text: A HoloLens kapcsolati végpontjainak kezelése
+      url: hololens-offline.md
+    - text: A HoloLens konfigurálása kiépítési csomagok használatával
+      url: hololens-provisioning.md
+    - text: A HoloLens beállítása kioszkként
+      url: hololens-kiosk.md
+- title: Üzembe helyezés
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: A HoloLens regisztrálása az MDM-be
+      url: hololens-enroll-mdm.md
+    - text: Windows Autopilot HoloLens 2-höz
+      url: hololens2-autopilot.md
+    - text: Az alkalmazáskezelés áttekintése
+      url: app-deploy-overview.md
+    - text: Intune & Céges portál
+      url: app-deploy-intune.md
+    - text: Vállalati Microsoft Áruház
+      url: app-deploy-store-business.md
+    - text: Kiépítési csomag
+      url: app-deploy-provisioning-package.md
+- title: Útmutató a karbantartáshoz és a hibaelhárításhoz
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: HoloLens-problémák elhárítása
+      url: hololens-troubleshooting.md
+    - text: A HoloLens 2 újraindítása, alaphelyzetbe állítása vagy helyreállítása
+      url: hololens-recovery.md
+    - text: A HoloLens újraindítása, alaphelyzetbe állítása vagy helyreállítása (1. generációs)
+      url: hololens1-recovery.md
+    - text: A HoloLens ismert problémái
+      url: hololens-known-issues.md
+    - text: Diagnosztikai adatok gyűjtése és használata HoloLens-eszközökről
+      url: hololens-diagnostic-logs.md
+    - text: HoloLens-frissítések kezelése
+      url: hololens-updates.md
+- title: Kibocsátási megjegyzések & visszajelzések
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: A HoloLens 2 kibocsátási megjegyzései
+      url: hololens-release-notes.md
+    - text: Belső előzetes verzió a Microsoft HoloLens
+      url: hololens-insider.md
+    - text: Visszajelzés küldése
+      url: hololens-feedback.md
+- title: További szolgáltatások
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Dynamics 365 Remote Assist Docs
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
+    - text: A Dynamics 365 Remote Assist megismeri
+      url: https://docs.microsoft.com/learn/browse/?products=dynamics-remote-assist
+    - text: Dynamics 365-útmutatók
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
+    - text: Microsoft Dynamics 365 Mixed Reality
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/
+  - linkListType: how-to-guide
+    links:
+    - text: Mi az a Mixed Reality?
+      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
+    - text: Tervezés és prototípus-tervezés
+      url: https://docs.microsoft.com/windows/mixed-reality/design
+    - text: A Mixed Reality bemutatása
+      url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
+    - text: Cloud Services áttekintés
+      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
+- title: Útmutató
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Támogatási és súgóbeállítások a HoloLens2-hez
+      url: hololens2-support.md
