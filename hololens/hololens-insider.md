@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4949ab68121cb772fdb8a62411ed70868a6ccb6
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 8b8c3c26ff743a4df0010110d0fe6e2930646c86
+ms.sourcegitcommit: add53aa73588986a3430cdc0310af7665a038cfc
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924366"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "112977224"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Belső előzetes verzió a Microsoft HoloLens
 
@@ -29,10 +29,14 @@ ms.locfileid: "112924366"
 
 ## <a name="windows-insider-release-notes"></a>Windows Insider kibocsátási megjegyzések
 
-Izgatottan várjuk, hogy ismét új funkciókkal kezdhetjük el a Windows Insiderst. Az új buildek a fejlesztői és bétaverziós csatornákra lesznek felkísértve a legújabb frissítéseket. Ezt az oldalt folyamatosan frissítjük, ahogy további funkciókat és frissítéseket adunk hozzá a Windows Insider buildhez. Legyen izgatott, és készen áll arra, hogy ezeket a frissítéseket a valóságba keverje. 
+Izgatottan várjuk, hogy ismét új funkciókkal kezdhetjük el a Windows Insiderst. Az új buildek a fejlesztői és bétaverziós csatornákra lesznek felkísértve a legújabb frissítéseket. Ezt az oldalt folyamatosan frissítjük, ahogy további funkciókat és frissítéseket adunk hozzá a Windows Insider buildhez. Legyen izgatott, és készen áll arra, hogy ezeket a frissítéseket a valóságba keverje.
+
+| Szolgáltatás                 | Leírás                | Célfelhasználók | Build bevezetve |
+|-------------------------|----------------------------|--------------|------------------|
+| CSP-módosítások a HoloLensben | Új CSP-k az adatok lekérdezéséhez | It-rendszergazdák    | 20348.1403                 |
 
 ### <a name="csp-changes-on-hololens"></a>CSP-módosítások a HoloLensben
- 
+
 - A 20348 Windows Insider.1403-as buildben bevezetett
 
 #### <a name="devdetail-csp"></a>DevDetail CSP
@@ -114,7 +118,7 @@ Ha már nem szeretné megkapni a Windows Holographic Insider-buildjét, kikapcso
 > Megjelenik egy ismert probléma, amely miatt az Insider Preview buildre való regisztrációt manuálisan újratelepítő felhasználók kék képernyőt tapasztalnak. Ezt követően manuálisan kell helyreállítania az eszközt. Ha szeretne többet tudni arról, hogy ez hatással lenne-e az Ön számára, tekintse meg ezt az ismert [problémát.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 Annak ellenőrzése, hogy a HoloLens éles buildet futtat-e:
 1. A Settings **(Beállítások) > System > About (A** rendszerről) lapon keresse meg a build számát.
-1. [Az éles buildszámokat a kibocsátási megjegyzésekben láthatja.](hololens-release-notes.md)
+1. [Tekintse meg az éles buildszámok kibocsátási megjegyzéseit.](hololens-release-notes.md)
 Az Insider-buildek lemondása:
-1. Éles buildet futtató HoloLensen válassza a Beállítások > **Update & Security > Windows Insider Program** lehetőséget, és válassza a Stop **Insider builds lehetőséget.**
+1. Éles buildet futtató HoloLensen válassza a Beállítások > **Update & Security > Windows Insider Program** lehetőséget, és válassza a Stop **Insider builds** lehetőséget.
 1. Az eszköz lemondáshoz kövesse az utasításokat.
