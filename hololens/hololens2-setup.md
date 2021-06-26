@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9a1d9eaccb212474f47fd277c77fb41784f9ddc5
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 22b3dad817260175bccdb89faac0bbae7b210038
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379503"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924434"
 ---
 # <a name="get-your-hololens-2-ready-to-use"></a>A HoloLens 2 használatra kész
 
@@ -34,7 +34,7 @@ A díjszabás és a sebesség attól függően változhat, hogy az eszköz milye
 - Ha az öt világítás közül csak az egyik van bekapcsolva, az akkumulátor töltöttségi szintje 20% alatt van.
 - Ha az akkumulátor töltöttségi szintje kritikusan alacsony, és megpróbálja bekapcsolni az eszközt, az egyik világítás rövid időre villog, majd kiússik.
 
-Ha [további információra van szüksége,](hololens-recovery.md#charge-the-device) itt olvashatja az eszközök díjszabásának teljes részleteit. 
+Ha [további információra van szüksége,](hololens2-charging.md#charging-the-device) itt olvashatja az eszközök díjszabásának teljes részleteit. 
 
 ## <a name="adjust-fit"></a>Igazítás igazítása
 
@@ -59,7 +59,7 @@ A terhelési rekulátor hátának leválasztása előtt nyomja le az egyes kapcs
 A HoloLens 2 bekapcsoláshoz nyomja le a Power gombot.  A Tápkapcsoló alatti LED-ek az akkumulátor töltöttségi szintjét jelenítik meg.
 
 > [!NOTE]
-> A HoloLens 2 bekapcsolása első alkalommal, a dobozolást követően legalább 4 másodpercig tartsa lenyomva a bekapcsológombot a bekapcsoláshoz. Amikor legközelebb bekapcsolja a HoloLens 2-t, az egy rövid bekapcsológombbal kezdődik.
+> Ahhoz, hogy a HoloLens 2-t első alkalommal bekapcsolja, a be- és bekapcsolás után legalább 4 másodpercig tartsa lenyomva a bekapcsológombot. Amikor legközelebb bekapcsolja a HoloLens 2-t, az egy rövid bekapcsológombbal kezdődik.
 
 ### <a name="power-button-actions-for-different-power-transitions"></a>Bekapcsológomb-műveletek a különböző energiaátmenetek számára
 
@@ -69,7 +69,7 @@ A HoloLens 2 bekapcsoláshoz nyomja le a Power gombot.  A Tápkapcsoló alatti L
 | Alvó üzemmód | Egyetlen gombnyomással. | Mind az öt világítás be van kapcsolva, majd egyszerre csak egyszer kell elhalványítani. A világítás kikapcsolása után egy hang lejátszása után a képernyőn megjelenik a "Goodbye" üzenet. |
 | Felébresztés alvó üzemmódból | Egyetlen gombnyomással. | Mind az öt világítás be van kapcsolva, majd úgy vált, hogy jelezze az akkumulátor töltöttségi szintjét. A hang azonnal lejátszásra kerül. |
 | A kikapcsolása | Tartsa lenyomva az 5-öst. |  Mind az öt világítás be van kapcsolva, majd egyszerre csak egyszer kell elhalványítani. A világítás kikapcsolása után egy hang lejátszása után a képernyőn megjelenik a "Goodbye" üzenet. |
-| A Hololens újraindításának kényszerítés, ha nem válaszol | Tartsa lenyomva a 10-eseket. | Mind az öt világítás be van kapcsolva, majd egyszerre csak egyszer kell elhalványítani. A világítás kikapcsolása után. |
+| A HoloLens újraindításának kényszerítés, ha nem válaszol | Tartsa lenyomva a 10-eseket. | Mind az öt világítás be van kapcsolva, majd egyszerre csak egyszer kell elhalványítani. A világítás kikapcsolása után. |
 
 ## <a name="hololens-behavior-reference"></a>HoloLens-viselkedési referencia
 
@@ -91,8 +91,8 @@ Nem tudja, mit jelentenek a jelzőfények a HoloLensen? Tudni szeretné, hogyan 
 | Világítások száma | Akkumulátor töltöttségi szintje |
 | - | - |
 | Négy tartós fény, egy ki- és bevilágítás | 100% és 81% között (teljes díj) |
-| Három folyamatos világítás, egy ki- és bevilágítás | 80% és 61% között |
-| Két folytonos világítás, egy ki- és bevilágítás | 60% és 41% között |
+| Három folyamatos világítás, egy ki- és be- és bevilágítás | 80% és 61% között |
+| Két tartós fény, egy ki- és bevilágítás | 60% és 41% között |
 | Egy folytonos fény, egy be- és kiviláguló fény | 40% és 21% között |
 | Egy világos ki- és berekedő | 20% és 5% közötti vagy alacsonyabb (kritikus akkumulátor) |
 
@@ -125,4 +125,4 @@ Tartsa röviden az első néhány munkamenetét a HoloLensben, és mindenképpen
 Lásd: [termékbiztonsági figyelmeztetések és utasítások.](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions)
 
 > [!div class="nextstepaction"]
-> [A HoloLens 2 elindítani és konfigurálni](hololens2-start.md)
+> [A HoloLens 2 beállítása](hololens2-start.md)

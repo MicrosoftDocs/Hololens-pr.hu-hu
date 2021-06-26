@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: d68c75dcb2249a67f2e07c77cb1b69997eb0ae72
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 8564fb0483226a16722ada345de325577cda77d6
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379588"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923601"
 ---
 # <a name="connect-hololens-to-a-network"></a>A HoloLens csatlakoztatása hálózathoz
 
@@ -24,47 +24,41 @@ A HoloLensen a legtöbb dologhoz egy hálózathoz kell csatlakozva lennie. A Hol
 - Csatlakozás hálózathoz Wi-Fi használatával, vagy csak a HoloLens 2 esetén közvetlen Wi-Fi Ethernet usb-C-kapcsolaton keresztül
 - Az Wi-Fi
 
-További információ a [HoloLens offline módban való használatával kapcsolatban.](hololens-offline.md)
+További információ a [HoloLens offline használatával kapcsolatban.](hololens-offline.md)
 
 ## <a name="connecting-for-the-first-time"></a>Csatlakozás első alkalommal
 
-Amikor először használja a HoloLenst, a rendszer végigvezeti egy Wi-Fi csatlakoztatásán. Ha a telepítés során problémába Wi-Fi, győződjön meg arról, hogy a hálózat egy nyílt, jelszóval védett hálózat vagy egy portálhálózat. Azt is ellenőrizze, hogy a hálózat nem igényel-e tanúsítványt a csatlakozáshoz. A beállítás után más típusú hálózati Wi-Fi is csatlakozhat.
+Amikor először használja a HoloLenst, a rendszer végigvezeti egy Wi-Fi hálózatához való csatlakozáson. Ha a telepítés során problémába Wi-Fi, győződjön meg arról, hogy a hálózat egy nyílt, jelszóval védett hálózat vagy egy portálhálózat. Győződjön meg arról is, hogy a hálózat nem követeli meg tanúsítvány használatát a csatlakozáshoz. A beállítás után más típusú virtuális hálózatokhoz Wi-Fi csatlakozhat.
 
 HoloLens 2-eszközökön a felhasználók [USB-C–Ethernet](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) adapterrel is csatlakozhatnak közvetlenül az Wi-Fi-hoz, hogy segítsenek az eszköz beállításában. Az eszköz beállítása után a felhasználó továbbra is használhatja az adaptert, vagy leválaszthatja az eszközt az adapterről, és a beállítás után csatlakozhat a [Wi-Fi-hez.](hololens-network.md#connecting-to-wi-fi-after-setup) 
 
-## <a name="connecting-to-wi-fi-after-setup"></a>Csatlakozás Wi-Fi telepítés után
+## <a name="connecting-to-wi-fi-after-setup"></a>Csatlakozás Wi-Fi után
 
-1. Formázhatja előre a **Start kézmozdulatot,** és válassza a **Beállítások lehetőséget.** A Beállítások alkalmazás automatikusan az Ön elé kerül.
+1. Formázhatja előre a **Start kézmozdulatot,** és válassza a **Beállítások lehetőséget.** A Beállítások alkalmazás automatikusan el lesz helyezve Ön előtt.
 1. Válassza **a Hálózati &**  >  **Wi-Fi lehetőséget.** Győződjön meg arról, hogy a Wi-Fi be van kapcsolva. Ha nem látja a hálózatot, görgessen lefelé a listán.
 1. Válasszon ki egy hálózatot, majd válassza a **Csatlakozás lehetőséget.**
-1. Ha a rendszer hálózati jelszót kér, írja be, majd válassza a Tovább **lehetőséget.**
+1. Ha a rendszer hálózati jelszót kér, írja be, majd válassza a **Tovább lehetőséget.**
 
-![HoloLens-Wi-Fi beállításai](./images/hololens-2-wifi-settings.jpg)
+![HoloLens Wi-Fi beállításai](./images/hololens-2-wifi-settings.jpg)
 
 Annak megerősítéséhez, hogy csatlakozott egy Wi-Fi hálózathoz, ellenőrizze a Wi-Fi állapotát a **Start menüben:**
 
 1. Nyissa meg **a Start menüt.**
-1. A Start menü bal felső **menüjében** keresse meg Wi-Fi állapotát. Megjelenik a Wi-Fi hálózat SSID-ének állapota.
+1. A Start menü bal felső **részen** keresse meg a Wi-Fi állapotát. Megjelenik a Wi-Fi hálózat SSID-ének állapota.
 
 > [!TIP]
-> Ha Wi-Fi nem érhető el, mobilhálózati és [5G-hálózatokhoz is csatlakozhat.](https://docs.microsoft.com/hololens/hololens-cellular)
+> Ha Wi-Fi nem érhető el, mobilhálózati és [5G-hálózatokhoz is csatlakozhat.](hololens-cellular.md)
 
 > [!IMPORTANT]
-> A felhasználók a kialakításuk szerint nem tudják finomhangolni a HoloLens 2 Wi-Fi roaming viselkedését – az Wi-Fi-lista frissítésének egyetlen módja az Wi-Fi ki- és **bekapcsolása.** Ez számos problémát meggátol, például azt, hogy egy eszköz "elakadhat" egy AP-hez, ha a tartományon kívül van.
-
-## <a name="troubleshooting-your-connection-to-wi-fi"></a>A hálózati kapcsolat hibaelhárítása Wi-Fi
-
-Ha problémákat tapasztal a Wi-Fi-hez való csatlakozáskor, tekintse meg a Nem tudok csatlakozni a [Wi-Fi-hez való csatlakozást.](./hololens-faq.md#i-cant-connect-to-wi-fi)
-
-Amikor vállalati vagy szervezeti fiókba jelentkezik be az eszközön, az a Mobile Eszközkezelés (MDM) szabályzatot is alkalmazhatja, ha a házirendet a rendszergazda konfigurálta.
+> A felhasználók a Tervezés szerint nem tudják finomhangolni a HoloLens 2 Wi-Fi roaming viselkedését – az Wi-Fi-lista frissítésének egyetlen módja a Wi-Fi ki- és **bekapcsolása.** Ez számos problémát meggátol, például azt, hogy egy eszköz "elakadhat" egy AP-hez, ha az a tartományon kívül esik.
 
 ## <a name="connect-hololens-to-enterprise-wi-fi-network"></a>A HoloLens csatlakoztatása az Enterprise Wi-Fi Network szolgáltatáshoz
 
-A Wi-Fi profiljai az EAP protokollt (Extensible Authentication Protocol) használják a Wi-Fi hitelesítéséhez. A HoloLens Enterprise Wi-Fi profil a Windows Configuration Designer által létrehozott MDM vagy kiépítési csomag [segítségével konfigurálható.](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages)
+A Wi-Fi profilok az EAP protokollt (Extensible Authentication Protocol) használják a Wi-Fi hitelesítéséhez. A HoloLens Enterprise Wi-Fi-profil a Windows Configuration Designer által létrehozott MDM vagy kiépítési csomag [segítségével konfigurálható.](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages)
 
-A Microsoft Intune eszköz konfigurálási utasításait az [Intune-ban](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) használhatja.
+A Microsoft Intune eszközről a konfigurációs [utasításokért tekintse](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) meg az Intune-t.
 
-Ha Wi-Fi csomagot a WCD-ben, egy előre konfigurált Wi-Fi profilra és .xml fájlra van szükség. Az EAP-TLSWi-Fi hitelesítéssel WPA2-Enterprise mintaprofil:
+Ha Wi-Fi kiépítési csomagot a WCD-ben, előre konfigurált Wi-Fi profilra és .xml fájlra van szükség. Az EAP-TLSWi-Fi hitelesítéssel WPA2-Enterprise mintaprofil:
 
 ``` xml
 <?xml version="1.0"?> 
@@ -126,43 +120,27 @@ Ha Wi-Fi csomagot a WCD-ben, egy előre konfigurált Wi-Fi profilra és .xml fá
 ```
 
 
-Az EAP típusától függően előfordulhat, hogy a kiszolgáló legfelső szintű hitelesítésszolgáltatói tanúsítványát és az ügyféltanúsítványt kell kiépítenünk az eszközön.
+Az EAP-típustól függően előfordulhat, hogy a kiszolgáló legfelső szintű hitelesítésszolgáltatói tanúsítványát és az ügyféltanúsítványt ki kell kiépítenünk az eszközön.
 
 További források:
 
 - WLANv1Profile séma: [[MS-GPWL]: Vezeték nélküli LAN-profil v1 séma | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
 - EAP-TLS-séma: [[MS-GPWL]: Microsoft EAP TLS-séma | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
-## <a name="eap-troubleshooting"></a>EAP-hibaelhárítás
-> [!TIP]
-> A hálózati problémák többségét az eredményezi, hogy az alábbi 3 beállítás valamelyike helytelen a Wi-FI-profilban. 
-1. Ellenőrizze, Wi-Fi profil rendelkezik-e a megfelelő beállításokkal:
-   1. Az EAP-típus megfelelően van konfigurálva, gyakori EAP-típusok: EAP-TLS (13), EAP-TTLS (21) és PEAP (25).
-   1. Wi-Fi SSID neve helyes, és HEX-sztringre illeszkedik.
-   1. EAP-TLS-hez a TrustedRootCA tartalmazza a megbízható legfelső szintű hitelesítésszolgáltatói tanúsítványának&#39;SHA-1 kivonatát. Windows rendszerű számítógépekencertutil.exe -dump cert fájlnév parancs egy tanúsítványt fog&#39;&quot; \_ \_ &quot; SHA-1 kivonatsringhez.
-
-2. Gyűjtse össze a hálózati csomagrögzítést a hozzáférési pont, a vezérlő vagy az AAA-kiszolgáló naplóiban, hogy megtudja, hol nem sikerül az EAP-munkamenet.
-   1. Ha a HoloLens által biztosított EAP-identitás nem várható, ellenőrizze, hogy az identitás megfelelően lett-e Wi-Fi-profilon vagy ügyfél-tanúsítványon keresztül.
-   1. Ha a kiszolgáló elutasítja a HoloLens-ügyfél tanúsítványát, ellenőrizze, hogy a szükséges ügyfél-tanúsítvány ki lett-e építve az eszközön.
-   1. Ha a HoloLens elutasítja a kiszolgálótanúsítványt, ellenőrizze, hogy a kiszolgáló legfelső szintű hitelesítésszolgáltatói tanúsítványa ki lett-e építve a HoloLensen.
-1. Ha a vállalati profil egy kiépítési Wi-Fi keresztül van kiépítve, fontolja meg a kiépítési csomag alkalmazását egy Windows 10 számítógépen. Ha a hiba a Windows 10 is sikertelen, kövesse a [Windows-ügyfél 802.1X hitelesítési hibaelhárítási útmutatóját.](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication)
-1. Állítsa a telemetriát Teljes vagy Választható (a buildtől függően) beállításra, majd küldjön visszajelzést a [Visszajelzési központ.](https://docs.microsoft.com/hololens/hololens-feedback)
-
-### <a name="additional-resources"></a>További források:
-- [Wi-Fi beállítások exportálása windowsos eszközről](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1#export-wi-fi-settings-from-a-windows-device)
+Ha problémái [vannak](hololens2-enterprise-troubleshooting.md#) a Wi-Fi-hez való csatlakozással, tekintse meg a hibaelhárítási oldalt.
 
 ## <a name="configure-network-proxy"></a>Hálózati proxy konfigurálása
 
-Ez a szakasz a HoloLens operációs rendszer és a Windows HTTP-vermét használó Univerzális Windows-platform (UWP) alkalmazások hálózati proxyját tartalmazza. A nem Windows HTTP-vermeket használó alkalmazások saját proxykonfigurációval és -kezeléssel is használhatók. 
+Ez a szakasz a HoloLens operációs rendszer hálózati proxyját és Univerzális Windows-platform (UWP) Windows HTTP-vermeket használó alkalmazásokkal foglalkozik. A nem Windows HTTP-vermeket használó alkalmazások saját proxykonfigurációval és -kezeléssel is használhatók. 
 
 ### <a name="proxy-configurations"></a>Proxykonfigurációk 
 
-- Pac-proxy automatikus konfigurációs parancsfájl: a [PAC-fájl](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) (amely nem Microsoft webhelyet nyit meg) tartalmaz egy FindProxyForURL(url, host) JavaScript-függvényt. 
-- Statikus proxy: Kiszolgáló:Port alakban.  
-- Webproxy automatikus felderítési protokollja (WPAD): ADJA meg a proxykonfigurációs fájl URL-címét DHCP-en vagy DNS-en keresztül. 
+- Proxy auto-config (PAC) szkript: a [PAC-fájl](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) (nem a Microsofttól származó webhely megnyitása) tartalmaz egy FindProxyForURL(url, host) JavaScript-függvényt. 
+- Statikus proxy: Kiszolgáló:Port formában.  
+- Webproxy automatikus felderítési protokollja (WPAD): adja meg a proxykonfigurációs fájl URL-címét DHCP-en vagy DNS-en keresztül. 
 
 ### <a name="proxy-provisioning-methods"></a>Proxy-kiépítési módszerek 
-A proxyk kiépítése háromféleképpen lehetséges:
+A proxyk üzembe építésének három módja van:
 
  
 
@@ -170,7 +148,7 @@ A proxyk kiépítése háromféleképpen lehetséges:
     1. Felhasználónkénti proxy (20H2 vagy korábbi):
         1. Nyissa meg a Start menü, és válassza a Beállítások lehetőséget.
         2. Válassza a Network & internet, majd a proxy lehetőséget a bal oldali menüben.
-        3. Görgessen le a Manual proxy setup (Manuális proxybeállítás) elemre, és a Use a proxy server (Proxykiszolgáló használata) beállítást pedig a On (Be) beállításra.
+        3. Görgessen le a Manual proxy setup (Manuális proxybeállítás) elemre, és a Use a proxy server (Proxykiszolgáló használata) kapcsolót a On (Be) beállításra.
         4. Adja meg a proxykiszolgáló IP-címét.
         5. Adja meg a portszámot.
         6. Kattintson a Mentés gombra.
@@ -184,20 +162,20 @@ A proxyk kiépítése háromféleképpen lehetséges:
         
  2. **MDM** 
      1. Intune – Ezekkel a [lépésekkel konfigurálhatja](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) a proxyt az Intune-ban. A szakasz aljára kell görgetnie.
-     1. Egyéb, harmadik féltől származó MDM-megoldások – [Wi-Fi CSP használata.](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp)
+     1. Egyéb külső MDM-megoldások – [Wi-Fi CSP használata.](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp)
 
 3. **PPKG** 
     1. A Windows Configuration Designer megnyitása
     1. Kattintson a Speciális kiépítés elemre, adja meg az új projekt nevét, majd kattintson a Tovább gombra.
     1. Válassza a Windows Holographic (HoloLens 2) lehetőséget, majd kattintson a Tovább gombra.
     1. Importálja a PPKG-t (nem kötelező), majd kattintson a Befejezés gombra.
-    1. Bontsa ki a Runtime Settings -> Connectivity Profiles -> WLAN -> WLAN Proxy (WLAN-proxy) gombra.
-    1. Adja meg a hálózati Wi-Fi SSID-ját, majd kattintson a Hozzáadás gombra.
+    1. Bontsa ki a Runtime Settings -> Connectivity Profiles -> WLAN -> WLAN Proxy (WLAN-kapcsolati profilok -> WLAN-proxy) gombra.
+    1. Adja meg a hálózati Wi-Fi SSID-ját, és kattintson a Hozzáadás gombra.
     1. Válassza ki a Wi-Fi a bal oldali ablakban, és adja meg a kívánt testreszabásokat. Az engedélyezett testreszabások félkövérrel jelennek meg a bal oldali menüben.
     1. Kattintson a Mentés és kilépés gombra.
-    1. [Alkalmazza a](https://docs.microsoft.com/hololens/hololens-provisioning#applyremove-a-provisioning-package-to-hololens-after-setup) kiépítési csomagot a HoloLensre.
+    1. [Alkalmazza a](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup) kiépítési csomagot a HoloLensre.
 
-[A felhőszolgáltatók](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) számos felügyeleti feladat és házirend mögött állnak a Windows 10, mind a Microsoft Intune, mind a nem Microsoft MDM-szolgáltatóknál. A Windows [Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd) használatával is létrehozhat egy kiépítési csomagot, és alkalmazhatja azt [a](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) HoloLens 2-re.
+[A csP-k](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) számos felügyeleti feladat és házirend mögött állnak a Windows 10, mind a Microsoft Intune, mind a nem Microsoft MDM-szolgáltatóknál. A Windows [Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd) használatával is létrehozhat egy kiépítési csomagot, és alkalmazhatja azt [a](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) HoloLens 2-re.
 A HoloLens 2-re leginkább a következő CSP-k lesznek alkalmazva:
 
 - [Wi-Fi CSP:](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp)profilonkénti Wi-Fi proxy 
@@ -216,7 +194,7 @@ Támogatott beépített VPN-protokollok:
 - L2TP
 - PPTP
 
-Ha a beépített VPN-ügyfél hitelesítéséhez tanúsítványt használ, a szükséges ügyfél-tanúsítványt hozzá kell adni a felhasználói tanúsítványtárolóhoz. Annak ellenőrzéséhez, hogy egy harmadik féltől származó VPN beépülő modul támogatja-e a HoloLens 2-t, az Áruházban keresse meg a VPN-alkalmazást, és ellenőrizze, hogy a HoloLens támogatott eszközként szerepel-e, és a Rendszerkövetelmények oldalon az alkalmazás támogatja-e az ARM- vagy ARM64-architektúrát. A HoloLens csak a Univerzális Windows-platform VPN-hez támogatja az alkalmazásokat.
+Ha tanúsítványt használ a beépített VPN-ügyfél hitelesítéséhez, a szükséges ügyfél-tanúsítványt hozzá kell adni a felhasználói tanúsítványtárolóhoz. Annak ellenőrzéséhez, hogy egy harmadik féltől származó VPN beépülő modul támogatja-e a HoloLens 2-t, az Áruházban keresse meg a VPN-alkalmazást, és ellenőrizze, hogy a HoloLens támogatott eszközként szerepel-e, és a Rendszerkövetelmények lapon az alkalmazás támogatja-e az ARM- vagy ARM64-architektúrát. A HoloLens csak a Univerzális Windows-platform VPN-hez támogatja az alkalmazásokat.
 
  A VPN-t MDM-en keresztül lehet kezelni [a Beállítások/AllowVPN segítségével,](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)és [a vpnv2-csp szabályzattal lehet beállítani.](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp)
 
@@ -224,7 +202,7 @@ A VPN [konfigurálásról az alábbi](https://support.microsoft.com/help/20510/w
 
 ### <a name="vpn-via-ui"></a>VPN felhasználói felületen keresztül
 
-A VPN alapértelmezés szerint nincs engedélyezve,  de manuálisan is engedélyezhető a Beállítások alkalmazás megnyitásával és a Network **& Internet -> VPN elemre navigálva.**
+A VPN alapértelmezés szerint nincs engedélyezve,  de manuálisan is engedélyezhető a Beállítások alkalmazás megnyitásával és a **Network & Internet -> VPN elemre navigálva.**
 1. Válasszon ki egy VPN-szolgáltatót.
 1. Hozzon létre egy kapcsolatnevet. 
 1. Adja meg a kiszolgáló nevét vagy címét.
@@ -244,9 +222,9 @@ A VPN alapértelmezés szerint nincs engedélyezve,  de manuálisan is engedély
 1. Kattintson **a Provision HoloLens devices (HoloLens-eszközök kiépítése)** elemre, majd válassza ki a céleszközt, és kattintson **a Next (Tovább) gombra.**
 1. Adja meg a csomag nevét és elérési útját.
 1. Kattintson **a Váltás speciális szerkesztőre lehetőségre.**
-1. Nyissa **meg a KapcsolatProfilok** VPN  ->    ->    ->  **VPN-beállításokat.**
+1. Nyissa **meg a Runtime settings**  ->  **ConnectivityProfiles**  ->  **VPN**  ->  **VPNSettings (Futtatás** futásidejű beállításai) Beállítást.
 1. A VPNProfileName konfigurálása
-1. Válassza a ProfileType: **Natív vagy** **külső lehetőséget.**
+1. Válassza a ProfileType: **Native (Natív) vagy** **a Third Party (Harmadik fél) lehetőséget.**
     1. A Natív profil beállításnál válassza a **NativeProtocolType** lehetőséget, majd konfigurálja a kiszolgálót, az útválasztási házirendet, a hitelesítési típust és az egyéb beállításokat.
     1. A "Külső gyártótól származó" profilhoz konfigurálja a kiszolgáló URL-címét, a VPN beépülő modul alkalmazáscsomagjának családnevét (csak 3 előre definiált) és egyéni konfigurációkat.
 1. Exportálja a csomagot.
@@ -360,7 +338,7 @@ Példa natív IKEv2 VPN-re:
 1. Nyissa meg **a Start menüt.**
 1. Válassza a **Beállítások** alkalmazást a **Start menüből** vagy a **Start** menü jobb oldalon található Minden alkalmazás **listából.** A **Beállítások** alkalmazás automatikusan el lesz helyezve Ön előtt.
 1. Válassza **a Hálózati & lehetőséget.**
-1. A csúszka Wi-Fi a csúszkakapcsolót a **Ki állásba való áthelyezéshez.** Ezzel kikapcsolja az eszköz RF összetevőitWi-Fi és letiltja az összes Wi-Fi Funkciót a HoloLensen.
+1. A csúszka Wi-Fi a csúszkakapcsolót, hogy a Ki **állásba helyezze.** Ezzel kikapcsolja az eszköz RF összetevőitWi-Fi és letiltja az összes Wi-Fi Funkciót a HoloLensen.
 
     > [!WARNING]
     > Ha a Wi-Fi le van tiltva, a HoloLens nem fogja tudni automatikusan betölteni a [szóközöket.](hololens-spaces.md)

@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 fejlesztői kiadás
-description: Ismerje meg a HoloLens 2 Development Editiont, és hogy mi a helyzet a saját kiadásának lekért kiadását követően.
+description: Ismerje meg a HoloLens 2 Development Editiont, és hogy mi a helyzet, miután saját kiadást kap.
 keywords: HoloLens 2 vásárlási lehetőségek, HoloLens-lehetőségek, Developer Edition
 author: bogenera
 ms.author: bogenera
@@ -14,18 +14,18 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2df71baf36d45f0f4737b9c3b6f4eabb1e5e8c4c
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 6ecb881f694ca919f9c37a9d6094a708eafcb414
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379647"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924468"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 fejlesztői kiadás
 
 Kezdjen el vegyes valóságra építeni ezzel az ajánlattal, amely kombinálja a HoloLens 2-t a Unity-szoftverek ingyenes próbaverzióival és a felhőszolgáltatásokhoz szükséges Azure-kreditekkel. Megtudhatja, hogyan lehet túllépni az alapoktól, és hogyan kezdheti el a fejlesztést a vegyes valósághoz.
 
-## <a name="learn-about-the-development-edition"></a>Tudnivalók a Development Edition kiadásról
+## <a name="learn-about-the-development-edition"></a>Tudnivalók a Development Editionről
 
 > [!NOTE]
 > A Development Edition nem helyezhető üzembe kereskedelmileg elosztott megoldással. A Development Edition üzembe helyezése az alkalmazások kereskedelmi környezetben való fejlesztésének és/vagy tesztelésének segítésében engedélyezett.  
@@ -43,7 +43,7 @@ A HoloLens 2 Development Edition tartalmaz egy HoloLens 2-t, 500 dollár Azure-k
 ## <a name="redeem-your-credits"></a>Kreditek beváltása
 
 ### <a name="unity"></a>Unity
-Egyedi kódot kapott. Utasítások a Unity Pro próbaverzió beváltása érdekében:
+Egy egyedi kódot kapott. Utasítások a Unity Pro próbaverzió beváltása érdekében:
 1. Látogasson [el id.unity.com](http://id.unity.com/)
 1. Jelentkezzen be a Unity-azonosítójával, vagy hozzon létre egyet
 1. Kattintson **a Termékkód beváltása elemre**
@@ -52,7 +52,7 @@ Egyedi kódot kapott. Utasítások a Unity Pro próbaverzió beváltása érdek�
 További részletek a [Unity-licencek aktiválásának mikéntjére.](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-) Ha [segítségre van szüksége,](https://support.unity3d.com/hc) forduljon a Unity ügyfélszolgálatához.  
 
 ### <a name="pixyz"></a>Pixyz
-Egyedi kódot kapott. A Pixyz beépülő modul próbaverzióját beváltó utasítások:
+Egy egyedi kódot kapott. A Pixyz beépülő modul próbaverzióját beváltó utasítások:
 1. Látogasson [el id.unity.com](http://id.unity.com/)
 1. Kattintson **a Termékkód beváltása elemre**
 1. Adja meg a Pixyz beépülő modul termékkódját, majd kattintson **a Termékkód beváltása elemre**
@@ -78,18 +78,19 @@ Válassza ki a motort, töltse le az eszközöket, és válassza ki a billentyű
 
 ## <a name="developer-edition-additional-resources"></a>Developer Edition – további források
 
+- [HoloLens 2 Development Edition – gyakori kérdések](hololens2-development-edition-faq.md)
 - [Győződjön meg arról, hogy telepíti a HoloLens-fejlesztéshez szükséges eszközöket.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - [Tudnivalók a HoloLens 2 Unityvel való fejlesztésről.](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2)
 - [Ismerje meg, hogyan kombinálhatja az MRTK-t a Unityvel.](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started)
-- [Megtudhatja, hogyan helyezheti üzembe a beépített alkalmazásait.](https://docs.microsoft.com/hololens/app-deploy-overview)
-- [Fedezze fel az összes lehetőséget a Mixed Reality.](https://docs.microsoft.com/windows/mixed-reality/)
-- [Ismerje meg, hogyan fejleszt a HoloLens 2-re az Unreal-sel.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
+- [Megtudhatja, hogyan helyezheti üzembe a beépített alkalmazásait.](app-deploy-overview.md)
+- [Ismerje meg az összes lehetőséget a Mixed Reality.](https://docs.microsoft.com/windows/mixed-reality/)
+- [További információ a HoloLens 2-hez való fejlesztésről az Unreal-sel.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [A HoloDevelopers](https://holodevelopersslack.azurewebsites.net/)Slack-csatornánkban elérheti a többi fejlesztőt.
 
 ## <a name="next-steps"></a>Következő lépések
 
-1. Azonnal elkezdhet interakcióba lépni a Mixed Reality és navigálhat Windows 10 HoloLensen – tekintse meg a **Tippek** alkalmazást, amely gyakorlati oktatóanyagokat ad a kézi interakciókhoz. Használja az indítási kézmozdulatot az Indítás vagy a "Go to Start" (Ugrás az indításhoz) szövegre, majd válassza a Tippek lehetőséget.
-1. Az alábbi gombra kattintva tovább olvashat a HoloLens 2 körül való ismerkedésről.
+1. Azonnal elkezdhet interakcióba lépni a Mixed Reality és navigálhat Windows 10 HoloLensen – tekintse meg a **Tippek** alkalmazást, amely gyakorlati oktatóanyagokat ad a kézi interakciókhoz. Az indítási kézmozdulattal az Indítás vagy a "Go to Start" (Ugrás az indításhoz) szövegre, majd a Tippek használatára használhatja.
+1. Kattintson az alábbi gombra a HoloLens 2 körül való ismerkedés folytatásához.
 
 > [!div class="nextstepaction"]
 > [A HoloLens 2 első lépések](hololens2-basic-usage.md)

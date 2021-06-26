@@ -8,58 +8,133 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 02/16/2021
+ms.date: 06/17/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 554dc796ee793a3f7e81108c6eb614a9555f10d7
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 16aec0e60fde40f0a2bffefa871a7a3774b1eb2e
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111378172"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924536"
 ---
 # <a name="hololens-2-release-notes"></a>A HoloLens 2 kibocsátási megjegyzései
 
-A HoloLens-eszközökkel kapcsolatos hatékony élmény biztosítása érdekében továbbra is kiadjuk a funkciókat, a hibákat és a biztonsági frissítéseket. Ezen az oldalon láthatja a HoloLens minden hónapban megjelenő újdonságát. A HoloLens 2 legújabb frissítésének [](hololens-update-hololens.md#check-for-updates-and-manually-update) letöltőjéhez ellenőrizheti a frissítéseket, és manuálisan frissíthet, vagy a Teljes flash frissítéssel (FFU) frissítheti az eszközt az [Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device)segítségével. A [letöltés](https://aka.ms/hololens2download) naprakész, és a legújabb általánosan elérhető buildet biztosítja.
+Annak érdekében, hogy a HoloLens-eszközök használata hatékony legyen, továbbra is kiadunk funkciókat, hibákat és biztonsági frissítéseket. Ezen az oldalon láthatja a HoloLens minden hónapban megjelenő újdonságát. A HoloLens 2 legújabb frissítésének [](hololens-update-hololens.md#check-for-updates-and-manually-update) lefutására ellenőrizheti a frissítéseket, és manuálisan frissítheti, vagy lekértheti a teljes flash frissítést (FFU), hogy az Advanced Recovery Companion (Speciális helyreállítás-kísérő) funkcióval flashlje az [eszközt.](hololens-recovery.md#clean-reflash-the-device) A [letöltés](https://aka.ms/hololens2download) naprakész, és a legújabb általánosan elérhető buildet biztosítja.
+
+> [!NOTE]
+> A legutóbbi Windows 11-bejelentés a Windows PC-s verziójára összpontosított. 2021 májusában elindítottunk egy jelentős operációsrendszer-frissítést [a](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) HoloLens 2-höz, és az őszre vonatkozó ügyfél-visszajelzések alapján dolgozunk egy hamarosan megjelenő kiadáson.
+
+> [!IMPORTANT]
+> A [21H1](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes)build egyik ismert problémája miatt, amely a Remote Assist-felhasználókat érinti, jelenleg a Windows Holographic 21H1-es verziójának frissítéseit szüneteltetjük. Módosítottuk az alapértelmezett Advanced Recovery Companion buildet is [a Windows Holographic 20H2 – 2021.](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update)júniusi frissítésére, amely a legújabb 20H2-es kiadás.
+>
+> Bár a probléma hatásának csökkentése érdekében csökkentjük a 21H1 rendelkezésre állását, tisztában vagyunk vele, hogy egyes ügyfelek továbbra is a 21H1-re szeretnék frissíteni. A 21H1-re frissíteni kívánó ügyfelek számára két különböző útvonal érhető el:
+>
+> - [Regisztrálja az eszköz(öke)t Windows](hololens-insider.md#start-receiving-insider-builds) Insiders-eszközként, és válassza a **Béta csatorna** lehetőséget, amely lehetővé teszi, hogy az eszközök a 21H1-es verzióra frissítsenek, és megbízható buildekkel legyenek felépítve.
+> - [Töltse le a legfrissebb FFU-t a számítógépre,](https://aka.ms/hololens2download) majd az Advanced Recovery Companion (Speciális helyreállítás-kísérő) segítségével [flash()](hololens-recovery.md#clean-reflash-the-device)segítségével flash() eszközzel.
+
+## <a name="windows-holographic-version-21h1---june-2021-update"></a>Windows Holographic, 21H1-es verzió – 2021. júniusi frissítés
+- Build 20348.1007
+
+### <a name="onedrive-for-work-or-school-camera-roll-upload"></a>OneDrive munkahelyi vagy iskolai kameratekercs feltöltése
+
+Új funkciót adtunk hozzá a HoloLens 2 Beállítások alkalmazáshoz, amely lehetővé teszi az ügyfelek számára, hogy automatikusan feltöltsön vegyes valóságú fényképeket és videókat az eszköz Pictures > Camera Roll mappájában a megfelelő OneDrive munkahelyi vagy iskolai mappába. Ez Microsoft-fiók a funkció a HoloLens 2 [OneDrive](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos) alkalmazásában található szolgáltatásbeli hézagokat elég kijavítani, amely csak az ügyfél személyes tárhelyére (és a munkahelyi vagy iskolai fiókjukba) való automatikus kameratekercs-feltöltést támogatja.
+
+**Működés**
+
+- A **"Kamera feltöltése> funkció** engedélyezéséhez látogasson el > System > Mixed Reality Camera (Kamera feltöltése) lapra.
+- Ennek a funkciónak  a Be állásba való beállításával az eszközön rögzített vegyes valóságú fényképek és videók automatikusan várólistára kerülnek a OneDrive munkahelyi vagy iskolai fiókjának Pictures > Camera Roll mappájába való feltöltéshez.
+    >[!NOTE]
+    >A funkció engedélyezése előtt rögzített  fényképek és videók nem kerülnek a várakozási sorba a feltöltéshez, így manuálisan kell feltölteni őket.
+- A Beállítások lapon megjelenő állapotüzenet megjeleníti a függőben lévő fájlok számát (vagy elolvassa a "OneDrive naprakész" állapotot, ha az összes függőben lévő fájl fel lett töltve).
+- Ha aggódik a sávszélesség miatt, vagy bármilyen okból "szüneteltetni" szeretné  a feltöltést, a funkciót kikapcsolhatja. A funkció ideiglenes letiltása biztosítja, hogy a feltöltési üzenetsor tovább nő, miközben új fájlokat ad hozzá a Camera Roll mappához, de a fájlok feltöltése addig nem folytatódik, amíg újra nem engedélyezi a funkciót.
+- A rendszer először a legújabb fájlokat tölti fel (utolsóként, elsőként ki).
+- Ha a OneDrive-fiókjában problémák vannak (például a jelszó módosítása után), megjelenik a Javítás **most** gomb a Beállítások lapon.
+- Nincs maximális fájlméret, de vegye figyelembe, hogy a nagy fájlok feltöltése hosszabb időt fog igénybe venni (különösen akkor, ha a feltöltési sávszélesség korlátozott). Ha egy nagy méretű fájl feltöltése közben szünetelteti vagy kikapcsolja a feltöltést, a részleges feltöltés megmarad. Ha a feltöltés a szüneteltetéstől vagy a kikapcsolástól számított néhány órán belül újra engedélyezve van, a feltöltés onnan folytatódik, ahonnan a feltöltést kikapcsolták. Ha azonban a feltöltés több óra után újra engedélyezve van, a nagy méretű fájl feltöltése az elejétől újraindul.
+
+**Ismert problémák és kikötések**
+
+- Ez a beállítás nem rendelkezik beépített szabályozással az aktuális sávszélesség-használat alapján. Ha a sávszélességet maximalizálni kell egy másik forgatókönyvhöz, kapcsolja ki manuálisan a beállítást. A feltöltés fel lesz függesztve, de a funkció továbbra is figyeli a Camera Roll újonnan hozzáadott fájljait. Engedélyezze újra a feltöltést, ha készen áll a folytatásra.
+- Ezt a funkciót engedélyezni kell az eszközön lévő összes felhasználói fiókhoz, és csak az eszközre jelenleg bejelentkezett felhasználó fájljait tudja aktívan feltölteni.
+- Ha valós időben készít fényképeket vagy videókat, miközben a Beállítások lapon figyeli a feltöltések számát, vegye figyelembe, hogy a függőben lévő fájlok száma nem változik, amíg az aktuális fájl feltöltése be nem fejeződik.
+- A feltöltés szünetel, ha az eszköz elalszik vagy ki van kapcsolva. Annak érdekében, hogy a függőben lévő feltöltések befejeződtek, aktívan használja az eszközt, amíg a Beállítások lap el nem olvassa a "OneDrive naprakész" adatokat, vagy módosítsa a **Power & beállításait.**
+### <a name="added-support-for-some-telemetry-policies"></a>Bizonyos telemetriai szabályzatok támogatása hozzáadva
+
+A HoloLens 2 mostantól a következő telemetriai szabályzatokat támogatja:
+- ConfigureTelemetryOptInSettingsUx
+- DisableDeviceDelete (Letiltás letiltása)
+- AllowDeviceNameInDiagnosticData
+- FeedbackHubAlwaysSaveDiagnosticsLocally
+
+A System\AllowTelemetry és a System\ConfigureTelemetryOptInSettingsUx együttes használatával teljes körűen vezérelni kell a Telemetriát és a viselkedést a Beállítások alkalmazásban.
+
+A frissítés fejlesztései és javításai:
+- Javítja a nagyobb videósérüléseket színezéssel.
+- Kijavít egy problémát, amely miatt előfordulhat, hogy a Power menüben csonkolt egy szöveg.
+- Engedélyezi a RequirePrivateStoreOnly szabályzat támogatását.
+
+## <a name="windows-holographic-version-20h2--june-2021-update"></a>Windows Holographic, 20H2-es verzió – 2021. júniusi frissítés
+- Build 19041.1154
+
+### <a name="added-support-for-some-telemetry-policies"></a>Bizonyos telemetriai szabályzatok támogatása hozzáadva
+
+A HoloLens 2 mostantól a következő telemetriai szabályzatokat támogatja:
+- ConfigureTelemetryOptInSettingsUx
+- DisableDeviceDelete (Letiltás letiltása)
+- AllowDeviceNameInDiagnosticData
+- FeedbackHubAlwaysSaveDiagnosticsLocally
+
+A System\AllowTelemetry és a System\ConfigureTelemetryOptInSettingsUx együttes használatával teljes körűen vezérelni kell a Telemetriát és a viselkedést a Beállítások alkalmazásban.
+
+Javasoljuk, hogy próbálja ki a legújabb buildet, a Windows Holographic 21H1-es verzióját.
+
+## <a name="windows-holographic-version-1903---june-2021-update"></a>Windows Holographic, 1903-as verzió – 2021. júniusi frissítés
+- Build 18362.1116
+
+A frissítés fejlesztései és javításai:
+- Ez a havi minőségi frissítés nem tartalmaz jelentős változásokat. Javasoljuk, hogy próbálja ki a legújabb buildet, a Windows Holographic 21H1-es verzióját.
+
+>[!IMPORTANT]
+> Ez a build a továbbiakban nem lesz szervizelt.
 
 ## <a name="windows-holographic-version-21h1"></a>Windows Holographic, 21H1-es verzió
 - Build 20346.1002
 
-Ez a frissítés két célcsoport számára tartalmaz funkciókat; a végfelhasználó által az eszközön bárki által használható funkciók, valamint a rendszergazdák által konfigurálható új eszközkezelési lehetőségek. Az alábbi táblázat az egyes célközönségek számára releváns funkciókat tartalmazza. Ha Ön rendszergazda, tekintse meg a rendszergazdai frissítési [ellenőrzőlistát.](#it-admin---update-checklist)
+Ez a frissítés két célcsoport funkcióit tartalmazza; a végfelhasználó által az eszközön bárki által használható funkciók, valamint a rendszergazdák által konfigurálható új eszközkezelési lehetőségek. Az alábbi táblázat az egyes célközönségek számára releváns funkciókat tartalmazza. Ha Ön rendszergazda, tekintse meg a rendszergazdai [frissítési ellenőrzőlistát.](#it-admin---update-checklist)
 >[!IMPORTANT]
->A buildre való frissítéshez a HoloLens 2-eszközöknek jelenleg a 2021. februári frissítést (19041.1136-os build) vagy újabb verziókat kell futniuk. Ha nem látja ezt a funkciófrissítést, először frissítse az eszközt, és próbálkozzon újra.
+>A build frissítéséhez a HoloLens 2-eszközöknek jelenleg a 2021. februári frissítést (19041.1136-os build) vagy újabb verziókat kell futniuk. Ha nem látja a funkciófrissítést, először frissítse az eszközt, és próbálkozzon újra.
 
 >[!NOTE]
->Napjainkban Microsoft HoloLens 2. verzió a következő kiadások havi karbantartási frissítéseit (hiba- és biztonsági javításokat) támogatja:
+>Napjainkban Microsoft HoloLens 2. verzió támogatja a havi karbantartási frissítéseket (hiba- és biztonsági javításokat) a következő kiadásokhoz:
 >- Windows Holographic, 20H2-es verzió (Build 19041.1128+)
 >- Windows Holographic, 2004-es verzió (Build 19041.1103+)
->- Windows Holographic, 1903-as verzió (18362-es vagy újabb build) 
+>- Windows Holographic, 1903-as verzió (Build 18362+) 
 >
 > A Windows Holographic 21H1 verziójának bevezetésével a **Windows Holographic 1903-as** verziójának havi karbantartási frissítéseit is bevezetjük. Ez lehetővé teszi, hogy a legújabb kiadásokra összpontosítsunk, és továbbra is értékes fejlesztéseket biztosítsunk. 
 
 
 | Szolgáltatás neve                                              | Rövid leírás                                                                      | Célközönség | 
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
-| [Új Microsoft Edge](#introducing-the-new-microsoft-edge)  | Az új, Chromium-Microsoft Edge már elérhető a HoloLens 2-hez. | Végfelhasználó | 
-[WebXR és 360 Viewer](#webxr-and-360-viewer) | Modern webes élményt és 360 videólejátszást is kipróbálhat. | Végfelhasználó | 
+| [Új Microsoft Edge](#introducing-the-new-microsoft-edge)  | Az új, Chromium-alapú Microsoft Edge már elérhető a HoloLens 2-hez. | Végfelhasználó | 
+[WebXR és 360 Viewer](#webxr-and-360-viewer) | Próbálja ki a modern webes élményt és a 360 videólejátszást. | Végfelhasználó | 
 [Új beállítások alkalmazás](#new-settings-app) | Az örökölt Settings alkalmazást egy frissített verzió váltja fel új funkciókkal és beállításokkal. | Végfelhasználó |
-[Színkorrektálás megjelenítése](#display-color-calibration) | Válasszon egy alternatív színprofilt a HoloLens 2-es megjelenítéshez. | Végfelhasználó |
+[Színkorrektálás megjelenítése](#display-color-calibration) | Válasszon egy alternatív színprofilt a HoloLens 2-megjelenítéshez. | Végfelhasználó |
 [Alapértelmezett alkalmazásválasztó](#default-app-picker) | Válassza ki, hogy melyik alkalmazást indítsa el az egyes fájl- vagy hivatkozástípusokkal. | Végfelhasználó |
 [Alkalmazásonkénti kötetvezérlés](#per-app-volume-control) | Az alkalmazásszintű kötet szabályozása a rendszerkötettől függetlenül. | Végfelhasználó |
-[Webalkalmazások telepítése](#install-web-apps) | Telepítsen webalkalmazásokat a HoloLens 2-re ( Microsoft Office) az új Microsoft Edge böngészővel. | Végfelhasználó |
-[Pöccintés a begépelhez](#swipe-to-type) | Az ujjlenyomata hegyével "pöccintsen" szavakat a holografikus billentyűzeten. | Végfelhasználó |
-[A Power menü a Start menüből](#power-menu-from-start) | A Start menüben indítsa újra és állítsa le a HoloLens-eszközt. | Végfelhasználó |
+[Webalkalmazások telepítése](#install-web-apps) | Az új böngészővel telepíthet webalkalmazásokat a HoloLens 2 Microsoft Office, Microsoft Edge telepíthet. | Végfelhasználó |
+[Pöccintéssel gépeléssel](#swipe-to-type) | Az ujjlenyomata hegyével "pöccintsen" szavakat a holografikus billentyűzeten. | Végfelhasználó |
+[Power menu from Start](#power-menu-from-start) | A Start menüben indítsa újra és állítsa le a HoloLens-eszközt. | Végfelhasználó |
 [Több felhasználó szerepel a Bejelentkezési képernyőn](#multiple-users-listed-on-sign-in-screen) | Több felhasználói fiók megjelenítése a Bejelentkezési képernyőn. | Végfelhasználó |
-[USB-C külső mikrofon támogatása](#usb-c-external-microphone-support) | Használjon USB-C mikrofonokat az alkalmazásokhoz és/ vagy a Remote Assisthez. | Végfelhasználó |
+[USB-C külső mikrofon támogatása](#usb-c-external-microphone-support) | Használjon USB-C-mikrofonokat az alkalmazásokhoz és / vagy a Remote Assisthez. | Végfelhasználó |
 [Látogatói automatikus bejelentkezés kioszkok számára](#visitor-auto-logon-for-kiosks) | Lehetővé teszi a látogatói fiókokra való automatikus bejelentkezést a kioszkmódokhoz. | Rendszergazdai |
-[Új AUMID-k új alkalmazásokhoz kioszkmódban](#use-the-new-settings-and-edge-apps-in-kiosk-modes)  | Az új Beállítások és Edge-alkalmazások AUMID-i. | Rendszergazdai |
-[Továbbfejlesztett kioszkmód-kezelés – sikertelen kezelés](#kiosk-mode-behavior-changes-for-handling-of-failures) | A kioszkmód az üres Start menü előtt keres globális hozzárendelt hozzáférést. | Rendszergazdai |
-[Új beállításokURI-k az Oldalbeállítások láthatósága számára](#new-settings-uris-for-page-settings-visibility) | Több mint 20 új SettingsURIs a Settings/PageVisibilityList szabályzathoz. | Rendszergazdai |
-[Tartalék diagnosztika konfigurálása](#configuring-fallback-diagnostics-via-settings-app) | A Tartalék diagnosztikai viselkedés beállítása a Beállítások alkalmazásban. | Rendszergazdai |
+[Új AUMID-k új alkalmazásokhoz Kioszk módban](#use-the-new-settings-and-edge-apps-in-kiosk-modes)  | Az új Beállítások és Edge-alkalmazások AUMID-i. | Rendszergazdai |
+[Továbbfejlesztett kioszkmódú hibák kezelésével](#kiosk-mode-behavior-changes-for-handling-of-failures) | A kioszkmód az üres Start menü előtt keres globális hozzárendelt hozzáférést. | Rendszergazdai |
+[Új beállításokURI-k az oldalbeállítások láthatósága számára](#new-settings-uris-for-page-settings-visibility) | Több mint 20 új SettingsURIs for Settings/PageVisibilityList policy. | Rendszergazdai |
+[A Fallback Diagnostics konfigurálása](#configuring-fallback-diagnostics-via-settings-app) | Tartalék diagnosztikai viselkedés beállítása a Beállítások alkalmazásban. | Rendszergazdai |
 [Dolgok megosztása a közeli eszközökkel](#share-things-with-nearby-devices) | Fájlok vagy URL-címek megosztása Egy HoloLensből egy számítógépre. | Mind |
 [Új operációsrendszer-diagnosztikai nyomkövetések](#new-os-diagnostic-traces) | Új hibaelhárító az operációsrendszer-frissítések beállításaiban. | Rendszergazdai |
 [Kézbesítésoptimalizálás előzetes verzió](#delivery-optimization-preview) | Csökkentse a sávszélesség-használatot több HoloLens-eszközről történő letöltések esetén. | Rendszergazdai |
@@ -74,27 +149,27 @@ Tekintse meg a kapcsolódó kibocsátási megjegyzéseket:
 
 ![Az örökölt embléma Microsoft Edge új embléma Microsoft Edge animációja](images/new-edge.gif)
 
-Az új Microsoft Edge a [Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) nyílt forráskódú projektet, hogy jobb kompatibilitást biztosítsunk az ügyfelek számára, és hogy a webfejlesztők számára kevésbé töredezettebb legyen a web.
+Az új Microsoft Edge a [Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) nyílt forráskódú projektet, amely jobb kompatibilitást biztosít az ügyfelek számára, és csökkenti a webfejlesztők számára a web töredezettségét.
 
 > [!IMPORTANT]
-> Ez az Microsoft Edge automatikusan lecseréli az örökölt Microsoft Edge, amely már [nem támogatott az](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) új kiadásokban.
+> Ez az Microsoft Edge automatikusan lecseréli az örökölt Microsoft Edge, amelyet az új kiadások már nem támogatnak. [](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/)
 
 ![Új Microsoft Edge képernyőkép](images/new-edge-ui.png)
 
 #### <a name="launching-the-new-microsoft-edge"></a>Az új alkalmazás Microsoft Edge
 
-Az új Microsoft Edge ![új Microsoft Edge ikon](images/new_edge_logo.png) A (kék és zöld örlő ikon jelöli) a rendszer a Start menü és automatikusan elindul, amikor aktivál egy webes hivatkozást.
+Az új Microsoft Edge ![új Microsoft Edge ikon](images/new_edge_logo.png) A (kék és zöld örlő ikon jelöli) a rendszer a Start menü a webes hivatkozás aktiválásakor automatikusan elindul.
 
 > [!NOTE]
 > Amikor először indítja el az új Microsoft Edge HoloLens 2-ben, a beállítások és az adatok importálva lesznek az örökölt Microsoft Edge. Ha az új Microsoft Edge elindítása után továbbra is az örökölt Microsoft Edge-t használja, az új adatok nem lesznek szinkronizálva az örökölt Microsoft Edge az új Microsoft Edge.
 
 #### <a name="configuring-policy-settings-for-the-new-microsoft-edge"></a>Szabályzatbeállítások konfigurálása az új Microsoft Edge
 
-Az új Microsoft Edge a korábbiaknál sokkal több böngésző-szabályzatot kínálnak a rendszergazdáknak a HoloLens 2-ben, mint korábban Microsoft Edge.
+Az új Microsoft Edge böngésző-szabályzatok sokkal szélesebb készletét kínálják a rendszergazdáknak a HoloLens 2-ben, mint ami korábban a régi Microsoft Edge.
 
-Az új házirend-beállítások kezelésével kapcsolatos további információkért íme néhány hasznos forrás Microsoft Edge:
+Az új szabályzatbeállítások kezelésével kapcsolatos további információkért íme néhány hasznos forrás Microsoft Edge:
 
-- [A Microsoft Edge beállításainak konfigurálása a Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
+- [Az Microsoft Edge-szabályzatbeállítások konfigurálása a Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
 - [Microsoft Edge régi verziója szabályzatleképezés Microsoft Edge beállítása](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
 - [A Google Chrome Microsoft Edge szabályzatleképezéshez](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
 - Teljes [Microsoft Edge Enterprise dokumentációja](https://docs.microsoft.com/deployedge/)
@@ -183,9 +258,9 @@ Az új Edge használatával webalkalmazásokat telepíthet a Microsoft Store mel
 
 ### <a name="webxr-and-360-viewer"></a>WebXR és 360 Viewer
 
-Az új Microsoft Edge támogatja a WebXR-t, amely a modern webes élmények létrehozásának új szabványa (a WebVR helyett). Számos modern webes élményt a VR szem előtt tartva terveztek (a nézetet egy virtuális környezetre cserélik), de ezeket a élményt a HoloLens 2 is támogatja. A WebXR szabvány kibővített és vegyes valóságú, magával ragadó webes élményt tesz lehetővé, amelyek a fizikai környezetet használják. Mivel a fejlesztők több időt töltenek a WebXR-sel, arra számítunk, hogy a HoloLens 2 ügyfeleinek új, kibővített és vegyes valóságú élmények várhatók!
+Az új Microsoft Edge tartalmazza a WebXR támogatását, amely a modern webes élmények létrehozásának új szabványa (a WebVR helyett). Számos modern webes élményt a VR szem előtt tartva terveztek (a nézetet egy virtuális környezetre cserélik), de ezeket a élményt a HoloLens 2 is támogatja. A WebXR szabvány kibővített és vegyes valóságú, magával ragadó webes élményt tesz lehetővé, amelyek a fizikai környezetet használják. Mivel a fejlesztők több időt töltenek a WebXR-sel, arra számítunk, hogy a HoloLens 2 ügyfeleinek új, kibővített és vegyes valóságú élmények várhatók!
 
-A 360 Viewer bővítmény a WebXR-re épül, és automatikusan együtt telepíthető az új Microsoft Edge HoloLens 2-ben. Ez a webes bővítmény lehetővé teszi, hogy elmerüljön a 360 fokos videókban. A YouTube a 360 videó közül kínálja a legnagyobb választékot, ezért javasoljuk, hogy ott kezdje.
+A 360 Viewer bővítmény a WebXR-re épül, és automatikusan együtt telepíthető az új Microsoft Edge HoloLens 2-ben. Ez a webes bővítmény lehetővé teszi, hogy 360 fokos videókban merüljön el. A YouTube a 360 videó közül kínálja a legnagyobb választékot, ezért javasoljuk, hogy ott kezdje.
 
 #### <a name="how-to-use-webxr"></a>A WebXR használata
 
@@ -196,7 +271,7 @@ A 360 Viewer bővítmény a WebXR-re épül, és automatikusan együtt telepíth
 
 1. Amikor először próbál webxr-élményt elindítani egy adott tartományon, a böngésző jóváhagyást kér a modern nézetbe való belépéshez, és válassza az **Allow (Engedélyezése) lehetőséget.**
 1. A [HoloLens 2 kézmozdulatokkal módosíthatja](hololens2-basic-usage.md#the-hand-tracking-frame) a felhasználói élményt.
-1. Ha a felhasználói élményben  nincs Kilépés gomb, a Start kézmozdulattal [térhet](hololens2-basic-usage.md#start-gesture) vissza a kezdőlapra.
+1. Ha a felhasználói élmény  nem rendelkezik Kilépés gombbal, a Start kézmozdulattal [térhet](hololens2-basic-usage.md#start-gesture) vissza a kezdőlapra.
 
 **Ajánlott WebXR-minták**
 - 360 Viewer (lásd a következő szakaszt)
@@ -221,7 +296,7 @@ A 360 Viewer bővítmény a WebXR-re épül, és automatikusan együtt telepíth
 
 #### <a name="providing-feedback-on-webxr-and-360-viewer"></a>Visszajelzés küldése a WebXR-ről és a 360 Viewerről
 
-Ossza meg a visszajelzéseket és  a hibákat a csapatunkkal az új rendszer Visszajelzés küldése Microsoft Edge.
+Ossza meg csapatával a visszajelzéseket és a hibákat az új rendszer Visszajelzés küldése Microsoft Edge. 
 
 ### <a name="new-settings-app"></a>Új beállítások alkalmazás
 
@@ -252,7 +327,7 @@ Ebben a kiadásban a Settings alkalmazás új verzióját mutatjuk be. Az új Be
 
 **Ismert problémák**
 - A korábban elhelyezett Beállítások ablakokat a rendszer eltávolítja (lásd a fenti megjegyzést).
-- A Továbbiakban nem nevezheti át az eszközt a Beállítások alkalmazással. A rendszergazdák a [Windows Autopilot for HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot) eszköznév-sablon vagy az MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName csomópont használatával nevezheti át az eszközöket.
+- A Továbbiakban nem nevezheti át az eszközt a Beállítások alkalmazással. A rendszergazdák a [Windows Autopilot for HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot) eszköznévsablon vagy az MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName csomópont használatával nevezheti át az eszközöket.
 - Az Ethernet-oldalon mindig megjelenik egy virtuális Ethernet-eszköz ("UsbNcm").
 - Az új hálózati adapterek Microsoft Edge nem biztos, hogy pontosak, mivel az UWP-adapterréteg által támogatott Win32 asztali alkalmazás (hamarosan nem várható javítás).
 
@@ -260,102 +335,102 @@ Ebben a kiadásban a Settings alkalmazás új verzióját mutatjuk be. Az új Be
 
 
 
-Ezzel az új beállítással alternatív színprofilt választhat a HoloLens 2-megjelenítéshez. Ez segíthet a színek pontosabb megjelenítésében, különösen alacsonyabb megjelenítési fényerejénél. A színkorrektálást a Beállítások alkalmazásban, a Rendszerbeállítások lapon, a > lapon lehet megjeleníteni.
+Ezzel az új beállítással alternatív színprofilt választhat a HoloLens 2-megjelenítéshez. Ez segíthet a színek pontosabb megjelenítésében, különösen alacsonyabb megjelenítési fényerejénél. A színkorrektálás megjelenítése a Beállítások alkalmazásban, a Rendszerbeállítások lapon > található.
 
 > [!NOTE]
-> Mivel ez a beállítás egy új színprofilt ment a megjelenítési belső vezérlőprogramba, ez egy eszközönkénti beállítás (és nem egyedi az egyes felhasználói fiókok számára).
+> Mivel ez a beállítás új színprofilt ment a megjelenítési belső vezérlőprogramba, ez egy eszközönkénti beállítás (és nem az egyes felhasználói fiókok egyedi beállítása).
 
-##### <a name="how-to-use-display-color-calibration"></a>A kijelző színkorrektálásának használata
+##### <a name="how-to-use-display-color-calibration"></a>A megjelenítési színek színezésének használata
 
-1. Indítsa el **a Beállítások** alkalmazást, és **navigáljon a System > Egyedek elemre.**
-1. A **Színkorrektálás megjelenítése alatt** válassza a Megjelenítés **színkorrektálásának futtatása** gombot.
-1. Elindul a színekkel való megjelenítés élménye, és arra bátorítja, hogy a vizor a megfelelő helyen legyen.
+1. Indítsa el **a Beállítások** alkalmazást, és lépjen a System > **És elemre.**
+1. A **Színkorrektálás megjelenítése alatt** válassza a Megjelenítés **színkorrektálás gombját.**
+1. Elindul a színekkel való megjelenítés élménye, és arra bátorítja, hogy győződjön meg arról, hogy a vizor a megfelelő helyen van.
 1. Az utasítási párbeszédpanelek megnyitása után a kijelző automatikusan 30%-os fényerejére halványul.
     > [!TIP]
-    > Ha nem látja a halvány jeleneteket a környezetében, manuálisan módosíthatja a HoloLens 2 fényerejét az eszköz bal oldalán található fényerejét jelző gombokkal.
-1. Válassza az 1–6. gombot, hogy azonnal kipróbálja az egyes színprofilokat, és keresse meg azt, amely a leginkább hasonlít a szemére (ez általában azt jelenti, hogy a jelenetnek leginkább megfelelő profil jelenik meg a legsemlegesebbnek, a szürkeárnyalatos mintázattal és a vékony tonének pedig az elvárt módon kell megjelennie.)
+    > Ha nem látja a halvány jeleneteket a környezetében, manuálisan módosíthatja a HoloLens 2 fényerejét az eszköz bal oldalán található világítási gombokkal.
+1. Válassza az 1–6. gombot, hogy azonnal kipróbálja az egyes színprofilokat, és keresse meg azt, amely a leginkább hasonlít a szemére (ez általában azt jelenti, hogy a profil, amely segít a jelenetnek a legsemlegesebbnek megjelenni, a szürke skálázási mintával és a hajszínszínekkel a vártnak megfelelően jelenik meg.)
 
     ![Színjelenet megjelenítése](images/color-cal-ui.png)
     
-1. Ha elégedett a kiválasztott profillal, válassza a **Mentés & Kilépés gombot**
-1. Ha nem szeretne módosításokat tenni, válassza a Mégse & **Kilépés** gombot, és a módosítások visszaállnak
+1. Ha elégedett a kiválasztott profillal, válassza a **Save & Exit (Kilépés)** gombot
+1. Ha nem szeretne módosításokat tenni, válassza a Mégse & **Kilépés** gombot, és a módosítások vissza lesznek állva
 
 > [!TIP]
-> A megjelenítési színbeállítás használata során az alábbi tippeket kell szem előtt tartania:
-> - A megjelenítési színek színkorrektálását bármikor újra futtathatja a Beállításokban
-> - Ha az eszközön bárki korábban használta a színprofilok módosítására vonatkozó beállítást, a legutóbbi módosítás dátuma/időpontja megjelenik a Beállítások lapon.
-> - A megjelenítési színek színkorrektálásának újrafuttatásakor a korábban mentett színprofil ki lesz emelve, és a 0. profil nem jelenik meg (mivel a 0. profil a megjelenítés eredeti színprofilját jelöli)
-> - Ha vissza szeretne állítani a megjelenítés eredeti színprofiljára, ezt a Beállítások lapon használhatja (lásd a színprofil [alaphelyzetbe](#how-to-reset-color-profile)állítását)
+> Íme néhány hasznos tipp, amely a megjelenítési színek színbeállításának használata során hasznos lehet:
+> - Ha szeretné, újra futtathatja a beállítások megjelenítési színbeállítását
+> - Ha az eszközről valaki korábban már használta a beállítást a színprofilok módosításához, a legutóbbi módosítás dátuma és időpontja megjelenik a Beállítások lapon.
+> - Amikor újra futtatja a megjelenítési színek színkiszínezését, a korábban mentett színprofil ki lesz emelve, és a 0. profil nem jelenik meg (mivel a 0. profil a megjelenítés eredeti színprofilját jelöli)
+> - Ha vissza szeretne állítani a megjelenítés eredeti színprofiljára, ezt a Beállítások lapon használhatja (lásd a színprofil alaphelyzetbe [állítását)](#how-to-reset-color-profile)
 
 ##### <a name="how-to-reset-color-profile"></a>Színprofil alaphelyzetbe állítása 
 
 Ha nem elégedett a HoloLens 2-ben mentett egyéni színprofillal, visszaállíthatja az eszköz eredeti színprofilját:
-1. Indítsa el **a Beállítások** alkalmazást, és **navigáljon a System > Egyedek elemre.**
+1. Indítsa el **a Beállítások** alkalmazást, és lépjen a System > **És elemre.**
 1. A **Színkorrektálás megjelenítése alatt** válassza a Visszaállítás alapértelmezett **színprofilra gombot.**
 1. Amikor megnyílik a párbeszédpanel, válassza **az** Újraindítás lehetőséget, ha készen áll a HoloLens 2 újraindítására és a módosítások alkalmazására.
 
 #### <a name="top-display-color-calibration-known-issues"></a>A legjobb megjelenítési színekkel kapcsolatos ismert problémák
 
-- A Beállítások lapon az állapotsring, amely a színprofil legutóbbi módosításának időpontját jelzi, elavult, amíg újra be nem töltse a Beállítások lapot.
-    - Megkerülő megoldás: Válasszon ki egy másik Beállítások lapot, majd válassza újra a Hibalapon.
+- A Beállítások lapon az állapotsring, amely a színprofil legutóbbi módosításának időpontját jelzi, elavult lesz, amíg újra be nem tölti a Beállítások lapot.
+    - Áthidaló megoldás: Válasszon ki egy másik Beállítások lapot, majd válassza újra a Hibabeesés lapot.
 
 #### <a name="default-app-picker"></a>Alapértelmezett alkalmazásválasztó
 
-Amikor aktivál egy hivatkozást, vagy egynél több telepített alkalmazást tartalmazó fájltípust nyit meg, egy új ablak nyílik meg, amely felszólítja, hogy válassza ki, melyik telepített alkalmazás kezelje a fájl- vagy hivatkozástípust. Ebben az ablakban azt is kiválaszthatja, hogy a kiválasztott alkalmazás kezelje-e az "Egyszer" vagy "Mindig" típusú fájlt vagy hivatkozástípust.
+Amikor aktivál egy hivatkozást, vagy egynél több telepített alkalmazást tartalmazó fájltípust nyit meg, egy új ablak nyílik meg, amely arra kéri, hogy válassza ki, melyik telepített alkalmazás kezelje a fájl- vagy hivatkozástípust. Ebben az ablakban azt is kiválaszthatja, hogy a kiválasztott alkalmazás kezelje-e az "Egyszer" vagy "Mindig" hivatkozástípust.
 
-Ha az "Always" (Mindig) lehetőséget választja, de később módosítani szeretné, hogy melyik alkalmazás kezeljen egy adott fájlt vagy hivatkozástípust, visszaállíthatja a mentett alapértelmezett beállításokat a **Beállítások > Alkalmazások lapon.** Görgessen az oldal aljára, és válassza a Clear (Ürítés) gombot a "Default apps for file types" (Alapértelmezett alkalmazások fájltípusokhoz) és/vagy "Default apps for link types" (Alapértelmezett alkalmazások hivatkozástípusokhoz) alatt.  Az asztali számítógépek hasonló beállításától eltérően az egyes alapértelmezett fájltípusokat nem lehet alaphelyzetbe állítani.
+Ha az "Always" (Mindig) lehetőséget választja, de később módosítani szeretné, hogy melyik alkalmazás kezeljen egy adott fájlt vagy hivatkozástípust, visszaállíthatja a mentett alapértelmezett beállításokat a **Beállítások > Alkalmazások lapon.** Görgessen az oldal aljára, és válassza a Clear (Ürítés) gombot az "Alapértelmezett alkalmazások fájltípusokhoz" és/vagy "Default apps for link types" (Alapértelmezett alkalmazások hivatkozástípusokhoz) alatt.  Az asztali számítógépek hasonló beállításával ellentétben az egyes fájltípusokat nem lehet alaphelyzetbe állítani.
 
 #### <a name="per-app-volume-control"></a>Alkalmazásonkénti kötetvezérlés
 
-Ebben a Windows-buildben a felhasználók manuálisan módosíthatja az egyes alkalmazások kötetszintét. Így a felhasználók jobban azokra az alkalmazásokra koncentrálnak, amelyekre szükségük van, vagy jobban hallanak több alkalmazás használata esetén. Ilyen lehet például, ha le kell kapcsolni egy alkalmazás mennyiségét, miközben egy másik személy távsegítségért fordul egy másikhoz.
+Ebben a Windows-buildben a felhasználók manuálisan módosíthatjják az egyes alkalmazások kötetszintjeiket. Így a felhasználók jobban azokra az alkalmazásokra koncentrálnak, amelyekre szükségük van, vagy jobban hallanak több alkalmazás használata esetén. Például le kell kapcsolni egy alkalmazás mennyiségét, miközben egy másik személyt hív meg távsegítségért egy másikban.
 
-Egy adott alkalmazás kötetének beállításhoz lépjen a **Beállítások**  ->  **Rendszerhang** elemre, majd a Speciális hangbeállítások alatt válassza az Alkalmazáskötet és az  ->   **Eszközbeállítások lehetőséget.**
+Egy adott alkalmazás kötetének beállításhoz lépjen a **Beállítások** Rendszerhang elemre, majd a Speciális hangbeállítások alatt válassza az  ->    ->  Alkalmazáskötet és **az eszközbeállítások lehetőséget.**<br/><br/>
 
- <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
+<img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
-#### <a name="swipe-to-type"></a>Pöccintéssel gépeléssel
+#### <a name="swipe-to-type"></a>Pöccintés a begépelhez
 
-Egyes ügyfelek gyorsabban "gépelnek" a virtuális billentyűzeten a begépelni kívánt szó alakjának megformálása által, és ezt a funkciót a holografikus billentyűzet előzetes verziójaként használjuk. Pöccintsen egyszerre egy szót úgy, hogy a holografikus billentyűzet síkján végiglépteti az ujjlenyomata hegyét, elforgatja a szó alakját, majd a billentyűzetsíkról megrekedi az ujjlenyomata hegyét. Pöccintéssel anélkül pöccinthet a szavak után, hogy le kellene nyomni a szóközt, ha a szavak között eltávolítja az ujját a billentyűzetről. A funkció akkor működik, ha pöccintéssel követi az ujját a billentyűzeten.
+Egyes ügyfelek gyorsabban "gépelnek" a virtuális billentyűzeten a begépelni kívánt szó alakjának megformálása által, és ezt a funkciót a holografikus billentyűzethez megtekintjük. Pöccintsen egyszerre egy szót úgy, hogy a holografikus billentyűzet síkján végiglépteti az ujjlenyomata hegyét, megpöccinti a szó alakját, majd a billentyűzetsíkról megfedi az ujjlenyomata hegyét. Pöccintéssel nyomon követő szavakat pöccinthet anélkül, hogy le kellene nyomni a szóközt úgy, hogy a szavak között eltávolítja az ujját a billentyűzetről. A funkció akkor működik, ha pöccintés nyomát látja az ujjlenyomata billentyűzeten való mozgása után.
 
-Vegye figyelembe, hogy ez a funkció a holografikus billentyűzet természetéből adódóan nem mindig tud az ujjlenyomatával szembeni ellenállást használni és elsajátítani (ellentétben a mobiltelefonos kijelzővel). 
+Vegye figyelembe, hogy ez a funkció a holografikus billentyűzet természetéből adódóan nem mindig tud az ujjlenyomatával szemben ellenállást használni (ellentétben a mobiltelefonos kijelzővel). 
 
-### <a name="power-menu-from-start"></a>Power menu from Start
+### <a name="power-menu-from-start"></a>A Power menü a Start menüből
 
-Új menü, amely lehetővé teszi, hogy a felhasználó kijelentkeztetje, leállítsa és újraindítsa az eszközt. A HoloLens-kezdőképernyő jelzi, hogy mikor érhető el rendszerfrissítés.
+Új menü, amely lehetővé teszi, hogy a felhasználó kijelentkeztetje, leállítsa és újraindítsa az eszközt. A HoloLens-kezdőképernyő jelzi, hogy mikor érhető el a rendszerfrissítés.
 
 #### <a name="how-to-use"></a>Használat
 
 1. Nyissa meg a HoloLens-kezdőképernyő [a Start](hololens2-basic-usage.md#start-gesture) kézmozdulattal, vagy mondja ki a "Go to Start" (Ugrás az indításhoz) gombra.
 
-2. Figyelje meg a felhasználói profil képe melletti három pont ikont (...):
+2. Figyelje meg a felhasználói profil képe melletti három pont ikont (...):<br/><br/>
 
    <img alt="ser context dots, ..." src="./images/powertransition_icon_default_cropped.png" width="586" height="330" />
 
 3. Válassza ki a felhasználói profil képét a saját kezűleg vagy a "Power" hangparancs használatával.
 
-4. Megjelenik egy menü, amely az eszköz kijelentkeztet, újraindítható vagy leállítható beállításait tartalmaz:
+4. Megjelenik egy menü, amely az eszköz kijelentkeztet, újraindítható vagy leállítható beállításait tartalmaz:<br/><br/>
 
    <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
 
 5. Válassza ki a menüelemet a HoloLens kijelentkeztetésével, újraindításával vagy leállítával. Előfordulhat, hogy a Kijelentkezás lehetőség nem érhető el, ha az eszköz egyetlen [Microsoft-fiókhoz (MSA)](hololens-identity.md)vagy helyi fiókhoz van beállítva.
 
-6. Zárja be a menüt máshová való érintéssel, vagy zárja be Start menü a Start kézmozdulattal.
+6. Zárja be a menüt bárhol másra, vagy zárja be Start menü start kézmozdulattal.
 
 #### <a name="update-indicator"></a>Frissítésjelző
 
-Amikor elérhetővé válik egy frissítés, a három pont ikon kigyűjt, jelezve, hogy az újraindítás telepíti a frissítést. A menü beállításai is megváltoznak, hogy tükrözzék a frissítés jelenlétét.<br/><br/>
+Amikor egy frissítés elérhetővé válik, a három pont ikon kigyűjt, jelezve, hogy az újraindítás telepíti a frissítést. A menü beállításai is megváltoznak, hogy tükrözzék a frissítés jelenlétét.<br/><br/>
 
 <img alt="User context menu showing update" src="./images/powertransition_aad_options_update_cropped.png" width="470" height="313" />
 
 ### <a name="multiple-users-listed-on-sign-in-screen"></a>Több felhasználó szerepel a Bejelentkezési képernyőn
 
-Korábban a Bejelentkezés képernyőn csak a legutóbb bejelentkezett felhasználó, valamint az "Egyéb felhasználó" belépési pont jelent meg. Ügyfeleink visszajelzést kaptak arról, hogy ez nem elegendő, ha több felhasználó jelentkezett be az eszközre. Így is újra kellett beírniuk a felhasználónevüket stb.
+Korábban a Bejelentkezés képernyőn csak a legutóbb bejelentkezett felhasználó, valamint az "Egyéb felhasználó" belépési pont jelent meg. Ügyfeleink visszajelzést kaptak arról, hogy ez nem elegendő, ha több felhasználó is bejelentkezett az eszközre. Továbbra is újra kellett beírniuk a felhasználónevüket stb.
 
-Az ebben a Windows-buildben bemutatott Egyéb felhasználó lehetőség kiválasztásakor, amely a PIN-kód beviteli mezőtől jobbra található, a Bejelentkezés képernyőn több felhasználó jelenik meg, akik korábban bejelentkeztek az eszközre.  Így a felhasználók kiválaszthatják a felhasználói profiljukat, majd a saját hitelesítő Windows Hello bejelentkeznek. A Fiók hozzáadása gombbal új felhasználó is hozzáadható az eszközhöz az Egyéb felhasználók **lapon.**
+Az ebben a Windows-buildben bemutatott Egyéb felhasználó lehetőség kiválasztásakor, amely a PIN-kód beviteli mezőtől jobbra található, a Bejelentkezés képernyőn több olyan felhasználó is megjelenik, akik korábban bejelentkeztek az eszközre.  Ez lehetővé teszi, hogy a felhasználók kiválasztják a felhasználói profiljukat, majd a saját Windows Hello jelentkezzenek be. A Fiók hozzáadása gombbal új felhasználó is hozzáadható az eszközhöz az Egyéb felhasználók **lapon.**
 
-Az Egyéb felhasználók menü Egyéb felhasználók gombja megjeleníti az eszközre legutóbb bejelentkezett felhasználót. Válassza ezt a gombot a felhasználó bejelentkezési képernyőjére való visszatéréshez.
+Az Egyéb felhasználók menüBen az Egyéb felhasználók gomb megjeleníti az eszközre legutóbb bejelentkezett felhasználót. Válassza ezt a gombot a felhasználó bejelentkezési képernyőjére való visszatéréshez.
 
-![Bejelentkezési képernyő alapértelmezése](./images/multiusers1.jpg)
+![Bejelentkezési képernyő – alapértelmezés](./images/multiusers1.jpg)
 
 <br>
 
@@ -364,11 +439,11 @@ Az Egyéb felhasználók menü Egyéb felhasználók gombja megjeleníti az eszk
 ### <a name="usb-c-external-microphone-support"></a>USB-C külső mikrofon támogatása
 
 > [!IMPORTANT]
-> Az USB-mikrofon csatlakoztatása nem lesz automatikusan beállítva **bemeneti eszközként.** Az USB-C-kábeleket csatlakoztatva a felhasználók megfigyelhetik, hogy a hanganyag automatikusan a mikrofonhoz lesz átirányítva, de a HoloLens operációs rendszer a belső mikrofontömböt a többi bemeneti eszköz fölé rangsorítja. **USB-C mikrofon használata érdekében kövesse az alábbi lépéseket.**
+> Az USB-mikrofon csatlakoztatása nem lesz automatikusan beállítva **bemeneti eszközként.** USB-C-kábelek csatlakoztatása esetén a felhasználók megfigyelhetik, hogy a mikrofon hanganyaga automatikusan a mikrofonhoz lesz irányítva, de a HoloLens operációs rendszer a belső mikrofontömböt a többi bemeneti eszköz fölé rangsorítja. **USB-C mikrofon használata érdekében kövesse az alábbi lépéseket.**
 
-A felhasználók a Hangbeállítások panelen választhatnak USB-C-hez csatlakoztatott külső **mikrofonokat.** Az USB-C-mikrofonok hívásra, felvételre stb. használhatók.
+A felhasználók a Hangbeállítások panelen  választhatnak USB-C-hez csatlakoztatott külső mikrofonokat. Az USB-C-mikrofonok hívásra, felvételre stb. használhatók.
 
-Nyissa meg a **Beállítások** alkalmazást, és válassza a **System**  >  **Sound lehetőséget.**
+Nyissa meg **a Beállítások** alkalmazást, és válassza a **Rendszerhang**  >  **lehetőséget.**
 
 ![Hangbeállítások](images/usbc-mic-1.jpg)
 
@@ -377,7 +452,7 @@ Nyissa meg a **Beállítások** alkalmazást, és válassza a **System**  >  **S
 >
 > Ezután a legördülő menüben állítsa a  külső mikrofont Alapértelmezett vagy **Kommunikációs alapértelmezettre.** Az **Alapértelmezett beállítás** azt jelenti, hogy a külső mikrofon mindenhol használatban lesz.
 >
-> A **Kommunikáció alapértelmezett beállítása** azt jelenti, hogy a külső mikrofon a Remote Assist és más kommunikációs alkalmazásokban lesz használva, de a HoloLens mic tömb továbbra is használható más feladatokhoz.
+> A **Kommunikáció alapértelmezett beállítása** azt jelenti, hogy a külső mikrofon a Remote Assistben és más kommunikációs alkalmazásokban lesz használva, de a HoloLens mic tömb továbbra is használható más feladatokhoz.
 
 ![Hangeszközök kezelése](images/usbc-mic-2.png)
 
@@ -389,27 +464,27 @@ Nyissa meg a **Beállítások** alkalmazást, és válassza a **System**  >  **S
 
 Sajnos a Bluetooth-mikrofonok jelenleg még nem támogatottak a HoloLens 2-ben.
 
-#### <a name="troubleshooting-usb-c-microphones"></a>USB-C mikrofonok hibaelhárítása
+#### <a name="troubleshooting-usb-c-microphones"></a>USB-C-mikrofonok hibaelhárítása
 
-Vegye figyelembe, hogy egyes USB-C-mikrofonok helytelenül, mikrofonként és *beszélőként is* jelentik magukat. Ez a mikrofonnal, és nem a HoloLens-sel van probléma. Ha ezen mikrofonok valamelyikét a HoloLensbe csatlakoztatja, előfordulhat, hogy a hang elveszett. Szerencsére van egy egyszerű javítás.  
+Vegye figyelembe, hogy egyes USB-C-mikrofonok helytelenül jelentik magukat mikrofonként és *beszélőként* is. Ez a mikrofonnal, és nem a HoloLens-sel van probléma. Ha ezen mikrofonok valamelyikét a HoloLenshez csatlakoztatja, a hang elveszhet. Szerencsére van egy egyszerű javítás.  
 
-A **Settings** System Sound  ->  **(Beállítások rendszerhangja)** lapon explicit módon állítsa be a beépített beszélők  ->   **(Analog Feature Audio Driver)** alapértelmezett **eszközként való beállítását.** A HoloLensnek akkor is meg kell emlékeznie erre a beállításra, ha a mikrofont eltávolítják, majd később újracsatlakoztatják.
+A **Settings** System Sound  ->  **(Beállítások rendszerhangja)** lapon explicit módon állítsa be a beépített beszélők  ->   **(Analog Feature Audio Driver)** alapértelmezett eszközként való **beállítását.** A HoloLensnek akkor is meg kell jegyeznie ezt a beállítást, ha a mikrofont eltávolítják, majd később újracsatlakoztatják.
 
-![USB-C mikrofonok hibaelhárítása](images/usbc-mic-4.png)
+![USB-C-mikrofonok hibaelhárítása](images/usbc-mic-4.png)
 
 ### <a name="visitor-auto-logon-for-kiosks"></a>Látogatói automatikus bejelentkezés kioszkok számára
 
-Ez az új funkció lehetővé teszi, hogy a látogatói fiókokba való automatikus bejelentkezés kioszkmódban is használható legyen.
+Ez az új funkció lehetővé teszi a Látogatói fiókokba való automatikus bejelentkezést kioszkmódokhoz.
 
-Nem AAD-konfiguráció esetén az eszköz automatikus látogatói bejelentkezésre való konfigurálása:
+Nem AAD-konfiguráció esetén egy eszköz konfigurálása látogatói automatikus bejelentkezéshez:
 
 1. Hozzon létre egy kiépítési csomagot, amely:
-    1. Úgy **konfigurálja a Futásidejű beállításokat/AssignedAccess-t,** hogy engedélyezze a látogatói fiókokat.
+    1. Úgy **konfigurálja a Runtime-beállításokat/AssignedAccess-t,** hogy engedélyezze a látogatói fiókokat.
     1. Ha szükséges, regisztrálja az eszközt az MDM-be (Futásidejű **beállítások/Munkahely/Regisztrációk),** hogy később kezelhető legyen.
     1. Ne hozzon létre helyi fiókot
 1. [Alkalmazza a kiépítési csomagot.](hololens-provisioning.md)
 
-AAD-konfiguráció esetén a felhasználók a maihoz hasonlót érhetnek el a módosítás nélkül. A kioszkmódhoz konfigurált AAD-hez csatlakozott eszközök egyetlen gomb koppintással bejelentkeztetnek egy látogatói fiókot a bejelentkezési képernyőről. Miután bejelentkezett a látogatói fiókba, az eszköz nem kéri újra a bejelentkezést, amíg a Látogató kijelentkezik a Start menüből, vagy újra nem indítják az eszközt.
+Az AAD-konfigurációk esetén a felhasználók a maihoz hasonló eredményt érhetnek el a módosítás nélkül. A kioszkmódhoz konfigurált AAD-hez beléptethet egy látogatói fiókot egyetlen gombkoppintással a bejelentkezési képernyőről. Miután bejelentkezett a látogatói fiókba, az eszköz nem kéri újra a bejelentkezést, amíg a Látogató kijelentkezik a Start menüből, vagy újra nem indítják az eszközt.
 
 A látogatói automatikus bejelentkezés egyéni [OMA-URI szabályzat segítségével](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10) kezelhető:
 
@@ -421,7 +496,7 @@ A látogatói automatikus bejelentkezés egyéni [OMA-URI szabályzat segítség
 
 ### <a name="use-the-new-settings-and-edge-apps-in-kiosk-modes"></a>Az új Settings és Edge alkalmazások használata kioszkmódban
 
-Amikor alkalmazásokat ad hozzá [a kioszkhoz,](hololens-kiosk.md)a rendszergazda gyakran hozzáadja az alkalmazást a kioszkhoz, de az alkalmazásfelhasználói modell azonosítóját (AUMID) használja. Mivel a Beállítások alkalmazást és az Microsoft Edge-alkalmazást is új alkalmazásnak tekintjük, és eltérnek a régebbi alkalmazásoktól, az alkalmazásokhoz AUMID-t használni képes kioszkokat frissíteni kell az új AUMID-hoz.
+Amikor alkalmazásokat ad hozzá [a kioszkhoz,](hololens-kiosk.md)a rendszergazda gyakran hozzáadja az alkalmazást a kioszkhoz, de az alkalmazásfelhasználói modell azonosítóját (AUMID) használja. Mivel a Beállítások alkalmazást és az Microsoft Edge-alkalmazást is új alkalmazásnak tekintjük, és eltérnek a régebbi alkalmazásoktól, az alkalmazásokhoz AUMID-t használni képes kioszkokat frissíteni kell az új AUMID használatának megfelelően.
 
 Amikor úgy módosít egy kioszkot, hogy az tartalmazza az új alkalmazásokat, javasoljuk, hogy adja hozzá az új AUMID-t, és hagyja meg a régit. Ez egyszerű átállást fog létrehozni, amikor a felhasználók frissítik az operációs rendszert, és nem kell új szabályzatokat kapniuk a kioszk megfelelő használatának érdekében.
 
@@ -434,7 +509,7 @@ Amikor úgy módosít egy kioszkot, hogy az tartalmazza az új alkalmazásokat, 
 
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>A kioszkmód viselkedésének változásai a hibák kezelésével
 
-A régebbi buildek esetén, ha egy eszköz kioszkkonfigurációval rendelkezik, amely a globális hozzáférés és az AAD-csoporttagok hozzárendelt hozzáférésének kombinációja, a felhasználó a sikertelen AAD-csoporttagság meghatározásakor a "semmi nem jelenik meg a[Start](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)menüben" menüben.
+A régebbi buildek esetén, ha egy eszköz kioszkkonfigurációval rendelkezik, amely a globális hozzáférés és az AAD-csoporttagok hozzárendelt hozzáférésének kombinációja, akkor az AAD-csoporttagság meghatározása sikertelen volt, a felhasználó a["start](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)menüben semmi sem jelenik meg" jelenik meg.
 
 Ebben a Windows-kiadásban a kioszkmód vissza fog állni a globális kioszkkonfigurációhoz (ha van ilyen), ha az AAD-csoport kioszkmódja során hibák lépnek fel.
 
@@ -449,7 +524,7 @@ Kibővítjük az elérhető Beállítás URI-k listáját, amelyeket a rendszerg
 > [!NOTE]
 > **Elavult: ms-settings:network-proxy**
 >
-> Ezekben az újabb buildekben az egyik beállítási oldal elavult. A régi **Hálózati & internetproxy** lap már nem érhető el  >   globális beállításként. Az új kapcsolatonkénti proxybeállítások az Internet  >  **Wi-Fi&** tulajdonságai vagy az Internet  >   **Ethernet&** tulajdonságai alatt  >    >  **találhatók.**
+> Ezekben az újabb buildekben az egyik beállítási oldal elavult. A régi **Hálózati & internetproxy** lap már nem  >   érhető el globális beállításként. Az új kapcsolatonkénti proxybeállítások az Internet  >  **Wi-Fi&** tulajdonságai vagy az Internet  >   **Ethernet&** tulajdonságai alatt  >    >  **találhatók.**
 
 <br>
 
@@ -501,7 +576,7 @@ Ez a szolgáltatás a [Connectivity/AllowConnectedDevices használatával kezelh
 
 ### <a name="new-os-diagnostic-traces"></a>Új operációsrendszer-diagnosztikai nyomkövetések
 
-A Beállítások alkalmazás korábbi hibaelhárítói mellett egy új hibaelhárítót is hozzáadtunk az operációsrendszer-frissítésekhez elérhető új Beállítások alkalmazással. Lépjen a **Beállítások Frissítése**  ->  **biztonsági &amp; hibaelhárítása**  >    >  **lapra, Windows Update** válassza az Indítás **lehetőséget.** Ez lehetővé teszi a nyomkövetések gyűjtését az operációsrendszer-frissítésekkel kapcsolatos probléma reprodukálása során, hogy az it-it és a támogatási szolgálattal kapcsolatos hibaelhárítást javítsa.
+A Beállítások alkalmazás korábbi hibaelhárítói mellett egy új hibaelhárítót is hozzáadtunk az új Operációsrendszer-frissítések beállítások alkalmazásához. Lépjen a **Beállítások Frissítése**  ->  **biztonsági &amp; hibaelhárítása**  >    >  **lapra, Windows Update** válassza az Indítás **lehetőséget.** Ez lehetővé teszi a nyomkövetések gyűjtését az operációsrendszer-frissítésekkel kapcsolatos probléma reprodukálása során, hogy az it-it és a támogatási szolgálattal kapcsolatos hibaelhárítást javítsa.
 
 ### <a name="delivery-optimization-preview"></a>Kézbesítésoptimalizálás előzetes verzió
 
@@ -526,56 +601,56 @@ Az előzetes verzióval kapcsolatos néhány figyelmeztetés:
 - A HoloLens támogatása ebben az előzetes verzióban csak az operációs rendszer frissítéseit támogatja.
 - Windows Holographic for Business a HTTP letöltési módokat és a Microsoft-végpontról [való Csatlakoztatott gyorsítótár letöltéseket támogatja;](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) A holoLens-eszközök jelenleg nem támogatják a társközi letöltési módokat és csoport-hozzárendeléseket.
 - A HoloLens nem támogatja a végpontok üzembe helyezését Windows Server Update Services optimalizálását.
-- A hibaelhárításhoz vagy diagnosztikára van szükség a Csatlakoztatott gyorsítótár-kiszolgálón, vagy nyomkövetést kell gyűjteni a HoloLensen a HoloLensen a Settings  >  **Update & Security**  >   **Troubleshooting**  >   **Windows Update**.
+- A hibaelhárításhoz diagnosztikára van szükség a Csatlakoztatott gyorsítótár-kiszolgálón, vagy nyomkövetést kell gyűjteni a HoloLensen a HoloLensen a Settings  >  **Update & Security**  >   **Troubleshooting**  >   **Windows Update**.
 
 ### <a name="it-admin---update-checklist"></a>Rendszergazda – Frissítési ellenőrzőlista
 
-Ez az ellenőrzőlista segít az ebben a funkciófrissítésben hozzáadott új elemekről, amelyek hatással lehetnek az aktuális eszközkezelési konfigurációkra vagy az új szolgáltatásokra, amelyek használatba lesznek adva.
+Ez az ellenőrzőlista segít az ebben a funkciófrissítésben hozzáadott új elemekről, amelyek hatással lehetnek az aktuális eszközkezelési konfigurációkra, vagy olyan új funkciókra, amelyek használatba lesznek adva.
 
-#### <a name="updates-to-kiosk-mode"></a>A Kioszkmód frissítései
+#### <a name="updates-to-kiosk-mode"></a>A kioszkmód frissítései
 
-✔️ Új [**AUMID-k új alkalmazásokhoz Kioszk módban:**](#use-the-new-settings-and-edge-apps-in-kiosk-modes)
+✔️ Új [**AUMID-k új alkalmazásokhoz kioszkmódban:**](#use-the-new-settings-and-edge-apps-in-kiosk-modes)
 
-Ha korábban a Beállítások alkalmazást vagy az Microsoft Edge-alkalmazást egy kioszkban használtuk, ezeket az alkalmazásokat olyan új alkalmazásokra cseréljük, amelyek más alkalmazásazonosítót használnak. Javasoljuk, hogy olvassa el alább az Új [AUMID-k új alkalmazásokhoz kioszkmódban való](#use-the-new-settings-and-edge-apps-in-kiosk-modes) beállítását. Ezzel biztosíthatja, hogy továbbra is a Beállítások alkalmazás legyen a Kioszkban, vagy tartalmazza az új Microsoft Edge alkalmazást. Ezeket a módosításokat most már végre lehet helyezni, és az összes eszközön üzembe lehet helyezni, így zökkenőmentesebb a frissítéskor való váltás.
+Ha korábban a Beállítások alkalmazást vagy egy Microsoft Edge alkalmazást használt kioszkban, ezeket az alkalmazásokat új alkalmazásokra cseréljük, amelyek más alkalmazásazonosítót használnak. Javasoljuk, hogy olvassa el alább az [Új AUMID-k új alkalmazásokhoz Kioszk módban cikkeket.](#use-the-new-settings-and-edge-apps-in-kiosk-modes) Ezzel biztosíthatja, hogy továbbra is a Beállítások alkalmazás legyen a kioszkban, vagy tartalmazza az új Microsoft Edge alkalmazást. Ezeket a módosításokat már most is végre lehet tenni, és az összes eszközön üzembe lehet helyezni, és zökkenőmentesebb frissítésváltást lehetővé tenni.
 
-✔️ [**látogatói automatikus bejelentkezés kioszkok számára:**](#visitor-auto-logon-for-kiosks) 
+✔️ Látogató [**automatikus bejelentkezése kioszkok számára:**](#visitor-auto-logon-for-kiosks) 
 
-A látogatók mostantól automatikusan bejelentkeztetnek egy kioszkba. Ez a viselkedés alapértelmezés szerint be van kapcsolva, de kezelhető és letiltható.
+A látogatók mostantól automatikusan bejelentkeztetheti őket egy kioszkba. Ez a viselkedés alapértelmezés szerint be van kapcsolva, de kezelhető és letiltható.
 
-✔️ [**továbbfejlesztett kioszkmódú hibák kezelésével:**](#kiosk-mode-behavior-changes-for-handling-of-failures)
+✔️ [**továbbfejlesztett kioszkmódú sikertelen kezelés:**](#kiosk-mode-behavior-changes-for-handling-of-failures)
 
-Ha a bejelentkezett AAD-felhasználó AAD-csoporttagságának meghatározása nem sikerült, a rendszer a start menü globális kioszkkonfigurációját használja (ha van), ellenkező esetben a felhasználó üres Start menüt kap. Bár az üres Start menü nem közvetlenül beállítható konfiguráció, ez az új kezelés lehet valami, amely tájékoztatja a támogatási részleget arról, hogy kioszkokat használ-e, mivel ez a konfigurációkra is vonatkozhat, vagy előfordulhat, hogy új módosításokat szeretne végezni a hozzárendelt hozzáférési konfigurációkon.
+Ha a bejelentkezett AAD-felhasználó AAD-csoporttagságának meghatározása nem sikerült, akkor a rendszer a globális kioszkkonfigurációt használja a Start menüben (ha van), ellenkező esetben a felhasználó üres Start menüt kap. Bár az üres Start menü nem közvetlenül beállítható konfiguráció, ez az új kezelés segíthet tájékoztatni a támogatási részleget a kioszkok használata esetén, mivel ez a konfigurációkra is vonatkozhat, vagy új módosításokat kell végeznie a hozzárendelt hozzáférési konfigurációkon.
 
 #### <a name="updates-to-page-settings-visibility"></a>Az oldalbeállítások láthatóságának frissítései
 
-✔️ [**URI-k létrehozása az oldalbeállítások láthatósága számára**](#new-settings-uris-for-page-settings-visibility)
+✔️ új [**beállítási URI-k az Oldalbeállítások láthatósága beállításhoz**](#new-settings-uris-for-page-settings-visibility)
 
-Ha jelenleg az [Oldalbeállítások](settings-uri-list.md) láthatósága lehetőséget használja, akkor lehetséges, hogy módosítani szeretné a meglévő URI-kat, amelyek engedélyezettek vagy blokkolva vannak.
+Ha jelenleg az [Oldalbeállítások](settings-uri-list.md) láthatósága beállítást használja, akkor előfordulhat, hogy módosítani szeretné a meglévő URI-eket, amelyek engedélyezettek vagy le vannak tiltva.
 
 #### <a name="updates-for-your-wdac-policy"></a>A WDAC-szabályzat frissítései
-✔️ Ha korábban a WDAC Microsoft Edge keresztül blokkolta a forgalmat, frissítenie kell a WDAC-szabályzatot. Tekintse át az alábbiakat, és használja a megadott mintakódot.
+✔️ Ha korábban a WDAC Microsoft Edge blokkolta a forgalmat, frissítenie kell a WDAC-szabályzatot. Tekintse át az alábbiakat, és használja a megadott mintakódot.
 #### <a name="enable-new-endpoints-for-edge"></a>Új végpontok engedélyezése az Edge-hez
 ✔️ Ha olyan infrastruktúrával rendelkezik, amely magában foglalja a hálózati végpontok, például a proxy vagy a tűzfal konfigurálását, engedélyezze ezeket az új végpontokat az új Microsoft Edge számára.
 
 #### <a name="newly-configurable-items"></a>Újonnan konfigurálható elemek
 
-✔️ Tartalék [diagnosztika konfigurálása:](#configuring-fallback-diagnostics-via-settings-app)Beállíthatja, hogy a rendszer gyűjtse-e a tartalék diagnosztikát, és ki gyűjtheti be.
+✔️ Configure [Fallback Diagnostics](#configuring-fallback-diagnostics-via-settings-app)(Tartalék diagnosztika konfigurálása): Beállíthatja, hogy a rendszer gyűjtse-e a tartalék diagnosztikát, és ki gyűjtheti be.
 
-✔️ Dolgok megosztása a közeli[eszközökkel:](#share-things-with-nearby-devices)Letilthatja az új közeli megosztási funkciót.
+✔️ Megosztás[a közeli eszközökkel:](#share-things-with-nearby-devices)Letilthatja az új közeli megosztási funkciót.
 
 ✔️ [configuring policy settings for the new Microsoft Edge:](#configuring-policy-settings-for-the-new-microsoft-edge)Review the newly configurations available for Microsoft Edge.
 
 #### <a name="new-diagnostic-tool"></a>Új diagnosztikai eszköz
 
-✔️[új operációsrendszer-diagnosztikai nyomkövetések:](#new-os-diagnostic-traces)Az operációs rendszer frissítésével kapcsolatos naplók gyűjtése.
+✔️[Új operációsrendszer-diagnosztikai nyomkövetés:](#new-os-diagnostic-traces)Az operációs rendszer frissítésével kapcsolatos naplók gyűjtése.
 
 ### <a name="improvements-and-fixes-in-the-update"></a>A frissítés fejlesztései és javításai:
 
 - [Az offline diagnosztika](hololens-diagnostic-logs.md#offline-diagnostics) a sorozatszámmal és az operációs rendszer verziójával kapcsolatos további eszközadatokat is tartalmaz.
-- Kijavítja az üzletági alkalmazások futásidejű kiépítési csomagokkal történő üzembe helyezéssel kapcsolatos problémát.
+- Kijavítja az üzletági alkalmazások futásidejű kiépítési csomagokon keresztüli üzembe helyezéssel kapcsolatos problémákat.
 - Kijavítja az üzletági alkalmazások telepítési állapotjelentési szolgáltatásával kapcsolatos problémát.
 - Kijavít egy problémát, amely az új alkalmazáscsomagok eszköz-visszaállítások közötti megőrzésével kapcsolatban áll fenn.
-- Kijavít egy problémát, amely miatt helytelen szimbólumok írhatóak be az Edge-be a japán ügyfelek számára.
+- Kijavít egy problémát, amely miatt helytelen szimbólumok írhatóak be az Edge-be japán ügyfelek számára.
 - Javítja az operációs rendszer frissítéseinek rugalmasságát az előre telepített alkalmazások, például az Edge körül. 
 - A frissítés megbízhatóságát kijavítja, amely hatással van a Microsoft Edge. 
 
@@ -590,7 +665,7 @@ A frissítés fejlesztései és javításai:
 - Build 18362.1110
 
 A frissítés fejlesztései és javításai:
-- Ez a havi minőségi frissítés nem tartalmaz jelentős változásokat. **Ez a build a továbbiakban nem kap havi szolgáltatásfrissítéseket.** Javasoljuk, hogy próbálja ki a legújabb buildet, a Windows Holographic 21H1-es verzióját.
+- Ez a havi minőségi frissítés nem tartalmaz jelentős változásokat. **Ez a build többé nem kap havi szolgáltatásfrissítéseket.** Javasoljuk, hogy próbálja ki a legújabb buildet, a Windows Holographic 21H1-es verzióját.
 
 
 
@@ -606,7 +681,7 @@ A frissítés fejlesztései és javításai:
 
 A frissítés fejlesztései és javításai:
 
-- Elhárít egy problémát, amely miatt a Beállítások alkalmazás összeomlik, amikor megpróbálja módosítani egy helyi fiók jelszavát.
+- Kijavít egy problémát, amely miatt a Beállítások alkalmazás összeomlik, amikor megpróbálja módosítani egy helyi fiók jelszavát.
 
 
 ## <a name="windows-holographic-version-20h2---march-2021-update"></a>Windows Holographic, 20H2-es verzió – 2021. márciusi frissítés
@@ -614,8 +689,8 @@ A frissítés fejlesztései és javításai:
 
 A frissítés fejlesztései és javításai:
 
-- Az AdvancedPhotoCapture vagy LowLagPhotoCapture használatával a HoloLens 2 használatával készített fényképeket használó ügyfelek mostantól a fénykép rögzítése után legfeljebb 3 másodperccel lekérik a kamerát.
-- A Eszközportál szolgáltatás memóriavesztésének kijavítása. A probléma megnövekedett memóriahasználatot okozott a szolgáltatásban, amely miatt más alkalmazások nem foglalták le a memóriát.
+- Az AdvancedPhotoCapture vagy a LowLagPhotoCapture használatával a HoloLens 2 használatával készített fényképeket használó ügyfelek mostantól a fénykép rögzítése után legfeljebb 3 másodperccel lekérik a kamera testét.
+- Javítva a Eszközportál szolgáltatás memóriavesztése, amely a szolgáltatás megnövekedett memóriahasználatát okozta, amely miatt más alkalmazások nem foglalták le a memóriát.
 - Kijavítottunk egy hibát, amely miatt a szakaszos bevezetésben regisztrált felhasználók nem tudnak bejelentkezni az eszközre.
 
 ## <a name="windows-holographic-version-1903---march-2021-update"></a>Windows Holographic, 1903-as verzió – 2021. márciusi frissítés
@@ -623,7 +698,7 @@ A frissítés fejlesztései és javításai:
 
 A frissítés fejlesztései és javításai:
 
-- A Eszközportál szolgáltatás memóriavesztésének kijavítása, amely a szolgáltatás megnövekedett memóriahasználatát okozta, amely miatt más alkalmazások nem foglalták le a memóriát.
+- Javítva a Eszközportál szolgáltatás memóriavesztése, amely a szolgáltatás megnövekedett memóriahasználatát okozta, amely miatt más alkalmazások nem foglalták le a memóriát.
 
 ## <a name="windows-holographic-version-20h2---february-2021-update"></a>Windows Holographic, 20H2-es verzió – 2021. februári frissítés
 - Build 19041.1136
@@ -645,7 +720,7 @@ Ez a havi minőségi frissítés nem tartalmaz jelentős változásokat. Javasol
 A frissítés fejlesztései és javításai:
 
 - Jobb teljesítmény indítás, folytatás és felhasználóváltás során, ha sok felhasználó van az eszközön.
-- Arm32-támogatás hozzáadva a [Research Mode-hez.](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/research-mode)
+- Arm32-támogatás hozzáadva a [Kutatási módhoz.](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/research-mode)
 
 ## <a name="windows-holographic-version-1903---january-2021-update"></a>Windows Holographic, 1903-as verzió – 2021. januári frissítés
 - Build 18362.1091
@@ -664,7 +739,7 @@ Az eszközök akkor minősülnek  "felügyeltnek", ha az alábbiak bármelyike i
 - Kiépítési [csomaggal konfigurálva](hololens-provisioning.md)
 - A felhasználói [identitás](hololens-identity.md) az Azure AD
 
-Most már anélkül telepítheti az alkalmazásokat, hogy engedélyeznie kellene a fejlesztői módot, vagy Eszközportál.  Egyszerűen töltse le (USB-n vagy peremhálózaton keresztül) az Appx-csomagot az eszközre, és navigáljon az Appx-csomaghoz a Fájlkezelő, hogy a rendszer a telepítést elindító kérést kapjon.  Másik lehetőségként [kezdeményezzen telepítést a weblapról.](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)  Az Microsoft Store-ból telepített alkalmazásokhoz vagy az MDM LOB App Deployment funkcióját használó alkalmazásokhoz hasonló [](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) módon az [](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) alkalmazásoknak digitálisan alá kell írniuk az aláírási eszközzel, és az aláíráshoz használt tanúsítványnak megbízhatónak kell lennie a HoloLens-eszközben az alkalmazás üzembe helyezése előtt.
+Most már anélkül telepíthet alkalmazásokat, hogy engedélyeznie kellene a fejlesztői módot, vagy engedélyeznie kellene a Eszközportál.  Egyszerűen töltse le (USB-n vagy peremhálózaton keresztül) az Appx-csomagot az eszközre, és navigáljon az Appx-csomaghoz a Fájlkezelő, hogy a rendszer a telepítést elindító kérést kapjon.  Másik lehetőségként [kezdeményezzen telepítést a weblapról.](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)  Az Microsoft Store-ból telepített alkalmazásokhoz vagy az MDM LOB App Deployment funkcióját használó alkalmazásokhoz hasonló [](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) módon az [](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) alkalmazásoknak digitálisan alá kell írniuk az aláírási eszközzel, és az aláíráshoz használt tanúsítványnak megbízhatónak kell lennie a HoloLens-eszközben az alkalmazás üzembe helyezése előtt.
 
 **Alkalmazástelepítési utasítások.**
 
@@ -708,7 +783,7 @@ Ez a legújabb kiadás a 2004-es verzió havi frissítése, de ezúttal új funk
 
 | Szolgáltatás                                              | Leírás                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support) | Aktívan kiszámítja a szempozíciókat anélkül, hogy a felhasználók szemkövetésen keresztülmennek.   |
+| [Automatikus szempozíció támogatása](hololens-release-notes.md#auto-eye-position-support) | Aktívan számítja ki a szempozíciókat anélkül, hogy a felhasználók szemkövetésen keresztülmennek.   |
 | [Tanúsítványkezelő](hololens-release-notes.md#certificate-manager)   | Lehetővé teszi, hogy az új egyszerűbb módszerek tanúsítványokat telepítsenek és távolítsanak el a Beállítások alkalmazásból.     |
 | [Automatikus indítású kiépítés USB-ről](hololens-release-notes.md#auto-launch-provisioning-from-usb)                    | Az USB-meghajtókon található kiépítési csomagok automatikusan kérik a kiépítési oldalt az OOBE-ban.                                                         |
 | [Kiépítési csomagok automatikus megerősítése az OOBE-ban](hololens-release-notes.md#auto-confirm-provisioning-packages-in-oobe)           | A kiépítési csomagokat a rendszer automatikusan alkalmazza az OOBE során a kiépítési oldalról.                                                         |
@@ -732,7 +807,7 @@ Ez a legújabb kiadás a 2004-es verzió havi frissítése, de ezúttal új funk
 
 A HoloLens 2 szempozíciói lehetővé teszik a pontos hologrampozíciót, a kényelmes megtekintést és a jobb megjelenítési minőséget. A szempozíciók kiszámítása belsőleg, a szemkövetési számítások részeként történt. Ehhez azonban minden felhasználónak szemkövetést kell követnie, még akkor is, ha a felhasználói élményhez nem szükséges szembetekintő adat.
 
-**Az automatikus szempozíció (Auto Eye Position, AEP)** lehetővé teszi, hogy ezek a forgatókönyvek interakció nélküli módon számítsák ki a felhasználó szempozícióit. Az automatikus szempozíció automatikusan elindul a háttérben attól a pillanattól kezdve, hogy a felhasználó bekapcsolja az eszközt. Ha a felhasználó nem rendelkezik előzetes szemkövetési rendszerrel, az Auto Eye Position 20–30 másodperces feldolgozási idő után elkezdi a felhasználó szempozícióját a kijelzőrendszer számára. A felhasználói adatok nem maradnak meg az eszközön, ezért ez a folyamat meg lesz ismételve, ha a felhasználó kikapcsolja és visszateszi az eszközt, vagy ha az eszköz újraindul vagy felébreszti az alvó állapotból.
+**Az automatikus szempozíció (Auto Eye Position, AEP)** lehetővé teszi, hogy ezek a forgatókönyvek interakció nélküli módon számítsák ki a felhasználó szempozícióit. Az automatikus szempozíció automatikusan elindul a háttérben attól a pillanattól kezdve, hogy a felhasználó bekapcsolja az eszközt. Ha a felhasználó nem rendelkezik előzetes szemkövetési rendszerrel, az Auto Eye Position 20–30 másodperces feldolgozási idő után elkezdi a felhasználó szempozícióját a kijelzőrendszernek. A felhasználói adatok nem maradnak meg az eszközön, ezért ez a folyamat meg lesz ismételve, ha a felhasználó kikapcsolja és visszateszi az eszközt, vagy ha az eszköz újraindul vagy felébreszti az alvó állapotból.
 
 Az Auto Eye Position funkcióval a rendszer viselkedése megváltozik, ha egy nem skálázható felhasználó helyezi el az eszközt. Ebben a kontextusban a nem számbavesített felhasználó olyanra utal, aki még nem ment át az eszközön korábban a szemkövetési folyamaton.
 
@@ -757,11 +832,11 @@ A Windows Holographic 20H2-es verziójában tanúsítványkezelőt ad hozzá a H
 
 -   **Naplózás:** A tanúsítvány megfelelő telepítésének ellenőrzése vagy annak ellenőrzése, hogy a tanúsítvány megfelelően lett-e eltávolítva. 
 -   **Diagnosztika:** Ha problémák merülnek fel, a megfelelő tanúsítványoknak az eszközön való létezik-e a hitelesítése időt takarít meg, és segít a hibaelhárításban. 
--   **Érvényesítés:** Annak ellenőrzése, hogy a tanúsítvány a kívánt célt szolgálja-e és működik-e, jelentős időt takaríthat meg, különösen kereskedelmi környezetekben, mielőtt nagyobb léptékben helyez üzembe tanúsítványokat.
+-   **Érvényesítés:** Ha ellenőrzi, hogy a tanúsítvány a kívánt célt szolgálja-e és működik-e, jelentős időt takaríthat meg, különösen kereskedelmi környezetekben, mielőtt nagyobb léptékben helyez üzembe tanúsítványokat.
 
 Ha gyorsan meg kell találnia egy adott tanúsítványt a listában, lehetőség van név, tároló vagy lejárati dátum szerint rendezni. A felhasználók közvetlenül is kereshetnek tanúsítványt. Az egyes tanúsítványtulajdonságok megtekintéséhez jelölje ki a tanúsítványt, majd kattintson az **Információ elemre.** 
 
-A tanúsítványtelepítés jelenleg a .cer és a .crt fájlokat támogatja. Az eszköztulajdonosok a helyi gépen és az aktuális felhasználónál telepíthet tanúsítványokat;  minden más felhasználó csak az Aktuális felhasználóra telepíthető. A felhasználók csak a beállítások felhasználói felületről távolítják el a közvetlenül telepített tanúsítványokat. Ha egy tanúsítvány más módon lett telepítve, akkor ugyanezen mechanizmussal kell eltávolítani.
+A tanúsítványtelepítés jelenleg a .cer és a .crt fájlokat támogatja. Az eszköztulajdonosok a helyi gépen és az aktuális felhasználónál telepíthet tanúsítványokat;  minden más felhasználó csak az Aktuális felhasználóra telepíthető. A felhasználók csak a beállítások felhasználói felületről távolítják el a közvetlenül telepített tanúsítványokat. Ha egy tanúsítvány más módon lett telepítve, ugyanezen mechanizmussal kell eltávolítani.
 
 #### <a name="to-install-a-certificate"></a>Tanúsítvány telepítése: 
 
@@ -784,7 +859,7 @@ A tanúsítványnak most már telepítve kell lennie az eszközön.
 
 ![Tanúsítványmegjelenítő a Beállítások alkalmazásban](images/certificate-viewer-device.jpg)
 
-![Kép arról, hogyan használható a Tanúsítvány felhasználói felülete egy tanúsítvány telepítéséhez](images/certificate-device-install.jpg)
+![Kép arról, hogyan használható a tanúsítvány felhasználói felülete egy tanúsítvány telepítéséhez](images/certificate-device-install.jpg)
 
 Ezek az információk később, egy új Tanúsítványkezelő [lapon találhatók.](certificate-manager.md)
 
@@ -821,19 +896,19 @@ Az USB-eszközökről történő kiépítés automatikus indításának és a ki
 1. Amikor a HoloLens 2 eszköz OOBE-ban indul, automatikusan észleli a kiépítési csomagot az USB-meghajtón, és elindítja a kiépítési oldalt.
 1. 10 másodperc elteltével az eszköz automatikusan alkalmazza a kiépítési csomagot. 
 
-Az eszköz konfigurálása megtörtént, és megjelenik a [Sikeres kiépítés képernyő.](hololens-provisioning.md#automatic-provisioning-without-using-ui)
+Az eszköz most már konfigurálva van, és megjelenik a [Sikeres kiépítés képernyő.](hololens-provisioning.md#automatic-provisioning-without-using-ui)
 
 ### <a name="using-autopilot-with-wi-fi-connection"></a>Az Autopilot használata Wi-Fi kapcsolattal
 - Az Ethernet-hez szükséges USB-C adapterek már nem szükségesek a hardverkövetelmények csökkentéséhez azáltal, hogy az Autopilot Wi-Fi csatlakoztatott eszközökön.
 
-Mostantól az OOBE során, miután csatlakoztatta a HoloLens 2-t a Wi-Fi-hez, az OOBE egy Autopilot-profilt keres az eszközhöz. Ha talál egyet, a program az AAD-beléptetési és -beléptetési folyamat hátralévő részében ezt fogja használni. Más szóval az Ethernet usb-C vagy Wi-Fi és USB-C adapter között való használata már nem követelmény, de az OOBE kezdetekor továbbra is működni fognak. További információ a [HoloLens 2-eszközökhöz használható Autopilotról.](hololens2-autopilot.md)
+Mostantól az OOBE során, miután csatlakoztatta a HoloLens 2-t a Wi-Fi-hez, az OOBE egy Autopilot-profilt keres az eszközhöz. Ha talál ilyen igénylést, a program az AAD-beléptetési és -regisztrációs folyamat hátralévő részében ezt fogja végrehajtani. Ez azt jelenti, hogy az Ethernet USB-C vagy Wi-Fi és USB-C adapter között való használata már nem követelmény, de továbbra is működni fognak, ha az OOBE elején meg vannak téve. További információ a [HoloLens 2-eszközökhöz használható Autopilotról.](hololens2-autopilot.md)
 
 ### <a name="tenantlockdown-csp-and-autopilot"></a>Tenantlockdown CSP és Autopilot
 - Úgy tartja meg a szervezet bérlői eszközeit, hogy az eszköz alaphelyzetbe állításán vagy perjelén keresztül is zárolja őket a bérlőhöz. A további biztonság érdekében a fiók létrehozását a kiépítéssel nem lehet. 
 
 A HoloLens 2 rendszerű eszközök mostantól támogatják a TenantLockdown CSP-t [a Windows Holographic 20H2 verziójától.](hololens-release-notes.md#windows-holographic-version-20h2) 
 
-[TenantLockdown (Bérlői zárolás)](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) A CSP lehetővé teszi, hogy a HoloLens 2 kizárólag autopilot használatával MDM-regisztrációhoz legyen kötve. Miután a TenantLockdown CSP RequireNetworkInOOBE csomópontja true (igaz) vagy false (kezdetben beállított) értékre van állítva a HoloLens 2-ben, ez az érték megmarad az eszközön annak ellenére, hogy újra flash(et) vált, operációsrendszer-frissítéseket stb. 
+[TenantLockdown (Bérlői zárolás)](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) A CSP lehetővé teszi, hogy a HoloLens 2 kizárólag autopilot használatával MDM-regisztrációhoz legyen kötve. Miután a TenantLockdown CSP RequireNetworkInOOBE csomópontja true (igaz) vagy false (kezdetben beállított) értékre van állítva a HoloLens 2-ben, ez az érték megmarad az eszközön annak ellenére, hogy újra flashz, operációsrendszer-frissítések stb. 
 
 Ha a TenantLockdown CSP-k RequireNetworkInOOBE csomópontja true (igaz) értékre van állítva a HoloLens 2-ben, az OOBE határozatlan ideig vár az Autopilot-profil sikeres letöltésére és alkalmazására a hálózati kapcsolat után. 
 
@@ -855,7 +930,7 @@ Az OMA-URI értékének ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE kell l
 
 Ellenőrizze az Intune-portálon, hogy az eszközkonfiguráció alkalmazása sikeres volt-e. Miután ez az eszközkonfiguráció sikeresen alkalmazva lett a HoloLens 2-eszközön, a TenantLockdown hatása aktív lesz.
 
-#### <a name="how-to-unset-tenantlockdowns-requirenetworkinoobe-on-hololens-2-using-intune"></a>A TenantLockdown RequireNetworkInOOBE-nak a HoloLens 2-ben való mellőzését az Intune használatával? 
+#### <a name="how-to-unset-tenantlockdowns-requirenetworkinoobe-on-hololens-2-using-intune"></a>TenantLockdown RequireNetworkInOOBE in HoloLens 2-ben, az Intune használatával való mellőzésével 
 1. Távolítsa el a HoloLens 2-t abból az eszközcsoportból, amelyhez korábban hozzárendelték a fent létrehozott eszközkonfigurációt. 
 
 1. Hozzon létre egy egyéni OMA URI-alapú eszközkonfigurációs profilt, és adja meg a false (hamis) értéket a RequireNetworkInOOBE mezőben, ahogy az alább látható. Az OMA-URI értékének ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE kell lennie
@@ -877,12 +952,12 @@ Az OOBE határozatlan ideig vár az Autopilot-profil letöltésére, és megjele
 Ezek az információk most már az Autopilot többi része mellett találhatók a [Tenantlockdown CSP és az Autopilot alatt.](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot)
 
 ### <a name="global-assigned-access--kiosk-mode"></a>Globális hozzárendelt hozzáférés – Kioszkmód
-- Csökkentett identitáskezelés a kioszkmódhoz, azáltal, hogy lehetővé teszi az új kioszkmódot a rendszer szintjén.
+- Csökkentett identitáskezelés a kioszkmódhoz, azáltal, hogy engedélyezi a kioszkmódot a rendszer szintjén alkalmazva az új kioszkmódot.
 
-Ez az új funkció lehetővé teszi, hogy a rendszergazda egy HoloLens 2-eszközt több alkalmazás kioszkmódhoz konfiguráljon, amely rendszerszinten alkalmazható, nem rendelkezik affinitással semmilyen identitással a rendszeren, és mindenkire érvényes, aki bejelentkezik az eszközre. Erről az új funkcióról részletesen a HoloLens globálisan hozzárendelt hozzáférési [kioszkban olvashat.](hololens-global-assigned-access-kiosk.md)
+Ez az új funkció lehetővé teszi, hogy a rendszergazda egy HoloLens 2-eszközt több alkalmazás kioszkmódhoz konfiguráljon, amely rendszerszinten alkalmazható, nem rendelkezik affinitással semmilyen identitással a rendszeren, és mindenkire érvényes, aki bejelentkezik az eszközre. Az új funkcióról részletesen a HoloLens globálisan hozzárendelt hozzáférési [kioszkban olvashat.](hololens-global-assigned-access-kiosk.md)
 
 ### <a name="automatic-launch-of-an-application-in-multiple-app-kiosk-mode"></a>Alkalmazás automatikus indítása többalkalmazásos kioszkmódban 
-- Összpontosított élmény az automatikus alkalmazásindítással, tovább növelve a kioszkmódhoz választott felhasználói felület és alkalmazáskiválasztások számának növelése.
+- Összpontosított élmény az automatikus alkalmazásindítással, tovább növelve a Kioszk módhoz kiválasztott felhasználói felület és alkalmazásválasztások számának növelése.
 
 Csak a többalkalmazásos kioszkmódra vonatkozik, és csak 1 alkalmazás jelölhető ki automatikus indításra a hozzárendelt hozzáférés konfigurációjának alábbi kiemelt attribútumával. 
 
@@ -903,16 +978,16 @@ Korábban a kioszkmód alkalmazása során felmerülő hibákról a HoloLens az 
 ### <a name="hololens-policies"></a>HoloLens-szabályzatok
 - Eszközkezelési lehetőségek kifejezetten az eszközkezeléshez létrehozott HoloLenshez. 
 
-Új vegyes valóságú szabályzatok voltak létrehozva a HoloLens 2 rendszerű eszközökhöz a Windows Holographic 20H2-es verziójában. Új szabályozható beállítások: a fényerejének beállítása, a kötet beállítása, a hangrögzítés letiltása vegyes valóságban, a diagnosztika gyűjtésének beállítása és az AAD-csoporttagság gyorsítótára.  
+Új vegyes valóságú szabályzatok voltak létrehozva a HoloLens 2 rendszerű eszközökhöz a Windows Holographic 20H2-es verziójában. Új szabályozható beállítások: a fényerejének beállítása, a kötet beállítása, a hangfelvételek letiltása vegyes valóságban, a diagnosztika gyűjtésének beállítása és az AAD-csoporttagság gyorsítótára.  
 
 | Új HoloLens-szabályzat                                | Leírás                                                                               | Jegyzetek                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | MixedReality\BrightnessButtonDisabled              | Engedélyezi a fényerejét gombra kattintva letiltható, így a gomb lenyomása nem módosítja a fényerejét.       | 1 Igen, 0 Nem (alapértelmezett)                                                |
 | MixedReality\VolumeButtonDisabled                  | A hangerőszabályzó gombok letilthatók, így a billentyű lenyomása nem módosítja a hangerőt.               | 1 Igen, 0 Nem (alapértelmezett)                                                |
 | MixedReality\MicrophoneDisabled                    | Letiltja a mikrofont, így nem készít hanganyagot a HoloLens 2-ben.                      | 1 Igen, 0 Nem (alapértelmezett)                                                |
-| MixedReality\FallbackDiagnostics                   | A diagnosztikai naplók gyűjtésének viselkedését szabályozza.                               | 0 Letiltva, 1 Engedélyezve az eszköztulajdonosok számára, 2 Engedélyezve az összes számára (alapértelmezés) |
+| MixedReality\FallbackDiagnostics                   | A diagnosztikai naplók gyűjtésének viselkedését szabályozza.                               | 0 Letiltva, 1 Engedélyezve az eszköztulajdonosok számára, 2 Engedélyezve az összes számára (alapértelmezett) |
 | MixedReality\HeadTrackingMode                      | Jövőbeli használatra fenntartva.                                                                  |                                                                      |
-| MixedReality\AADGroupMembershipCacheValidityInDays | Azt szabályozza, hogy a rendszer hány napig használja az Azure AD-csoporttagság gyorsítótárát az Azure AD-csoportokat megcélzó kioszkhoz. | Lásd alább.                                                           |
+| MixedReality\AADGroupMembershipCacheValidityInDays | Azt szabályozza, hogy a rendszer hány napig használja az Azure AD-csoporttagság gyorsítótárát az Azure AD-csoportokat megcélzó kioszkok számára. | Lásd alább.                                                           |
 
 ### <a name="cache-azure-ad-group-membership-for-offline-kiosk"></a>Azure AD-csoporttagság gyorsítótárazése offline kioszkhoz
 - Offline kioszkok használata AAD-csoportokkal akár 60 napig.
@@ -952,7 +1027,7 @@ Az AllowAddProvisioningPackage és az AllowRemoveProvisioningPackage két új- �
 > A [RemoteLock esetében](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)a HoloLens csak a ./Vendor/MSFT/RemoteLock/Lock konfigurációt támogatja. A PIN-kódokkal (például alaphelyzetbe állítással és helyreállítással) kapcsolatos konfigurációk nem támogatottak.
 
 ### <a name="new-power-policies-for-hololens-2"></a>Új energiagazdálkodási szabályzatok a HoloLens 2-hez
-- További lehetőségek, ha a HoloLens energiagazdálkodási szabályzatokkal alvó vagy zárolt. 
+- További lehetőségek arra, hogy a HoloLens mikor alszanak vagy zárolnak energiagazdálkodási szabályzatokkal. 
 
 Ezek az újonnan hozzáadott szabályzatok lehetővé teszik a rendszergazdák számára az energiagazdálkodási állapotban, például az üresjárati időtúllépés szabályozását. Az egyes szabályzatokkal kapcsolatos további információkért kattintson a szabályzatra mutató hivatkozásra.
 
@@ -965,7 +1040,7 @@ Ezek az újonnan hozzáadott szabályzatok lehetővé teszik a rendszergazdák s
 |     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Példaérték a Windows Configuration Designerben való használatra, például:   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
 |     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Példaérték a Windows Configuration Designerben való használatra, például:  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
 
-A DisplayOffTimeoutOnBattery és a DisplayOffTimeoutPluggedIn két új- és hozzá van adva a gyakori [eszközkorlátozásainkhoz.](hololens-common-device-restrictions.md)
+Ez a két új, DisplayOffTimeoutOnBattery és DisplayOffTimeoutPluggedIn új- és hozzá van adva a gyakori [eszközkorlátozásainkhoz.](hololens-common-device-restrictions.md)
 
 > [!NOTE]
 > A HoloLens 2 egységes felhasználói élménye érdekében győződjön meg arról, hogy a DisplayOffTimeoutOnBattery és a StandbyTimeoutOnBattery értékei is azonosak. Ugyanez vonatkozik a DisplayOffTimeoutPluggedIn és a StandbyTimeoutPluggedIn állapotra. A modern készenléti üzemmóddal kapcsolatos további részletekért tekintse meg a Kijelző, alvó és [hibernált](https://docs.microsoft.com/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers) inaktív időzítők.
@@ -984,7 +1059,7 @@ A frissítési szabályzatokkal és azok HoloLens-eszközökön való használat
 ### <a name="enabled-settings-page-visibility-for-hololens-2"></a>A Beállítások oldal láthatósága engedélyezve a HoloLens 2-ben
 - Nagyobb felhasználói felületi vezérlés a Beállítások alkalmazásban, amely nem mindig mutat néhány oldalt.
 
-Engedélyeztünk egy olyan szabályzatot, amely lehetővé teszi a rendszergazdák számára, hogy megakadályozzák a Rendszerbeállítások alkalmazás adott lapjainak láthatóvá vagy hozzáférhetővé tételeit, vagy hogy ezt a megadott oldalak kivételével minden oldalon megtenzék. Ha meg szeretne ismerkedni a funkció teljes testreszabásának mikéntjére, kattintson az alábbi hivatkozásra.
+Ezzel engedélyeztünk egy olyan szabályzatot, amely lehetővé teszi a rendszergazdák számára, hogy megakadályozzák a Rendszerbeállítások alkalmazás adott lapjainak láthatóvá vagy hozzáférhetővé tételeit, vagy hogy ezt a megadott oldalak kivételével minden oldalon megtenzék. A funkció teljes testreszabásához kattintson az alábbi hivatkozásra.
 
 - [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
 
@@ -993,79 +1068,79 @@ Ha meg szeretne ismerkedni a HoloLens 2-ben testreszabható oldalbeállításokk
 ![Képernyőkép a Beállítások alkalmazásban módosított aktív órákról](images/hololens-page-visibility-list.jpg)
 
 ### <a name="research-mode"></a>Kutatási mód
-Kutatási módban a HoloLens 2 a számítógépes látáskutatás eszköze. A korábbi kiadásokhoz képest a HoloLens 2 kutatási módja a következő előnyökkel jár:
--   A HoloLens (1. generációs) research mode (1. generációs) kutatási módban elérhető érzékelők mellett mostantól IMU-érzékelőkhöz is biztosítunk hozzáférést, beleértve a gyorsulásmérőt, a groscope-t és a kilométermérőt is.
--   A HoloLens 2 új képességeket biztosít, amelyek a Research Mode-sal együtt használhatók. Pontosabban a kézkövetési és a szemkövetési API-khoz való hozzáférés, amelyek a kísérletek gazdagabb készletét biztosítják.
+Kutatási módban a HoloLens 2 a számítógépes látáskutatás eszköze lesz. A korábbi kiadásokhoz képest a HoloLens 2 kutatási módja a következő előnyökkel jár:
+-   A HoloLens (1. generációs) kutatási módban elérhetővé vált érzékelők mellett mostantól IMU-érzékelői hozzáférést is biztosítunk, beleértve a gyorsulásmérőt, a groscope-t és a kilométermérőt.
+-   A HoloLens 2 olyan új képességeket biztosít, amelyek a Kutatási móddal együtt használhatók. Pontosabban a kézkövetési és a szemkövetési API-khoz való hozzáférés, amelyek a kísérletek gazdagabb készletét biztosítják.
 
-A kutatók mostantól lehetővé teszik, hogy a Research Mode a HoloLens-eszközeiken hozzáférjen az összes külső, nyers képérzékelő streamhez. A HoloLens 2 research mode (Kutatási mód a HoloLens 2-hez) a gyorsulásmérő, a groscope és a km-mérőóra mérőihez is hozzáférést biztosít. A felhasználók adatainak védelme érdekében a nyers szemkövetéses kameraképek nem érhetők el a Research Mode(Kutatási mód) szolgáltatáson keresztül, de a szem-tekintet iránya a meglévő API-kon keresztül érhető el.
+A kutatók mostantól lehetővé teszik a Research Mode (Kutatási mód) engedélyezését a HoloLens-eszközeiken a külső elérésű nyers képérzékelők streamjéhez való hozzáféréshez. A HoloLens 2 research mode (Kutatási mód a HoloLens 2-hez) az gyorsulásmérő, a groscope és a mérőmérő mérőóra-mérőkhez is hozzáférést biztosít. A felhasználók adatainak védelme érdekében a nyers szemkövetéses kameraképek nem érhetők el a Research Mode(Kutatási mód) szolgáltatáson keresztül, de a szem-tekintet iránya a meglévő API-kon keresztül érhető el.
 
-További technikai [részletekért tekintse](https://docs.microsoft.com/windows/mixed-reality/research-mode) meg a kutatási mód dokumentációját.
+További technikai részletekért tekintse meg a [kutatási mód](https://docs.microsoft.com/windows/mixed-reality/research-mode) dokumentációját.
 
 ### <a name="recording-length-increased"></a>Rögzítés hosszának megnövelve
-Az ügyfelek visszajelzései miatt növeltünk a vegyes valóságú [rögzítések hosszát.](holographic-photos-and-videos.md) A vegyes valóságú rögzítések alapértelmezés szerint nem lesznek 5 percre korlátozva, hanem a felvétel maximális hosszát számítják ki a rendelkezésre álló lemezterület alapján. Az eszköz a teljes lemezterület 80%-ának megfelelő szabad lemezterület alapján megbecsüli a videófelvétel maximális időtartamát.
+Az ügyfelek visszajelzései miatt növeljük a vegyes valóságú [rögzítések hosszát.](holographic-photos-and-videos.md) A vegyes valóságú rögzítések alapértelmezés szerint nem lesznek 5 percre korlátozva, hanem a maximális rögzítési hosszt számítják ki a rendelkezésre álló lemezterület alapján. Az eszköz a teljes lemezterület 80%-ának megfelelő szabad lemezterület alapján megbecsüli a videófelvétel maximális időtartamát.
 
 > [!NOTE]
-> A HoloLens a videófelvételek alapértelmezett hosszát használja (5 perc), ha a következők valamelyike történik:
-> - A felvétel becsült maximális időtartama kisebb, mint az alapértelmezett 5 perc.
+> A HoloLens az alapértelmezett videofelvételi hosszt használja (5 perc), ha a következők valamelyike bekövetkezik:
+> - A becsült maximális rögzítési időtartam kisebb, mint az alapértelmezett 5 perc.
 > - A rendelkezésre álló lemezterület kevesebb, mint a teljes lemezterület 20%-a.
 
-A teljes követelményt a holografikus fényképek és videók [dokumentációjában találja.](holographic-photos-and-videos.md#maximum-recording-length) 
+A teljes követelményeket a holografikus fényképek és [videók dokumentációjában találja.](holographic-photos-and-videos.md#maximum-recording-length) 
 
 ### <a name="improvements-and-fixes-in-the-update"></a>A frissítés fejlesztései és javításai:
 - Az OOBE több képernyője már sötét módban van.
-- További információ a legújabb online adatvédelmi nyilatkozatra mutat.
-- Kijavítottunk egy problémát, amely miatt a felhasználók nem lehetett VPN-profilokat kiépítési csomagokon keresztül kiépítenék.
-- A VPN-kapcsolat proxykonfigurációs problémája kijavítva.
-- Frissült a szabályzat, amely letiltja az USB-függvények enumerálását az NcM MDM-én keresztül az AllowUsbConnection számára.
-- Elhárítottunk egy problémát, amely miatt egy HoloLens-eszköz nem jelent meg a Fájlkezelő-ban a Media Transfer Protocol (MTP) protokollon keresztül, amikor az eszköz egyalkalmazásos [kioszkként van beállítva.](hololens-kiosk.md) Vegye figyelembe, hogy az MTP (és általában az USB-kapcsolat) továbbra is letiltható az [AllowUSBConnection szabályzattal.](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)
-- Kijavítottunk egy hibát, amely miatt a Start menü megfelelően skálázták a kioszkmódban.
+- További információ: A tartalomnak a legújabb online adatvédelmi nyilatkozatra kell mutasson.
+- Elhárítottunk egy problémát, amely miatt a felhasználók nem létesíthették ki a VPN-profilokat a kiépítési csomagokon keresztül.
+- Ki van javítva a VPN-kapcsolat proxykonfigurációs problémája.
+- Szabályzat frissítve az USB-függvények Enumerálásának letiltásához az MDM for NCM for AllowUsbConnection esetén.
+- Elhárítottunk egy problémát, amely miatt egy HoloLens-eszköz nem jelent meg az Fájlkezelő-ban a Media Transfer Protocol (MTP) protokollon keresztül, amikor az eszköz egyalkalmazásos [kioszkként van beállítva.](hololens-kiosk.md) Vegye figyelembe, hogy az MTP (és általában az USB-kapcsolat) továbbra is letiltható az [AllowUSBConnection szabályzattal.](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)
+- Kijavítottunk egy hibát, amely miatt a Start menü ikonjai megfelelően voltak skálázva Kioszk módban.
 - Kijavítottunk egy hibát, amely az Azure AD-csoportokat célzó kioszkmódot zavaró HTTP-gyorsítótárazás miatt történt.
-- Ki lett javítva az a hiba, amely miatt a felhasználók nem tudtak használni a Pár gombot a fejlesztői mód és a kiépítési csomagok engedélyezése után, kivéve, ha letiltották és újra engedélyezték a Fejlesztői módot.
+- Ki lett javítva az a hiba, amely miatt a felhasználók nem tudtak a Párosítás gombot használni a fejlesztői módnak a kiépítési csomagokkal való engedélyezése után, kivéve, ha letiltották és újra engedélyezték a Fejlesztői módot.
 
 ## <a name="windows-holographic-version-1903---november-2020-update"></a>Windows Holographic, 1903-as verzió – 2020. novemberi frissítés
 - Build 18362.1085
 
-Ez a havi minőségi frissítés nem tartalmaz jelentős változásokat. Javasoljuk, hogy próbálja ki a Windows Holographic 20H2-es verzióját, a legújabb funkció kiadási buildet.
+Ez a havi minőségi frissítés nem tartalmaz jelentős változásokat. Javasoljuk, hogy próbálja ki a Windows Holographic 20H2-es verziójának legújabb funkció kiadását.
 
-## <a name="windows-holographic-version-2004---october-2020-update"></a>Windows Holographic, 2004-es verzió – 2020. októberi frissítés
+## <a name="windows-holographic-version-2004---october-2020-update"></a>Windows Holographic, 2004-es és 2020. októberi frissítés
 - Build 19041.1124
  
 A frissítés fejlesztései és javításai:
 
-- Eltávolítottunk egy szükségtelen ellenőrzést, amely futásidejű rendszerhibát okozott.
+- Eltávolítottunk egy felesleges ellenőrzést, amely futásidejű rendszerhibát okozott.
 
 ## <a name="windows-holographic-version-1903---october-2020-update"></a>Windows Holographic, 1903-as verzió – 2020. októberi frissítés
 - Build 18362.1081
 
 Ez a havi minőségi frissítés nem tartalmaz jelentős változásokat. Javasoljuk, hogy próbálja ki a Windows Holographic 2004-es verziójához elérhető legújabb buildeket.
 
-## <a name="windows-holographic-version-2004---september-2020-update"></a>Windows Holographic, 2004-es verzió – 2020. szeptemberi frissítés
+## <a name="windows-holographic-version-2004---september-2020-update"></a>Windows Holographic, 2004-es és 2020. szeptemberi frissítés
 - Build 19041.1117
 
 A frissítés fejlesztései és javításai:
 
-- Kijavít egy problémát, amely Visual Studio megakadályozta az alkalmazás hibakeresését, ha a SupportsMultipleInstances="true" található az appxmanifestben.
-- Ez a kiadás tartalmazza az NCSI-proxyészlelési javítást, amely a hálózati proxyn keresztüli sikertelen internetes észlelést oldja meg. Az NCSI használhat gépproxyt és profilonkénti proxyt az internetkapcsolat észleléséhez. Az NCSI a későbbi kiadásban támogatni fogja a felhasználónkénti proxyt.
-- A Windows Mixed Reality vektor párhuzamos a talajjal, amikor a felhasználó feje semleges pozícióban van. A HoloLens 2 korábbi verziói azonban úgy igazítják a vektort, hogy inkább a kijelzőpanelekre legyen igazítva, amely az ideális tájoláshoz képest néhány fokkal lefelé van döntéssel. A HoloLens 2 újabb verziói ezt kijavították, hogy szemantikai konzisztenciát biztosítsanak az űrlaptényezők között.
-- Továbbfejlesztett kézkövetési robusztusság, amely kevesebb nyomkövetési veszteségeket eredményez bizonyos helyzetekben.
-- Ez a kiadás olyan javítást tartalmaz a hang-időbélyegző minőségének javításához, amely hozzájárult a videórögzítési problémákhoz.
+- Elhárít egy problémát, amely Visual Studio megakadályozta az alkalmazás hibakeresését, ha a SupportsMultipleInstances="true" szó jelen van az appxmanifestben.
+- Ez a kiadás tartalmazza az NCSI-proxyészlelési javítást, amely a hálózati proxyn keresztüli sikertelen internetes észlelést oldja meg. Az NCSI számítógépproxyt és profilonkénti proxyt használhat az internetkapcsolat észleléséhez. A későbbi kiadásban az NCSI támogatni fogja a felhasználónkénti proxyt.
+- A legtöbb Windows Mixed Reality az előrefelé vezető vektor párhuzamos a talajjal, amikor a felhasználó fejének semleges pozícióban van. A HoloLens 2 korábbi verziói azonban úgy igazítják a vektort, hogy az inkább a kijelzőpanelekre legyen igazított, amely az ideális tájoláshoz képest néhány fokkal lefelé van döntésre va. A HoloLens 2 újabb verziói javították ezt, hogy szemantikai konzisztenciát biztosítsanak az űrlaptényezők között.
+- Továbbfejlesztett kézkövetési robusztusság, amely adott forgatókönyvekben kevesebb nyomkövetési veszteségeket eredményez.
+- Ez a kiadás egy javítást tartalmaz a hang-időbélyegző minőségének javításához, amely hozzájárult a videórögzítési problémákhoz.
 
-## <a name="windows-holographic-version-1903---september-2020-update"></a>Windows Holographic, 1903-as verzió – 2020. szeptemberi frissítés
+## <a name="windows-holographic-version-1903---september-2020-update"></a>Windows Holographic, 1903-as és 2020. szeptemberi frissítés
 - Build 18362.1079
 
 A frissítés fejlesztései és javításai:
 
-- A Windows Mixed Reality vektor párhuzamos a talajjal, amikor a felhasználó feje semleges pozícióban van. A HoloLens 2 korábbi verziói azonban úgy igazítják a vektort, hogy inkább a kijelzőpanelekre legyen igazítva, amely az ideális tájoláshoz képest néhány fokkal lefelé van döntéssel. A HoloLens 2 újabb verziói ezt kijavították, hogy szemantikai konzisztenciát biztosítsanak az űrlaptényezők között.
-- Továbbfejlesztett kézkövetési robusztusság, amely kevesebb nyomkövetési veszteségeket eredményez bizonyos helyzetekben.
+- A legtöbb Windows Mixed Reality az előrefelé vezető vektor párhuzamos a talajjal, amikor a felhasználó fejének semleges pozícióban van. A HoloLens 2 korábbi verziói azonban úgy igazítják a vektort, hogy az inkább a kijelzőpanelekre legyen igazított, amely az ideális tájoláshoz képest néhány fokkal lefelé van döntésre va. A HoloLens 2 újabb verziói javították ezt, hogy szemantikai konzisztenciát biztosítsanak az űrlaptényezők között.
+- Továbbfejlesztett kézkövetési robusztusság, amely adott forgatókönyvekben kevesebb nyomkövetési veszteségeket eredményez.
 
 ## <a name="windows-holographic-version-2004---august-2020-update"></a>Windows Holographic, 2004-es verzió – 2020. augusztusi frissítés
 - Build 19041.1113
 
 A frissítés fejlesztései és javításai:
 
-- A Beállítások alkalmazás a továbbiakban nem követi a felhasználót az Írisz-regisztráció vagy a Szemkövetési élmények igénylése során.
-- Kijavítottunk egy hibát, amely miatt az eszközt átnevező és más műveleteket (például egy hálózathoz való csatlakozást) végző kiépítési csomag OOBE során való alkalmazása az átnevezés miatt nem tudja végrehajtani a többi műveletet az eszköz újraindítása után.
-- Módosítottuk a kezdeti eszközbeállítási folyamatok színsémát a vizualizáció minőségének javítása érdekében.
+- A Beállítási alkalmazás a továbbiakban nem követi a felhasználót az Írisz-regisztráció vagy a Szemkövetési csoport használata során.
+- Kijavítottunk egy hibát, amely miatt a kiépítési csomag OOBE során való alkalmazása, amely átnevezi az eszközt, és más műveleteket hajt végre (például egy hálózathoz csatlakozik) az átnevezés miatt nem hajt végre más műveleteket az eszköz újraindítása után.
+- Módosított színséma a kezdeti eszközbeállítási folyamatokhoz a vizualizáció minőségének javítása érdekében.
 
 ## <a name="windows-holographic-version-1903---august-2020-update"></a>Windows Holographic, 1903-as verzió – 2020. augusztusi frissítés
 - Build 18362.1074
@@ -1078,7 +1153,7 @@ Ez a havi minőségi frissítés nem tartalmaz jelentős változásokat. Javasol
 A frissítés fejlesztései és javításai:
 
 - A fejlesztők mostantól dönthetnek úgy, hogy engedélyezik vagy letiltják a Eszközportál biztonságos kapcsolatot igényelnek.
-- Javult a megbízhatóság az alkalmazások operációsrendszer-frissítések utáni indításához.
+- Javult az alkalmazások operációsrendszer-frissítések utáni indításának megbízhatósága.
 - A beérkezett üzenetek alapértelmezett fényerejét 100%-ra módosítottuk.
 - A HoloLens 2-es Windows eszközportál HTTPS-továbbítással kapcsolatos probléma elhárítása.
 
@@ -1097,19 +1172,19 @@ A frissítés fejlesztései és javításai:
 A frissítés fejlesztései és javításai:
 
 - Az egyéni MRC-rögzítők mostantól új alapértelmezett értékekkel rendelkeznek bizonyos tulajdonságokhoz, ha nincsenek megadva.
-  - Az *MRC videóhatása:*
+  - On the *MRC Video Effect*:
     - PreferredHologramPerspective (1 PhotoVideoCamera)
     - GlobalOpacityCoefficient (0.9 (HoloLens) 1.0 (Modern headset))
   - Az *MRC audiohatáson:*
-    - LoopbackGain (az aktuális "App Audio Gain" érték a Vegyes valóság rögzítése oldalán Windows eszközportál)
-    - MicrophoneGain (az aktuális "Mic Audio Gain" érték a Vegyes valóság rögzítése oldalán Windows eszközportál)
-- Kijavítottunk egy hibát, amely javította a hangminőséget a vegyes valóságú rögzítési forgatókönyvekben. Pontosabban, ennek a javításnak meg kell szüntetnie a felvétel hanghiba-átvitelét a **Start menü** megjelenítésekor.
-- Továbbfejlesztett hologramstabilitás a rögzített videókban.
-- Megoldottuk azt a problémát, amely miatt a vegyes valóságú rögzítés nem tudott videót rögzíteni, miután az eszköz több napig készenléti állapotban volt.
-- A HolographicSpace.UserPresence API általában le van tiltva a Unity-alkalmazások esetében. Ez a viselkedés elkerüli azt a problémát, amely miatt egyes alkalmazások szünetelnek a vizor tükrözése esetén, még akkor is, ha a "futtatás a háttérben" beállítás engedélyezve van. Az API most már engedélyezve van a Unity 2018.4.18-as és újabb, valamint 2019.3.4-es és újabb verzióihoz.
-- Ha egy Eszközportál kapcsolaton keresztül fér hozzá a Wi-Fi, előfordulhat, hogy egy webböngésző érvénytelen tanúsítvány miatt megakadályozza a hozzáférést. Előfordulhat, hogy a böngésző hibát jelez( például "ERR_SSL_PROTOCOL_ERROR", még akkor is, ha az eszköz tanúsítványa korábban megbízható volt. Ebben az esetben nem tud továbbhaladni a Eszközportál, mivel nincs lehetőség a biztonsági figyelmeztetések figyelmen kívül hagyása. Ez a frissítés megoldotta a problémát. Ha az eszköztanúsítványt korábban letöltötték, és a böngésző biztonsági figyelmeztetései el lett távolítva a számítógépen, és SSL-hiba történik, az új tanúsítványt le kell tölteni, és megbízhatónak kell lennie a böngésző biztonsági figyelmeztetései esetén.
-- Lehetővé tette olyan futásidejű kiépítési csomag létrehozása, amely MSIX-csomagokkal képes alkalmazásokat telepíteni.
-- Hozzá van adva egy beállítás a **Beállítási** rendszer  >    >  **hologramjaiban,** amely lehetővé teszi a felhasználók számára, hogy automatikusan eltávolítsák az összes hologramot Mixed Reality eszköz leállított eszközéről.
+    - LoopbackGain (az aktuális "App Audio Gain" érték a Vegyes valóság rögzítése oldalán a Windows eszközportál)
+    - MicrophoneGain (az aktuális "Mic Audio Gain" érték a Vegyes valóság rögzítése lapján Windows eszközportál)
+- Kijavítottunk egy hibát, amely javítja a hangminőséget a vegyes valóságú rögzítési forgatókönyvekben. Pontosabban, ennek a javításnak meg kell szüntetnie a felvétel hangberekeszét a **Start menü** megjelenítésekor.
+- Továbbfejlesztett hologram-stabilitás a rögzített videókban.
+- Megoldottuk azt a problémát, amely miatt a vegyes valóságú rögzítés nem tudott videót rögzíteni, miután az eszköz több napig készenléti állapotban maradt.
+- A HolographicSpace.UserPresence API általában le van tiltva Unity-alkalmazások esetében. Ez a viselkedés elkerüli azt a problémát, amely miatt egyes alkalmazások szünetelnek a vizor tükrözése esetén, még akkor is, ha a "futtatás a háttérben" beállítás engedélyezve van. Az API mostantól engedélyezve van a Unity 2018.4.18-as és újabb, valamint 2019.3.4-es és újabb verzióihoz.
+- Ha egy Eszközportál kapcsolaton keresztül fér hozzá a Wi-Fi, előfordulhat, hogy egy webböngésző érvénytelen tanúsítvány miatt megakadályozza a hozzáférést. Előfordulhat, hogy a böngésző hibát jelez( például "ERR_SSL_PROTOCOL_ERROR", még akkor is, ha az eszköz tanúsítványa korábban megbízható volt. Ebben az esetben nem haladhat előre a Eszközportál, mivel nincs lehetőség a biztonsági figyelmeztetések figyelmen kívül hagyása. Ez a frissítés megoldotta a problémát. Ha az eszköztanúsítványt korábban letöltötték, és a böngésző biztonsági figyelmeztetései el lett távolítva a számítógépen, és SSL-hiba történik, az új tanúsítványt le kell tölteni, és megbízhatónak kell lennie a böngésző biztonsági figyelmeztetései esetén.
+- Lehetővé tette olyan futásidejű kiépítési csomag létrehozása, amely MSIX-csomagok használatával képes alkalmazásokat telepíteni.
+- Hozzá van adva egy beállítás a Beállítási rendszer  >    >  **hologramjaiban,** amely lehetővé teszi a felhasználók számára, hogy automatikusan eltávolítsák az összes hologramot Mixed Reality eszköz leállított eszközéről.
 - Kijavítottunk egy hibát, amely miatt a HoloLens-alkalmazások úgy módosítják a képpontformátumukat, hogy feketén rendereljenek a HoloLens emulátorban.
 - Kijavítottunk egy hibát, amely összeomlást okozott az Írisz bejelentkezése során.
 - Kijavítottunk egy hibát, amely a már meglévő alkalmazások ismételt áruházi letöltésével kapcsolatos.
@@ -1129,7 +1204,7 @@ A frissítés fejlesztései és javításai:
   - Az *MRC audiohatáson:*
     - LoopbackGain (az aktuális "App Audio Gain" érték a Vegyes valóság rögzítése oldalán Windows eszközportál)
     - MicrophoneGain (az aktuális "Mic Audio Gain" érték a Vegyes valóság rögzítése oldalán Windows eszközportál)
-- A HolographicSpace.UserPresence API általában le van tiltva a Unity-alkalmazások esetében. Ez a viselkedés elkerüli azt a problémát, amely miatt egyes alkalmazások szünetelnek a vizor tükrözése esetén, még akkor is, ha a háttérben való futtatás engedélyezve van. Az API most már engedélyezve van a Unity 2018.4.18-as és újabb, valamint 2019.3.4-es és újabb verzióihoz.
+- A HolographicSpace.UserPresence API általában le van tiltva a Unity-alkalmazások esetében. Ez a viselkedés elkerüli azt a problémát, amely miatt egyes alkalmazások szünetelnek a vizor felfelé tükrözése esetén, még akkor is, ha a háttérben való futtatás engedélyezve van. Az API most már engedélyezve van a Unity 2018.4.18-as és újabb, valamint 2019.3.4-es és újabb verzióihoz.
 - Kijavítottunk egy hibát, amely miatt a HoloLens-alkalmazások a képpontformátumukat feketére változtatták a HoloLens Emulatorban.
 - Ki van javítva a Photos alkalmazás 1903-as kiadásból való frissítés utáni első indításkor való indításával kapcsolatos hiba.
 
@@ -1153,7 +1228,7 @@ A HoloLens 2, *a Windows Holographic 2004 2020.* májusi fő szoftverfrissítés
 
 ### <a name="support-for-windows-autopilot"></a>Támogatás a Windows Autopilot
 
-Windows Autopilot HoloLens 2-höz való regisztrálása lehetővé teszi, hogy az eszköz értékesítési csatornája előre regisztrálja a HoloLenst az Intune-bérlőben. Amikor az eszközök megérkeznek, készen állnak arra, hogy megosztott eszközként üzembe helyeződjenek a bérlőben. Az önálló üzembe helyezés előnyeinek kihasználásához az eszköznek a beállítás első képernyőjén csatlakoznia kell egy hálózathoz egy USB-C-to-Ethernet kapcsolattal.
+Windows Autopilot HoloLens 2-höz való regisztrálása lehetővé teszi, hogy az eszköz értékesítési csatornája előzetesen regisztrálja a HoloLenst az Intune-bérlőben. Amikor az eszközök megérkeznek, készen állnak a bérlőn megosztott eszközökként való önálló üzembe helyezésre. Az önálló üzembe helyezés előnyeinek kihasználásához az eszköznek a beállítás első képernyőjén csatlakoznia kell egy hálózathoz egy USB-C-to-Ethernet kapcsolattal.
 
 Miután a felhasználó elindítja az Autopilot önkiszolgáló üzembe helyezési folyamatát, a folyamat a következő lépéseket teszi:
 
@@ -1163,32 +1238,32 @@ Miután a felhasználó elindítja az Autopilot önkiszolgáló üzembe helyezé
 1. Az eszköz kiépítése.
 1. A bejelentkezési képernyőt mutatja be a felhasználónak.
 
-További információ: [Windows Autopilot HoloLens 2 kiértékelési útmutatója.](https://docs.microsoft.com/hololens/hololens2-autopilot)
+További információkért olvassa el [Windows Autopilot HoloLens 2-hez útmutatót.](https://docs.microsoft.com/hololens/hololens2-autopilot)
 
 *Lépjen kapcsolatba a fiókkezelővel az AutoPilot előzetes verzióhoz való csatlakozáshoz. Az Autopilot-kompatibilis eszközök hamarosan megkezdik a szállítást.*
 
 ### <a name="fido2-security-key-support"></a>FIDO2 biztonsági kulcs támogatása
 
-Egyes felhasználók egy HoloLens-eszközt osztnak meg másokkal munkahelyi vagy iskolai környezetben. Ezért fontos, hogy a felhasználók könnyedén, hosszú felhasználónév és jelszó beírása nélkül is használhasson. A Fast Identity Online (FIDO) lehetővé teszi, hogy a szervezetben (Azure AD-bérlőn) bárki zökkenőmentesen jelentkezzen be a HoloLensbe felhasználónév vagy jelszó megadása nélkül.
+Egyes felhasználók egy HoloLens-eszközt osztnak meg másokkal munkahelyi vagy iskolai környezetben. Ezért fontos, hogy a felhasználók könnyedén, hosszú felhasználónév és jelszó beírása nélkül is használhasson. A Fast Identity Online (FIDO) lehetővé teszi, hogy a szervezetben (Azure AD-bérlőben) bárki zökkenőmentesen jelentkezzen be a HoloLensbe felhasználónév vagy jelszó megadása nélkül.
 
 A FIDO2 biztonsági kulcsok egy "unphishable" szabványalapú, jelszó nélküli hitelesítési módszer, amely bármilyen tényezőben elérhető. A FIDO a jelszó nélküli hitelesítés nyílt szabványa. Lehetővé teszi a felhasználók és a szervezetek számára, hogy felhasználónév vagy jelszó nélkül jelentkezzenek be az erőforrásaikba. Ehelyett egy külső biztonsági kulcsot vagy egy eszközbe épített platformkulcsot használnak.
 
-Első lépések: Jelszó nélküli biztonsági kulcsos [bejelentkezés engedélyezése.](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key)
+Első lépések: [Jelszó nélküli biztonsági kulcsos bejelentkezés engedélyezése.](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key)
 
 ### <a name="improved-mdm-enrollment-via-provisioning-package"></a>Továbbfejlesztett MDM-regisztráció kiépítési csomagon keresztül
 
-A kiépítési csomagok segítségével konfigurációs fájlon keresztül állíthatja be a HoloLens-konfigurációt, nem pedig a HoloLens-t. Korábban a kiépítési csomagokat a HoloLens belső memóriájába kellett másolni. Mostantól USB-meghajtón is lehet őket használni, hogy több HoloLens-eszközön is könnyebben használhatók, és párhuzamosan lehessen kiépíteni az eszközöket. A kiépítési csomagok mostantól egy mezőt is támogatnak az eszközkezelésben való regisztráláshoz, így a kiépítés után nincs szükség manuális beállításra.
+A kiépítési csomagok segítségével konfigurációs fájlon keresztül állíthatja be a HoloLens-konfigurációt, nem pedig a HoloLens-t. Korábban a kiépítési csomagokat a HoloLens belső memóriájába kellett másolni. Mostantól USB-meghajtón is lehet őket használni, így könnyebben újra felhasználhatók több HoloLens-eszközön, és párhuzamosan is kiépítheti az eszközöket. A kiépítési csomagok mostantól támogatják az eszközkezelésben való regisztráláshoz szükséges mezőket is, így a kiépítés után nincs szükség manuális telepítésre.
 
 A kipróbálhoz:
 
 1. Töltse le a Windows Configuration Designer legújabb verzióját a Windows Áruházból a számítógépre.
 1. Válassza **a HoloLens-eszközök** kiépítése  >  **HoloLens 2-eszközök kiépítése lehetőséget.**
 2. Készítse el a konfigurációs profilt. Ezután másolja az összes létrehozott fájlt egy USB-C tárolóeszközre.
-3. Csatlakoztassa az USB-C eszközt bármely frissen flash elemekkel rendelkező HoloLenshez. Ezután nyomja le **a hangerőt**  +  **a bekapcsológombokkal** a kiépítési csomag alkalmazáshoz.
+3. Csatlakoztassa az USB-C eszközt bármely frissen flash elemekkel rendelkező HoloLenshez. Ezután nyomja le **a hangerőt a** kiépítési csomag  +   alkalmazáshoz.
 
 ### <a name="line-of-business-application-install-status"></a>Üzletági alkalmazások telepítési állapota
 
-Az üzletági alkalmazások MDM-alkalmazástelepítése és -kezelése kritikus fontosságú a HoloLenshez. A rendszergazdáknak és a felhasználóknak meg kell tekinteniük az alkalmazástelepítés állapotát a naplózás és a diagnosztika érdekében. Ebben a kiadásban további részletekkel bővült a **Settings** Accounts Access work or school (Beállítások fiókok elérése munkahelyi vagy iskolai fiókhoz) lapon  >    >    >  **Kattintson a fiók adatai**  >  **elemre.**
+Az üzletági alkalmazások MDM-alkalmazások üzembe helyezése és kezelése kritikus fontosságú a HoloLenshez. A rendszergazdáknak és a felhasználóknak meg kell tekinteniük az alkalmazástelepítés állapotát a naplózás és a diagnosztika érdekében. Ebben a kiadásban további részletekkel bővült a **Settings** Accounts Access work or school (Beállítások fiókok elérése munkahelyi vagy iskolai fiókhoz) lapon  >    >    >  **Kattintson a fiók adatai**  >  **elemre.**
 
 ### <a name="additional-csps-and-policies"></a>További CSP-k és szabályzatok
 
@@ -1196,7 +1271,7 @@ A [konfigurációszolgáltató (CSP)](https://docs.microsoft.com/windows/client-
 
 A kiadás újdonsága:
 
-**Házirendek csp-e** 
+**Szabályzat csP-ja** 
 
 A Szabályzatkonfiguráció szolgáltató lehetővé teszi, hogy a vállalat házirendeket konfigurálja Windows-eszközökön. Ebben a kiadásban új szabályzatokat adtunk hozzá a HoloLenshez, amelyek itt vannak felsorolva. További információ: [A HoloLens 2](https://docs.microsoft.com/windows/client-management/mdm/policies-supported-by-hololens2)által támogatott szabályzat-CSP-k.  
 
@@ -1224,15 +1299,15 @@ Támogatás lett hozzáadva bizonyos, a HoloLens 2-hez USB-n keresztül csatlako
 
 Ez a kiadás számos kézkövetési fejlesztést tartalmaz:
 
-- **A stabilitás rámutatása:** A rendszer most ellenáll az indexavad megakadozásának, amikor a torkok eltolást érnek el. Ez a módosítás javítja a gombok leküldésének, begépelése, görgetése tartalmának pontosságát, és még sok minden másban is! 
+- **A stabilitás rámutatása:** A rendszer most ellenáll az indexavad megakadása ellen, amikor a torkok eltolást érnek el. Ez a módosítás javítja a gombok leküldésének, begépelése, görgetése tartalmának pontosságát, és még sok más is! 
 - **Kevesebb véletlen légi koppintás:** Továbbfejlesztettük a légikoppintásos kézmozdulat észlelését. Számos gyakori forgatókönyvben kevesebb véletlen aktiválás történt, például amikor a két kéz az oldalára kerül.
 - **A felhasználói kapcsoló megbízhatósága:** A rendszer mostantól gyorsabb és megbízhatóbb az eszköz megosztásakor a kézméret frissítésében.
-- **Kisebb kézlopás:** Továbbfejlesztettük az olyan esetek kezelését, amelyekben kétnél több kéz látható az érzékelőkkel. Ha többen dolgoznak szorosan együtt, sokkal kisebb az esélye annak, hogy a nyomon követt kéz a felhasználótól a jelenetben található valaki más kézhez "ugrik".
+- **Kisebb kézlopás:** Továbbfejlesztettük az olyan esetek kezelését, amelyekben kétnél több kéz látható az érzékelőkkel. Ha többen dolgoznak szorosan együtt, sokkal kisebb az esélye annak, hogy a nyomon követt kéz "elugrik" a felhasználótól a jelenetben található valaki más kézjéhez.
 - **Rendszer megbízhatósága:** Kijavítottunk egy hibát, amely miatt a kézkövetés leállt, amikor az eszköz nagy terhelés alatt áll.
 
 ### <a name="dark-mode"></a>Sötét mód
 
-Számos Windows-alkalmazás már a sötét és a világos módot is támogatja. A HoloLens 2 felhasználói kiválaszthatják az alapértelmezett módot a mindkettőt támogató alkalmazásokhoz. A frissítés után az alapértelmezett alkalmazásmód "sötét", de ezt a beállítást könnyen megváltoztathatja: Lépjen a Beállítások Rendszer színei Válassza ki az alapértelmezett  >    >    >  **alkalmazásmódot** lehetőséget. 
+Számos Windows-alkalmazás már a sötét és a világos módot is támogatja. A HoloLens 2 felhasználói kiválaszthatják az alapértelmezett módot a mindkettőt támogató alkalmazásokhoz. A frissítés után az alapértelmezett alkalmazásmód "sötét", de ezt a beállítást könnyen megváltoztathatja: Lépjen a Beállítások Rendszer színei Válassza ki az alapértelmezett  >    >    >  **alkalmazásmódot.** 
 
 Ezek a "in-box" alkalmazások támogatják a sötét módot: 
 
@@ -1255,7 +1330,7 @@ Mostantól az eszközön található bármely alkalmazáshoz használhat hangpar
 
 ### <a name="cortana-updates"></a>Cortana-frissítések
 
-A frissített alkalmazás integrálható a Microsoft 365, hogy jobban el tudja látni az eszközeit (jelenleg csak US-English érhető el). A HoloLens 2-ben a Cortana már nem támogat bizonyos eszközspecifikus parancsokat, például a kötetek beállítását vagy az újraindítást. Ezeket a beállításokat mostantól támogatják az új rendszerhangparancsok. Az új Cortana alkalmazásról további információt a blogunkban [talál.](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)
+A frissített alkalmazás integrálható a Microsoft 365, hogy jobban el tudja látni az eszközeit (jelenleg csak US-English érhető el). A HoloLens 2-ben a Cortana már nem támogat bizonyos eszközspecifikus parancsokat, például a kötetek beállítását vagy az újraindítást. Ezeket a beállításokat már támogatják az új rendszerhangparancsok. Az új Cortana alkalmazásról a blogunkban talál [további információt.](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)
 
 ### <a name="quality-improvements-and-fixes"></a>Minőségi fejlesztések és javítások
 
@@ -1264,20 +1339,20 @@ Fejlesztések és javítások a frissítésben is:
 - Kijavítottunk egy hibát, Wi-Fi a HoloLensbe streamelés rendszeresen megszakadt. Ha egy alkalmazás azt jelzi, hogy kis késésű streamelésre van szüksége, implementálja a javítást a [SetSocketMediaStreamingMode függvény hívásával.](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode)
 - Kijavítottunk egy lefagyó eszközt, amely a streamelés során, kutatási módban történt.
 - Kijavítottunk egy hibát, amely miatt bizonyos esetekben a megfelelő felhasználó nem jelenik meg a bejelentkezési képernyőn a munkamenet befejezésekor.
-- Kijavítottunk egy hibát, amely miatt a felhasználók nem tudtak MDM-naplókat exportálni a **Beállításokon keresztül.**
-- Kijavítottunk egy problémát, amely miatt a szemkövetés pontossága a telepítés után a vártnál alacsonyabb lehet.
-- Kijavítottunk egy problémát, amely miatt a szemkövetési alrendszer bizonyos körülmények között nem tudta inicializálni vagy végrehajtani a beszigorizálást.
-- Kijavítottunk egy problémát, amely miatt a rendszer a már beállított felhasználót kéri a szemredúsztástól.
-- Kijavítottunk egy hibát, amely miatt a illesztő összeomlott a szemkontraszt során.
-- Kijavítottunk egy hibát, amely miatt a bekapcsológomb ismételt lenyomása 60 másodperces rendszer-időtúllépést és rendszerhéj-összeomlást okozhatott.
+- Kijavítottunk egy hibát, amely miatt a felhasználók nem tudtak MDM-naplókat exportálni a **Settings (Beállítások) segítségével.**
+- Kijavítottunk egy hibát, amely miatt a szemkövetés azonnal, a beépített beállítás után a vártnál alacsonyabb lehet.
+- Kijavítottunk egy problémát, amely miatt a szemkövetési alrendszer bizonyos körülmények között nem tudott inicializálni vagy végrehajtani a beépítést.
+- Kijavítottunk egy problémát, amely miatt a rendszer a már beállított felhasználót kéri.
+- Kijavítottunk egy problémát, amely miatt a illesztő összeomlott a szemkontraszt során.
+- Kijavítottunk egy hibát, amely miatt az ismételt bekapcsológombnyomások 60 másodperces rendszer-időtúllépést és rendszerhéj-összeomlást okozhatnak.
 - Nagyobb stabilitás a mélységi pufferek számára.
-- Hozzáadtunk egy **Megosztás gombot** a Visszajelzési központ hogy a felhasználók könnyebben megosztanának visszajelzéseket.
+- Hozzáadtunk egy **Megosztás gombot** a Visszajelzési központ, hogy a felhasználók könnyebben megosztanának visszajelzéseket.
 - Kijavítottunk egy hibát, amely miatt a RoboRaid wan nincs megfelelően telepítve.
 
 ### <a name="known-issues"></a>Ismert problémák
 
-- A zh-CN rendszernyelvvel kapcsolatos probléma megakadályozza, hogy a hangparancsok vegyes valóságot rögzítsenek vagy megjelenítsen egy eszköz IP-címét.
-- A probléma megoldásához el kell indítania a Cortana alkalmazást, miután elindítja az eszközt a "Hey Cortana" hangaktiválás használatához. Ha egy 18362-es buildről frissített, akkor előfordulhat, hogy a Cortana-alkalmazás előző verziójának egy második alkalmazáscsempe is látható, amely már nem működik a **Start menüben.**
+- A zh-CN rendszernyelvvel kapcsolatos probléma megakadályozza, hogy a hangparancsok vegyes valóságú rögzítést készítsenek, vagy megjelenítsék az eszköz IP-címét.
+- A probléma megoldásához el kell indítania a Cortana alkalmazást, miután elindítja az eszközt a "Cortana" hangaktiválás használatához. Ha frissített egy 18362-es buildről, akkor előfordulhat, hogy a Cortana-alkalmazás előző verziójának egy második alkalmazáscsempe is látható, amely már nem működik a **Start menüben.**
 
 ## <a name="windows-holographic-version-1903---may-2020-update"></a>Windows Holographic, 1903-as verzió – 2020. májusi frissítés 
 - Build 18362.1061
@@ -1289,7 +1364,7 @@ Ez a havi minőségi frissítés nem tartalmaz jelentős változásokat, mivel a
 
 **Sötét mód a támogatott alkalmazásokhoz** 
 
-Számos Windows-alkalmazás támogatja a sötét és a világos módot is. A HoloLens 2 ügyfelei mostantól kiválaszthatják az alapértelmezett módot a mindkét színsémát támogató alkalmazásokhoz. Az ügyfelek visszajelzései alapján az alapértelmezett alkalmazásmódot "sötétre" állítva bármikor módosíthatja ezt a beállítást: Lépjen a Beállítások **> System > Colors** elemre, és keresse meg az "Alapértelmezett alkalmazásmód kiválasztása" **lehetőséget.**
+Számos Windows-alkalmazás támogatja a sötét és a világos módot is. A HoloLens 2 ügyfelei mostantól kiválaszthatják az alapértelmezett módot a mindkét színsémát támogató alkalmazásokhoz. Az ügyfelek visszajelzései alapján az alapértelmezett alkalmazásmódot "sötétre" állítva bármikor módosíthatja ezt a beállítást: Lépjen a Settings > System > Colors (Beállítások > **System > Colors)** elemre, és keresse meg a **"Choose your default app mode"** (Az alapértelmezett alkalmazásmód kiválasztása) lehetőséget.
 
 Ezek a "in-box" alkalmazások támogatják a sötét módot:
 - Beállítások
@@ -1305,8 +1380,8 @@ Ezek a "in-box" alkalmazások támogatják a sötét módot:
 
 **Fejlesztések és javítások a frissítésben is:** 
 - Gondoskodott arról, hogy a rendszerhéj-átfedések vegyes valóságú rögzítésben is szerepelnek.
-- Az Unreal-fejlesztők mostantól a 3D View (3D Eszközportál oldalon tesztelik és hibakeresést végezni az alkalmazásukon.
-- Továbbfejlesztett hologramstabilitás vegyes valóságban a *HolographicDepthReprojectionMethod DepthReprojection algoritmus* használata esetén.
+- Az Irreális fejlesztők mostantól a 3D View (3D-nézet) Eszközportál tesztelni és hibakeresést végezni az alkalmazásokban.
+- A hologram stabilitásának javítása vegyes valóságban a *HolographicDepthReprojectionMethod DepthReprojection algoritmus* használata esetén.
 - Ki van javítva a "WinRT IStreamSocketListener API-osztály nincs regisztrálva" hiba a 32 bites ARM-alkalmazásokban.
 
 ## <a name="windows-holographic-version-1903---march-2020-update"></a>Windows Holographic, 1903-as verzió – 2020. márciusi frissítés 
@@ -1314,9 +1389,9 @@ Ezek a "in-box" alkalmazások támogatják a sötét módot:
 
 A frissítés fejlesztései és javításai:
 
-- Továbbfejlesztett hologramstabilitás vegyes valóságban a *HolographicDepthReprojectionMethod AutoPlanar* algoritmus használata esetén.
+- Jobb hologramstabilitás a vegyes valóságban a *HolographicDepthReprojectionMethod AutoPlanar* algoritmus használata esetén.
 - Gondoskodott róla, hogy a mélységi MF-mintához csatolt koordinátarendszer konzisztens legyen a nyilvános dokumentációval.
-- A fejlesztői hatékonyság növelése azzal, hogy lehetővé teszi az ügyfelek számára, hogy nagy mennyiségű szöveget illessnek be az eszközportálon keresztül.
+- Hatékonyabb fejlesztői hatékonyság, mert lehetővé teszi az ügyfelek számára, hogy nagy mennyiségű szöveget illessnek be az eszközportálon keresztül.
 
 ## <a name="windows-holographic-version-1903---february-2020-update"></a>Windows Holographic, 1903-as verzió – 2020. februári frissítés 
 - Build 18362.1053
@@ -1325,7 +1400,7 @@ A frissítés fejlesztései és javításai:
 
 - Ideiglenesen letiltotta a HolographicSpace.UserPresence API-t Unity-alkalmazásokhoz. Ez a módosítás elkerüli azt a problémát, amely miatt egyes alkalmazások szünetelnek a vizor tükrözése esetén, még akkor is, ha a "futtatás a háttérben" beállítás engedélyezve van.
 - Kijavítottunk egy kézi követés által okozott véletlenszerű HUP-összeomlást, amelyben a felhasználó felhasználói felületi lefagyást észlelt, majd néhány másodperc elteltével visszatért a rendszerhéjba.
-- Továbbfejlesztett kézkövetés, hogy amikor az indexavacsával omol, az ujjlenyomat felső része kevésbé valószínű, hogy váratlanul megreked.
+- Továbbfejlesztett kézkövetés, hogy amikor az indexavacsával koppint, annak az ujjlenyomatnak a felső része kevésbé lesz nagy valószínűséggel megördülve.
 - Javult a fejkövetés, a térbeli leképezés és más futásidők megbízhatósága.
 
 ## <a name="windows-holographic-version-1903---january-2020-update"></a>Windows Holographic, 1903-as verzió – 2020. januári frissítés 
@@ -1333,24 +1408,24 @@ A frissítés fejlesztései és javításai:
  
 A frissítés fejlesztései és javításai:
 
-- Nagyobb stabilitás az exkluzív alkalmazásokhoz a HoloLens 2 emulátor használata során.
+- Továbbfejlesztett stabilitás az exkluzív alkalmazásokhoz a HoloLens 2 emulátor használata során.
 
 ## <a name="windows-holographic-version-1903---december-2019-update"></a>Windows Holographic, 1903-as verzió – 2019. decemberi frissítés 
 - Build 18362.1042
 
 A frissítés fejlesztései és javításai:
 
-- Bevezettük az utolsó fázisú reprodukálás (LSR) javításokat. Továbbfejlesztett vizuális renderelés a hologramok számára, hogy stabilabbnak és stabilabbnak jelenjenek meg, és pontosabban számolják el azok mélységét. Ez a jelenség a frissítés után észrevehetőbb lesz, ha az alkalmazások nem megfelelően állítják be a hologramok mélységét.
-- Ki van javítva az exkluzív alkalmazások stabilitása és az kizárólagos alkalmazások közötti navigáció.
-- Megoldottunk egy problémát, amely miatt a vegyes valóságú rögzítés nem tudott videót rögzíteni, miután az eszköz több napig készenléti állapotban volt.
-- Továbbfejlesztett hologram-stabilitás.
+- Bevezettük az utolsó fázis reprodukálás (LSR) javításokat. A hologramok továbbfejlesztett vizuális renderelése stabilabbnak és pontosabbnak tűnik, és pontosabban számol a mélységüknek. Ez a jelenség a frissítés után észrevehetőbb lesz, ha az alkalmazások nem megfelelően állítják be a hologramok mélységét.
+- Ki van javítva az exkluzív alkalmazások stabilitása és az exkluzív alkalmazások közötti navigáció.
+- Megoldottuk azt a problémát, amely miatt a vegyes valóságú rögzítés nem tudott videót rögzíteni, miután az eszköz több napig készenléti állapotban volt.
+- Továbbfejlesztett hologramstabilitás.
 
 ## <a name="windows-holographic-version-1903---november-2019-update"></a>Windows Holographic, 1903-as verzió – 2019. novemberi frissítés 
 - Build 18362.1039
 
 A frissítés fejlesztései és javításai:
 
-- Ki van javítva a **Hangparancsok** kiválasztása funkció az en-CA és az en-AU kezdeti beállítása során.
-- Javult az objektumok vizuális minősége a Unity és az Mixed Reality Toolkit (MRTK) legújabb verzióiban.
-- Kijavítottuk az indításkor szüneteltetett állapotban elakadt holografikus alkalmazások problémáinak megoldását, Start menü a rendszer megnyitotta és bezárta.
-- Az OpenXR-futásidejű megfelelőség javításai és fejlesztései a HoloLens 2 és az emulátor számára.
+- Ki van javítva **a Hangparancsok** kiválasztása funkció az en-CA és az en-AU kezdeti beállítása során.
+- Javult az objektumok vizuális minősége a unity és az Mixed Reality Toolkit (MRTK) legújabb verzióiban.
+- Ki lett javítva az indításkor szüneteltetett állapotban elakadó holografikus alkalmazások problémáinak megoldása, amíg a Start menü meg nem nyitották, majd be nem zárták.
+- Az OpenXR-futásidejű megfelelőség javításai és fejlesztései a HoloLens 2-hez és az emulátorhoz.

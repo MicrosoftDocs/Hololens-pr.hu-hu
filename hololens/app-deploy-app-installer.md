@@ -14,19 +14,19 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9e413963dbf34dd071fc9603487590065b967ee7
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: d8be5c2ed7fba38b6710aba9c122557a36073a79
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378051"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924128"
 ---
 # <a name="install-apps-on-hololens-2-via-app-installer"></a>Alkalmazások telepítése a HoloLens 2-re a Alkalmazástelepítő
 
 > [!NOTE]
-> Ez a funkció a [Windows Holographic 20H2 – 2020.](hololens-release-notes.md)decemberi frissítésében lett elérhető. Ellenőrizze, hogy az eszköz [frissítve van-e](hololens-update-hololens.md) a funkció használatához.
+> Ez a funkció a [Windows Holographic 20H2 – 2020.](hololens-release-notes.md)decemberi frissítésében érhető el. Ellenőrizze, hogy az eszköz [frissítve van-e](hololens-update-hololens.md) a funkció használatához.
 
-Új funkciót **(Alkalmazástelepítő)** adtunk hozzá, amely lehetővé teszi az alkalmazások zökkenőmentesebb telepítését a HoloLens 2-eszközökön. Ez a funkció alapértelmezés szerint be lesz kapcsolva a nem **engedélyezett eszközökön.** A vállalatok kimaradásának elkerülése érdekében az alkalmazástelepítő jelenleg nem lesz elérhető **a felügyelt** eszközökhöz.  
+Új **képességet (Alkalmazástelepítő)** adtunk hozzá, amely lehetővé teszi az alkalmazások zökkenőmentesebb telepítését a HoloLens 2-eszközökön. Ez a funkció alapértelmezés szerint be lesz kapcsolva a nem **engedélyezett eszközökön.** A vállalatok kimaradásának elkerülése érdekében az alkalmazástelepítő jelenleg nem lesz elérhető **a felügyelt** eszközökhöz.  
 
 Az eszközök akkor minősülnek  "felügyeltnek", ha az alábbiak bármelyike igaz:
 
@@ -34,7 +34,7 @@ Az eszközök akkor minősülnek  "felügyeltnek", ha az alábbiak bármelyike i
 - Kiépítési [csomaggal konfigurálva](hololens-provisioning.md)
 - A felhasználói [identitás](hololens-identity.md) az Azure AD
 
-Most már anélkül telepítheti az alkalmazásokat, hogy engedélyeznie kellene a fejlesztői módot, vagy Eszközportál.  Töltse le (USB-n vagy Microsoft Edge) az Appx-csomagot az eszközre, és navigáljon az Appx-csomaghoz a Fájlkezelő-ban, hogy a rendszer a telepítést elindító kérést kapjon.  Másik lehetőségként [kezdeményezzen telepítést a weblapról.](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)  Az Microsoft Store-ból telepített alkalmazásokhoz vagy az MDM LOB App Deployment funkcióját használó alkalmazásokhoz hasonló [](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) módon az [](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) alkalmazásoknak digitálisan alá kell írniuk az aláírási eszközzel, és az aláíráshoz használt tanúsítványnak megbízhatónak kell lennie a HoloLens-eszközben az alkalmazás üzembe helyezése előtt.
+Most már anélkül telepíthet alkalmazásokat, hogy engedélyeznie kellene a fejlesztői módot, vagy engedélyeznie kellene a Eszközportál.  Töltse le (USB-n vagy Microsoft Edge) az Appx-csomagot az eszközre, és navigáljon az Appx-csomaghoz a Fájlkezelő-ban, hogy a rendszer a telepítést elindító kérést kapjon.  Másik lehetőségként [kezdeményezzen telepítést a weblapról.](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)  Az Microsoft Store-ból telepített alkalmazásokhoz vagy az MDM LOB App Deployment funkcióját használó alkalmazásokhoz hasonló [](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) módon az [](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) alkalmazásoknak digitálisan alá kell írniuk az aláírási eszközzel, és az aláíráshoz használt tanúsítványnak megbízhatónak kell lennie a HoloLens-eszközben az alkalmazás üzembe helyezése előtt.
 
 ## <a name="requirements"></a>Követelmények
 
@@ -86,7 +86,7 @@ Ha az alkalmazás telepítése nem sikerült, ellenőrizze a következőket a hi
 
 ## <a name="web-installer"></a>Webes telepítő
 
-A felhasználók közvetlenül a webkiszolgálóról telepíthet alkalmazásokat. Ez a folyamat az alkalmazást használja Alkalmazástelepítő egyszerű letöltési és telepítési terjesztési módszerrel kombinálva.
+A felhasználók közvetlenül egy webkiszolgálóról telepíthet alkalmazásokat. Ez a folyamat az alkalmazást használja Alkalmazástelepítő egyszerű letöltési és telepítési terjesztési módszerrel kombinálva.
 
 ### <a name="how-to-set-up-web-install"></a>Webes telepítés beállítása:
 
@@ -100,15 +100,13 @@ A felhasználók közvetlenül a webkiszolgálóról telepíthet alkalmazásokat
 
 Az alkalmazás most már telepítve lesz az eszközön. Az alkalmazás megkereséhez nyissa meg a **Start menü,** és válassza Minden alkalmazás **gombot** az alkalmazás megkereséhez.
 
-- Az alkalmazástelepítő telepítési módszerének hibaelhárításával kapcsolatos további segítségért keresse fel az [alkalmazástelepítővel kapcsolatos problémák elhárítását bemutató témakört.](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues)
+- Az alkalmazástelepítő telepítési módszerének hibaelhárításával kapcsolatos további segítségért látogasson el az [alkalmazástelepítő hibáinak elhárításához.](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues)
 
 > [!NOTE]
 > A felhasználói felület a frissítési folyamat során nem támogatott. Így a ShowPrompt beállítás ezen [az oldalon és](https://docs.microsoft.com/windows/msix/app-installer/update-settings) a kapcsolódó beállítások nem támogatottak.
 
 ## <a name="sample-apps"></a>Mintaalkalmazások
 
-A Alkalmazástelepítő mintaalkalmazásokkal való kipróbálható néhány elérhető minta:
-
-- [MRTK-példák központja](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html)
-- [Felületek](https://docs.microsoft.com/windows/mixed-reality/develop/unity/sampleapp-surfaces)
-- [A teszteléshez használható UWP-mintaalkalmazások](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples)
+Próbálja ki a Alkalmazástelepítő az elérhető mintaalkalmazásaink egyikével. 
+> [!div class="nextstepaction"]
+> [Mintaalkalmazások](https://docs.microsoft.com/windows/mixed-reality/develop/features-and-samples?tabs=unity#sample-apps)

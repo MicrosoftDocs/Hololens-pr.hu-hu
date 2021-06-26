@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b5779ffa1de1700b4fcd17fc17b8ae3a82a45c22
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: d28994d911532a940d82756aa45609571ee80ac3
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379573"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924332"
 ---
 # <a name="page-settings-visibility"></a>Oldalbeállítások láthatósága
 
@@ -32,7 +32,7 @@ Az alábbi példa egy olyan szabályzatot mutat be, amely csak az About és a Bl
 
 Ennek beállítása kiépítési csomaggal:
 
-1. Amikor a Windows Configuration Designerben létrehozza a csomagot, lépjen a Házirendek és > **beállítások > Lap láthatóságaLista elemre.**
+1. Amikor a Windows Configuration Designerben létrehozza a csomagot, lépjen a Házirendek és > **lapra > PageVisibilityList gombra.**
 1. Adja meg a sztringet: **`showonly:network-wifi;network-proxy;bluetooth`**
 1. Exportálja a kiépítési csomagot.
 1. Alkalmazza a csomagot az eszközre.
@@ -48,7 +48,7 @@ Ezt az Intune-on keresztül, az OMA-URI használatával lehet tenni:
 
 További információ az Intune-csoportokról és az eszközkonfigurációkról: [HoloLens MDM-konfiguráció.](hololens-mdm-configure.md)
 
-Az eszköznek a választott módszertől függetlenül meg kell kapnia a módosításokat, és a felhasználók számára a következő Beállítások alkalmazás fog jelennek meg.
+Az eszköznek a választott módszertől függetlenül meg kell kapnia a módosításokat, és a felhasználók számára a következő Beállítási alkalmazás fog jelenni.
 
 ![Képernyőkép a Beállítások alkalmazásban módosított aktív órákról](images/hololens-page-visibility-list.jpg)
 
@@ -69,9 +69,9 @@ A HoloLens- és Windows 10-eszközök különböző oldalakat tartalmaznak a Be�
 | Beállítások lap | URI                          |
 |---------------|------------------------------|
 | Alkalmazások &<sup>funkciók 2</sup>     | `ms-settings:appsfeatures` <br> |
-| Alkalmazások & funkciókkal > <sup>2.</sup> speciális beállításokkal     | `ms-settings::appsfeatures-app` <br> |
+| Alkalmazások & funkciókkal > <sup>2.</sup> speciális beállítások     | `ms-settings::appsfeatures-app` <br> |
 | Az offline & <sup>2</sup> > alkalmazások     | `ms-settings:maps-maps` <br> |
-| Az offline térképek & elérhető > alkalmazások > Maps <sup>2 letöltése</sup>     | `ms-settings:maps-downloadmaps` <br> |
+| Az offline & térképek > alkalmazások > Maps <sup>2 letöltése</sup>     | `ms-settings:maps-downloadmaps` <br> |
 
 ### <a name="devices"></a>Eszközök
 | Beállítások lap | URI                          |
@@ -136,13 +136,13 @@ A HoloLens- és Windows 10-eszközök különböző oldalakat tartalmaznak a Be�
 | Hang > alkalmazáskötet és eszköz preferencia <sup>2</sup>           | `ms-settings:apps-volume`<br>|
 | Hang > Hangeszközök kezelése <sup>2</sup>           | `ms-settings:sound-devices`<br>|
 | Tárolás            | `ms-settings:storagesense`           |
-| Storage > Configue Tárterületsegéd <sup>2</sup>           | `ms-settings:storagepolicies`<br>|
+| Storage > <sup>2.</sup> Tárterületsegéd konfigurálása           | `ms-settings:storagepolicies`<br>|
 
 ### <a name="time--language"></a>Time & Language
 | Beállítások lap | URI                                           |
 |---------------|-----------------------------------------------|
 | Dátum & <sup>2</sup> | `ms-settings:dateandtime`                  |
-| <sup>2. billentyűzet</sup> | `ms-settings:keyboard`                  |
+| <sup>2.</sup> billentyűzet | `ms-settings:keyboard`                  |
 | <sup>2. nyelv</sup> | `ms-settings:language`                  |
 | <sup>2. nyelv</sup> | `ms-settings:regionlanguage-languageoptions`                  |
 | Nyelv      | `ms-settings:regionlanguage`<br>`ms-settings:regionlanguage-adddisplaylanguage`<br>`ms-settings:regionlanguage-setdisplaylanguage` |
@@ -158,11 +158,11 @@ A HoloLens- és Windows 10-eszközök különböző oldalakat tartalmaznak a Be�
 | Windows Update – Frissítések keresése | `ms-settings:windowsupdate-action`          |
 
 
->  <sup>1</sup> A Windows Holographic előtti, 21H1-es verziónál korábbi verziók esetén  a következő két URI valójában nem a Speciális beállítások vagy Beállítások **oldalra** lép; csak a főoldalt blokkolják vagy Windows Update meg.
-> - ms-settings:windowsupdate-options
-> - ms-settings:windowsupdate-restartoptions
- 
-> <sup>2</sup> – Windows Holographic 21H1 vagy újabb rendszeren érhető el.
+- <sup>1</sup> – A Windows Holographic előtti, 21H1-es verziójú verziók esetén  a következő két URI valójában nem a Speciális beállítások vagy beállítások **oldalra** lép; csak a főoldalt blokkolják vagy Windows Update meg.
+  -  ms-settings:windowsupdate-options
+  -  ms-settings:windowsupdate-restartoptions
+
+- <sup>2</sup> – Windows Holographic 21H1 vagy újabb rendszeren érhető el.
 
 
 A beállítások URI Windows 10 teljes listáját az indítási beállítások [dokumentációjában](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) találhatja meg.

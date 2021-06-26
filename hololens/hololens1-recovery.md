@@ -16,18 +16,18 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f855aa84a347edc85e5b9f02458721778eb2515a
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 5963be84a5fbb186c77965d9bbf112713fea8242
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111378082"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923516"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>A HoloLens újraindítása, alaphelyzetbe állítása vagy helyreállítása (1. generációs)
 
 Ha problémákat tapasztal a HoloLens-sel kapcsolatban, megpróbálhatja újraindítani vagy alaphelyzetbe állítani az eszközt, vagy akár újra is perelheti az eszközt az eszköz helyreállításával. Ez a cikk végigvezeti a javasolt helyreállítási lépések sorrendjén.
 
-Ha helyre kell állítania egy HoloLens 2-t, tekintse meg [a HoloLens 2](https://docs.microsoft.com/hololens/hololens-recovery)helyreállítását, mivel ez a folyamat eltér.
+Ha helyre kell állítania egy HoloLens 2-t, tekintse meg [a HoloLens 2](hololens-recovery.md)helyreállítását, mivel ez a folyamat eltér.
 
 > [!NOTE]
 > Ez a cikk a HoloLens-eszközre és -szoftverre összpontosít. Ha a hologramok nem jól néznek ki, a **[HoloLens-környezet](hololens-environment-considerations.md)** szempontjait és a hologramminőséget javítására irányuló tényezőkkel kapcsolatos információkért tekintse meg.
@@ -57,7 +57,7 @@ Ha továbbra sem tudja újraindítani az eszközt, próbálja meg újraindítani
    > [!IMPORTANT]
    > Ne nyomja le azonnal a gombot, miután az összes LED ki van kapcsolva.
 1. Várjon 1 percet, amíg a leállítás befejeződik. Előfordulhat, hogy a leállítás még a kijelzők kikapcsolása után is folyamatban van.
-2. Kapcsolja be újra az eszközt  a bekapcsológomb 1 gombra való lenyomásával.
+2. Kapcsolja be újra az eszközt  úgy, hogy 1 gombra lenyomva tartja a bekapcsológombot.
 
 ### <a name="do-a-safe-restart-by-using-windows-device-portal"></a>Biztonságos újraindítás a Windows eszközportál
 
@@ -68,7 +68,7 @@ Ha az előző eljárás nem működött, próbálja meg újraindítani az eszkö
 
 ### <a name="do-an-unsafe-forced-restart"></a>Nem biztonságos kényszerített újraindítás
 
-Ha az előző metódusok nem indítani a HoloLenst, kényszerítsen újraindítást. Ez a módszer egyenértékű az akkumulátor eltávolításával és újratelepítésével. Ez azért veszélyes, mert az eszközt sérült állapotban hagyhatja. Ha ez történik, akkor a HoloLenst is fel kell flashmenten.  
+Ha az előző metódusok nem újraindítják a HoloLenst, kényszerítsen újraindítást. Ez a módszer egyenértékű az akkumulátor eltávolításával és újratelepítésével. Ez azért veszélyes, mert az eszközt sérült állapotban hagyhatja. Ha ez történik, akkor a HoloLenst is fel kell flashmenten.  
 
 > [!WARNING]
 > Ez egy potenciálisan káros metódus, és csak akkor szabad használni, ha a korábban hivatkozott metódusok nem működtek.
@@ -79,6 +79,27 @@ Ha az előző metódusok nem indítani a HoloLenst, kényszerítsen újraindít�
 1. Engedje el a gombot, és várjon 2–3 másodpercet.
 1. Nyomja le és tartsa lenyomva a **bekapcsológombot** 1 gombra.
 1. Ha továbbra is problémákat  tapasztal, nyomja meg a bekapcsológombot 4 másodpercig, amíg el nem halványulnak az akkumulátor kijelzői, és a képernyő nem jelenít meg hologramokat. Várjon 1 percet, majd nyomja meg ismét a **bekapcsológombot** az eszköz bekapcsoláshoz.
+
+## <a name="go-back-to-a-previous-version---hololens-1st-gen"></a>Vissza verzióra való áttűnés – HoloLens (1. generáció)
+
+Bizonyos esetekben érdemes lehet visszatérni a HoloLens szoftver egy korábbi verziójára. Ehhez a Windows Device Recovery eszközzel visszaállíthatja a HoloLenst a korábbi verzióra.
+
+> [!NOTE]
+> A korábbi verzióra való visszaút törli a személyes fájlokat és beállításokat.
+
+A HoloLens 1 korábbi verziójára való visszaúthoz kövesse az alábbi lépéseket:
+
+1. Győződjön meg arról, hogy nincs csatlakoztatva telefon vagy Windows-eszköz a számítógéphez.
+1. A számítógépen töltse le a [Windows Device Recovery Tool (WDRT) eszközt.](https://support.microsoft.com/help/12379)
+1. Töltse le a [HoloLens évfordulós frissítés helyreállítási csomagját.](https://aka.ms/hololensrecovery)
+1. Ha a letöltések befejeződnek, nyissa meg a **Fájlkezelő**  >  **Letöltések gombra.** Kattintson a jobb gombbal az előbb letöltött tömörített mappára, és válassza az Extract all Extract **(Összes** kibontás) lehetőséget a  >   kicsomagoláshoz.
+1. Csatlakoztassa a HoloLenst a számítógépéhez a vele együtt használt mikro-USB-kábellel. (Ez akkor is működik a legjobban, ha más kábelekkel csatlakoztatta a HoloLenst.)
+1. A WDRT automatikusan észleli a HoloLenst. Válassza a **Microsoft HoloLens** csempét.
+1. A következő képernyőn válassza a **Manuális** csomagválasztás lehetőséget, és válassza ki a 4. lépésben kicsomagolt mappában található telepítőfájlt. (Keress egy .ffu kiterjesztésű fájlt.)
+1. Válassza **a Szoftver telepítése lehetőséget,** és kövesse az utasításokat.
+
+> [!NOTE]
+> Ha a WDRT nem észleli a HoloLenst, próbálja meg újraindítani a számítógépet. Ha ez nem működik, jelölje be a **Saját eszköz nem** észlelhető lehetőséget, válassza a Microsoft HoloLens lehetőséget, majd kövesse az utasításokat. 
 
 ## <a name="reset-to-factory-settings"></a>Visszaállítás a gyári beállításokra
 
@@ -103,14 +124,14 @@ A HoloLensnek az alaphelyzetbe állításhoz szükséges adatai egy teljes flash
 
 A Windows Eszköz-helyreállítási eszközzel új operációs rendszert telepíthet a HoloLens (1. generációs) eszközére. Az eszköz használata előtt nézze meg, hogy a HoloLens újraindítása vagy alaphelyzetbe állítása megoldja-e a problémát.
 
-A helyreállítási folyamat egy ideig tart. Ha ez megtörtént, a Windows Holographic szoftver legújabb verziója lesz telepítve.
+A helyreállítási folyamat több ideig is eltért. Ha ez megtörtént, a Windows Holographic szoftver legújabb verziója lesz telepítve.
 
 Az eszköz csak akkor használható, ha Windows 10 vagy újabb, legalább 4 GB szabad tárhellyel. Ez az eszköz nem futtatható virtuális gépen.
 
 ### <a name="recover-your-hololens"></a>A HoloLens helyreállítása
 
 1. Töltse le és telepítse a [Windows Eszköz-helyreállítási eszközt](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) a számítógépre.
-1. Csatlakoztassa a HoloLenst (1. generációs) a számítógéphez a HoloLenshez csatlakoztatott Micro USB-kábellel.
+1. Csatlakoztassa a HoloLenst (1st gen) a számítógéphez a HoloLenshez csatlakoztatott Micro USB-kábellel.
 1. Nyissa meg a Windows Eszköz-helyreállítási eszközt, és kövesse az utasításokat.
 
 Ha a HoloLens (1. generációs) nem észlelhető automatikusan, válassza a **Saját eszköz nem észlelhető lehetőséget.** Ezután kövesse az utasításokat az eszköz helyreállítási módba való beállításhoz.
@@ -121,7 +142,7 @@ Ha a rendszer nem észleli az eszközt, kövesse az alábbi lépéseket a flash 
 
 1. Válassza le az eszközt bármely áramforrásról.
 1. Ha az eszköz be van kapcsolva, tartsa lenyomva a **bekapcsológombot,** amíg teljesen ki nem vált.
-2. Tartsa lenyomva **a hangerőt gombot,** és koppintson röviden a **bekapcsoló gombra.** Az eszköznek el kell indulni, és csak a középső LED-et kell megjelenítenie.
+2. Tartsa lenyomva **a kötetet fel** gomb, és koppintson röviden a **bekapcsoló gombra.** Az eszköznek csak a középső LED-et szabad elindulni és megjelenítenie.
 3. Csatlakoztassa az eszközt a számítógéphez.
 4. Nyissa meg a Windows Eszköz-helyreállítási eszközt.
 5. Válassza **a Nem észlelhető az eszközöm lehetőséget,** majd a **HoloLens lehetőséget.** 
