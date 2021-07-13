@@ -15,12 +15,12 @@ metadata:
   manager: yannisle
   appliesto:
   - HoloLens 2
-  ms.openlocfilehash: 97f3bbdfec85e64d2895dfb5482ee9dc692c5e4c
-  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+  ms.openlocfilehash: be152373fadb6f2b5778616bae0f9bff9356af3d
+  ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
   ms.translationtype: MT
   ms.contentlocale: hu-HU
   ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113637301"
+  ms.locfileid: "113639692"
 title: HoloLens 2. kiadás – gyakori kérdések
 summary: ''
 sections:
@@ -93,15 +93,15 @@ sections:
   - question: >
       Hol kaphatok további információt a HoloLens 2 Development Edition kiadásról?
     answer: >
-      Látogasson el a HoloLens 2 Development Edition dokumentációs oldalára. [További információ](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+      Látogasson el a HoloLens 2 Development Edition dokumentációs oldalára. [További információ](hololens2-options.md?tabs=device)
   - question: >
       Hol kaphatok további információt a Mixed Reality fejlesztésről?
     answer: >
-      Látogasson el a bevezetés Mixed Reality dokumentációba. [További információ](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unityhttps://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity)
+      Látogasson el a bevezetés Mixed Reality dokumentációba. [További információ](/windows/mixed-reality/develop/development?tabs=unity)
   - question: >
       Hol kaphatok további információt a Mixed Reality tervezésről?
     answer: >
-      Látogasson el a Bevezetés Mixed Reality tervezési dokumentációba. [További információ](https://docs.microsoft.com/windows/mixed-reality/design/design)
+      Látogasson el a Bevezetés Mixed Reality tervezési dokumentációba. [További információ](/windows/mixed-reality/design/design)
   - question: >
       Hol kaphatok támogatást a HoloLens Developer Editionhez?
     answer: >
@@ -130,7 +130,7 @@ sections:
       4. Adja meg a termékkódot, és &#39;Termékkód beváltása&#39;
 
 
-      További HoloLens az HoloLens 2 Development Edition [dokumentációjában](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+      További HoloLens az HoloLens 2 Development Edition [dokumentációjában](hololens2-options.md?tabs=device)
   - question: >
       A Pro-licenctől különböző Unity-verzióval is tudok alkalmazásokat építeni?
     answer: >
@@ -163,31 +163,31 @@ sections:
       4. Adja meg a termékkódot, és kattintson &#39;Termékkód beváltása&#39;
 
 
-      További HoloLens az HoloLens 2 Development Edition [dokumentációjában](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+      További HoloLens az HoloLens 2 Development Edition [dokumentációjában](hololens2-options.md?tabs=device)
   - question: >
       Hogyan Pixyz ügyfélszolgálatához?
     answer: >
       Ha segítségre van szüksége a Unity-azonosítóval, -fiókkal, -szervezettel vagy -előfizetésekkel kapcsolatos kérdésekhez, látogasson el a support.unity3d.com
 
 
-      Pixyz-specifikus támogatásért (a próbaverzió beváltása [](http://pixyz-software.com/support) után) látogasson el a Pixyz-software.com/support
+      Pixyz-specifikus támogatásért (a próba beváltása után) látogasson el a [Pixyz-software.com/support](http://pixyz-software.com/support)
 - name: Azure
   questions:
   - question: >
-      Hogyan tudom beváltani az 500 dolláros Azure-kreditet?
+      Hogyan tudom beváltani az 500 dolláros Azure-kreditemet?
     answer: >
-      Az 500 dolláros Azure-kreditek beváltához váltsa Azure Pass promóciós kódját, és aktiválja az előfizetését. [További információ](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
+      Az 500 dolláros Azure-kreditek beváltához váltsa be Azure Pass promóciós kódját, és aktiválja az előfizetését. [További információ](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
 
 
-      Tekintse át Azure Pass [előfizetési szerződést és](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) [az ajánlat részleteit.](https://azure.microsoft.com/en-us/offers/azure-pass/)
+      Tekintse át a Azure Pass [előfizetési szerződést és](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) [az ajánlat részleteit.](https://azure.microsoft.com/en-us/offers/azure-pass/)
   - question: >
       Mikor jár le az 500 dolláros Azure-kreditem?
     answer: >
-      Az 500 dolláros Azure-kredit az Azure-kulcskód aktiválása után 90 nappal lejár.
+      Az 500 dolláros Azure-kredit 90 nappal az Azure-kulcskód aktiválása után lejár.
   - question: >
       Mire használhatom az Azure-krediteket?
     answer: >
-      Az Azure-kreditek használatával megkezdheti a microsoftos&#39;egyre bővülő felhőszolgáltatásokkal. A HoloLens 2 Development Editionben elérhető Azure-kreditek lehetővé teszik az ügyfelek számára, hogy gyorsan nekivessnek az Azure-beli vegyes valóságú alkalmazások fejlesztésének és tesztelésének. Az Azure-beli építés részleteiért látogasson el az [Azure-erőforrásokra.](https://azure.microsoft.com/en-us/resources/)
+      Az Azure-kreditekkel megkezdheti a microsoftos&#39;egyre bővülő felhőszolgáltatásokkal. A HoloLens 2 Development Editionhez mellékelt Azure-kreditek lehetővé teszik az ügyfelek számára, hogy gyorsan nekivássnak a vegyes valóságú alkalmazások azure-beli fejlesztésének és tesztelésének. Az Azure-beli építés részletes adataiért látogasson el az [Azure-erőforrások webhelyre.](https://azure.microsoft.com/en-us/resources/)
   - question: >
-      Hol kaphatok további információt az Azure vegyes valóságú szolgáltatásairól?
-    answer: A Microsoft vegyes valóságú szolgáltatásokat kínál, hogy a fejlesztők vegyes valóságú megoldásokat hoznak létre és tesztelnek. [További információ](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)
+      Hol kaphatok további információt a vegyes valóságú Azure-szolgáltatásokról?
+    answer: A Microsoft vegyes valóságú szolgáltatásokat kínál, hogy a fejlesztők vegyes valóságú megoldásokat hoznak létre és tesztelnek. [További információ](/windows/mixed-reality/develop/mixed-reality-cloud-services)
