@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cfe4206790b12d77a7f5be4267387cdd0299c3fe
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 4c476a2adc8f03c37e17e6324960318b4806534e
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636860"
+ms.locfileid: "113639743"
 ---
 # <a name="about-hololens-2"></a>A 2 HoloLens ről
 
@@ -58,22 +58,22 @@ Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százal�
 
 ### <a name="display"></a>Megjelenítés
 
-|   |   |
-| - | - |
-| Optika | Átfedő holografikus objektívek (waveguides) |
-| Holografikus felbontás | 2k 3:2-es fénymotorok |
-| Holografikus sűrűség | >2,5 000 radián (radiánonkénti világos pontok) |
-| Szemalapú renderelés | Optimalizálás megjelenítése 3D szempozícióhoz |
+|   | &nbsp; |
+|---|---|
+| **Optika** | Átfedő holografikus objektívek (waveguides) |
+| **Holografikus felbontás** | 2k 3:2-es fénymotorok |
+| **Holografikus sűrűség** | >2,5 000 radián (radiánonkénti világos pontok) |
+| **Szemalapú renderelés** | Optimalizálás megjelenítése 3D szempozícióhoz |
 
 ### <a name="sensors"></a>Érzékelők
 
-|   |   |
-| - | - |
-| Fejkövetés | 4 látható fénykamera |
-| Szemkövetés | 2A gépeket (IR) figyelő kamerák |
-| Mélység | 1 MP-es mélységérzékelő |
-| Inertial measurement unit (IMU) | Gyorsulásmérő, groscope, kilométeróra |
-| Kamera | 8 MP-es stills, 1080p30 videó |
+|   | &nbsp; |
+|---|---|
+| **Fejkövetés** | 4 látható fénykamera |
+| **Szemkövetés** | 2A gépeket (IR) figyelő kamerák |
+| **Mélység** | 1 MP-es mélységérzékelő |
+| **Inertial measurement unit (IMU)** | Gyorsulásmérő, groscope, kilométeróra |
+| **Fényképezőgép** | 8 MP-es stills, 1080p30 videó |
 
 ![HoloLens 2 érzékelő](images/hololens2-front-view.png)
 
@@ -82,77 +82,77 @@ Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százal�
 
 ### <a name="audio-and-speech"></a>Hang és beszéd
 
-|   |   |
-| - | - |
-| Mikrofontömb | 5 csatorna |
-| Hangszórók | Beépített térbeli hang |
+|   | &nbsp; |
+|---|---|
+| **Mikrofontömb** | 5 csatorna |
+| **Hangszórók** | Beépített térbeli hang |
 
 ### <a name="compute-and-connectivity"></a>Számítás és kapcsolat
 
-|   |   |
-| - | - |
-| Rendszer lapkán | A Qualcomm Snapdragon 850 számítási platform [részletei](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) |
-| Holografikus feldolgozási egység | Második generációs, egyénileg létrehozott holografikus feldolgozási egység |
-| Memória | 4 GB-os LPDDR4x rendszer-DRAM |
-| Tárolás | 64 GB-os UFS 2.1 |
-| Wifi | 802.11ac 2x2 |
-| Bluetooth | 5.0 |
-| USB | USB Type-C DRP |
+|   | &nbsp; |
+|---|---|
+| **Rendszer lapkán** | A Qualcomm Snapdragon 850 számítási platform [részletei](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) |
+| **Holografikus feldolgozási egység** | Második generációs, egyénileg létrehozott holografikus feldolgozási egység |
+| **Memória** | 4 GB-os LPDDR4x rendszer-DRAM |
+| **Storage** | 64 GB-os UFS 2.1 |
+| **Wi-Fi** | 802.11ac 2x2 |
+| **Bluetooth** | 5.0 |
+| **USB** | USB Type-C DRP |
 
 ### <a name="power"></a>Energiaellátás
 
-|   |   |
-| - | - |
-| Akkumulátor élettartama | 2–3 órányi aktív használat. Legfeljebb két hét készenléti idő. |
-| Akkumulátor-technológia | [Lithium-akkumulátorok](https://www.microsoft.com/download/details.aspx?id=43388) |
-| Díjszabási viselkedés | Teljesen működőképes a díjszabáskor |
-| Hűtés típusa | Passzívan hűtött (ventilátorok nélkül) |
-| Power Draw | Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százaléka alatt is fenntartható vagy előrevehető legyen, legalább 15W-os akkumulátorhoz kell csatlakoztatni. |
+|   | &nbsp; |
+|---|---|
+| **Akkumulátor élettartama** | 2–3 órányi aktív használat. Legfeljebb két hét készenléti idő. |
+| **Akkumulátor-technológia** | [Lithium-akkumulátorok](https://www.microsoft.com/download/details.aspx?id=43388) |
+| **Díjszabási viselkedés** | Teljesen működőképes a díjszabáskor |
+| **Hűtés típusa** | Passzívan hűtött (ventilátorok nélkül) |
+| **Power Draw** | Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százaléka alatt is fenntartható vagy előrevehető legyen, legalább 15W-os akkumulátorhoz kell csatlakoztatni. |
 
 ### <a name="fit"></a>Alkalmazás
 
-|   |   |
-| - | - |
-| Méretezés | Egyméretű, állítható sávkal.  Napszemüvegek fölötti elférés |
-| Tömeg | 566 gramm |
+|   | &nbsp; |
+|---|---|
+| **Méretezés** | Egyetlen méret állítható sávkal.  Napszemüvegek felett elfér |
+| **Tömeg** | 566 gramm |
 
 ## <a name="device-capabilities"></a>Eszközképességek
 
 ### <a name="human-understanding"></a>Emberi értelem
 
-|   |   |
-| - | - |
-| Kézkövetés | Kétmagos, teljes körűen kifejlett modell, közvetlen manipuláció |
-| Szemkövetés | Valós idejű követés |
-| Hang | Parancs és vezérlés az eszközön; Cortana nyelv használata internetkapcsolattal |
+|   | &nbsp; |
+|---|---|
+| **Kézkövetés** | Kétmagos, teljes körűen kifejlett modell, közvetlen manipuláció |
+| **Szemkövetés** | Valós idejű követés |
+| **Hang** | Az eszköz vezérlése és vezérlése; Cortana nyelv használata internetkapcsolattal |
 
-### <a name="environment-understanding"></a>Környezetek ismertetése
+### <a name="environment-understanding"></a>Környezetértek ismertetése
 
-|   |   |
-| - | - |
-| Hat szabadságfok (6DoF) követés | Világméretű pozíciókövetés |
-| Térbeli leképezés | Valós idejű környezeti háló |
-| Vegyes valóság rögzítése | Vegyes hologram- és fizikai környezeti fényképek és videók |
+|   | &nbsp; |
+|---|---|
+| **Hat szabadságfok (6DoF) nyomon követése** | Világméretű pozíciókövetés |
+| **Térbeli leképezés** | Valós idejű környezeti háló |
+| **Vegyes valóság rögzítése** | Vegyes hologram és fizikai környezet – fényképek és videók |
 
 ## <a name="pre-installed-software"></a>Előre telepített szoftverek
 
-|   |   |
-| - | - |
-| Windows Holografikus operációs rendszer | A [Windows holografikus](hololens-release-notes.md)operációs rendszerével Windows 10 felhasználók vegyes valóságú környezetben is használhatjak alkalmazásukat és játékukat a HoloLens 2-n keresztül.
-| 3D-megjelenítő | [3D-megjelenítő](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) lehetővé teszi a 3D modellek és animációk valós idejű megtekintését.|
-| Cortana | [Cortana,](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)a személyi hatékonyságnövelő segéd segítségével mindig a legfontosabb dolgokra maradhat rá, és időt takaríthat meg a szükséges dolgok megtalálására.  |
-| Dynamics 365-útmutatók |  [A Dynamics 365-útmutatók](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) segítségével az alkalmazottak gyorsabban tanulhatnak új készségeket a HoloLens eszközökön. |
-| Dynamics 365 Remote Assist | [A Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) lehetővé teszi a technikusok számára a távoli közreműködőkkel való együttműködést és problémák megoldását a Microsoft Teams vagy a Dynamics 365 Remote Assist használatával.  |
-| Visszajelzési központ | [Visszajelzési központ](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) visszajelzést adhat az Windows alkalmazásokról a javaslatainak vagy problémáinak megosztásával.  |
-| Fájlkezelő | Fájlkezelő grafikus felhasználói felületet biztosít a fájlrendszerek eléréséhez. |
-| Mail és Calendar | A [Mail és a Calendar](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) alkalmazással naprakész maradhat az e-mailjeiről, kezelheti az ütemezést, és kapcsolatban maradhat a névjegyekkel. |
-| Microsoft Edge | Microsoft Edge világosztályú teljesítményt nyújt több adatvédelemmel, nagyobb hatékonysággal és több értékkel a böngészés során. |
-| Microsoft Store | A [Microsoft Store](https://www.microsoft.com) az alkalmazásokkal és játékokkal használt alkalmazások és játékok HoloLens.|
-| Filmek & TV | [A filmek & TV-vel](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) egy egyszerű, gyors és elegáns alkalmazásban lehet a legújabb szórakozást kínálni. |
-| OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) segítségével bárhonnan elérheti és szerkesztheti az összes eszközén található fájlokat.  |
-| Fotók | [A Photos](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) lehetővé teszi a fényképek és videók megtekintését és szerkesztését, a filmek készítése és a videók létrehozásához.  |
-| Beállítások | A Gépház az a hely, ahol testre szabhatja a Holographic Windows működését.  |
-| Tippek | [Tippek](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) segítségével meglepő és kevésbé ismert dolgokat sajáthat el a Holographic Windows. |
+| &nbsp; | &nbsp; |
+|---|---|
+| **Windows Holografikus operációs rendszer** | A [Windows holografikus operációs](hololens-release-notes.md)rendszerével Windows 10 felhasználók vegyes valóságú környezetben is használhatnak alkalmazásokat és játékokat a HoloLens 2-es verzióval.
+| **3D-megjelenítő** | [3D-megjelenítő](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) lehetővé teszi a 3D modellek és animációk valós idejű megtekintését.|
+| **Cortana** | [Cortana,](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)a személyi hatékonyságnövelő segéd segítségével mindig a fontos dolgokon maradhat, és időt takaríthat meg, hogy megtalálja, amire szüksége van.  |
+| **Dynamics 365-útmutatók** |  [A Dynamics 365-útmutatók segítségével az](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) alkalmazottak gyorsabban tanulhatnak új készségeket a HoloLens eszközökön. |
+| **Dynamics 365 Remote Assist** | [A Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) lehetővé teszi a technikusok számára a távoli közreműködők együttműködését és megoldását a Microsoft Teams vagy a Dynamics 365 Remote Assist használatával.  |
+| **Visszajelzési központ** | [Visszajelzési központ](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) visszajelzést adhat az Windows alkalmazásokról a javaslatainak vagy problémáinak megosztásával.  |
+| **Fájlkezelő** | Fájlkezelő grafikus felhasználói felületet biztosít a fájlrendszerek eléréséhez. |
+| **Mail és Calendar** | A [Mail és a Calendar](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) alkalmazással naprakész maradhat e-mailjeiről, kezelheti az ütemezést, és kapcsolatban maradhat a kapcsolattartóival. |
+| **Microsoft Edge** | Microsoft Edge világosztályú teljesítményt nyújt, és böngészés közben nagyobb adatvédelmet, nagyobb hatékonyságot és több értéket biztosít. |
+| **Microsoft Store** | A [Microsoft Store](https://www.microsoft.com) az alkalmazásokkal és játékokkal együtt HoloLens.|
+| **Filmek & TV** | [A filmek & tv-n](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) egy egyszerű, gyors és elegáns alkalmazásban a legújabb szórakoztató programokat kínálják. |
+| **OneDrive** | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) segítségével bárhonnan elérheti és szerkesztheti az összes eszközén található fájlokat.  |
+| **Fotók** | [A Photos](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) lehetővé teszi a fényképek és videók megtekintését és szerkesztését, a filmek készítése és a videók létrehozását.  |
+| **Beállítások** | A Gépház az a hely, ahol testre szabhatja a Holographic Windows működését.  |
+| **Tippek** | [Tippek](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) segítségével meglepő és kevésbé ismert dolgokat sajáthat el, amelyekre a Holographic Windows van. |
 
 ## <a name="device-certifications"></a>Eszköztanúsítások
 
@@ -160,18 +160,18 @@ Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százal�
 
 * [Termékbiztonság](https://support.microsoft.com/en-us/help/4023454/safety-information)
 * [Termékbiztonsági figyelmeztetések és utasítások](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
-* Szembiztonság: HoloLens 2. szabvány tesztelése megtörtént, és megfelel az ANSI Z87.1, a CSA Z94.3 és az EN 166 alapvető hatásvédelmi követelményeinek.
+* Szembiztonság: HoloLens 2. szabvány tesztelése megtörtént, és megfelel az ANSI Z87.1, CSA Z94.3 és EN 166 alapvető hatásvédelmi követelményeinek.
 * [SAR-információk](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ### <a name="regulatory-information"></a>Szabályozási információk
-[HoloLens:](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)Többek között a hőmérséklettel, a megsemmisítéssel, a rádió- és tv-interferenciákkal kapcsolatos információkat tartalmaz.
+[HoloLens:](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)Többek között a hőmérsékletre, a megsemmisítésre, a rádió- és tv-interferenciára vonatkozó információkat tartalmaz.
 
 ## <a name="warranty-information"></a>Jótállási információk
 
-Microsoft HoloLens 2., standard korlátozott [garanciával rendelkezik.](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5) 
+Microsoft HoloLens 2. év standard, korlátozott [jótállási garanciával rendelkezik.](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5) 
 
 
-A vásárlásra Microsoft Store [és értékesítési feltételek vonatkoznak.](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1) Minden értékesítés végleges. Nincs visszatérítés.
+A vásárlásra Microsoft Store [használati feltételek és értékesítések vonatkoznak.](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1) Minden értékesítés végleges. Nincs visszatérítés.
 
 A 2 HoloLens megvásárlásával elfogadja a [szoftverlicenc-szerződést.](https://www.microsoft.com/Useterms/)
 
@@ -183,26 +183,26 @@ Nem 13 évesnél fiatalabb gyermekek számára tervezték.
 |--------------------------------|-----------------------|-------------------------|
 |     Egység hossza                |     378,97 mm          |     14,920 hüvelyk       |
 |     Egység szélessége                 |     247,90 mm          |     9,760 hüvelyk        |
-|     Egységmélység                 |     163,07 mm          |     6,420 hüvelyk        |
+|     Egység mélysége                 |     163,07 mm          |     6,420 hüvelyk        |
 |     Egység súlyozása                |     2,878 kg           |     6,344 kg           |
 |     Exterior Shipper Length    |     446,00 mm          |     17,559 hüvelyk       |
 |     Shipper Width (Szállítási szélesség)     |     257,99 mm          |     10,157 hüvelyk       |
-|     Shipper Depth (Szállítási mélység)     |     172,01 mm          |     6,772 hüvelyk        |
-|     Shipper Weight (Szállítási súly)    |     3,284 kg           |     7,240 font           |
+|     Exterior Shipper Depth     |     172,01 mm          |     6,772 hüvelyk        |
+|     Exterior Shipper Weight    |     3,284 kg           |     7,240 font           |
 
 > [!NOTE]
 > - Egység: A 2. HoloLens fekete, kiskereskedelmi stílusú dobozt értékesítik.
-> - Shipper:The packaging szállítmányozás a Unit körül.
+> - Shipper: The packaging szállítmányozás a Unit körül.
 
 ## <a name="finding-the-serial-number"></a>A sorozatszám megkeresása
 
-A 2 eszköz HoloLens sorozatszáma a vizor alatt van kinyomtatva.
+A vizor alatt HoloLens 2 eszköz sorozatszáma látható.
 
 1. Emelje fel az eszköz vizorát.
-1. Nézze meg arow pad közelében.
+1. Keresse meg arow pad közelében.
 1. A sorozatszám a burkolat közelében található.
 
-<img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
+   <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
 A sorozatszám egy csatlakoztatott számítógépen is megtalálható:
 
@@ -211,7 +211,7 @@ A sorozatszám egy csatlakoztatott számítógépen is megtalálható:
 1. Kattintson a jobb **gombbal, és válassza** a HoloLens tulajdonságait
 1. Ez megjeleníti az eszköz sorozatának számát az alábbi képernyőképen látható módon.
 
-<img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
+   <br/><img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
 ## <a name="next-steps"></a>Következő lépés(ék)
 

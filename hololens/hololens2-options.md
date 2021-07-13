@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b5bb534020fe037576ce1caa3d9cee978dac778d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 32153fd6f7703347f4fe2f9ad41043fbeb9fab3f
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636299"
+ms.locfileid: "113640474"
 ---
 # <a name="compare-hololens-2-options"></a>2 HoloLens összehasonlítása
 
@@ -31,17 +31,17 @@ HoloLens egy hologramok által működtetett  vegyes valóságú eszköz, amely 
 
 |                                                      | HoloLens 2 | HoloLens 2. kapcsolat a Remote Assist alkalmazással | HoloLens 2 Industrial Edition | HoloLens 2 Ipari kiadás Remote Assist alkalmazással | Trimble XR10 with HoloLens 2 | HoloLens 2. fejlesztési kiadás |
 |------------------------------------------------------|------------|-------------------------------|-------------------------------|--------------------------------------------------|------------------------------|--------------------------------|
-| HoloLens 2 eszköz (egy eszköz)                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
-| Dynamics 365 Remote Assist (egy hely)                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
-| ISO 14644-1 Class 5 Clean Room classification           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
-| UL Class I, Division 2-Groups A, B, C, and D HAZLOC environments                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| Hard hat integrated (PPE-kompatibilis több mint 40 országban) |            |                               |                               |                                                  |               ✔️              |                                |
-| Zajszűrés a hangkimenetben                        |            |                               |                               |                                                  |               ✔️              |                                |
-| Fejlesztői jogosultságok <sup>1</sup>                             |            |                               |                               |                                                  |                              |                ✔️               |
-| Gyors helyettesítő program <sup>2</sup>                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
-| Kereskedelmi felhasználáshoz való jogosultságok                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| [Garancia](hololens2-hardware.md#warranty-information)                                             |   1 év   |             1 év            |             2 év            |                      2 év                      |            1-Year <sup>3</sup>            |             1 év             |
-| Eszközvásárlási korlát                                |    None    |              None             |              None             |                       None                       |             None             |       Tranzakciónként egy      |
+| **HoloLens 2 eszköz (egy eszköz)**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
+| **Dynamics 365 Remote Assist (egy hely)**                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
+| **ISO 14644-1 Class 5 Clean Room classification**           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **UL Class I, Division 2-Groups A, B, C, and D HAZLOC environments**                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| **Hard hat integrated (PPE-kompatibilis több mint 40 országban)** |            |                               |                               |                                                  |               ✔️              |                                |
+| **Zajszűrés a hangkimenetben**                        |            |                               |                               |                                                  |               ✔️              |                                |
+| **Fejlesztői jogosultságok <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
+| **Gyors helyettesítő program <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **Kereskedelmi felhasználáshoz való jogosultságok**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| [**Garancia**](hololens2-hardware.md#warranty-information)                                             |   1 év   |             1 év            |             2 év            |                      2 év                      |            1-Year <sup>3</sup>            |             1 év             |
+| **Eszközvásárlási korlát**                                |    None    |              None             |              None             |                       None                       |             None             |       Tranzakciónként egy      |
 
 - <sup>1</sup> – 500 USD Azure-kreditet és 3 hónapos próbaverziót tartalmaz a Unity Pro és a Pixyz beépülő modulhoz.
 - <sup>2</sup> – Visszatevéses eszközt kaphat egyik napról a másikra, vagy gyorsított szállítást kaphat (a rendelkezésre álló lehetőségek közül gyorsabban), mielőtt a hibás eszközt megkapja a Microsoft.

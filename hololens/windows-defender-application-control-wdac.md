@@ -1,6 +1,6 @@
 ---
-title: Windows Defender alkalmazásvezérlés – WDAC
-description: Az alkalmazásvezérlés Windows Defender áttekintése, és annak használata a HoloLens vegyes valóságú eszközeinek kezeléséhez.
+title: Windows Defender Alkalmazásvezérlés – WDAC
+description: Az alkalmazásvezérlés Windows Defender és használatának áttekintése a vegyes valóságú HoloLens kezeléséhez.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -12,43 +12,43 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 23c9a274387424e8f084a4729ee621e130820716
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: a27a16913873c5245f734dbe084eb2b7ed007c20
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378085"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639930"
 ---
-# <a name="windows-defender-application-control---wdac"></a>Windows Defender alkalmazásvezérlés – WDAC
+# <a name="windows-defender-application-control---wdac"></a>Windows Defender Alkalmazásvezérlés – WDAC
 
-A WDAC lehetővé teszi, hogy a rendszergazda úgy konfigurálja az eszközeit, hogy letiltsa az alkalmazások elindítását az eszközökön. Ez eltér az eszközkorlátozási módszerektől, például a Kioszk módtól, ahol a felhasználó egy olyan felhasználói felületet kap, amely elrejti az eszközön található alkalmazásokat, de továbbra is elindítható. Bár a WDAC van megvalósítva, az alkalmazások továbbra is láthatók a Minden alkalmazás listában, de a WDAC megakadályozza, hogy az eszköz felhasználója elindítsa ezeket az alkalmazásokat és folyamatokat.
+A WDAC lehetővé teszi, hogy a rendszergazda úgy konfigurálja az eszközeit, hogy letiltsa az alkalmazások elindítását az eszközökön. Ez eltér az eszközkorlátozási módszerektől, például a Kioszk módtól, ahol a felhasználó számára egy olyan felhasználói felület van meg, amely elrejti az eszközön található alkalmazásokat, de továbbra is elindítható. A WDAC megvalósítása közben az alkalmazások továbbra is láthatók a Minden alkalmazás listában, de a WDAC megakadályozza, hogy ezeket az alkalmazásokat és folyamatokat az eszköz felhasználója elindítsa.
 
 Egy eszközhöz több WDAC-szabályzat is hozzárendelhető. Ha több WDAC-házirend van beállítva egy rendszeren, a legszigorúbb házirendek lépnek életbe. 
 
 > [!NOTE]
-> Amikor a végfelhasználók olyan alkalmazást próbálnak meg elindítani, amelyet a WDAC blokkol, a HoloLensen nem kapnak értesítést arról, hogy nem tudják elindítani az alkalmazást.
+> Amikor a végfelhasználók olyan alkalmazást próbálnak meg elindítani, amelyet a WDAC blokkol, HoloLens nem kapnak értesítést arról, hogy nem tudják elindítani az alkalmazást.
 
-Az alábbi útmutatóból megtudhatja, hogyan engedélyezheti vagy tilthatja le a [HoloLens 2-eszközökön](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)található alkalmazásokat a WDAC és a Windows PowerShell használatával a Microsoft Intune.
+Az alábbi útmutató segítségével a felhasználók megtudhatják, hogyan engedélyezheti vagy tilthatja le az alkalmazásokat [a WDAC](/mem/intune/configuration/custom-profile-hololens)és a Windows PowerShell használatával HoloLens 2 eszközön a Microsoft Intune.
 
-Amikor a felhasználók az első példalépéssel rákeresnek a Windows 10 számítógépre telepített alkalmazásokra, előfordulhat, hogy néhány kísérletet kell tenniük az eredmények szűkítésére.
+Amikor a felhasználók az első példalépéssel rákeresnek a Windows 10 telepített alkalmazásokra, előfordulhat, hogy néhány kísérletet kell tenniük az eredmények szűkítésére.
 
 ```powershell
 $package1 = Get-AppxPackage -name *<applicationname>*
 ``` 
 
-Ha nem tudja a csomag teljes nevét, előfordulhat, hogy néhányszor futtatnia kell a Get-AppxPackage -name \* YourBestGuess \* nevét. Ha már megvan a név, futtassa a következőt: "$package 1 = Get-AppxPackage -name Actual.PackageName"
+Ha nem tudja a csomag teljes nevét, előfordulhat, hogy néhányszor futtatnia kell a Get-AppxPackage -name \* YourBestGuess \* nevét, hogy megtalálja. A név után futtassa a következőt: "$package 1 = Get-AppxPackage -name Actual.PackageName"
 
-Ha például a következőt futtatja Microsoft Edge több eredményt ad vissza, de ebből a listából megállapíthatja, hogy a szükséges teljes név a Microsoft.MicrosoftEdge.
+Ha például a következőt futtatja Microsoft Edge több eredményt ad vissza, de ebből a listából megállapíthatja, hogy a teljes név, amire szüksége van, a Microsoft.MicrosoftEdge.
 
 ```powershell
 Get-AppxPackage -name *edge*
 ``` 
 
-## <a name="package-family-names-for-apps-on-hololens"></a>Csomag családnevei HoloLens-alkalmazásokhoz
+## <a name="package-family-names-for-apps-on-hololens"></a>Csomag családneveket a HoloLens
 
-A fent hivatkozott útmutatóban manuálisan szerkesztheti a newPolicy.xml és szabályokat adhat hozzá a csak a HoloLensen telepített alkalmazásokhoz a csomag családnevekkel. Előfordulhat, hogy olyan alkalmazásokat használ, amelyek nem az asztali számítógépen vannak, és a szabályzathoz kíván hozzáadni.
+A fent hivatkozott útmutatóban manuálisan szerkesztheti az alkalmazásokat, és newPolicy.xml adhat hozzá szabályokat az olyan alkalmazásokhoz, amelyek csak HoloLens a csomagjuk családnevekkel. Előfordulhat, hogy olyan alkalmazásokat használ, amelyek nem az asztali számítógépen vannak, és ezeket hozzá szeretné adni a szabályzathoz.
 
-Az alábbi lista a HoloLens 2-eszközökre In-Box és alkalmazásokat sorolja fel.
+Az alábbi lista a 2 eszköz In-Box használt és HoloLens alkalmazások listáját tartalmazza.
 
 | Alkalmazásnév                   | Csomag családneve                                |
 |----------------------------|----------------------------------------------------|
@@ -65,22 +65,22 @@ Az alábbi lista a HoloLens 2-eszközökre In-Box és alkalmazásokat sorolja fe
 | Microsoft Store            | Microsoft.WindowsStore_8wekyb3d8bbwe               |
 | Filmek & TV                | Microsoft.ZuneVideo_8wekyb3d8bbwe                  |
 | OneDrive                   | microsoft.microsoftskydrive_8wekyb3d8bbwe          |
-| Fotók                     | Microsoft.Windows.Photos_8wekyb3d8bbwe             |
+| Fotók                     | Microsoft. Windows. Photos_8wekyb3d8bbwe             |
 | Beállítások                   | HolographicSystemSettings_cw5n1h2txyewy            |
 | Tippek                       | Microsoft.HoloLensTips_8wekyb3d8bbwe               |
 
-- 1 – A Alkalmazástelepítő blokkolás csak az Alkalmazástelepítő alkalmazást blokkolja, más forrásokból, például a Microsoft Store vagy az MDM-megoldásból telepített alkalmazásokat nem.
+- 1 – A Alkalmazástelepítő blokkolás csak a Alkalmazástelepítő alkalmazást blokkolja, más forrásokból, például a Microsoft Store vagy az MDM-megoldásból telepített alkalmazásokat nem.
 
 ### <a name="how-to-find-a-package-family-name"></a>Csomag családnevének megkeresés
 
-Ha egy alkalmazás nem szerepel a listán, akkor a felhasználó használhatja a Eszközportál-t, amely egy olyan HoloLens 2-hez csatlakozik, amely le szeretné tiltani az alkalmazást a PackageRelativeID meghatározásához, és onnan a PackageFamilyName paramétert fogja kapni.
+Ha egy alkalmazás nem szerepel a listában, akkor a felhasználó használhatja a Eszközportál-t, amely egy olyan HoloLens 2-hez csatlakozik, amely le szeretné tiltani az alkalmazást, és meghatározza a PackageRelativeID azonosítót, és onnantól a PackageFamilyName megjelenik.
 
-1. Telepítse az alkalmazást a HoloLens 2-eszközön. 
-1. Nyissa meg a Settings -> Updates & Security -> For developers (Biztonság –>, majd engedélyezze a **Fejlesztői** módot, majd az **Eszközportál lehetőséget.** 
-    1. További részletekért olvassa el az eszközportál beállítását és [használatát itt.](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
-1. Ha Eszközportál, lépjen a **Nézetek,** majd az **Alkalmazások lapra.** 
-1. Az Installed Apps (Telepített alkalmazások) panelen válassza ki a telepített alkalmazást a legördülő menüből. 
+1. Telepítse az alkalmazást a HoloLens 2-es eszközön. 
+1. Nyissa meg Gépház -> Updates & Security -> For developers (Biztonsági  beállítások fejlesztőknek) és engedélyezze a Fejlesztői módot, majd az **Eszközportál gombra.** 
+    1. További részletekért olvassa el az eszközportál beállítását és [használatát itt.](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
+1. Miután Eszközportál, lépjen a **Nézetek,** majd az Alkalmazások **lapra.** 
+1. Az Installed Apps (Telepített alkalmazások) panelen válassza ki a telepített alkalmazást a legördülő menüben. 
 1. Keresse meg a PackageRelativeID azonosítót. 
-1. Másolja az alkalmazás karaktereit a ! karakter előtt. Ezek a karakterek lesznek a PackageFamilyName karakterei.
+1. Másolja az alkalmazás karaktereit a ! karakter előtt, ezek lesznek a PackageFamilyName karakterei.
 
 

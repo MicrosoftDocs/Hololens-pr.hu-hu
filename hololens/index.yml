@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft HoloLens
-summary: Microsoft HoloLens az első teljesen önálló holografikus számítógép, amely a Windows 10. A 2. HoloLens bevezetésével minden HoloLens-eszköz olyan, kereskedelmi használatra kész felügyeleti képességeket biztosít, amelyek a Microsoft felhőalapú és AI-szolgáltatásainak megbízhatóságával, biztonságával és méretezhetőségével egészulnak ki.
+summary: Microsoft HoloLens az első teljesen önálló holografikus számítógép, amely a Windows 10. A 2. HoloLens bevezetésével minden HoloLens-eszköz olyan, kereskedelmi használatra kész felügyeleti képességeket biztosít, amelyet a Microsoft felhőalapú és AI-szolgáltatásainak megbízhatósága, biztonsága és méretezhetősége javít.
 metadata:
   title: Microsoft HoloLens
   description: A Microsoft HoloLens.
@@ -11,12 +11,12 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 8cb5b881e880adec2b59bde9b36fa700bfce3a91
-  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+  ms.openlocfilehash: a37ddd0867a0ea3dfa6f016e01728f2576663aaf
+  ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
   ms.translationtype: MT
   ms.contentlocale: hu-HU
   ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113637149"
+  ms.locfileid: "113639420"
 landingContent:
 - title: A 2. HoloLens meg
   linkLists:
@@ -54,19 +54,19 @@ landingContent:
     links:
     - text: Gyakori üzembehelyezési forgatókönyvek
       url: common-scenarios.md
-    - text: A HoloLens 2. üzembe helyezésének megtervezése kereskedelmi környezetben
+    - text: 2. HoloLens megtervezése kereskedelmi környezetben
       url: hololens-core-components.md
     - text: Autopilot CSS-regisztráció
       url: hololens2-autopilot-registration-support.md
   - linkListType: deploy
     links:
-    - text: Telepítési útmutató – Felhőhöz csatlakoztatott HoloLens 2. példány nagy léptékű üzembe helyezése a Remote Assist segítségével
+    - text: Üzembe helyezési útmutató – 2. HoloLens felhőhöz csatlakoztatott, nagy léptékű üzembe helyezés a Remote Assist segítségével
       url: hololens2-cloud-connected-overview.md
-    - text: Telepítési útmutató – Külső ügyfelek (felhőhöz csatlakoztatva)
+    - text: Telepítési útmutató – Külső ügyfelek (felhőhöz csatlakoztatott)
       url: hololens2-deployment-guide.md
-    - text: Telepítési útmutató – Vállalati csatlakoztatott HoloLens 2 üzembe helyezése Dynamics 365-útmutatók segítségével
+    - text: Telepítési útmutató – Vállalati csatlakoztatott HoloLens 2 üzembe helyezés Dynamics 365-útmutatók segítségével
       url: hololens2-corp-connected-overview.md
-    - text: Üzembe helyezési útmutató – Offline biztonság
+    - text: Üzembe helyezési útmutató – Offline biztonságos
       url: hololens-common-scenarios-offline-secure.md
 - title: Hibaelhárítás
   linkLists:
@@ -90,7 +90,7 @@ landingContent:
     links:
     - text: HoloLens 2. kiadási megjegyzések
       url: hololens-release-notes.md
-    - text: Insider előzetes verzió
+    - text: Insider preview (Belső előzetes verzió)
       url: hololens-insider.md
   - linkListType: reference
     links:
@@ -98,27 +98,27 @@ landingContent:
       url: hololens2-support.md
     - text: Visszajelzés küldése
       url: hololens-feedback.md
-- title: Fejlesztés a 2. HoloLens együtt
+- title: Fejlesztés a 2 HoloLens val
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Mi az a Mixed Reality?
-      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
+      url: /windows/mixed-reality/mixed-reality
     - text: Tervezés és prototípus-tervezés
-      url: https://docs.microsoft.com/windows/mixed-reality/design
+      url: /windows/mixed-reality/design
     - text: A Mixed Reality bemutatása
-      url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
+      url: /windows/mixed-reality/development?tabs=unity
     - text: Cloud Services áttekintés
-      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
+      url: /windows/mixed-reality/mixed-reality-cloud-services#overview
     - text: Microsoft Mesh (előzetes verzió)
-      url: https://docs.microsoft.com/mesh/overview
+      url: /mesh/overview
 - title: További szolgáltatások
   linkLists:
   - linkListType: reference
     links:
     - text: Dynamics 365 Remote Assist Docs
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
+      url: /dynamics365/mixed-reality/remote-assist/ra-overview
     - text: Dynamics 365-útmutatók
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
+      url: /dynamics365/mixed-reality/guides/
     - text: Microsoft Dynamics 365 Mixed Reality
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/
+      url: /dynamics365/mixed-reality/
