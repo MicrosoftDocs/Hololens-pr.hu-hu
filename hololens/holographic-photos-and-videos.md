@@ -1,6 +1,6 @@
 ---
 title: Vegyes valóságú fényképek és videók rögzítése, rögzítése és megosztása
-description: Megtudhatja, hogyan rögzítheti, rögzítheti és megtekintheti a vegyes valóságú fényképeket és videókat a HoloLens vegyes valóságú eszközeivel. Megtudhatja, hogyan oszthat meg miracast vagy összegyűjtött fájlok segítségével.
+description: Megtudhatja, hogyan rögzítheti, rögzítheti és megtekintheti a vegyes valóságú fényképeket és videókat HoloLens vegyes valóságú eszközökkel. Megtudhatja, hogyan oszthat meg Miracast vagy összegyűjtött fájlokon keresztül.
 keywords: hololens, fénykép, videó, capture, mrc, mixed reality capture, photos, camera, miracast, stream, livestream, demo, record
 ms.assetid: 1b636ec3-6186-4fbb-81b2-71155aef0593
 ms.prod: hololens
@@ -15,18 +15,18 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 178dff5d8a30fdd9c5012e2d14f5d4683d6cc23e
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: daced6fab65f779b7bd670bf1275f99ae5311d3f
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111378025"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635959"
 ---
 # <a name="create-mixed-reality-photos-and-videos"></a>Vegyes valóságú fényképek és videók létrehozása
 
-A HoloLens lehetővé teszi a felhasználók számára, hogy a való világot a digitális világgal ötvözzék.  A vegyes valóságú rögzítés (MRC) lehetővé teszi, hogy ezt a élményt fényképként vagy videóként rögzítse, vagy megosztja másokkal valós időben.
+HoloLens teszi lehetővé a felhasználók számára, hogy a való világot a digitális világgal keverik.  A vegyes valóságú rögzítés (MRC) lehetővé teszi, hogy ezt a élményt fényképként vagy videóként rögzítse, vagy valós időben ossza meg másokkal.
 
-A vegyes valóságú rögzítés személyes nézőpontot használ, hogy mások is látják a hologramokat. Külső nézőponthoz használja a [spektátornézetet.](https://docs.microsoft.com/windows/mixed-reality/spectator-view) A Spektátor nézet különösen hasznos a bemutatókhoz.
+A vegyes valóságú rögzítés személyes nézőpontot használ, hogy mások is látják a hologramokat. Külső nézőponthoz használja a [spektátornézetet.](/windows/mixed-reality/spectator-view) A Spektátor nézet különösen hasznos a bemutatókhoz.
 
 Bár a videók ismerősök és munkatársak között is megoszthatók, a videók másoknak is segíthetnek megtanítani egy alkalmazás használatát, vagy problémákat kommunikálni az alkalmazásokkal és a felhasználói élményekkel.
 
@@ -35,23 +35,23 @@ Bár a videók ismerősök és munkatársak között is megoszthatók, a videók
 
 ## <a name="capture-a-mixed-reality-photo"></a>Vegyes valóságú fénykép rögzítése
 
-A HoloLensen többféleképpen is lehet vegyes valóságról fotót venni; Használhatja a hardvergombokat, a hangot vagy a Start menü.
+A vegyes valóságról többféleképpen is fotót lehet HoloLens; Használhatja a hardvergombokat, a hangot vagy a Start menü.
 
 ### <a name="hardware-buttons-to-take-photos"></a>Hardvergombok fényképekhez
 
-Az aktuális nézet gyorsképének megtekintéséhez egyszerre nyomja le a hangerőt felfelé és lefelé gombokkal.  Ez egy kicsit hasonló a képernyőképek vagy a nyomtatási képernyő HoloLens-verziójához.
+Az aktuális nézet gyorsképének megtekintéséhez egyszerre nyomja le a hangerőt felfelé és lefelé gombokkal.  Ez egy kicsit hasonló a HoloLens vagy a nyomtatási képernyő verziójához.
 
-- [Gombhelyek a HoloLens 2-ben](hololens2-hardware.md)
-- [Gombhelyek a HoloLensben (1. generációs)](hololens1-hardware.md#hololens-components)
+- [Gombhelyek a 2 HoloLens n](hololens2-hardware.md)
+- [Gombhelyek a HoloLens (1. generációs)](hololens1-hardware.md#hololens-components)
 
 > [!NOTE]
-> Ha három **másodpercig tartja** lenyomva a hangerőt és a hangerőt, azzal elkezdi a videó rögzítését, és nem fényképet készít.  A rögzítés leállításhoz egyszerre  koppintson a **fel-** és lekötet gombokra.
+> Ha három **másodpercig tartja** a hangerőt és a hangerőt 3 másodpercig, akkor nem fényképet készít, hanem videót készít.  A rögzítés leállításhoz egyszerre  koppintson a **fel-** és lekötet gombokra.
 
 ### <a name="voice-commands-to-take-photos"></a>Hangparancsok fényképekhez
 
-A HoloLens 2 2004-es (és újabb) verzióján mondja el a "Kép leképe" szót.
+A HoloLens 2., 2004-es (és újabb) verziójában mondja el a "Kép leképe" szót.
 
-HoloLensben (1. generációs) vagy HoloLens 2-ben, az 1903-as verzióban például: "Hé Cortana, képpel."
+A HoloLens (1. generációs) vagy HoloLens 2. HoloLens 1903-as verziójában, például: "Hey Cortana, take a picture."
 
 ### <a name="start-menu-to-take-photos"></a>Start menü fényképek készítése
 
@@ -63,20 +63,20 @@ Használja ismét a Start (Indítás) kézmozdulatot a fényképek rögzítésé
 
 ## <a name="capture-a-mixed-reality-video"></a>Vegyes valóságú videó rögzítése
 
-A HoloLensben többféleképpen is rögzíthet vegyes valóságról készült videót; Használhatja a hardvergombokat, a hangot vagy a Start menü.
+Többféleképpen is rögzíthet vegyes valóságot bemutató videót a HoloLens; Használhatja a hardvergombokat, a hangot vagy a Start menü.
 
 ### <a name="hardware-buttons-to-record-videos"></a>Hardvergombok videók rögzítéséhez
 
 A videók rögzítésének leggyorsabb módja, ha  egyszerre nyomja  le és tartsa lenyomva a hangerőt a gombokon, amíg el nem kezdődik a három másodperces visszaszámlálás. A rögzítést úgy állíthatja le, ha egyszerre mindkét gombra koppint.
 
 > [!NOTE]
-> A **hangerőt** egyszerre  gyorsan felfelé és lefelé nyomáskor a videó rögzítése helyett fényképet készít.
+> A **hangerőt** egyszerre  gyorsan fel- és lekötve egyidejűleg lenyomáskor a videó rögzítése helyett fénykép fog készültni.
 
-### <a name="voice-to-record-videos"></a>Videók hangalapú rögzítéséhez
+### <a name="voice-to-record-videos"></a>Videók hangalapú rögzítésére
 
-A HoloLens 2., 2004-es (és újabb) verzióján mondja el a "Start recording" (Rögzítés elkezdését) A rögzítést a "Rögzítés leállítása" szóval állíthatja le.
+A HoloLens 2004-es (és újabb) verziójában mondja el a "Rögzítés kezdete" szót. A rögzítést a "Rögzítés leállítása" szóval állíthatja le.
 
-HoloLensben (1. generációs) vagy HoloLens 2-ben, az 1903-as verzióban például: "Hey Cortana, start recording". A rögzítés leállításához mondja ki a "Hey Cortana, stop recording" (Cortana, rögzítés megáll) parancsot.
+A HoloLens (1. generációs) vagy HoloLens 2. HoloLens 1903-as verziójában, például: "Hey Cortana, start recording". A rögzítés leállításhoz mondja ki a "Hey Cortana, stop recording" (Hé, Cortana, állítsa le a rögzítést).
 
 ### <a name="start-menu-to-record-videos"></a>Start menü videók rögzítésének a megtekintése
 
@@ -85,89 +85,89 @@ A Start kézmozdulattal váltsa a **Start menüt,** majd válassza a **Videó ik
 A rögzítés leállításhoz használja a Start (Indítás) kézmozdulatot, és válassza a kiemelt **Videó ikont.** A rendszer menti a videót az eszközére.
 
 > [!NOTE]
-> **Csak a HoloLensre (1. generációs) vonatkozik**  
-> A [Windows 10 2018. októberi frissítése](https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018) módosítja a Kézmozdulat és a Windows gomb viselkedését a HoloLensben (1. generációs). A frissítés előtt a Kézmozdulat vagy a Windows gomb leállít egy videofelvételt. A frissítés után azonban a Kézmozdulat vagy a Windows  gomb megnyitja a **Start** menüt (vagy a gyorsműveletek menüt, ha modern alkalmazásban van), amelyből a kiemelt videó ikonra kattintva leállíthatja a rögzítést. 
+> **Csak HoloLens (1. generációs)**  
+> A [Windows 10 2018. októberi frissítése](/windows/mixed-reality/release-notes-october-2018) módosítja a Start kézmozdulat és Windows gomb viselkedését a HoloLens (1. gen). A frissítés előtt a Kézmozdulat vagy Windows gomb leállít egy videofelvételt. A frissítés után azonban a Kézmozdulat vagy a Windows gomb  megnyitja a **Start** menüt (vagy a gyorsműveletek  menüt, ha egy modern alkalmazásban van), amelyből a kiemelt videó ikonra kattintva leállíthatja a rögzítést.
 
 ## <a name="share-what-you-see-in-real-time"></a>Valós idejű megosztás
 
-A HoloLensben látható okat valós időben megoszthatja barátaival és munkatársaival. Létezik néhány módszer:
+A fájlokban látható HoloLens valós időben megoszthatja barátaival és munkatársaival. Létezik néhány módszer:
 
-1. Csatlakozás Miracast-kompatibilis eszközhöz vagy adapterhez tv-n való megtekintéshez.
-1. A [Windows eszközportál](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) használata a pc-n való megtekintéshez
+1. Csatlakozás egy Miracast-kompatibilis eszközhöz vagy adapterhez a TV-n való megtekintéshez.
+1. A [Windows Eszközportál](/windows/mixed-reality/using-the-windows-device-portal) használata a pc-n való megtekintéshez
 1. A Microsoft HoloLens [alkalmazás használata a](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) számítógépen való megtekintéshez.
-1. A [Microsoft Dynamics 365 Remote Assist](https://dynamics.microsoft.com/en-us/mixed-reality/remote-assist) alkalmazás üzembe helyezése, amely lehetővé teszi az online dolgozók számára, hogy egy távoli szakértőnek streamelje, amit látnak. A távoli szakértő ezután verbálisan vagy jegyzetekkel irányíthatja a frontvonali dolgozót.
+1. A [Microsoft Dynamics 365 Remote Assist](https://dynamics.microsoft.com/en-us/mixed-reality/remote-assist) alkalmazás üzembe helyezése, amely lehetővé teszi, hogy az online dolgozók streamelje, amit látnak egy távoli szakértőnek. A távoli szakértő ezután verbálisan vagy jegyzetekkel irányíthatja a frontvonali dolgozót.
 
 > [!NOTE]
-> Ahhoz, hogy a holoLens fejlesztői módban Windows eszközportál vagy Microsoft HoloLens alkalmazáson keresztül megoszava megosztja a [látható fájlokat.](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal)
+> Ahhoz, hogy a Windows Eszközportál vagy Microsoft HoloLens alkalmazáson keresztül megossa a látható HoloLens fejlesztői [módban legyen.](/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal)
 
-### <a name="stream-video-with-miracast"></a>Videó streamelése a Miracasttal
+### <a name="stream-video-with-miracast"></a>Videó streamelése Miracast
 
-A Start kézmozdulattal lépjen a **Start menüre,** majd válassza a **Csatlakozás ikont.** A megjelenő választóban válassza ki azt a Miracast-kompatibilis eszközt vagy adaptert, amelyhez csatlakozni szeretne.
+A Start kézmozdulattal váltsa a **Start** menüt, majd válassza a Csatlakozás **ikont.** A megjelenő választóban válassza ki azt a Miracast-kompatibilis eszközt vagy adaptert, amelyhez csatlakozni szeretne.
 
-A megosztást a Start kézmozdulattal állíthatja le, és válassza a kiemelt **Csatlakozás ikont.** Mivel streamelést használ, semmi sem lesz mentve az eszközre.
+A megosztást a Start kézmozdulattal  állíthatja le, és kiválaszthatja a Csatlakozás ikont. Mivel streamelést használ, semmi sem lesz mentve az eszközre.
 
 > [!NOTE]
-> A Miracast támogatása a (1. generációs) HoloLensben volt engedélyezve a [Windows 10 2018. októberi frissítése.](https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018)
+> Miracast a (1. generációs) HoloLens a [Windows 10 2018. októberi frissítése.](/windows/mixed-reality/release-notes-october-2018)
 
-### <a name="real-time-video-with-windows-device-portal"></a>Valós idejű videó Windows eszközportál
+### <a name="real-time-video-with-windows-device-portal"></a>Valós idejű videó Windows Eszközportál
 
-Mivel a Windows eszközportál való megosztáshoz engedélyezni kell a Fejlesztői módot a HoloLensen, a fejlesztői dokumentációban található utasításokat követve állítsa be a Fejlesztői módot, és navigáljon a [Windows eszközportál.](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)
+Mivel a Windows Eszközportál való megosztáshoz engedélyezni kell a fejlesztői módot a HoloLens- és a fejlesztői dokumentációban található utasításokat követve állítsa be a Fejlesztői módot, és navigáljon a [Windows Eszközportál.](/windows/mixed-reality/using-the-windows-device-portal)
 
 ### <a name="microsoft-hololens-companion-app"></a>Microsoft HoloLens alkalmazás használata
 
-Mivel a Microsoft HoloLens alkalmazáson keresztüli megosztáshoz engedélyezni kell a Fejlesztői módot a HoloLensen, kövesse a fejlesztői dokumentációban található utasításokat a fejlesztői [mód beállításához.](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) Ezután töltse le a [Microsoft HoloLens társalkalmazást,](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) és kövesse az alkalmazáson belüli utasításokat a HoloLenshez való csatlakozáshoz.
+Mivel a Microsoft HoloLens alkalmazáson keresztüli megosztáshoz engedélyezni kell a Fejlesztői módot a HoloLens, a Fejlesztői mód beállításához kövesse a fejlesztői [dokumentációban található utasításokat.](/windows/mixed-reality/using-the-windows-device-portal) Ezután töltse le a [Microsoft HoloLens társalkalmazást,](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) és kövesse az alkalmazáson belüli utasításokat az alkalmazáshoz való HoloLens.
 
-Miután beállította az alkalmazást a HoloLens-sel, válassza az Élő **stream** lehetőséget az alkalmazás főmenüjében.
+Miután beállította az alkalmazást a HoloLens válassza az Élő **stream** lehetőséget az alkalmazás főmenüjében.
 
 ## <a name="view-your-mixed-reality-photos-and-videos"></a>Vegyes valóságú fényképek és videók megtekintése
 
-A vegyes valóságú fényképek és videók az eszköz "Camera Roll" (Kamera roll) eszközére vannak mentve. A mappa tartalmát a HoloLensben a Fájlkezelő alkalmazással tallózhatja (lépjen a Pictures > Camera Roll (Képek és > **gombra).**
+A vegyes valóságú fényképek és videók az eszköz "Camera Roll" (Kamera roll) eszközére vannak mentve. A mappa tartalmát a HoloLens alkalmazással Fájlkezelő (lépjen a Pictures > Camera Roll (Képek és **> gombra).**
 
-A vegyes valóságú fényképeket és videókat a HoloLensen előre telepített Photos alkalmazásban is megtekintheti. Fénykép világbeli kitűzéhez válassza ki azt a Fényképek alkalmazásban, majd válassza a **Hely vegyes világban lehetőséget.** A fényképet a világ más táján is áthelyezheti, miután az el lett helyezve.
+A vegyes valóságú fényképeket és videókat a Fényképek alkalmazásban is megtekintheti, amely előre telepítve van a HoloLens. Fénykép világbeli kitűzéhez válassza ki azt a Fényképek alkalmazásban, majd válassza a **Hely vegyes világban lehetőséget.** A fényképet a világ más táján is áthelyezheti, miután az el lett helyezve.
 
-A vegyes valóságú fényképek és videók HoloLenshez csatlakoztatott számítógépen való megtekintéséhez és/vagy mentéséhez használhatja az [Windows eszközportál-t](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture) vagy a számítógép Fájlkezelő [MTP-n keresztül.](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018#new-features-for-hololens)
+A vegyes valóságú fényképek és videók megtekintéséhez és/vagy mentéséhez egy HoloLens-hez csatlakoztatott számítógépen használhatja az [Windows Eszközportál-t](/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture) vagy a számítógép Fájlkezelő [MTP-n keresztül.](/windows/mixed-reality/release-notes-april-2018#new-features-for-hololens)
 
 ### <a name="use-file-explorer-to-get-your-pictures-videos-and-files"></a>A Fájlkezelő képek, videók és fájlok lekérte
 
-Más mobileszközökhöz hasonlóan csatlakoztassa a HoloLenst a számítógépéhez, hogy az Fájlkezelő-t is lásson a HoloLens-kódtárak (fényképek, videók, dokumentumok) eléréséhez az egyszerű átvitel érdekében. Ez a módszer könnyen használható, és nem igényel eszközportál vagy Wi-Fi használatát.
+Más mobileszközökhöz hasonlóan csatlakoztassa HoloLens-t a számítógépéhez, hogy Fájlkezelő-kódtárakat (fényképeket, videókat, dokumentumokat) is hozzáférjen a HoloLens-kódtárakhoz az egyszerű átvitel érdekében. Ez a módszer könnyen használható, és nem igényel eszközportál vagy Wi-Fi használatát.
 
 1. Oldja fel az eszköz zárolását.
-1. Csatlakoztassa az eszközt a számítógéphez USB-kapcsolaton keresztül.
+1. Csatlakozás eszközt USB-kapcsolaton keresztül csatlakoztatja egy számítógéphez.
 1. Fájlkezelő meg kell nyitnia a számítógépén.
-1. Navigáljon ide: Ez a \\ *számítógép a sajátjaolensname*\Internal Storage\Pictures\Camera Roll
+1. Navigáljon ide: Ez a \\ *számítógép a következő:* \Internal Storage\Pictures\Camera Roll
 1. Másolja a számítógépre a szükséges fájlokat.
 
 Tippek:
-- Ha nem lát fájlokat, jelentkezzen be a HoloLensbe, hogy engedélyezze az adatokhoz való hozzáférést.
+- Ha nem lát fájlokat, jelentkezzen be a HoloLens, hogy engedélyezze az adatokhoz való hozzáférést.
 - Más mappákban, például diagnosztikai fájlokban lévő fájlokat a Dokumentumok mappából is lekért. [](hololens-diagnostic-logs.md#offline-diagnostics)
-- A Fájlkezelő eszköztulajdonságok kiválasztásával használhatja a Windows Holographic operációs rendszer verziószámát (belső vezérlőprogram verziója), az eszköz sorozatszámát és az akkumulátor százalékos arányát.
-- Ha a szervezet MDM-et használt a [Kapcsolat/AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) letiltásához, akkor nem fog tudni csatlakozni az eszközhöz.
+- A Fájlkezelő eszköztulajdonságokat kiválasztva láthatja Windows Holographic operációs rendszer verziószámát (belső vezérlőprogram verziója), az eszköz sorozatszámát és az akkumulátor százalékos arányát.
+- Ha a szervezet MDM-et használt a [kapcsolat/AllowUSBConnection](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) letiltásához, akkor nem fog tudni csatlakozni az eszközhöz.
 
 ## <a name="share-your-mixed-reality-photos-and-videos"></a>Vegyes valóságú fényképek és videók megosztása
 
-A [Windows Holographic 21H1-es](hololens-release-notes.md#windows-holographic-version-21h1)verziója előtt egy vegyes valóságú fénykép vagy videó rögzítése után megjelenik egy előnézet. A **megosztási asszisztenst** az előnézet fölötti Megosztás ikonra kattintva hozhatja meg. Itt kiválaszthatja azt a végpontot, amelyen meg szeretné osztani a fényképet vagy videót.
+A [holografikus Windows 21H1-es](hololens-release-notes.md#windows-holographic-version-21h1)verziója előtt egy vegyes valóságú fénykép vagy videó rögzítése után megjelenik egy előnézet. A **megosztási asszisztenst** az előnézet fölötti Megosztás ikonra kattintva hozhatja meg. Innen kiválaszthatja azt a végpontot, amelyen meg szeretné osztani a fényképet vagy videót.
 
-A Windows Holographic 21H1-es verziója esetén egy vegyes valóságú fénykép vagy videó rögzítése után megjelenik egy előnézet. A **megosztási asszisztenst** az előnézet fölötti Megosztás ikonra kattintva hozhatja meg. Itt kiválaszthatja azt a végpontot (Mail, OneDrive stb.), amelyen meg szeretné osztani a fényképet vagy videót. A HoloLens a közeli eszközökkel való megosztását is engedélyezheti a **Beállítások -> System -> Experiences**(Megosztott élmények) lapon. További részletekért olvassa el a Dolgok megosztása a közeli eszközökkel a [Windows 10.](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)
+A Windows Holographic 21H1-es verziójában egy vegyes valóságú fénykép vagy videó rögzítése után megjelenik egy előnézet. A **megosztási asszisztenst** az előnézet fölötti Megosztás ikonra kattintva hozhatja meg. Itt kiválaszthatja azt a végpontot (Mail, OneDrive stb.), amelyen meg szeretné osztani a fényképet vagy videót. A **-HoloLens -Gépház -> Megosztott** élmények > is engedélyezheti, hogy a felhasználók megosztanák a >. További részletekért olvassa el a Dolgok megosztása a közeli eszközökkel a [Windows 10.](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)
 
 > [!TIP] 
-> A OneDrive-ról származó vegyes valóságú fényképeket és videókat is megoszthatja, ha automatikusan feltölti a vegyes valóságú fényképeket és videókat. Nyissa meg a OneDrive alkalmazást a HoloLensben, és jelentkezzen be egy személyes **[Microsoft-fiók,](https://account.microsoft.com)** ha még nem. Válassza a **Beállítások ikont,** majd a **Kamera feltöltése lehetőséget.** Kapcsolja be a Kamera feltöltése figyelőt. A vegyes valóságú fényképek és videók mostantól minden alkalommal fel lesznek töltve a OneDrive-ra, amikor elindítja az alkalmazást a HoloLensben.
+> A vegyes valóságú fényképeket és videókat a OneDrive is megoszthatja, ha automatikusan feltölti a vegyes valóságú fényképeket és videókat. Nyissa meg OneDrive alkalmazást a HoloLens, és jelentkezzen be egy személyes **[Microsoft-fiók,](https://account.microsoft.com)** ha még nem. Válassza a **Gépház** ikont, majd a **Kamera feltöltése lehetőséget.** Kapcsolja be a Kamera feltöltése adatokat. A vegyes valóságú fényképek és videók mostantól fel lesznek töltve OneDrive minden alkalommal, amikor elindítja az alkalmazást a HoloLens.
 
 > [!NOTE]
-> Kamerafeltöltést csak akkor engedélyezhet a OneDrive-ban, ha személyes fiókkal van bejelentkezve a OneDrive Microsoft-fiók. Ha munkahelyi vagy iskolai fiókkal beállította a HoloLenst, hozzáadhat egy személyes Microsoft-fiók a OneDrive alkalmazásban a funkció engedélyezéséhez.
+> A kamerafeltöltést csak abban az OneDrive, ha személyes OneDrive van Microsoft-fiók. Ha munkahelyi HoloLens vagy iskolai fiókkal hoz létre munkahelyi vagy iskolai fiókot, személyes Microsoft-fiók adhat hozzá OneDrive alkalmazáshoz a funkció engedélyezéséhez.
 
 ## <a name="limitations-of-mixed-reality-capture"></a>A vegyes valóságú rögzítés korlátozásai
 
-- Vegyes valóságú rögzítés használata esetén a HoloLens képkocka-sebessége felezhető 30 Hz-re.
+- A vegyes valóságú rögzítés használata esetén a HoloLens képkocka-sebessége felezhető 30 Hz-re.
 - A fényképek és videók felbontása csökkenthető, ha a fénykép-/videókamerát már egy másik alkalmazás használja, élő streamelés közben, vagy ha a rendszer erőforrásai alacsonyak.
 
 ### <a name="maximum-recording-length"></a>Rögzítés maximális hossza
 
-A HoloLens 2 rendszerű eszközökön a Windows Holographic 20H2-es verziója előtt az eszközön rögzített videók maximális hossza öt perc volt.
+A HoloLens Holographic Windows 20H2-es verziója előtt 2 eszközön legfeljebb öt percig voltak korlátozva az eszközön rögzített videók.
 
-Az ügyfelek visszajelzései miatt megnövelte a vegyes [valóságú rögzítések hosszát.](holographic-photos-and-videos.md) A vegyes valóságú rögzítések alapértelmezés szerint nem lesznek 5 percre korlátozva, hanem a felvétel maximális hosszát számítja ki a rendelkezésre álló lemezterület alapján. Az eszköz a teljes lemezterület 80%-ának megfelelő szabad lemezterület alapján megbecsüli a videófelvétel maximális időtartamát.
+Az ügyfelek visszajelzései miatt megnövelte a vegyes [valóságú rögzítések hosszát.](holographic-photos-and-videos.md) A vegyes valóságú rögzítések alapértelmezés szerint nem korlátozódnak 5 percre, hanem a felvétel maximális hosszát számítja ki a rendelkezésre álló lemezterület alapján. Az eszköz a teljes lemezterület 80%-ának megfelelő szabad lemezterület alapján megbecsüli a videófelvétel maximális időtartamát.
 
 > [!NOTE]
-> A HoloLens a videófelvételek alapértelmezett hosszát használja (5 perc), ha a következők valamelyike történik:
+> A HoloLens a videófelvételek alapértelmezett hosszát (5 perc) használja, ha a következők valamelyike történik:
 > - A felvétel becsült maximális időtartama kisebb, mint az alapértelmezett 5 perc.
 > - A rendelkezésre álló lemezterület kevesebb, mint a teljes lemezterület 20%-a.
 

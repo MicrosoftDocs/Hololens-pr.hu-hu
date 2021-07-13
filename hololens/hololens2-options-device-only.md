@@ -1,7 +1,7 @@
 ---
-title: Csak HoloLens 2-eszköz
-description: Ismerje meg a HoloLens 2-eszközt, és hogy mi a helyzet a saját eszközök leszerzése után.
-keywords: HoloLens 2 vásárlási lehetőségek, HoloLens-lehetőségek, Developer Edition
+title: HoloLens 2 eszköz
+description: Megtudhatja, HoloLens 2 eszközt használ, és mi a helyzet a saját eszközének leszerzése után.
+keywords: HoloLens 2 vásárlási lehetőség, HoloLens, Developer Edition
 author: bogenera
 ms.author: bogenera
 ms.reviewer: bogenera
@@ -14,34 +14,34 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c4dd6e751c5f178b31bf86c0c8a98c52a1e781a3
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 9c2ef3c71ad7c67da66391c68f302983e876cef4
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379646"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636282"
 ---
-# <a name="hololens-2-device-only-edition"></a>HoloLens 2 csak eszközre készült kiadás
+# <a name="hololens-2-device-only-edition"></a>HoloLens 2. csak eszközkiadás
 
-A HoloLens 2 a legkényelmesebb és legtrehozóbb vegyes valóságú élményt kínálja – amelyet a Microsoft felhőalapú és AI-szolgáltatásainak megbízhatósága, biztonsága és méretezhetősége javít.
+HoloLens 2. verziójában a legkényelmesebb és legkényelmesebb vegyes valóság érhető el – ezt a Microsoft felhőalapú és AI-szolgáltatásainak megbízhatósága, biztonsága és méretezhetősége fokozza.
 
-## <a name="learn-about-hololens-2"></a>Tudnivalók a HoloLens 2-ről
-A HoloLens 2-eszközök kereskedelmi környezetben való használata hatékony eszköz lehet vállalata vagy szervezete számára. Bármely HoloLens 2-t egy fejlesztő is használhatja vegyes valóságú alkalmazások létrehozásához.
+## <a name="learn-about-hololens-2"></a>A 2. HoloLens megismeri
+A HoloLens 2 eszköz kereskedelmi környezetben való használata hatékony eszköz lehet vállalata vagy szervezete számára. A HoloLens 2. évtől bármelyiket használhatja a fejlesztő vegyes valóságú alkalmazások létrehozásához.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## <a name="heres-what-to-do-next-with-the-hololens-2"></a>A HoloLens 2 következő lépései
+## <a name="heres-what-to-do-next-with-the-hololens-2"></a>A következő lépés a 2. HoloLens után
 
-1. Tekintse meg ezt a videót a [HoloLens 2 Use and Care oldalon.](https://docs.microsoft.com/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care)
-1. [Készítse elő az eszközt a használatra,](https://docs.microsoft.com/hololens/hololens2-setup) majd [állítsa be](https://docs.microsoft.com/hololens/hololens2-start)
-1. [Útmutató a HoloLens 2-hez való elhozáshoz.](https://docs.microsoft.com/hololens/holographic-home)
-1. Ha már otthon van, készíthet [vegyes valóságú fényképeket vagy videókat.](https://docs.microsoft.com/hololens/holographic-photos-and-videos)
-1. Nézze át a [HoloLens 2-hez elérhető összes alkalmazást a Microsoft alkalmazás-áruházában.](https://docs.microsoft.com/hololens/holographic-store-apps)
+1. Tekintse meg ezt a videót [a HoloLens 2 Use and Care (Használat és ellátás) oldalon.](/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care)
+1. [Készítse elő az eszközt a használatra,](/hololens/hololens2-setup) majd [állítsa be](/hololens/hololens2-start)
+1. [Ismerje meg, hogyan 2. HoloLens el.](/hololens/holographic-home)
+1. Ha már otthon van, vegyes [valóságú fényképeket és videókat készíthet.](/hololens/holographic-photos-and-videos)
+1. Nézze át a 2. HoloLens elérhető összes alkalmazást [a Microsoft Alkalmazás-áruházban.](/hololens/holographic-store-apps)
 
 ## <a name="next-steps"></a>Következő lépések
 
-1. Azonnal elkezdhet interakcióba lépni a Mixed Reality és navigálhat Windows 10 HoloLensen – tekintse meg a **Tippek** alkalmazást, amely gyakorlati oktatóanyagokat ad a kézi interakciókhoz. Az indítási kézmozdulattal a Start menüre vagy a "Go to Start" (Ugrás az indításra) szövegre, és válassza a Tippek lehetőséget.
-1. Az alábbi gombra kattintva tovább olvashat a HoloLens 2-es ki- és beolvasásról.
+1. Azonnal elkezdhet interakcióba lépni a Mixed Reality és navigálhat Windows 10-on HoloLens – a **Tippek** alkalmazásban gyakorlati oktatóanyagokat is kap a kézi interakciókhoz. Az indítási kézmozdulattal az Indítás vagy az Ugrás az indításhoz szövegre használhatja, és kiválaszthatja a Tippek.
+1. Az alábbi gombra kattintva tovább olvashat a 2. HoloLens való ismerkedésről.
 
 > [!div class="nextstepaction"]
-> [A HoloLens 2 első lépések](hololens2-basic-usage.md)
+> [A 2. HoloLens első lépések](hololens2-basic-usage.md)

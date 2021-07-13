@@ -1,6 +1,6 @@
 ---
-title: Egyéni alkalmazások kezelése a HoloLens 2-hez
-description: Megtudhatja, hogyan telepíthet, távolíthat el és telepíthet egyéni holografikus alkalmazásokat a HoloLens 2-eszközökön a Eszközportál és a Visual Studio.
+title: Egyéni alkalmazások kezelése a 2. HoloLens esetén
+description: Megtudhatja, hogyan telepíthet, távolíthat el és telepíthet egyéni holografikus alkalmazásokat HoloLens 2 eszközön a Eszközportál és Visual Studio.
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
 ms.date: 01/21/2021
 manager: yannisle
@@ -16,24 +16,25 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e3ae180697c889a426108992ba345dc23b96505c
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: d2280a794455090c61a7bf30bc5dc5b8faf5adbe
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378057"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636401"
 ---
-# <a name="manage-custom-apps-for-hololens-2"></a>Egyéni alkalmazások kezelése a HoloLens 2-hez
+# <a name="manage-custom-apps-for-hololens-2"></a>Egyéni alkalmazások kezelése a 2. HoloLens esetén
 
-A HoloLens számos meglévő alkalmazást támogat a Microsoft Store, valamint a Kifejezetten a HoloLenshez készült új alkalmazásokat. 
+HoloLens számos meglévő alkalmazást támogat a Microsoft Store, valamint a kifejezetten a HoloLens. 
 
 További információ az áruházbeli alkalmazásokról: [Alkalmazások kezelése az áruházban.](holographic-store-apps.md)
 
 > [!IMPORTANT]
-> Vállalati üzemelő példányok esetén nem javasoljuk a Fejlesztői mód engedélyezését, amelyet mindkét módszer használ. Ha egy biztonságos alkalmazástelepítési módszer érdekli, tekintse át az [Alkalmazáskezelés: Áttekintés témakört.](app-deploy-overview.md)
+> Vállalati üzemelő példányok esetén nem javasoljuk a Fejlesztői mód engedélyezését, amelyet mindkét módszer használ. Ha biztonságos alkalmazástelepítési módszer érdekli, tekintse át az [Alkalmazáskezelés: Áttekintés témakört.](app-deploy-overview.md)
 
-Ha a HoloLens 2-eszközök alkalmazástelepítési fejlesztői módszerét keresi, tekintse meg a következőt:
-- [Eszközportál: Alkalmazás telepítése](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
-- [Alkalmazások Visual Studio és hibakeresése a Visual Studio használatával](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
+Ha az alkalmazástelepítés fejlesztői módszerét keresi HoloLens 2 eszközön, tekintse meg a következőt:
 
-Tekintse meg [útmutatónkat,](holographic-custom-apps.md) ha egyéni alkalmazásokat szeretne üzembe helyezni a HoloLensben (1. generációs).
+- [Eszközportál: Alkalmazás telepítése](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
+- [Alkalmazások Visual Studio és hibakeresése a Visual Studio használatával](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
+
+Tekintse meg [az útmutatót,](holographic-custom-apps.md) ha egyéni alkalmazásokat szeretne üzembe helyezni a HoloLens (1. generációs) virtuális gépre.

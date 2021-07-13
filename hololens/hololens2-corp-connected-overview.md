@@ -1,7 +1,7 @@
 ---
-title: Üzembe helyezési útmutató – Vállalati összekapcsolt HoloLens 2 Dynamics 365-útmutatókkal – Áttekintés
-description: Útmutató HoloLens 2-eszközök regisztrálásához a Dynamics 365-útmutatók segítségével vállalati csatlakoztatott hálózaton.
-keywords: HoloLens, felügyelet, vállalati csatlakoztatható, Dynamics 365-útmutatók, AAD, Azure AD, MDM, Mobile Eszközkezelés
+title: Telepítési útmutató – Vállalati csatlakoztatott HoloLens 2 Dynamics 365-útmutatók – Áttekintés
+description: Ismerje meg, hogyan regisztrálható HoloLens 2 eszköz a Dynamics 365-útmutatók segítségével egy vállalati csatlakoztatott hálózaton.
+keywords: HoloLens, felügyelet, vállalati kapcsolat, Dynamics 365-útmutatók, AAD, Azure AD, MDM, Mobile Eszközkezelés
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
@@ -14,26 +14,26 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ee6c24f65e5990f1e84a71d86b24dd782cf9f4cc
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: f2f7e1425a208e1f466d995f66118b7e68984242
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111378166"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113637013"
 ---
-# <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Telepítési útmutató – Vállalati csatlakoztatott HoloLens 2 Dynamics 365-útmutatókkal – Áttekintés
+# <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Telepítési útmutató – Vállalati csatlakoztatott HoloLens 2 Dynamics 365-útmutatók – Áttekintés
 
-Ez az útmutató segít az informatikai szakembereknek a Dynamics 365-útmutatók (útmutatók) segítségével Microsoft HoloLens 2 eszköz tervezésében és üzembe helyezésében a szervezetben. Ez az útmutató nagyszerű a próba- és éles környezetek üzembe helyezéséhez, és hasonló a B forgatókönyvhöz: Üzembe helyezés a szervezet hálózati [útmutatója alapján.](https://docs.microsoft.com/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) A koncepció igazolásának tesztelése után az útmutató segítségével a HoloLens a szervezetbe való integrálásával lépked tovább.
+Ez az útmutató segít az informatikai szakembereknek a Dynamics 365-útmutatók (útmutatók) segítségével Microsoft HoloLens 2 eszköz tervezésében és üzembe helyezésében a szervezetben. Ez az útmutató kiváló a próba- és éles környezetek üzembe helyezéséhez, és hasonló a B forgatókönyvhöz: Üzembe helyezés a szervezet hálózati [útmutatója alapján.](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) A koncepció igazolásának tesztelése után ennek az útmutatónak a segítségével integrálja a HoloLens a szervezetbe.
 
 Ebben az útmutatóban azt ismertetjük, hogyan regisztrálhatóak az eszközök a meglévő eszközkezelésben, hogyan alkalmazhat licenceket szükség szerint, és hogyan ellenőrizheti, hogy a végfelhasználók képesek-e Dynamics 365-útmutatót üzemeltetni, valamint hogyan használhatnak egyéni üzletági alkalmazásokat az eszköz beállítása után. 
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-A következő infrastruktúra már a helyén van:
+A következő infrastruktúrának már a helyén kell lennie:
 - Wi-Fi
     - Belső vállalati hálózat, amely hozzáfér a belső erőforrásokhoz, és korlátozott hozzáféréssel rendelkezik az internethez vagy a felhőszolgáltatásokhoz
     - Eszközalapú tanúsítványalapú hitelesítés.
-- Azure Active Directory (Azure AD) Csatlakozás az MDM automatikus regisztrációjával[(Azure AD P1 előfizetés](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) szükséges)
+- Azure Active Directory (Azure AD) Csatlakozás az MDM automatikus regisztrációjával[(Azure AD P1 előfizetés](/azure/active-directory/fundamentals/active-directory-whatis) szükséges)
 - MDM (Intune) által felügyelt
     - Egy vagy több alkalmazás MDM-en keresztül van telepítve.
 - Network (Hálózat) 
@@ -41,11 +41,12 @@ A következő infrastruktúra már a helyén van:
     - Proxy konfigurálása
 - A felhasználók a saját vállalati fiókjukkal (Azure AD) jelentkeznek be
     - Eszközönként egy vagy több felhasználó támogatott.
-- Különböző szintű eszközzárolási konfigurációk alkalmazása adott esetek alapján, a Teljesen nyitotttól az Egyalkalmazásos kioszkig.
+- Különböző szintű eszközzárolási konfigurációk alkalmazhatók adott esetekben, a Teljesen nyitotttól az Egyalkalmazásos kioszkig.
 
-## <a name="guides-licensing-and-requirements"></a>[Útmutatók a licenceléshez és a követelményekhez](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
+## <a name="guides-licensing-and-requirements"></a>[Útmutatók a licenceléshez és a követelményekhez](/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
+
 - Azure AD-fiók
-- Dynamics 365-útmutatók alkalmazások PC-hez és HoloLenshez
+- Dynamics 365-útmutatók alkalmazások PC-n és HoloLens
 - Dynamics 365-útmutatók előfizetés
     - Microsoft Dataverse (benne)
     - Power Apps (a csomagban)
@@ -59,14 +60,14 @@ A következő infrastruktúra már a helyén van:
 ## <a name="in-this-guide-you-will"></a>Ebben az útmutatóban a következőt fogja:
 ### <a name="prepare"></a>Előkészítés
 > [!div class="checklist"]
->- [Ismerje meg a HoloLens 2-eszközök infrastruktúrájának alapvető tudnivalókat.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
+>- [Ismerje meg a 2 eszköz HoloLens alapvető infrastruktúráját.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
 >- [Tudjon meg többet az Azure AD-ről, és állítson be egyet, ha még nincs ilyen.](hololens2-corp-connected-prepare.md#azure-active-directory)
 >- [Tudnivalók az identitáskezelésről és az Azure AD-fiókok legjobb beállításáról.](hololens2-corp-connected-prepare.md#identity-management)
->- [További információ az MDM-ről és az Intune beállításról, ha még nem rendelkezik ilyennal.](hololens2-corp-connected-prepare.md#mobile-device-management)
+>- [További információ az MDM-ről és az Intune beállításról, ha még nincs kész.](hololens2-corp-connected-prepare.md#mobile-device-management)
 >- [Ismerkedjen meg a tanúsítványalapú Wi-Fi-vel.](hololens2-corp-connected-prepare.md#certificates)
 >- [Ismerkedjen meg a Proxyval.](hololens2-corp-connected-prepare.md#proxy)
 >- [Az üzletági alkalmazások használatának a saját maga által használt mottója.](hololens2-corp-connected-prepare.md#line-of-business-apps)
->- [További információ az útmutatók szervezeti használatának módjairól.](hololens2-corp-connected-prepare.md#guides-playbook)
+>- [További információ a céges útmutatók használatának módjairól.](hololens2-corp-connected-prepare.md#guides-playbook)
 ### <a name="configure"></a>Konfigurálás
 > [!div class="checklist"]
 >- [Felhasználók és csoportok létrehozása.](hololens2-corp-connected-configure.md#azure-users-and-groups)
@@ -78,13 +79,13 @@ A következő infrastruktúra már a helyén van:
 >- [A WDAC konfigurálása (nem kötelező).](hololens2-corp-connected-configure.md#optional-wdac)
 ### <a name="deploy"></a>Üzembe helyezés
 > [!div class="checklist"]
->-  [A regisztráció ellenőrzése az eszközön és az MDM-en keresztül.](hololens2-corp-connected-deploy.md#enrollment-validation)
->-  [Ellenőrizze Wi-Fi tanúsítványokat.](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation)
+>-  [Az eszköz és az MDM segítségével történő regisztráció ellenőrzése.](hololens2-corp-connected-deploy.md#enrollment-validation)
+>-  [Ellenőrizze az Wi-Fi tanúsítványokat.](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation)
 >-  [Ellenőrizze az LOB-alkalmazás telepítését.](hololens2-corp-connected-deploy.md#validate-lob-app-install)
 >-  [Útmutatók érvényesítése szerzői és üzemeltetési útmutatóval.](hololens2-corp-connected-deploy.md#validate-dynamics-365-guides)
 ### <a name="maintain"></a>Karbantartás
 > [!div class="checklist"]
->- [A HoloLens 2 frissítése.](hololens2-corp-connected-maintain.md#update-hololens)
+>- [Frissítse HoloLens 2. frissítést.](hololens2-corp-connected-maintain.md#update-hololens)
 >- [Útmutatók (áruházbeli alkalmazások) frissítése.](hololens2-corp-connected-maintain.md#how-to-update-dynamics-365-guides-and-other-store-apps)
 >- [LOB-alkalmazások frissítése.](hololens2-corp-connected-maintain.md#how-to-update-lob-apps) 
 >- [Fejlesztési terv.](hololens2-corp-connected-maintain.md#development-plan) 
@@ -93,4 +94,4 @@ A következő infrastruktúra már a helyén van:
 
 ## <a name="next-step"></a>Következő lépés 
 > [!div class="nextstepaction"]
-> [Vállalati csatlakoztatott üzembe helyezés – Előkészítés](hololens2-corp-connected-prepare.md)
+> [Vállalati csatlakoztatott üzemelő példány – Előkészítés](hololens2-corp-connected-prepare.md)

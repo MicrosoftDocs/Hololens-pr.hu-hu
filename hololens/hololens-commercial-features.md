@@ -1,9 +1,9 @@
 ---
-title: Kereskedelmi funkciók
-description: Megismerhet Microsoft HoloLens Commercial Suite funkciókat, amelyek megkönnyítik a vállalatok számára a HoloLens-eszközök kezelését.
-author: scooley
-ms.author: scooley
-ms.date: 08/26/2019
+title: HoloLens 2 képesség és megoldás
+description: Ismerje meg a Microsoft HoloLens kereskedelmi funkciókat, amelyek megkönnyítik a vállalkozások számára a HoloLens kezelését.
+author: joyjaz
+ms.author: v-jjaswinski
+ms.date: 06/28/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -13,74 +13,69 @@ ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
-manager: jarrettr
+manager: skerewa
 appliesto:
-- HoloLens (1st gen)
 - HoloLens 2
-keywords: HoloLens, kereskedelmi, funkciók, mdm, mobileszköz-kezelés, kioszkmód
-ms.openlocfilehash: 3682a2633477d68f61dba8a674846857947a3d15
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+keywords: HoloLens 2, kereskedelmi, funkciók, mdm, mobileszköz-kezelés, kioszkmód, alkalmazások, identitás, Bitlocker, iris, Windows Hello, Azure-alapú, Autopilot, vegyes valóság, WDAC
+ms.openlocfilehash: 5a68c4199cba20bba9d3aaa5183819975ea7b3f4
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379513"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635813"
 ---
-# <a name="commercial-features"></a>Kereskedelmi funkciók
+# <a name="hololens-2-capabilities-and-solutions"></a>HoloLens 2 képesség és megoldás
 
-A HoloLens olyan funkciókat tartalmaz, amelyek megkönnyítik a vállalkozások számára a HoloLens-eszközök kezelését.
+## <a name="what-can-hololens-2-do-for-you"></a>Mit HoloLens a 2.
 
-Minden HoloLens 2-eszköz kereskedelmi funkciókkal rendelkezik.
+Határok nélkül működhet együtt, és precízen működhet együtt az alkalmazottak termelékenységének növelése érdekében a 2. HoloLens alkalmazásokkal. A beépített hangparancsok, a szemkövetés és a világvezetők segítségével fej-fej mellett maradhat, és a feladatok hiba nélküli, biztonságos elvégzésére összpontosíthat folyamatosan. Csatlakozás a távoli munkatársakkal, és egy fizikai környezetben elterjedő, kiterjedt holografikus vásznon dolgozva gyorsan megoldhatja a problémákat a munka során. A megtérülés azonnal használható a Microsoft biztonságával, megbízhatóságával és méretezhetőségével támogatott alkalmazások robusztus ökoszisztémájában.  
 
-A HoloLens (1. generációs) két licencelési lehetőséget tartalmaz: a fejlesztői licencet és egy kereskedelmi licencet. A HoloLens kereskedelmi funkcióinak feloldásához frissítsen a fejlesztői licencről egy kereskedelmi licencre. A vásárláshoz Microsoft HoloLens Commercial Suite forduljon a helyi Microsoft-fiók menedzserhez.
+[!INCLUDE [solutions](includes/hlsolutions.md)]
 
->[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
+## <a name="hololens-2-capabilities"></a>HoloLens 2 képesség
 
-## <a name="key-commercial-features"></a>A legfontosabb kereskedelmi funkciók
+Mitől olyan hatékony a HoloLens 2?
 
-- **Kioszkmód.** A HoloLens bemutatókban vagy kioszkmódban való bemutatásával korlátozhatja, hogy mely alkalmazások futtathatók.
+| Szolgáltatás | Leírás |
+|---------|-------------|
+| Világ horgonyzása | A rögzített hologramok pontosan a helyén maradnak. HoloLens 2. tag érti a munkaterületet. Így a digitális tartalom az idő múlása alatt is megmarad – olyan objektumokhoz vagy felületekhez rögzítetten, ahol dolgozik. |
+| Kézkövetés | A hologramok érintése, megragadás és áthelyezése természetesnek érzi magát. HoloLens 2 a saját kézhez alkalmazkodik az interakciók újnak talált elégedettsége érdekében. |
+| Szemkövetés | Új kontextus és emberi megértés. HoloLens 2. felfogja, hogy pontosan hol keres, így valós időben képes megérteni a szándékot és a hologramokat a szemének megfelelően igazítani. |
+| Hang engedélyezve | A beépített hangparancsokkal gyorsan navigálhat és működtethet HoloLens 2.- ben, ha a kézzel egy feladattal van elfoglalva. |
+| Ergonomikus | HoloLens 2. része kis (3,28 kg), amely a kiterjesztett használatot támogató betárcsázásos illeszkedő rendszert tartalmaz. |
+| Large FoV | Bontsa ki a holografikus vásznat nagy felbontású, nagy méretű nézetben. |
+| Távkioldós | Szabadon mozoghat vezetékek és külső csomagok nélkül, hogy továbblépni tudjon a feladatra. |
+| Azure-alapú | Streamelhet kiváló minőségű 3D-tartalmakat, amelyek egy olyan helyre és/vagy objektumra horgonyozhatóak, amely megmarad a vegyes valóságú Azure-szolgáltatásokkal használó felhasználók között.
+| Vegyes valóság rögzítése | Fényképként vagy videóként dokumentálja a felhasználói élményt, hogy valós időben megosztja másokkal. |
+| Vállalati Windows Hello | Az írisz alapú biometrikus hitelesítéssel gyorsan és biztonságosan beléphet a munka folyamatába. |
+| Windows Autopilot | A 2. HoloLens szolgáltatásokat úgy kell beállítani és előre konfigurálni, hogy azonnal használatra készek az elosztott munkawebhelyek között. |
+| Operációs rendszer frissítései | Tartsa biztonságban a havi karbantartási frissítéseket, és használja ki az új hatékonysági és kezelhetőségi képességeket a két éves kiadásokban. |
+| Eszközök egyszerű kezelése | Egyszerre több HoloLens 2 eszközt kezelhet olyan megoldásokkal, mint Microsoft Intune, a VMware Workspace One, a MobileIron stb. |
+| Szabályozott környezetekben való működés | HoloLens 2. osztály egy kiterjedt eszközportfólióval rendelkezik, amely támogatja a szigorúan szabályozott környezeteket, beleértve az ISO 5.0 osztályt és az UL I. osztály 2. osztályt. |
 
-  ![Kioszkmódban a HoloLens közvetlenül a választott alkalmazásba indul el.](images/201608-kioskmode-400px.png)
 
-- **Mobil Eszközkezelés (MDM) a HoloLenshez.** Az IT-részleg egyszerre több HoloLens-eszközt is kezelhet olyan megoldásokkal, mint Microsoft Intune. Kezelheti a beállításokat, kiválaszthatja a telepíteni kívánt alkalmazásokat, és beállíthatja a szervezet igényeinek megfelelő biztonsági konfigurációkat.
+## <a name="managing-hololens-2-in-your-organization"></a>A HoloLens 2. kezelése a szervezetben
+HoloLens 2. része olyan funkciókat tartalmaz, amelyek megkönnyítik a szervezetek számára a HoloLens kezelését és használatát. Az eszköz tartalmaz néhány funkciót, míg mások a [Mobile Eszközkezelés (MDM)](hololens-mdm-configure.md) segítségével [](hololens-provisioning.md) HoloLens vagy a Configuration Designer használatával kiépítési csomagokon Windows [keresztül.](app-deploy-provisioning-package.md#setup)
 
-  ![A Eszközkezelés a HoloLensben vállalati szintű eszközkezelést biztosít több eszközön.](images/201608-enterprisemanagement-400px.png)
+| akarok... | Megoldás | Description |  
+|---------| ------------|------------|
+A végfelhasználók bejelentkezésének kezelése | [**Identitás**](hololens-identity.md) | HoloLens 2. csoport többféle felhasználói identitást támogat – Azure Active Directory (AAD), Microsoft-fiók (MSA) és helyi fiókok.  |
+| Felhasználói adatok titkosítása | [**Adatbiztonság**](security-encryption-data-protection.md) | A 2. HoloLens bitLocker adattitkosítása a többi eszközével azonos szintű biztonsági Windows biztosít. | 
+Hololens-eszközök kezelése a szervezetben | [**Mobileszköz-kezelés**](hololens-mdm-configure.md) | Beállítások kezelése, alkalmazások kiválasztása a telepítéshez és a szervezet igényeihez igazított biztonsági konfigurációk beállításához HoloLens 2 eszközön egy központi helyről. | 
+|Az új felhasználók és eszközök beállítási ideje minimálisra csökkentése | [**Autopilot**](hololens2-autopilot.md) | Konfigurálja a használatra elérhető felhasználói élményt (OOBE) a Microsoft Endpoint Manager és lehetővé teszi a végfelhasználók számára, hogy kis vagy semmilyen interakcióval előkészítsék az eszközöket az üzleti használatra. |  
+| Az eszközök operációsrendszer-frissítésének szabályozása | [**Windows Üzleti frissítés**](hololens-updates.md#managing-updates-by-using-windows-update-for-business) | Windows Az Update for Business szabályozott operációsrendszer-frissítéseket biztosít az eszközökhöz, és támogatja a hosszú távú karbantartási csatornát. |  
+| Adott és LOB-alkalmazások letöltésének engedélyezése |[**Alkalmazáskezelés**](app-deploy-overview.md) | Válassza ki, hogyan terjesztheti és vezérelheti az alkalmazásokat 2 HoloLens csoport számára. | 
+| Adott alkalmazások megjelenítése vagy elrejtése a Start menüben |[**Teljes képernyős mód**](hololens-kiosk.md) | Konfigurálja HoloLens 2.-t, hogy rögzített célú eszközként működve alkalmazásbemutatókban vagy dedikált üzleti alkalmazásokban használhatók. 
+| A környezet védelme az alkalmazások zárolásának segítségével | [**WDAC**](windows-defender-application-control-wdac.md) | Windows Defender Az alkalmazásvezérlés (WDAC) megakadályozza, hogy az eszköz felhasználója elindítsa az alkalmazásokat és folyamatokat.
+| Eszközbiztonság kezelése alkalmazásokra és folyamatokra vonatkozó szabályokkal | [**Szabályzatok (CSP-k)**](hololens-csp-policy-overview.md) | A rendszergazdák a 2. HoloLens támogatott házirend-CSP-k meglévő listájával határozhatják meg és valósítják meg a szabályzatbeállításokat. |  
+| Az eszközök internetkapcsolatának kezelése | [**Hálózat és kapcsolatok**](hololens-certificates-network.md) | Tanúsítványalapú hitelesítéssel férhet hozzá Wi-Fi-hez, VPN-hez vagy belső erőforrásokhoz. | 
+| Az eszköz megosztása több felhasználóval | [**Automatikusan testreszabott megjelenítés**](hololens-calibration.md#auto-eye-position-support) | HoloLens 2 kijelző automatikusan az automatikus szempozícióhoz (AEP) igazodik, így nincs szükség manuális beírási folyamat futtatására, amikor az eszköz meg van osztva a [felhasználók között.](hololens-multiple-users.md) |
 
-- **Windows Update Vállalatoknak.** Windows Update Vállalatoknak operációs rendszer vezérelt frissítéseit biztosítja az eszközökhöz, és támogatja a hosszú távú karbantartási csatornát.
-- **Adatbiztonság.** A BitLocker adattitkosítás engedélyezve van a HoloLensben, hogy ugyanolyan szintű biztonságot nyújtson, mint bármely más Windows-eszköz.
-- **Munkahelyi hozzáférés.** A szervezeten belül bárki távolról csatlakozhat a vállalati hálózathoz virtuális magánhálózaton (VPN) keresztül a HoloLensen. A HoloLens a hitelesítő adatokat Wi-Fi hálózatokhoz is hozzáférhet.
-- **Microsoft Store Vállalatoknak.** Az IT-részleg egy olyan vállalati privát áruházat is beállíthat, amely csak a cég alkalmazásait tartalmazza az Adott HoloLens-használathoz. A vállalati szoftvereket biztonságosan terjesztheti a vállalati felhasználók kiválasztott csoportjának.
+Ismerje meg [a fenti megoldások licencelési](hololens-licenses-requirements.md) követelményeit.
 
-## <a name="feature-comparison-between-editions"></a>Funkciók összehasonlítása a kiadások között
+## <a name="next-steps"></a>Következő lépések
+> [!div class="nextstepaction"]
+> [Ismerkedés HoloLens két lehetőséggel](hololens2-options.md)
 
-|Funkciók |HoloLens (1. generációs) Development Edition |HoloLens (1. generációs) Commercial Suite |HoloLens 2 |
-|---|:---:|:---:|:---:|
-|Eszköztitkosítás (BitLocker) | |✔️ |✔️ |
-|Virtuális magánhálózat (VPN) | |✔️ |✔️ |
-|[Teljes képernyős mód](hololens-kiosk.md) | |✔️ |✔️ |
-|**Felügyelet és üzembe helyezés** | | | |
-|Mobileszköz-felügyelet (MDM) | |✔️ |✔️ |
-|A igénylések igénylésének letiltási lehetősége | |✔️ |✔️ |
-|Tanúsítványalapú vállalati Wi-Fi hozzáférés | |✔️ |✔️ |
-|Microsoft Store (Fogyasztó) |Ügyfélszolgáltatások |Szűrés MDM használatával |Szűrés MDM használatával |
-|[Vállalati áruház portálja](https://docs.microsoft.com/microsoft-store/working-with-line-of-business-apps) | |✔️ |✔️ |
-|**Biztonság és identitás** | | | |
-|Bejelentkezés Azure Active Directory (Azure AD-) fiókkal |✔️ |✔️ |✔️ |
-|Bejelentkezés Microsoft-fiókkal (MSA) |✔️ |✔️ |✔️ |
-|Új generációs hitelesítő adatok PIN-kód feloldásával |✔️ |✔️ |✔️ |
-|[Biztonságos rendszerindítás](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot) |✔️ |✔️ |✔️ |
-|**Karbantartás és támogatás** | | | |
-|Automatikus rendszerfrissítések érkezésükkor |✔️ |✔️ |✔️ |
-|[Windows Update Vállalatoknak](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) | |✔️ |✔️ |
-|Long-Term csatorna (LTSC) | |✔️ |✔️ |
-
-## <a name="enabling-commercial-features"></a>Kereskedelmi funkciók engedélyezése
-
-A szervezet rendszergazdája olyan kereskedelmi funkciókat állíthat be, mint a Microsoft Store Vállalatoknak, a kioszkmód és a Wi-Fi hozzáférés. Az [Microsoft HoloLens](index.yml) dokumentációja részletes útmutatást nyújt az eszközök regisztrálásához és alkalmazások telepítéséhez a Microsoft Store Vállalatoknak.
-
-## <a name="see-also"></a>Lásd még
-
-- [Microsoft HoloLens](index.yml)
-- [Teljes képernyős mód](hololens-kiosk.md)
-- [A HoloLens-eszközökön támogatott CSP-k](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)
-- [Microsoft Store for Business és üzletági alkalmazások](https://blogs.technet.microsoft.com/sbucci/2016/04/13/windows-store-for-business-and-line-of-business-applications/)
-- [Üzletági alkalmazások használata](/microsoft-store/working-with-line-of-business-apps)
+> [!div class="nextstepaction"]
+>[A 2 HoloLens telepítés megtervezése](hololens-requirements.md) 

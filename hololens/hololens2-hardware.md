@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 hardver
-description: Ismerje meg a 2. Microsoft HoloLens összetevőit, amely a microsoftos operációs rendszereket futtató, nem thered holografikus Microsoft-számítógép Windows 10.
+description: Ismerje meg a 2. Microsoft HoloLens összetevőit, amely a 2. össze nem oltott holografikus Microsoft-számítógép legújabb Windows 10.
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
 ms.date: 10/20/2020
 keywords: hololens
@@ -12,47 +12,47 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 88687559310a9abc24f34c416880e02caf535177
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: cfe4206790b12d77a7f5be4267387cdd0299c3fe
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924519"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636860"
 ---
-# <a name="about-hololens-2"></a>A HoloLens 2
+# <a name="about-hololens-2"></a>A 2 HoloLens ről
 
-![HoloLens 2 oldalnézet](images/hololens2-breakdown.png)
+![HoloLens kétoldalas nézet](images/hololens2-breakdown.png)
 
-Microsoft HoloLens 2. példa egy nem therett holografikus számítógép.  Pontosítja a HoloLens (1. generációs) által indított holografikus számítástechnika útját, hogy kényelmesebb és lebilincselőbb élményt nyújtson, több lehetőséggel párosítva a vegyes valóságban való együttműködéshez. A HoloLens 2 a [Windows Holographic OS-t](hololens-release-notes.md)futtatja, amely a Windows 10 "ízén" alapul, és egy robusztus, nagy teljesítményű és biztonságos platformot biztosít a felhasználóknak, rendszergazdáknak és fejlesztőknek. 
+Microsoft HoloLens 2. szám egy nem therett holografikus számítógép.  Pontosítja a HoloLens (1. generációs) által indított holografikus számítástechnika utazását, hogy kényelmesebb és magával ragadó élményt nyújtson, és több lehetőséget kínál a vegyes valóságban való együttműködéshez. HoloLens 2. verziója a [Windows Holographic operációs](hololens-release-notes.md)rendszeren fut, amely a Windows 10 "ízén" alapul, és robusztus, nagy teljesítményű és biztonságos platformot biztosít a felhasználóknak, rendszergazdáknak és fejlesztőknek. 
 
 > [!NOTE]
-> A legutóbbi Windows 11-bejelentés a Windows PC-s verziójára összpontosított. 2021 májusában elindítottunk egy jelentős operációsrendszer-frissítést [a](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) HoloLens 2-höz, és az őszre vonatkozó ügyfél-visszajelzések alapján dolgozunk egy hamarosan megjelenő kiadáson.
+> A Windows 11-es bejelentése a számítógép verziójával Windows. 2021 májusában elindítottunk egy jelentős operációsrendszer-frissítést HoloLens 2. kiadáshoz, és az őszre vonatkozó ügyfél-visszajelzések alapján dolgozunk egy hamarosan megjelenő kiadáson. [](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067)
 
-A HoloLens 2 használatához felhasználói fiók szükséges.
+A 2. HoloLens felhasználói fiók szükséges.
 
-## <a name="hololens-components"></a>HoloLens-összetevők
+## <a name="hololens-components"></a>HoloLens összetevők
 
-- **Visor**. A HoloLens-érzékelőket és -kijelzőket tartalmazza. A vizort felfelé forgathatja, miközben a HoloLenst viseli.
-- **Headband ( fejsáv)**. A HoloLensre való felhozásához használja a beállítási kereket a fejsáv kibontásához. Ha a HoloLens már a helyén van, húzza meg a rögzítőkereket úgy, hogy jobbra fordul, amíg a fejsáv el nem oszlott.
-- **A fényerő gombok.** A HoloLens berakásakor a fényerejét jelző gombok a vizor bal oldalán, a völgy közelében vannak.
-- **Hangerőgombok.** A HoloLens befogyatkozása esetén a hangerőszabályzó gombok a vizor jobb oldalán, a halom közelében vannak.
-- **Bekapcsológomb.** A HoloLens bekapcsológombja a hátsó külső burkolat jobb oldalán található.
-- **USB-C port.** A HoloLens berakásakor az USB-C port a hátsó külső fedés jobb oldalán, a Power gomb alatt található.
+- **Visor**. A HoloLens és kijelzőit tartalmazza. A vizort felfelé forgathatja, miközben a vizor HoloLens.
+- **Headband ( fejsáv)**. A tengelyre HoloLens a beállítási kereket a headband kibontásához. A HoloLens után húzza meg a rögzítőkereket úgy, hogy jobbra fordul, amíg a fejsáv el nem oszlott.
+- **A fényerő gombok.** Ha be van HoloLens, a fényerejét jelző gombok a vizor bal oldalán, a csúszka közelében vannak.
+- **Kötetgombok.** Ha a HoloLens, a hangerőszabályzó gombok a vizor jobb oldalán vannak, a foga közelében.
+- **Bekapcsológomb.** Ha be HoloLens, a bekapcsológomb a hátsó külső burkolat jobb oldalán található.
+- **USB-C port.** A HoloLens berakásakor az USB-C port a bekapcsológomb alatti külső burkolat jobb oldalán található.
 
 ## <a name="in-the-box"></a>A mezőben
 
-- **[A Berow (Betal) pad ..](https://www.microsoft.com/p/microsoft-hololens-2-brow-pad/90z10rsslqp0)** Szükség szerint eltávolíthatja és lecserélheti arow padot.
-- **[Terhelési rekent](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)**. Ha mozgás közben berakja a HoloLenst, használja a többletterhelési szalagot, hogy az eszköz a helyén maradjon. Ha hosszabb ideig beköti a HoloLenst, a terhelési csökkentés kényelmesebbé teszi az eszköz elhasználódását.
-- **[USB-C csatlakozó és kábel.](https://www.microsoft.com/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5)** A tápellátás az áramforráshoz csatlakozik. Az USB-C kábellel csatlakoztassa a HoloLenst a tápegységhez, vagy csatlakoztassa a HoloLenst a számítógépéhez.
-- **Mikrofiber-** és . A HoloLens-vizor tisztítására használható.
+- Arow pad ( ) ki **[van va.](https://www.microsoft.com/p/microsoft-hololens-2-brow-pad/90z10rsslqp0)** Szükség szerint eltávolíthatja és lecserélheti arow padot.
+- **[Terhelési terhelés](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)**. Ha mozgás közben berakja a HoloLens, használja a terhelési tokot, hogy az eszköz a helyén maradjon. Ha hosszabb ideig HoloLens be a terhelést, az eszköz elhasználódása nagyobb lehet.
+- **[USB-C kábel és kábel.](https://www.microsoft.com/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5)** A tápellátás az áramforráshoz csatlakozik. Az USB-C kábellel csatlakoztassa a HoloLens a tápegységhez a díjszabáshoz, vagy csatlakoztassa HoloLens számítógépéhez.
+- **Mikrofiberos .** A használatával megtisztítja a HoloLens vizort.
 
-### <a name="power-supply-details"></a>Energiaellátás részletei
+### <a name="power-supply-details"></a>Energiaellátási adatok
 
-A legjobb díjszabási mechanizmus a tápegység és az eszközhöz csatlakoztatott USB-kábel. A tápegység egy 18W-os kábel.  A 9V-t 2A-n látja el.
+Az eszköz tápellátása és USB-kábele a leginkább támogatott díjszabási mechanizmus. A tápegység egy 18W-os tápellátás.  9V-t ad meg 2A-n.
 
 A díjszabás és a sebesség attól függően változhat, hogy az eszköz milyen környezetben fut.
 
-Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százaléka alatt is fenntartható/előre haladható legyen, legalább 15W-os kábelre kell csatlakoztatni.
+Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százaléka alatt is fenntartható vagy előrevehető legyen, legalább 15W-os akkumulátorhoz kell csatlakoztatni.
 
 ## <a name="device-specifications"></a>Eszközspecifikációk
 
@@ -62,7 +62,7 @@ Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százal�
 | - | - |
 | Optika | Átfedő holografikus objektívek (waveguides) |
 | Holografikus felbontás | 2k 3:2-es fénymotorok |
-| Holografikus sűrűség | >2,5k radián (radiánonkénti világos pontok) |
+| Holografikus sűrűség | >2,5 000 radián (radiánonkénti világos pontok) |
 | Szemalapú renderelés | Optimalizálás megjelenítése 3D szempozícióhoz |
 
 ### <a name="sensors"></a>Érzékelők
@@ -70,15 +70,15 @@ Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százal�
 |   |   |
 | - | - |
 | Fejkövetés | 4 látható fénykamera |
-| Szemkövetés | 2 Érzékelő (IR) kamerák |
+| Szemkövetés | 2A gépeket (IR) figyelő kamerák |
 | Mélység | 1 MP-es mélységérzékelő |
-| Inertiális mérési egység (IMU) | Gyorsulásmérő, groscope, mérőmérő |
-| Kamera | 8 MP-es továbbra is, 1080p30 videó |
+| Inertial measurement unit (IMU) | Gyorsulásmérő, groscope, kilométeróra |
+| Kamera | 8 MP-es stills, 1080p30 videó |
 
-![HoloLens 2-érzékelők](images/hololens2-front-view.png)
+![HoloLens 2 érzékelő](images/hololens2-front-view.png)
 
 > [!NOTE]
-> Ne fedje le a képen kihívott érzékelőket. A fejkövetési kamerák nagyon széles FOV-t kínálnak, és semmi sem lehet körülveszve amellett, hogy nem fedi el őket.
+> Ne fedje le a képen kihívott érzékelőket. A fejkövető kamerák nagyon széles FOV-t kínálnak, és semmi sem lehet körülveszve, amellett, hogy nem fedik el őket.
 
 ### <a name="audio-and-speech"></a>Hang és beszéd
 
@@ -87,7 +87,7 @@ Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százal�
 | Mikrofontömb | 5 csatorna |
 | Hangszórók | Beépített térbeli hang |
 
-### <a name="compute-and-connectivity"></a>Számítás és kapcsolatok
+### <a name="compute-and-connectivity"></a>Számítás és kapcsolat
 
 |   |   |
 | - | - |
@@ -107,13 +107,13 @@ Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százal�
 | Akkumulátor-technológia | [Lithium-akkumulátorok](https://www.microsoft.com/download/details.aspx?id=43388) |
 | Díjszabási viselkedés | Teljesen működőképes a díjszabáskor |
 | Hűtés típusa | Passzívan hűtött (ventilátorok nélkül) |
-| Power Draw | Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százaléka alatt is fenntartható/előre haladható legyen, legalább 15W-os kábelre kell csatlakoztatni. |
+| Power Draw | Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százaléka alatt is fenntartható vagy előrevehető legyen, legalább 15W-os akkumulátorhoz kell csatlakoztatni. |
 
 ### <a name="fit"></a>Alkalmazás
 
 |   |   |
 | - | - |
-| Méretezés | Egyméretű, állítható sávkal.  Beférkedő szemüveg |
+| Méretezés | Egyméretű, állítható sávkal.  Napszemüvegek fölötti elférés |
 | Tömeg | 566 gramm |
 
 ## <a name="device-capabilities"></a>Eszközképességek
@@ -124,7 +124,7 @@ Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százal�
 | - | - |
 | Kézkövetés | Kétmagos, teljes körűen kifejlett modell, közvetlen manipuláció |
 | Szemkövetés | Valós idejű követés |
-| Hang | Parancs és vezérlés az eszközön; Cortana természetes nyelve internetkapcsolattal |
+| Hang | Parancs és vezérlés az eszközön; Cortana nyelv használata internetkapcsolattal |
 
 ### <a name="environment-understanding"></a>Környezetek ismertetése
 
@@ -138,21 +138,21 @@ Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százal�
 
 |   |   |
 | - | - |
-| Windows Holographic operációs rendszer | A [Windows Holographic os](hololens-release-notes.md)Windows 10 a felhasználók a HoloLens 2-n keresztül vegyes valóságú környezetben is használhatjak alkalmazásukat és játékukat.
+| Windows Holografikus operációs rendszer | A [Windows holografikus](hololens-release-notes.md)operációs rendszerével Windows 10 felhasználók vegyes valóságú környezetben is használhatjak alkalmazásukat és játékukat a HoloLens 2-n keresztül.
 | 3D-megjelenítő | [3D-megjelenítő](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) lehetővé teszi a 3D modellek és animációk valós idejű megtekintését.|
-| Cortana | [Cortana,](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)a személyes hatékonyságnövelő segédje segít a fontos dolgokban maradni, és időt takarít meg a szükséges adatok megtalálására.  |
-| Dynamics 365-útmutatók |  [A Dynamics 365-útmutatók segítségével](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) az alkalmazottak gyorsabban tanulhatnak új készségeket a HoloLens-eszközökön. |
-| Dynamics 365 Remote Assist | [A Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) lehetővé teszi a technikusok számára, hogy a Microsoft Teams vagy a Dynamics 365 Remote Assist használatával együttműködjön és megoldják a távoli közreműködőkkel kapcsolatos problémákat.  |
-| Visszajelzési központ | [Visszajelzési központ](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) visszajelzést küldhet a Windowsról és az alkalmazásokról a javaslatainak vagy problémáinak megosztásával.  |
+| Cortana | [Cortana,](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)a személyi hatékonyságnövelő segéd segítségével mindig a legfontosabb dolgokra maradhat rá, és időt takaríthat meg a szükséges dolgok megtalálására.  |
+| Dynamics 365-útmutatók |  [A Dynamics 365-útmutatók](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) segítségével az alkalmazottak gyorsabban tanulhatnak új készségeket a HoloLens eszközökön. |
+| Dynamics 365 Remote Assist | [A Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) lehetővé teszi a technikusok számára a távoli közreműködőkkel való együttműködést és problémák megoldását a Microsoft Teams vagy a Dynamics 365 Remote Assist használatával.  |
+| Visszajelzési központ | [Visszajelzési központ](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) visszajelzést adhat az Windows alkalmazásokról a javaslatainak vagy problémáinak megosztásával.  |
 | Fájlkezelő | Fájlkezelő grafikus felhasználói felületet biztosít a fájlrendszerek eléréséhez. |
-| Mail és Calendar | A [Mail és a Calendar](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) alkalmazással naprakész maradhat az e-mailjeiről, kezelheti az ütemezést, és kapcsolatban maradhat a névjegyekkel. |  
+| Mail és Calendar | A [Mail és a Calendar](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) alkalmazással naprakész maradhat az e-mailjeiről, kezelheti az ütemezést, és kapcsolatban maradhat a névjegyekkel. |
 | Microsoft Edge | Microsoft Edge világosztályú teljesítményt nyújt több adatvédelemmel, nagyobb hatékonysággal és több értékkel a böngészés során. |
-| Microsoft Store | A [Microsoft Store](https://www.microsoft.com) a HoloLens-sel használt alkalmazások és játékok forrása.|
+| Microsoft Store | A [Microsoft Store](https://www.microsoft.com) az alkalmazásokkal és játékokkal használt alkalmazások és játékok HoloLens.|
 | Filmek & TV | [A filmek & TV-vel](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) egy egyszerű, gyors és elegáns alkalmazásban lehet a legújabb szórakozást kínálni. |
-| OneDrive | [A OneDrive-val](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) bárhonnan elérheti és szerkesztheti a fájlokat az összes eszközről.  |
-| Fotók| [A Photos](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) lehetővé teszi a fényképek és videók megtekintését és szerkesztését, a filmek készítése és a videók létrehozásához.  |
-| Beállítások | A Beállítások alkalmazás az a hely, ahol részletesen testre szabhatja a Windows Holographic működését.  |
-| Tippek | [A Tippek](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) segítségével meglepő és kevésbé ismert dolgokat sajáthat el a Windows Holographicban. |
+| OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) segítségével bárhonnan elérheti és szerkesztheti az összes eszközén található fájlokat.  |
+| Fotók | [A Photos](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) lehetővé teszi a fényképek és videók megtekintését és szerkesztését, a filmek készítése és a videók létrehozásához.  |
+| Beállítások | A Gépház az a hely, ahol testre szabhatja a Holographic Windows működését.  |
+| Tippek | [Tippek](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) segítségével meglepő és kevésbé ismert dolgokat sajáthat el a Holographic Windows. |
 
 ## <a name="device-certifications"></a>Eszköztanúsítások
 
@@ -160,20 +160,20 @@ Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százal�
 
 * [Termékbiztonság](https://support.microsoft.com/en-us/help/4023454/safety-information)
 * [Termékbiztonsági figyelmeztetések és utasítások](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
-* Szembiztonság: A HoloLens 2 tesztelése megtörtént, és megfelel az ANSI Z87.1, CSA Z94.3 és EN 166 alapvető hatásvédelmi követelményeinek.
+* Szembiztonság: HoloLens 2. szabvány tesztelése megtörtént, és megfelel az ANSI Z87.1, a CSA Z94.3 és az EN 166 alapvető hatásvédelmi követelményeinek.
 * [SAR-információk](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ### <a name="regulatory-information"></a>Szabályozási információk
-[HoloLens-szabályozás:](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)Többek között a hőmérséklettel, a megsemmisítéssel, a rádió- és TV-interferenciákkal kapcsolatos információkat tartalmaz.
+[HoloLens:](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)Többek között a hőmérséklettel, a megsemmisítéssel, a rádió- és tv-interferenciákkal kapcsolatos információkat tartalmaz.
 
 ## <a name="warranty-information"></a>Jótállási információk
 
 Microsoft HoloLens 2., standard korlátozott [garanciával rendelkezik.](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5) 
 
 
-A vásárlásra Microsoft Store és értékesítési feltételek [vonatkoznak.](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1) Minden értékesítés végleges. Nincs visszatérítés.
+A vásárlásra Microsoft Store [és értékesítési feltételek vonatkoznak.](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1) Minden értékesítés végleges. Nincs visszatérítés.
 
-A HoloLens 2 megvásárlásával elfogadja a [szoftverlicenc-szerződést.](https://www.microsoft.com/Useterms/)
+A 2 HoloLens megvásárlásával elfogadja a [szoftverlicenc-szerződést.](https://www.microsoft.com/Useterms/)
 
 Nem 13 évesnél fiatalabb gyermekek számára tervezték.
 
@@ -191,12 +191,12 @@ Nem 13 évesnél fiatalabb gyermekek számára tervezték.
 |     Shipper Weight (Szállítási súly)    |     3,284 kg           |     7,240 font           |
 
 > [!NOTE]
-> - Egység: A HoloLens 2 fekete, kiskereskedelmi stílusú dobozt értékesítik.
+> - Egység: A 2. HoloLens fekete, kiskereskedelmi stílusú dobozt értékesítik.
 > - Shipper:The packaging szállítmányozás a Unit körül.
 
 ## <a name="finding-the-serial-number"></a>A sorozatszám megkeresása
 
-A HoloLens 2-eszközök sorozatszáma a vizor alatt van kinyomtatva.
+A 2 eszköz HoloLens sorozatszáma a vizor alatt van kinyomtatva.
 
 1. Emelje fel az eszköz vizorát.
 1. Nézze meg arow pad közelében.
@@ -208,7 +208,7 @@ A sorozatszám egy csatlakoztatott számítógépen is megtalálható:
 
 1. Az eszköz csatlakoztatása
 1. Nyissa meg **ezt a számítógépet a** fájlkezelőben
-1. Kattintson a jobb **gombbal, és válassza a** HoloLens-eszköz tulajdonságai lehetőséget
+1. Kattintson a jobb **gombbal, és válassza** a HoloLens tulajdonságait
 1. Ez megjeleníti az eszköz sorozatának számát az alábbi képernyőképen látható módon.
 
 <img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
@@ -216,7 +216,7 @@ A sorozatszám egy csatlakoztatott számítógépen is megtalálható:
 ## <a name="next-steps"></a>Következő lépés(ék)
 
 > [!div class="nextstepaction"]
-> [A HoloLens 2 kiadásainak összehasonlítása](hololens2-options.md)
+> [2 HoloLens összehasonlítása](hololens2-options.md)
 
 > [!div class="nextstepaction"]
-> [A HoloLens 2 beállítása és kezdete](hololens2-setup.md)
+> [A 2. HoloLens beállítása és kezdete](hololens2-setup.md)

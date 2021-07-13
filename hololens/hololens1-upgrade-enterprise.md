@@ -1,6 +1,6 @@
 ---
 title: A Windows Holographic for Business funkcióinak feloldása
-description: Az új Windows Holographic for Business a HoloLens további, üzleti használatra tervezett funkciókat biztosít.
+description: A vállalati verzióra Windows Holographic for Business HoloLens funkciókat kínálnak, amelyek üzleti használatra vannak tervezve.
 ms.prod: hololens
 ms.sitesec: library
 author: dansimp
@@ -12,40 +12,40 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 8d42c935e698f156aed894e4fa5012c9f04d8d49
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: b5ae9b0d6859c0f916b5b906e2e9ec54cad6cbd9
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111378104"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635194"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>A Windows Holographic for Business funkcióinak feloldása
 
 > [!IMPORTANT]
-> Ez a lap csak a HoloLens 1st Gen-re vonatkozik.
+> Ez a lap csak az 1. HoloLens 1. generációsakra vonatkozik.
 
-Microsoft HoloLens a Development *Edition* kiadásban érhető el, amely a Windows Holographic (a holoLenshez tervezett Windows 10 egy kiadása) és a [Commercial Suite-ban](hololens-commercial-features.md)érhető el, amely további üzleti funkciókat biztosít.
+Microsoft HoloLens a Development *Edition* kiadásban érhető el, amely Windows Holographic (a Windows 10 HoloLens-hez tervezett kiadása) és a Commercial [Suite](hololens-commercial-features.md)kiadásában érhető el, amely további üzleti funkciókat biztosít.
 
-A kereskedelmi csomag megvásárlásakor kap egy licencet, amely frissíti a Windows Holographic rendszert a Windows Holographic for Business. Ezt a licencet a szervezet mobileszköz-kezelési [(MDM)](#edition-upgrade-by-using-mdm) szolgáltatójával vagy egy kiépítési csomaggal [alkalmazhatja az eszközre.](#edition-upgrade-by-using-a-provisioning-package)
+A kereskedelmi csomag megvásárlásakor olyan licencet kap, amely a Holographic Windows frissít a Windows Holographic for Business. Ezt a licencet a szervezet mobileszköz-kezelési [(MDM)](#edition-upgrade-by-using-mdm) szolgáltatójával vagy egy kiépítési csomaggal [alkalmazhatja az eszközre.](#edition-upgrade-by-using-a-provisioning-package)
 
 > [!TIP]
-> A Windows 10 1803-as verziójában a Beállításrendszer lehetőség kiválasztásával ellenőrizheti, hogy a HoloLens frissítve lett-e az üzleti  >  **kiadásra.**
+> A Windows 10 1803-as verziójában a HoloLens rendszer kiválasztásával ellenőrizheti, hogy a Gépház frissítve **lett-e az üzleti**  >  **kiadásra.**
 
 ## <a name="edition-upgrade-by-using-mdm"></a>Kiadásfrissítés MDM használatával
 
 A vállalati licencet bármely olyan MDM-szolgáltató használhatja, amely támogatja a [WindowsLicensing konfigurációs szolgáltatót (CSP).](https://msdn.microsoft.com/library/windows/hardware/dn904983.aspx) A Microsoft MDM API legújabb verziója támogatja a WindowsLicensing CSP-t.
 
-A HoloLens frissítésének részletes útmutatója a Microsoft Intune használatával: [Upgrade devices running Windows Holographic to Windows Holographic for Business](https://docs.microsoft.com/intune/holographic-upgrade).
+Részletes útmutatás a HoloLens a Microsoft Intune használatával történő frissítéséhez: [A Holographic](/intune/holographic-upgrade)Windows-t futtató eszközök frissítése Windows Holographic for Business.
 
  Más MDM-szolgáltatók esetében a házirend beállításának és telepítésének konkrét lépései eltérőek lehetnek.
 
 ## <a name="edition-upgrade-by-using-a-provisioning-package"></a>Kiadásfrissítés kiépítési csomag használatával
 
-A kiépítési csomagok a Windows Configuration Designer eszköz által létrehozott fájlok, amelyek egy adott konfigurációt alkalmaznak egy eszközre.
+A kiépítési csomagok olyan fájlok, Windows Configuration Designer eszköz által létrehozott fájlok, amelyek egy adott konfigurációt alkalmaznak egy eszközre.
 
-### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition"></a>A Windows Holographic kiadását frissítő kiépítési csomag létrehozása
+### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition"></a>Hozzon létre egy kiépítési csomagot, amely frissíti a Windows Holographic kiadást
 
-1. [Hozzon létre egy kiépítési csomagot a HoloLenshez.](hololens-provisioning.md)
+1. [Hozzon létre egy kiépítési csomagot a HoloLens.](hololens-provisioning.md)
 1. Go to **Runtime settings** > **EditionUpgrade**, and select **EditionUpgradeWithLicense**.
 
     ![Kiadás frissítése a kiválasztott licencbeállítással](images/icd1.png)
@@ -73,7 +73,7 @@ A kiépítési csomagok a Windows Configuration Designer eszköz által létreho
 
 1. A **Kiépítési csomag Biztonsági részletek kiválasztása területén válassza** a Tovább **lehetőséget.**
 
-1. Válassza **a Tovább** lehetőséget annak a kimeneti helynek a megadásához, ahová a kiépítési csomagot létre szeretné hozatni. Alapértelmezés szerint a Windows ICD a projektmappát használja kimeneti helyként.
+1. Válassza **a Tovább** lehetőséget annak a kimeneti helynek a megadásához, ahová a kiépítési csomagot létre szeretné hozatni. Alapértelmezés szerint az Windows ICD a projektmappát használja kimeneti helyként.
 
     A Tallózás gombra  kattintva módosíthatja az alapértelmezett kimeneti helyet.
 
@@ -83,17 +83,17 @@ A kiépítési csomagok a Windows Configuration Designer eszköz által létreho
 
 1. Ha a build elkészült, válassza a **Befejezés lehetőséget.**
 
-### <a name="apply-the-provisioning-package-to-hololens"></a>A kiépítési csomag alkalmazása a HoloLensre
+### <a name="apply-the-provisioning-package-to-hololens"></a>A kiépítési csomag alkalmazása a HoloLens
 
 1. Az USB-kábellel csatlakoztassa az eszközt egy számítógéphez. Indítsa el az eszközt, de  ne haladjon tovább a kezdeti beállítási folyamat illesztésoldalán (az első oldalon a kék mezővel). A számítógépen a HoloLens eszközként jelenik meg a Fájlkezelő.
 
     > [!NOTE]
-    > Ha a HoloLens-eszköz az Windows 10 1607-es vagy korábbi verzióját futtatja, nyissa meg az Fájlkezelő-t úgy, hogy rövid időre lenyomja és egyszerre kiadja a **Volume Down** és a **Power** gombokat az eszközön.
+    > Ha az HoloLens-eszközön Windows 10 1607-es vagy korábbi verzió fut, nyissa meg az Fájlkezelő-t úgy, hogy rövid időre lenyomja és egyszerre kiadja a **Volume Down** és a **Power** gombokat az eszközön.
 
 1. A Fájlkezelő húzza a kiépítési csomagot (.ppkg) az eszköz tárhelyére.
 
-1. Bár a HoloLens továbbra is az illesztés oldalon **van,** röviden nyomja le és engedje el egyszerre a **Volume Down** és **a Power** gombokat.
+1. Bár HoloLens még mindig az  illesztés lapon van, röviden  nyomja le és engedje el egyszerre a **Kötet** le- és bekapcsolása gombot.
 
-1. HoloLens megkérdezi, hogy megbízik-e a csomagban, és szeretné-e alkalmazni. Győződjön meg arról, hogy megbízik a csomagban.
+1. HoloLens rákérdez, hogy megbízik-e a csomagban, és szeretné-e alkalmazni. Győződjön meg arról, hogy megbízik a csomagban.
 
 1. Látni fogja, hogy a csomag alkalmazása sikeres volt-e. Ha nem sikerült alkalmazni, javíthatja a csomagot, és újra megpróbálhatja. Ha ez sikeres, folytassa az eszköz beállításával.
