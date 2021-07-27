@@ -7,12 +7,12 @@ description: Mixed Reality a kis- és nagyvállalati ügyfelek számára
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: ee75944575cacb75b213fcd9d732e5bd91265061
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 0ddc4eb15036a4f5aa2ecf86893d5f671584f9bf
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636214"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659097"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>Milyen támogatási Mixed Reality és súgóbeállításokat kínál?
 
@@ -79,6 +79,7 @@ Ha új kérdést küld a Stack Overflow, használja a következő címkék egyik
 
 - [Vásárlás HoloLens 2. vásárlása](https://www.microsoft.com/hololens/buy) ezzel a lehetőséggel további információt a HoloLens 2. díjszabásról és lehetőségekről
 - Ha telefonos segítségre van szüksége, tekintse meg a kereskedelmi áruház támogatási munkatársaival való kapcsolathoz szükséges üzleti ügyfélszolgálati számok alábbi listáját.
+- A Microsoft Store vásárlások esetén HoloLens [2](hololens2-purchase.md) olyan viszonteladó és ország listáját, ahol HoloLens 2. érhető el.
 
 ### <a name="commercial-store-support-numbers"></a>Kereskedelmi áruház támogatási számai
 >[!Note]
@@ -106,22 +107,22 @@ Ha új kérdést küld a Stack Overflow, használja a következő címkék egyik
 | Portugália |    +351 800600087 |    Hétfőről péntekre, 09:00 és 18:00 között |
 | USA |  866-425-4709 |  Hétfőről péntekre, 06:00-tól 18:00-ig, PST |
 | Kanada |  877-345-2661 |  Hétfőről péntekre, 06:00-tól 18:00-ig, PST |
-| Kína |   400-805-6783 |  Hétfőről péntekre, 9:00-tól 18:00-ig |
-| Japán |   0120-03-5241 |  Hétfőről péntekre, 9:00-tól 17:30-ig |
-| Ausztrália |   1800-217-709 |  Hétfőről péntekre, 8:00-tól 20:00-ig |
-| Szingapúr |   1800 622-1816 | Hétfőről péntekre, 8:30-tól 17:30-ig |
+| Kína |   400-805-6783 |  Hétfőről péntekre, 09:00-tól 18:00-ig |
+| Japán |   0120-03-5241 |  Hétfőről péntekre, 09:00-tól 17:30-ig |
+| Ausztrália |   1800-217-709 |  Hétfőről péntekre, 08:00-tól 20:00-ig |
+| Szingapúr |   1800 622-1816 | Hétfő és péntek között, 8:30-tól 17:30-ig |
 | Új-Zéland | 0800 471 640 |  Hétfőről péntekre, 8:00-tól 18:00-ig |
 
 >[!IMPORTANT]
->Ha teljes áfaszámlára van szüksége, közvetlenül a kereskedelmi támogatási áruház csapatához kell kapcsolatba lépnie, és nem kell online eszközt vásárolnia. Minden online vásárláshoz csak egyszerűsített áfaszámlát kap, amelyet később nem lehet szerkeszteni.
+>Ha teljes áfaszámlára van szüksége, közvetlenül a kereskedelmi támogatási áruház csapatával kell kapcsolatba lépnie, és nem kell online vásárolnia az eszközt. Minden online vásárláshoz csak egyszerűsített áfaszámlát kap, amelyet később nem lehet szerkeszteni.
 
 ## <a name="azure-mixed-reality-services-support"></a>Vegyes valóságú Azure-szolgáltatások támogatása
 
 ### <a name="open-an-azure-portal-technical-support-ticket"></a>Nyisson meg egy Azure Portal támogatási jegyet
 
-Műszaki támogatási jegy megnyitása az Azure Azure Portal, Spatial Anchors vagy Azure Object Anchors támogatási Azure Remote Rendering:
+Műszaki támogatási jegy megnyitása az Azure Azure Portal, Spatial Anchors Azure Object Anchors vagy Azure Remote Rendering:
 
-1. Nyissa meg [Azure Portal](https://azure.microsoft.com/account/) a súgó ikont a felső menüsávon, majd válassza a **Súgó és támogatás** gombot.
+1. A megnyitott [Azure Portal](https://azure.microsoft.com/account/) válassza a súgó ikont a felső menüsávon, majd válassza a **Súgó és támogatás** gombot.
 
    ![Azure Portal és támogatás](../hololens/images/azure-help-support.png)
 
@@ -134,34 +135,34 @@ Műszaki támogatási jegy megnyitása az Azure Azure Portal, Spatial Anchors va
     + Problématípus: Technikai
     + Szolgáltatás: Azure Spatial Anchors, Azure Remote Rendering vagy Azure Object Anchors
 
-    ![Azure Portal támogatási jegy mezői](../hololens/images/azure-help-support3.png)
+    ![Azure Portal jegy mezői](../hololens/images/azure-help-support3.png)
 
-    1. Kattintson **a Tovább: Megoldások** elemre az oldal alján, és adjon meg további részleteket, amelyek további információt tartalmaznak a problémáról.
+    1. Kattintson **a Tovább: Megoldások** elemre az oldal alján, hogy további részleteket adjon meg a problémáról.
 
     2. Töltse ki az űrlapot a lehető legpontosabban és legrészletesebben, az Ön által választott módon.
 
     3. Tekintse át az előző szakaszokban kitöltött összes információt, és küldje el a támogatási kérést.
 
-### <a name="provide-documentation-content-feedback"></a>Dokumentációval kapcsolatos tartalommal kapcsolatos visszajelzés küldése
+### <a name="provide-documentation-content-feedback"></a>Dokumentációs tartalommal kapcsolatos visszajelzés küldése
 
-Az egyes tartalomcikkek alján lehetőség van egy új probléma GitHub és visszajelzést adni a vegyes valóságú dokumentáció bármely adattárában található tartalmakról. 
+Az egyes tartalomcikkek alján lehetőség van egy új probléma GitHub, és visszajelzést küldhet bármilyen vegyes valóságú dokumentációs adattár tartalmáról. 
 
 ### <a name="provide-product-feedback"></a>Termékkel kapcsolatos visszajelzés küldése
 
 >[!Note]
->A visszajelzés kiváló módja annak, hogy visszajelzést kap, de a visszajelzés nem alkalmas válasz fogadására. Visszajelzési központ más támogatási lehetőségekkel kombinálhatók.
+>A visszajelzés remek módja annak, hogy a visszajelzéseket hallatják, de a visszajelzés nem a válasz fogadásának egyik módja. Visszajelzési központ más támogatási lehetőségekkel kombinálhatók.
 
-Ha visszajelzést szeretne küldeni, ötleteket vagy javaslatokat szeretne megosztani a Microsoft vegyes valóságú szolgáltatásaival kapcsolatban, vagy szavazna mások által beküldött ötletekre, látogasson el a következő webhelyre: 
+Ha visszajelzést szeretne küldeni, ötleteket vagy javaslatokat szeretne megosztani a Microsoft vegyes valóságú szolgáltatásaival kapcsolatban, vagy szavazzon mások által beküldött ötletekre, látogasson el a következő webhelyre: 
 
-- [HoloLens 2. termékkel kapcsolatos visszajelzés](/hololens/hololens-feedback)
+- [HoloLens 2 termékkel kapcsolatos visszajelzés](/hololens/hololens-feedback)
 - [Microsoft Mesh-alkalmazás termékkel kapcsolatos visszajelzése](/hololens/hololens-feedback)
 - [Azure Remote Rendering visszajelzés](https://feedback.azure.com/forums/928696-azure-remote-rendering)
 - [Azure Spatial Anchors Visszajelzés](https://feedback.azure.com/forums/919252-azure-spatial-anchors)
 
-### <a name="faqs--troubleshooting"></a>Gyakori kérdések & hibaelhárítással
+### <a name="faqs--troubleshooting"></a>Hibaelhárítással & gyakori kérdések
 
-- HoloLens 2. lépéshez tekintse meg [HoloLens hibaelhárítást bemutató oldalt](../hololens/hololens-troubleshooting.md)
-- Windows Mixed Reality gyik [oldal](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
-- Azure Remote Rendering gyik oldal [](/azure/remote-rendering/resources/troubleshoot)
-- Azure Spatial Anchors, tekintse meg a gyakori [kérdéseket](/azure/spatial-anchors/spatial-anchor-faq)
+- HoloLens 2. lépéssel kapcsolatos további HoloLens [hibaelhárítást bemutató oldalt.](../hololens/hololens-troubleshooting.md)
+- Windows Mixed Reality gyIK oldalon [talál.](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
+- Azure Remote Rendering gyIK oldalon [talál.](/azure/remote-rendering/resources/troubleshoot)
+- Azure Spatial Anchors tekintse meg a gyakori [kérdéseket](/azure/spatial-anchors/spatial-anchor-faq)
 - Azure Object Anchors tekintse meg a gyakori [kérdéseket](/azure/object-anchors/faq)

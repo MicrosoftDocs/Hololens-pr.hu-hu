@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 87b606e634d4035da02802ddd1a8e1a980f1f1d6
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 12c5586f931487d871d4b6e98992ca0047b2adbf
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636093"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659199"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Belső előzetes verzió a Microsoft HoloLens
 
@@ -38,7 +38,7 @@ Izgatottan várjuk, hogy új funkciókat Windows Insidersbe. Az új buildek a fe
 | [PFX-fájl támogatása a Tanúsítványkezelőben](#pfx-file-support-for-certificate-manager) | PFX-tanúsítványok hozzáadása Gépház felhasználói felületen | Végfelhasználó | 20348.1405 |
 | [Speciális diagnosztikai jelentés megtekintése a Gépház a HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | MDM diagnosztikai naplók megtekintése az eszközön | Hibaelhárítás | 20348.1405 |
 | [Offline diagnosztikai értesítések](#offline-diagnostics-notifications) | Visszajelzés a naplógyűjtéssel kapcsolatban | Hibaelhárítás | 20348.1405 |
-
+| [Csak privát áruházbeli alkalmazásokat használjon csak Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Az áruházbeli alkalmazás konfigurálása úgy, hogy csak a szervezettől származó alkalmazásokat mutassa | Rendszergazdai | 20348.1408 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>CSP-módosítások a jelentéskészítési HoloLens részleteihez
 
@@ -123,26 +123,32 @@ Ez az új funkció az eszköz frissítésekekor lesz engedélyezve, és nem szü
 
 Reméljük, hogy a visszajelzések újabb kiegészítésével könnyebb diagnosztikai adatokat gyűjteni, és gyorsabban elhárítani a problémákat.
 
+### <a name="use-only-private-store-apps-for-microsoft-store"></a>Csak privát áruházbeli alkalmazások használata Microsoft Store
 
+A RequirePrivateStoreOnly szabályzat engedélyezve van a HoloLens. Ez a szabályzat lehetővé Microsoft Store, hogy az alkalmazás úgy legyen konfigurálva, hogy csak a szervezet számára konfigurált privát tárolót mutassa. A hozzáférés korlátozása csak az Ön által elérhetővé tett alkalmazásokra.
+
+További információ az [ApplicationManagement/RequirePrivateStoreOnly-ről](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
 
 ### <a name="fixes-and-improvements"></a>Javítások és fejlesztések:
 
 - Kijavítottunk egy ismert hibát, Eszközportál amikor nem volt [rákérdezés zárolt fájlok letöltésére.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
-- Kijavítottunk egy ismert hibát, amely Eszközportál és letöltés időkorrekta [miatt ki volt javítva.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
+- Ki van [javítva a fájlfeltöltési és Eszközportál időkorreklú frissítések ismert problémája.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
+- A megfelelőségi tulajdonságok jelentésével kapcsolatos problémák megoldása HoloLens eszközökről; Előfordulhat, hogy újraindításra van szükség ahhoz, hogy a megfelelő jelentéskészítés aktiválódjon az Insider-buildek esetén.  
+- Frissítettük a Remote Assist beépített verzióját, amely friss flashre van telepítve.
 
 
-## <a name="start-receiving-insider-builds"></a>Insider-buildek fogadásának elkezde
+## <a name="start-receiving-insider-builds"></a>Insider-buildek fogadásának kezdete
 
 > [!NOTE]
 > Ha a közelmúltban nem frissített, indítsa újra az eszközt az állapot frissítéséhez, és szerezze be a legújabb buildet.
 > - Az "Eszköz újraindítása" hangparancs jól működik. 
-> - Az újraindítási gombot is választhatja a Gépház/Windows Insider Program.
+> - Az újraindítási gombot a következő Gépház/Windows Insider Program.
 >
-> Előfordulhat, hogy egy hiba történt a háttéren, amely miatt ön is találkozhatott, így újra a útjára fog menni.
+> Előfordulhat, hogy egy hiba történt a háttérben, amely miatt előfordulhatott, hogy újra a útjára fog menni.
 
-A 2. HoloLens eszközön válassza az **Update** Gépház Security & Windows Insider Program get started (Első  >    >   **lépések) lehetőséget.** Csatolja a regisztrációhoz használt fiókot Windows Insiderben.
+A 2. HoloLens-eszközön válassza az **Update** Gépház Security &  >  **lehetőséget Windows Insider Program** és válassza az  >   Első **lépések lehetőséget.** Csatolja a regisztrációhoz használt fiókot Windows Insiderben.
 
-Windows belsős már áttért a Csatornákra. A **Gyors** kör lesz a **fejlesztői** csatorna, a **Lassú** kör lesz a **Béta csatorna,** a kiadási **előnézeti** kör pedig a kiadási **előnézeti csatorna** lesz. A leképezés így néz ki:
+Windows belső csatorna most a Csatornákra van átköltözve. A **Gyors** kör lesz a **fejlesztői** csatorna, a **Lassú** kör lesz a **Béta csatorna,** a kiadási **előnézeti** kör pedig a kiadási **előnézeti csatorna** lesz. A leképezés így néz ki:
 
 ![Windows A belső csatornák magyarázata](images/WindowsInsiderChannels.png)
 

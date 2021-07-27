@@ -1,6 +1,6 @@
 ---
 title: Licenckövetelmények
-description: Tartsa naprakészen a mobileszköz-kezeléshez, a mobileszköz-kezeléshez, a HoloLens és a Remote Assisthöz szükséges licencelési követelményeket és irányelveket.
+description: Tartsa naprakészen a mobileszköz-kezeléshez, a mobileszköz-kezeléshez, a HoloLens és a Remote Assisthöz szükséges összes licencelési követelményt és útmutatót.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -13,51 +13,45 @@ ms.reviewer: ''
 manager: bradke
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bd7a7d03c81dced4fb66d8ebb176887811e823c9
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 6284a8e3ce3ea77aaf98dcf8238df3920719dded
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640278"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659556"
 ---
 # <a name="license-requirements"></a>Licenckövetelmények
 
-## <a name="hololens-2-device-managed"></a>HoloLens 2. eszköz (felügyelt)
+## <a name="overview"></a>Áttekintés
+Ez az oldal magas szintű áttekintést nyújt a felügyelt és a nem felügyelt HoloLens 2 eszköz a szervezetben való üzembe helyezéséhez szükséges licencekről és fiókokról. A Dynamics 365 Remote Assist és [útmutatók licencelési](#dynamics-365-remote-assist) információit [is tartalmazza.](#dynamics-365-guides)
 
-[Azure AD-fiók](/azure/active-directory/)
+## <a name="hololens-2-license-and-account-requirements"></a>HoloLens 2 licenc- és fiókkövetelmény
+
+
+|                   | Felügyelt HoloLens | Nem HoloLens |
+|-------------------|-----------------|---------------------|
+| **Üzleti felhasználás esete** | | |
+| [Üzembe helyezés felhőhöz csatlakoztatott eszközökön – koncepció igazolása/próbatelepítés](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices)  | ✔️| |
+| [Üzembe helyezés a szervezet hálózatán belül – nagy léptékű üzembe helyezés](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) | ✔️| |
+| [Üzembe helyezés biztonságos offline környezetben](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) | | ✔️ |
+| **Licencek** | | |
+| Azure Active Directory | ✔️ | |
+| MDM (Intune<sup>1</sup> vagy <sup>2</sup>) | ✔️  | |
+| **Fiókok** |  | |
+| Azure AD-rendszergazdai fiók | ✔️ |  |
+| Azure AD felhasználói fiók | ✔️ | |
+| [Microsoft-fiók (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)| | ✔️ |
+| [Helyi fiók](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | | ✔️ |
+- <sup>1.</sup> [Automatikus regisztráció az](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) eszköz kezdeti beállítása során, amely regisztrálja a Azure Active Directory, és lehetővé teszi az eszköz Intune-nal való felügyeletét.
+- <sup>2</sup> [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) leegyszerűsíti a kiépítési élményt mind a rendszergazdák, mind a végfelhasználók számára. A rendszergazdák előre konfigurálni HoloLens 2 szabályzatot, és az első rendszerindításkor az eszközök a végfelhasználói beavatkozás nélkül, üzleti használatra kész állapotba lesznek telepítve.
+- <sup>3</sup> Ezt a fiókot [előre](hololens-provisioning.md#provisioning-package-hololens-wizard) ki kellépítenünk a Windows Configuration Designer (WCD) használatával.
 
 > [!IMPORTANT]
 > Active Directory (AD) nem használható a HoloLens kezelésére.
-
-[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) másik MDM-et.
-- [Windows Autopilot for HoloLens 2](hololens2-autopilot.md)– leegyszerűsíti a kiépítési élményt mind a rendszergazdák, mind a végfelhasználók számára. A rendszergazdák előre konfigurálhatnak HoloLens 2 szabályzatot, és az első rendszerindításkor az eszközök a végfelhasználói beavatkozás nélkül, üzleti használatra kész állapotba lesznek telepítve. 
-
-  > [!NOTE]
-  > Windows Az Autopilot használatához [először az Azure P1-et](/azure/active-directory/fundamentals/active-directory-whatis) és az automatikus regisztrációt kell konfigurálni a kis érintéssel használható AutoPilot-folyamathoz és az eszközök üzembe helyezéséhez. [](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) 
-
-### <a name="business-use-case"></a>Üzleti felhasználás esete: 
-
-- ["A" üzembe](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) helyezési forgatókönyv – koncepció igazolása vagy próbatelepítés.
-
-- [B üzembe helyezési](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) forgatókönyv – nagy léptékű üzembe helyezés.
-
-## <a name="hololens-2-device-only-non-managed"></a>HoloLens 2. csak eszköz (nem felügyelt)
-
-Microsoft-fiók (MSA) vagy helyi fiók használata esetén nincs szükség további licencre ezekhez a fiókokhoz.
-
-[Helyi fiók](/windows/security/identity-protection/access-control/local-accounts)
-
-- Ezt a fiókot [előre](hololens-provisioning.md#provisioning-package-hololens-wizard) ki kellépítenünk a Windows Configuration Designer (WCD) használatával.
-
-[Microsoft-fiók (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)
-
-> [!WARNING]
-> Az ilyen fiókokat használó eszközök esetében nem támogatott több felhasználó használata.
-
-### <a name="business-use-case"></a>Üzleti felhasználás esete: 
-
-- [C telepítési forgatókönyv](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) – offline vagy biztonságos üzembe helyezés.
  
+> [!WARNING]
+> Az MSA-t vagy helyi fiókot használó eszközök nem támogatnak több felhasználót.
+
 ## <a name="dynamics-365-licensing-and-requirements"></a>Dynamics 365 – Licencelés és követelmények
 
 ### <a name="dynamics-365-remote-assist"></a>Dynamics 365 Remote Assist 
@@ -82,32 +76,32 @@ Microsoft-fiók (MSA) vagy helyi fiók használata esetén nincs szükség tová
 
 - Azure AD-fiók
 
-- Microsoft Teams vagy [Teams Freemium .](https://products.office.com/microsoft-teams/free)
+- Microsoft Teams [Freemium Teams vagy más](https://products.office.com/microsoft-teams/free)
 
 - Hálózati kapcsolat
 
-Ha ezt a [több-bérlős](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)forgatókönyvet tervezi, előfordulhat, hogy információs korlátok licencre van szüksége. Ebből [a cikkből megállapíthatja,](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) hogy szükség van-e information barrier licencre.
+Ha ezt a [](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)több-bérlős forgatókönyvet tervezi, előfordulhat, hogy információ-korlátok licencre van szüksége. Ebből [a cikkből megállapíthatja,](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) hogy szükség van-e information barrier licencre.
 
 ### <a name="dynamics-365-guides"></a>Dynamics 365-útmutatók 
 
 #### <a name="admin"></a>Rendszergazda
 
-- Azure AD-fiók (az előfizetés megvásárlásához és a licencek hozzárendeléséhez szükséges)
-- Dynamics 365 [Guides-előfizetés vagy ingyenes próbaverzió](/dynamics365/mixed-reality/guides/setup-step-one)
+1. Azure AD-fiók (az előfizetés megvásárlásához és a licencek hozzárendeléséhez szükséges)
+2. Dynamics 365-útmutatók [előfizetése vagy ingyenes próbaverziója](/dynamics365/mixed-reality/guides/setup-step-one)
 
 #### <a name="guides-author"></a>Útmutatók szerzője
 
 1. Azure AD-fiók
-1. [Dynamics 365 Guides-licenc](/dynamics365/mixed-reality/guides/requirements)
+1. [Dynamics 365-útmutatók licence](/dynamics365/mixed-reality/guides/requirements)
 1. Számítógépekre vagy számítógépekre telepített Dynamics 365-útmutatók HoloLens
-1. [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (az Analytics-irányítópult megtekintésére használatos)
+1. [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (az Analytics-irányítópult megtekintésére használható)
 1. Szerzői szerepkör (útmutatók létrehozásához)
 1. Hálózati kapcsolat
 
 #### <a name="guides-user"></a>Útmutatók felhasználója
 
 1. Azure AD-fiók
-1. [Dynamics 365 Guides-licenc](/dynamics365/mixed-reality/guides/requirements)
-1. Telepített Dynamics 365-útmutatók HoloLens
+1. [Dynamics 365-útmutatók licence](/dynamics365/mixed-reality/guides/requirements)
+1. Dynamics 365-útmutatók alkalmazás telepítve HoloLens
 1. Operátori szerepkör (teszteléshez vagy útmutatókhoz)
 1. Hálózati kapcsolat
