@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 12c5586f931487d871d4b6e98992ca0047b2adbf
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: b7e5a7cbaa746f58fe0344dd8bf5b027e2e8cea7
+ms.sourcegitcommit: dc5d6f3802c997749775be04de522af8cb6d0850
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659199"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114693704"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Belső előzetes verzió a Microsoft HoloLens
 
@@ -39,6 +39,7 @@ Izgatottan várjuk, hogy új funkciókat Windows Insidersbe. Az új buildek a fe
 | [Speciális diagnosztikai jelentés megtekintése a Gépház a HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | MDM diagnosztikai naplók megtekintése az eszközön | Hibaelhárítás | 20348.1405 |
 | [Offline diagnosztikai értesítések](#offline-diagnostics-notifications) | Visszajelzés a naplógyűjtéssel kapcsolatban | Hibaelhárítás | 20348.1405 |
 | [Csak privát áruházbeli alkalmazásokat használjon csak Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | Az áruházbeli alkalmazás konfigurálása úgy, hogy csak a szervezettől származó alkalmazásokat mutassa | Rendszergazdai | 20348.1408 |
+| [Javítások és fejlesztések](hololens-insider.md#fixes-and-improvements) | Javítások és fejlesztések a HoloLens. | Mind | 20348.1408 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>CSP-módosítások a jelentéskészítési HoloLens részleteihez
 
@@ -131,7 +132,7 @@ További információ az [ApplicationManagement/RequirePrivateStoreOnly-ről](ht
 
 ### <a name="fixes-and-improvements"></a>Javítások és fejlesztések:
 
-- Kijavítottunk egy ismert hibát, Eszközportál amikor nem volt [rákérdezés zárolt fájlok letöltésére.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
+- Kijavítottunk egy ismert hibát, Eszközportál amikor nem volt rá szükség [a zárolt fájlok letöltésére.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Ki van [javítva a fájlfeltöltési és Eszközportál időkorreklú frissítések ismert problémája.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - A megfelelőségi tulajdonságok jelentésével kapcsolatos problémák megoldása HoloLens eszközökről; Előfordulhat, hogy újraindításra van szükség ahhoz, hogy a megfelelő jelentéskészítés aktiválódjon az Insider-buildek esetén.  
 - Frissítettük a Remote Assist beépített verzióját, amely friss flashre van telepítve.
