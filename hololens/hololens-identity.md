@@ -18,19 +18,19 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e2c5c98eb62f9e8ec19306b2cb460004eb8ae8dd
-ms.sourcegitcommit: 44d5fbee8aa0e2404137484edbeb4653437e79dd
+ms.openlocfilehash: ceb2416ec96db1bdd363e9164ec39eed9247fe37095a52e7f02bafc74416e4f2
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "114991423"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664141"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>Felhasználói identitás és bejelentkezés kezelése HoloLens
 
 > [!NOTE]
-> Ez a cikk technikai útmutató az it-szakemberek és a technológiai szakemberek számára. Ha útmutatásokat keres a HoloLens, olvassa el a következőt: "HoloLens beállítása[(1. generációs)](hololens1-start.md)" vagy " A HoloLens[beállítása 2](hololens2-start.md)".
+> Ez a cikk technikai útmutató az it-szakemberek és a technológiai szakemberek számára. Ha további utasításokat HoloLens, olvassa el a következőt: "HoloLens beállítása[(1. generációs)](hololens1-start.md)" vagy " A HoloLens[2"](hololens2-start.md)beállítása.
 
-A többi Windows is HoloLens felhasználói környezetben működnek. Mindig van felhasználói identitás. HoloLens szinte ugyanúgy kezeli az identitást, mint a többi Windows eszköz. Ez a cikk egy, a HoloLens identitásával HoloLens referenciája, amely Windows más eszközöktől.
+A többi Windows is HoloLens felhasználói környezetben működnek. Mindig van felhasználói identitás. HoloLens szinte ugyanúgy kezeli az identitást, mint a többi Windows eszköz. Ez a cikk egy, a HoloLens identitásával HoloLens referenciája a többi Windows kapcsolatban.
 
 HoloLens különböző felhasználói identitásokat támogat. A bejelentkezéshez használhat egy vagy több felhasználói fiókot. A következő áttekintést kap az identitástípusokról és a hitelesítési lehetőségekről a HoloLens:
 
@@ -45,27 +45,27 @@ A felhőhöz csatlakoztatott fiókok (Azure AD és MSA) több funkciót kínáln
 > 1 – prémium szintű Azure AD bejelentkezés nem szükséges az eszközre. Az alacsony érintéses felhőalapú üzembe helyezés egyéb funkcióihoz, például az automatikus regisztrációhoz és az Autopilothoz azonban szükséges.
 
 > [!NOTE]
-> 2 – Bár egy HoloLens 2-es eszköz legfeljebb 64 Azure AD-fiókot támogat, csak 31 ilyen fiók regisztrálható íriszes hitelesítésre. Ez más biometriai hitelesítési lehetőségekhez igazodik a [Windows Hello esetén.](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
+> 2 – Bár egy HoloLens 2-es eszköz legfeljebb 64 Azure AD-fiókot támogat, csak 31 ilyen fiók regisztrálható iris-hitelesítésre. Ez más biometriai hitelesítési lehetőségekhez igazodik a [Windows Hello esetén.](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
 
 ## <a name="setting-up-users"></a>Felhasználók beállítása
 
-Két módon állíthat be új felhasználót a HoloLens. A leggyakoribb módszer a HoloLens (OOBE) során. Ha a Azure Active Directory, [más](#setting-up-multi-user-support-azure-ad-only) felhasználók is bejelentkeznek az OOBE után az Azure AD-beli hitelesítő adataik használatával. HoloLens kezdeti MSA- vagy helyi fiókkal az OOBE során beállított eszközök nem fognak több felhasználót támogatni. Lásd: HoloLens [beállítása (1. generációs)](hololens1-start.md) [vagy HoloLens 2.](hololens2-start.md)
+Két módon állíthat be új felhasználót a HoloLens. A leggyakoribb módszer a HoloLens (OOBE) során. Ha a Azure Active Directory, [más](#setting-up-multi-user-support-azure-ad-only) felhasználók is bejelentkeznek az OOBE után az Azure AD-beli hitelesítő adataik használatával. HoloLens első, MSA- vagy helyi fiókkal az OOBE során beállított eszközök nem fognak több felhasználót támogatni. Lásd: HoloLens [beállítása (1. generációs)](hololens1-start.md) [vagy HoloLens 2.](hololens2-start.md)
 
 Ha vállalati vagy szervezeti fiókkal jelentkezik be az HoloLens, HoloLens regisztrál a szervezet IT-infrastruktúrájára. Ez a regisztráció lehetővé teszi, hogy a rendszergazda konfigurálja a Mobile Eszközkezelés (MDM) számára, hogy csoportházirendeket küldjön a HoloLens.
 
 Ahogy Windows eszközökön is, a telepítés során való bejelentkezés létrehoz egy felhasználói profilt az eszközön. A felhasználói profil alkalmazásokat és adatokat tárol. Ugyanez a fiók egyszeri bejelentkezést is biztosít az olyan alkalmazásokhoz, mint az Edge vagy Microsoft Store az Windows Account Manager API-k használatával. 
 
-Alapértelmezés szerint, mint minden Windows 10, újra be kell jelentkeznie, amikor a HoloLens újraindul vagy készenléti állapotból indul újra. Ezt a viselkedést a Gépház alkalmazással módosíthatja, vagy a viselkedés csoportházirend segítségével vezérelhető.
+Alapértelmezés szerint, mint minden Windows 10 eszköz esetében, újra be kell jelentkeznie, amikor a HoloLens újraindul vagy készenléti állapotból indul újra. Ezt a viselkedést Gépház alkalmazással módosíthatja, vagy a viselkedés csoportházirend segítségével vezérelhető.
 
 ### <a name="linked-accounts"></a>Összekapcsolt fiókok
 
-Ahogy az asztali verzióban Windows, további webes fiók hitelesítő adatait is csatolhatja a HoloLens fiókjához. Az ilyen összekapcsolás megkönnyíti az alkalmazásokon (például az Áruházon) belüli és az alkalmazásokon belüli erőforrásokhoz való hozzáférést, illetve a személyes és munkahelyi erőforrásokhoz való hozzáférés összevonását. Miután csatlakoztatta a fiókot az eszközhöz, engedélyt adhat az eszköz alkalmazásokhoz való használatára, így nem kell egyenként bejelentkeznie az egyes alkalmazásokba.
+Ahogyan az alkalmazás asztali Windows, további webes fiók hitelesítő adatait is csatolhatja a HoloLens fiókjához. Az ilyen összekapcsolás megkönnyíti az alkalmazásokon (például az Áruházon) belüli és az alkalmazásokon belüli erőforrásokhoz való hozzáférést, illetve a személyes és munkahelyi erőforrásokhoz való hozzáférés összevonását. Miután csatlakoztatta a fiókot az eszközhöz, engedélyt adhat az eszköz alkalmazásokhoz való használatára, így nem kell egyenként bejelentkeznie az egyes alkalmazásokba.
 
 A fiókok összekapcsolása nem választja el az eszközön létrehozott felhasználói adatokat, például a képeket vagy a letöltéseket.  
 
 ### <a name="setting-up-multi-user-support-azure-ad-only"></a>Többfelhasználós támogatás beállítása (csak Azure AD esetén)
 
-HoloLens több felhasználót is támogat ugyanattól az Azure AD-bérlőtől. A funkció használatához olyan fiókot kell használnia, amely a szervezethez tartozik az eszköz beállításhoz. Ezt követően az ugyanattól a bérlőtől származó többi felhasználó bejelentkezhet az eszközre a bejelentkezési képernyőről vagy a Felhasználó csempére koppintva a Start panelen. Egyszerre csak egy felhasználó lehet bejelentkezve. Amikor egy felhasználó bejelentkezik, HoloLens az előző felhasználót. 
+HoloLens több felhasználót is támogat ugyanattól az Azure AD-bérlőtől. A funkció használatához olyan fiókot kell használnia, amely a szervezethez tartozik az eszköz beállításhoz. Ezt követően az ugyanattól a bérlőtől származó többi felhasználó bejelentkezhet az eszközre a bejelentkezési képernyőről vagy a Start panel felhasználói csempéjére koppintva. Egyszerre csak egy felhasználó lehet bejelentkezve. Amikor egy felhasználó bejelentkezik, HoloLens az előző felhasználót. 
 
 >[!IMPORTANT]
 > Az eszköz első felhasználója az eszköz tulajdonosa, kivéve az Azure AD-csatlakozás esetén az eszköztulajdonosokról [további információt.](security-adminless-os.md#device-owner)
@@ -101,7 +101,7 @@ Alkalmazásfejlesztőként a Windows [Account Manager](/uwp/api/Windows.Security
 
 Az esetlegesen előforduló fiókbeli megszakításokat, például a fiókinformációk felhasználói hozzájárulásának kérését, a kétfaktoros hitelesítést stb. akkor kell kezelni, amikor az alkalmazás hitelesítési jogkivonatot kér.
 
-Ha az alkalmazáshoz olyan fióktípusra van szükség, amely korábban még nem volt összekapcsolva, az alkalmazás megkérheti a rendszert, hogy kérje meg a felhasználót, hogy adjon hozzá egyet. Ez a kérés elindítja a fiókbeállítások panelt, amely az alkalmazás modális gyermekeként indul el. 2D-alkalmazások esetén ez az ablak közvetlenül az alkalmazás közepén jelenik meg. Unity-alkalmazások esetén ez a kérés rövid időre kiveszi a felhasználót a holografikus alkalmazásból a gyermekablak megjelenítéséhez. Az ezen a panelen található parancsok és műveletek testreszabásával kapcsolatos információkért lásd: [WebAccountCommand osztály.](/uwp/api/Windows.UI.ApplicationSettings.WebAccountCommand)
+Ha az alkalmazáshoz olyan fióktípusra van szükség, amely korábban még nem volt összekapcsolva, az alkalmazás megkérheti a felhasználót, hogy adjon hozzá egyet. Ez a kérés elindítja a fiókbeállítások panelt, amely az alkalmazás modális gyermekeként indul el. 2D-alkalmazások esetén ez az ablak közvetlenül az alkalmazás közepén jelenik meg. Unity-alkalmazások esetén ez a kérés rövid időre kiveszi a felhasználót a holografikus alkalmazásból a gyermekablak megjelenítéséhez. Az ezen a panelen található parancsok és műveletek testreszabásával kapcsolatos információkért lásd: [WebAccountCommand osztály.](/uwp/api/Windows.UI.ApplicationSettings.WebAccountCommand)
 
 ## <a name="enterprise-and-other-authentication"></a>Vállalati és egyéb hitelesítés
 
@@ -113,44 +113,44 @@ Az online HoloLens és a Desktopra való fejlesztés egyik módja az, hogy az [O
 
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések
 
-### <a name="is-windows-hello-for-business-supported-on-hololens-1st-gen"></a>Az Windows Hello for Business támogatott a HoloLens (1. generációs) verzióban?
+### <a name="is-windows-hello-for-business-supported-on-hololens-1st-gen"></a>Támogatott Windows Hello vállalati verzió a HoloLens (1. generációs)?
 
-Windows Hello vállalati verzió (amely támogatja a PIN-kód használatával való bejelentkezést) a HoloLens (1. generációs) esetén. Az Windows Hello PIN-kódra való bejelentkezés engedélyezése a HoloLens:
+Windows Hello vállalati verzió (amely támogatja a PIN-kód használatával való bejelentkezést) HoloLens (1. generációs) esetén. Az Windows Hello PIN-kódra való bejelentkezés engedélyezése a HoloLens:
 
-1. A HoloLens MDM-nek kell [kezelnie.](hololens-enroll-mdm.md)
-1. A vállalati Windows Hello engedélyeznie kell az eszközhöz. (Lásd[az Microsoft Intune.](/intune/windows-hello))
-1. Ezután HoloLens felhasználó a bejelentkezési beállítások Gépház PIN-kód hozzáadása lehetőséggel állíthat be  >  **PIN-kódot.**  >  
+1. Az HoloLens MDM-nek kell [kezelnie.](hololens-enroll-mdm.md)
+1. Engedélyeznie kell Windows Hello vállalati verzióhoz az eszközhöz. (Lásd[az Microsoft Intune.](/intune/windows-hello))
+1. A HoloLens a pin-kód beállítását a Gépház a Bejelentkezési beállítások   >  **PIN-kód** hozzáadása  >   lehetőséggel.
 
 > [!NOTE]
-> A bejelentkezési beállításokkal bejelentkező Microsoft-fiók pin-kódot is beállíthat a Gépház beállítások  >  **PIN-kód**  >  **hozzáadása lehetőséggel.** Ez a PIN-kód a [Windows Hello,](https://support.microsoft.com/help/17215/windows-10-what-is-hello)és nem [Windows Hello vállalati verzióhoz.](/windows/security/identity-protection/hello-for-business/hello-overview)
+> A bejelentkezési beállításokkal bejelentkező Microsoft-fiók pin-kódot is Gépház a Bejelentkezési beállítások  >  **PIN-kód** hozzáadása  >  **lehetőséggel.** Ez a PIN-kód a [Windows Hello,](https://support.microsoft.com/help/17215/windows-10-what-is-hello)és nem [Windows Hello vállalati verzióhoz.](/windows/security/identity-protection/hello-for-business/hello-overview)
 
-### <a name="how-is-iris-biometric-authentication-implemented-on-hololens-2"></a>Hogyan van megvalósítva az Írisz biometrikus hitelesítés a 2 HoloLens ban?
+### <a name="how-is-iris-biometric-authentication-implemented-on-hololens-2"></a>Hogyan valósul meg az Írisz biometrikus hitelesítése a 2 HoloLens ban?
 
 HoloLens 2. módszer támogatja az Írisz hitelesítést. Az Írisz a Windows Hello technológián alapul, és a microsoftos és microsoftos fiókok Azure Active Directory is támogatják. Az Írisz ugyanúgy van megvalósítva, mint a többi Windows Hello, és [1/100 000-es](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#has-microsoft-set-any-device-requirements-for-windows-hello)biometrikus biztonságot ér el.
 
-További [információért tekintse](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) meg a Windows Hello és specifikációit. További információ az [üzleti Windows Hello](/windows-hardware/design/device-experiences/windows-hello) Windows Hello [való verzióról.](/windows/security/identity-protection/hello-for-business/hello-identity-verification) 
+További [információért](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) tekintse meg a Windows Hello és specifikációit. További információ az [üzleti Windows Hello](/windows-hardware/design/device-experiences/windows-hello) Windows Hello és a [vállalati verzióról.](/windows/security/identity-protection/hello-for-business/hello-identity-verification) 
 
 ### <a name="where-is-iris-biometric-information-stored"></a>Hol tárolja a rendszer az Írisz biometrikus adatait?
 
-Az írisz biometrikus adatait a rendszer helyileg tárolja az egyes HoloLens a [Windows Hello alapján.](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored) Nincs megosztva, és kétrétegű titkosítás védi. Nem érhető el más felhasználók, még a rendszergazdák számára sem, mert nincs rendszergazdai fiók a HoloLens.
+Az írisz biometrikus adatait a rendszer helyileg tárolja az egyes [HoloLens-Windows Hello specifikációk szerint.](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored) Nincs megosztva, és két titkosítási réteggel van védve. Nem érhető el más felhasználók, még a rendszergazdák számára sem, mert nincs rendszergazdai fiók a HoloLens.
 
-### <a name="do-i-have-to-use-iris-authentication"></a>Szükséges iris-hitelesítést használnom?
+### <a name="do-i-have-to-use-iris-authentication"></a>Írisz hitelesítést kell használnom?
 Nem, ezt a lépést kihagyhatja a telepítés során. 
 
 ![Iris beállítása](./images/setup-iris.png)
 
 HoloLens 2. lépés számos különböző hitelesítési lehetőséget kínál, beleértve a FIDO2 biztonsági kulcsokat.
 
-### <a name="can-iris-information-be-removed-from-the-hololens"></a>Eltávolíthatók az Írisz adatai a HoloLens?
+### <a name="can-iris-information-be-removed-from-the-hololens"></a>Eltávolíthatók az íriszinformációk a HoloLens?
 Igen, manuálisan is eltávolíthatja a Gépház.
 
 
 ### <a name="how-does-the-type-of-account-affect-sign-in-behavior"></a>Hogyan befolyásolja a fiók típusa a bejelentkezési viselkedést?
 
-Ha szabályzatokat alkalmaz a bejelentkezéshez, a szabályzat mindig érvényes lesz. Ha nincs alkalmazva bejelentkezési szabályzat, az egyes fióktípus alapértelmezett viselkedései a következőek:
+Ha a bejelentkezéshez szabályzatokat alkalmaz, a szabályzat mindig érvényes lesz. Ha nincs alkalmazva bejelentkezési szabályzat, az egyes fióktípusokkal a következő alapértelmezett viselkedésmódok érvényesek:
 
-- **Azure AD:** alapértelmezés szerint hitelesítést kér, és a Gépház a továbbiakban nem kér hitelesítést. 
-- **Microsoft-fiók:** a zárolás viselkedése eltérő, ami lehetővé teszi az automatikus zárolás feloldását, a bejelentkezési hitelesítés azonban újraindításkor is szükséges.
+- **Azure AD:** alapértelmezés szerint hitelesítést kér, és a Gépház konfigurálható, hogy a továbbiakban ne kérjen hitelesítést. 
+- **Microsoft-fiók:** a zárolás viselkedése eltér az automatikus feloldás engedélyezésével, de újraindításkor továbbra is bejelentkezési hitelesítésre van szükség.
 - **Helyi fiók:** mindig jelszó formájában kér hitelesítést, amely nem konfigurálható a **Gépház**
 
 > [!NOTE]
@@ -158,6 +158,6 @@ Ha szabályzatokat alkalmaz a bejelentkezéshez, a szabályzat mindig érvényes
 
 ## <a name="additional-resources"></a>További források
 
-A felhasználói identitásvédelemről és -hitelesítésről a biztonsági és Windows 10 [dokumentációjában olvashat bővebben.](/windows/security/identity-protection/)
+A felhasználói identitásvédelemről és -hitelesítésről a biztonsági és identitási dokumentációban [Windows 10 olvashat bővebben.](/windows/security/identity-protection/)
 
 A hibrid identitás-infrastruktúra beállításával kapcsolatos további információkért olvassa el az [Azure Hybrid Identity dokumentációját.](/azure/active-directory/hybrid/)

@@ -1,6 +1,6 @@
 ---
 title: Globális hozzárendelt hozzáférés
-description: Bevezetés a globális hozzáférésű kioszkok OMA-URI-azonosítójának Intune-nal és Windows-konfigurációtervezővel való használatához.
+description: 'Első lépések: OMA-URI használata a globális hozzáférésű kioszkok számára az Intune-nal és a Windows konfigurációtervezővel.'
 author: evmill
 ms.author: v-evmill
 ms.date: 9/21/2020
@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d89c630da76060fe6c2a049e5fa162e88779bb99
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d36192e7f65f7fe2ccc7ff8699484a19b3d5d3a7ccab0167d2dbdcaf64bb5880
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640423"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664041"
 ---
 # <a name="global-assigned-access--kiosk"></a>Globális hozzárendelt hozzáférés – Teljes kioszk
 
@@ -39,11 +39,11 @@ Ez a funkció HoloLens 2-es eszközt konfigurál több alkalmazás kioszkmódhoz
     > [!div class="mx-imgBorder"]
     > ![Globális hozzárendelt hozzáférés OMA-URI az Intune-ban](images/global-assigned-access-omauri.png)
 
-2. Az értékhez frissítse és illessze be a következő tartalmat:
+2. Értékként frissítse és illessze be a következő tartalmat:
 
     :::code language="xml" source="samples/global-assigned-access.xml" highlight="12-13,23":::
 
-## <a name="how-to-use-global-assigned-access-in-windows-configuration-designer"></a>Hogyan használható a globális hozzárendelt hozzáférés Windows Configuration Designerben?
+## <a name="how-to-use-global-assigned-access-in-windows-configuration-designer"></a>Hogyan használható a globális hozzárendelt hozzáférés a Windows Configuration Designerben?
 
 1. Frissítse és mentse a fent említett XML-blobot XML-fájlként. 
 
@@ -61,7 +61,7 @@ Példa a használni szükséges XML-blobra:
 
 ## <a name="excluding-deviceowners-from-global-assigned-access-profile"></a>Eszköztulajdonosok kizárása a globális hozzárendelt hozzáférési profilból
 
-Ez a funkció lehetővé teszi, hogy a felhasználók, akik a vállalaton[](security-adminless-os.md)"Eszköztulajdonosnak" minősülnek HoloLens ki lesznek zárva a globális hozzárendelt hozzáférésből. A funkció előnyeinek kihasználása érdekében az XML-blobban többalkalmazásos kioszkkonfiguráció esetén győződjön meg arról, hogy a kiemelt sorok fel vannak adva:
+Ez a funkció lehetővé teszi, hogy a globális hozzárendelt hozzáférésből ki legyen zárva a HoloLens felhasználó, aki az "Eszköz tulajdonosa" a vállalaton.[](security-adminless-os.md) A funkció előnyeinek kihasználása érdekében az XML-blobban többalkalmazásos kioszkkonfiguráció esetén győződjön meg arról, hogy a kiemelt sorok hozzá vannak adva:
 
  :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
 

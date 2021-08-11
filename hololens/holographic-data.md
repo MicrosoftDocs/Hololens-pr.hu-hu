@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 18dc962b869dafaea9ff9c605eef51fcbb35bfb2
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: ad210c9d31d8d7c226345618b6dfabf8457ee2398882935920d7b3217259a644
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636180"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664876"
 ---
 # <a name="find-open-and-save-files-on-hololens"></a>Fájlok megkeresása, megnyitása és mentése a HoloLens
 
@@ -62,7 +62,7 @@ A OneDrive [is telepítheti](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) 
 
 ### <a name="onedrive-app"></a>OneDrive alkalmazás
 
-[OneDrive](https://onedrive.live.com/) lehetővé teszi a fényképek és videók bármely eszközzel és felhasználóval való hozzáférését, kezelését és megosztását. A HoloLens rögzített fényképek és videók eléréséhez töltse [](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) le OneDrive alkalmazást a Microsoft Store a HoloLens. A letöltés után nyissa meg a OneDrive alkalmazást, válassza a Gépház  >  **feltöltése** lehetőséget, majd kapcsolja be a **Kamera feltöltése lehetőséget.**
+[OneDrive](https://onedrive.live.com/) lehetővé teszi a fényképek és videók bármely eszközzel és felhasználóval való hozzáférését, kezelését és megosztását. A HoloLens rögzített fényképek és videók eléréséhez töltse le a OneDrive [alkalmazást](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) a Microsoft Store a HoloLens. A letöltés után nyissa meg a OneDrive alkalmazást, válassza a Gépház  >  **feltöltése** lehetőséget, majd kapcsolja be a **Kamera feltöltése lehetőséget.**
 
 ### <a name="connect-to-a-pc"></a>Csatlakozás számítógépekre
 
@@ -92,7 +92,7 @@ A számítógép HoloLens fájlok Fájlkezelő a számítógépen:
 
 1. Válassza **az Eszköz megnyitása lehetőséget a Fájlkezelő** megtekintéséhez, vagy nyissa Fájlkezelő a számítógépen, és navigáljon az eszközre.
 
-A számítógépe adatai HoloLens kattintson a jobb gombbal az eszköz nevére a Fájlkezelő, majd válassza a Tulajdonságok **lehetőséget.**
+Az eszköz nevének HoloLens jobb gombbal kattintson az eszköz nevére a Fájlkezelő, majd válassza a Tulajdonságok **lehetőséget.**
 
 > [!NOTE]
 > HoloLens (1. generációs) nem támogatja a külső merevlemezek vagy SD-kártyák csatlakoztatását.

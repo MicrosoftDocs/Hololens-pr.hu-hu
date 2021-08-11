@@ -13,18 +13,18 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b312f9d20c9a75c5e4c1906c4ec55f42fda977f6
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: ed28033f10f7a6d0e826775e95d040d0cac7f9e9c6266acd6975d3532f6d8067
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640457"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664256"
 ---
 # <a name="configure-csps-and-device-management-overview"></a>CsP-k és Eszközkezelés konfigurálása – áttekintés
 
-A rendszergazdák a 2. HoloLens házirend-beállításokat határozhatják meg és valósíthatják meg. A használt konfigurációs beállítások a telepítési forgatókönyvtől függően különböznek, és a vállalati eszközök a legszélesebb körű vezérlést kínálják az it-itának. A Windows 10 konfigurációszolgáltatók (CSP-k) az eszköz konfigurációs beállításainak olvasására, beállítására, módosítására vagy törlésére való felületek. Ezek a beállítások beállításkulcsra vagy fájlokra vannak leképezve. Egyes konfigurációs szolgáltatók támogatják a WAP formátumot, némelyik támogatja a SyncML-t, néhány pedig mindkettőt.
+A rendszergazdák a 2. HoloLens határozhatják meg és valósíthatják meg a szabályzatbeállításokat. A használt konfigurációs beállítások a telepítési forgatókönyvtől függően különböznek, és a vállalati eszközök a legszélesebb körű vezérlést kínálják az it-itának. A Windows 10 konfigurációszolgáltatók (CSP-k) az eszköz konfigurációs beállításainak olvasására, beállítására, módosítására vagy törlésére való felületek. Ezek a beállítások beállításkulcsra vagy fájlokra vannak leképezve. Egyes konfigurációs szolgáltatók támogatják a WAP formátumot, némelyik támogatja a SyncML-t, néhány pedig mindkettőt.
 
-Az eszközkezelési CSP-Windows 10 Holographic kapcsolatos további információkért tekintse meg az eszközök által támogatott [CSP-k HoloLens listáját.](/windows/client-management/mdm/configuration-service-provider-reference#hololens)
+Az eszközkezelési CSP Windows 10 Holographic król további információt a következő eszközök által támogatott [CSP-k teljes listájában HoloLens meg.](/windows/client-management/mdm/configuration-service-provider-reference#hololens)
 A rendszergazdák az eszközökön is kezelhetik a házirendek CSP-ját. Lásd a 2. HoloLens által támogatott [házirend-CSP-k teljes listáját.](/windows/client-management/mdm/policy-csps-supported-by-hololens2)
 
 ## <a name="configuration-methods"></a>Konfigurációs módszerek

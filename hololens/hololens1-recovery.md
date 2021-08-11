@@ -16,21 +16,21 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4840535030cc81f222cb25357474f1c751426e91
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: d6eb706c50e97a81910180c70be1d9dbc52bc6603cbc77ad130c1dd3b6a9010e
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635228"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115661796"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>Újraindítás, alaphelyzetbe állítás vagy helyreállítás HoloLens (1. generációs)
 
 Ha problémákat tapasztal a HoloLens, megpróbálhatja újraindítani vagy alaphelyzetbe állítani az eszközt, vagy akár újra is perjeleket állíthat be az eszköz helyreállításával. Ez a cikk végigvezeti a javasolt helyreállítási lépések sorrendjén.
 
-Ha a 2. HoloLens helyre kell állítania, tekintse meg [a 2.](hololens-recovery.md)HoloLens a folyamat eltérését.
+Ha a 2. HoloLens helyre kell állítania, tekintse meg [a 2.](hololens-recovery.md)HoloLens helyreállítását, mivel ez a folyamat eltér.
 
 > [!NOTE]
-> Ez a cikk a HoloLens eszközre és szoftverre összpontosít. Ha a hologramok nem megfelelőek, tekintse meg a HoloLens környezeti szempontokat a hologramminőséget javítására irányuló tényezőkkel kapcsolatos információkért. **[](hololens-environment-considerations.md)**
+> Ez a cikk az eszköz HoloLens szoftverekkel foglalkozik. Ha a hologramok nem megfelelőek, tekintse meg a HoloLens környezeti szempontokat a hologramminőséget javítására irányuló tényezőkkel kapcsolatos információkért. **[](hololens-environment-considerations.md)**
 
 ## <a name="restart"></a>Újraindítás
 
@@ -99,14 +99,14 @@ Az 1. verzió korábbi HoloLens kövesse az alábbi lépéseket:
 1. Válassza **a Szoftver telepítése lehetőséget,** és kövesse az utasításokat.
 
 > [!NOTE]
-> Ha a WDRT nem észleli a HoloLens, indítsa újra a számítógépet. Ha ez nem működik, jelölje be a Saját **eszköz nem** észlelhető lehetőséget, válassza a Microsoft HoloLens **lehetőséget,** majd kövesse az utasításokat.
+> Ha a WDRT nem észleli a HoloLens, indítsa újra a számítógépet. Ha ez nem működik, válassza a **Saját eszköz** nem észlelhető lehetőséget, válassza a Microsoft HoloLens **lehetőséget,** majd kövesse az utasításokat.
 
 ## <a name="reset-to-factory-settings"></a>Visszaállítás a gyári beállításokra
 
 > [!NOTE]
 > Az akkumulátor alaphelyzetbe állításhoz legalább 40%-os töltöttség szükséges.
 
-Ha a HoloLens továbbra is problémát jelent, próbálja meg gyári állapotba állítani. Ez a lépés megtartja a Windows telepített Holographic szoftver verzióját, és minden mást a gyári beállításokba ad vissza.
+Ha a HoloLens továbbra is problémát jelent, próbálja meg gyári állapotba állítani. Ez a lépés megtartja a Windows telepített holographic szoftver verzióját, és minden mást a gyári beállításokba ad vissza.
 
 >[!WARNING]
 > Ha alaphelyzetbe állítja az eszközt, az összes személyes adata, alkalmazása és beállítása törlődik, beleértve a TPM alaphelyzetbe állítási adatait is. Az alaphelyzetbe állítás csak a holographic rendszer legújabb telepített Windows telepíti. Minden inicializálási lépést újra végre kell majd hoznia (be kell állítania, csatlakoznia kell a Wi-Fi-hez, létre kell hoznia egy felhasználói fiókot, le kell töltenie az alkalmazásokat stb.).
@@ -126,7 +126,7 @@ Az új operációs rendszert a HoloLens (1. generációs) a Windows eszköz hasz
 
 A helyreállítási folyamat több ideig is eltért. Amikor végzett, a rendszer telepíti a Windows legújabb verzióját.
 
-Az eszköz csak akkor használható, ha legalább Windows 10 legalább 4 GB szabad tárhellyel rendelkező számítógépre van szükség. Ez az eszköz nem futtatható virtuális gépen.
+Az eszköz csak akkor használható, ha Windows 10 vagy újabb, legalább 4 GB szabad tárhellyel. Ez az eszköz nem futtatható virtuális gépen.
 
 ### <a name="recover-your-hololens"></a>A HoloLens
 

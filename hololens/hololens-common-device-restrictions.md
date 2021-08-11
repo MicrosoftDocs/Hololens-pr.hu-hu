@@ -13,16 +13,16 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 769cacc1803af9d9e9bf1079f8cd5671f194c3bc
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 6a09766a06fff912aae20dc07974b723d812bd370562a33297552dc0d2f7f12c
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639216"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664278"
 ---
 # <a name="common-device-restrictions"></a>Gyakori eszközkorlátozások 
 
-Ez az útmutató segít az informatikai szakembereknek megérteni a vállalati operációs rendszerhez Windows 10 Holographic általánosabb felügyeleti lehetőségeket. Az MDM-rendszer dokumentációjában tájékozódhat arról, hogyan engedélyezik ezeket a szabályzatokat az MDM-szállító. Nem minden MDM-rendszer támogatja az útmutatóban ismertetett összes beállítást. Egyes szabályzatok OMA-URI XML-fájlokon keresztül támogatják az egyéni szabályzatokat. Lásd: [Microsoft Intune egyéni szabályzatok támogatása.](/mem/intune/configuration/custom-settings-windows-10) Az elnevezési konvenciók az MDM-beszállítók között is eltérőek lehetnek.
+Ez az útmutató segít az informatikai szakembereknek megérteni a vállalati operációs rendszerhez Windows 10 Holographic általánosabb felügyeleti lehetőségeket. Az MDM-rendszer dokumentációjában tájékozódhat arról, hogyan engedélyezik ezeket a szabályzatokat az MDM-szállító. Nem minden MDM-rendszer támogatja az útmutatóban ismertetett összes beállítást. Egyes szabályzatok OMA-URI XML-fájlokon keresztül támogatják az egyéni szabályzatokat. [Lásd Microsoft Intune egyéni szabályzatok támogatásához lásd:](/mem/intune/configuration/custom-settings-windows-10). Az elnevezési konvenciók az MDM-beszállítók között is eltérőek lehetnek.
 
 ## <a name="prevent-changing-of-settings"></a>Beállítások módosításának megakadályozása
 Az alkalmazottak általában módosíthatjak bizonyos személyes eszközbeállításokat, amelyek zárolását a vállalati eszközökön is lehet. Az alkalmazottak interaktív módon módosíthatja a HoloLens beállítások felhasználói felületén keresztül. Az MDM használatával korlátozhatja, hogy a felhasználók milyen változásokat módosíthatnak. A következő lista azokat a gyakran használt MDM-beállításokat sorolja fel, Windows 10 Holographic a beállítások korlátozásának konfigurálásában:

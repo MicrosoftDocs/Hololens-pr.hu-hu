@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: daced6fab65f779b7bd670bf1275f99ae5311d3f
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 54e9959c03b69db39ff2738e5d4f41f9740ae562b38e8d85998521a4733edad7
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635959"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664859"
 ---
 # <a name="create-mixed-reality-photos-and-videos"></a>Vegyes valóságú fényképek és videók létrehozása
 
@@ -95,7 +95,7 @@ A fájlokban látható HoloLens valós időben megoszthatja barátaival és munk
 1. Csatlakozás egy Miracast-kompatibilis eszközhöz vagy adapterhez a TV-n való megtekintéshez.
 1. A [Windows Eszközportál](/windows/mixed-reality/using-the-windows-device-portal) használata a pc-n való megtekintéshez
 1. A Microsoft HoloLens [alkalmazás használata a](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) számítógépen való megtekintéshez.
-1. A [Microsoft Dynamics 365 Remote Assist](https://dynamics.microsoft.com/en-us/mixed-reality/remote-assist) alkalmazás üzembe helyezése, amely lehetővé teszi, hogy az online dolgozók streamelje, amit látnak egy távoli szakértőnek. A távoli szakértő ezután verbálisan vagy jegyzetekkel irányíthatja a frontvonali dolgozót.
+1. A [Microsoft Dynamics 365 Remote Assist](https://dynamics.microsoft.com/en-us/mixed-reality/remote-assist) alkalmazás üzembe helyezése, amely lehetővé teszi az online dolgozók számára, hogy egy távoli szakértőnek streamelje, amit látnak. A távoli szakértő ezután verbálisan vagy jegyzetekkel irányíthatja a frontvonali dolgozót.
 
 > [!NOTE]
 > Ahhoz, hogy a Windows Eszközportál vagy Microsoft HoloLens alkalmazáson keresztül megossa a látható HoloLens fejlesztői [módban legyen.](/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal)
@@ -141,34 +141,34 @@ Tippek:
 - Ha nem lát fájlokat, jelentkezzen be a HoloLens, hogy engedélyezze az adatokhoz való hozzáférést.
 - Más mappákban, például diagnosztikai fájlokban lévő fájlokat a Dokumentumok mappából is lekért. [](hololens-diagnostic-logs.md#offline-diagnostics)
 - A Fájlkezelő eszköztulajdonságokat kiválasztva láthatja Windows Holographic operációs rendszer verziószámát (belső vezérlőprogram verziója), az eszköz sorozatszámát és az akkumulátor százalékos arányát.
-- Ha a szervezet MDM-et használt a [kapcsolat/AllowUSBConnection](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) letiltásához, akkor nem fog tudni csatlakozni az eszközhöz.
+- Ha a szervezet MDM-et használt a [Kapcsolat/AllowUSBConnection](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) letiltásához, akkor nem fog tudni csatlakozni az eszközhöz.
 
 ## <a name="share-your-mixed-reality-photos-and-videos"></a>Vegyes valóságú fényképek és videók megosztása
 
-A [holografikus Windows 21H1-es](hololens-release-notes.md#windows-holographic-version-21h1)verziója előtt egy vegyes valóságú fénykép vagy videó rögzítése után megjelenik egy előnézet. A **megosztási asszisztenst** az előnézet fölötti Megosztás ikonra kattintva hozhatja meg. Innen kiválaszthatja azt a végpontot, amelyen meg szeretné osztani a fényképet vagy videót.
+A [holografikus Windows 21H1-es](hololens-release-notes.md#windows-holographic-version-21h1)verziója előtt egy vegyes valóságú fénykép vagy videó rögzítése után megjelenik egy előnézet. A **megosztási asszisztenst** az előnézet fölötti Megosztás ikonnal hozhatja meg. Itt kiválaszthatja azt a végpontot, amelyen meg szeretné osztani a fényképet vagy videót.
 
-A Windows Holographic 21H1-es verziójában egy vegyes valóságú fénykép vagy videó rögzítése után megjelenik egy előnézet. A **megosztási asszisztenst** az előnézet fölötti Megosztás ikonra kattintva hozhatja meg. Itt kiválaszthatja azt a végpontot (Mail, OneDrive stb.), amelyen meg szeretné osztani a fényképet vagy videót. A **-HoloLens -Gépház -> Megosztott** élmények > is engedélyezheti, hogy a felhasználók megosztanák a >. További részletekért olvassa el a Dolgok megosztása a közeli eszközökkel a [Windows 10.](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)
+A Windows Holographic 21H1-es verziójában egy vegyes valóságú fénykép vagy videó rögzítése után megjelenik egy előnézet. A **megosztási asszisztenst** az előnézet fölötti Megosztás ikonnal hozhatja meg. Itt kiválaszthatja azt a végpontot (Mail, OneDrive stb.), amelyen meg szeretné osztani a fényképet vagy videót. Azt is engedélyezheti, HoloLens a közeli eszközökkel való megosztást a **-Gépház -> -> szolgáltatások** között. További részletekért olvassa el a Share [things witharby devices in Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)(Dolgok megosztása a közeli eszközökkel a Windows 10.
 
 > [!TIP] 
-> A vegyes valóságú fényképeket és videókat a OneDrive is megoszthatja, ha automatikusan feltölti a vegyes valóságú fényképeket és videókat. Nyissa meg OneDrive alkalmazást a HoloLens, és jelentkezzen be egy személyes **[Microsoft-fiók,](https://account.microsoft.com)** ha még nem. Válassza a **Gépház** ikont, majd a **Kamera feltöltése lehetőséget.** Kapcsolja be a Kamera feltöltése adatokat. A vegyes valóságú fényképek és videók mostantól fel lesznek töltve OneDrive minden alkalommal, amikor elindítja az alkalmazást a HoloLens.
+> A vegyes valóságú fényképeket és videókat a OneDrive is megoszthatja, ha automatikusan feltölti a vegyes valóságú fényképeket és videókat. Nyissa meg a OneDrive alkalmazást a HoloLens, és jelentkezzen be egy személyes **[Microsoft-fiók,](https://account.microsoft.com)** ha még nem. Válassza a **Gépház** ikont, majd a **Kamera feltöltése lehetőséget.** Kapcsolja be a Kamera feltöltése adatokat. A vegyes valóságú fényképek és videók mostantól fel lesznek töltve OneDrive amikor elindítja az alkalmazást a HoloLens.
 
 > [!NOTE]
-> A kamerafeltöltést csak abban az OneDrive, ha személyes OneDrive van Microsoft-fiók. Ha munkahelyi HoloLens vagy iskolai fiókkal hoz létre munkahelyi vagy iskolai fiókot, személyes Microsoft-fiók adhat hozzá OneDrive alkalmazáshoz a funkció engedélyezéséhez.
+> Csak akkor engedélyezheti a kamerafeltöltést a OneDrive, ha személyes OneDrive van Microsoft-fiók. Ha munkahelyi vagy HoloLens fiókkal hoz létre munkahelyi vagy iskolai fiókot, a funkció engedélyezéséhez hozzáadhat egy személyes Microsoft-fiók OneDrive alkalmazásban.
 
-## <a name="limitations-of-mixed-reality-capture"></a>A vegyes valóságú rögzítés korlátozásai
+## <a name="limitations-of-mixed-reality-capture"></a>A vegyes valóság rögzítésének korlátozásai
 
 - A vegyes valóságú rögzítés használata esetén a HoloLens képkocka-sebessége felezhető 30 Hz-re.
-- A fényképek és videók felbontása csökkenthető, ha a fénykép-/videókamerát már egy másik alkalmazás használja, élő streamelés közben, vagy ha a rendszer erőforrásai alacsonyak.
+- A fényképek és videók felbontása csökkenthető, ha a fénykép-/videokamerát már egy másik alkalmazás használja, élő streamelés közben, vagy ha a rendszer erőforrásai alacsonyak.
 
 ### <a name="maximum-recording-length"></a>Rögzítés maximális hossza
 
-A HoloLens Holographic Windows 20H2-es verziója előtt 2 eszközön legfeljebb öt percig voltak korlátozva az eszközön rögzített videók.
+A HoloLens Holographic Windows 20H2-es verziója előtt 2 eszközön az eszközön rögzített videók legfeljebb öt percig voltak korlátozva.
 
-Az ügyfelek visszajelzései miatt megnövelte a vegyes [valóságú rögzítések hosszát.](holographic-photos-and-videos.md) A vegyes valóságú rögzítések alapértelmezés szerint nem korlátozódnak 5 percre, hanem a felvétel maximális hosszát számítja ki a rendelkezésre álló lemezterület alapján. Az eszköz a teljes lemezterület 80%-ának megfelelő szabad lemezterület alapján megbecsüli a videófelvétel maximális időtartamát.
+Az ügyfelek visszajelzései miatt növeltünk a vegyes valóságú [rögzítések hosszát.](holographic-photos-and-videos.md) A vegyes valóságú rögzítések alapértelmezés szerint nem lesznek 5 percre korlátozva, hanem a maximális rögzítési hosszt számítják ki a rendelkezésre álló lemezterület alapján. Az eszköz a teljes lemezterület 80%-ának megfelelő szabad lemezterület alapján megbecsüli a videófelvétel maximális időtartamát.
 
 > [!NOTE]
-> A HoloLens a videófelvételek alapértelmezett hosszát (5 perc) használja, ha a következők valamelyike történik:
-> - A felvétel becsült maximális időtartama kisebb, mint az alapértelmezett 5 perc.
+> A HoloLens a videófelvétel alapértelmezett hosszát (5 perc) használja, ha a következők valamelyike bekövetkezik:
+> - A becsült maximális rögzítési időtartam kisebb, mint az alapértelmezett 5 perc.
 > - A rendelkezésre álló lemezterület kevesebb, mint a teljes lemezterület 20%-a.
 
 ## <a name="default-file-format-and-resolution"></a>Alapértelmezett fájlformátum és -felbontás

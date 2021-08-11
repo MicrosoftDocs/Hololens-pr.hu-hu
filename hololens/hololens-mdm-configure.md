@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5485a4b2558a11a6c0545ec8b3405c120cff287c
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 0a0f26750ff6ea881babfab44af95cbbefa0574674336934ccf1443df1701a96
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640277"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663268"
 ---
 # <a name="using-microsofts-endpoint-manager-intune-to-manage-hololens-devices"></a>A Microsoft Intune Endpoint Manager használata a HoloLens kezeléséhez
 
@@ -40,11 +40,11 @@ Profiljaiban OMA-URI használatával testre szabhat néhány beállítást, lét
 Ha MDM-et használ az eszközök kezeléséhez, számos kiválasztható elemet biztosít. 
 
 ### <a name="wi-fi"></a>Wi-Fi
-A [Wi-Fi-beállítások](/mem/intune/configuration/wi-fi-settings-configure) a vezeték nélküli hálózat beállításait rendeli hozzá felhasználókhoz és eszközökhöz. Ha hozzárendel egy Wi-Fi profilt, a felhasználók anélkül férhetnek hozzá a vállalati Wi-Fi, hogy azt maguknak kell konfigurálniuk.
+A [Wi-Fi-beállítások](/mem/intune/configuration/wi-fi-settings-configure) a vezeték nélküli hálózat beállításait rendeli hozzá felhasználókhoz és eszközökhöz. Amikor hozzárendel egy Wi-Fi profilt, a felhasználók anélkül férhetnek hozzá a vállalati Wi-Fi, hogy azt maguknak kell konfigurálniuk.
 További információ a [hálózat konfigurálásról a HoloLens](hololens-commercial-infrastructure.md)
 
 ### <a name="certificates"></a>Tanúsítványok
-A tanúsítványok azáltal növelik a biztonságot, hogy fiókhitelesítést, Wi-Fi hitelesítést, VPN-titkosítást és a webes tartalmak SSL-titkosítását biztosítják. Bár a rendszergazdák manuálisan kezelhetik az eszközökön található tanúsítványokat a kiépítési csomagokon keresztül, ajánlott eljárás az MDM-rendszert használni a tanúsítványok teljes életcikluson keresztüli kezelésére– a regisztrációtól a megújításon és visszavonáson át. Az MDM-rendszer automatikusan telepítheti ezeket a tanúsítványokat az eszközök tanúsítványtárolóiba az eszköz regisztrálása után (amennyiben az MDM-rendszer támogatja az Egyszerű tanúsítványigénylési protokoll (SCEP) vagy a nyilvános kulcsú titkosítási szabványok #12 (PKCS #12)). Az MDM lekérdezheti és törölheti is a regisztrált ügyféltanúsítványokat, vagy új beléptetési kérelmet aktiválhat az aktuális tanúsítvány lejárta előtt. 
+A tanúsítványok azáltal növelik a biztonságot, hogy fiókhitelesítést, Wi-Fi hitelesítést, VPN-titkosítást és a webes tartalmak SSL-titkosítását biztosítják. Bár a rendszergazdák manuálisan kezelhetik az eszközökön található tanúsítványokat a kiépítési csomagokon keresztül, ajánlott eljárás az MDM-rendszer használata a tanúsítványok kezelésére a teljes életciklusuk során – a regisztrációtól a megújításon és visszavonáson át. Az MDM-rendszer automatikusan telepítheti ezeket a tanúsítványokat az eszközök tanúsítványtárolóiba az eszköz regisztrálása után (amennyiben az MDM-rendszer támogatja az Egyszerű tanúsítványigénylési protokoll (SCEP) vagy a nyilvános kulcsú titkosítási szabványok #12 (PKCS #12)). Az MDM lekérdezheti és törölheti is a regisztrált ügyféltanúsítványokat, vagy új beléptetési kérelmet aktiválhat az aktuális tanúsítvány lejárta előtt. 
 
 ### <a name="proxy"></a>Proxy
 A legtöbb vállalati intranetes hálózat proxyt használ a belső forgalom kezelésére. A HoloLens 2-es porton konfigurálhat proxykiszolgálót Ethernet- és Wi-Fi kapcsolatokhoz. Ezek a beállítások nem vonatkoznak a VPN-kapcsolatokra. További részletek a proxybeállításokról a [Windows 10: NetworkProxy CSP.](/windows/client-management/mdm/networkproxy-csp)
@@ -67,7 +67,7 @@ További információ az Intune-nal való alkalmazáskezelésről.
 
 ### <a name="software-updates"></a>Szoftverfrissítések
 Az Intune tartalmaz egy frissítési körök nevű funkciót a Windows 10-es eszközökhöz. A frissítési körökhöz tartozik a frissítések telepítési módját meghatározó beállítások egy csoportja. Létrehozhat például egy karbantartási időszakot a frissítések telepítésére vagy eldöntheti, hogy kíván-e újraindítást a frissítések telepítése után. Egy frissítési kör több Windows Holographic for Business rendszerű eszközre is alkalmazható.
-További információ az [intune-nal HoloLens a](hololens-updates.md) szoftverfrissítések kezelésével és a [szoftverfrissítések kezelésével kapcsolatban.](/mem/intune/protect/windows-update-for-business-configure)
+További információ a felügyelt HoloLens [kezelésével](hololens-updates.md) és a [szoftverfrissítések Intune-nal való kezelésével kapcsolatban.](/mem/intune/protect/windows-update-for-business-configure)
 
 ### <a name="configure-kiosk-mode"></a>Teljes képernyős mód konfigurálása
 Az Intune-ban elérhető megosztott vagy vendégszámítógép funkciókkal konfigurálhatja a Windows Holographic for Business eszközöket teljes képernyős módban való futtatásra. Ezek az eszközök futtathatnak egyetlen alkalmazást (egyalkalmazásos kioszkmód) vagy több alkalmazást (többalkalmazásos kioszkmód). A kioszkmód egy olyan felhasználói felület, amely azt szabályozhatja, hogy alapértelmezés szerint mely identitások mely alkalmazásokhoz férnek hozzá.

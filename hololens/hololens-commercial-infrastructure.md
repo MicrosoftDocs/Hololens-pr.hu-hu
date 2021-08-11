@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e3f87c524ce0f8af05ec8c92877d46facd962fb4
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 3aa5ed676a9f8864904752da3d965cba5fab7ce98db51abb4ff9444f1a0a370b
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639284"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664471"
 ---
 # <a name="configure-your-network-for-hololens"></a>A hálózat konfigurálása HoloLens
 
@@ -59,8 +59,8 @@ Győződjön meg arról, [hogy a végpontok](hololens-offline.md) listája enged
 
 ### <a name="remote-assist-specific-network-requirements"></a>A Remote Assist konkrét hálózati követelményei
 
-1. A Remote Assist optimális teljesítményéhez ajánlott sávszélesség 1,5 Mb/s. További [információkért tekintse meg a részletes hálózati](/MicrosoftTeams/prepare-network) követelményeket.
-**(Vegye figyelembe, hogy ha a hálózaton nincs legalább 1,5 MB/s sebességű hálózati sebesség, a Remote Assist továbbra is működni fog. A minőség azonban rossz lehet).**
+1. A Remote Assist optimális teljesítményéhez ajánlott sávszélesség 1,5 Mb/s. További [információkért tekintse meg a részletes](/MicrosoftTeams/prepare-network) hálózati követelményeket.
+**(Vegye figyelembe, hogy ha a hálózaton nincs legalább 1,5 Mbbps hálózati sebesség, a Remote Assist továbbra is működni fog. A minőség azonban rossz lehet).**
 1. Győződjön meg arról, hogy ezek a portok és URL-címek engedélyezve vannak a hálózati tűzfalon a Microsoft Teams működéséhez. Maradjon naprakész a legújabb [portlistával.](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
 
 - További információ a Remote Assist konkrét [hálózati követelményeiről.](/dynamics365/mixed-reality/remote-assist/requirements#network-requirements) 
@@ -95,9 +95,9 @@ Ha licenceket kell hozzárendelni, kövesse az [alábbi utasításokat.](/azure/
 **Jelentkezzen be a Azure Portal rendszergazdaként**  >  **Azure Active Directory**  >  **Eszközök**  >  **Eszköz Gépház**  >
  **Állítsa a Users may join devices to Azure AD (Felhasználók csatlakozhatnak az eszközökhöz az Azure AD-be) *beállítását All (Mind)***
 
-    1. **2. lehetőség:** Adjon engedélyt a kiválasztott felhasználóknak/csoportoknak az eszközök Azure AD-be való beléptetését az **Azure Portal-ba**  >  **rendszergazdaként Azure Active Directory**  >  **Gépház-eszközök** eszközkészlete Felhasználók csatlakozhatnak az Azure  >    >
- **AD-hez** a Kiválasztott rendszerképhez, amely az Azure 
- ![ AD-hez csatlakozott eszközök konfigurációját mutatja](images/azure-ad-image.png)
+    1. **2. lehetőség:** Adjon engedélyt a kiválasztott felhasználóknak/csoportoknak az eszközök Azure AD-hez való csatlakozásához. Jelentkezzen be az **Azure Portal-ba**  >  **rendszergazdaként Azure Active Directory** Eszközök eszköz Gépház Állítsa be, hogy a felhasználók eszközöket csatlakozzanak az  >    >    >
+ **Azure AD-hez** a Kiválasztott kép elemhez, amely az 
+ ![ Azure AD-hez csatlakozott eszközök konfigurációját mutatja](images/azure-ad-image.png)
 
     1. **3. lehetőség:** Letilthatja, hogy az összes felhasználó az eszközeit a tartományhoz csatlakozzon. Ez azt jelenti, hogy minden eszközt manuálisan kell regisztrálni.
 
@@ -151,7 +151,7 @@ További információ az [alkalmazások telepítéséről a HoloLens.](hololens-
 
 ### <a name="certificates"></a>Tanúsítványok
 
-A tanúsítványokat az MDM-szolgáltatón keresztül terjesztheti. Ha a vállalata tanúsítványokat igényel, az Intune támogatja a PKCS, a PFX és az SCEP-tanúsítványokat. Fontos tisztában lennie a vállalat számára megfelelő tanúsítvánnyal. Tekintse meg [a tanúsítványkonfigurációk dokumentációját](/intune/protect/certificates-configure) annak meghatározásához, hogy melyik tanúsítvány a legmegfelelőbb az Ön számára. Ha tanúsítványokat tervez használni HoloLens hitelesítéshez, a PFX vagy az SCEP megfelelő lehet az Ön számára.
+A tanúsítványokat az MDM-szolgáltatón keresztül terjesztheti. Ha a vállalata tanúsítványokat igényel, az Intune támogatja a PKCS, a PFX és az SCEP-tanúsítványokat. Fontos tisztában lennie a vállalat számára megfelelő tanúsítvánnyal. Tekintse meg [a tanúsítványkonfigurációk dokumentációját](/intune/protect/certificates-configure) annak meghatározásához, hogy melyik tanúsítvány a legmegfelelőbb az Ön számára. Ha tanúsítványokat tervez használni a HoloLens hitelesítéshez, a PFX vagy az SCEP megfelelő lehet az Ön számára.
 
 Az SCEP használatának lépései a [következők.](/intune/protect/certificates-profile-scep)
 
@@ -160,7 +160,7 @@ Az SCEP használatának lépései a [következők.](/intune/protect/certificates
 > [!NOTE]
 > Windows A Holographics for Business (kereskedelmi csomag) csak HoloLens 1. generációs eszközökhöz használható. A profil nem lesz alkalmazva 2 HoloLens eszközre.
 
-A kereskedelmi csomagra való frissítésre vonatkozó utasításokat a [holografikus](/intune/configuration/holographic-upgrade) frissítési dokumentációban találja.
+A kereskedelmi csomagra való frissítésre vonatkozó útmutatást a [holografikus](/intune/configuration/holographic-upgrade) frissítési dokumentációban találja.
 
 ### <a name="how-to-configure-kiosk-mode-using-microsoft-intune"></a>Kioszkmód konfigurálása a Microsoft Intune
 
@@ -180,11 +180,11 @@ A kereskedelmi csomagra való frissítésre vonatkozó utasításokat a [hologra
 
 ![A kioszkmód Intune-nal való konfigurálást bemutató kép](images/aad-kioskmode.png)
 
-Más MDM-szolgáltatásokhoz a szolgáltató dokumentációjában talál útmutatást. Ha egyéni beállítást és teljes XML-konfigurációt kell használnia egy [kioszk](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) MDM-szolgáltatásban való beállítására, tekintse meg a teljes képernyős HoloLens utasításokat.
+Más MDM-szolgáltatásokhoz a szolgáltató dokumentációjában talál útmutatást. Ha egyéni HoloLens beállítást és teljes XML-konfigurációt kell használnia az MDM-szolgáltatás teljes képernyős beállítására, tekintse meg a teljes képernyős [kioszkra](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) vonatkozó utasításokat.
 
 ## <a name="certificates-and-authentication"></a>Tanúsítványok és hitelesítés
 
-A tanúsítványok MDM-en keresztül telepíthetők (lásd az [MDM szakasz "tanúsítványok" szakaszát).](hololens-commercial-infrastructure.md#mobile-device-manager-guidance) A tanúsítványok a csomag kiépítése HoloLens is üzembe helyezhetők. További [információkért HoloLens provisioning (Kiépítés)](hololens-provisioning.md) oldalon található.
+A tanúsítványok MDM-en keresztül telepíthetők (lásd az [MDM szakasz](hololens-commercial-infrastructure.md#mobile-device-manager-guidance)"tanúsítványok" szakaszát). A tanúsítványok a csomag kiépítése HoloLens is üzembe helyezhetők. További információt [HoloLens provisioning (Kiépítés)](hololens-provisioning.md) oldalon található.
 
 ### <a name="additional-intune-quick-links"></a>Az Intune további gyorshivatkozásai
 

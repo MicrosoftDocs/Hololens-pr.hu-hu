@@ -1,6 +1,6 @@
 ---
 title: A jelszóhasználat korlátozása
-description: a jelszóhasználat korlátozása a HoloLens
+description: a jelszóhasználat korlátozása HoloLens
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 074fffc8350dd6deb876a19320397674bcac3e46
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: a4ceaa1a741ec63153cd9112d04547165b46b0fa72c32ee7f9580f15368a2f88
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639301"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665452"
 ---
 # <a name="limiting-password-use"></a>A jelszóhasználat korlátozása
 
@@ -31,22 +31,22 @@ A biztonság és a fiókvédelem javítása érdekében az HoloLens 2 képes eng
 
 HoloLens 2. lépés távoli eszközbe való bejelentkezést kínál Azure Active Directory munkahelyi fiókokhoz a kezdeti eszközbeállítás és a felhasználói bejelentkezés során, így kevesebb bonyolult jelszót kell begépelni, és minimálisra csökkenteni a jelszavak hitelesítő adatokként való használatát. Azok a felhasználók és szervezetek, akik intelligens kártyával hitelesítik magukat, nehezen használják ezeket a hitelesítő adatokat olyan eszközökön, mint a HoloLens 2, és gyakran bonyolult rendszereket és költséges folyamatokat fejlesztnek a probléma megoldása érdekében. A probléma megoldásához az Azure AD két lehetőséget kínál a 2. HoloLens jelszóval való bejelentkezésre.
 
-Az első hitelesítési módszer az Microsoft Authenticator új képességeire támaszkodik, hogy kulcsalapú hitelesítést biztosítson, amely lehetővé teszi az eszközhöz kötött felhasználói hitelesítő adatokat. Ha a rendszergazda engedélyezte a bérlőn, a felhasználók egy üzenetben HoloLens eszköz beállítása során arra szólja őket, hogy koppintson egy számra az alkalmazásukon. Ezután meg kell egyezniük a hitelesítő alkalmazásban használt számmal, majd a Jóváhagyás lehetőséget kell választaniuk, meg kell adniuk a PIN-kódjukat vagy egy biometrikus azonosítót, és teljes körű hitelesítést kell biztosítaniuk a HoloLens beállításhoz a folytatáshoz. Ezt részletesebben a jelszó nélküli [bejelentkezés ismerteti.](/azure/active-directory/authentication/howto-authentication-passwordless-phone)
+Az első hitelesítési módszer az Microsoft Authenticator új képességeire támaszkodik, hogy kulcsalapú hitelesítést biztosítson, amely lehetővé teszi az eszközhöz kötött felhasználói hitelesítő adatokat. Ha a rendszergazda engedélyezte a bérlőn, a felhasználók egy üzenetben HoloLens eszköz beállítása során arra szólja őket, hogy koppintson egy számra az alkalmazásukon. Ezután meg kell egyezniük a hitelesítő alkalmazásban használt számmal, majd a Jóváhagyás lehetőséget kell választaniuk, meg kell adniuk a PIN-kódjukat vagy biometrikus azonosítójukat, és teljes HoloLens a beállításukhoz a folytatáshoz. Ezt részletesebben a jelszó nélküli [bejelentkezés ismerteti.](/azure/active-directory/authentication/howto-authentication-passwordless-phone)
 
-A második egy eszközkód-folyamat, amely intuitív a felhasználók számára, és nem igényel további infrastruktúrát.  Ez a távoli bejelentkezési viselkedés egy másik megbízható eszközre támaszkodik, amely támogatja a szervezet előnyben részesített hitelesítési mechanizmusát, és ha befejeződött, a rendszer jogkivonatokat ad vissza a HoloLens számára a bejelentkezés vagy az eszköz beállításának befejezéséhez. A folyamat lépései a következőek:
+A második egy olyan eszközkód-folyamat, amely intuitív a felhasználók számára, és nem igényel további infrastruktúrát.  Ez a távoli bejelentkezési viselkedés egy másik megbízható eszközre támaszkodik, amely támogatja a szervezet előnyben részesített hitelesítési mechanizmusát, és ha elkészült, a rendszer visszabocsátja a jogkivonatokat a HoloLens számára a bejelentkezés vagy az eszköz beállításának befejezéséhez. A folyamat lépései a következőek:
 
   1. Az OOBE kezdeti eszközbeállítási vagy bejelentkezési folyamatán végigmenő felhasználó egy "Bejelentkezés másik eszközről" hivatkozásra kattint, és rákoppint. Ez távoli bejelentkezési munkamenetet kezdeményez.
   1. A felhasználó ekkor megjelenik egy lekérdezési oldal, amely egy rövid URI-t () tartalmaz, amely az Azure AD Secure Token Service (STS) eszközhitelesítési [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin) végpontjára mutat. A felhasználó számára egy egyszeres kód is jelennek meg, amely biztonságosan jön létre a felhőben, és maximális élettartama 15 perc. A kód generálása mellett az Azure AD egy titkosított munkamenetet is létrehoz az előző lépésben a távoli bejelentkezési kérés kezdeményezésekor, és együtt az URI és a kód használatával hagyja jóvá a távoli bejelentkezési kérést.
   1. A felhasználó ezután egy másik eszközről az URI-hoz lép, és a 2. eszközén HoloLens kódot.
   1. Miután a felhasználó beírja a kódot, az Azure AD STS megjelenít egy oldalt, amely a felhasználó HoloLens 2-es eszközét jelzi, amely elindította a távoli bejelentkezési kérést, és a kód generációját kérte. A rendszer ekkor megerősítést kér a felhasználótól az adathalász támadások megelőzése érdekében.
   1. Ha a felhasználó úgy dönt, hogy továbbra is bejelentkezik a megjelenített "alkalmazásba", az Azure AD STS kérni fogja a felhasználó hitelesítő adatait. Sikeres hitelesítés esetén az Azure AD STS "jóváhagyottként" frissíti a gyorsítótárazott távoli munkamenetet egy engedélyezési kóddal együtt.
-  1. Végül a felhasználó HoloLens 2-es eszközének lekérdezési oldala egy "Hitelesített" választ kap az Azure AD-től, és folytatja a felhasználói kód és a hozzá tartozó tárolt engedélyezési kód érvényesítését, valamint OAuth-jogkivonatokat generál az eszköz beállításának befejezéséhez. A létrehozott hitelesítési jogkivonat 1 óráig érvényes, a frissítési jogkivonat élettartama pedig 90 nap.
+  1. Végül a felhasználó HoloLens 2-es eszközének lekérdezési oldala "Hitelesített" választ kap az Azure AD-től, és folytatja a felhasználói kód és a hozzá tartozó tárolt engedélyezési kód érvényesítését, valamint OAuth-jogkivonatokat generál az eszköz beállításának befejezéséhez. A létrehozott hitelesítési jogkivonat 1 óráig érvényes, a frissítési jogkivonat élettartama pedig 90 nap.
 
-Az ebben a folyamatban használt kód-generáló és titkosítási algoritmusok egyaránt FIPS-kompatibilisek. HoloLens 2 eszköz használja a TPM-et az eszközkulcsok védelmére és a felhasználó hitelesítése után hardveres védelemkel védett kulcsokkal létrehozott jogkivonatok titkosítására. A 2. HoloLens jogkivonatok biztonságával kapcsolatos további információkért lásd: Mi az elsődleges frissítési [jogkivonat (PRT).](/azure/active-directory/devices/concept-primary-refresh-token)
+Az ebben a folyamatban használt kód-generáló és titkosítási algoritmusok egyaránt FIPS-kompatibilisek. HoloLens 2 eszköz használja a TPM-et az eszközkulcsok védelmére és a felhasználó hitelesítése után hardveres védelemkel védett kulcsokkal létrehozott jogkivonatok titkosítására. A 2. HoloLens jogkivonatok biztonságával kapcsolatos további információkért lásd: Mi az az elsődleges frissítési [jogkivonat (PRT).](/azure/active-directory/devices/concept-primary-refresh-token)
 
 ## <a name="device-sign-in-with-windows-hello"></a>Eszközbe való bejelentkezés Windows Hello
 
-[Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification) közvetlenül az operációs rendszerbe épített jelszómentes beállításokat kínál, amelyek lehetővé teszi a felhasználók számára, hogy írisz vagy PIN-kód használatával jelentkezzenek be az eszközre. A PIN-kód mindig elérhető hitelesítő adatként, és az eszköz beállításához szükséges, míg az Írisz opcionális, és kihagyható. A felhasználók a személyes Microsoft-fiók munkahelyi HoloLens munkahelyi Azure Active Directory jelszó beírása nélkül jelentkeznek be [az eszközre.  ](/azure/active-directory/authentication/concept-authentication-passwordless) Az ilyen lehetőségek gyors és biztonságos hozzáférést nyújtanak a felhasználóknak a teljes Windows, alkalmazásokhoz, adatokhoz, webhelyekhez és szolgáltatásokhoz. A Microsoft jelszó nélküli felhasználói élményre vonatkozó stratégiája itt van részletezve.
+[Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification) az operációs rendszerbe beépített jelszómentes beállításokat kínál, amelyek lehetővé teszi a felhasználók számára, hogy írisz vagy PIN-kód használatával jelentkezzenek be az eszközre. A PIN-kód mindig elérhető hitelesítő adatként, és az eszköz beállításához szükséges, míg az Írisz opcionális, és kihagyható. A felhasználók a személyes Microsoft-fiók munkahelyi HoloLens munkahelyi Azure Active Directory jelszó beírása nélkül jelentkeznek be [az eszközökre.  ](/azure/active-directory/authentication/concept-authentication-passwordless) Az ilyen lehetőségek gyors és biztonságos hozzáférést nyújtanak a felhasználóknak a teljes Windows, alkalmazásokhoz, adatokhoz, webhelyekhez és szolgáltatásokhoz. A Microsoft jelszó nélküli felhasználói élményre vonatkozó stratégiája itt van részletezve.
 
 A Windows Hello létrehozásakor megbízható kapcsolatot hoz létre egy identitásszolgáltatóval, és létrehoz egy aszimmetrikus kulcspárt a hitelesítéshez. A Windows Hello kézmozdulat (például írisz vagy PIN-kód platformmegbízhatósági modul) az eszköz TPM-lapkájában található titkos kulcs visszafejtését teszi lehetővé. Ezzel a titkos kulccsal aláírhatja a hitelesítő kiszolgálóra küldött kéréseket, és sikeres hitelesítés esetén a felhasználó hozzáférést kap a levelezéséhez, képéhez és egyéb fiókbeállításaihoz.
 
@@ -64,7 +64,7 @@ Az írisz hitelesítése a PIN-kódra esik vissza. Ahhoz, hogy új PIN-kódot (e
 
 Az egyszeri bejelentkezés (SSO) lehetővé teszi a jelszóval nem védett felhasználók bejelentkezését az eszközre a felhasználó személyes fiókjával, illetve munkahelyi vagy iskolai fiókjával. A felhasználó számára automatikusan engedélyezett az SSO az összes integrált alkalmazásban és szolgáltatásban a Webfiókkezelő [API-kon keresztül.](/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true)
 
-Miután egy alkalmazáson keresztül hozzáadott egy identitást, a felhasználói jóváhagyással elérhetővé válik az összes alkalmazás és szolgáltatás számára a rendszerszintű integráció használatával. Ez jelentősen csökkenti az alkalmazásbe való bejelentkezésre nehezedő terheket, és zökkenőmentes identitásélményt biztosít a felhasználóknak.
+Miután egy alkalmazáson keresztül hozzáadta az identitást, a felhasználói jóváhagyással elérhetővé válik a rendszerszintű integrációt használó összes alkalmazás és szolgáltatás számára. Ez jelentősen csökkenti az alkalmazásbe való bejelentkezésre nehezedő terheket, és zökkenőmentes identitásélményt biztosít a felhasználóknak.
 
 Az API-k megvalósításával kapcsolatos Webfiókkezelő a [Implementing Webfiókkezelő APIs (Api-k Webfiókkezelő) oldalon található.](/windows/uwp/security/web-account-manager)
 
@@ -72,7 +72,7 @@ Az API-k megvalósításával kapcsolatos Webfiókkezelő a [Implementing Webfi�
   
 A speciális hitelesítési követelményekkel rendelkezik alkalmazáscsomagok esetében a Webfiókkezelő (WAM) keretrendszere az egyéni identitásszolgáltatók számára is elérhető. A felhasználók az Microsoft Store-ból univerzális Windows Platform- (UWP-) alkalmazásként csomagolt egyéni identitásszolgáltatót tölthetnek le, így engedélyezhetik az SSO-t az identitásszolgáltatóval integrált más alkalmazásokban.
 
-További információ az egyéni WAM-identitásszolgáltatók megvalósításáról: [Egyéni WAM identitásszolgáltató API-referencia.](/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true)
+További információ az egyéni WAM-identitásszolgáltatók megvalósításáról: [Egyéni WAM-identitásszolgáltató API-referencia.](/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true)
 
 ## <a name="windows-hello-and-fido2-sign-in-with-webauthn"></a>Windows Hello ÉS FIDO2 bejelentkezés a WebAuthn segítségével
 
@@ -81,7 +81,7 @@ HoloLens 2. a jelszó nélküli felhasználói hitelesítő adatokat (például 
 > [!Note]
 > A [WebAuthn és](https://www.w3.org/TR/webauthn/) a FIDO2 [CTAP2](https://fidoalliance.org/specs/fido-v2.0-ps-20190130/fido-client-to-authenticator-protocol-v2.0-ps-20190130.html) specifikációk a szolgáltatásokban vannak megvalósítva. A WebAuthn és a FIDO2 által megadott aláírt metaadatok olyan információkat szolgáltatnak, mint például hogy a felhasználó jelen volt-e, és a hitelesítést a helyi kézmozdulattal ellenőrzi.
 
-Ahogy a Windows Hello, amikor a felhasználó fiDO2 hitelesítő adatokat hoz létre és regisztrál, az eszköz (HoloLens 2- vagy FIDO2-biztonsági kulcs) létrehoz egy titkos és nyilvános kulcsot az eszközön. A titkos kulcs biztonságosan van tárolva az eszközön, és csak akkor használható, ha helyi kézmozdulattal, például biometriával vagy PIN-kódot használ. A titkos kulcs tárolásakor a nyilvános kulcsot a rendszer elküldi Microsoft-fiók felhőbeli rendszernek, és regisztrálja a társított felhasználói fiókkal.
+Ahogy a Windows Hello, amikor a felhasználó fiDO2 hitelesítő adatokat hoz létre és regisztrál, az eszköz (HoloLens 2- vagy FIDO2-biztonsági kulcs) létrehoz egy titkos és nyilvános kulcsot az eszközön. A titkos kulcs biztonságosan van tárolva az eszközön, és csak akkor használható, ha helyi kézmozdulattal, például biometriával vagy PIN-kódot használ. A titkos kulcs tárolása után a rendszer elküldi a nyilvános kulcsot Microsoft-fiók felhőbeli rendszernek, és regisztrálja a társított felhasználói fiókkal.
 
 Miután msa- és Azure AD-fiókkal bejelentkezett, a rendszer egy generált számot vagy adatváltozót küld a HoloLens 2- vagy FIDO2-eszközre. A HoloLens 2-es vagy az eszköz a titkos kulcsot használja az azonosítás aláíráshoz. Az aláírt azonosítást és metaadatokat a rendszer visszaküldi Microsoft-fiók rendszernek, és a nyilvános kulccsal ellenőrzi.
 

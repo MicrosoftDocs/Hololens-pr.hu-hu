@@ -17,12 +17,12 @@ manager: skerewa
 appliesto:
 - HoloLens 2
 keywords: HoloLens 2, kereskedelmi, funkciók, mdm, mobileszköz-kezelés, kioszkmód, alkalmazások, identitás, Bitlocker, iris, Windows Hello, Azure-alapú, Autopilot, vegyes valóság, WDAC
-ms.openlocfilehash: 5a68c4199cba20bba9d3aaa5183819975ea7b3f4
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 88a75224909fd64e387cfb5677056e2ae5d62e4b3518aa758f22ec66a86a8355
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635813"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665342"
 ---
 # <a name="hololens-2-capabilities-and-solutions"></a>HoloLens 2 képesség és megoldás
 
@@ -45,8 +45,8 @@ Mitől olyan hatékony a HoloLens 2?
 | Ergonomikus | HoloLens 2. része kis (3,28 kg), amely a kiterjesztett használatot támogató betárcsázásos illeszkedő rendszert tartalmaz. |
 | Large FoV | Bontsa ki a holografikus vásznat nagy felbontású, nagy méretű nézetben. |
 | Távkioldós | Szabadon mozoghat vezetékek és külső csomagok nélkül, hogy továbblépni tudjon a feladatra. |
-| Azure-alapú | Streamelhet kiváló minőségű 3D-tartalmakat, amelyek egy olyan helyre és/vagy objektumra horgonyozhatóak, amely megmarad a vegyes valóságú Azure-szolgáltatásokkal használó felhasználók között.
-| Vegyes valóság rögzítése | Fényképként vagy videóként dokumentálja a felhasználói élményt, hogy valós időben megosztja másokkal. |
+| Azure-alapú | Streamelhet kiváló minőségű 3D-tartalmakat, amelyek egy olyan helyhez és/vagy objektumhoz rögzítettek, amely megmarad a vegyes valóságú Azure-szolgáltatásokat használó felhasználók között.
+| Vegyes valóság rögzítése | Fényképként vagy videóként dokumentálja a felhasználói élményt, és valós időben oszthatja meg másokkal. |
 | Vállalati Windows Hello | Az írisz alapú biometrikus hitelesítéssel gyorsan és biztonságosan beléphet a munka folyamatába. |
 | Windows Autopilot | A 2. HoloLens szolgáltatásokat úgy kell beállítani és előre konfigurálni, hogy azonnal használatra készek az elosztott munkawebhelyek között. |
 | Operációs rendszer frissítései | Tartsa biztonságban a havi karbantartási frissítéseket, és használja ki az új hatékonysági és kezelhetőségi képességeket a két éves kiadásokban. |
@@ -69,7 +69,7 @@ Hololens-eszközök kezelése a szervezetben | [**Mobileszköz-kezelés**](holol
 | A környezet védelme az alkalmazások zárolásának segítségével | [**WDAC**](windows-defender-application-control-wdac.md) | Windows Defender Az alkalmazásvezérlés (WDAC) megakadályozza, hogy az eszköz felhasználója elindítsa az alkalmazásokat és folyamatokat.
 | Eszközbiztonság kezelése alkalmazásokra és folyamatokra vonatkozó szabályokkal | [**Szabályzatok (CSP-k)**](hololens-csp-policy-overview.md) | A rendszergazdák a 2. HoloLens támogatott házirend-CSP-k meglévő listájával határozhatják meg és valósítják meg a szabályzatbeállításokat. |  
 | Az eszközök internetkapcsolatának kezelése | [**Hálózat és kapcsolatok**](hololens-certificates-network.md) | Tanúsítványalapú hitelesítéssel férhet hozzá Wi-Fi-hez, VPN-hez vagy belső erőforrásokhoz. | 
-| Az eszköz megosztása több felhasználóval | [**Automatikusan testreszabott megjelenítés**](hololens-calibration.md#auto-eye-position-support) | HoloLens 2 kijelző automatikusan az automatikus szempozícióhoz (AEP) igazodik, így nincs szükség manuális beírási folyamat futtatására, amikor az eszköz meg van osztva a [felhasználók között.](hololens-multiple-users.md) |
+| Az eszköz megosztása több felhasználóval | [**Automatikusan testreszabott megjelenítés**](hololens-calibration.md#auto-eye-position-support) | HoloLens 2 kijelző automatikusan az automatikus szempozícióhoz (AEP) igazodik, így nincs szükség manuális beírási folyamat futtatására, ha az eszköz meg van osztva a [felhasználók között.](hololens-multiple-users.md) |
 
 Ismerje meg [a fenti megoldások licencelési](hololens-licenses-requirements.md) követelményeit.
 

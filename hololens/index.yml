@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft HoloLens
-summary: Microsoft HoloLens az első teljesen önálló holografikus számítógép, amely a Windows 10. A 2. HoloLens bevezetésével minden HoloLens-eszköz olyan, kereskedelmi használatra kész felügyeleti képességeket biztosít, amelyet a Microsoft felhőalapú és AI-szolgáltatásainak megbízhatósága, biztonsága és méretezhetősége javít.
+summary: Microsoft HoloLens az első teljesen önálló holografikus számítógép, amely a Windows 10. A 2. HoloLens bevezetésével minden HoloLens-eszköz olyan, kereskedelmi használatra kész felügyeleti képességeket biztosít, amelyek a Microsoft felhőalapú és AI-szolgáltatásainak megbízhatóságával, biztonságával és méretezhetőségével egészulnak ki.
 metadata:
   title: Microsoft HoloLens
   description: A Microsoft HoloLens.
@@ -11,12 +11,12 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: c0189c7a75ad27d6d301721e78de6391f6ac76f7
-  ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+  ms.openlocfilehash: fb887c40771d371d90580c0bb29c08d9686dfefab5515ba1fdc768fbc01551de
+  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
   ms.translationtype: MT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 07/24/2021
-  ms.locfileid: "114659573"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "115665318"
 landingContent:
 - title: A 2. HoloLens meg
   linkLists:
@@ -54,19 +54,19 @@ landingContent:
     links:
     - text: Gyakori üzembehelyezési forgatókönyvek
       url: common-scenarios.md
-    - text: 2. HoloLens megtervezése kereskedelmi környezetben
+    - text: A HoloLens 2. telepítés megtervezése kereskedelmi környezetben
       url: hololens-core-components.md
     - text: Autopilot CSS-regisztráció
       url: hololens2-autopilot-registration-support.md
   - linkListType: deploy
     links:
-    - text: Üzembe helyezési útmutató – 2. HoloLens felhőhöz csatlakoztatott, nagy léptékű üzembe helyezés a Remote Assist segítségével
+    - text: Telepítési útmutató – Felhőhöz csatlakoztatott HoloLens 2. példány nagy léptékű üzembe helyezése a Remote Assist segítségével
       url: hololens2-cloud-connected-overview.md
-    - text: Telepítési útmutató – Külső ügyfelek (felhőhöz csatlakoztatott)
+    - text: Telepítési útmutató – Külső ügyfelek (felhőhöz csatlakoztatva)
       url: hololens2-deployment-guide.md
-    - text: Telepítési útmutató – Vállalati csatlakoztatott HoloLens 2 üzembe helyezés Dynamics 365-útmutatók segítségével
+    - text: Telepítési útmutató – Vállalati csatlakoztatott HoloLens 2 üzembe helyezése Dynamics 365-útmutatók segítségével
       url: hololens2-corp-connected-overview.md
-    - text: Üzembe helyezési útmutató – Offline biztonságos
+    - text: Üzembe helyezési útmutató – Offline biztonság
       url: hololens-common-scenarios-offline-secure.md
 - title: Hibaelhárítás
   linkLists:
@@ -90,7 +90,7 @@ landingContent:
     links:
     - text: HoloLens 2. kiadási megjegyzések
       url: hololens-release-notes.md
-    - text: Insider preview (Belső előzetes verzió)
+    - text: Insider előzetes verzió
       url: hololens-insider.md
   - linkListType: reference
     links:
@@ -100,7 +100,7 @@ landingContent:
       url: hololens2-support.md
     - text: Visszajelzés küldése
       url: hololens-feedback.md
-- title: Fejlesztés a 2 HoloLens val
+- title: Fejlesztés a 2. HoloLens együtt
   linkLists:
   - linkListType: how-to-guide
     links:

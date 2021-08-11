@@ -16,12 +16,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 1 (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b8bda049f0ef4610dcf0ca6fe81d89dd5a316e3e
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d1eef6bdf463aa400504af7b35a0fd2b8e2b44499d6ff7b93e70a2dd5952ef88
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640041"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662866"
 ---
 # <a name="map-physical-spaces-with-hololens"></a>Fizikai terek leképezés HoloLens
 
@@ -46,7 +46,7 @@ A HoloLens biztonságos, veszélyforrások nélkül használhatók. [További in
 
 ## <a name="mapping-your-space"></a>A tér leképezése
 
-Most már készen áll a tartalék leképezésére.  Amikor HoloLens elkezdi leképezni a környezetet, egy hálós ábra fog elterjedni a térben.  A vegyes valóságú otthonban a leképezett felület kiválasztásával aktiválhatja a térképet.
+Most már készen áll a tartalék leképezésére.  Amikor HoloLens elkezdi leképezni a környezetet, egy, a térben elterjedő hálógrafikát fog látni.  A vegyes valóságú otthonban a leképezett felület kiválasztásával aktiválhatja a térképet.
 
 Az alábbi irányelvek alapján nagyszerű térbeli térképeket lehet kihozni.
 
@@ -62,13 +62,13 @@ A zökkenőmentes mozgás a HoloLens is segít a térkép hatékonyabban.
 
 ### <a name="look-in-all-directions"></a>Minden irányban
 
-A tér leképezésén való HoloLens több adatot biztosít a pontok egymáshoz viszonyított viszonyában.  
+A tér leképezésében való HoloLens több adatot biztosít a pontok egymáshoz viszonyított viszonyában.  
 
 Ha például nem keres, előfordulhat, hogy a HoloLens tudja, hol van a felső határ egy helyiségben.  
 
-Ne felejtsen el lenézni a padlóra a tér leképezésén.
+Ne felejtsen el lenézni a padlóra a tér leképezéskor.
 
-### <a name="cover-key-areas-multiple-times"></a>A legfontosabb területek többszöri lefedve
+### <a name="cover-key-areas-multiple-times"></a>A főbb területek többszöri lefedve
 
 Ha többször is végigköltöz egy területen, az segít az első bemutatóban esetleg kihagyott funkciók behúzásában. Egy ideális térkép felépítéséhez próbáljon meg kétszer vagy háromszor bejárni egy területet.
 
@@ -99,12 +99,12 @@ HoloLens a felhasználók akkor sem férhetnek hozzá közvetlenül a térképad
 
 Két lehetőség van a térképadatok törlésére a **Gépház > System > Hologramok:**
 
-- A közeli hologramok törléséhez válassza a **Közeli hologramok eltávolítása lehetőséget.** Ez a parancs törli a térképadatokat és a rögzített hologramokat az aktuális térhez. Ha továbbra is ugyanabban a térben használja az eszközt, az létrehoz és tárol egy teljesen új térkép szakaszt a törölt adatok lecseréléséhez.
+- A közeli hologramok törléséhez válassza **a Közeli hologramok eltávolítása lehetőséget.** Ez a parancs törli a térképadatokat és a rögzített hologramokat az aktuális térhez. Ha továbbra is ugyanabban a térben használja az eszközt, az létrehoz és tárol egy teljesen új térképszakaszt a törölt adatok lecseréléséhez.
 
    > [!NOTE]
    > A "Közeli" hologramok olyan hologramok, amelyek az aktuális tér azonos térképszakaszában vannak horgonyozva.
 
-   Ezzel a beállítással például úgy ürítheti ki a munkához kapcsolódó térképadatokat, hogy az ne legyen hatással az otthoni térképadatokra.
+   Ezzel a beállítással például a munkával kapcsolatos térképadatokat törölheti anélkül, hogy ez hatással lenne az otthoni térképadatokra.
 
 - Az összes hologram törléséhez válassza az **Összes hologram eltávolítása lehetőséget.** Ez a parancs törli az eszközön tárolt összes térképadatot, valamint az összes rögzített hologramot. Explicit módon el kell látnia minden hologramot. A korábban elhelyezett hologramokat nem fogja tudni újra kiveszni.
 

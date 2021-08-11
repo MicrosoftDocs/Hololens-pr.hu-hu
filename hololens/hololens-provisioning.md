@@ -1,5 +1,5 @@
 ---
-title: Az HoloLens konfigurálása kiépítési csomaggal (HoloLens)
+title: A HoloLens konfigurálása kiépítési csomaggal (HoloLens)
 description: Windows segítségével a rendszergazdák rendszerkép nélkül konfigurálhatják a végfelhasználói eszközöket.
 ms.prod: hololens
 ms.sitesec: library
@@ -16,18 +16,18 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7f712c571df1170badf3bfc832e43881278eec90
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d9a0901a916ec33c076eeae33b680406a45f7feefe82442da1f346e78bc9b383
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640134"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663711"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>Az HoloLens konfigurálása kiépítési csomag használatával
 
-[Windows segítségével a](/windows/configuration/provisioning-packages/provisioning-packages) rendszergazdák rendszerkép nélkül konfigurálhatják a végfelhasználói eszközöket. Windows A Configuration Designer a rendszerképek és a futásidejű beállítások konfigurálásához használható eszköz, amely aztán beépítetten kiépítési csomagokba kerül.
+[Windows a kiépítés](/windows/configuration/provisioning-packages/provisioning-packages) megkönnyíti a rendszergazdák számára a végfelhasználói eszközök rendszerkép-alkotás nélküli konfigurálését. Windows A Configuration Designer egy olyan eszköz, amellyel rendszerképeket és futásidejű beállításokat konfigurálhat, amelyeket aztán beépít a kiépítési csomagokba.
 
-A kiépítési HoloLens többek között a következő konfigurációs beállításokat alkalmazhatja:
+A kiépítési HoloLens többek között a következő konfigurációs beállítások alkalmazhatók:
 
 - Frissítés [Windows Holographic for Business](hololens1-upgrade-enterprise.md)
 - Helyi fiók beállítása
@@ -43,10 +43,10 @@ A HoloLens varázsló segítségével a következő beállításokat konfigurál
 - Frissítés az Enterprise kiadásra
 
     > [!NOTE]
-    > Ez csak az 1. HoloLens eszközökhöz használható. Gépház kiépítési csomagban található licencek csak akkor lesznek alkalmazva, ha a kiépítési csomag kiadásfrissítési licencet tartalmaz az Windows Holographic for Business-hoz, vagy ha az eszköz már frissítve lett a [Windows Holographic for Business.](hololens1-upgrade-enterprise.md)
+    > Ez csak az 1. HoloLens eszközökhöz használható. Gépház kiépítési csomagban található licencek csak akkor lesznek alkalmazva, ha a kiépítési csomag kiadásfrissítési licencet tartalmaz a Windows Holographic for Business-hoz, vagy ha az eszközt már frissítették [Windows Holographic for Business.](hololens1-upgrade-enterprise.md)
 
-- Az első HoloLens konfigurálása (OOBE)
-- Az Wi-Fi konfigurálása
+- A HoloLens (OOBE) konfigurálása
+- A hálózati Wi-Fi konfigurálása
 - Az eszköz regisztrálása Azure Active Directory vagy helyi fiók létrehozása
 - Tanúsítványok hozzáadása
 - Fejlesztői mód engedélyezése
@@ -60,69 +60,69 @@ A kiépítési csomagok többek között felügyeleti utasításokat és szabál
 > [!TIP]
 > Az asztali varázslóval hozzon létre egy csomagot a közös beállításokkal, majd váltson át a speciális szerkesztőre más beállítások, alkalmazások, szabályzatok stb. hozzáadásához.
 
-## <a name="steps-for-creating-provisioning-packages"></a>Kiépítési csomagok létrehozásának lépései
+## <a name="steps-for-creating-provisioning-packages"></a>A kiépítési csomagok létrehozásának lépései
 
-1. **1. lehetőség:** [A Microsoft Store.](https://www.microsoft.com/store/apps/9nblggh4tx22) Ez 2 HoloLens képességre vonatkozik.
-2. **2. lehetőség:** A Windows [Assessment and Deployment Kit (ADK) for Windows 10.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) Ha az Windows ADK-ból telepíti az Windows Configuration Designert, válassza a **Konfigurációtervező** lehetőséget a Válassza ki a telepíteni kívánt **szolgáltatásokat** párbeszédpanelen. Ez a lehetőség nem tartalmazza HoloLens 2 képességet.
+1. **1. lehetőség:** [A Microsoft Store.](https://www.microsoft.com/store/apps/9nblggh4tx22) Ez a HoloLens 2 képességet is magában foglalja.
+2. **2. lehetőség:** A Windows [Assessment and Deployment Kit (ADK) for Windows 10.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) Ha az Windows ADK-ból telepíti az Windows Configuration Designert, válassza a **Konfigurációtervező** lehetőséget a **Telepíteni** kívánt szolgáltatások kiválasztása párbeszédpanelen. Ez a lehetőség nem tartalmazza a HoloLens 2 képességet.
 
 > [!NOTE]
-> Ha tudja, hogy offline számítógépet fog használni, és hozzá kell férni az Windows Configuration Designerhez, kövesse az Advanced Recovery Companion [offline app install(hololens-recovery.md#downloading-arc-without-using-the-app-store) útmutatóját. A Windows a Configuration Designerben. 
+> Ha tudja, hogy offline számítógépet fog használni, és hozzá kell férni az Windows Configuration Designerhez, kövesse az Advanced Recovery Companion (Alkalmazás telepítése (hololens-recovery.md#downloading-arc-without-using-the-app-store) útmutatását. A Windows a Configuration Designerben. 
 
 ### <a name="2-create-the-provisioning-package"></a>2. A kiépítési csomag létrehozása
 
 A Windows Configuration Designer eszközzel hozzon létre egy kiépítési csomagot.
 
-1. Nyissa Windows Configuration Designert (alapértelmezés szerint: %windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).
+1. Nyissa Windows Configuration Designert (alapértelmezés szerint% windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).
 
-2. Válassza **a Kiépítés HoloLens lehetőséget.**
+2. Válassza **a HoloLens kiépítése lehetőséget.**
 
    ![Az ICD indítási beállításai](images/icd-create-options-1703.png)
 
 3. Nevezze el a projektet, és válassza a **Befejezés lehetőséget.**
 
-4. Olvassa el az Első lépések **oldalon található utasításokat,** és válassza a Tovább **lehetőséget.** Az asztali kiépítés oldalai a következő lépéseken végigmennek.
+4. Olvassa el az első lépések **oldalon található utasításokat,** és válassza a Tovább **lehetőséget.** Az asztali kiépítés oldalai a következő lépéseken végigmennek.
   
 > [!IMPORTANT]
-> Kiépítési csomag létrehozása során bizalmas adatokat is tartalmazhat a projektfájlokban és a kiépítési csomag (.ppkg) fájljában. Bár lehetősége van a .ppkg fájl titkosítására, a projektfájlok nincsenek titkosítva. A projektfájlokat biztonságos helyen tárolja, és törölje a projektfájlokat, amikor már nincs rájuk szükség.
+> Kiépítési csomag létrehozása során bizalmas adatokat is tartalmazhat a projektfájlokban és a kiépítési csomag (.ppkg) fájljában. Bár lehetősége van a .ppkg fájl titkosítására, a projektfájlok nincsenek titkosítva. A projektfájlokat biztonságos helyen tárolja, és törölje a projektfájlokat, ha már nincs rájuk szükség.
 
 ### <a name="configure-settings"></a>Beállítások konfigurálása
 
 <table>
-<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>Keresse meg és válassza ki a vállalati licencfájlt a HoloLens frissítéshez.</br></br>Az Igen vagy a <strong>Nem</strong> kapcsolóval <strong>elrejtheti</strong> az első élmény részeit.</br></br>Ha anélkül szeretne beállítani egy eszközt, hogy csatlakoznia kellene egy <strong></strong> Wi-Fi hálózathoz, állítsa a Beállítás kihagyása Wi-Fi beállítást Be <strong>beállításra.</strong></br></br>Válassza ki azt a régiót és időzónát, amelyben az eszközt használni fogja. </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>Ebben a szakaszban megadhatja annak a vezeték nélküli hálózatnak Wi-Fi adatait, amelyekhez az eszköznek automatikusan csatlakoznia kell. Ehhez válassza a <strong>Be</strong>lehetőséget, adja meg az SSID-t, a hálózat típusát<strong>(Open</strong> vagy <strong>WPA2-Personal</strong>), és (ha <strong>WPA2-Personal</strong>) a vezeték nélküli hálózat jelszavát.</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="three"></a><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>Regisztrálhatja az eszközt a Azure Active Directory, vagy létrehozhat egy helyi fiókot az eszközön</br></br>Mielőtt egy Windows Configuration Designer varázslóval konfigurálja az Azure AD-regisztrációt, állítsa be az <a href="/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup)">Azure AD-csatlakozást a szervezetben.</a> Az <strong>Azure</strong> AD-bérlőben a felhasználónkénti eszközök maximális száma határozza meg, hogy a varázslóban lekért tömeges jogkivonat hányszor használható. Ha regisztrálnia kell az eszközt az Azure AD-ban, válassza ki ezt a lehetőséget, és adjon meg egy rövid nevet a varázslóval lekért tömeges jogkivonathoz. Állítson be lejárati dátumot a jogkivonathoz (a jogkivonat lekért dátumtól számított legfeljebb 30 nap). Válassza <strong>a Get bulk token (Csoportos jogkivonat beszerzése) lehetőséget.</strong> A <strong>Let&#39;get you signed in (Bejelentkezett</strong> fiók létrehozása) ablakban adjon meg egy olyan fiókot, amely engedéllyel rendelkezik az eszköz Azure AD-hez való csatlakozásához, majd adja meg a jelszót. Válassza <strong>az Elfogadás lehetőséget,</strong> Windows a Configuration Designernek a szükséges engedélyeket. </br></br>Helyi fiók létrehozásához válassza ki ezt a lehetőséget, és adjon meg egy felhasználónevet és egy jelszót. </br></br><strong>Fontos:</strong> <br />(Csak Windows 10 1607-es verzió esetén) Ha helyi fiókot hoz létre a kiépítési csomagban, 42 naponta módosítania kell a jelszót <strong>Gépház</strong> alkalmazással. Ha a jelszó nem változott ebben az időszakban, előfordulhat, hogy a fiók zárolva van, és nem tud bejelentkezni.  </td><td><img src="images/account-management-details.png" alt="join  Azure AD or create a local  account"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="four"></a><img src="images/four.png" alt="step four"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>Az eszköz tanúsítvánnyal való ellátáshoz kattintson a <strong>Tanúsítvány hozzáadása elemre.</strong> Adja meg a tanúsítvány nevét, majd keresse meg és válassza ki a használni kívánt tanúsítványt.</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
-<tr><td style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br>Az Igen <strong>vagy</strong> a <strong>Nem</strong> kapcsolóval engedélyezheti a fejlesztői módot a HoloLens. <a href="/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">További információ a Fejlesztői módról.</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finished"/></br></br>Ne állítson be jelszót a kiépítési csomag védelméhez. Ha a kiépítési csomagot jelszó védi, a kiépítési HoloLens sikertelen lesz.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>Keresse meg és válassza ki a vállalati licencfájlt a HoloLens frissítéshez.</br></br>Az Igen vagy a <strong>Nem</strong> kapcsolóval <strong>elrejtheti</strong> az első élmény részeit.</br></br>Ha anélkül szeretne beállítani egy eszközt, hogy csatlakoznia kellene egy Wi-Fi-hálózathoz, állítsa a Beállítás kihagyása <strong>Wi-Fi</strong> beállítást <strong>Be beállításra.</strong></br></br>Válasszon ki egy régiót és időzónát, amelyben az eszközt használni fogja. </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>Ebben a szakaszban megadhatja annak a vezeték nélküli hálózatnak Wi-Fi adatait, amelyekhez az eszköznek automatikusan csatlakoznia kell. Ehhez válassza a <strong>Be</strong>lehetőséget, adja meg az SSID-t, a hálózat típusát<strong>(Megnyitás</strong> vagy <strong>WPA2-Personal</strong>), valamint <strong>(WPA2-Personal</strong>esetén) a vezeték nélküli hálózat jelszavát.</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="three"></a><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>Regisztrálhatja az eszközt a Azure Active Directory, vagy létrehozhat egy helyi fiókot az eszközön</br></br>Mielőtt egy Windows Configuration Designer varázslóval konfigurálja az Azure AD-regisztrációt, állítsa be az <a href="/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup)">Azure AD-csatlakozást a szervezetben.</a> Az <strong>Azure</strong> AD-bérlőben a felhasználónkénti eszközök maximális száma határozza meg, hogy a varázslóban lekért tömeges jogkivonat hányszor használható. Ha regisztrálnia kell az eszközt az Azure AD-ban, válassza ki ezt a lehetőséget, és adjon meg egy rövid nevet a varázslóval lekért tömeges jogkivonathoz. Állítson be lejárati dátumot a jogkivonathoz (a jogkivonat lekért dátumtól számított legfeljebb 30 nap). Válassza <strong>a Get bulk token (Csoportos jogkivonat beszerzése) lehetőséget.</strong> A <strong>Let&#39;get you signed in (Be</strong> kell szereznie a bejelentkezett eszközt) ablakban adjon meg egy olyan fiókot, amely engedéllyel rendelkezik az eszköz Azure AD-hez való csatlakozásához, majd adja meg a jelszót. Válassza <strong>az Elfogadás lehetőséget,</strong> Windows a Configuration Designernek a szükséges engedélyeket. </br></br>Helyi fiók létrehozásához válassza ki ezt a lehetőséget, és adjon meg egy felhasználónevet és egy jelszót. </br></br><strong>Fontos:</strong> <br />(Csak Windows 10 1607-es verzió esetén) Ha helyi fiókot hoz létre a kiépítési csomagban, 42 naponta módosítania kell a jelszót <strong>Gépház</strong> alkalmazással. Ha a jelszó nem változott ebben az időszakban, előfordulhat, hogy a fiók zárolva van, és nem tud bejelentkezni.  </td><td><img src="images/account-management-details.png" alt="join  Azure AD or create a local  account"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="four"></a><img src="images/four.png" alt="step four"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>Ha tanúsítványt szeretne kiépítni az eszközön, kattintson <strong>a Tanúsítvány hozzáadása elemre.</strong> Adja meg a tanúsítvány nevét, majd keresse meg és válassza ki a használni kívánt tanúsítványt.</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
+<tr><td style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br>Ha engedélyezni <strong>szeretné</strong> a fejlesztői módot a HoloLens. <strong></strong> <a href="/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">További információ a fejlesztői módról.</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finished"/></br></br>Ne állítson be jelszót a kiépítési csomag védelméhez. Ha a kiépítési csomagot jelszó védi, a HoloLens kiépítése sikertelen lesz.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
 </table>
 
-Ha végzett, válassza a **Létrehozás lehetőséget.** Ez csak néhány másodpercet vesz igénybe. A csomag létrehozása után a csomag tárolóhelye hivatkozásként jelenik meg az oldal alján.
+Ha végzett, válassza a Létrehozás **lehetőséget.** Ez csak néhány másodpercet vesz igénybe. A csomag létrehozása után a csomag tárolóhelye hivatkozásként jelenik meg az oldal alján.
 
 ### <a name="3-create-a-provisioning-package-for-hololens-by-using-advanced-provisioning"></a>3. Kiépítési csomag létrehozása a HoloLens speciális kiépítéssel
 
 > [!NOTE]
-> A Speciális kiépítésben  létrehozott kiépítési csomagnak nem kell kiadásfrissítési licencet tartalmaznia az Windows Holographic for Business-hoz, hogy sikeresen alkalmazható HoloLens (1. generációs verzió). [További információ a Windows Holographic for Business (1. HoloLens gen) ről.](hololens1-upgrade-enterprise.md)
+> A Speciális kiépítésben  létrehozott kiépítési csomagnak nem kell kiadásfrissítési licencet tartalmaznia az Windows Holographic for Business-hoz, hogy sikeresen alkalmazható HoloLens (1. generációs verzió). [További információ a Windows Holographic for Business (1. generációs) HoloLens(1. generációs) ről.](hololens1-upgrade-enterprise.md)
 
-1. A Windows Configuration Designer kezdőlapján válassza a **Speciális kiépítés lehetőséget.**
+1. Az Windows Configuration Designer kezdőlapján válassza a **Speciális kiépítés lehetőséget.**
 2. Az **Enter project details (Projekt részleteinek megadása)** ablakban adja meg a projekt nevét és helyét. Ha szükséges, adjon meg egy rövid leírást a projekt leírására.
 
 3. Kattintson a **Tovább** gombra.
 
-4. A Megtekinteni **és konfigurálni kívánt** beállítások kiválasztása ablakban válassza a **Windows 10 Holographic,** majd a Tovább **lehetőséget.**
+4. A Megtekinteni **és konfigurálni** kívánt beállítások kiválasztása ablakban válassza a **Windows 10 Holographic,** majd a Tovább **lehetőséget.**
 
 5. Válassza a **Befejezés** gombot.
 
-6. Bontsa ki **a Futásidejű beállítások** bontsa ki, és szabja testre a csomagot a cikkben [később ismertetett beállítások bármelyikének használatával.](#what-you-can-configure)
+6. **Bontsa ki a Futásidejű beállítások** bontsa ki a gombra, és szabja testre a csomagot a cikkben később ismertetett beállítások [bármelyikének használatával.](#what-you-can-configure)
 
     > [!IMPORTANT]
-    > (Csak Windows 10 1607-es verzió esetén) Ha helyi fiókot hoz létre a kiépítési csomagban, 42 naponta módosítania kell a jelszót **Gépház** alkalmazással. Ha a jelszó nem változott ebben az időszakban, előfordulhat, hogy a fiók zárolva van, és nem tud bejelentkezni. Ha a felhasználói fiók zárolva van, teljes [eszköz-helyreállítást kell végrehajtania.](https://developer.microsoft.com/windows/mixed-reality/reset_or_recover_your_hololens#perform_a_full_device_recovery)
+    > (Csak Windows 10 1607-es verzió esetén) Ha helyi fiókot hoz létre a kiépítési csomagban, 42 naponta módosítania kell a jelszót **Gépház** alkalmazással. Ha a jelszó nem változott ebben az időszakban, előfordulhat, hogy a fiók zárolva van, és nem tud bejelentkezni. Ha a felhasználói fiók zárolva van, teljes eszköz-helyreállítást [kell végrehajtania.](https://developer.microsoft.com/windows/mixed-reality/reset_or_recover_your_hololens#perform_a_full_device_recovery)
 
 7. Válassza a **Fájl**  >  **mentése lehetőséget.**
 
 8. Olvassa el a figyelmeztetést, amely szerint a projektfájlok bizalmas adatokat tartalmazhatnak, majd kattintson az **OK gombra.**
 
     > [!IMPORTANT]
-    > Kiépítési csomag létrehozása során bizalmas adatokat is tartalmazhat a projektfájlokban és a kiépítési csomag (.ppkg) fájljában. Bár lehetősége van a .ppkg fájl titkosítására, a projektfájlok nincsenek titkosítva. A projektfájlokat biztonságos helyen tárolja, és törölje a projektfájlokat, amikor már nincs rájuk szükség.
+    > Kiépítési csomag létrehozása során bizalmas adatokat is tartalmazhat a projektfájlokban és a kiépítési csomag (.ppkg) fájljában. Bár lehetősége van a .ppkg fájl titkosítására, a projektfájlok nincsenek titkosítva. A projektfájlokat biztonságos helyen tárolja, és törölje a projektfájlokat, ha már nincs rájuk szükség.
     
 9. Válassza **a**  >  **Kiépítési csomag exportálása lehetőséget.**
 
@@ -140,7 +140,7 @@ Ha végzett, válassza a **Létrehozás lehetőséget.** Ez csak néhány másod
 
 13. Válassza **a Tovább** lehetőséget annak a kimeneti helynek a megadásához, ahová a kiépítési csomagot létre szeretné hozatni. Alapértelmezés szerint a Windows Configuration Designer a projektmappát használja kimeneti helyként.
 
-    A Tallózás gombra  kattintva módosíthatja az alapértelmezett kimeneti helyet.
+    A Tallózás lehetőség  választásával módosíthatja az alapértelmezett kimeneti helyet.
 
 14. Kattintson a **Tovább** gombra.
 
@@ -152,7 +152,7 @@ Ha végzett, válassza a **Létrehozás lehetőséget.** Ez csak néhány másod
 
 ## <a name="apply-a-provisioning-package-to-hololens-during-setup"></a>Kiépítési csomag alkalmazása a HoloLens során
 
-HoloLens a Windows Holographic 2004-es vagy [19041.1103-as](hololens-release-notes.md#windows-holographic-version-2004) vagy újabb verzióján található 2 eszköz USB-meghajtót használhat kiépítési csomag alkalmazásához. Egyszerűen másolja a .ppkg fájlt az USB-meghajtó gyökerében. A kiépítési csomagok csak akkor lesznek alkalmazva, ha az USB-meghajtó gyökerében vannak. A több kiépítési csomag egymás után lesz alkalmazva.
+HoloLens a Windows Holographic 2004-es vagy [19041.1103-as](hololens-release-notes.md#windows-holographic-version-2004) vagy újabb verziójában található 2 eszköz USB-meghajtót használhat kiépítési csomag alkalmazásához. Egyszerűen másolja a .ppkg fájlt az USB-meghajtó gyökerében. A kiépítési csomagok csak akkor lesznek alkalmazva, ha az USB-meghajtó gyökerében vannak. A több kiépítési csomag egymás után lesz alkalmazva.
 
 HoloLens [Holographic 20H2](hololens-release-notes.md#windows-holographic-version-20h2) vagy újabb Windows 2 eszköz újabb funkciókkal rendelkezik, amelyek leegyszerűsítik és leegyszerűsítik ezt a folyamatot, így automatikus. Tekintse át a következő szakaszokat:
 
@@ -186,11 +186,11 @@ HoloLens [Holographic 20H2](hololens-release-notes.md#windows-holographic-versio
 A kiadás előtt a felhasználóknak manuálisan kellett elindítaniuk a kiépítési képernyőt az OOBE során, hogy gombkombinációval végezték el a kiépítést. A felhasználók mostantól kihagyhatja a gombkombinációt egy USB-tároló meghajtón található kiépítési csomag használatával. 
 
 1. Csatlakoztassa az USB-meghajtót a kiépítési csomaghoz az OOBE első kezelhető pillanatában
-1. Amikor az eszköz készen áll a kiépítésre, az automatikusan megnyitja a kiépítési oldalt a parancssorban. 
+1. Amikor az eszköz készen áll a kiépítésre, az automatikusan megnyitja a kiépítési lapot. 
 
-Megjegyzés: Ha egy USB-meghajtó be van csatlakoztatva az eszköz indulása közben, az OOBE számba veszi a meglévő USB-tárolóeszközt, és figyelni fogja, hogy a további meghajtók be vannak-e csatlakoztatva.
+Megjegyzés: Ha egy USB-meghajtó be van csatlakoztatva az eszköz indítása közben, az OOBE számba veszi a meglévő USB-tárolóeszközt, és figyelni fogja, hogy a további meghajtók be vannak-e csatlakoztatva.
 
-Olvassa el a kiépítési csomagok OOBE során való [alkalmazásával kapcsolatos további információért.](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)
+Olvassa el a kiépítési csomagok OOBE során való [alkalmazásával kapcsolatos cikkeket.](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)
 
 ### <a name="auto-confirm-provisioning-packages-in-oobe"></a>Kiépítési csomagok automatikus megerősítése az OOBE-ban
 - A kevesebb felhasználói beavatkozást lehetővé tevő automatizált folyamat, amikor megjelenik a Kiépítési csomag lap, automatikusan alkalmazza az összes felsorolt csomagot.
@@ -210,7 +210,7 @@ Az USB-eszközökről történő kiépítés automatikus indításának és a ki
 1. Amikor a HoloLens 2 eszköz OOBE rendszerindítással indul, automatikusan észleli a kiépítési csomagot az USB-meghajtón, és elindítja a kiépítési lapot.
 1. 10 másodperc elteltével az eszköz automatikusan alkalmazza a kiépítési csomagot. 
 
-Az eszköz konfigurálva van, és megjelenik a Sikeres kiépítés képernyő.
+Az eszköz most már konfigurálva van, és megjelenik a Sikeres kiépítés képernyő.
 
 ## <a name="applyremove-a-provisioning-package-to-hololens-after-setup"></a>Kiépítési csomag alkalmazása/eltávolítása HoloLens után
 
@@ -249,4 +249,4 @@ A Windows Configuration Designerben az Windows Holographic számára létrehozot
 Az alkalmazások 2 eszközön üzembe HoloLens telepíthetők. Ez lehetővé teszi egy könnyen újra használható csomag használatát, amely segít az alkalmazások terjesztésében. Olvassa el az alkalmazások Üzembe [helyezési csomagokon keresztül történő telepítésének teljes utasításait.](app-deploy-provisioning-package.md)  
 
 > [!NOTE]
-> HoloLens (1. generációs) csak korlátozott mértékben támogatja az alkalmazások telepítését **(UniversalAppInstall**) egy kiépítési csomag használatával. HoloLens (1. generációs) eszközök csak a OOBE-n keresztül támogatják az alkalmazások PPKG-n keresztüli telepítését, és csak a felhasználói környezet telepítése esetén.
+> HoloLens (1. generációs) csak korlátozott mértékben támogatja az alkalmazások telepítését **(UniversalAppInstall**) egy kiépítési csomag használatával. HoloLens (1. generációs) eszközök csak az OOBE és csak a felhasználói környezet telepítése esetén támogatják az alkalmazások PPKG-n keresztüli telepítését.

@@ -13,16 +13,16 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7938a433921a096913986f5eccff953fd17f1534
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 1be1a8aa021c2a588b120fc9fa148b6c5dafd2840bbefa0d8ea9701751834521
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639437"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665586"
 ---
 # <a name="enterprise-enrollment-of-hololens-devices-in-mac-address-restricted-wi-fi-environment"></a>Korlátozott MAC-HoloLens-eszközök vállalati regisztrációja Wi-Fi környezetben
 
-Ez a dokumentum egy általános forgatókönyvet ismertet az ügyfélkörnyezetekben, ahol a Wi-Fi MAC-címek korlátozzák, vagy a vezeték nélküli hálózatokhoz való csatlakozáshoz tanúsítványokra van szükség.
+Ez a dokumentum egy gyakori forgatókönyvet ismertet az ügyfélkörnyezetekben, ahol a Wi-Fi MAC-címek korlátozzák, vagy a vezeték nélküli hálózatokhoz való csatlakozáshoz tanúsítványokra van szükség.
 
 ## <a name="example-scenario"></a>Példaforgatókönyv
 
@@ -153,10 +153,10 @@ Connect-MSGraph
 Get-IntuneManagedDevice -Filter "model eq 'Hololens 2'" | where {$_.enrolledDateTime -gt (get-date).AddDays(-30)}  | select deviceName, wiFiMacAddress 
 ```
 
-Ez visszaadja az elmúlt 30 napban regisztrált összes HoloLens MAC-címét.
+Ez visszaadja az elmúlt 30 napban HoloLens regisztrált összes eszköz nevét és MAC-címét.
 
 ![MAC-cím a PowerShellen keresztül](images/mac-address-powershell.jpg)
 
 ### <a name="process"></a>Folyamat
 
-Az Intune-regisztráció befejezését követően a technikus a fenti szkript futtatásával lekéri a MAC-címet.
+Az Intune-regisztráció befejezése után a technikus a fenti szkript futtatásával lekéri a MAC-címet.

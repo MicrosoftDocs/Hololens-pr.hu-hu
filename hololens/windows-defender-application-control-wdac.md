@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a27a16913873c5245f734dbe084eb2b7ed007c20
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: ab05f1bbe1570d4966932d6f8ac857e5bd2d8a7d3a8f5b93aaba0335eda05b01
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639930"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665556"
 ---
 # <a name="windows-defender-application-control---wdac"></a>Windows Defender Alkalmazásvezérlés – WDAC
 
@@ -28,7 +28,7 @@ Egy eszközhöz több WDAC-szabályzat is hozzárendelhető. Ha több WDAC-házi
 > [!NOTE]
 > Amikor a végfelhasználók olyan alkalmazást próbálnak meg elindítani, amelyet a WDAC blokkol, HoloLens nem kapnak értesítést arról, hogy nem tudják elindítani az alkalmazást.
 
-Az alábbi útmutató segítségével a felhasználók megtudhatják, hogyan engedélyezheti vagy tilthatja le az alkalmazásokat [a WDAC](/mem/intune/configuration/custom-profile-hololens)és a Windows PowerShell használatával HoloLens 2 eszközön a Microsoft Intune.
+Az alábbi útmutató segítségével a felhasználók megtudhatják, hogyan engedélyezheti vagy tilthatja le az alkalmazásokat a WDAC és a Windows PowerShell használatával [2 HoloLens-eszközön](/mem/intune/configuration/custom-profile-hololens)a Microsoft Intune.
 
 Amikor a felhasználók az első példalépéssel rákeresnek a Windows 10 telepített alkalmazásokra, előfordulhat, hogy néhány kísérletet kell tenniük az eredmények szűkítésére.
 
@@ -69,11 +69,11 @@ Az alábbi lista a 2 eszköz In-Box használt és HoloLens alkalmazások listáj
 | Beállítások                   | HolographicSystemSettings_cw5n1h2txyewy            |
 | Tippek                       | Microsoft.HoloLensTips_8wekyb3d8bbwe               |
 
-- 1 – A Alkalmazástelepítő blokkolás csak a Alkalmazástelepítő alkalmazást blokkolja, más forrásokból, például a Microsoft Store vagy az MDM-megoldásból telepített alkalmazásokat nem.
+- 1 – A Alkalmazástelepítő blokkolás csak a Alkalmazástelepítő-alkalmazást blokkolja, más forrásokból, például a Microsoft Store-ból vagy az MDM-megoldásból telepített alkalmazásokat nem.
 
 ### <a name="how-to-find-a-package-family-name"></a>Csomag családnevének megkeresés
 
-Ha egy alkalmazás nem szerepel a listában, akkor a felhasználó használhatja a Eszközportál-t, amely egy olyan HoloLens 2-hez csatlakozik, amely le szeretné tiltani az alkalmazást, és meghatározza a PackageRelativeID azonosítót, és onnantól a PackageFamilyName megjelenik.
+Ha egy alkalmazás nem szerepel a listán, akkor a felhasználó használhatja a Eszközportál-t, amely egy olyan HoloLens 2-hez csatlakozik, amely le szeretné tiltani az alkalmazást, és meghatározza a PackageRelativeID azonosítót, és onnantól a PackageFamilyName megjelenik.
 
 1. Telepítse az alkalmazást a HoloLens 2-es eszközön. 
 1. Nyissa meg Gépház -> Updates & Security -> For developers (Biztonsági  beállítások fejlesztőknek) és engedélyezze a Fejlesztői módot, majd az **Eszközportál gombra.** 

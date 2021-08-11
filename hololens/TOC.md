@@ -25,6 +25,8 @@
 #### [A hang használata a HoloLens](hololens-cortana.md)
 #### [Fájlok megkeresása, megnyitása és mentése a HoloLens](holographic-data.md)
 #### [Vegyes valóságú fényképek és videók létrehozása](holographic-photos-and-videos.md)
+#### [Új Gépház alkalmazás](hololens-new-settings.md)
+#### [Új Microsoft Edge](hololens-new-edge.md)
 ### Alkalmazások felügyelete
 #### [Alkalmazások megkeresheti, telepítheti és eltávolíthatja őket](holographic-store-apps.md)
 #### [Egyéni alkalmazások kezelése a 2. HoloLens esetén](hololens2-holographic-custom-apps.md)
@@ -106,7 +108,7 @@
 ## [Megjelenítés](hololens2-display.md)
 ## [Implementáció és felügyelt eszközök](hololens2-enterprise-troubleshooting.md#)
 ## [Diagnosztikai naplók engedélyezése](hololens-diagnostic-logs.md)
-## [2 HoloLens alaphelyzetbe állítása](hololens-recovery.md)
+## [2. HoloLens alaphelyzetbe állítása](hololens-recovery.md)
 
 # Források
 ## [Hol vásároljon 2 HoloLens?](hololens2-purchase.md)
@@ -123,13 +125,13 @@
 #### [Alapszintű használat áttekintése](hololens1-setup.md)
 #### [A HoloLens beállítása (1. generációs)](hololens1-start.md)
 ### Napi használat
-#### [A HoloLens (1. generációs) clicker használata](hololens1-clicker.md)
+#### [Az HoloLens (1. generációs) kattintás használata](hololens1-clicker.md)
 #### [A 3D-megjelenítő használata HoloLens (1. generációs)](holographic-3d-viewer-beta.md)
 #### [Ismerkedás HoloLens (1. generációs)](hololens1-basic-usage.md)
 #### [Egyéni alkalmazások kezelése HoloLens](holographic-custom-apps.md)
-#### [A HoloLens honosított verziójának telepítése (1. generációs)](hololens1-install-localized.md)
+#### [Az HoloLens honosított verziójának telepítése (1. generációs)](hololens1-install-localized.md)
 #### [A Windows Holographic for Business funkcióinak feloldása](hololens1-upgrade-enterprise.md)
-#### [Visszaállítás HoloLens (1. generációs)](hololens1-recovery.md)
+#### [Új HoloLens (1. generációs)](hololens1-recovery.md)
 ### HoloLens (1. generációs) biztonság
 #### [Gyakori kérdések HoloLens (1. generációs) biztonsági kérdések](hololens1-faq-security.yml)
 #### [HoloLens (1. generációs) BitLocker-titkosítás](hololens1-encryption.md)
@@ -137,5 +139,5 @@
 ### [HoloLens (1. generációs) kibocsátási megjegyzések](hololens1-release-notes.md)
 
 # Visszajelzés küldése
-## [Visszajelzés küldése Visszajelzési központ](hololens-feedback.md)
+## [Visszajelzés küldése a Visszajelzési központ](hololens-feedback.md)
 ## [HoloLens közreműködői útmutató a dokumentumokhoz](contributing.md)

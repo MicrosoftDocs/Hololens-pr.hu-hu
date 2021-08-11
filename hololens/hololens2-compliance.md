@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 684a97a4fcdc3aaf830f164c54fb3079e296c78c
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 3365e69c8408b75a5d4e1177df938f435dec05d9dc181c698d7991159645d15a
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637115"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660153"
 ---
 # <a name="hololens-2-privacy-statement"></a>HoloLens 2. adatvédelmi nyilatkozat
 
@@ -52,7 +52,7 @@ A frissítések automatikusan (alapértelmezés szerint) vannak telepítve, így
 1. [A jelszóhasználat korlátozása](/hololens/security-limiting-password-use)
 
 ## <a name="physical-security"></a>Fizikai biztonság
-HoloLens 2., bitLocker-titkosítással védett flash [memóriával rendelkezik.](/hololens/security-encryption-data-protection) Az eszköz és a helyi adatok offline is flash() flash (ily módon) az [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8#activetab=pivot:overviewtab) használatával, vagy távolról is törölhetőek az MDM-en keresztül, ha felügyelt eszközként lett telepítve.
+HoloLens 2., bitLocker-titkosítással védett flash [memóriával rendelkezik.](/hololens/security-encryption-data-protection) Az eszköz és a helyi adatok offline is flash() flash (offline) módban is használhatók az [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8#activetab=pivot:overviewtab) használatával, vagy távolról is törölhető az MDM-en keresztül, ha felügyelt eszközként lett telepítve.
 
 ## <a name="data-protection"></a>Adatvédelem
 Windows frissítések automatikusan futnak (alapértelmezés szerint), és az [Azure-integráció](/hololens/security-encryption-data-protection#Azure-integration) megvédi a közöttük és a felhőben áthaladó adatokat.
@@ -62,6 +62,6 @@ A 2 HoloLens telepítésekor a [Dynamics 365 Remote Assist](/hololens/hololens2-
 A diagnosztikai adatok Microsofttal való megosztását az MDM vagy a felhasználó manuálisan konfigurálhatja az OOBE során. Két lehetőség közül választhat: Választható diagnosztikai adatok és Szükséges diagnosztikai adatok. Ha az eredeti diagnosztikai beállítást később módosítani kell hibaelhárítási célokból, a felhasználó a **Gépház -> Privacy -> Diagnostics & Feedback** (Adatvédelmi szabályzat – &-visszajelzés) vagy a rendszergazda (MDM) segítségével módosítható, ha az egy felügyelt eszköz. A diagnosztikát, visszajelzést és [adatvédelmet a](https://support.microsoft.com/windows/diagnostics-feedback-and-privacy-in-windows-10-28808a2b-a31b-dd73-dcd3-4559a5199319)következő Windows 10.
 
 > [!Important]
-> Az eszközdiagnosztikai naplók személyes azonosításra alkalmas adatokat (PII-ket) tartalmaznak, például azt, hogy a felhasználó milyen folyamatokat vagy alkalmazásokat kezd el a tipikus műveletek során. Ha több felhasználó osztozik egy HoloLens-eszközön (például a felhasználók különböző Microsoft Azure Active Directory- (Azure AD-) fiókkal jelentkeznek be ugyanannak az eszköznek), a diagnosztikai naplók több felhasználóra vonatkozó, PII-adatokat tartalmazhatnak.
+> Az eszközdiagnosztikai naplók személyes azonosításra alkalmas adatokat (PII-ket) tartalmaznak, például azt, hogy a felhasználó milyen folyamatokat vagy alkalmazásokat kezd el a tipikus műveletek során. Ha egy HoloLens-eszközön több felhasználó is osztozik (például a felhasználók különböző Microsoft Azure Active Directory- (Azure AD-) fiókkal jelentkeznek be ugyanannak az eszköznek), a diagnosztikai naplók több felhasználóra vonatkozó, PII-adatokat tartalmazhatnak.
 
-A diagnosztikai [adatok a](/hololens/hololens-diagnostic-logs) 2. évtől való gyűjtésére többféle gyűjtési módszer és adatmegőrzési szabályzat HoloLens létezik.  További információ arról, hogyan gyűjti és használja a Microsoft a diagnosztikai adatokat: [Microsoft Privacy Statement - Diagnostics](https://privacy.microsoft.com/privacystatement) - expand **Windows** a bal oldali navigációs menüben, és válassza a **Diagnosztika lehetőséget.** Ugrás a **Diagnosztika szakaszra.**
+A diagnosztikai [adatok a](/hololens/hololens-diagnostic-logs) 2. évtől való gyűjtéséhez számos gyűjtési módszer és adatmegőrzési szabályzat HoloLens létezik.  További információ arról, hogyan gyűjti és használja a Microsoft a diagnosztikai adatokat: [Microsoft Privacy Statement - Diagnostics](https://privacy.microsoft.com/privacystatement) - expand **Windows** a bal oldali navigációs menüben, és válassza a **Diagnosztika lehetőséget.** Ugrás a **Diagnosztika szakaszra.**

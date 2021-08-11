@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 548f484043f2b1cb62ce0e0cfb6450a956d412b3
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 3567c1f33f10240a9cacbf258669a0e3274f4c6bb3c90fc1317a57a3a415fc7f
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636928"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659923"
 ---
 # <a name="hololens-2-display-troubleshooting"></a>HoloLens 2. lépés megjelenítési hibaelhárítása
 
@@ -31,14 +31,14 @@ A következő lépésekkel biztosíthatja a megjelenítésben megjelenő hologra
 * **Növelje a kijelző fényerejét.** Hologramok akkor jelenik meg a legjobban, ha a kijelző a legtisztább szinten van. Ha be van HoloLens, a fényerejét jelző gombok a vizor bal oldalán, a csúszka közelében vannak.
 * **Közelebb hozza a szemhez a vizort.** A vizort a saját szemének legközelebbi pozícióhoz vassa le.
 * **Tolja le a vizort.** Próbálja meg lejjebb mozgatni a fogat, ami azt eredményezi, hogy a vizor közelebb kerül az orrhoz.
-* **[Szemkontrasztot kell futtatni.](hololens-calibration.md#calibrating-your-hololens-2)** A kijelző az összetűnés távolság (IPD) és a szem tekintete alapján optimalizálja a megjelenített képeket. Ha nem futtatja a szemredúsztásokat, a kép minősége rosszabb lehet. A szemredúsztás futtatásához Gépház   >  **a**  >  **Rendszerkontraszt**  >  **futtatás szemkontrasztot.**
+* **[Szemredúsztás.](hololens-calibration.md#calibrating-your-hololens-2)** A kijelző az összetűnés távolság (IPD) és a szem tekintete alapján optimalizálja a megjelenített képeket. Ha nem futtatja a szemredúsztásokat, a kép minősége rosszabb lehet. A szemredúsztás futtatásához Gépház   >  **a**  >  **Rendszerkontraszt**  >  **szemkontrasztot.**
 * **Futtassa a megjelenítési színnek való megfelelőt.** A [Windows Holographic 21H1](hololens-release-notes.md#windows-holographic-version-21h1) és újabb verzióiban  alternatív színprofilt is választhat a HoloLens 2-es verziójú megjelenítéshez. Ez segíthet a színek pontosabb megjelenítésében, különösen alacsonyabb megjelenítési fényerejénél. A színkorrektálás megjelenítése a Gépház **a** Rendszer és > **lapon található.**
 
     > [!NOTE]
     > Mivel ez a beállítás új színprofilt ment a megjelenítési belső vezérlőprogramba, ez egy eszközönkénti beállítás (és nem az egyes felhasználói fiókok egyedi beállítása).
 
 ### <a name="how-to-use-display-color-calibration"></a>A megjelenítési színek színezésének használata
-1. Indítsa el **a Gépház** alkalmazást, és navigáljon a System > ( Biztonsági **rendszer) lapra.**
+1. Indítsa el **a Gépház** alkalmazást, és navigáljon a System **> Egyentetve lapra.**
 1. A **Színkorrektálás megjelenítése alatt** válassza a Megjelenítés **színkorrektálás gombját.**
 1. Elindul a színekkel való megjelenítés élménye, és arra bátorítja, hogy győződjön meg arról, hogy a vizor a megfelelő helyen van.
 1. Az utasítási párbeszédpanelek megnyitása után a kijelző automatikusan 30%-os fényerejére halványul.
@@ -49,11 +49,11 @@ A következő lépésekkel biztosíthatja a megjelenítésben megjelenő hologra
     ![Színjelenet megjelenítése](images/color-cal-ui.png)
     
 6. Ha elégedett a kiválasztott profillal, válassza a **Save & Exit (Kilépés)** gombot
-1. Ha nem szeretne módosításokat tenni, válassza a Megszakítás & **Kilépés** gombot, és a módosítások visszaállnak
+1. Ha nem szeretne módosításokat tenni, válassza a Mégse & **Kilépés** gombot, és a módosítások vissza lesznek állva
 
 > [!TIP]
 > Íme néhány hasznos tipp, amely a megjelenítési színek színbeállításának használata során hasznos lehet:
-> - Bármikor újra futtathatja a megjelenítési színek színkorrektálását a Gépház, amikor csak szeretné
+> - Bármikor újra futtathatja a megjelenítési színek színkorrektálását Gépház, amikor csak szeretné
 > - Ha az eszközön korábban már valaki használta a színprofilok beállítását, a legutóbbi módosítás dátuma és időpontja megjelenik a Gépház oldalon
 > - Amikor újra futtatja a megjelenítési színek színkiszínezését, a korábban mentett színprofil ki lesz emelve, és a 0. profil nem jelenik meg (mivel a 0. profil a megjelenítés eredeti színprofilját jelöli)
 > - Ha vissza szeretne állítani a megjelenítés eredeti színprofiljára, ezt a Gépház oldalon (lásd a színprofil alaphelyzetbe [állítását)](#how-to-reset-color-profile)
@@ -61,16 +61,16 @@ A következő lépésekkel biztosíthatja a megjelenítésben megjelenő hologra
 ### <a name="how-to-reset-color-profile"></a>Színprofil alaphelyzetbe állítása
 
 Ha nem elégedett a 2. HoloLens egyéni színprofillal, visszaállíthatja az eszköz eredeti színprofilját:
-1. Indítsa el **a Gépház** alkalmazást, és navigáljon a System > ( Biztonsági **rendszer) lapra.**
+1. Indítsa el **a Gépház** alkalmazást, és navigáljon a System **> Egyentetve lapra.**
 1. A **Színkorrektálás megjelenítése alatt** válassza a Visszaállítás alapértelmezett **színprofilra gombot.**
-1. Amikor megnyílik a párbeszédpanel, válassza az **Újraindítás** lehetőséget, ha készen áll a 2. HoloLens újraindítására, és alkalmazza a módosításokat.
+1. Amikor megnyílik a  párbeszédpanel, válassza az Újraindítás lehetőséget, ha készen áll a 2. HoloLens újraindítására, és alkalmazza a módosításokat.
 
 ### <a name="top-display-color-calibration-known-issues"></a>A legjobb megjelenítési színekkel kapcsolatos ismert problémák
 
 - A Gépház az állapotsring, amely a színprofil legutóbbi módosulásáról ad vissza, elajánl, amíg újra be nem Gépház 
-    - **Áthidaló** megoldás: Válasszon Gépház, majd válassza újra a Hibabeeső oldalt.
+    - **Áthidaló** megoldás: Válasszon ki Gépház, majd válassza újra a Hibalapon.
 - Ha a HoloLens 2-es képernyő alvó üzemmódba kerül a kijelző színének színre váltás futtatása közben, a későbbiekben folytatódik a vegyes valóság kezdőlapja, és a kijelző fényerejének szintje továbbra is halványan jelenik meg.
-- Előfordulhat, hogy néhányszor fel-/le kell nyomni a világítási gombokat az eszköz bal oldalán, hogy azok a várt módon működjön.
+- Előfordulhat, hogy néhányszor fel-/le kell nyomni az eszköz bal oldalán található világítási gombokat, hogy azok a várt módon működjön.
 - A honosítás nem minden piac esetében teljes
 
 ## <a name="faq"></a>GYIK
@@ -90,7 +90,7 @@ A HoloLens 2. képernyő úgy van kialakítva, hogy emberi szem számára is meg
 * **Távértekvő megtekintés.** A HoloLens 2 megjelenítés úgy van kialakítva, hogy mindkét szemével megtekinthető legyen. Az agy alkalmazkodik két képhez, és összeolvasztja őket. Az egyetlen megjelenítést megjelenítő képek figyelmen kívül hagyják a másik kijelzőről származó információkat.
 * **Kamera kitettségi ideje.** A kamera kitettségi ideje a másodperc 1/120-adának pontos többszöröse kell legyen. A HoloLens képkocka-sebesség 120 Hz. A 2. HoloLens képrajzolása miatt egyetlen képkockát sem elég egyezni az emberi látványsal. Ugyanakkor, ha az eszköz egyáltalán – még a mikroszolgáltatásokban is – mozog, a rendszer újra kiveszi a képet a kijelzőről, hogy stabilizálja a hologramokat. A több képkockát úgy rögzítik, hogy közben HoloLens ne mozognak, általában laboratóriumi telepítés szükséges.
 * **Kameraméret.** A pontos kép rögzítéséhez a kamera méretének legalább 3 mm-nek kell lennie. A kis méretű mobiltelefonos kamerák kisebb területről integrálják a világítást, mint az emberi szem. Az eszköz színkorrekciót alkalmaz a nagyobb mellök által megfigyelt mintákra. Kis méretű öklök esetén az egységességi minták a rendszer által alkalmazott színkorrekciók ellenére is élesebbek és láthatók maradnak.
-* **Kamera-bejárati pupillák.** A kamerának legalább 3 mm-es méretűnek kell lennie a pontos kép rögzítéséhez. Ellenkező esetben a kamera olyan gyakori mintákat rögzít, amelyek nem láthatók a szem számára. A bejárati tanuló pozíciójának a kamera előtt kell lennie, és a szem enyhülési távolsága mellett kell lennie, hogy elkerülje a rögzített kép eltérését és egyéb variációit.
+* **Kamera-bejárati pupillák.** A kamerának legalább 3 mm-es méretűnek kell lennie a pontos kép rögzítéséhez. Ellenkező esetben a kamera olyan gyakori mintákat rögzít, amelyek nem láthatók a szem számára. A bevezető tanuló pozíciójának a kamera előtt kell lennie, és a szem enyhülési távolsága mellett kell lennie, hogy elkerülje a rögzített kép eltérését és egyéb variációit.
 * **Kamera pozíciója.** A HoloLens 2 megjelenítés követelményeinek megfelelő kamerák nagyobbak, és nehéz a HoloLens 2-es megjelenítéshez elég közel tartani a kamerát a színkel javított kép megfigyelése érdekében. Ha a kamera nem a megfelelő helyen van, a színkorrekció negatívan befolyásolhatja a 2 HoloLens rögzítését.
 * **Képkorrekció.** A tipikus digitális kamerák és okostelefon-kamerák hangredő görbét (TRC) alkalmaznak, amely növeli a kontrasztot és a színt, hogy a megfelelőbb eredményt nyújtson. Ha egy 2 HoloLens jelenik meg, ez a hanggörbék nem egységesek.
 
@@ -104,7 +104,7 @@ Vegye figyelembe, hogy a [Holographic 20H2 Windows](hololens-release-notes.md#wi
 
 ### <a name="what-are-the-display-differences-between-hololens-1st-gen-and-hololens-2"></a>Mi a megjelenítési különbség a HoloLens (1. generációs) és a HoloLens között?
 
-Az ügyfelek a legtöbb kérés közül azt tapasztalták, hogy HoloLens 1-es (1) értékkel növelték a nézetet, és (2) növelték a fényerejét. A technológiai fejlesztések lehetővé tették, hogy a Microsoft olyan hullámútút készítsen, amely megduplázta a nézőpont területét, és olyan fény kivetítőket készítsen, amelyek legfeljebb háromszor világosak. A hardver három, a megjelenítési képminőségre vonatkozó kereskedelmi viszony alapértékét állítja be: (1) a nézet mezője, (2) a fényerejét és (3) a szín egységességét. A folyamatos technológiai fejlődés minden területen lehetővé teszi a fejlesztést anélkül, hogy egy másik területet feláldoznak. E körülmények között a meglévő technológia beállítja az ilyen korlátozásokhoz elérhető korlátokat.
+Az ügyfelek a legtöbb kérés közül azt tapasztalták, hogy HoloLens 1-es (1) értékkel növelték a megtekintési mezőt, és (2) növelték a fényerejét. A technológiai fejlesztések lehetővé tették, hogy a Microsoft olyan hullámútút készítsen, amely megduplázta a nézőpont területét, és olyan fény kivetítőket készítsen, amelyek legfeljebb háromszor világosak. A hardver a megjelenítési képminőség három kereskedelmi halmazának alapértékét állítja be: (1) mezőnézet, (2) fényerejét és (3) szín egységességét. A folyamatos technológiai fejlődés minden területen lehetővé teszi a fejlesztést anélkül, hogy egy másik területet feláldozunk. A meglévő technológia e körülmények között beállítja a korlátokat.
 
 ### <a name="what-improvements-are-coming-that-will-improve-hololens-2-image-quality"></a>Milyen fejlesztések fognak fejlődni, amelyek HoloLens 2 képminőséget?
 
@@ -112,7 +112,7 @@ Bár számos vizsgálat van folyamatban a képminőség javítása érdekében, 
 
 * **Automatikus szempozíció.** Ez a funkció lehetővé teszi, hogy a háttérben lezajlnak a szemúti eljárások. Az aktív színkorrekció munkához a felhasználóknak többé nem kell szemredő színkorrekciót futtatni. Ehelyett csak működni fog.
 * **Színjavítások fejlesztései.** Ez a frissítés a sötétebb színek (például sötétszürke) színértékeivel foglalkozik. Jelenleg a dimmer színek piros hangvételt választnak. Ez a probléma akkor is előfordul, ha a teljes kijelző halványan jelenik meg – a teljes kijelző piros színeket kap. Ez a probléma annak az eredménye, hogy a piros színcsatornában túl sok tevékenység volt ilyen sötét színű. Ezen a dimmer-színeken jellemezte a görbe görbéit, és dolgozunk azon, hogy felhasználói eljárásokat kínálunk. Az eredmény nagyobb színpontosság lesz a fényerejének spektrumában. Ez nem módosítja a fehér hátterek megjelenését teljes fényerejével. Továbbra is a sötét módú tervezési minták használatát javasoljuk az alkalmazásokban.
-* **Olvasási mód.** Az alkalmazásfejlesztőknek lehetőség van a megjelenítési mező cseréire a jobb angular-felbontás érdekében. Az alkalmazásfejlesztők felülbírálhatják a leképezési mátrixot, így a tartalom a kijelző rajzolási felbontása szerint jelenik meg. Ez a funkció 30%-kal csökkenti a látómezőt, és ennek megfelelően növeli az angular-felbontást. Folyamatban van ennek a képességnek a bevezetése a [Mixed Reality Eszközkészletben.](https://github.com/Microsoft/MixedRealityToolkit-Unity) Ha elérhető, az olvasási mód bármely 2 HoloLens operációs rendszeren működik – nem függ az operációs rendszer frissítéstől.
+* **Olvasási mód.** Az alkalmazásfejlesztők a jobb angular-felbontás érdekében cserélik a megjelenítési mezőt. Az alkalmazásfejlesztők felülbírálhatják a leképezési mátrixot, így a tartalom a kijelző rajzolási felbontásában jelenik meg. Ez a funkció 30%-kal csökkenti a látómezőt, és ennek megfelelően növeli az angular-felbontást. Folyamatban van ennek a képességnek a bevezetése a [Mixed Reality eszközkészletben.](https://github.com/Microsoft/MixedRealityToolkit-Unity) Ha elérhető, az olvasási mód bármely 2 HoloLens operációs rendszeren működik – nem függ az operációs rendszer frissítéstől.
 
 Az operációs rendszer frissítéseit a rendszer automatikusan kézbesíti. A belső előzetes verziós programon keresztül a szoftverfejlesztés korai kiadását is tesztelheti.
 
@@ -129,4 +129,4 @@ Ha egy hologram fehér hátteret igényel, a hologram mérete ne legyen kisebb, 
 
 ### <a name="how-do-you-clean-a-hololens-2-display"></a>Hogyan lehet megtisztítani a HoloLens 2-es megjelenítést?
 
-Mikrofiberos málnával törölje ki a vizort. A vizor tisztítására használjon 70%-os isopropyl-ét, hogy könnyedén megszendítsen egy fogat, majd törölje a vizort. Olvassa el a teljes útmutatót [a HoloLens 2. tisztítási GYIK dokumentumban.](hololens2-maintenance.md)
+Mikrofiberos málnával törölje ki a vizort. A vizor tisztítására használjon 70%-os isopropyl-ét, hogy kismempénítsen egy arcot, majd törölje a vizort. Olvassa el a teljes útmutatót [a HoloLens 2. tisztítási GYIK dokumentumban.](hololens2-maintenance.md)

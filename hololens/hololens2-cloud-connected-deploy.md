@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b0597806d58d7bf16fe6f6c766af3f9662fca7e6
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 593dc65ab97eaae65591a5239cd0a978750eac9fa538364ba6bbc7ef0a2a08a4
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635177"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660509"
 ---
 # <a name="deploy---cloud-connected-guide"></a>Üzembe helyezés – Felhőhöz csatlakoztatott útmutató
 
@@ -35,7 +35,7 @@ Ha az eszköz jelenleg&#39;gyári beállításokban található, ideje [újrafé
 1. A kritikus kérdés akkor lesz, amikor a rendszer **megkérdezi, hogy Who-e a HoloLens?** Válassza **a Saját munkahelyi vagy iskolai tulajdonban van lehetőséget,** és adja meg Az Azure AD-fiókja hitelesítő adatait.
 1. Ha a regisztráció sikeres,&#39;a rendszer pin-kód beállítását kéri. Ez a PIN-kód a felhasználó egyedi eszköze. Emellett meg kell adnia az Íriszvizsgálatokat, a hangadatokat és a telemetriai beállításokat, végül pedig&#39;, hogyan nyithatja meg a Start menüt, és hogyan fejezhatja be az OOBE-t.
 1. Miután a Kezdőlapra Mixed Reality nyissa meg a Start menü az előbb megtanult **Indítás** kézmozdulattal.
-1. Válassza ki a **Gépház** alkalmazást, majd válassza a **Rendszer lehetőséget.** Az első információ,&#39;az Eszköz neve, amely a HoloLens 2-es eszközhöz HOLOLENS lesz, amelyet hat karakterből álló sztring &quot; &quot; követ.
+1. Válassza ki a **Gépház** alkalmazást, majd válassza a **Rendszer lehetőséget.** Az első információ, amelyet&#39;fog látni, az eszköz neve, amely a HoloLens 2-es eszközhöz a HOLOLENS lesz, amelyet egy hat karakterből álló sztring &quot; &quot; követ.
 1. Jegyezze fel ezt a nevet.
 
 ![HoloLens 2. Gépház – About](./images/hololens2-settings-about.jpg)

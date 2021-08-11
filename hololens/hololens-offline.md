@@ -1,6 +1,6 @@
 ---
 title: Kapcsolati végpontok kezelése a HoloLens
-description: Megtudhatja, hogyan állíthat be HoloLens hálózati Wi-Fi kapcsolati végpontok kezelése és konfigurálása közben.
+description: Megtudhatja, hogyan állíthat be HoloLens hálózati kapcsolati Wi-Fi kapcsolati végpontok kezelése és konfigurálása közben.
 keywords: hololens, offline, OOBE
 audience: ITPro
 ms.date: 07/01/2019
@@ -18,20 +18,20 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f2d9faafac2f84b727b1e10be83d4d1b53a707b4
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 63c82e5b1a953ee2f69bf4c22a8442c7bca07f073cc13f1e5e573fde0ccc1976
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640083"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662941"
 ---
 # <a name="manage-connection-endpoints-for-hololens"></a>Kapcsolati végpontok kezelése a HoloLens
 
-Egyes HoloLens összetevők, alkalmazások és kapcsolódó szolgáltatások adatokat továbbítnak a Microsoft hálózati végpontjaira. Ez a cikk felsorolja azokat a különböző végpontokat és URL-címeket, amelyek a hálózati konfigurációban (pl. proxy vagy tűzfal) engedélyezve lesznek az összetevők működőképességét.    
+Egyes HoloLens összetevők, alkalmazások és kapcsolódó szolgáltatások microsoftos hálózati végpontokra továbbítják az adatokat. Ez a cikk felsorolja azokat a különböző végpontokat és URL-címeket, amelyek a hálózati konfigurációban (pl. proxy vagy tűzfal) engedélyezve lesznek az összetevők működőképességét.    
 
 ## <a name="near-offline-setup"></a>Közel offline telepítés
 
-HoloLens kapcsolat nélküli élmény korlátozott készletét támogatja a hálózati környezet korlátozásokkal nemű ügyfelei számára. A HoloLens azonban hálózati kapcsolatra van szükség a kezdeti eszköz beállításához, és engedélyezni kell a következő URL-címeket:
+HoloLens kapcsolat nélküli élmény korlátozott készletét támogatja a hálózati környezet korlátozásokkal érintett ügyfelei számára. A HoloLens azonban hálózati kapcsolatra van szükség a kezdeti eszköz beállításához, és engedélyezni kell a következő URL-címeket:
 
 | Rendeltetés | URL-cím |
 |------|------|

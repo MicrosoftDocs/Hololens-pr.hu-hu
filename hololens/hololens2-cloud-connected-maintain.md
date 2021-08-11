@@ -1,5 +1,5 @@
 ---
-title: Telepítési útmutató – Felhőhöz csatlakoztatott HoloLens 2. példány nagy léptékű üzembe helyezése a Remote Assist segítségével – Karbantartás
+title: Üzembe helyezési útmutató – HoloLens 2. felhőhöz csatlakoztatott, nagy léptékű üzembe helyezés a Remote Assist segítségével – Karbantartás
 description: Naprakész maradhat a felhőhöz csatlakoztatott hálózaton keresztüli HoloLens karbantartásával és támogatásával kapcsolatos tippjeinket.
 keywords: HoloLens, felügyelet, felhőhöz csatlakoztatott, Remote Assist, AAD, Azure AD, MDM, Mobile Eszközkezelés
 author: evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 941de296d59713c098718b16431fa793bd1b60e6
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 879f89d84bbae5b4cc187bc8b1fca627036269145b1c2dd82787e3789fef259d
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635160"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660375"
 ---
 # <a name="maintain---cloud-connected-guide"></a>Karbantartás – Felhőhöz csatlakoztatott útmutató
 
@@ -33,7 +33,7 @@ A Remote Assist egy In-Box alkalmazás, amely a Microsoft Store frissítheti. Az
 
 ## <a name="support-plan"></a>Támogatási csomag
 
-A támogatási csomag kitűnően alkalmas a helyzetre. Hasznos, ha valakit vagy csoportot tanít be a regisztrációs folyamat hibaelhárítására az HoloLens-eszközökön, és általánosan használja a HoloLens-eszközt a szervezeten belül. Annak érdekében, hogy a felhasználók minél gyorsabban megoldják a problémáikat, javasoljuk, hogy az eszkalációs folyamatot a következő sorrendhez hasonlóan kell kezelnie:
+A támogatási csomag kitűnően alkalmas a helyzetre. Hasznos, ha valaki vagy egy csoport be van tanítva a regisztrációs folyamat hibaelhárítására HoloLens-eszközökön, valamint a HoloLens-eszköz általános használatára. Annak érdekében, hogy a felhasználók minél gyorsabban megoldják a problémáikat, javasoljuk, hogy az eszkalációs folyamatot a következő sorrendhez hasonlóan kell kezelnie:
 
 1. Az ügyfélszolgálat.
 2. Az HoloLens szakértő csapata

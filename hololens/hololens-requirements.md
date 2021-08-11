@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 529dde590c30d4a51fa8ae61e9d37d22170dc271
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 27fd7f81d2868134344c7563ebc0a93133a18c0a217d6eff820b5f322e9271a7
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659063"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662911"
 ---
 # <a name="common-deployment-scenarios"></a>Gyakori üzembe helyezési forgatókönyvek
 
@@ -33,7 +33,7 @@ Nagy méretekben üzembe helyezett megoldásokat szeretne. Szeretnénk odahozni.
 |---------|---------|---------|
 | [A forgatókönyv: Felhőhöz csatlakoztatott eszközök](hololens2-cloud-connected-overview.md) | Az üzembe helyezés első megkezdésekor kicsiben kezdhet, és egyetlen, a felhőhöz csatlakoztatott eszközt helyezhet üzembe az alapvető folyamat érdekében. | Az eszközök a felhőszolgáltatásokhoz és a nyilvános internethez lesznek csatlakoztatva. Ez az ügyfélesetek, helyszíni szolgáltatások és a koncepció igazolása esetén a legmegfelelőbb.|
 | [B forgatókönyv: Szervezeti hálózat](hololens2-corp-connected-overview.md) | Amikor nagy léptékben helyez üzembe éles környezetben, előfordulhat, hogy integrálni kell magát a saját szervezet hálózatával. | Az eszközök egy "Céges" Wi-Fi-hálózathoz csatlakoznak. Ez a legmegfelelőbb a belső felhasználók számára, vagy a vállalati környezetben való használatra.|
-| [C forgatókönyv: Offline biztonságos környezet](hololens-common-scenarios-offline-secure.md) | Egyes alapvető fontosságú folyamatok vagy vállalati szabályzatok offline környezetek használatát követelik meg. | Az eszközök egy rendkívül korlátozó hálózathoz csatlakoznak, vagy kizárólag offline eszközök lesznek. Ez a legmegfelelőbb a rendkívül biztonságos környezetekhez vagy távoli helyeken az internetkapcsolattal kapcsolatos korlátozásokhoz. |
+| [C forgatókönyv: Offline biztonságos környezet](hololens-common-scenarios-offline-secure.md) | Egyes alapvető fontosságú folyamatok vagy vállalati szabályzatok offline környezetek használatát követelik meg. | Az eszközök egy rendkívül korlátozó hálózathoz fognak kapcsolódni, vagy kizárólag offline eszközök lesznek. Ez a legmegfelelőbb a rendkívül biztonságos környezetekhez vagy távoli helyeken az internetkapcsolattal kapcsolatos korlátozásokhoz. |
 
 ## <a name="scenario-a-deploy-to-cloud-connected-devices"></a>A forgatókönyv: Üzembe helyezés felhőhöz csatlakoztatott eszközökön
 
@@ -102,7 +102,7 @@ Tekintse meg ezt az üzembe helyezési modellt a következő hez:
 * Mivel HoloLens 2. verzió egy felhőalapú eszköz, nagy mértékben támaszkodik az internethez és a felhőhöz kapcsolódó szolgáltatásokra a felhasználóhitelesítéshez, az operációs rendszer frissítéséhez, az MDM-felügyelethez stb. Vállalati hálózathoz való csatlakozáskor a proxy-/tűzfalszabályokat nagy valószínűséggel úgy kell módosítani, hogy HoloLens 2. és a rajta futó alkalmazások hozzáférését engedélyezték.
 * A Wi-Fi kapcsolatokhoz általában tanúsítványokra van szükség az eszköz vagy a felhasználó hálózaton való hitelesítéséhez. A tanúsítványok MDM-Windows 10 eszközökre való telepítéséhez szükséges infrastruktúra vagy beállítások konfigurálása kihívást jelenthet.
 
-A megfelelő vállalati csatlakoztatott útmutató útmutatást ad arra, hogyan regisztrálhatja a HoloLens 2-t a meglévő eszközkezelésbe, hogyan alkalmazhat licenceket szükség szerint, és hogyan ellenőrizheti, hogy a végfelhasználók képesek-e Dynamics 365-útmutatót működtetni, valamint hogyan használhatnak egyéni üzletági alkalmazásokat az eszköz beállítása után.
+A megfelelő vállalati csatlakoztatott útmutató útmutatást ad a HoloLens 2 regisztrálására a meglévő eszközkezelésben, a licencek szükség szerint történő alkalmazásával és annak ellenőrzésével, hogy a végfelhasználók képesek-e Dynamics 365-útmutatót működtetni, valamint egyéni üzletági alkalmazásokat használni az eszköz beállítása után.
 
 > [!div class="nextstepaction"]
 > [Vállalati csatlakoztatott üzembe helyezési útmutató](hololens2-corp-connected-overview.md)

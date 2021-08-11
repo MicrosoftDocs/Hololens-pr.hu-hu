@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4c476a2adc8f03c37e17e6324960318b4806534e
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 759ef671e9a831e23809d5974595ce5928433e3e50ddb26e25a7a74ebe2559a3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639743"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660050"
 ---
 # <a name="about-hololens-2"></a>A 2 HoloLens ről
 
@@ -26,15 +26,15 @@ ms.locfileid: "113639743"
 Microsoft HoloLens 2. szám egy nem therett holografikus számítógép.  Pontosítja a HoloLens (1. generációs) által indított holografikus számítástechnika utazását, hogy kényelmesebb és magával ragadó élményt nyújtson, és több lehetőséget kínál a vegyes valóságban való együttműködéshez. HoloLens 2. verziója a [Windows Holographic operációs](hololens-release-notes.md)rendszeren fut, amely a Windows 10 "ízén" alapul, és robusztus, nagy teljesítményű és biztonságos platformot biztosít a felhasználóknak, rendszergazdáknak és fejlesztőknek. 
 
 > [!NOTE]
-> A Windows 11-es bejelentése a számítógép verziójával Windows. 2021 májusában elindítottunk egy jelentős operációsrendszer-frissítést HoloLens 2. kiadáshoz, és az őszre vonatkozó ügyfél-visszajelzések alapján dolgozunk egy hamarosan megjelenő kiadáson. [](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067)
+> A Windows 11-es bejelentése a számítógép verziójával Windows. 2021 májusában elindítottunk egy jelentős operációsrendszer-frissítést HoloLens 2. kiadásra, és az őszre vonatkozó ügyfél-visszajelzések alapján dolgozunk egy hamarosan megjelenő kiadáson. [](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067)
 
 A 2. HoloLens felhasználói fiók szükséges.
 
 ## <a name="hololens-components"></a>HoloLens összetevők
 
 - **Visor**. A HoloLens és kijelzőit tartalmazza. A vizort felfelé forgathatja, miközben a vizor HoloLens.
-- **Headband ( fejsáv)**. A tengelyre HoloLens a beállítási kereket a headband kibontásához. A HoloLens után húzza meg a rögzítőkereket úgy, hogy jobbra fordul, amíg a fejsáv el nem oszlott.
-- **A fényerő gombok.** Ha be van HoloLens, a fényerejét jelző gombok a vizor bal oldalán, a csúszka közelében vannak.
+- **Headband ( fejsáv)**. A tengelyre HoloLens a beállítási kereket a headband kibontásához. Ha a HoloLens, húzza meg a rögzítőkereket úgy, hogy jobbra fordul, amíg a fejsáv el nem oszlott.
+- **A fényerő gombok.** Ha be van HoloLens, a napófény gombok a vizor bal oldalán, a csúszka közelében vannak.
 - **Kötetgombok.** Ha a HoloLens, a hangerőszabályzó gombok a vizor jobb oldalán vannak, a foga közelében.
 - **Bekapcsológomb.** Ha be HoloLens, a bekapcsológomb a hátsó külső burkolat jobb oldalán található.
 - **USB-C port.** A HoloLens berakásakor az USB-C port a bekapcsológomb alatti külső burkolat jobb oldalán található.
@@ -52,7 +52,7 @@ Az eszköz tápellátása és USB-kábele a leginkább támogatott díjszabási 
 
 A díjszabás és a sebesség attól függően változhat, hogy az eszköz milyen környezetben fut.
 
-Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százaléka alatt is fenntartható vagy előrevehető legyen, legalább 15W-os akkumulátorhoz kell csatlakoztatni.
+Ha az eszköz be van kapcsolva, a belső akkumulátor töltöttségi arányának fenntartásához/emeléséhez legalább 15W-os akkumulátorhoz kell csatlakoztatni.
 
 ## <a name="device-specifications"></a>Eszközspecifikációk
 
@@ -70,7 +70,7 @@ Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százal�
 |   | &nbsp; |
 |---|---|
 | **Fejkövetés** | 4 látható fénykamera |
-| **Szemkövetés** | 2A gépeket (IR) figyelő kamerák |
+| **Szemkövetés** | 2A mibensét (IR) kamerákat |
 | **Mélység** | 1 MP-es mélységérzékelő |
 | **Inertial measurement unit (IMU)** | Gyorsulásmérő, groscope, kilométeróra |
 | **Fényképezőgép** | 8 MP-es stills, 1080p30 videó |
@@ -107,7 +107,7 @@ Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százal�
 | **Akkumulátor-technológia** | [Lithium-akkumulátorok](https://www.microsoft.com/download/details.aspx?id=43388) |
 | **Díjszabási viselkedés** | Teljesen működőképes a díjszabáskor |
 | **Hűtés típusa** | Passzívan hűtött (ventilátorok nélkül) |
-| **Power Draw** | Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százaléka alatt is fenntartható vagy előrevehető legyen, legalább 15W-os akkumulátorhoz kell csatlakoztatni. |
+| **Power Draw** | Ha az eszköz be van kapcsolva, a belső akkumulátor töltöttségi arányának fenntartásához/emeléséhez legalább 15W-os akkumulátorhoz kell csatlakoztatni. |
 
 ### <a name="fit"></a>Alkalmazás
 
@@ -140,9 +140,9 @@ Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százal�
 |---|---|
 | **Windows Holografikus operációs rendszer** | A [Windows holografikus operációs](hololens-release-notes.md)rendszerével Windows 10 felhasználók vegyes valóságú környezetben is használhatnak alkalmazásokat és játékokat a HoloLens 2-es verzióval.
 | **3D-megjelenítő** | [3D-megjelenítő](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) lehetővé teszi a 3D modellek és animációk valós idejű megtekintését.|
-| **Cortana** | [Cortana,](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)a személyi hatékonyságnövelő segéd segítségével mindig a fontos dolgokon maradhat, és időt takaríthat meg, hogy megtalálja, amire szüksége van.  |
-| **Dynamics 365-útmutatók** |  [A Dynamics 365-útmutatók segítségével az](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) alkalmazottak gyorsabban tanulhatnak új készségeket a HoloLens eszközökön. |
-| **Dynamics 365 Remote Assist** | [A Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) lehetővé teszi a technikusok számára a távoli közreműködők együttműködését és megoldását a Microsoft Teams vagy a Dynamics 365 Remote Assist használatával.  |
+| **Cortana** | [Cortana,](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)a személyi hatékonyságnövelő segéd segítségével mindig a legfontosabb dolgokon maradhat, és időt takaríthat meg a szükséges eredmények megtalálásában.  |
+| **Dynamics 365-útmutatók** |  [A Dynamics 365-útmutatók segítségével](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) az alkalmazottak gyorsabban tanulhatnak új készségeket a HoloLens eszközökön. |
+| **Dynamics 365 Remote Assist** | [A Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) lehetővé teszi a technikusok számára a távoli közreműködőkkel kapcsolatos problémák közös használatát és megoldását a Microsoft Teams vagy a Dynamics 365 Remote Assist használatával.  |
 | **Visszajelzési központ** | [Visszajelzési központ](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) visszajelzést adhat az Windows alkalmazásokról a javaslatainak vagy problémáinak megosztásával.  |
 | **Fájlkezelő** | Fájlkezelő grafikus felhasználói felületet biztosít a fájlrendszerek eléréséhez. |
 | **Mail és Calendar** | A [Mail és a Calendar](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) alkalmazással naprakész maradhat e-mailjeiről, kezelheti az ütemezést, és kapcsolatban maradhat a kapcsolattartóival. |
@@ -186,7 +186,7 @@ Nem 13 évesnél fiatalabb gyermekek számára tervezték.
 |     Egység mélysége                 |     163,07 mm          |     6,420 hüvelyk        |
 |     Egység súlyozása                |     2,878 kg           |     6,344 kg           |
 |     Exterior Shipper Length    |     446,00 mm          |     17,559 hüvelyk       |
-|     Shipper Width (Szállítási szélesség)     |     257,99 mm          |     10,157 hüvelyk       |
+|     Exterior Shipper Width     |     257,99 mm          |     10,157 hüvelyk       |
 |     Exterior Shipper Depth     |     172,01 mm          |     6,772 hüvelyk        |
 |     Exterior Shipper Weight    |     3,284 kg           |     7,240 font           |
 
@@ -199,17 +199,17 @@ Nem 13 évesnél fiatalabb gyermekek számára tervezték.
 A vizor alatt HoloLens 2 eszköz sorozatszáma látható.
 
 1. Emelje fel az eszköz vizorát.
-1. Keresse meg arow pad közelében.
-1. A sorozatszám a burkolat közelében található.
+1. Arow pad közelében keresse meg.
+1. A sorozatszám a fogasság közelében található.
 
    <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
 A sorozatszám egy csatlakoztatott számítógépen is megtalálható:
 
 1. Az eszköz csatlakoztatása
-1. Nyissa meg **ezt a számítógépet a** fájlkezelőben
+1. Nyissa meg **ezt a számítógépet a** Fájlkezelőben
 1. Kattintson a jobb **gombbal, és válassza** a HoloLens tulajdonságait
-1. Ez megjeleníti az eszköz sorozatának számát az alábbi képernyőképen látható módon.
+1. Ez megjeleníti az eszköz sorozatszámát az alábbi képernyőképen látható módon.
 
    <br/><img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 

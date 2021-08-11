@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 037f9325555244314518c81d7814bf983c345af6
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: de12231b87c028ed9d8ca785a5b351fc4cb1c6fd8dbe304e4baaccd6803c5f6a
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639335"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665403"
 ---
 # <a name="hardware-backed-integrity-and-runtime-attestation"></a>Hardveres integritás- és futásidejű igazolás
 
@@ -35,7 +35,7 @@ A platformmegbízhatósági modul (TPM) egy speciális lapka egy végponteszköz
 
 ## <a name="persistence-access-threat-protection"></a>Adatmegőrzési hozzáférés fenyegetésvédelem
 
-A legtöbb kibertámadás célja az eszköz állandó hozzáférésének fenntartása. A kiberbűnözés esetén az adatmegőrzés fenntartása lehetővé teszi, hogy egy feltört Windows-eszköz csatlakozzon egy botnethez, hozzáférést adjon el az eszközhöz vagy más visszaeső felhasználókhoz, vagy lehetővé tegye az adatok ismételt ellopását. A célzott támadások világában az állandóság elengedhetetlen a sikeres kibertámadások során – akár egy eszközön, akár (gyakrabban) egy teljes hálózaton.  
+A legtöbb kibertámadás célja az eszköz állandó hozzáférésének fenntartása. A kiberbűnözés esetén az adatmegőrzés fenntartása lehetővé teszi, hogy egy feltört Windows-eszköz csatlakozzon egy botnethez, hozzáférést adjon el az eszközhöz vagy más visszatartó felhasználókhoz, vagy lehetővé tegye az adatok ismételt ellopását. A célzott támadások világában a kitartás elengedhetetlen a sikeres kibertámadások során – akár egy eszközön, akár (gyakrabban) egy teljes hálózaton.  
 
 Valójában a célzott támadások "fejlett állandó fenyegetéseknek" minősülnek, mivel stratégiai szükség van a céleszközhöz vagy hálózathoz való hozzáférés fenntartására. Ezért a Windows Holographic for Business nélkülözhetetlennek tartja az adatmegőrzés elleni védelmet, és a perzisztencia-megőrzési technológiával egy ironc önatikus ügyfélbiztonsági ígéretet hoz.
 
@@ -54,4 +54,4 @@ Az operációs rendszer adatainak adatok formájában való megőrzésére tová
 
 ## <a name="code-integrity-protection"></a>Kódintegritás-védelem
 
-A kódintegritás (CI) a modern operációs rendszerek kulcsfontosságú biztonsági tulajdonsága. A CI kikényolása megbízható biztonsági döntéseket tesz lehetővé, mivel garantálja, hogy a kód forrását a felhasználó és az operációs rendszer is átláthatóvá teszi. A teljes kódintegritásnak ki kell terjesztenie a bináris rendszerkép-aláírást, és tartalmaznia kell a futásidő kényszerítését, például a folyam integritásának szabályozását és a dinamikus kódkorlátozásokat. A CI kritikus fontosságú a támadások több osztályának megakadályozásához, beleértve a társadalmilag megtervezett kártevőket, például a zsarolóprogramokat, a távoli kódvégrehajtási támadásokat és számos más támadási osztályt.
+A kódintegritás (CI) a modern operációs rendszerek kulcsfontosságú biztonsági tulajdonsága. A CI kikényolása megbízható biztonsági döntéseket tesz lehetővé, mivel garantálja, hogy a kód forrását a felhasználó és az operációs rendszer is átláthatóvá teszi. A teljes kódintegritásnak ki kell terjesztenie a bináris rendszerkép-aláírást, és tartalmaznia kell a futásidő kényszerítését, például a folyam integritásának szabályozását és a dinamikus kódkorlátozásokat. A CI kritikus fontosságú a támadások több osztályának megakadályozásához, beleértve a társadalmilag megtervezett kártevőket, például a zsarolóprogramokat, a távoli kódvégrehajtási támadásokat és a különböző más támadási osztályokat.

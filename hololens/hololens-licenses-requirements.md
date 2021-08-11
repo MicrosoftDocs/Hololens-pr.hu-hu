@@ -1,6 +1,6 @@
 ---
 title: Licenckövetelmények
-description: Tartsa naprakészen a mobileszköz-kezeléshez, a mobileszköz-kezeléshez, a HoloLens és a Remote Assisthöz szükséges összes licencelési követelményt és útmutatót.
+description: Maradjon naprakész a mobileszköz-kezeléshez, a mobileszköz-kezeléshez, a HoloLens és a Remote Assisthez szükséges összes licencelési követelményt és útmutatót.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: bradke
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6224cd5e07794d9fca3c0a406e787d1a3fd88b43
-ms.sourcegitcommit: bd55edcc855e20d6709c7e535573f43785155d41
+ms.openlocfilehash: aae4e1dbbf28906c1f93ac7f29620260023f596bb96fc23a3ee78442e70585fa
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114661712"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663296"
 ---
 # <a name="license-requirements"></a>Licenckövetelmények
 
@@ -94,7 +94,7 @@ Ha ezt a [](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scena
 1. Azure AD-fiók
 1. [Dynamics 365-útmutatók licence](/dynamics365/mixed-reality/guides/requirements)
 1. Számítógépekre vagy számítógépekre telepített Dynamics 365-útmutatók HoloLens
-1. [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (az Analytics-irányítópult megtekintésére használható)
+1. [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (az Analytics-irányítópult megtekintésére használatos)
 1. Szerzői szerepkör (útmutatók létrehozásához)
 1. Hálózati kapcsolat
 

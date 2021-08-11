@@ -1,7 +1,7 @@
 ---
 title: Telepítési útmutató – Vállalati csatlakoztatott HoloLens 2 Dynamics 365-útmutatók – Konfigurálás
 description: A Dynamics 365-útmutatók segítségével megtudhatja, hogyan állíthat be konfigurációkat HoloLens 2 eszköz vállalati csatlakoztatott hálózaton való üzembe helyezéséhez.
-keywords: HoloLens, felügyelet, vállalati kapcsolat, Dynamics 365-útmutatók, AAD, Azure AD, MDM, Mobile Eszközkezelés
+keywords: HoloLens, felügyelet, céghez csatlakoztatott, Dynamics 365-útmutatók, AAD, Azure AD, MDM, Mobile Eszközkezelés
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
@@ -14,41 +14,41 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9457acd2f53d0d3127d6c68d620b660f6e09866d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 2b855f5891dfa4ca695e4ae3b2a2e82510c5b626f08b434643169be239b48291
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637081"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660188"
 ---
 # <a name="configure---corporate-connected-guide"></a>Konfigurálás – Vállalati csatlakoztatott útmutató
 
 ## <a name="azure-users-and-groups"></a>Azure-felhasználók és -csoportok
 
-Az Azure és a bővítmény által az Intune felhasználók és csoportok használatával segít a konfigurációk és licencek hozzárendelésében. Az üzembe helyezési folyamat ellenőrzése és az útmutató létrehozása és működtetés ellenőrzése érdekében&#39;felhasználói fiókra lesz szüksége.
+Az Azure és a bővítmény által használt Intune a felhasználók és csoportok segítségével segít a konfigurációk és licencek hozzárendelésében. Az üzembe helyezési folyamat ellenőrzéséhez és az útmutató szerzői és működtethetőségének ellenőrzéséhez&#39;felhasználói fiókra lesz szüksége.
 
 Egyetlen felhasználói csoportot is létre lehet hozva kifejezetten a licencek hozzárendelése érdekében.
 
-Ha még nem&#39;rendelkezik hozzáféréssel két Azure AD-fiókhoz egy felhasználói csoportban, használhatja; A következő rövid útmutatókat íme:
+Ha még nem&#39;hozzáféréssel két Azure AD-fiókhoz egy felhasználói csoportban, akkor használhatja; A következő rövid útmutatókat íme a következő lépésekhez:
 
 - [Felhasználó létrehozása](/mem/intune/fundamentals/quickstart-create-user)
 - [Csoport létrehozása](/mem/intune/fundamentals/quickstart-create-group)
 - [Felhasználók hozzáadása csoporthoz](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) – Létrehozott felhasználók hozzáadása csoport létrehozásához
-- [Az Azure AD konfigurálása](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) az eszközök felhasználói csoportokhoz való csatlakozásának engedélyezése érdekében – Győződjön meg arról, hogy az új felhasználói csoport rendelkezik az eszközök Azure AD-beli regisztrálásához szükséges engedéllyel
+- [Az Azure AD konfigurálása arra, hogy a](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) felhasználói csoportok eszközöket csatlakozzanak – Győződjön meg arról, hogy az új felhasználói csoport rendelkezik az eszközök Azure AD-beli regisztrálásához szükséges engedéllyel
 
-## <a name="auto-enrollment-on-hololens-2"></a>Automatikus regisztráció a 2. HoloLens-
+## <a name="auto-enrollment-on-hololens-2"></a>Automatikus regisztráció a 2 HoloLens ban
 
-A zökkenőmentes és zökkenőmentes élmény érdekében a Azure Active Directory Join (AADJ) és az Automatikus regisztráció beállítása az Intune-ban HoloLens 2-es eszközökhöz a legjobb megoldás. Ez lehetővé teszi a felhasználók számára, hogy az OOBE során megnyissák a szervezet bejelentkezési hitelesítő adatait, és automatikusan regisztrálnak az Azure AD-ben, és regisztrálják az eszközt az MDM-ben.
+A zökkenőmentes és zökkenőmentes élmény érdekében az Azure Active Directory Join (AADJ) és az Automatikus regisztráció beállítása az Intune-ban HoloLens 2 eszközre a megfelelő megoldás. Ez lehetővé teszi a felhasználók számára, hogy a szervezeti bejelentkezési hitelesítő adatokat az OOBE során adja meg, és automatikusan regisztrálnak az Azure AD-ben, és regisztrálják az eszközt az MDM-ben.
 
-A használatával [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home)szolgáltatásokat, és navigálhat néhány oldalon, amíg ki nem választjuk a Próbaverzió Prémium lehetőséget. Észreveheti, hogy a P1 prémium szintű Azure Active Directory 1 és 2 között van. Kiválaszthatja az Intune-t, kiválaszthatja az automatikus regisztráció felhasználói hatókörét, és kiválaszthatja a korábban létrehozott csoportot.
+A [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home)a szolgáltatásokat, és navigálhat néhány oldalon, amíg ki nem választjuk a Próbaverzió Prémium lehetőséget. Észreveheti, hogy a P1 prémium szintű Azure Active Directory 1-es és 2-es számú – az automatikus regisztráció elegendő. Kiválaszthatja az Intune-t, kiválaszthatja az automatikus regisztráció felhasználói hatókörét, és kiválaszthatja a korábban létrehozott csoportot.
 
-Részletes információkért és lépésekért olvassa el az Automatikus regisztráció engedélyezése az [Intune-ban útmutatót.](/mem/intune/enrollment/quickstart-setup-auto-enrollment)
+Részletes információkért és lépésekért olvassa el az Intune automatikus [regisztrációját engedélyező útmutatót.](/mem/intune/enrollment/quickstart-setup-auto-enrollment)
 
 ## <a name="corporate-wi-fi-connectivity"></a>Vállalati Wi-Fi kapcsolat
 
-A Wi-Fi kapcsolatok általában tanúsítványalapú hitelesítést igényelnek a 2. HoloLens ügyfelek számára. Ezeket a tanúsítványokat az MDM-megoldással integrált Egyszerű tanúsítványigénylési protokoll (SCEP) vagy nyilvános kulcsú titkosítási szabvány (PKCS) tanúsítványinfra infrastruktúrájának használatával kell telepítenie. Ha az Intune-Wi-Fi a profilokat, tanúsítványokat és proxybeállításokat, zökkenőmentes felhasználói élményt biztosít a végfelhasználók számára.
+A Wi-Fi kapcsolatok általában tanúsítványalapú hitelesítést igényelnek a 2. HoloLens ügyfelek számára. Ezeket a tanúsítványokat az MDM-megoldással integrált Egyszerű tanúsítványigénylési protokoll (SCEP) vagy nyilvános kulcsú titkosítási szabvány (PKCS) tanúsítványinfra infrastruktúrájának használatával kell telepítenie. Ha az Intune-Wi-Fi, tanúsítványokat és proxybeállításokat telepít, zökkenőmentes felhasználói élményt biztosít a végfelhasználók számára.
  
-### <a name="deploy-certificates-and-wi-fi-profiles"></a>Tanúsítványok és tanúsítványprofilok Wi-Fi telepítése
+### <a name="deploy-certificates-and-wi-fi-profiles"></a>Tanúsítványok és tanúsítványprofilok Wi-Fi központi telepítése
 
 A tanúsítványok és profilok központi telepítéséhez Microsoft Endpoint Manager alábbi lépéseket:
 
@@ -63,19 +63,19 @@ A tanúsítványok és profilok központi telepítéséhez Microsoft Endpoint Ma
     > **A lejárati dátum nélküli tanúsítványprofilok nem lesznek telepítve.**
 
     > [!Note]
-    > Mivel a HoloLens 2-t sokan megosztott eszköznek tekintik, vagyis eszközönként több felhasználónak is, ajánlott a felhasználói tanúsítványok helyett eszköztanúsítványokat telepíteni az Wi-Fi hitelesítéshez, ahol lehetséges.
+    > Mivel a HoloLens 2-t sokan megosztott eszköznek tekintik, vagyis eszközönként több felhasználónak, ajánlott felhasználói tanúsítványok helyett eszköztanúsítványokat telepíteni az Wi-Fi hitelesítéshez, ahol lehetséges.
 
-3. Hozzon létre egy profilt a vállalati hálózati Wi-Fi számára (lásd: [Wi-Fi-beállítások Windows 10 és újabb eszközökhöz).](/intune/wi-fi-settings-windows) A saját Wi-Fi kiválaszthatja, hogy a szervezet proxybeállítását használja-e.
+3. Hozzon létre egy profilt a vállalati hálózati Wi-Fi (lásd: [Wi-Fi-beállítások](/intune/wi-fi-settings-windows)az Windows 10 és újabb eszközökhöz). A Wi-Fi profilban használhatja a proxybeállításokat a szervezeten belül.
 
     A választható lehetőségek:
     - **Nincs**: Semmilyen proxybeállítás nincs konfigurálva.
     - **Manuális konfigurálás:** Adja meg a **proxykiszolgáló IP-címét** és **portszámát.**
     - **Automatikus konfigurálás:** Adja meg az automatikus proxykonfigurációs (PAC) parancsfájlra mutató URL-címet. Írja be például a következőt: *http://proxy.contoso.com/proxy.pac* .
 
-    A PAC-fájlokkal kapcsolatos további információkért lásd: [Proxy auto-Configuration (PAC) fájl](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (nem Microsoft-webhely megnyitása).
+    A PAC-fájlokkal kapcsolatos további információkért lásd: [Proxy Auto-Configuration (PAC) fájl](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (egy nem Microsoft-webhely megnyitása).
  
     > [!Note]
-    > Javasoljuk, hogy Wi-Fi felhasználói csoportok helyett eszközcsoportokhoz rendeli hozzá a profilt.
+    > Ha lehetséges, ajánlott a Wi-Fi-profilt az Eszközcsoportokhoz rendelni a Felhasználói csoportok helyett.
      
     > [!Tip]
     > Munkaprofilt a vállalati hálózaton Wi-Fi számítógépéről Windows 10 exportálhat. Ez az exportálás létrehoz egy XML-fájlt az összes aktuális beállítással. Ezután importálja ezt a fájlt az Intune-ba, és használja Wi-Fi 2 eszköz HoloLens profiljaként. Lásd: [Wi-Fi-beállítások exportálása és importálása Windows rendszerű eszközökhöz](/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
@@ -84,46 +84,46 @@ A tanúsítványok és profilok központi telepítéséhez Microsoft Endpoint Ma
 
 2.  [Az Eszközprofilok](/mem/intune/configuration/device-profile-monitor) figyelése az Intune-ban.
 
-Ha probléma ad Wi-Fi profilokkal, akkor az Eszközkonfigurációs profilok [hibaelhárítása az IntuneWi-Fi ban témakörben található.](/troubleshoot/mem/intune/troubleshoot-wi-fi-profiles)
+Ha probléma ad Wi-Fi profilokkal, a Következő témakörben Wi-Fi eszközkonfigurációs profilok [hibaelhárítása az Intune-ban.](/troubleshoot/mem/intune/troubleshoot-wi-fi-profiles)
 
 ## <a name="troubleshooting-external-internet-access-when-corp-connected"></a>Külső internet-hozzáférés hibaelhárítása vállalati kapcsolattal
-Ha a szolgáltatások megpróbálnak nem egy beállított proxyn keresztülmenni, előfordulhat, hogy a tűzfalon keresztül próbálnak csatlakozni. A hibák elhárításához hozzáadhatja a tűzfalszabályok végpontspecifikus listáját.
+Ha a szolgáltatások megpróbálnak nem egy beállított proxyn keresztülmenni, előfordulhat, hogy a tűzfalon keresztül próbálnak csatlakozni. A problémák elhárításához hozzáadhatja a tűzfalszabályok végpontspecifikus listáját.
 
-Ha a tűzfalportok blokkolják, engedélyezzen néhány gyakori végpontot [a](/hololens/hololens-offline) HoloLens.
+Ha a tűzfalportok blokkolják, engedélyezzen néhány gyakori [végpontot](/hololens/hololens-offline) a HoloLens.
 
-Emellett engedélyezheti az Útmutatók adott portjai: Az internetről elérhető URL-címek, amelyekre [szükség van a](https://support.microsoft.com/help/2655102/internet-accessible-urls-required-for-connectivity-to-microsoft-dynami)Microsoft Dynamics CRM Online.
+Emellett engedélyezheti az útmutatók adott portjainak url-címeit is: Internetről elérhető URL-címek, amelyek az -hoz való [csatlakozáshoz Microsoft Dynamics CRM Online.](https://support.microsoft.com/help/2655102/internet-accessible-urls-required-for-connectivity-to-microsoft-dynami)
 
 ## <a name="app-deployment"></a>Alkalmazástelepítés
 
-Az LOB-alkalmazások MDM-en keresztüli üzembe helyezése egy könnyen skálázható módszer, amely automatikusan üzembe helyezhető az eszközökre a létrehozott csoportban való regisztráció után.
+Az LOB-alkalmazások MDM-en keresztüli üzembe helyezése egy könnyen skálázható módszer, amely automatikusan üzembe helyezhető az eszközökre egy létrehozott csoportban való regisztrációkor.
 
 Ha még fejleszti az alkalmazásait, vagy még nincs ilyen alkalmazása, használhatja az MRTK-példák központjának egy mintaalkalmazását. Ez a mintaalkalmazás használatra kész, és nem igényel Unityt vagy Visual Studio. [Töltse le az MRTK-példák mintaalkalmazást.](https://aka.ms/HoloLensDocs-Sample-MRTK-Examples-App)
 
-Ha inkább saját alkalmazást szeretne használni, vagy ha az alkalmazásfejlesztést szeretné Mixed Reality, tekintse át a Mixed Reality [dokumentációját.](/windows/mixed-reality/design/design)
+Ha inkább saját alkalmazást szeretne használni, vagy szeretne alkalmazásfejlesztést Mixed Reality, tekintse át a Mixed Reality [dokumentációját.](/windows/mixed-reality/design/design)
 
 > [!NOTE]
-> A HoloLens rendszerkövetelményei az alkalmazás build architektúrája alapján vannak felépítve. HoloLens 2 eszköz ARM-architektúrát használ. Amikor alkalmazásokat hoz Visual Studio, győződjön meg arról, hogy az eszköznek megfelelő architektúrát választotta ki, és tartalmazza a szükséges függőségeket.
+> Az alkalmazás-HoloLens rendszerkövetelményei az alkalmazás build architektúrája alapján vannak felépítve. HoloLens 2 eszköz ARM-architektúrát használ. Amikor alkalmazásokat hoz Visual Studio, győződjön meg arról, hogy az eszköznek megfelelő architektúrát választotta ki, és tartalmazza a szükséges függőségeket.
 
 > [!IMPORTANT]
-> LOB-alkalmazások telepítésekor fontos, hogy a tanúsítványt is feltöltsük az Intune-ba, és hozzárendeljük ugyan ahhoz a csoporthoz, amely az alkalmazást használni fogja, különben nem fog megfelelően telepíteni.
+> LOB-alkalmazások telepítésekor fontos, hogy a tanúsítványt az Intune-ba is feltöltsük, és hozzárendeljük ugyan ahhoz a csoporthoz, amely az alkalmazást használni fogja, vagy nem telepíti megfelelően.
 
 ### <a name="upload-and-assign-the-app"></a>Az alkalmazás feltöltése és hozzárendelése
 
 1. Lépjen a [MEM felügyeleti központba.](https://endpoint.microsoft.com/#home)
 
-2. Válassza **az Alkalmazások**  ->  **Minden alkalmazás,** majd a **+ Hozzáadás gombot.**
+2. Válassza **az Alkalmazások**  ->  **Minden alkalmazás,** majd a + Hozzáadás **gombot.**
 
 3. Az Egyéb alatt válassza **az Üzletági alkalmazás lehetőséget.** Kattintson a **kijelölésre.**
 
-4. Válassza ki az alkalmazáscsomag-fájlt. Ez az AppXBUNDLE-fájl, vagy ebben a példában az alkalmazás _az MRTK Examples Hub \_ 2.4.2.0 \_ arm \_ Master.appxbundle_.
+4. Válassza ki az alkalmazáscsomag-fájlt. Ez az Ön APPXBUNDLE-fájlja, vagy ebben a példában az alkalmazás _az MRTK Examples Hub \_ 2.4.2.0 \_ arm \_ Master.appxbundle_.
 
-5. A hiányzó függőségekről értesítést kap. Ebben az esetben fel kell töltenünk a _Microsoft.VCLibs.ARM.14.00.appx fájlt._ Keresse meg a Fájl **kiválasztása alatt.**
+5. Értesítést kap a hiányzó függőségekről. Ebben az esetben fel kell töltenünk a _Microsoft.VCLibs.ARM.14.00.appx fájlt._ Keresse meg a Fájl **kiválasztása alatt.**
 
 6. Kattintson az OK gombra.
 
 7. A következő képernyőn a kötelező mezők automatikusan ki lesznek töltve. Kattintson a **Tovább** gombra.
 
-8. A Kötelező alatt adja hozzá a korábban létrehozott csoportot, hogy az alkalmazás kötelező legyen a csoporthoz. Ennek hatására az alkalmazás automatikusan letölti az alkalmazást a csoportba regisztrált eszközökre. Kattintson a **Tovább** gombra.
+8. A Kötelező alatt adja hozzá a korábban létrehozott csoportot, hogy az alkalmazás szükséges legyen a csoporthoz. Ennek hatására az alkalmazás automatikusan letölti az alkalmazást a csoportba regisztrált eszközökre. Kattintson a **Tovább** gombra.
 
 9. Válassza a **Létrehozás** lehetőséget.
 
@@ -131,30 +131,30 @@ További információ: [Alkalmazások hozzárendelése csoportokhoz a Microsoft 
 
 ## <a name="setup-guides-application-licenses-dataverse-and-authoring"></a>Telepítési útmutatók: Alkalmazáslicencek, adatverzum és szerzői
 
-A Dynamics 365-útmutatók használata előtt el kell készülni a használatra. Három területet kell előkészítenünk: felhasználók, az adatverzum és maguk az útmutatók.
+A Dynamics 365-útmutatók használatának érdekében előkészületeket kell megtennie. Három területet kell előkészítenünk: felhasználók, az adatverzum és maguk az útmutatók.
 
 ### <a name="users-and-application-licenses"></a>Felhasználók és alkalmazáslicencek
 
-Ahhoz, hogy valaki útmutatókat használ, Azure AD-fiókot kell használnia, amelyet korábban már beállítottunk ebben az útmutatóban.
+Ahhoz, hogy valaki útmutatókat használjon, Azure AD-fiókot kell használnia, amelyet korábban ebben az útmutatóban hoztunk létre.
 
-Emellett Dynamics 365-útmutatók licencet kell hozzárendelni a létrehozott felhasználóhoz. Ezt a következőből [Microsoft 365 Felügyeleti központ.](https://admin.microsoft.com/AdminPortal/Home) Rendelje hozzá a licencet az elsődleges Azure-fiókjához is.
+Emellett Dynamics 365-útmutatók licencet is hozzá kell rendelnie a létrehozott felhasználóhoz. Ezt a következőből [Microsoft 365 Felügyeleti központ.](https://admin.microsoft.com/AdminPortal/Home) Rendelje hozzá a licencet az elsődleges Azure-fiókjához is.
 
-Kövesse [ezt a képekkel](/dynamics365/mixed-reality/guides/setup-step-one#assign-the-dynamics-365-guides-license-to-user-accounts) rendelkező rövid útmutatót, amely részletes útmutatást tartalmaz az alkalmazáslicencek alkalmazásához.
+Az [alkalmazáslicencek alkalmazására](/dynamics365/mixed-reality/guides/setup-step-one#assign-the-dynamics-365-guides-license-to-user-accounts) vonatkozó részletes útmutatásért kövesse ezt a képekkel rendelkező rövid útmutatót.
 
 ### <a name="set-up-the-dataverse"></a>Az adatverem beállítása
 
-Éles környezet [beállítását](/dynamics365/mixed-reality/guides/setup-step-two#set-up-a-production-environment-for-purchased-licenses-only) két előfeltételnek kell teljesítenie. Rendszergazdai [**szerepkörrel**](/power-platform/admin/database-security) kell **lennie,** és Power Apps-licenccel [**(vagy**](/power-platform/admin/signup-question-and-answer) dynamics [**365-útmutatók**](/dynamics365/mixed-reality/guides/setup-step-one) licenccel, amely tartalmaz egy Power Apps-licencet). Ha az útmutató alapján hozta létre az Azure AD-t, akkor megfelel a rendszergazda szerepkör-követelményeinek. Az előző lépésben egy Útmutatók licencet is hozzárendeltünk.
+Éles környezet [beállítását két](/dynamics365/mixed-reality/guides/setup-step-two#set-up-a-production-environment-for-purchased-licenses-only) előfeltételnek kell teljesítenie. Rendszergazdai [**szerepkörrel**](/power-platform/admin/database-security) kell **lennie,** és [**Power Apps-licenccel (vagy**](/power-platform/admin/signup-question-and-answer) olyan [**Dynamics 365-útmutatók**](/dynamics365/mixed-reality/guides/setup-step-one) licenccel, amely tartalmaz egy Power Apps-licencet). Ha ebben az útmutatóban az Azure AD-t hozta létre, akkor megfelel a rendszergazda szerepkör-követelményeinek. Az előző lépésben egy Útmutatók licencet is hozzárendeltünk.
 
-Ebben az útmutatóban [egy Microsoft Dataverse-környezetet hozhat létre:](/dynamics365/mixed-reality/guides/setup-step-two)
+Ebben az útmutatóban [microsoftos adatverzum-környezetet hozhat létre:](/dynamics365/mixed-reality/guides/setup-step-two)
 
-1. Először használja a Power Platform felügyeleti központja [és](https://admin.powerplatform.microsoft.com/environments) hozzon létre egy új környezetet.
-2. Az Új környezet **létrehozásakor a** Típus **beállításnál** válassza&#39;Éles **környezetet.**
-3. Fontos a Create a database for this environment (Adatbázis **létrehozása ehhez a környezethez) kapcsoló ki- és bekapcsolni?**  kapcsoló **igen.**
-4. Az Adatbázis  **hozzáadása párbeszédpanelen**  állítsa a  **Dynamics 365-alkalmazások**  engedélyezése beállítást  **Igenre.**
+1. Először használja a [Power Platform felügyeleti központja](https://admin.powerplatform.microsoft.com/environments) és hozzon létre egy új környezetet.
+2. Az Új **környezet létrehozásakor**  a Típus mezőbe írja be a&#39;éles környezet lesz **kiválasztva.**
+3. Fontos a Create a **database for this environment (Adatbázis létrehozása ehhez a környezethez) kapcsolóval?**  kapcsolót **igenre.**
+4. Az Adatbázis  **hozzáadása párbeszédpanelen**  állítsa a  **Dynamics 365-alkalmazások**  engedélyezése beállítást Igen  **lehetőségre.**
 
 Az adatverem elemeinek maximális fájlméretét szeretné növelni. A maximális fájlméret növelésével nagyobb 3D-s modelleket vagy videofájlokat tölthet fel, amelyekre később az útmutatókban lesz majd majd használni. Kövesse egy rövid útmutatót a [fájl maximális méretének a módosításhoz.](/dynamics365/mixed-reality/guides/setup-step-two#change-the-maximum-upload-file-size)
 
-Végül telepítenie és konfigurálnia kell a [megoldást.](/dynamics365/mixed-reality/guides/setup-step-two#install-and-configure-the-solution) A [Power Platform felügyeleti központja](https://admin.powerplatform.microsoft.com/environments)válassza az **Erőforrások** \& gt; lehetőséget.  **Dynamics 365-alkalmazások:**, válassza a **Dynamics 365-útmutatók** lehetőséget a listában, majd válassza a **Telepítés lehetőséget.**  
+Végül telepítenie és konfigurálnia kell a [megoldást.](/dynamics365/mixed-reality/guides/setup-step-two#install-and-configure-the-solution) A [Power Platform felügyeleti központja](https://admin.powerplatform.microsoft.com/environments)válassza az **Erőforrások** \& gt; lehetőséget.  **Dynamics 365-alkalmazások :** válassza a **Dynamics 365-útmutatók** lehetőséget a listában, majd válassza a **Telepítés lehetőséget.**  
 
 Az alkalmazások használata előtt [hozzá](/dynamics365/mixed-reality/guides/assign-role) kell adni egy Útmutatók biztonsági szerepkört.
 
@@ -168,7 +168,7 @@ Ha az útmutatók szerzőiről szeretne tanulni, kezdje itt a [szerzői áttekin
 
 ## <a name="optional-kiosk-mode"></a>Nem kötelező: Kioszkmód
 
-A kioszkmód egy olyan mód, amely lehetővé vált, hogy a rendszergazdák úgy konfigurálják a Start menü felhasználói felületét, hogy csak egyetlen alkalmazást vagy alkalmazásokat mutassanak. A kioszk adott felhasználókra, csoportokra vagy eszközszinten is alkalmazható; és bizonyos esetekben kizárhat bizonyos felhasználókat a kioszkból, így továbbra is hozzáférhetnek a normál Start menühöz.
+A kioszkmód egy olyan mód, amely lehetővé vált, hogy a rendszergazdák úgy konfigurálják a Start menü felhasználói felületét, hogy csak egyetlen alkalmazást vagy alkalmazásokat mutassanak. A kioszkok adott felhasználókra, csoportokra vagy eszközszinten is alkalmazhatók; és bizonyos esetekben kizárhat bizonyos felhasználókat a kioszkból, így továbbra is hozzáférhetnek a normál Start menühöz.
 
 A kioszkmód számos különböző változóval rendelkezik mind a hatókör, mind a konfigurációk esetében, amelyek beállíthatók, valamint a kioszk üzembe helyezésének HoloLens. Ezen változók miatt a kioszkmód nem  kötelezőként lesz meghagyva ehhez az útmutatóhoz, és a rendszer nem használja újra. Ha úgy véli, hogy üzleti cél az elérhető alkalmazások felhasználókra való korlátozása, vagy ha szeretne többet megtudni, nyugodtan megtudhatja, hogyan állíthatja be a HoloLens [kioszkként.](/hololens/hololens-kiosk)
 

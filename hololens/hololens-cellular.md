@@ -12,12 +12,12 @@ ms.date: 02/24/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6f7da0263e8637486f0151fd2b9da55da8feccc1
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 0a31ff0af0af5b60fc0a44ef8fc5a85b5b50e766201d5441d508fd23dd0369e4
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635840"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664485"
 ---
 # <a name="connect-to-cellular-and-5g"></a>Csatlakozás mobilhálózathoz és 5G-hez
 
@@ -28,7 +28,7 @@ HoloLens 2. kapcsolat két módszert támogat a mobilhálózathoz és az 5G-hál
 
 ## <a name="hotspot-wifi"></a>Elérési pont (Wi-Fi)
 
-A legtöbb mobilkapcsolati igény egy elérési ponttal is kielégítható. HoloLens 2. Wi-Fi támogatja a 802.11ac-et, amely a leggyakoribb esetekben szükséges sávszélesség- és késési követelményeket biztosítja. A Wi-Fi kábel nélküli, és a legtöbb mobilhálózati eszközzel kompatibilis.
+A legtöbb mobilkapcsolati igény egy elérési ponttal is kielégítható. HoloLens 2. Wi-Fi támogatja a 802.11ac-et, amely a leggyakoribb esetekben szükséges sávszélességi és késési követelményeket biztosíthatja. A Wi-Fi kábel nélküli, és a legtöbb mobilhálózati eszközzel kompatibilis.
 
 ### <a name="connecting-to-a-hotspot"></a>Kapcsolódás elérési ponthoz
 

@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: bbbc60decb74942bd7930afb04297f78df33028a
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: c26c3a236a1047e62d480c27ec1bbb09faa63630eb29e0e1103546842d6a76d3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635857"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664791"
 ---
 # <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>Alkalmazások megkeresheti, telepítheti és eltávolíthatja őket a Microsoft Store
 
@@ -52,7 +52,7 @@ Nyissa meg a Microsoft Store a **Start menüből.** Ezután keresse meg az alkal
 
 ## <a name="install-apps"></a>Alkalmazások telepítése
 
-Az alkalmazások letöltéséhez egy fiókkal kell Microsoft-fiók. Egyes alkalmazások ingyenesek, és azonnal letölthetők. A vásárlást igénylő alkalmazásokhoz be kell jelentkeznie az Áruházba a Microsoft-fiók és érvényes fizetési módgal kell lennie.
+Az alkalmazások letöltéséhez egy új fiókkal kell Microsoft-fiók. Egyes alkalmazások ingyenesek, és azonnal letölthetők. A vásárlást igénylő alkalmazásokhoz be kell jelentkeznie az Áruházba a Microsoft-fiók és érvényes fizetési módgal kell lennie.
 
 > [!NOTE]
 > A fióknak, Microsoft Store kell lennie a bejelentkezett fiókkal. Ha munkahelyi vagy iskolai fiókot használ a HoloLens akkor előfordulhat, hogy be kell jelentkeznie személyes fiókjával az Áruházbeli alkalmazásban a vásárláshoz.
@@ -60,10 +60,10 @@ Az alkalmazások letöltéséhez egy fiókkal kell Microsoft-fiók. Egyes alkalm
 > [!TIP]
 > A fizetési mód beállításához [](https://account.microsoft.com/) válassza a Fizetési account.microsoft.com lehetőséget& **fizetési** lehetőség Fizetési  >    >  **lehetőség hozzáadása lehetőséget.**
 
-1. A [ **Start menü megnyitásához**](holographic-home.md)hajtson végre egy [Indítás](/hololens/hololens2-basic-usage#start-gesture) kézmozdulatot vagy [bloom](hololens1-basic-usage.md) kézmozdulatot a HoloLens (1. gen).
+1. A [ **Start menü megnyitásához**](holographic-home.md)hajtson végre egy [Indítás](/hololens/hololens2-basic-usage#start-gesture) kézmozdulatot vagy [bloom](hololens1-basic-usage.md) kézmozdulatot HoloLens (1. gen).
 
 1. Válassza ki Microsoft Store alkalmazást. Az Áruház alkalmazás megnyitása után:
-   1. A keresősáv használatával alkalmazásokat kereshet. 
+   1. A keresősáv használatával keressen alkalmazásokat. 
    1. Válassza ki a kifejezetten a HoloLens alkalmazásokra készült alapvető alkalmazásokat a kiválasztott kategóriák egyikében.
    1. Az Áruház alkalmazás jobb felső részen válassza a  **"..."** gombot, majd a Saját könyvtár lehetőséget a korábban megvásárolt alkalmazások megtekintéséhez.
 
@@ -73,13 +73,13 @@ Az alkalmazások letöltéséhez egy fiókkal kell Microsoft-fiók. Egyes alkalm
 
 Ha frissítenie kell egy, a Microsoft Store telepített alkalmazást, az alkalmazást a Microsoft Store frissítheti. Az alkalmazáshoz telepített Microsoft Store Vállalatoknak frissítheti is az alkalmazásokat a Microsoft Store Vállalatoknak. 
 
-1. A [ **Start menü megnyitásához**](holographic-home.md)hajtson végre egy [Indítás](/hololens/hololens2-basic-usage#start-gesture) kézmozdulatot vagy [bloom](hololens1-basic-usage.md) kézmozdulatot a HoloLens (1. gen).
+1. A [ **Start menü megnyitásához**](holographic-home.md)hajtson végre egy [Indítás](/hololens/hololens2-basic-usage#start-gesture) kézmozdulatot vagy [bloom](hololens1-basic-usage.md) kézmozdulatot HoloLens (1. gen).
 
 1. Válassza ki az Áruház alkalmazást.
 
 1. Keresse meg az Áruház alkalmazás jobb felső sarokban. 
 
-1. Válassza a **"..."** vagy a "További információ" gombot.
+1. Válassza a **"..."** vagy a "További információk" gombot.
 
    > [!div class="mx-imgBorder"]
    > ![Microsoft Store alkalmazás képernyőképe.](images/store-update-1.png)
@@ -87,10 +87,10 @@ Ha frissítenie kell egy, a Microsoft Store telepített alkalmazást, az alkalma
 1. Válassza **a Letöltések és frissítések lehetőséget.**
     1. Ha az eszköz korábban már azonosított frissítéseket, előfordulhat, hogy egy lefelé mutató nyíl és egy szám jelöli a függőben lévő frissítéseket.
 
-1. Válassza a **Frissítések lekérte lehetőséget.** Az eszköz most frissítéseket keres, és be fogja állítani őket letöltésre és telepítésre. 
+1. Válassza a **Frissítések lekérte lehetőséget.** Az eszköz most frissítéseket fog keresni, és be fogja állítani őket letöltésre és telepítésre. 
  
    > [!div class="mx-imgBorder"]
-   > ![Microsoft Store képernyőkép a frissítések lekért alkalmazásról.](images/store-update-2.png.jpg)
+   > ![Microsoft Store képernyőképe a frissítések lekért alkalmazásról.](images/store-update-2.png.jpg)
 
 > [!NOTE]
 > Ha az eszközön található alkalmazásokat a szervezet terjesztette, ugyanezekkel a kereskedelmi alkalmazáskezelési módszerekkel frissíthetők. Ha ez az Ön helyzetére vonatkozik, további információt a kereskedelmi alkalmazások üzembe [helyezésének áttekintésében talál.](app-deploy-overview.md)

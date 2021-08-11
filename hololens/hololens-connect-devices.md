@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5fed56d7a0beeda0a0d96eddc63aaee872f3e52d
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 1e478e366b8ad70243f6fffc47cd62e847af837637a992ebb60fc80bf6774186
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639097"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664305"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Csatlakozás usb Bluetooth-C-eszközök csatlakoztatása
 
@@ -58,7 +58,7 @@ HoloLens (1. generációs) a következő osztályokat támogatja a Bluetooth esz
 
 ## <a name="disable-bluetooth"></a>Az Bluetooth letiltása
 
-Ez az eljárás kikapcsolja a Bluetooth RF-összetevőit, és Bluetooth funkciót a Microsoft HoloLens.
+Ez az eljárás kikapcsolja a Bluetooth RF-összetevőit, és letiltja az összes Bluetooth funkciót a Microsoft HoloLens.
 
 1. Használja a Bloom kézmozdulatot (HoloLens (1. gen)) vagy az indítási kézmozdulatot (HoloLens 2) a **Start** menüre, majd válassza a Gépház  >  **lehetőséget.**
 
@@ -79,7 +79,7 @@ HoloLens 2. táblázat az USB-C-eszközök következő osztályát támogatja:
 
 
 > [!NOTE]
-> Az ügyfelek visszajelzésére válaszul korlátozott támogatást engedélyeztünk a közvetlenül a hálózatra csatlakoztatott mobilhálózati HoloLens USB-C-n keresztül. További [Csatlakozás mobilhálózatra és 5G-re](hololens-cellular.md) való adatátvitelről.
+> Az ügyfelek visszajelzésére válaszul korlátozott támogatást engedélyeztünk a közvetlenül a hálózatra csatlakoztatott mobilhálózati HoloLens USB-C-n keresztül. További [Csatlakozás lásd: Mobilhálózati és 5G-s](hololens-cellular.md) kapcsolat.
 
 ### <a name="usb-c-external-microphone-support"></a>USB-C külső mikrofon támogatása
 
@@ -87,7 +87,7 @@ HoloLens 2. táblázat az USB-C-eszközök következő osztályát támogatja:
 > Az USB-mikrofon csatlakoztatása nem lesz automatikusan beállítva **bemeneti eszközként.** USB-C-kábelek csatlakoztatása esetén a felhasználók megfigyelhetik, hogy a mikrofon hanganyaga automatikusan a mikrofonhoz lesz átirányítva, de a HoloLens operációs rendszer a belső mikrofontömböt a többi bemeneti eszköz fölé rangsorítja. **USB-C mikrofon használata érdekében kövesse az alábbi lépéseket.**
 
 > [!NOTE]
-> A külső mikrofonok nem használhatók buildben a [Holographic Windows 21H1-es](hololens-release-notes.md#windows-holographic-version-21h1) vagy újabb verziója előtt. 
+> A külső mikrofonok a [Holographic 21H1-es](hololens-release-notes.md#windows-holographic-version-21h1) vagy újabb Windows előtti buildek esetén nem használhatók. 
 
 A felhasználók a Hangbeállítások panelen  választhatnak USB-C-hez csatlakoztatott külső mikrofonokat. Az USB-C-mikrofonok hívásra, felvételre stb. használhatók.
 

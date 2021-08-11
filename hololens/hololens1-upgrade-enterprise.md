@@ -12,19 +12,19 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: b5ae9b0d6859c0f916b5b906e2e9ec54cad6cbd9
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 7cf35a10a5f18dc0ccca876230b1677c6eca54ad116f0b2045fc1b269ac6c4b0
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635194"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115661884"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>A Windows Holographic for Business funkcióinak feloldása
 
 > [!IMPORTANT]
-> Ez a lap csak az 1. HoloLens 1. generációsakra vonatkozik.
+> Ez a lap csak az első HoloLens vonatkozik.
 
-Microsoft HoloLens a Development *Edition* kiadásban érhető el, amely Windows Holographic (a Windows 10 HoloLens-hez tervezett kiadása) és a Commercial [Suite](hololens-commercial-features.md)kiadásában érhető el, amely további üzleti funkciókat biztosít.
+Microsoft HoloLens a Development *Edition* kiadásban érhető el, amely Windows Holographic (a Windows 10 HoloLens-hez tervezett kiadása) és a Commercial [Suite](hololens-commercial-features.md)kiadásban érhető el, amely további üzleti funkciókat biztosít.
 
 A kereskedelmi csomag megvásárlásakor olyan licencet kap, amely a Holographic Windows frissít a Windows Holographic for Business. Ezt a licencet a szervezet mobileszköz-kezelési [(MDM)](#edition-upgrade-by-using-mdm) szolgáltatójával vagy egy kiépítési csomaggal [alkalmazhatja az eszközre.](#edition-upgrade-by-using-a-provisioning-package)
 
@@ -35,9 +35,9 @@ A kereskedelmi csomag megvásárlásakor olyan licencet kap, amely a Holographic
 
 A vállalati licencet bármely olyan MDM-szolgáltató használhatja, amely támogatja a [WindowsLicensing konfigurációs szolgáltatót (CSP).](https://msdn.microsoft.com/library/windows/hardware/dn904983.aspx) A Microsoft MDM API legújabb verziója támogatja a WindowsLicensing CSP-t.
 
-Részletes útmutatás a HoloLens a Microsoft Intune használatával történő frissítéséhez: [A Holographic](/intune/holographic-upgrade)Windows-t futtató eszközök frissítése Windows Holographic for Business.
+Részletes útmutatás a HoloLens használatával történő frissítéséhez Microsoft Intune [A Holographict](/intune/holographic-upgrade)futtató eszközök Windows frissítése a Windows Holographic for Business.
 
- Más MDM-szolgáltatók esetében a házirend beállításának és telepítésének konkrét lépései eltérőek lehetnek.
+ Más MDM-szolgáltatóknál a házirend beállításának és telepítésének konkrét lépései eltérőek lehetnek.
 
 ## <a name="edition-upgrade-by-using-a-provisioning-package"></a>Kiadásfrissítés kiépítési csomag használatával
 

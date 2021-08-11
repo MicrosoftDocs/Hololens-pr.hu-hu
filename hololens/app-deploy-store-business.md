@@ -11,16 +11,16 @@ ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
 manager: yannisle
-ms.openlocfilehash: d7d5ad05dc675cf07afd075f4fb52d24cd4d3e15
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 1131c43ffc3a4e63e7dae09b6aebf04f2eded183888373c6d6b75bca8d3b872c
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635534"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665199"
 ---
 # <a name="microsoft-store-for-business"></a>Vállalati Microsoft Áruház
 
-A Microsoft Store Vállalatoknak elsősorban a vállalatok vagy szervezetek informatikai döntéshozói és rendszergazdái számára lett kialakítva, amelyek rugalmas módon találhatják meg, szerezhetik be, kezelhetik és terjesztik az ingyenes és fizetős alkalmazásokat egyes piacokon, és nagy mennyiségű Windows 10 eszközökhöz. 
+A Microsoft Store Vállalatoknak elsősorban a vállalkozások vagy szervezetek informatikai döntéshozói és rendszergazdái számára készült, amelyek rugalmas módon találhatják meg, szerezhetik be, kezelhetik és terjesztik az ingyenes és fizetős alkalmazásokat egyes piacokon, nagy mennyiségű Windows 10 eszközökre. 
 
 Az alkalmazásokat Microsoft Store alkalmazásokat és privát üzletági alkalmazásokat egyetlen leltárban kezelheti, és szükség szerint hozzárendelheti és újra felhasználhatja a licenceket. A legjobb terjesztési módszert is választhatja a szervezet számára: közvetlenül rendelhet alkalmazásokat egyénekhez és csapatokhoz, alkalmazásokat tehet közzé privát oldalakon a Microsoft Store-ban, vagy kapcsolódhat felügyeleti megoldásokkal a további lehetőségek érdekében.
 

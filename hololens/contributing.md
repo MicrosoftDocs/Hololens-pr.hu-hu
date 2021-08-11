@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: b1efaa77a4b96ed4b55e84147448cbfbc706d677
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: cbf0b2e4b61f006d0b5d7d74d3d81a4b33cfd6d8c2e124288b17959d54a5a1ad
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665066"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>Közreműködés az HoloLens dokumentációjában
 
@@ -60,7 +60,7 @@ A következő munkafolyamattal egy  meglévő cikkre vonatkozó frissítéseket 
    Ez automatikusan elágaztat egy egyszer használatos ágat az alapértelmezett ágról, a _master ágról._
 
    > [!NOTE]
-   > Ez a cikk a _főkiszolgálóra_ mutató hivatkozásokat tartalmaz, a Microsoft által már nem használt kifejezést. Amikor eltávolítjuk a kifejezést a szoftverből, eltávolítjuk a cikkből.
+   > Ez a cikk a _master_ kifejezésre mutató hivatkozásokat tartalmaz, amely a Microsoft által már nem használt kifejezés. Amikor eltávolítjuk a kifejezést a szoftverből, eltávolítjuk a cikkből.
    
 3. Szerkessze a cikk tartalmát a [Markdown alapjainak megfelelően.](#markdown-basics)
 
@@ -95,7 +95,7 @@ Ha átirányítást szeretne hozzáadni a .openpublishing.redirection.js, adjon 
         },
 ```
 
-- A az eltávolított régi cikk relatív `source_path` adattárának elérési útja. Győződjön meg arról, hogy az elérési út a következővel `mixed-reality-docs` kezdődik és végződik: `.md` .
+- A az eltávolított régi cikk relatív `source_path` adattárának elérési útja. Győződjön meg arról, hogy az elérési út a `mixed-reality-docs` következővel kezdődik és végződik: `.md` .
 
 - A a régi cikk és az új cikk relatív nyilvános `redirect_url` URL-címe. Győződjön meg arról, hogy az URL-cím nem tartalmazza **a** vagy a et, mivel a nyilvános URL-címre vonatkozik, és nem `mixed-reality-docs` az `.md` adattár elérési útjára. Az új cikk egy szakaszra mutató hivatkozása a használatával `#section` engedélyezett. Szükség esetén abszolút elérési utat is használhat egy másik webhelyhez.
 
@@ -107,12 +107,12 @@ Ha átirányítást szeretne hozzáadni a .openpublishing.redirection.js, adjon 
 
 A következő munkafolyamattal *hozhat létre új cikkeket* a dokumentációs adattában GitHub egy webböngészőben:
 
-1. Hozzon létre egy elágaztatást a MicrosoftDocs/mixed-reality alapértelmezett ágán(master) a jobb felső Sarokban található **Elágaztatás** gombbal. 
+1. Hozzon létre egy elágaztatást a MicrosoftDocs/mixed-reality alapértelmezett ágán(master) a jobb felső sarokban található **Elágaztatás** gombbal. 
 
    ![Ágaztatja el a jelenleg "master" nevű alapértelmezett ágat.](images/forkbranch.png)
 
    > [!NOTE]
-   > Ez a cikk a _főkiszolgálóra_ mutató hivatkozásokat tartalmaz, a Microsoft által már nem használt kifejezést. Amikor eltávolítjuk a kifejezést a szoftverből, eltávolítjuk a cikkből.
+   > Ez a cikk a _master_ kifejezésre mutató hivatkozásokat tartalmaz, amely a Microsoft által már nem használt kifejezés. Amikor eltávolítjuk a kifejezést a szoftverből, eltávolítjuk a cikkből.
    
 2. A "mixed-reality-docs" mappában válassza a jobb felső sarokban **található Új** fájl létrehozása lehetőséget.
 
@@ -167,7 +167,7 @@ A Visual Studio Code-hoz használható [Docs Markdown-bővítmény](/teamblog/do
 A képeket fel kell töltenie a "mixed-reality-docs/images" mappába az objektumban, majd megfelelően hivatkozni kell rájuk a cikkben. A képek automatikusan teljes méretben megjelenik, ami azt jelenti, hogy a nagy képek kitöltik a cikk teljes szélességét. Javasoljuk a képek előzetes méretezését a feltöltésük előtt. Az ajánlott szélesség 600 és 700 képpont közé esik, bár ha sűrű képernyőképről vagy a képernyőképek törtrészére van szükség, akkor érdemes felfelé vagy lefelé méretet használni.
 
 >[!IMPORTANT]
->A képeket csak az egyesítés előtt töltheti fel az eltolt repo-be. Ha tehát képeket szeretne hozzáadni egy cikkhez, először az [Visual Studio Code](#using-visual-studio-code) használatával kell hozzáadnia a képeket az eltolt "images" mappához, vagy meg kell győződni arról, hogy a következőket tette egy webböngészőben:
+>A képeket csak az egyesítés előtt töltheti fel az eltolt repo-be. Ha tehát képeket szeretne hozzáadni egy cikkhez, először a [Visual Studio Code](#using-visual-studio-code) használatával kell hozzáadnia a képeket az eltolt "images" mappához, vagy meg kell győződni arról, hogy a következőket tette egy webböngészőben:
 >
 >1. Elárgálta a MicrosoftDocs/mixed-reality-t.
 >2. Szerkesztette a cikket az eltekintőben.
@@ -183,7 +183,7 @@ A GitHub böngészőben történő szerkesztés közben az oldal  tetején talá
 >[!NOTE]
 >A módosítások előnézete a review.docs.microsoft.com csak Microsoft-alkalmazottak számára érhető el
 
-Microsoft-alkalmazottak: Ha a közreműködései összefésülve vannak az alapértelmezett _ággal,_ a főággal áttekintheti a tartalmat, mielőtt az nyilvánosan elérhetővé </hololens?branch=master>. Keresse meg a cikket a bal oldali oszlopban található tartalomjegyzék használatával.
+Microsoft-alkalmazottak: Ha a közreműködései egyesülnek az alapértelmezett ággal, a főággal, mielőtt az a /hololens?branch=master <nyilvánosra>. Keresse meg a cikket a bal oldali oszlopban található tartalomjegyzék használatával.
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>Szerkesztés a böngészőben és szerkesztés asztali ügyféllel
 
@@ -232,7 +232,7 @@ A következő munkafolyamattal módosításokat eszközlhat a dokumentáción az
       
       ![Kattintson a Szinkronizálás gombra kép](images/sync-clone.png)
       
-2. Cikkeket hozhat létre vagy szerkeszthet a klónozott adattában az Visual Studio kód használatával.
+2. Cikkeket hozhat létre vagy szerkeszthet a klónozott adattában az Visual Studio code használatával.
 
    1. Szerkesszen egy vagy több cikket (szükség esetén adjon képeket az "images" mappához).
    
@@ -244,9 +244,9 @@ A következő munkafolyamattal módosításokat eszközlhat a dokumentáción az
    
       ![Válassza az "Összes véglegesítése" lehetőséget a Forrásvezérlőben](images/source-control-commit.png)
       
-   4. A **szinkronizálási gombra** kattintva szinkronizálhatja a módosításokat a forráshoz (az GitHub).
+   4. A **szinkronizálási gombra** kattintva szinkronizálhatja a módosításokat a forráshoz (a saját elválasztó GitHub).
       
-      ![Kattintson a Szinkronizálás gombra](images/sync-back.png)
+      ![Kattintson a szinkronizálás gombra](images/sync-back.png)
       
 3. Egy webböngészőben hozzon létre egy lekéréses kérelmet az új módosítások microsoftdocs/mixed-reality _főkiszolgálóval_ való szinkronizálása érdekében (győződjön meg arról, hogy a nyíl a megfelelő célhelyre mutat).
 
