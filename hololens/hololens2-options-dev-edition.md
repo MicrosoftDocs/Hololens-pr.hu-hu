@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 613f0a24d1d0d0740ebc448b2c92238a76350958
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: a4e2bc30d1141fcc1c6a648ccc7c3573f6afda2ba3f5cd413a8e9a69203ea617
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639675"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658895"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2. fejlesztési kiadás
 
@@ -35,7 +35,7 @@ Az HoloLens 2 Development Edition tartalmaz egy HoloLens 2, 500 USD Azure-kredit
 | Csomag funkció | Description |
 |---|---|
 |  [Unity](https://unity.com/) | Egy valós idejű 3D-s fejlesztési platform.   |
-|  [Pixyz beépülő modul a Unityhez](https://www.pixyz-software.com/plugin/) | Híd a mérnöki &amp; CAD-világok és a fejlesztési világ összekapcsolásakor.   |
+|  [Pixyz beépülő modul a Unityhez](https://www.pixyz-software.com/plugin/) | Híd a mérnöki &amp; CAD-világok és a fejlesztési világ összekötéhez.   |
 | [500 DOLLÁR Azure-kredit az Azure-szolgáltatásokhoz](https://azure.microsoft.com/resources/) | A HoloLens 2 Development Edition tartalmazza az Azure-beli vegyes valóságú alkalmazások gyors fejlesztését és tesztelését. |
 
 ![HoloLens 2. fejlesztési kiadás](./images/hololens-2-dev-ed.png)
@@ -43,16 +43,16 @@ Az HoloLens 2 Development Edition tartalmaz egy HoloLens 2, 500 USD Azure-kredit
 ## <a name="redeem-your-credits"></a>Kreditek beváltása
 
 ### <a name="unity"></a>Unity
-Egy egyedi kódot kapott. Utasítások a Unity-Pro beváltani:
+Egyedi kódot kapott. Utasítások a Unity-Pro beváltani:
 1. Látogasson [el id.unity.com](http://id.unity.com/)
 1. Jelentkezzen be a Unity-azonosítójával, vagy hozzon létre egyet
 1. Kattintson **a Termékkód beváltása elemre**
-1. Adja meg a termékkódot, majd kattintson **a Termékkód beváltása elemre.**
+1. Adja meg a termékkódot, majd kattintson **a Termékkód beváltása elemre**
 
 További részletek a [Unity-licencek aktiválásának mikéntjére.](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-) Ha [segítségre van szüksége,](https://support.unity3d.com/hc) forduljon a Unity ügyfélszolgálatához.  
 
 ### <a name="pixyz"></a>Pixyz
-Egy egyedi kódot kapott. A Pixyz beépülő modul próbaverzióját beváltó utasítások:
+Egyedi kódot kapott. A Pixyz beépülő modul próbaverzióját beváltó utasítások:
 1. Látogasson [el id.unity.com](http://id.unity.com/)
 1. Kattintson **a Termékkód beváltása elemre**
 1. Adja meg a Pixyz beépülő modul termékkódját, majd kattintson **a Termékkód beváltása elemre**

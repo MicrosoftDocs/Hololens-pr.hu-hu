@@ -1,6 +1,6 @@
 ---
-title: Új HoloLens 2 előkészítése
-description: Megtudhatja, hogyan állíthatja be és állíthatja be első alkalommal a HoloLens 2-eszközt, beleértve az egészségügyi és biztonsági tippeket, valamint a hardveres útmutatókat.
+title: Új HoloLens előkészítése
+description: Megtudhatja, hogyan állíthatja be és állíthatja be HoloLens 2-es eszközét először, beleértve az egészségügyi és biztonsági tippeket, valamint a hardveres útmutatókat.
 keywords: hololens, világítás, fit, kényelmi, alkatrészek
 ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
 ms.date: 9/17/2019
@@ -12,93 +12,93 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 22b3dad817260175bccdb89faac0bbae7b210038
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 13f7000f608e6375efce201f1edd1627900ecdda2f86ddca8a174ac0b8e43ceb
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924434"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658966"
 ---
-# <a name="get-your-hololens-2-ready-to-use"></a>A HoloLens 2 használatra kész
+# <a name="get-your-hololens-2-ready-to-use"></a>A 2. HoloLens használatra kész
 
-Az alábbi eljárások segítenek a HoloLens 2 első beállításában.
+Az alábbi eljárások segítenek első alkalommal HoloLens 2- es HoloLens beállításában.
 
-## <a name="charge-your-hololens"></a>A HoloLens díjának feltöltése
+## <a name="charge-your-hololens"></a>Az HoloLens
 
-Csatlakoztassa a tápegységet a díjporthoz az USB-C kábellel (a csomagban). Csatlakoztassa a tápegységet egy áramforráshoz. A HoloLens 2 feltöltésének legjobb módja az eszköz tápellátása és USB-C-to-C kábele. A tápellátás 18W energiát ad (9V 2A-n). A mellékelt fali készülék használatával a HoloLens 2-eszközök az akkumulátort kevesebb mint 65 perc alatt megtelik, amikor az eszköz készenléti állapotban van.
+Csatlakozás usb-C kábellel (a csomagban) csatlakoztatja a tápegységet a díjporthoz. Csatlakoztassa a tápegységet egy áramforráshoz. Az eszköz tápellátása és USB-C-to-C kábele a legjobb módszer a 2-es HoloLens feltöltésére. A akkumulátor 18W energiát ad (9V at 2A). A mellékelt fali akkumulátor használatával HoloLens 2 eszköz kevesebb mint 65 perc alatt megtelhet, amikor az eszköz készenléti állapotban van.
 
 A díjszabás és a sebesség attól függően változhat, hogy az eszköz milyen környezetben fut.
 
-- Ha az eszköz töltődik, az akkumulátor kijelzője felgyúgyítással jelzi az aktuális töltöttségi szintet.  Az utolsó világítás elhalványul és kihalványul, ami aktív díjszabást jelez.
+- Ha az eszköz töltődik, az akkumulátor kijelzője felgyúsodik, és jelzi az aktuális töltöttségi szintet.  Az utolsó világítás elhalványul, és kihalványul, ami aktív díjszabást jelez.
 - Ha a HoloLens be van stb., az akkumulátor kijelzője az akkumulátor töltöttségi szintjét jeleníti meg növekményekben.
-- Ha az öt világítás közül csak az egyik van bekapcsolva, az akkumulátor töltöttségi szintje 20% alatt van.
+- Ha az öt fény közül csak az egyik van bekapcsolva, az akkumulátor töltöttségi szintje 20% alatt van.
 - Ha az akkumulátor töltöttségi szintje kritikusan alacsony, és megpróbálja bekapcsolni az eszközt, az egyik világítás rövid időre villog, majd kiússik.
 
-Ha [további információra van szüksége,](hololens2-charging.md#charging-the-device) itt olvashatja az eszközök díjszabásának teljes részleteit. 
+Ha [további információra van szüksége,](hololens2-charging.md#charging-the-device) itt olvashatja el az eszközök díjának részletes adatait. 
 
-## <a name="adjust-fit"></a>Igazítás igazítása
+## <a name="adjust-fit"></a>Igazítás
 
-Helyezze a HoloLens 2-t a fejéhez. Ha szemüveget koptat, hagyja őket be.  Arow padnak az Ön öklének kell lennie, a háttérsávnak pedig a fejének közepén.
+Helyezze HoloLens 2. helyére. Ha szemüveget koptat, hagyja őket be.  Arow padnak az Ön öklének kell lennie, a háttérsávnak pedig a fej közepén kell lennie.
 
-Szükség esetén terjessze ki a fejsávot a beállítókerék elforgatásával, majd lazítsa le a terhelési tárcsat.
+Szükség esetén a beállítókerék elfordításával terjessze ki a fejsávot, majd lazítsa le a terhelési tárcsat.
 
-![A HoloLens 2 igazítása és módosításai](images/hololens2-fit.png)
+![HoloLens 2 igazítás és beállítások](images/hololens2-fit.png)
 
-### <a name="attach-and-detach-the-overhead-strap"></a>Csatolja és válassza le a többletterhelési költségeket
+### <a name="attach-and-detach-the-overhead-strap"></a>A többletterhelési terhelés csatolása és leválasztása
 
-A terhelési rekedtre nincs szükség, de a HoloLens 2 hosszabb ideig tartó használatát is kényelmesebbé teszi.
+A terhelési rekedtre nincs szükség, de hosszabb időszakokban 2 HoloLens is lehet vele.
 
-A terhelési rekesztőlap elülső elülső része leválasztható, majd a behúzható hurokba csúsztatható behúzva. Az újratoláshoz húzza ki a hurkot, és csúsztassa vissza a back-back() hurkot.
+A terhelési fül elülső része leválasztható, kihookolja a hurkot, és átcsúsztatható a behúzható hurokba arow padon. A visszacsatoláshoz húzza ki a hurkot, és csúsztassa vissza a back-back-et.
 
-A terhelési rekulátor hátának leválasztása előtt nyomja le az egyes kapcsolati fülek alatti gombot, és húzza le az öklét. Az újracsatlakozáshoz nyomja le a kapcsolati lapokat a tárolóhelyekre, amíg rá nem kattint.
+A terhelési lap hátának leválasztása előtt nyomja le az egyes kapcsolati fülek alatti gombot, és húzza le az öklét. Az újracsatlakozáshoz nyomja le a kapcsolati lapokat a tárolóhelyekre, amíg rá nem kattint.
 
-![Csatolja vagy távolítsa el a HoloLens 2 fejfejet](images/hololens2-headstrap.png)
+![A kétfejes HoloLens csatolása vagy eltávolítása](images/hololens2-headstrap.png)
 
-## <a name="turn-on-the-hololens-2"></a>A HoloLens 2 bekapcsolás
+## <a name="turn-on-the-hololens-2"></a>A 2 HoloLens bekapcsolás
 
-A HoloLens 2 bekapcsoláshoz nyomja le a Power gombot.  A Tápkapcsoló alatti LED-ek az akkumulátor töltöttségi szintjét jelenítik meg.
+A 2. HoloLens a Power (Bekapcsoló) gombra kattintva kapcsolhatja be.  A Tápkapcsoló alatti LED-ek az akkumulátor töltöttségi szintjét jelenítik meg.
 
 > [!NOTE]
-> Ahhoz, hogy a HoloLens 2-t első alkalommal bekapcsolja, a be- és bekapcsolás után legalább 4 másodpercig tartsa lenyomva a bekapcsológombot. Amikor legközelebb bekapcsolja a HoloLens 2-t, az egy rövid bekapcsológombbal kezdődik.
+> Ha első alkalommal HoloLens a 2. gombot, a ki- és bekapcsolás után legalább 4 másodpercig tartsa lenyomva a bekapcsológombot. Amikor a 2. HoloLens bekapcsolja, az egy rövid bekapcsológombbal kezdődik.
 
-### <a name="power-button-actions-for-different-power-transitions"></a>Bekapcsológomb-műveletek a különböző energiaátmenetek számára
+### <a name="power-button-actions-for-different-power-transitions"></a>Bekapcsológombos műveletek különböző energiaátmenethez
 
-| Cél | A művelet végrehajtása | A HoloLens 2 ezt fogja tenni |
+| Cél | A művelet végrehajtása | A HoloLens 2. |
 | - | - | - |
-| A bekapcsolás | Egyetlen gombnyomással. | Mind az öt világítás be van kapcsolva, majd úgy vált, hogy jelezze az akkumulátor töltöttségi szintjét. Négy másodperc elteltével egy hang lejátszása megkezdődik. |
-| Alvó üzemmód | Egyetlen gombnyomással. | Mind az öt világítás be van kapcsolva, majd egyszerre csak egyszer kell elhalványítani. A világítás kikapcsolása után egy hang lejátszása után a képernyőn megjelenik a "Goodbye" üzenet. |
-| Felébresztés alvó üzemmódból | Egyetlen gombnyomással. | Mind az öt világítás be van kapcsolva, majd úgy vált, hogy jelezze az akkumulátor töltöttségi szintjét. A hang azonnal lejátszásra kerül. |
+| A bekapcsolás | Nyomja le az egy gombot. | Mind az öt világítás be van kapcsolva, majd az akkumulátor szintjének jelzésére vált. Négy másodperc elteltével egy hang lejátszása megkezdődik. |
+| Alvó üzemmód | Nyomja le az egy gombot. | Mind az öt világítás be van kapcsolva, majd egyszerre csak egyszer kell elhalványítani. A világítás kikapcsolása után egy hang lejátszása után a képernyőn megjelenik a "Goodbye" üzenet. |
+| Felébresztés alvó üzemmódból | Nyomja le az egy gombot. | Mind az öt világítás be van kapcsolva, majd az akkumulátor szintjének jelzésére vált. A hang azonnal lejátszásra kerül. |
 | A kikapcsolása | Tartsa lenyomva az 5-öst. |  Mind az öt világítás be van kapcsolva, majd egyszerre csak egyszer kell elhalványítani. A világítás kikapcsolása után egy hang lejátszása után a képernyőn megjelenik a "Goodbye" üzenet. |
-| A HoloLens újraindításának kényszerítés, ha nem válaszol | Tartsa lenyomva a 10-eseket. | Mind az öt világítás be van kapcsolva, majd egyszerre csak egyszer kell elhalványítani. A világítás kikapcsolása után. |
+| A HoloLens újraindításának kényszeríteni, ha nem válaszol | Tartsa lenyomva a 10-eseket. | Mind az öt világítás be van kapcsolva, majd egyszerre csak egyszer kell elhalványítani. A világítás kikapcsolása után. |
 
-## <a name="hololens-behavior-reference"></a>HoloLens-viselkedési referencia
+## <a name="hololens-behavior-reference"></a>HoloLens viselkedési referencia
 
-Nem tudja, mit jelentenek a jelzőfények a HoloLensen? Tudni szeretné, hogyan kell viselkednie a HoloLensnek a díjszabás közben?  Itt van néhány segítség!
+Nem tudja, mit jelentenek a kijelző HoloLens? Szeretné tudni, hogyan HoloLens a díjszabás közben?  Itt van néhány segítség!
 
 ### <a name="charging-behavior"></a>Díjszabási viselkedés
 
-| Az eszköz állapota | Művelet | A HoloLens 2 ezt fogja tenni |
+| Az eszköz állapota | Művelet | HoloLens 2. |
 | - | - | - |
-| KI | USB-kábel csatlakoztatása | Az eszköz bekapcsolja a kijelzőt jelző világítással, amely az akkumulátor töltöttségi szintjét mutatja, és az eszköz elkezdi a díjszabást.
+| KI | USB-kábel csatlakoztatása | Az eszköz az akkumulátor töltöttségi szintjét jelző jelző világítással bekapcsolja az eszközt, és megkezdi a díjszabást.
 | ON | USB-kábel eltávolítása | Az eszköz nem töltődik le
 | ON | USB-kábel csatlakoztatása | Az eszköz elkezdi a díjszabást
 | Alvás | USB-kábel csatlakoztatása | Az eszköz elkezdi a díjszabást
 | Alvás | USB-kábel eltávolítása | Az eszköz nem töltődik le
-| BEKAPCSOLVA, csatlakoztatott USB-kábellel | Az eszköz kikapcsolása | Az eszköz az akkumulátor töltöttségi szintjét jelző jelző világítással bekapcsolja az eszközt, és az eszköz elkezdi a díjszabást |
+| BEKAPCSOLVA USB-kábellel csatlakoztatva | Az eszköz kikapcsolása | Az eszköz az akkumulátor töltöttségi szintjét jelző jelző világítással bekapcsolja az eszközt, és az eszköz elkezdi a díjszabást |
 
 ### <a name="lights-that-indicate-the-battery-level"></a>Az akkumulátor töltöttségi szintjét jelző világítás
 
 | Világítások száma | Akkumulátor töltöttségi szintje |
 | - | - |
-| Négy tartós fény, egy ki- és bevilágítás | 100% és 81% között (teljes díj) |
-| Három folyamatos világítás, egy ki- és be- és bevilágítás | 80% és 61% között |
+| Négy szilárd fény, egy fény ki- és bereked | 100% és 81% között (teljes díj) |
+| Három tartós világítás, egy ki- és bevilágítás | 80% és 61% között |
 | Két tartós fény, egy ki- és bevilágítás | 60% és 41% között |
 | Egy folytonos fény, egy be- és kiviláguló fény | 40% és 21% között |
 | Egy világos ki- és berekedő | 20% és 5% közötti vagy alacsonyabb (kritikus akkumulátor) |
 
-### <a name="sleep-behavior"></a>Alvó üzemmód működése
+### <a name="sleep-behavior"></a>Alvó üzemmód
 
-| Az eszköz állapota | Művelet | A HoloLens 2 ezt fogja tenni |
+| Az eszköz állapota | Művelet | HoloLens 2. |
 | - | - | - |
 | ON | Egyetlen bekapcsológomb lenyomása | Az eszköz átvált a SLEEP állapotra, és kikapcsolja az összes jelzőfényt |
 | ON | 3 percig nincs mozgás | Az eszköz átvált a SLEEP állapotra, és kikapcsolja az összes jelzőfényt |
@@ -108,21 +108,21 @@ Nem tudja, mit jelentenek a jelzőfények a HoloLensen? Tudni szeretné, hogyan 
 
 | Ha ezt a | Ezt a világítással lehet megtenni | Ez azt jelenti, hogy |
 | - | - | - |
-| Nyomja meg a Power gombot. | Az egyik villanykörtét ötször meggyújtja, majd kikapcsol. | A HoloLens-akkumulátor kritikusan alacsony. Számolja fel a HoloLens díját. |
-| Nyomja meg a Power gombot. | Mind az öt fény ötször villog, majd kikapcsol. |  A HoloLens nem indul el megfelelően, és hibaállapotban van. [Az eszköz helyreállításához telepítse](hololens-recovery.md) újra az operációs rendszert. |
-| Nyomja meg a Power gombot. | Az 1., 3. és 5. világítás folyamatosan együtt villog. |  Előfordulhat, hogy a HoloLens hardverhibája van. Lépjen kapcsolatba az [ügyfélszolgálattal.](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb) |
+| Nyomja meg a Power gombot. | Az egyik villanykörtét ötször meggyújtja, majd kikapcsol. | Az HoloLens akkumulátor kritikusan alacsony. Számolja fel a HoloLens. |
+| Nyomja meg a Power gombot. | Mind az öt fény ötször villog, majd kikapcsol. |  HoloLens nem indul el megfelelően, és hibaállapotban van. [Az eszköz helyreállításához telepítse](hololens-recovery.md) újra az operációs rendszert. |
+| Nyomja meg a Power gombot. | Az 1., 3. és 5. világítás folyamatosan együtt villog. |  HoloLens hardverhiba lehet. Lépjen kapcsolatba az [ügyfélszolgálattal.](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb) |
 
 ## <a name="safety-and-comfort"></a>Biztonság és kényelem
 
-### <a name="use-hololens-in-safe-surroundings"></a>A HoloLens használata biztonságos környezetben
+### <a name="use-hololens-in-safe-surroundings"></a>Biztonságos HoloLens környezetben használja az alkalmazásokat
 
-HoloLens-ét biztonságos térben használhatja, amely ingyenesen használható, és nem kell veszélyben lenni. Ne használja, ha tiszta nézőpontra van szüksége, vagy nem tudja teljes figyelmet fordítani, például egy jármű üzemeltetése vagy más potenciálisan veszélyes tevékenységek során.
+A HoloLens biztonságos térben, ingyenesen használhatók, és nem kell veszélyben lenni. Ne használja, ha tiszta nézőpontra van szüksége, vagy nem tudja teljes figyelmet fordítani, például egy jármű üzemeltetése vagy más potenciálisan veszélyes tevékenységek során.
 
 ### <a name="stay-comfortable"></a>Maradjon kényelmes
 
-Tartsa röviden az első néhány munkamenetét a HoloLensben, és mindenképpen tartson szüneteket. Ha kényelmetlenül érzi magát, álljon meg és ne álljon meg, amíg jobban nem érzi magát. Ez magában foglalhatja az átmeneti érzeteket, a mozgást, a érzeteket, a diszorientációt, a tudatot, a szemterhelést vagy a szemtörzset.
+Tartsa röviden az első néhány HoloLens, és mindenképpen tartson szüneteket. Ha kényelmetlenül érzi magát, álljon meg és ne álljon meg, amíg jobban nem érzi magát. Ez magában foglalhatja az átmeneti érzeteket, a mozgást, az érzékenyt, a diszorientációt, a tudatot, a szemterhelést vagy a szemtörzset.
 
 Lásd: [termékbiztonsági figyelmeztetések és utasítások.](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions)
 
 > [!div class="nextstepaction"]
-> [A HoloLens 2 beállítása](hololens2-start.md)
+> [A 2. HoloLens beállítása](hololens2-start.md)

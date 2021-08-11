@@ -1,11 +1,11 @@
 ---
 title: Hol vásároljon 2 HoloLens?
-description: Az elérhető globális ADR-kapcsolattartók és országok listája.
+description: A globális ADR-kapcsolattartók és az elérhető országok listája.
 keywords: HoloLens 2 vásárlási lehetőség, nemzetközi vásárlás, nemzetközi viszonteladó, ADR
-author: joyjaz
-ms.author: v-jjaswinski
+author: qianw211
+ms.author: v-qianwen
 ms.reviewer: skerawala
-ms.date: 7/08/2021
+ms.date: 8/03/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,75 +14,76 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 10ba56d68b0272378d958b5a7cd1fd18f581ac33
-ms.sourcegitcommit: bd55edcc855e20d6709c7e535573f43785155d41
+ms.openlocfilehash: b94172ebbfeea55964a055f62707fe0b6d94a97c53eee717e7ec4da7281bad0e
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114661729"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658833"
 ---
 # <a name="where-to-buy-hololens-2"></a>Hol vásároljon 2 HoloLens?
 
 ## <a name="overview"></a>Áttekintés
-HoloLens 2 a legkényelmesebb vegyes valóságú eszköz, iparágvezető megoldásokkal, amelyek magával ragadó élményt érhetők el – mindezt a Microsoft felhőalapú és AI-szolgáltatásainak megbízhatósága, biztonsága és méretezhetősége fokozza. Azonnal használatra kész alkalmazásokkal is elkezdhet, vagy létrehozhat egy egyéni megoldást a Microsoft Azure használatával. HoloLens 2. év már elérhető az Egyesült Államokon kívüli néhány országban, valamint néhány vásárlási lehetőség, és az alább felsorolt jogosult viszonteladóktól vásárolható meg.
+HoloLens 2 a legkényelmesebb vegyes valóságú eszköz, amely iparágvezető megoldásokkal rendelkezik, amelyek lenyűgöző élményt érhetők el – mindezt a Microsoft felhőalapú és AI-szolgáltatásainak megbízhatósága, biztonsága és méretezhetősége fokozza. Azonnal használatra kész alkalmazásokkal is elkezdhet, vagy egyéni megoldást hozhat létre a Microsoft Azure használatával. HoloLens 2. év már elérhető az Egyesült Államokon kívüli néhány országban, néhány vásárlási lehetőséggel együtt, és az alább felsorolt jogosult viszonteladóktól vásárolható meg.
 
-## <a name="countries-where-hololens-2-is-available"></a>Országok, HoloLens 2. ország érhető el
+## <a name="countries-where-hololens-2-is-available"></a>Országok, HoloLens 2. ország elérhető
 
 | HoloLens 2. kiadás| Támogatott piac |
 |-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | EGYESÜLT ÁLLAMOK, Kanada, Németország, Franciaország, Egyesült Királyság, Írország, Kína, Japán, Ausztrália, Olaszország, Új-Zéland, Holland, Svájc, Spanyolország, Szingapúr, Portugália, Nemzeti Nemzeti Bank, Portugália, Portugália, Szingapúr, Hongkong, Tajvan, Tajvan, Vietnam, Maláj és Dél-Korea |
-| HoloLens 2. kapcsolat a Remote Assist alkalmazással | Ausztrália, Japán, Kanada, USA, Spanyolország, Majd, Nagy-Zéland, Franciaország, Németország, Olaszország, Holland, Spanyolország, Spanyolország, Svájc, Svájc, Egyesült Királyság és Írország <sup>1</sup> 
-| HoloLens 2 Industrial Edition *(indításkor)* | EGYESÜLT ÁLLAMOK, Kanada, Németország, Franciaország, Egyesült Királyság, Írország, Kína, Japán, Ausztrália, Olaszország, Új-Zéland, Holland, Svájc, Spanyolország, Szingapúr, Portugália, Nemzeti Nemzeti Bank, Portugália, Portugália, Szingapúr, Hongkong, Tajvan, Tajvan, Vietnam, Maláj és Dél-Korea |
-| HoloLens 2. fejlesztési kiadás | Kanada, Németország, Franciaország, Egyesült Királyság, Írország, Japán, Ausztrália, Olaszország, Svájc és Új-Zéland |
-- <sup>1</sup> Ez a lista dinamikus, frissítéseket keresve vissza
+| HoloLens 2 | Ausztrália, Szingapúr, Tajvan, Kanada, Kína, Nagy-Franciaország, Franciaország, Németország, Hongkong, Írország, Olaszország, Japán, Maláj, Holland, Új-Zéland, Zéland, Portugália, Szingapúr, Dél-Korea, Spanyolország, Szingapúr, Svájc, Svájc, Tajvan, Egyesült Királyság, EGYESÜLT Államok és Vietnam  |
+| HoloLens 2. gomb a Remote Assist alkalmazással | Ausztrália, Szingapúr, Tajvan, Canada, Egyesült Királyság, Franciaország, Németország, Hongkong, Írország, Olaszország, Japán, Korea, Malajziában, Holland, Új-Zéland, Zéland, Szingapúr, Spanyolország, Svájc, Tajvan, Holland, Egyesült Királyság, EGYESÜLT Államok és Vietnam  <sup>1</sup> 
+| HoloLens 2 Industrial Edition *(indításkor)* | Ausztrália, Szingapúr, Tajvan, Kanada, Kína, Nagy-Franciaország, Franciaország, Németország, Hongkong, Írország, Olaszország, Japán, Maláj, Holland, Új-Zéland, Zéland, Portugália, Szingapúr, Dél-Korea, Spanyolország, Szingapúr, Svájc, Svájc, Tajvan, Egyesült Királyság, EGYESÜLT Államok és Vietnam  |
+| HoloLens 2. fejlesztési kiadás | Ausztrália, Kanada, Franciaország, Németország, Írország, Olaszország, Japán, Új-Zéland, Svájc és Az Egyesült Királyság |
+
+&nbsp;&nbsp;&nbsp;<sup>1</sup> Ez a lista dinamikus, és ellenőrizze, hogy van-e frissítés
 
 ## <a name="find-an-authorized-hololens-2-reseller"></a>2-es HoloLens jogosult viszonteladó keresése
-A 2. rendelkezésre állási HoloLens és vásárlási lehetőségeket régiónként az alábbi táblázatokban olvashatja.
+Az alábbi táblázatokban HoloLens 2. rendelkezésre állási és vásárlási lehetőséget régiónként.
 
 ### <a name="apac"></a>**APAC**
 
 | Ország | Adr | Értékesítési kapcsolattartók | HoloLens 2. termékhivatkozás |  HoloLens 2 Industrial Edition Product Link |
 |---------|-----|---------|----------------|----------|
-| **Ausztrália** | Insight Enterprises Australia Pty Ltd | Jenny Southon [jenny.southon@insight.com](mailto:%3Cjenny.southon@insight.com)<br>Gnianis  [costa.aligianis@insight.com](mailto:Costa.Aligianis@insight.com) | [Buy HoloLens 2 - Insight Enterprises Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) | [Vásárlás HoloLens 2 Industrial Edition – Insight Enterprises Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) |
+| **Ausztrália** | Insight Enterprises Australia Pty Ltd | Jenny Southon [jenny.southon@insight.com](mailto:%3Cjenny.southon@insight.com)<br>Gnianis  [costa.aligianis@insight.com](mailto:Costa.Aligianis@insight.com) | [Buy HoloLens 2 - Insight Enterprises Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) | [Buy HoloLens 2 Industrial Edition – Insight Enterprises Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) |
 | | Telstra Lila | Mertna [joanna.kandias@team.telstra.com](mailto:Joanna.kandias@team.telstra.com) BariMitan [oliver.ashworth@purple.telstra.com](mailto:Oliver.Ashworth@purple.telstra.com) |  |  |
-| **Kína** | Részletes információk (HII) 翰林汇信息产业股份有限公司 | Feng Zhou<br>[zhouf@tcl.com](mailto:zhouf@tcl.com) | [Buy HoloLens 2 - Highly Information](http://www.ehighly.com.cn/productList.html?key=hololens) | [Buy HoloLens 2 Industrial Edition – Highly Information](https://isite.baidu.com/site/highly.com.cn/849172be-8d31-46c3-b704-a09c8614ec7b?fid=nHD1nWckPjDYnjb3PWbdnH6srHPxnHfvnNtk&amp;ch=4&amp;bd_vid=11025645443434810125) |
-| | 四川长虹佳华信息产ia有限责任公司/Changemeti IT-információs termékek Co., Ltd | Qian Wei Cheng [qianwch@changhongit.com](mailto:qianwch@changhongit.com)  | [Buy HoloLens 2 Industrial Edition - Chang adattermék co., Ltd](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [Buy HoloLens 2 Industrial Edition - Chang adattermék co., Ltd](https://isite.baidu.com/site/wjzw72ux/43c6ba2e-d6f7-4a6c-9f2c-1bdf4bbb5bbd?title=%E4%BA%A7%E5%93%81&uniqId=32b077d6eeab4f3baf6d88a25696f5a5)  |
-| | Tuomeng黑龙江拓盟科 cn有限公司, cn, cn尔滨  | Zhaowen Qiu<br>[qiuzw@hljtmkj.com](mailto:qiuzw@hljtmkj.com)<br> minden<br>[lidan@hljtmkj.com](mailto:lidan@hljtmkj.com) | [2 HoloLens vásárlása – Tuomeng](http://hljtmkj.com/buy.html) | [Buy HoloLens 2 Industrial Edition – Tuomeng](http://47.92.113.150:8080/sjtbtm/a/sjtb) | 
-| | 英施艾特(kínai)软 kínai 贸易有限公司 Insight Enterprises (Shanghai) Co. Ltd. | FogaThen  julian.kung@insight.com<br>Zac Zhang<br> zac.zhang@insight.com | [Buy HoloLens 2 - Insight Enterprises (Shanghai)](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) | [Vásárlás HoloLens 2 Industrial Edition – Insight Enterprises (Shanghai)](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) |
-| **Hongkong** | GO VR Immersive Ltd. (LTD) | Howard Tian <howard.tian@govrimmersive.com> | [Buy HoloLens 2 - GO VR Immersive Ltd.](https://www.govrimmersive.com/hololens2) | [2 ipari HoloLens vásárlása – GO VR Immersive Ltd](https://www.govrimmersive.com/hololens-2-industrial-edition) |  
+| **Kína** | Magas információ- (HII-) 翰林汇信息产业股份有限公司 | Feng Zhou<br>[zhouf@tcl.com](mailto:zhouf@tcl.com) | [Buy HoloLens 2 - Highly Information](http://www.ehighly.com.cn/productList.html?key=hololens) | [Buy HoloLens 2 Industrial Edition - Highly Information](https://isite.baidu.com/site/highly.com.cn/849172be-8d31-46c3-b704-a09c8614ec7b?fid=nHD1nWckPjDYnjb3PWbdnH6srHPxnHfvnNtk&amp;ch=4&amp;bd_vid=11025645443434810125) |
+| | 四川长虹佳华信息产ia有限责任公司/Changemeti IT Information Products Co., Ltd | Qian Wei Cheng [qianwch@changhongit.com](mailto:qianwch@changhongit.com)  | [Buy HoloLens 2 Industrial Edition - Chang chang it information products Co., Ltd](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [Buy HoloLens 2 Industrial Edition - Chang chang it information products Co., Ltd](https://isite.baidu.com/site/wjzw72ux/43c6ba2e-d6f7-4a6c-9f2c-1bdf4bbb5bbd?title=%E4%BA%A7%E5%93%81&uniqId=32b077d6eeab4f3baf6d88a25696f5a5)  |
+| | Tuomeng黑龙江拓盟科 cn有限公司, cn, cn尔滨  | Zhaowen Qiu<br>[qiuzw@hljtmkj.com](mailto:qiuzw@hljtmkj.com)<br> a "3. 3.<br>[lidan@hljtmkj.com](mailto:lidan@hljtmkj.com) | [2. HoloLens vásárlása – Tuomeng](http://hljtmkj.com/buy.html) | [A HoloLens 2 Industrial Edition vásárlása – Tuomeng](http://47.92.113.150:8080/sjtbtm/a/sjtb) | 
+| | 英施艾特(kínai)软 kínai 贸易有限公司 Insight Enterprises (Shanghai) Co. Ltd. | Fog Foga  julian.kung@insight.com<br>Zac Zhang<br> zac.zhang@insight.com | [Buy HoloLens 2 - Insight Enterprises (Shanghai)](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) | [Vásárlás HoloLens 2 Industrial Edition – Insight Enterprises (Shanghai)](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) |
+| **Hongkong** | GO VR Immersive Ltd. (LTD) | Howard Tian <howard.tian@govrimmersive.com> | [Buy HoloLens 2 - GO VR Immersive Ltd.](https://www.govrimmersive.com/hololens2) | [A HoloLens 2 Industrial Edition vásárlása – GO VR Immersive Ltd](https://www.govrimmersive.com/hololens-2-industrial-edition) |  
 | | Insight Enterprises Hongkong | Jenny Southon<br><jenny.southon@insight.com><br>Fog Tsui<br><eddie.tsui@insight.com> | [Buy HoloLens 2 - INSIGHT ENTERPRISES HONGKONG](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) | [Buy HoloLens 2 Industrial Edition – INSIGHT ENTERPRISES HONGKONG](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) |
-| **Japán** | Japan Business Systems (JBS) | kazunori.miyauchi@jbs.com | [Buy HoloLens 2 - Japan Business Systems](https://www.jbs.co.jp/solution/list/microsofthololens) | [Buy HoloLens 2 Industrial Edition – Japan Business Systems](https://www.jbs.co.jp/solution/list/microsofthololens) |
-| | Otsuka Amitkai Co., Ltd. | Kenta.Fujita@otsuka-shokai.co.jp | [Buy HoloLens 2 - Otsuka Amitkai Co., Ltd.](https://www.otsuka-shokai.co.jp/products/microsoft/hololens/) | [Vásároljon HoloLens 2 Industrial Edition – Otsuka Ragkai Co., Ltd.](https://www.otsuka-shokai.co.jp/products/microsoft/hololens/) | 
-| | SB C&S | fumiaki.endo01@g.softbank.co.jp | [Buy HoloLens 2 - SB C&S](https://www.it-ex.com/products/maker/microsoft/hololens2.html) | [2 ipari HoloLens vásárlása – SB C&S](https://www.it-ex.com/products/maker/microsoft/hololens2.html) | 
-| **Malajzia** | ST Engineering Land Systems (Studio 249) | Li Pei Shan <lee.peishan@stengg.com> | [Buy HoloLens 2 - ST Engineering Land Systems](http://www.studio249.my/) | [Vásárlás HoloLens 2 Industrial Edition – ST Engineering Land Systems](http://www.studio249.my/) |
+| **Japán** | Japán üzleti rendszerek (JBS) | kazunori.miyauchi@jbs.com | [Buy HoloLens 2 - Japan Business Systems](https://www.jbs.co.jp/solution/list/microsofthololens) | [Buy HoloLens 2 Industrial Edition – Japan Business Systems](https://www.jbs.co.jp/solution/list/microsofthololens) |
+| | Otsuka Shokai Co., Ltd. | Kenta.Fujita@otsuka-shokai.co.jp | [Buy HoloLens 2 - Otsuka Shokai Co., Ltd.](https://www.otsuka-shokai.co.jp/products/microsoft/hololens/) | [Vásároljon HoloLens 2 Industrial Editiont – Otsuka Sokai Co., Ltd.](https://www.otsuka-shokai.co.jp/products/microsoft/hololens/) | 
+| | SB C&S | fumiaki.endo01@g.softbank.co.jp | [Buy HoloLens 2 - SB C&S](https://www.it-ex.com/products/maker/microsoft/hololens2.html) | [Buy HoloLens 2 Industrial Edition – SB C&S](https://www.it-ex.com/products/maker/microsoft/hololens2.html) | 
+| **Malajzia** | ST Engineering Land Systems (Studio 249) | Lee Pei Shan <lee.peishan@stengg.com> | [Buy HoloLens 2 - ST Engineering Land Systems](http://www.studio249.my/) | [A HoloLens 2 Industrial Edition vásárlása – ST Engineering Land Systems](http://www.studio249.my/) |
 | **Új-Zéland** | Datacom | Husain Al-Badry <husaina@datacom.co.nz><br>Dr. Hazel Bradstone <hazel.bradshaw@datacom.co.nz> |  |  | 
 | | Insight Enterprises (NZ) Pty Ltd | Jenny Southon <jenny.southon@insight.com><br>Dean Foga <dean.graham@insight.com> | [Buy HoloLens 2 - Insight Enterprises (NZ) Pty Ltd](https://nz.insight.com/en_NZ/shop/partner/microsoft/surface/hololens.html) | [Vásárlás HoloLens 2 Industrial Edition – Insight Enterprises (NZ) Pty Ltd](https://nz.insight.com/en_NZ/shop/partner/microsoft/surface/hololens.html) | 
-| | Spark | Leois Clarke <leroy.clarke@spark.co.nz> | [2. HoloLens vásárlása – Spark](https://www.sparkdigital.co.nz/solutions/collaboration/hololens/) | [2 ipari HoloLens vásárlása – Spark](https://www.sparkdigital.co.nz/solutions/collaboration/hololens/) | 
+| | Spark | Leois Clarke <leroy.clarke@spark.co.nz> | [2. HoloLens vásárlása – Spark](https://www.sparkdigital.co.nz/solutions/collaboration/hololens/) | [A HoloLens 2 Industrial Edition vásárlása – Spark](https://www.sparkdigital.co.nz/solutions/collaboration/hololens/) | 
 | **Szingapúr** | Insight Technology Solutions Pte Ltd | Jenny Southon<br><jenny.southon@insight.com><br>Debby Toh<br><debby.toh@insight.com> | [Buy HoloLens 2 - Insight Technology Solutions Pte Ltd](https://sg.insight.com/en_SG/shop/partner/microsoft/surface/hololens.html) | [Vásárlás HoloLens 2 Industrial Edition – Insight Technology Solutions Pte Ltd](https://sg.insight.com/en_SG/shop/partner/microsoft/surface/hololens.html) | 
-| | ST Engineering Land Systems (Studio 249) | Li Pei Shan <lee.peishan@stengg.com> | https://studio249.sg/ | www.studio249.sg |
-| **Dél-Korea** | Dél-Korea CIM (KCIM) | Cheolgon Kim<br><cgkim@kcim.co.kr><br>SB Kim<br><sbkim@kcim.co.kr> | [Buy HoloLens 2 - ST Engineering Land Systems](http://www.kcim.co.kr/solution/microsoft-hololens2) | [Vásárlás HoloLens 2 Industrial Edition – ST Engineering Land Systems](http://www.kcim.co.kr/solution/microsoft-hololens2#product-2) | 
-| **Tajvan** | Systex Software & Service Corporation精誠資訊股份有限公司 | Amit Ko<br><ginako@systex.com><br>Dent Chien<br><seanchien@systex.com> | [Buy HoloLens 2 - Systex Software & Service Corporation精誠資訊股份有限公司](https://tw.systex.com/microsoft-hololens/) | [Buy HoloLens 2 Industrial Edition – Systex Software & Service Corporation精誠資訊股份有限公司](https://dcsalesportal.com/brands/microsoft/microsoft-hololens/) | 
-| **Thaiföld** | Fenntartható Megoldási Co., Ltd. | Vongsakorn Pannate <vongsakorn@sustain-solution.com> | [Buy HoloLens 2 - Sustainable Solution Co., Ltd.](https://hololensthai.com/) | [Vásároljon HoloLens 2 Industrial Edition - Sustainable Solution Co., Ltd.](https://hololensthai.com/) |
-| **Vietnam** | CRNNG TY TNHH HIVERLAB VIETNAM | Cincin Phung<br><cincin.phung@hiverlab.com> | [Buy HoloLens 2 - Cng TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) | [Buy HoloLens 2 Industrial Edition - Clab TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) |
+| | ST Engineering Land Systems (Studio 249) | Lee Pei Shan <lee.peishan@stengg.com> | https://studio249.sg/ | www.studio249.sg |
+| **Dél-Korea** | Dél-Korea CIM (KCIM) | Cheolgon Kim<br><cgkim@kcim.co.kr><br>SB Kim<br><sbkim@kcim.co.kr> | [Buy HoloLens 2 - ST Engineering Land Systems](http://www.kcim.co.kr/solution/microsoft-hololens2) | [A HoloLens 2 Industrial Edition vásárlása – ST Engineering Land Systems](http://www.kcim.co.kr/solution/microsoft-hololens2#product-2) | 
+| **Tajvan** | Systex Software & Service Corporation精誠資訊股份有限公司 | Amit Ko<br><ginako@systex.com><br>Majd Chien<br><seanchien@systex.com> | [Buy HoloLens 2 - Systex Software & Service Corporation精誠資訊股份有限公司](https://tw.systex.com/microsoft-hololens/) | [Vásároljon HoloLens 2 Industrial Editiont – Systex Software & Service Corporation精誠資訊股份有限公司](https://dcsalesportal.com/brands/microsoft/microsoft-hololens/) | 
+| **Thaiföld** | Fenntartható megoldás – Co., Ltd. | Vongsakorn Pannate <vongsakorn@sustain-solution.com> | [Buy HoloLens 2 - Sustainable Solution Co., Ltd.](https://hololensthai.com/) | [Vásároljon HoloLens 2 Industrial Edition – Sustainable Solution Co., Ltd.](https://hololensthai.com/) |
+| **Vietnam** | CRNNG TY TNHH HIVERLAB VIETNAM | Cincin Phung<br><cincin.phung@hiverlab.com> | [Buy HoloLens 2 - CLAB TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) | [Buy HoloLens 2 Industrial Edition – Clab TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) |
 
 ### <a name="north-america"></a>**Észak-Amerika**
 
 | Ország | Adr | Értékesítési kapcsolattartók | HoloLens 2. termékhivatkozás |  HoloLens 2 Industrial Edition Product Link |
 |---------|-----|---------|----------------|----------|
-| **Kanada** | Insight Canada | Temet O'Keeffe <trish.okeeffe@insight.com> | [Buy HoloLens 2 – Insight Canada](https://ca.insight.com/en_CA/shop/partner/microsoft/hololens.html) | [Buy HoloLens 2 Industrial Edition – Insight Canada](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) |
-| **Egyesült Államok** | Insight Észak-Amerika | Lett Poirier <jake.poirier@insight.com> | [Buy HoloLens 2 – Insight Észak-Amerika](https://www.insight.com/en_US/shop/partner/microsoft/hardware/hololens.html) | [Buy HoloLens 2 Industrial Edition – Insight Észak-Amerika](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) | 
-| | CORP International Corp. | Kevin English <kevin_english@SHI.com>  <HoloLens@SHI.com> | [Vásároljon HoloLens 2- AZ INTERNATIONAL Corp vállalatot.](https://www.shi.com/hololens) |  | 
-| | *Rental Partner!* Hartford Technológia | Mark Fogo <mferro@hartfordrents.com> | [Buy HoloLens 2 - Rental Partner! Hartford Technológia](https://hartfordrents.com/product/hololens-2-rental/) |  | 
+| **Kanada** | Insight Canada | Temet O'Keeffe <trish.okeeffe@insight.com> | [Buy HoloLens 2 - Insight Canada](https://ca.insight.com/en_CA/shop/partner/microsoft/hololens.html) | [Buy HoloLens 2 Industrial Edition – Insight Canada](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) |
+| **Egyesült Államok** | Insight Észak-Amerika | Lett Poirier <jake.poirier@insight.com> | [Buy HoloLens 2 - Insight Észak-Amerika](https://www.insight.com/en_US/shop/partner/microsoft/hardware/hololens.html) | [A HoloLens 2 Industrial Edition vásárlása – Insight Észak-Amerika](https://www.insight.com/en_US/shop/product/SSU-00001/MICROSOFT/SSU-00001/MICROSOFT-HOLOLENS2-INDUSTRIAL-EDITION-ACCS/) | 
+| | CORP International Corp. | Kevin English <kevin_english@SHI.com>  <HoloLens@SHI.com> | [Buy HoloLens 2 -CORP International Corp.](https://www.shi.com/hololens) |  | 
+| | *Rental Partner!* Hartford Technology | Mark Fogo <mferro@hartfordrents.com> | [Buy HoloLens 2 - Rental Partner! Hartford Technology](https://hartfordrents.com/product/hololens-2-rental/) |  | 
 
 ### <a name="emea"></a>**Európa, Közel-Kelet és Afrika**
 
 | Ország | Adr | Értékesítési kapcsolattartók | HoloLens 2. termékhivatkozás |  HoloLens 2 Industrial Edition Product Link |
 |---------|-----|---------|----------------|----------|
-| **Ausztria** | Bechtle | Mert Wiesauer <kurt.wiesauer@bechtle.com> | [Buy HoloLens 2 - Bechtle](https://www.bechtle.com/at/aktionen-sh/microsoft-hololens-2) | [2 ipari HoloLens vásárlása – Bechtle](https://www.bechtle.com/at/shop/microsoft-hololens-2-ind-ed-datenbrille--4525629--p) | 
+| **Ausztria** | Bechtle | Mert Wiesauer <kurt.wiesauer@bechtle.com> | [Buy HoloLens 2 - Bechtle](https://www.bechtle.com/at/aktionen-sh/microsoft-hololens-2) | [Buy HoloLens 2 Industrial Edition – Bechtle](https://www.bechtle.com/at/shop/microsoft-hololens-2-ind-ed-datenbrille--4525629--p) | 
 | | Elemzések | Siegfried Halfmann <siegfried.halfmann@insight.com> |  |  | 
-| **Foga/Éva** | Bechtle | Jens De Weerdt<br><jens.deweerdt@bechtle.com> | [Buy HoloLens 2 - Bechtle](https://www.bechtle.com/be/shop/microsoft-hololens-2-smart-glasses--4342628--p) | [2 ipari HoloLens vásárlása – Bechtle](https://www.bechtle.com/be/shop/microsoft-hololens-2-ind-ed-smartglasses--4525629--p) | 
-| | Econocom | Fabrice Legrand <fabrice.legrand@econocom.com> | [Buy HoloLens 2 - Econocom](https://lp.econocom.com/fr/page-contact-econocom-microsoft-hololens2) | [2 ipari HoloLens vásárlása – Econocom](https://microsoft-hololens.econocom.com/fr/hololens-2) | 
-| | Elemzések | Mert de Paepe<br><danny.depaepe@insight.com><br>Dirk Fierens<br><dirk.fierens@insight.com><br>Herman Steurs<br><herman.steurs@insight.com> | [Buy HoloLens 2 – Insight](https://be.insight.com/fr/infos-produit/accessoires-de-jeux/0010985150-00000001) | [A HoloLens 2 Industrial Edition vásárlása – Insight](https://be.insight.com/fr/infos-produit/accessoires-de-jeux/0011395310-00000001) |
+| **Foga/Éva** | Bechtle | Jens De Weerdt<br><jens.deweerdt@bechtle.com> | [Buy HoloLens 2 - Bechtle](https://www.bechtle.com/be/shop/microsoft-hololens-2-smart-glasses--4342628--p) | [Buy HoloLens 2 Industrial Edition – Bechtle](https://www.bechtle.com/be/shop/microsoft-hololens-2-ind-ed-smartglasses--4525629--p) | 
+| | Econocom | Fabrice Legrand <fabrice.legrand@econocom.com> | [Buy HoloLens 2 - Econocom](https://lp.econocom.com/fr/page-contact-econocom-microsoft-hololens2) | [A HoloLens 2 Industrial Edition vásárlása – Econocom](https://microsoft-hololens.econocom.com/fr/hololens-2) | 
+| | Elemzések | Mert De Paepe<br><danny.depaepe@insight.com><br>Dirk Fierens<br><dirk.fierens@insight.com><br>Herman Steurs<br><herman.steurs@insight.com> | [Buy HoloLens 2 – Insight](https://be.insight.com/fr/infos-produit/accessoires-de-jeux/0010985150-00000001) | [A HoloLens 2 Industrial Edition vásárlása – Insight](https://be.insight.com/fr/infos-produit/accessoires-de-jeux/0011395310-00000001) |
 | **Dánia** | ATEA | Peter Halk<br><peterhalk.jensen@atea.dk><br>Fogjan Amitsson<br><kristjan.hugosson@atea.dk><br>Leif Anders Aasen<br><leif.anders.aasen@atea.com><br>Sverre Panduro<br><sverre.panduro@atea.com.dk> | [Buy HoloLens 2 - ATEA](https://www.atea.dk/eshop/products/?filters=S_hololens) | [Buy HoloLens 2 - ATEA](https://www.atea.dk/eshop/product/microsoft-hololens-2-industrial-edition-smartglasses/?prodid=5165315) |  
 | | Elemzések | Andres Lilja, Enterprise<br><andreas.lilja@insight.com><br>Susanna Reppling Corporate/Public/SMC<br><susanna.reppling@insight.com><br>Mikael Björkefall, Cloud Channel, SMB<br><mikael.bjorkefall@insight.com> | [Buy HoloLens 2 – Insight](https://se.insight.com/shop/microsoft/devices-and-hardware/hololens#) |  | 
 | **Finnország** | ATEA | Petteri Halonen<br><petteri.halonen@atea.fi><br>Foga Ronnholm<br><Johanna.ronnholm@atea.fi><br>Majd kjaerdzsi<br><Jonas.kjaerulf@atea.com> | [Buy HoloLens 2 - ATEA](https://www.atea.fi/eshop/products/?filters=S_hololens) | [Buy HoloLens 2 Industrial Edition – ATEA](https://www.atea.fi/eshop/product/microsoft-hololens-2-industrial-version/?prodid=3361862) | 

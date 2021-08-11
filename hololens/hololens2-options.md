@@ -14,18 +14,18 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 4ba759dfa491725011977c39d6e51ed583a21919ea271f0c3d6482c0847938fb
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659029"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658921"
 ---
 # <a name="compare-hololens-2-options"></a>2 HoloLens összehasonlítása
 
-HoloLens egy hologramok által működtetett  vegyes valóságú eszköz, amely együttműködést fokozása alkalmazásokat és megoldásokat biztosít. A HoloLens 2-ben a hatékonyság és az innováció új magasságát tapasztalja – céllal – az intelligensebb munkavégzés érdekében.
+HoloLens egy hologramok által működtetett, vegyes valóságú eszköz, amely együttműködést fokozása alkalmazásokat és megoldásokat biztosít.  A HoloLens 2-ben a hatékonyság és az innováció új magasságát tapasztalja – céllal – az intelligensebb munkavégzés érdekében.
 
-Akár ön, [](https://www.microsoft.com/hololens/apps) akár a következő iparági [](https://www.microsoft.com/hololens/developers) megoldást kereső informagó, egy új valósághoz élményeket létrehozni kívánó fejlesztő, vagy egy üzleti döntéshozó, aki [a](https://www.microsoft.com/hololens/apps) következő innovációról gondolkodik – HoloLens 2. a számítástechnika új valósága.
+Ön akár [](https://www.microsoft.com/hololens/apps) a következő iparági megoldást kereső [](https://www.microsoft.com/hololens/developers) informa dolgozó, akár egy új valósághoz élményeket létrehozni kívánó fejlesztő, akár egy üzleti döntéshozó, aki [a](https://www.microsoft.com/hololens/apps) következő innovációról gondolkodik – a HoloLens 2 a számítástechnika új valósága.
 
 <br>
 
@@ -52,9 +52,9 @@ Akár ön, [](https://www.microsoft.com/hololens/apps) akár a következő ipar�
 
 **[HoloLens 2. (csak eszköz)](hololens2-options-device-only.md)**: HoloLens 2 a legkényelmesebb és legkényelmesebb vegyes valóságú élményt kínálja – amelyet a Microsoft felhőalapú és AI-szolgáltatásainak megbízhatósága, biztonsága és méretezhetősége javít.
 
-HoloLens 2. verziójának használata a **[Dynamics 365 Remote Assist](hololens2-options-remote-assist.md)** használatával: Első lépések az első nap, a HoloLens 2-es verziójával és a Microsofttól származó végső vegyes valóságú kommunikációs alkalmazással, amely együtt érhető el. Az egész vállalat hatékonyabbá és hatékonyabb innovációra képes. A Dynamics 365 és az iparági partnerek megoldásaival már tapasztalja a vegyes valóságot.
+HoloLens 2. verziójának használata a **[Dynamics 365 Remote Assist](hololens2-options-remote-assist.md)** használatával: Első lépések az első nap, a HoloLens 2-es verziójával és a Microsofttól származó végső vegyes valóságú kommunikációs alkalmazással, amely együtt érhető el. Az egész vállalat hatékonyabbá és hatékonyabb innovációra képes. A Dynamics 365 és az iparági partnerektől származó megoldások segítségével már tapasztalja a vegyes valóságot.
 
-**[HoloLens 2](hololens2-options-industrial-edition.md)** Industrial Edition: A 6.,8. ISO-osztálytól az ISO-osztályig terjedő szabványokat támogató, a tiszta szobákat támogató, az HoloLens 2 Industrial Edition az I. osztályú, 2. részleg által tanúsított, és 2 éves garanciával és gyors csereprogrammal támogatott.
+**[HoloLens 2](hololens2-options-industrial-edition.md)** Industrial Edition: A 6.,8. ISO-osztálytól az ISO-osztályig terjedő szabványokat támogató, tiszta szobákat támogató, az HoloLens 2 Industrial Edition az I. osztályú, 2. részleg által tanúsított, és 2 éves garanciával és gyors csereprogrammal támogatott.
 
 **[Trimble XR10 with HoloLens 2 ( 2. trimble XR10):](hololens2-options-trimble-xr10-edition.md)** A munkakörnyezetben dolgozó, zajos és biztonságos környezetben dolgozók számára készült Trimble XR10 HoloLens 2-esekkel vegyes valóságot hoz létre.
 
@@ -69,7 +69,7 @@ Fedezze fel a vegyes valóságú eszközökhöz HoloLens további megoldásokat.
 | Megoldás | Rövid leírás                                                                                |
 |----------|---------------------------------------------------------------------------------------------------|
 | [Dynamics 365 for HoloLens](https://www.microsoft.com//hololens/apps)          | Az alkalmazottak hatékonyabb működése és a műveletek optimalizálása.                                                        |
-| [Dynamics 365 Remote Assist](https://dynamics.microsoft.com/mixed-reality/remote-assist/)          | A technikusok hatékonyabb együttműködésének biztosítása különböző helyekről. |
+| [Dynamics 365 Remote Assist](https://dynamics.microsoft.com/mixed-reality/remote-assist/)          | Lehetővé teszi a technikusok számára, hogy hatékonyabban működjön együtt különböző helyekről. |
 |   [Dynamics 365-útmutatók](https://dynamics.microsoft.com/mixed-reality/guides/)        | A képzés hatékonyságának javítása és az alkalmazottak végrehajtásához szükséges teljesítmény megismerése.                          |
 |  [Azure Cloud Services a Mixed Reality](/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | Megtudhatja, hogyan fejleszthet megoldást a Azure Cloud Services.                                       |
 |  [A 2. HoloLens elkezdi a fejlesztést](/windows/mixed-reality/develop/development?tabs=unity)         | Az igényeinek megfelelően vegyes valóságú megoldást építhet ki.                                                 |

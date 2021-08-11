@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - Hololens (1st gen)
-ms.openlocfilehash: f5b16e579eca725158ed99ef7a912b72a7cab7ab
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 03a84f1035154660fe51ec5be07c3f32f4746564b95616ec45ef3978fb49b911
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639947"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662236"
 ---
 # <a name="get-your-hololens-1st-gen-ready-to-use"></a>A HoloLens (1. generációs) használatra kész
 
@@ -44,11 +44,11 @@ A díjszabás és a sebesség attól függően változhat, hogy az eszköz milye
 
 | &nbsp; | &nbsp; |
 |:--- |:--- |
-|1. A fejsáv elforgatása körülbelül 20–30 fokra.|![Első lépés, a headband elforgatása](./images/FitGuideStep1.png)|
+|1. A fejsáv elforgatása körülbelül 20–30 fokra.|![Első lépés: a headband elforgatása](./images/FitGuideStep1.png)|
 |2. A headband visszaküldése. Ne húzza vissza, és ne manipulálja az együttest a szín mögött, mert idővel ez az együttest is megszakíthatja.|![Második lépés: a headband visszaküldése](./images/FitGuideStep2.png)|
 |3. Fordítsa el a beállítási kereket a headband kiterjedtetéhez. |![Harmadik lépés: a beállítási kerek használata a headband kiterjesztéséhez](./images/FitGuideStep3.png)|
 |4. Tartsa az eszközt az eszköz karjával, és helyezze a fejére. Győződjön meg arról, hogy a fejsáv a teteje tetején található, majd húzza be a beállító kereket.|![Negyedik lépés: helyezze az eszközre, és állítsa be a fejsávot](./images/FitGuideStep4.png)|
-|5. Csúsztassa vissza a vizort, majd ellenőrizze az eszköz illeszkedést. A fejsávnak a dőlés tetején kell lennie, a havas vonal alatt, a beszélők pedig a fül felett. A objektíveket a saját szemének kell szem előtt lennie.|![5. lépés, csúsztassa vissza a vizort, és ellenőrizze a illeszkedést](./images/FitGuideSetep5.png)|
+|5. Csúsztassa vissza a vizort, majd ellenőrizze az eszköz illeszkedést. A fejsávnak a vonal tetején kell lennie, a havas vonal alatt, a beszélők pedig a füle felett. A objektíveket a saját szemének kell szem előtt lennie.|![5. lépés, csúsztassa vissza a vizort, és ellenőrizze a illeszkedést](./images/FitGuideSetep5.png)|
 
 ## <a name="turn-on-your-hololens"></a>A saját HoloLens
 
@@ -77,7 +77,7 @@ HoloLens akkor is automatikusan leáll, ha az akkumulátor töltöttségi szintj
 
 ## <a name="adjust-volume-and-brightness"></a>A kötet és a fényerejének módosítása
 
-A fényerejét és a hangerőt jelző gombok az eszköz karját a jobb oldalon, a &mdash; fényerejét pedig a bal oldalon találhatóak.
+A fényerejét és a hangerőt szabályzó gombok az eszköz karját a jobb oldalon, a &mdash; fényerejét pedig a bal oldalon találhatóak.
 
 ![A gombokat HoloLens kép](./images/hololens-buttons.jpg)
 
@@ -105,7 +105,7 @@ A HoloLens olyan biztonságos térben használhatja, amely nem járja a veszély
 
 ### <a name="stay-comfortable"></a>Maradjon kényelmes
 
-Tartsa röviden az első néhány HoloLens, és mindenképpen tartson szüneteket. Ha kényelmetlenül érzi magát, álljon meg és ne álljon meg, amíg jobban nem érzi magát. Ez magában foglalhatja az átmeneti érzeteket, a mozgást, az érzékenyt, a diszorientációt, a tudatot, a szemterhelést vagy a szemtörzset.
+Tartsa röviden az első néhány HoloLens, és mindenképpen tartson szüneteket. Ha kényelmetlenül érzi magát, álljon meg és ne álljon meg, amíg jobban nem érzi magát. Ez magában foglalhatja az átmeneti érzeteket, a mozgást, a érzeteket, a diszorientációt, a tudatot, a szemterhelést vagy a szemtörzset.
 
 > [!div class="nextstepaction"]
-> [Az első HoloLens konfigurálása (1. generációs)](hololens1-start.md)
+> [A HoloLens konfigurálása (1. generációs)](hololens1-start.md)
