@@ -2,7 +2,7 @@
 
 # Eszközök áttekintése
 ## [A 2 HoloLens ről](hololens2-hardware.md)
-## [Mit HoloLens a 2.?](hololens-commercial-features.md)
+## [Mit HoloLens a 2.](hololens-commercial-features.md)
 ## A HoloLens 2 kiadás felderítése
 ### [Két HoloLens összehasonlítása](hololens2-options.md)
 ### [Csak eszközre készült kiadás](hololens2-options-device-only.md)
@@ -28,26 +28,26 @@
 #### [Új Gépház alkalmazás](hololens-new-settings.md)
 #### [Új Microsoft Edge](hololens-new-edge.md)
 ### Alkalmazások felügyelete
-#### [Alkalmazások megkeresheti, telepítheti és eltávolíthatja őket](holographic-store-apps.md)
+#### [Alkalmazások megkerese, telepítése és eltávolítása](holographic-store-apps.md)
 #### [Egyéni alkalmazások kezelése a 2. HoloLens számára](hololens2-holographic-custom-apps.md)
 ### Hologramoptikák és elhelyezés a térben
 #### [A vizualizáció minőségének és kényelmi javítására](hololens-calibration.md)
 #### [Fizikai terek leképezés HoloLens](hololens-spaces.md)
 #### [HoloLens környezettel kapcsolatos szempontok](hololens-environment-considerations.md)
-#### [Mozgó platformok](hololens2-moving-platform.md)
+#### [Platformok mozgatás](hololens2-moving-platform.md)
 ### Csatlakozás 2. HoloLens meg
 #### [Csatlakozás HoloLens hálózatra](hololens-network.md)
-#### [Csatlakozás usb Bluetooth C-eszközök csatlakoztatása](hololens-connect-devices.md)
+#### [Csatlakozás usb Bluetooth-C-eszközök csatlakoztatása](hololens-connect-devices.md)
 #### [Csatlakozás mobilhálózatra és 5G-re](hololens-cellular.md)
 ### [HoloLens 2 akkumulátor és az akkumulátortöltés](hololens2-charging.md)
-### [HoloLens 2 illeszkedés és kényelmi gyik](hololens2-fit-comfort-faq.md)
-### [HoloLens 2. tisztítás – GYAKORI KÉRDÉSEK](hololens2-maintenance.md)
+### [HoloLens 2 illeszkedés és kényelmi gyakori kérdések](hololens2-fit-comfort-faq.md)
+### [HoloLens 2. tisztítás – GYIK](hololens2-maintenance.md)
 
 # A 2 HoloLens üzembe helyezése
 ## [Gyakori üzembehelyezési forgatókönyvek](hololens-requirements.md)
-## [2 HoloLens telepítés megtervezése](hololens-core-components.md)
+## [A 2 HoloLens telepítés megtervezése](hololens-core-components.md)
 ## Üzembe helyezési útmutatók
-### Felhőhöz csatlakoztatott környezet üzembe helyezési útmutatója
+### Útmutató a felhőhöz csatlakoztatott környezet üzembe helyezéséhez
 #### [Áttekintés](hololens2-cloud-connected-overview.md)
 #### [Előkészítés](hololens2-cloud-connected-prepare.md)
 #### [Konfigurálás](hololens2-cloud-connected-configure.md)
@@ -63,7 +63,7 @@
 ### [Offline biztonságos környezet üzembe helyezési útmutatója](hololens-common-scenarios-offline-secure.md)
 ### [Licenckövetelmények](hololens-licenses-requirements.md)
 ## Identitás
-### [Felhasználói identitás és bejelentkezés kezelése a HoloLens](hololens-identity.md)
+### [Felhasználói identitás és bejelentkezés kezelése HoloLens](hololens-identity.md)
 ### [Megosztás HoloLens több felhasználóval](hololens-multiple-users.md)
 ## Biztonság
 ### [Biztonsági áttekintés](security-overview.md)
@@ -75,9 +75,9 @@
 ### [Titkosítás és adatvédelem](security-encryption-data-protection.md)
 ### [Hálózati biztonság](security-network-security.md)
 ### [Biztonsági tervezés ](security-engineering.md)
-### [HoloLens 2. adatvédelmi nyilatkozat](hololens2-compliance.md)
+### [HoloLens 2. adatvédelmi és adatvédelmi szabályzat](hololens2-privacy.md)
 ## Eszközkezelés
-### [MDM használata a HoloLens kezeléséhez](hololens-mdm-configure.md)
+### [Az MDM használata a HoloLens kezeléséhez](hololens-mdm-configure.md)
 ## Eszközök beléptetése
 ### [Regisztráció HoloLens MDM-be](hololens-enroll-mdm.md)
 ### [Windows Autopilot HoloLens 2-höz](hololens2-autopilot.md) 
@@ -90,10 +90,10 @@
 ### [Alkalmazástelepítő](app-deploy-app-installer.md)
 ## Szabályzatok (CSP-k)
 ### [CsP-k és Eszközkezelés konfigurálása – áttekintés](hololens-csp-policy-overview.md)
-### [Az HoloLens konfigurálása kiépítési csomagok használatával](hololens-provisioning.md)
+### [Az HoloLens konfigurálása kiépítési csomagokkal](hololens-provisioning.md)
 ### [Gyakori eszközkorlátozások](hololens-common-device-restrictions.md)
 ### [A HoloLens beállítása kioszkként](hololens-kiosk.md)
-### [Globális hozzáférés – Kioszk](hololens-global-assigned-access-kiosk.md)
+### [Globálisan hozzárendelt hozzáférés – Kioszk](hololens-global-assigned-access-kiosk.md)
 ### [Windows Defender Alkalmazásvezérlés – WDAC](windows-defender-application-control-wdac.md)
 ### [Lap Gépház CSP és URI-k a HoloLens](settings-uri-list.md)
 ## Hálózati & kapcsolat
