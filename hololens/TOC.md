@@ -2,7 +2,7 @@
 
 # Eszközök áttekintése
 ## [A 2 HoloLens ről](hololens2-hardware.md)
-## [Mit HoloLens a 2.](hololens-commercial-features.md)
+## [Mire képes HoloLens 2?](hololens-commercial-features.md)
 ## 2. HoloLens felderítése
 ### [Két HoloLens összehasonlítása](hololens2-options.md)
 ### [Csak eszközre készült kiadás](hololens2-options-device-only.md)
@@ -16,7 +16,7 @@
 # A saját HoloLens
 ## Első használat
 ### [A 2. HoloLens használatra kész](hololens2-setup.md)
-### [A 2. HoloLens beállítása](hololens2-start.md)
+### [A 2 HoloLens beállítása](hololens2-start.md)
 ### [Tájékozódás a HoloLens 2-ben](hololens2-basic-usage.md)
 ### [Frissítés HoloLens](hololens-update-hololens.md)
 ## Napi használat
@@ -37,7 +37,7 @@
 #### [Mozgó platformok](hololens2-moving-platform.md)
 ### Csatlakozás 2. HoloLens meg
 #### [Csatlakozás HoloLens hálózatra](hololens-network.md)
-#### [Csatlakozás usb Bluetooth C-eszközök csatlakoztatása](hololens-connect-devices.md)
+#### [Csatlakozás usb Bluetooth-C-eszközök csatlakoztatása](hololens-connect-devices.md)
 #### [Csatlakozás mobilhálózatra és 5G-re](hololens-cellular.md)
 ### [HoloLens 2 akkumulátor és az akkumulátortöltés](hololens2-charging.md)
 ### [HoloLens 2 illeszkedés és kényelmi gyik](hololens2-fit-comfort-faq.md)
@@ -45,7 +45,7 @@
 
 # 2. HoloLens üzembe helyezése
 ## [Gyakori üzembehelyezési forgatókönyvek](hololens-requirements.md)
-## [A 2 HoloLens telepítés megtervezése](hololens-core-components.md)
+## [2 HoloLens telepítés megtervezése](hololens-core-components.md)
 ## Üzembe helyezési útmutatók
 ### Felhőhöz csatlakoztatott környezet üzembe helyezési útmutatója
 #### [Áttekintés](hololens2-cloud-connected-overview.md)
@@ -93,13 +93,13 @@
 ### [Az HoloLens konfigurálása kiépítési csomagok használatával](hololens-provisioning.md)
 ### [Gyakori eszközkorlátozások](hololens-common-device-restrictions.md)
 ### [A HoloLens beállítása kioszkként](hololens-kiosk.md)
-### [Globális hozzáférés – Kioszk](hololens-global-assigned-access-kiosk.md)
+### [HoloLens Kioszkhivatkozási információk](hololens-kiosk-reference.md)
 ### [Windows Defender Alkalmazásvezérlés – WDAC](windows-defender-application-control-wdac.md)
 ### [Lap Gépház CSP és URI-k a HoloLens](settings-uri-list.md)
 ## Hálózati & kapcsolatok
 ### [A hálózat konfigurálása HoloLens](hololens-commercial-infrastructure.md)
-### [Tanúsítványok és hálózati profilok előkészítése a 2. HoloLens számára](hololens-certificates-network.md)
-### [Kapcsolati végpontok kezelése HoloLens](hololens-offline.md)
+### [Tanúsítványok és hálózati profilok előkészítése HoloLens 2. HoloLens számára](hololens-certificates-network.md)
+### [Kapcsolati végpontok kezelése a HoloLens](hololens-offline.md)
 ### [Tanúsítványkezelő](certificate-manager.md)
 ## [A HoloLens kezelése](hololens-updates.md)
 
@@ -112,7 +112,7 @@
 ## [2. HoloLens alaphelyzetbe állítása](hololens-recovery.md)
 
 # Források
-## [2. HoloLens vásárlásának hely](hololens2-purchase.md)
+## [Hol vásároljon 2 HoloLens?](hololens2-purchase.md)
 ## [Támogatási és súgólehetőségek](hololens2-support.md)
 ## [Autopilot támogatási kérések](hololens2-autopilot-registration-support.md)
 ## [HoloLens 2. kiadási megjegyzések](hololens-release-notes.md)
@@ -121,12 +121,12 @@
 ## [Fejlesztés a Microsoft Mesh-sel (előzetes verzió)](/mesh/overview)
 ## HoloLens (1. generációs)
 ### Első használat
-#### [Az HoloLens (1. generációs)](hololens1-hardware.md)
+#### [A HoloLens (1. generációs)](hololens1-hardware.md)
 #### [HoloLens (1. generációs) illeszkedés és kényelem](hololens1-fit-comfort-faq.md)
 #### [Alapszintű használat áttekintése](hololens1-setup.md)
 #### [A HoloLens beállítása (1. generációs)](hololens1-start.md)
 ### Napi használat
-#### [A HoloLens (1. generációs) clicker használata](hololens1-clicker.md)
+#### [A HoloLens (1. generációs) kattintás](hololens1-clicker.md)
 #### [A 3D-megjelenítő használata HoloLens (1. generációs)](holographic-3d-viewer-beta.md)
 #### [Ismerkedás HoloLens (1. generációs)](hololens1-basic-usage.md)
 #### [Egyéni alkalmazások kezelése HoloLens](holographic-custom-apps.md)
