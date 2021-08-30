@@ -1,6 +1,6 @@
 ---
 title: Gyakori forgatókönyvek – Offline biztonságos HoloLens 2
-description: Ismerje meg, hogyan állíthat be offline biztonságos üzembe helyezést és alkalmazástelepítési forgatókönyvet a HoloLens eszközökre.
+description: Ismerje meg, hogyan állíthat be offline biztonságos üzembe helyezést és alkalmazástelepítési forgatókönyvet a HoloLens üzembe helyezéssel.
 keywords: HoloLens, felügyelet, offline, offline biztonságos
 ms.date: 9/25/2020
 manager: yannisle
@@ -14,18 +14,18 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1da19665dd3298ece8b007e86695bfe9f298f2347a0e7e058cbd30f0ad5d35c3
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 10d1955249630202a05fbf2057e1d175855ce0b5
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664519"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189120"
 ---
 # <a name="common-scenarios--offline-secure-hololens-2"></a>Gyakori forgatókönyvek – Offline biztonságos HoloLens 2
 
 ## <a name="overview"></a>Áttekintés
 
-Ez az útmutató útmutatást nyújt egy minta kiépítési csomag alkalmazásához, amely a 2. HoloLens-t zárolja a biztonságos környezetekben való használathoz a következő korlátozásokkal:
+Ez az útmutató útmutatást nyújt egy minta kiépítési csomag alkalmazásához, amely a 2. HoloLens-t zárolja a biztonságos környezetekben való használathoz, a következő korlátozásokkal:
 
 -   Tiltsa le a Wi-Fi-t.
 -   Tiltsa le a BlueTo fiókokat.
@@ -33,15 +33,15 @@ Ez az útmutató útmutatást nyújt egy minta kiépítési csomag alkalmazásá
 -   Megakadályozza a kiépítési csomagok hozzáadását vagy eltávolítását.
 -   A fenti korlátozott összetevők bármelyikét egyetlen felhasználó sem engedélyezheti.
 
-[![Offline biztonságos forgatókönyv ](./images/deployment-guides-revised-scenario-c-01.png)](./images/deployment-guides-revised-scenario-c-01.png#lightbox)
+[![Offline biztonságos forgatókönyv. ](./images/deployment-guides-revised-scenario-c-01.png)](./images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
 ## <a name="prepare"></a>Előkészítés
 
 Windows 10 Számítógép beállítása
-1. [Töltse le a HoloLens 2 operációsrendszer-fájlt](https://aka.ms/hololens2download) közvetlenül egy számítógépre. 
+1. [Töltse le a HoloLens 2 operációsrendszer-fájlt](https://aka.ms/hololens2download) közvetlenül a számítógépre. 
    1. Ennek a konfigurációnak a támogatását az 19041.1117-es és azt feletti build tartalmazza.
 1. Az Advanced Recovery Companion (ARC) eszköz letöltése/telepítése a [Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) gépre
-1. Töltse le/telepítse a [Windows Configuration Designer (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) eszközét a Microsoft Store gépére.
+1. Töltse le/telepítse [a Windows Configuration Designer (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) eszközét a Microsoft Store gépére.
 1. [Töltse le a OfflineSecureHL2_Sample mappát a projektfájlokkal](https://aka.ms/HoloLensDocs-SecureOfflineSample) együtt a PPKG felépítéséhez.
 1. Készítse elő az offline [Üzletági alkalmazást a PPKG üzembe helyezéséhez.](app-deploy-provisioning-package.md) 
 
@@ -56,16 +56,16 @@ Biztonságos konfigurációs kiépítési csomag összeállítása
 1. Meg kell nyitnia a projektet, és meg kell lennie a Rendelkezésre álló testreszabások listájának:
 
    > [!div class="mx-imgBorder"]
-   > ![A WCD-ben megnyitott konfigurációs csomag képernyőképe](images/offline-secure-sample-wcd.png)
+   > ![Képernyőkép a MEGNYITOTT konfigurációs csomagról a WCD-ben.](images/offline-secure-sample-wcd.png)
 
    Az ebben a kiépítési csomagban beállított konfigurációk:
    
    |     Elem                                                |     Beállítás                       |     Leírás                                                                                                                    |
    |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
    |     Fiókok /Felhasználók                                    |     Helyi felhasználónév & jelszó    |     Ezekhez az offline eszközökhöz egyetlen felhasználónevet és jelszót kell beállítani és megosztani az eszköz összes felhasználója számára.          |
-   |     Első élmény / HoloLens / SkipCalibration       |     Igaz                          |     Kihagyja a hitelesítést csak a kezdeti eszközbeállítás során                                                                             |
-   |     Első tapasztalatok / HoloLens / SkipTraining          |     Igaz                          |     Kihagyja az eszközbeképzést a kezdeti eszközbeállítás során                                                                              |
-   |     Első élmény / HoloLens / Wi-Fi                  |     Igaz                          |     Kihagyja Wi-Fi konfigurációt az eszköz kezdeti beállítása során                                                                                 |
+   |     Első tapasztalatok / HoloLens / SkipCalibration       |     Igaz                          |     Csak a kezdeti eszközbeállítás során hagyja ki a hitelesítést                                                                             |
+   |     Első élmény / HoloLens / SkipTraining          |     Igaz                          |     Kihagyja az eszközbeképzést az eszköz kezdeti beállítása során                                                                              |
+   |     Első élmény / HoloLens / Wi-Fi                  |     Igaz                          |     Kihagyja Wi-Fi konfigurációt a kezdeti eszközbeállítás során                                                                                 |
    |     Szabályzatok/Kapcsolatok/AllowBluetoue                |     No                            |     Letiltja a Bluetooth                                                                                                             |
    |     Szabályzatok/Felhasználói élmény/AllowCortana                    |     No                            |     Letiltja a Cortana (a lehetséges problémák kiküszöbölése érdekében, mivel a mikrofonok le vannak tiltva)                                          |
    |     Policies/MixedReality/MicrophoneDisabled            |     Yes                           |     Letiltja a mikrofont                                                                                                            |
@@ -95,24 +95,24 @@ Biztonságos konfigurációs kiépítési csomag összeállítása
 1. Csatlakozás HL2 csatlakoztatása a Windows 10 SZÁMÍTÓGÉPhez USB-kábelen keresztül.
 1. Indítsa el az ARC eszközt, és válassza **a HoloLens 2. lehetőséget**
 
-   ![HoloLens 2 tiszta perjel kezdőképernyője](images/ARC2.png)
+   ![HoloLens 2 tiszta perjeles kezdőképernyő.](images/ARC2.png)
 
 1. A következő képernyőn válassza a **Manuális csomagválasztás lehetőséget.**
 
-   ![HoloLens 2 ARC információs képernyője](images/arc_device_info.png)
+   ![HoloLens 2 ARC információs képernyő.](images/arc_device_info.png)
 
 1. Keresse meg a korábban letöltött .ffu fájlt, és válassza a **Megnyitás lehetőséget.**
 1. A Figyelmeztetés lapon válassza a Folytatás **lehetőséget.**
 
-   ![HoloLens 2 ARC figyelmeztető képernyője](images/arc_warning.png)
+   ![HoloLens 2 ARC figyelmeztető képernyő.](images/arc_warning.png)
 
 1. Várjon, amíg az ARC eszköz befejezi a HoloLens 2 operációs rendszer telepítését.
-1. Miután az eszköz befejezte a telepítést, és a rendszer ismét elindul, lépjen a Fájlkezelő, és másolja a korábban mentett PPKG-fájlt az eszközmappába.
+1. Miután az eszköz befejezte a telepítést, és újra elindul a rendszer, lépjen a Fájlkezelő, és másolja a korábban mentett PPKG-fájlt az eszközmappába.
 
    > [!div class="mx-imgBorder"]
    > ![PPKG-fájl a számítógépen Fájlkezelő ablakban.](images/offline-secure-file-explorer.png)
 
-1. A 2. HoloLens nyomja le a következő gomb kombinált gombra a Kiépítési csomag futtatásához: Koppintson egyszerre a **Kötet** le és a **Tápkapcsoló** gombra.
+1. A 2. HoloLens nyomja le a következő gomb kombinált gombra a Kiépítési csomag futtatásához: Koppintson egyszerre a **Kötet** le és a **Bekapcsológomb** gombra.
 1. A rendszer kérni fogja a kiépítési csomag alkalmazását, majd válassza a **Megerősítés lehetőséget.**
 1. Ha a kiépítési csomag befejeződött, kattintson az **OK gombra.**
 1. Ezután a rendszer felkéri, hogy jelentkezzen be az eszközre a megosztott helyi fiókkal és jelszóval.

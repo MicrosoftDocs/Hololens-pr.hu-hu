@@ -1,5 +1,5 @@
 ---
-title: A 2. felhőhöz HoloLens Remote Assist segítségével történő csatlakozásának áttekintése
+title: A 2. felhőhöz csatlakoztatott HoloLens áttekintése Remote Assist segítségével
 description: Megtudhatja, hogyan regisztrálható HoloLens 2 eszköz egy felhőhöz csatlakoztatott hálózaton keresztül a Dynamics 365 Remote Assist használatával.
 keywords: HoloLens, felügyelet, felhőhöz csatlakoztatott, Remote Assist, AAD, Azure AD, MDM, Mobile Eszközkezelés
 author: evmill
@@ -14,36 +14,36 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8bba313e7b5ee3d055c2b6ff2c60810baf428ecfa7d5554a1efb4e0aa9e1e98b
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 66e543dd699edbd54ab41474f3ea86fa313bf6ba
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660307"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189647"
 ---
-# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Telepítési útmutató – Felhőhöz csatlakoztatott HoloLens 2., Remote Assist segítségével – Áttekintés
+# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Üzembe helyezési útmutató – Felhőhöz csatlakoztatott HoloLens 2., Remote Assist segítségével – Áttekintés
 
 Ez az útmutató segítséget nyújt az informatikai szakembereknek abban, hogy 2 Microsoft HoloLens a Remote Assist segítségével tervezze meg és telepítsék a szervezetüket. Ez modellként szolgál majd a vállalatnál a különböző két HoloLens való üzembe helyezéséhez. A beállítás hasonló az [A forgatókönyvhöz: Üzembe helyezés felhőalapú csatlakozású eszközökön.](common-scenarios.md#scenario-a) 
 
-Az útmutató során bemutatja, hogyan regisztrálhatóak az eszközök az eszközfelügyeletre, hogyan alkalmazhat licenceket szükség szerint, és hogyan ellenőrizheti, hogy a végfelhasználók képesek-e azonnal használni a Remote Assist eszközt az eszköz beállításakor. Ehhez át fogjuk látni a beállításhoz és a futtatáshoz szükséges fontos infrastruktúra-részleteket– a nagy léptékű üzembe helyezést a 2. HoloLens meg. Ebben az útmutatóban nem alkalmazunk más eszközkorlátozásokat vagy konfigurációkat, azonban javasoljuk, hogy a befejezés után ismerkedje meg ezeket a lehetőségeket.
+Az útmutató során bemutatja, hogyan regisztrálhatóak az eszközök az eszközfelügyeletre, hogyan alkalmazhat licenceket szükség szerint, és hogyan ellenőrizheti, hogy a végfelhasználók képesek-e azonnal használni a Remote Assist eszközt az eszköz beállításakor. Ehhez át fogjuk látni a beállításhoz és a futtatáshoz szükséges fontos infrastruktúra-részleteket– a 2. HoloLens nagy léptékű üzembe helyezést. Ebben az útmutatóban nem alkalmazunk más eszközkorlátozásokat vagy konfigurációkat, azonban javasoljuk, hogy a befejezés után ismerkedje meg ezeket a lehetőségeket.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
 A 2. virtuális gép üzembe helyezéséhez a következő infrastruktúrának kell HoloLens lennie. Ha nem, az Azure és az Intune beállítását ez az útmutató tartalmazza:
 
-Ez a beállítás hasonló az [A forgatókönyvhöz:](/hololens/common-scenarios#scenario-a)Üzembe helyezés felhőalapú csatlakozású eszközökre , amely számos koncepció igazolási üzembe helyezéshez jó választás, többek között a következőkhöz:
+Ez a beállítás hasonló az [A forgatókönyvhöz:](/hololens/common-scenarios#scenario-a)Üzembe helyezés felhőalapú csatlakozású eszközökre , ami számos koncepció igazolási üzembe helyezéshez jó választás, többek között a következőkhöz:
 
 - Wi-Fi hálózatok általában teljesen nyitva vannak az internet és a felhőszolgáltatások számára
 - Azure AD-csatlakozás MDM automatikus regisztrációval – MDM által felügyelt (Intune)
 - A felhasználók a saját vállalati fiókjukkal (Azure AD) jelentkeznek be
     - Eszközönként egy vagy több felhasználó támogatott.
 
-:::image type="content" alt-text="Felhőhöz csatlakoztatott forgatókönyv" source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
+:::image type="content" alt-text="Felhőhöz csatlakoztatott forgatókönyv." source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
 
 
 ## <a name="learn-about-remote-assist"></a>Tudnivalók a Remote Assist szolgáltatásról
 
-A Remote Assist lehetővé teszi az együttműködésen alapuló karbantartást és javítást, a távvizsgálatot, valamint a tudás megosztását és betanítását. A különböző szerepkörökben és helyeken található személyek csatlakoztatásával a Remote Assistet használó technikusok a távoli közreműködővel is csatlakozhatnak a Microsoft Teams. A videók, képernyőképek és jegyzetek kombinálása valós időben oldják meg a problémákat, még akkor is, ha nem ugyanazon a helyen vannak. A távoli közreműködők referenciaképeket, sémákat és egyéb hasznos információkat szúrnak be a technikusok fizikai tárhelyén, hogy hivatkozni tudjanak a sémára, miközben fej-felfelé és kéz nélkül dolgoznak a HoloLens.
+A Remote Assist lehetővé teszi az együttműködésen alapuló karbantartást és javítást, a távvizsgálatot, valamint a tudás megosztását és betanítását. A különböző szerepkörökben és helyeken található személyek csatlakoztatásával a Remote Assistet használó technikusok a távoli közreműködővel is csatlakozhatnak a Microsoft Teams. A videók, képernyőképek és jegyzetek kombinálása valós időben oldják meg a problémákat, még akkor is, ha nem ugyanazon a helyen vannak. A távoli közreműködők referenciaképeket, sémákat és egyéb hasznos információkat szúrnak be a technikus fizikai tárhelyén, így hivatkozni tudnak a sémára, miközben fej-felfelé és kéz nélkül dolgoznak a HoloLens.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -59,10 +59,10 @@ A Remote Assist lehetővé teszi az együttműködésen alapuló karbantartást 
 
 #### <a name="microsoft-teams-user"></a>Microsoft Teams felhasználó
 
-- Microsoft Teams vagy [Teams Freemium .](https://products.office.com/microsoft-teams/free)
+- Microsoft Teams vagy [Teams Freemium.](https://products.office.com/microsoft-teams/free)
 - Hálózati kapcsolat
 
-Ha ezt a [](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)több-bérlős forgatókönyvet tervezi, előfordulhat, hogy információ-korlátok licencre van szüksége. Annak megállapításához, hogy szükség van-e Information Barrier-licencre, tekintse meg a Dynamics [365 Remote Assist](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation)teljes képességeit a szállítói és ügyfelei számára.
+Ha ezt a [](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)több-bérlős forgatókönyvet tervezi, előfordulhat, hogy információ-korlátok licencre van szüksége. Annak megállapításához, hogy szükség van-e Information Barrier-licencre, tekintse meg a Teljes [Dynamics 365 Remote](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation)Assist-képességeket a szállítói és ügyfelei számára.
 
 ## <a name="in-this-guide-you-will"></a>Ebben az útmutatóban a következőt fogja:
 
@@ -72,8 +72,8 @@ Készítsen:
 > - [Ismerje meg a 2 eszköz HoloLens alapvető infrastruktúráját.](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
 > - [Tudjon meg többet az Azure AD-ről, és állítson be egyet,&#39;még nem használja.](hololens2-cloud-connected-prepare.md#azure-active-directory)
 > - [Tudnivalók az identitáskezelésről és az Azure AD-fiókok legjobb beállításáról.](hololens2-cloud-connected-prepare.md#identity-management)
-> - [Tudjon meg többet az MDM-ről, és állítsa be az Intune-t,&#39;még nincs kész.](hololens2-cloud-connected-prepare.md#mobile-device-management)
-> - [Ismerje meg a Remote Assist hálózatra vonatkozó követelményeit.](hololens2-cloud-connected-prepare.md#network)
+> - [További információ az MDM-ről és az Intune beállításról, ha&#39;még nem készült el.](hololens2-cloud-connected-prepare.md#mobile-device-management)
+> - [Ismerje meg a Remote Assist hálózati követelményeit.](hololens2-cloud-connected-prepare.md#network)
 > - [Választható lehetőség: VPN a szervezeti erőforrásokhoz való csatlakozáshoz](hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
 
 Konfigurálja:
@@ -86,7 +86,7 @@ Konfigurálja:
 Üzembe helyezés:
 
 > [!div class="checklist"]
-> - [A 2. HoloLens és a regisztráció ellenőrzése.](hololens2-cloud-connected-deploy.md#enrollment-validation)
+> - [Állítsa be a 2 HoloLens- és érvényesítse a regisztrációt.](hololens2-cloud-connected-deploy.md#enrollment-validation)
 > - [Ellenőrizze, hogy tud-e Remote Assist-hívást hívni.](hololens2-cloud-connected-deploy.md#remote-assist-call-validation)
 
 Fenntartani:

@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2. fejlesztési kiadás
-description: Ismerje meg HoloLens 2. fejlesztési kiadást, és hogy mi a helyzet a saját kiadásának lekért kiadását követően.
+description: Ismerje meg HoloLens 2 Development Edition kiadást, és hogy mi a helyzet a saját kiadásának leszerzése után.
 keywords: HoloLens 2 vásárlási lehetőség, HoloLens, Developer Edition
 author: bgener
 ms.author: bogenera
@@ -14,33 +14,33 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4e2bc30d1141fcc1c6a648ccc7c3573f6afda2ba3f5cd413a8e9a69203ea617
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: ee2b87823324f3183d86763d47b38ca0503f0aeb
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658895"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190344"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2. fejlesztési kiadás
 
-Kezdje el a vegyes valóságra való felépítést ezzel az ajánlattal, amely a HoloLens 2., valamint a Unity-szoftverek és a felhőszolgáltatásokhoz szükséges Azure-kreditek ingyenes próbaverzióit kombinálja. Megtudhatja, hogyan lehet túllépni az alapoktól, és hogyan kezdheti el a fejlesztést a vegyes valósághoz.
+Kezdje el a vegyes valóságra való felépítést ezzel az ajánlattal, amely HoloLens 2. ajánlattal ötvözi a Unity szoftverekkel és a felhőszolgáltatásokhoz szükséges Azure-kreditekkel kapcsolatos ingyenes próbaverziókat. Ismerje meg, hogyan lehet túllépni az alapokat és elkezdeni a vegyes valósághoz való fejlesztést.
 
-## <a name="learn-about-the-development-edition"></a>Tudnivalók a Development Editionről
+## <a name="learn-about-the-development-edition"></a>Tudnivalók a Development Edition kiadásról
 
 > [!NOTE]
-> A Development Edition nem helyezhető üzembe kereskedelmileg elosztott megoldással. A Development Edition üzembe helyezése az alkalmazások kereskedelmi környezetben való fejlesztésének és/vagy tesztelésének segítésében engedélyezett.  
+> A Development Edition kereskedelmileg elosztott megoldással való üzembe helyezése nem engedélyezett. A Development Edition üzembe helyezése az alkalmazások kereskedelmi környezetben való fejlesztésének és/vagy tesztelésének segítésében engedélyezett.  
 
 Az HoloLens 2 Development Edition tartalmaz egy HoloLens 2, 500 USD Azure-kreditet, egy 3 hónapos Unity Pro-próbaverziót és egy 3 hónapos PiXYZ beépülő modul próbaverzióját:
 
 | Csomag funkció | Description |
 |---|---|
 |  [Unity](https://unity.com/) | Egy valós idejű 3D-s fejlesztési platform.   |
-|  [Pixyz beépülő modul a Unityhez](https://www.pixyz-software.com/plugin/) | Híd a mérnöki &amp; CAD-világok és a fejlesztési világ összekötéhez.   |
-| [500 DOLLÁR Azure-kredit az Azure-szolgáltatásokhoz](https://azure.microsoft.com/resources/) | A HoloLens 2 Development Edition tartalmazza az Azure-beli vegyes valóságú alkalmazások gyors fejlesztését és tesztelését. |
+|  [Pixyz beépülő modul a Unityhez](https://www.pixyz-software.com/plugin/) | Híd a mérnöki &amp; CAD-világok és a fejlesztési világ között.   |
+| [500 DOLLÁR Azure-kredit az Azure-szolgáltatásokhoz](https://azure.microsoft.com/resources/) | A HoloLens 2 Development Editionhez mellékelt Azure-kreditek segítségével gyorsan hozzá lehet kezdeni a vegyes valóságú alkalmazások azure-beli fejlesztéséhez és teszteléséhez. |
 
-![HoloLens 2. fejlesztési kiadás](./images/hololens-2-dev-ed.png)
+![HoloLens 2. fejlesztési kiadás.](./images/hololens-2-dev-ed.png)
 
-## <a name="redeem-your-credits"></a>Kreditek beváltása
+## <a name="redeem-your-credits"></a>Jóváírások beváltása
 
 ### <a name="unity"></a>Unity
 Egyedi kódot kapott. Utasítások a Unity-Pro beváltani:
@@ -55,41 +55,41 @@ További részletek a [Unity-licencek aktiválásának mikéntjére.](https://su
 Egyedi kódot kapott. A Pixyz beépülő modul próbaverzióját beváltó utasítások:
 1. Látogasson [el id.unity.com](http://id.unity.com/)
 1. Kattintson **a Termékkód beváltása elemre**
-1. Adja meg a Pixyz beépülő modul termékkódját, majd kattintson **a Termékkód beváltása elemre**
+1. Adja meg a Pixyz beépülő modul termékkódját, és kattintson **a Termékkód beváltása elemre**
 
-További részletek a [Pixyz-licenc beváltása ről.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Ha segítségre van szüksége, forduljon a [Pixyz](https://www.pixyz-software.com/support/) ügyfélszolgálatához.
+További részletek a [Pixyz-licenc beváltása ről.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Ha szükséges, forduljon a [Pixyz](https://www.pixyz-software.com/support/) ügyfélszolgálatához.
 
 ### <a name="azure"></a>Azure
-Íme néhány gyakori [Azure-termék, amelyekre Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) azure-krediteket beválthatja.
-Azure-kreditek beváltása: 500 dolláros Azure-kreditek beváltása, Azure Pass promóciós kód beváltása és az előfizetés aktiválása. [Részletek](hololens2-development-edition-faq.yml#how-can-i-redeem-my--500-azure-credit-)
+Íme néhány gyakori [Azure-termék Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) amelyekre beválthatja Azure-kreditjeiket.
+Azure-kreditek beváltása: Az 500 dolláros Azure-kreditek beváltása, Azure Pass promóciós kód beváltása és az előfizetés aktiválása. [Részletek](hololens2-development-edition-faq.yml#how-can-i-redeem-my--500-azure-credit-)
 
-- [Megtudhatja, hogyan segíthet Spatial Anchors Azure a 3D-tartalmak leképezésében, megosztásában és megőrzésében](https://azure.microsoft.com/services/spatial-anchors/)
-- [Megtudhatja Azure Remote Rendering hogyan renderelhet kiváló minőségű, interaktív 3D-tartalmakat, és hogyan streamelheti az eszközeire valós időben](https://azure.microsoft.com/services/remote-rendering/)
+- [Megtudhatja, hogyan Spatial Anchors az Azure Spatial Anchors 3D-tartalmakat leképező, megosztják és megőrzött alkalmazásokat](https://azure.microsoft.com/services/spatial-anchors/)
+- [Megtudhatja Azure Remote Rendering hogyan renderelhet kiváló minőségű, interaktív 3D-tartalmakat, és hogyan streamelheti valós időben az eszközeire](https://azure.microsoft.com/services/remote-rendering/)
 
 ## <a name="get-started-developing"></a>A fejlesztés első lépések
 
-Válassza ki a motort, töltse le az eszközöket, és válassza ki a billentyűzetet. Üdvözli a Mixed Reality ökoszisztémája – ideje létrehozni.
+Válassza ki a motort, töltse le az eszközöket, majd a billentyűzetről. Üdvözli a Mixed Reality ökoszisztémája – ideje létrehozni.
 
 |     Checkpoint                              |     Eredmény                                                                                                                    |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-|     [A tervezés és a prototípus-tervezés elkezdés](/windows/mixed-reality/design/design)         |     Kezdje el tervezni a Mixed Reality alapfogalmak, interakciós modellek és felhasználói felületi elemek alkalmazásait.     |
-|     [A fejlesztés első Mixed Reality](/windows/mixed-reality/develop/development?tabs=unity)    |     Válassza ki a motort, töltse le az eszközeit, adja hozzá az alapvető építőelemeket, és kezdje meg az építést még ma.                                  |
-|     [Ismerkedés Azure Cloud Services](/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Lenyűgöző, magával ragadó élményeket Azure Remote Rendering Azure Spatial Anchors.                                 |
+|     [A tervezés és a prototípus-tervezés elkezdés](/windows/mixed-reality/design/design)         |     Kezdje el tervezni a Mixed Reality alapfogalmak, interakciós modellek és felhasználói felületi elemek közötti alkalmazásokat.     |
+|     [Fejlesztés a fejlesztés Mixed Reality](/windows/mixed-reality/develop/development?tabs=unity)    |     Válassza ki a motort, töltse le az eszközöket, adja hozzá az alapvető építőelemeket, és kezdje meg a építést még ma.                                  |
+|     [Ismerkedés a Azure Cloud Services](/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Lenyűgöző élményeket építhet a Azure Remote Rendering és az Azure Spatial Anchors.                                 |
 
 ## <a name="developer-edition-additional-resources"></a>Developer Edition – további források
 
-- [HoloLens 2. kiadás – Gyakori kérdések](hololens2-development-edition-faq.yml)
+- [HoloLens 2. kiadás – gyakori kérdések](hololens2-development-edition-faq.yml)
 - [Győződjön meg arról, hogy a fejlesztéshez szükséges eszközöket HoloLens telepíteni.](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
-- [További információ a 2. HoloLens unityvel való fejlesztésről.](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2)
+- [Ismerje meg, hogyan fejleszt a 2. HoloLens Unityvel.](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2)
 - [Ismerje meg, hogyan kombinálhatja az MRTK-t a Unityvel.](/windows/mixed-reality/develop/unity/mrtk-getting-started)
 - [Megtudhatja, hogyan helyezheti üzembe a beépített alkalmazásait.](app-deploy-overview.md)
-- [Ismerje meg az összes lehetőséget a Mixed Reality.](/windows/mixed-reality/)
+- [Fedezze fel az összes lehetőséget a Mixed Reality.](/windows/mixed-reality/)
 - [További információ a 2. HoloLens való fejlesztésről az Unreal-sel.](/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [A HoloDevelopers](https://holodevelopersslack.azurewebsites.net/)Slack-csatornánkban elérheti a többi fejlesztőt.
 
 ## <a name="next-steps"></a>Következő lépések
 
-1. Azonnal elkezdhet interakcióba lépni a Mixed Reality és navigálhat Windows 10-on HoloLens – a **Tippek** alkalmazásban gyakorlati oktatóanyagokat is kap a kézi interakciókhoz. Az indítási kézmozdulattal az Indítás vagy az Ugrás az indításhoz szövegre használhatja, és kiválaszthatja a Tippek.
+1. Azonnal elkezdhet interakcióba lépni Mixed Reality és Windows 10 a HoloLens-on – tekintse meg a **Tippek** alkalmazást, amely gyakorlati oktatóanyagokat is elérhető a kézi interakciókhoz. Az indítási kézmozdulattal a Start menüre vagy a "Ugrás az indításhoz" szövegre használhatja, majd válassza a Tippek.
 1. Az alábbi gombra kattintva tovább olvashat a 2. HoloLens való ismerkedésről.
 
 > [!div class="nextstepaction"]

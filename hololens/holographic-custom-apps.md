@@ -16,16 +16,16 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 7d564fd00567033060428d5b47b34ddf827dea2fdeeb8955c73bc22e4ba87164
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b6769c36f821ee3619ac9b62efd637ac561192bb
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664957"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188848"
 ---
 # <a name="manage-custom-apps-for-hololens-1st-gen"></a>Egyéni alkalmazások kezelése HoloLens (1. generációs)
 
-HoloLens számos meglévő alkalmazást támogat a Microsoft Store, valamint a kifejezetten a HoloLens. Ez a cikk az egyéni holografikus alkalmazásokkal foglalkozik.  
+HoloLens támogatja a Microsoft Store számos meglévő alkalmazást, valamint a kifejezetten a HoloLens. Ez a cikk az egyéni holografikus alkalmazásokkal foglalkozik.  
 
 További információ az áruházbeli alkalmazásokról: [Alkalmazások kezelése az áruházban.](holographic-store-apps.md)
 
@@ -55,11 +55,11 @@ Saját alkalmazásokat telepíthet a HoloLens a Eszközportál vagy az alkalmaz�
 1. Válassza az **Ugrás lehetőséget.**
 
    > [!div class="mx-imgBorder"]
-   > ![Alkalmazásűrlap telepítése Windows Eszközportál Microsoft HoloLens](images/deviceportal-appmanager.jpg)
+   > ![Telepítse az alkalmazásűrlap Windows Eszközportál a Microsoft HoloLens.](images/deviceportal-appmanager.jpg)
 
 ### <a name="deploying-from-microsoft-visual-studio-2015"></a>Üzembe helyezés a Microsoft Visual Studio 2015-ről
 
-1. Nyissa meg az alkalmazás Visual Studio megoldását (.sln-fájl).
+1. Nyissa meg az alkalmazás Visual Studio megoldását (.sln fájl).
 
 1. Nyissa meg a projekt **Properties (Tulajdonságok) tulajdonságát.**
 
@@ -71,10 +71,10 @@ Saját alkalmazásokat telepíthet a HoloLens a Eszközportál vagy az alkalmaz�
    
 1. Készítse el a megoldást.
 
-1. Ha a fejlesztői számítógépről telepítenie kell az alkalmazást a HoloLens válassza a **Távoli gép lehetőséget.** Ha már létezik build a HoloLens válassza  az Igen lehetőséget az újabb verzió telepítéséhez.  
+1. Ha üzembe helyezni az alkalmazást a fejlesztői számítógépről a HoloLens válassza a **Távoli gép lehetőséget.** Ha már létezik build a HoloLens válassza az **Igen** lehetőséget az újabb verzió telepítéséhez.  
 
-   ![Távoli gép üzembe helyezése az alkalmazások Microsoft HoloLens a Visual Studio](images/vs2015-remotedeployment.jpg)  
+   ![Távoli gép üzembe helyezése az alkalmazások Microsoft HoloLens a Visual Studio.](images/vs2015-remotedeployment.jpg)  
    
 1. Az alkalmazás automatikusan telepítve és automatikusan elindul a HoloLens.
 
-Miután telepített egy alkalmazást, a következő listában találja **meg:** Minden alkalmazás (**Indítás**  >  **Minden alkalmazás**).
+Miután telepítette az alkalmazást, a következő listában találja **meg Minden alkalmazás** (**Start**  >  **Minden alkalmazás**).

@@ -1,5 +1,5 @@
 ---
-title: Korlátozott MAC-HoloLens-eszközök vállalati regisztrációja Wi-Fi környezetben
+title: Korlátozott MAC-HoloLens regisztrált eszközök vállalati regisztrációja Wi-Fi környezetben
 description: Mac-cím hálózati címének kezelése 2 HoloLens eszközön
 ms.prod: hololens
 ms.sitesec: library
@@ -13,20 +13,20 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1be1a8aa021c2a588b120fc9fa148b6c5dafd2840bbefa0d8ea9701751834521
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d21a63aae94f5ea5269f61fe319a9036626de1b4
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665586"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189528"
 ---
-# <a name="enterprise-enrollment-of-hololens-devices-in-mac-address-restricted-wi-fi-environment"></a>Korlátozott MAC-HoloLens-eszközök vállalati regisztrációja Wi-Fi környezetben
+# <a name="enterprise-enrollment-of-hololens-devices-in-mac-address-restricted-wi-fi-environment"></a>Korlátozott MAC-HoloLens regisztrált eszközök vállalati regisztrációja Wi-Fi környezetben
 
 Ez a dokumentum egy gyakori forgatókönyvet ismertet az ügyfélkörnyezetekben, ahol a Wi-Fi MAC-címek korlátozzák, vagy a vezeték nélküli hálózatokhoz való csatlakozáshoz tanúsítványokra van szükség.
 
 ## <a name="example-scenario"></a>Példaforgatókönyv
 
-Számos biztonságos környezetben számos ügyfél korlátozza a vezeték nélküli vagy vezetékes hálózatokat, amelyek csak a jóváhagyott (MAC-címeken alapuló) eszközök számára engedélyezik a sikeres csatlakozást. Ez a vezeték nélküli hozzáférési pont MAC-címszűrésével vagy EGY DHCP-kiszolgálón keresztül kényszeríthető ki. Emellett egyes vezeték nélküli hálózatok peAP-védelem alatt áll, amihez tanúsítványt kell alkalmazni az eszközre a vezeték nélküli hálózat hitelesítése előtt.
+Számos biztonságos környezetben számos ügyfél korlátozza a vezeték nélküli vagy vezetékes hálózatokat, amelyek csak a jóváhagyott (MAC-címeken alapuló) eszközök számára engedélyezik a sikeres csatlakozást. Ez a vezeték nélküli hozzáférési pont MAC-címszűrésével vagy EGY DHCP-kiszolgálón keresztül kényszeríthető ki. Emellett egyes vezeték nélküli hálózatok PEAP-védelem alatt áll, amihez tanúsítványt kell alkalmazni az eszközre a vezeték nélküli hálózat hitelesítése előtt.
 
 Ebben a forgatókönyvben két fő követelmény késéseket okozhat, vagy manuális beavatkozást követelhet meg, amikor HoloLens eszközöket a hálózathoz:
 
@@ -78,12 +78,12 @@ A folyamat az eszköz szoftverszintjétől függően változhat. Ha az eszköz [
 
 Ha az eszköz operációsrendszer-buildtel rendelkezik a [2004.](hololens-release-notes.md#windows-holographic-version-2004)májusi frissítés előtt, kövesse az alábbi lépéseket.
 
-1. Kapcsolja be a HoloLens, és csatlakoztassa az eszközt egy számítógéphez.
+1. Kapcsolja be a HoloLens és csatlakoztassa az eszközt egy számítógéphez.
 2. Az eszköznek fájltároló eszközként kell lennie a számítógépen.
 3. A kiépítési csomag másolása az eszközre
 4. Csatlakozás Ethernet-kábel a hubhoz.
 5. Csatlakozás USB-C hub HoloLens eszközhöz.
-6. A következőre HoloLens
+6. Helyezze a HoloLens
 7. A **Kiépítési csomag alkalmazáshoz** nyomja le a Kötet le és a Bekapcsoló gombot.
 8. A technikus most már tudja követni az OOBE-t, és amikor elkészült, nyissa meg a Gépház alkalmazást az eszköz MAC-címének lekéréséhez.
 
@@ -122,24 +122,24 @@ További előfeltételekre lesz szükség az alábbiak szerint:
 
 4. Az eszköz az Intune-Wi-Fi és egyéb konfigurációkhoz szükséges tanúsítványokat alkalmazza.
 
-5. Ha elkészült, a technikus betöltheti az Intune (Endpoint Manager) portált, és részletezheti az eszköztulajdonságokat a **Kezdőlap ->-eszközök -> DeviceName -> Hardware** lapon.
+5. Ha elkészült, a technikus betöltheti az Intune (Endpoint Manager) portált, és részletezheti az eszköztulajdonságokat a **Kezdőlap -> Eszközök -> DeviceName -> Hardware** lapon.
 
 6. A Wi-Fi MAC-cím látható lesz az Intune-portálon.
 
-   ![MAC-cím az Intune-on keresztül](images/mac-address-intune.jpg)
+   ![MAC-cím az Intune-on keresztül.](images/mac-address-intune.jpg)
 
 7. A technikus hozzáadja ezt a MAC-címet engedélyezett eszközként.
 
 ### <a name="benefits"></a>Előnyök
 
-Ez lehetővé teszi a "Fejből" üzembe helyezési élményt a technikus számára, mivel az eszköz anélkül léphet a dobozból az Azure AD-be és az Intune-ba, hogy a technikusnak el kellenehasználnia az eszközt, vagy manuálisan kellene kapcsolatba lépnie a HoloLens környezettel.
+Ez lehetővé teszi a "Fejből" üzembe helyezési élményt a technikus számára, így az eszköz anélkül léphet a dobozból az Azure AD-be és az Intune-ba, hogy a technikusnak el kellenehasználnia az eszközt, vagy manuálisan kapcsolatba kellene lépnie a HoloLens környezettel.
 
 ## <a name="reporting-of-mac-addresses-to-the-technician"></a>MAC-címek jelentése a technikusnak
 
 ### <a name="requirements"></a>Követelmények
 
-- Az "Intune Graph PowerShell" engedélyezése az ügyfélbérlőn
-- Az Intune-Graph a PowerShell-t a technikusok gépére.
+- Az "Intune Graph PowerShell" engedélyezése az ügyfél bérlője számára
+- Az Intune és Graph PowerShell telepítése a technikusok gépére.
 - [https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0)
 - Olvasási hozzáférés az Intune "Felügyelt eszközök" elemeihez. (Ügyfélszolgálati operátor vagy magasabb, vagy egyéni szerepkör)
 
@@ -153,10 +153,10 @@ Connect-MSGraph
 Get-IntuneManagedDevice -Filter "model eq 'Hololens 2'" | where {$_.enrolledDateTime -gt (get-date).AddDays(-30)}  | select deviceName, wiFiMacAddress 
 ```
 
-Ez visszaadja az elmúlt 30 napban HoloLens regisztrált összes eszköz nevét és MAC-címét.
+Ez visszaadja az elmúlt 30 napban regisztrált HoloLens összes regisztrált eszköz nevét és MAC-címét.
 
-![MAC-cím a PowerShellen keresztül](images/mac-address-powershell.jpg)
+![MAC-cím a PowerShellen keresztül.](images/mac-address-powershell.jpg)
 
 ### <a name="process"></a>Folyamat
 
-Az Intune-regisztráció befejezése után a technikus a fenti szkript futtatásával lekéri a MAC-címet.
+Az Intune-regisztráció befejezését követően a technikus a fenti szkript futtatásával lekéri a MAC-címet.

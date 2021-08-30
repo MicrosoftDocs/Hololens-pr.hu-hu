@@ -1,6 +1,6 @@
 ---
 title: A HoloLens beállítása (1. generációs)
-description: Megtudhatja, hogyan állíthatja be HoloLens (1. generációs) első alkalommal egy Microsoft- (MSA-) vagy Azure Active Directory- (AAD-) fiókkal az Wi-Fi-hálózaton keresztül.
+description: Megtudhatja, hogyan állíthatja be HoloLens (1. generációs) első alkalommal egy Microsoft- (MSA-) vagy Azure Active Directory- (AAD-) fiókkal az Wi-Fi-hálózaton.
 ms.assetid: 0136188e-1305-43be-906e-151d70292e87
 ms.prod: hololens
 author: Teresa-Motiv
@@ -11,18 +11,18 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 9e09ba1a022428b098392464e5cd2abf84911bd6a86d8e699036b8fc4f91470a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 06b7142be471d0db3f45812654288a33425abd60
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661857"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189868"
 ---
 # <a name="set-up-your-hololens-1st-gen"></a>A HoloLens beállítása (1. generációs)
 
 Az első alkalommal, amikor bekapcsolja a HoloLens, a rendszer végigvezeti az eszköz rendszerén, az eszköz beállításán és a bejelentkezésen.  Ez a cikk végigvezeti az HoloLens (1. generációs) első indítási és beállítási folyamatán.
 
-A következő szakaszban megtudhatja, hogyan dolgozhat a HoloLens és hogyan kommunikálhat a hologramokkal. A cikkre való ugráshoz lásd: Első lépések a HoloLens [(1. generációs)](hololens1-basic-usage.md).
+A következő szakaszban megtudhatja, hogyan dolgozhat a HoloLens és interakcióba léphet a hologramokkal. A cikkre való ugráshoz lásd: Első lépések a HoloLens [(1. generációs)](hololens1-basic-usage.md).
 
 ## <a name="before-you-start"></a>Előkészületek
 
@@ -38,10 +38,10 @@ Mielőtt hozzá is kezd, győződjön meg arról, hogy az alábbiak elérhetők:
 
 > [!NOTE]
 >  
-> - Az első alkalommal, amikor a HoloLens [használja, Cortana](hololens-cortana.md) már be van állítva, és készen áll arra, hogy útmutatást adjon Önnek (bár csak az eszköz beállítása után tud válaszolni a kérdéseire). A Cortana bármikor kikapcsolhatja a Cortana beállításaiban.
+> - Az első alkalommal, amikor a HoloLens [Cortana](hololens-cortana.md) már be van állítva, és készen áll arra, hogy útmutatást adjon Önnek (bár nem tud válaszolni a kérdéseire, amíg nem beállította az eszközt). A Cortana bármikor kikapcsolhatja a Cortana beállításaiban.
 > - A HoloLens kínai vagy japán verziójára való váltáshoz le kell töltenie a nyelvhez szükséges buildet a számítógépre, majd telepítenie kell a HoloLens. További információkért lásd: [Install localized versions of HoloLens (1st gen)](hololens1-install-localized.md)..
 
-## <a name="start-your-hololens-and-set-up-windows"></a>Indítsa el a Hololenst, és állítsa be Windows
+## <a name="start-your-hololens-and-set-up-windows"></a>Indítsa el a Hololenst, és állítsa be a Windows
 
 Az első alkalommal, amikor elindítja a HoloLens, az első feladata a Holographic Windows beállítása az eszközön.
 
@@ -53,11 +53,11 @@ Az első alkalommal, amikor elindítja a HoloLens, az első feladata a Holograph
         1. Fogadja el az adatvédelmi nyilatkozatot.
         1. Jelentkezzen be az Azure AD-beli hitelesítő adataival. Ez átirányíthatja a szervezet bejelentkezési oldalára.
         1. Folytassa az eszköz beállítását.
-    - Ha a **Saját tulajdonom lehetőséget választja,** egy új alkalmazás használatával Microsoft-fiók. A telepítés befejezése után manuálisan regisztrálhatja a HoloLens [eszközkezelésben.](hololens-enroll-mdm.md#different-ways-to-enroll)
+    - Ha a **Saját tulajdonom lehetőséget választja,** egy új Microsoft-fiók. A telepítés befejezése után manuálisan regisztrálhatja a HoloLens [eszközkezelésben.](hololens-enroll-mdm.md#different-ways-to-enroll)
         1. Adja meg Microsoft-fiók adatait.
         1. Írja be a jelszót. Ha a Microsoft-fiók [kétlépéses ellenőrzést (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/)igényel, akkor teljes körű ellenőrzési folyamatot kell végrehajtania.
 
-1. Az eszköz az időzónát az alapján állítja be, hogy az a hálózati Wi-Fi-e.
+1. Az eszköz az időzónát az adott hálózatról Wi-Fi alapján állítja be.
 
 ## <a name="calibration"></a>Kalibrációs
 
@@ -65,9 +65,9 @@ Miután Cortana bemutatja magát, a következő beállítási lépés a hiba. A 
 
 HoloLens (1. generációs) a tanulók távolságát (IPD vagy [interpupillary distance)](https://en.wikipedia.org/wiki/Interpupillary_distance)használja a hologramok egyértelművé és könnyen kezelhetővé vált érdekében. Ha az IPD helytelen, a hologramok instabilnak vagy helytelen távolságnak hatnak.
 
-A terhesség alatt HoloLens, hogy az ujjlenyomatát egy szemenként hat célsorozattal igazítsa. HoloLens ezzel a folyamattal állíthatja be a helyes IPD-t a szemének. Ha egy új felhasználónál frissíteni vagy módosítani kell a tudatot, az új felhasználó a beállításon kívül is futtathatja a Felhasználóbarát alkalmazást.
+A terhesség alatt HoloLens a rendszer arra kéri, hogy igazítsa az ujjlenyomatát egy szemenkénti hat célsorozattal. HoloLens ezzel a folyamattal állíthatja be a helyes IPD-t a szemének. Ha egy új felhasználónál frissíteni vagy módosítani kell a tudatot, az új felhasználó a beállításon kívül is futtathatja a Felhasználóbarát alkalmazást.
 
-![AZ IPD-ujjlenyomat igazítása képernyő a második lépésben](./images/ipd-finger-alignment-300px.jpg)
+![AZ IPD-ujjlenyomat igazítása képernyő a második lépésben.](./images/ipd-finger-alignment-300px.jpg)
 
 *AZ IPD-ujjlenyomat igazítása képernyő a második lépésben*
 

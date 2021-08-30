@@ -1,6 +1,6 @@
 ---
 title: Új HoloLens előkészítése
-description: Megtudhatja, hogyan állíthatja be és állíthatja be HoloLens 2-es eszközét először, beleértve az egészségügyi és biztonsági tippeket, valamint a hardveres útmutatókat.
+description: Megtudhatja, hogyan állíthatja be és állíthatja be HoloLens 2-es eszközét először, beleértve az állapotra és a biztonságra vonatkozó tippeket, valamint a hardveres útmutatókat.
 keywords: hololens, világítás, fit, kényelmi, alkatrészek
 ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
 ms.date: 9/17/2019
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 13f7000f608e6375efce201f1edd1627900ecdda2f86ddca8a174ac0b8e43ceb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 77c061c53806e7410d73ecf3aaa20d74c217ea33
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658966"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190412"
 ---
 # <a name="get-your-hololens-2-ready-to-use"></a>A 2. HoloLens használatra kész
 
@@ -29,7 +29,7 @@ Csatlakozás usb-C kábellel (a csomagban) csatlakoztatja a tápegységet a díj
 
 A díjszabás és a sebesség attól függően változhat, hogy az eszköz milyen környezetben fut.
 
-- Ha az eszköz töltődik, az akkumulátor kijelzője felgyúsodik, és jelzi az aktuális töltöttségi szintet.  Az utolsó világítás elhalványul, és kihalványul, ami aktív díjszabást jelez.
+- Ha az eszköz töltődik, az akkumulátor kijelzője felgyúgyítással jelzi az aktuális töltöttségi szintet.  Az utolsó világítás elhalványul, és kihalványul, ami aktív díjszabást jelez.
 - Ha a HoloLens be van stb., az akkumulátor kijelzője az akkumulátor töltöttségi szintjét jeleníti meg növekményekben.
 - Ha az öt fény közül csak az egyik van bekapcsolva, az akkumulátor töltöttségi szintje 20% alatt van.
 - Ha az akkumulátor töltöttségi szintje kritikusan alacsony, és megpróbálja bekapcsolni az eszközt, az egyik világítás rövid időre villog, majd kiússik.
@@ -38,40 +38,40 @@ Ha [további információra van szüksége,](hololens2-charging.md#charging-the-
 
 ## <a name="adjust-fit"></a>Igazítás
 
-Helyezze HoloLens 2. helyére. Ha szemüveget koptat, hagyja őket be.  Arow padnak az Ön öklének kell lennie, a háttérsávnak pedig a fej közepén kell lennie.
+Helyezze HoloLens 2. helyére. Ha szemüveget koptat, hagyja őket be.  Arow padnak az Ön öklének kell lennie, a hátsávnak pedig a fej közepén kell lennie.
 
-Szükség esetén a beállítókerék elfordításával terjessze ki a fejsávot, majd lazítsa le a terhelési tárcsat.
+Szükség esetén terjessze ki a fejsávot a beállítókerék elfordításával, majd oldja fel a terhelési tárcsat.
 
-![HoloLens 2 igazítás és beállítások](images/hololens2-fit.png)
+![HoloLens 2 igazítás és beállítás.](images/hololens2-fit.png)
 
 ### <a name="attach-and-detach-the-overhead-strap"></a>A többletterhelési terhelés csatolása és leválasztása
 
 A terhelési rekedtre nincs szükség, de hosszabb időszakokban 2 HoloLens is lehet vele.
 
-A terhelési fül elülső része leválasztható, kihookolja a hurkot, és átcsúsztatható a behúzható hurokba arow padon. A visszacsatoláshoz húzza ki a hurkot, és csúsztassa vissza a back-back-et.
+A terhelési fül elülső része leválasztható, kihookolja a hurkot, és átcsúsztatható a behúzható hurokba arow padon. A visszacsatoláshoz húzza ki a hurkot, és csúsztassa vissza a back-back() hurkot.
 
-A terhelési lap hátának leválasztása előtt nyomja le az egyes kapcsolati fülek alatti gombot, és húzza le az öklét. Az újracsatlakozáshoz nyomja le a kapcsolati lapokat a tárolóhelyekre, amíg rá nem kattint.
+A többletterhelési szalag hátának leválasztása előtt nyomja le az egyes kapcsolati fülek alatti gombot, és húzza le az öklét. Az újracsatlakozáshoz nyomja le a kapcsolati lapokat a tárolóhelyekre, amíg rá nem kattint.
 
-![A kétfejes HoloLens csatolása vagy eltávolítása](images/hololens2-headstrap.png)
+![Csatlakoztassa vagy távolítsa el a HoloLens 2 fejes fogat.](images/hololens2-headstrap.png)
 
 ## <a name="turn-on-the-hololens-2"></a>A 2 HoloLens bekapcsolás
 
 A 2. HoloLens a Power (Bekapcsoló) gombra kattintva kapcsolhatja be.  A Tápkapcsoló alatti LED-ek az akkumulátor töltöttségi szintjét jelenítik meg.
 
 > [!NOTE]
-> Ha első alkalommal HoloLens a 2. gombot, a ki- és bekapcsolás után legalább 4 másodpercig tartsa lenyomva a bekapcsológombot. Amikor a 2. HoloLens bekapcsolja, az egy rövid bekapcsológombbal kezdődik.
+> Ha első alkalommal HoloLens 2. gombot, a ki- és bekapcsolás után legalább 4 másodpercig tartsa lenyomva a bekapcsológombot. Amikor a 2. HoloLens bekapcsolja, az egy rövid bekapcsológombbal kezdődik.
 
 ### <a name="power-button-actions-for-different-power-transitions"></a>Bekapcsológombos műveletek különböző energiaátmenethez
 
 | Cél | A művelet végrehajtása | A HoloLens 2. |
 | - | - | - |
-| A bekapcsolás | Nyomja le az egy gombot. | Mind az öt világítás be van kapcsolva, majd az akkumulátor szintjének jelzésére vált. Négy másodperc elteltével egy hang lejátszása megkezdődik. |
-| Alvó üzemmód | Nyomja le az egy gombot. | Mind az öt világítás be van kapcsolva, majd egyszerre csak egyszer kell elhalványítani. A világítás kikapcsolása után egy hang lejátszása után a képernyőn megjelenik a "Goodbye" üzenet. |
-| Felébresztés alvó üzemmódból | Nyomja le az egy gombot. | Mind az öt világítás be van kapcsolva, majd az akkumulátor szintjének jelzésére vált. A hang azonnal lejátszásra kerül. |
+| A bekapcsolás | Nyomja le az egyik gombot. | Mind az öt világítás be van kapcsolva, majd úgy vált, hogy jelezze az akkumulátor töltöttségi szintjét. Négy másodperc elteltével egy hang lejátszása megkezdődik. |
+| Alvó üzemmód | Nyomja le az egyik gombot. | Mind az öt világítás be van kapcsolva, majd egyszerre csak egyszer kell elhalványítani. A világítás kikapcsolása után egy hang lejátszása után a képernyőn megjelenik a "Goodbye" üzenet. |
+| Felébresztés alvó üzemmódból | Nyomja le az egyik gombot. | Mind az öt világítás be van kapcsolva, majd úgy vált, hogy jelezze az akkumulátor töltöttségi szintjét. A hang azonnal lejátszásra kerül. |
 | A kikapcsolása | Tartsa lenyomva az 5-öst. |  Mind az öt világítás be van kapcsolva, majd egyszerre csak egyszer kell elhalványítani. A világítás kikapcsolása után egy hang lejátszása után a képernyőn megjelenik a "Goodbye" üzenet. |
-| A HoloLens újraindításának kényszeríteni, ha nem válaszol | Tartsa lenyomva a 10-eseket. | Mind az öt világítás be van kapcsolva, majd egyszerre csak egyszer kell elhalványítani. A világítás kikapcsolása után. |
+| Az újraindítás kényszerít HoloLens, ha nem válaszol | Tartsa lenyomva a 10-eseket. | Mind az öt világítás be van kapcsolva, majd egyszerre csak egyszer kell elhalványítani. A világítás kikapcsolása után. |
 
-## <a name="hololens-behavior-reference"></a>HoloLens viselkedési referencia
+## <a name="hololens-behavior-reference"></a>HoloLens viselkedésre vonatkozó referencia
 
 Nem tudja, mit jelentenek a kijelző HoloLens? Szeretné tudni, hogyan HoloLens a díjszabás közben?  Itt van néhány segítség!
 
@@ -82,27 +82,27 @@ Nem tudja, mit jelentenek a kijelző HoloLens? Szeretné tudni, hogyan HoloLens 
 | KI | USB-kábel csatlakoztatása | Az eszköz az akkumulátor töltöttségi szintjét jelző jelző világítással bekapcsolja az eszközt, és megkezdi a díjszabást.
 | ON | USB-kábel eltávolítása | Az eszköz nem töltődik le
 | ON | USB-kábel csatlakoztatása | Az eszköz elkezdi a díjszabást
-| Alvás | USB-kábel csatlakoztatása | Az eszköz elkezdi a díjszabást
-| Alvás | USB-kábel eltávolítása | Az eszköz nem töltődik le
+| ALVÁS | USB-kábel csatlakoztatása | Az eszköz elkezdi a díjszabást
+| ALVÁS | USB-kábel eltávolítása | Az eszköz nem töltődik le
 | BEKAPCSOLVA USB-kábellel csatlakoztatva | Az eszköz kikapcsolása | Az eszköz az akkumulátor töltöttségi szintjét jelző jelző világítással bekapcsolja az eszközt, és az eszköz elkezdi a díjszabást |
 
 ### <a name="lights-that-indicate-the-battery-level"></a>Az akkumulátor töltöttségi szintjét jelző világítás
 
 | Világítások száma | Akkumulátor töltöttségi szintje |
 | - | - |
-| Négy szilárd fény, egy fény ki- és bereked | 100% és 81% között (teljes díj) |
+| Négy tartós világítás, egy ki- és bevilágítás | 100% és 81% között (teljes díj) |
 | Három tartós világítás, egy ki- és bevilágítás | 80% és 61% között |
-| Két tartós fény, egy ki- és bevilágítás | 60% és 41% között |
+| Két tartós fény, egy be- és kivilágítás | 60% és 41% között |
 | Egy folytonos fény, egy be- és kiviláguló fény | 40% és 21% között |
 | Egy világos ki- és berekedő | 20% és 5% közötti vagy alacsonyabb (kritikus akkumulátor) |
 
-### <a name="sleep-behavior"></a>Alvó üzemmód
+### <a name="sleep-behavior"></a>Alvó üzemmód működése
 
 | Az eszköz állapota | Művelet | HoloLens 2. |
 | - | - | - |
 | ON | Egyetlen bekapcsológomb lenyomása | Az eszköz átvált a SLEEP állapotra, és kikapcsolja az összes jelzőfényt |
 | ON | 3 percig nincs mozgás | Az eszköz átvált a SLEEP állapotra, és kikapcsolja az összes jelzőfényt |
-| Alvás | Egyetlen bekapcsológomb megnyomása | Az eszköz bekapcsolt állapotra vált, és bekapcsolja a jelzőfényeket |
+| ALVÁS | Egyetlen bekapcsológomb megnyomása | Az eszköz bekapcsolt állapotra vált, és bekapcsolja a jelzőfényeket |
 
 ### <a name="lights-to-indicate-problems"></a>A problémákat jelző világítás
 
@@ -114,9 +114,9 @@ Nem tudja, mit jelentenek a kijelző HoloLens? Szeretné tudni, hogyan HoloLens 
 
 ## <a name="safety-and-comfort"></a>Biztonság és kényelem
 
-### <a name="use-hololens-in-safe-surroundings"></a>Biztonságos HoloLens környezetben használja az alkalmazásokat
+### <a name="use-hololens-in-safe-surroundings"></a>Biztonságos HoloLens környezetben használt
 
-A HoloLens biztonságos térben, ingyenesen használhatók, és nem kell veszélyben lenni. Ne használja, ha tiszta nézőpontra van szüksége, vagy nem tudja teljes figyelmet fordítani, például egy jármű üzemeltetése vagy más potenciálisan veszélyes tevékenységek során.
+A HoloLens biztonságos térben, ingyenesen használhatók, és veszélyforrásoktól mentesek. Ne használja, ha tiszta nézőpontra van szüksége, vagy nem tudja teljes figyelmet fordítani, például egy jármű üzemeltetése vagy más potenciálisan veszélyes tevékenységek során.
 
 ### <a name="stay-comfortable"></a>Maradjon kényelmes
 

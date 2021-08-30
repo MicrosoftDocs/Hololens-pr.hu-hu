@@ -1,6 +1,6 @@
 ---
 title: Gyakori üzembe helyezési forgatókönyvek
-description: További információ a vállalati környezetekben HoloLens és kezeléséről, beleértve az infrastruktúrát, a Azure Active Directory és a mobileszköz-kezeléseket.
+description: További információ a nagyvállalati környezetekben HoloLens üzembe helyezéséről és kezeléséről, beleértve az infrastruktúrát, a Azure Active Directory és a mobileszköz-kezeléseket.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 27fd7f81d2868134344c7563ebc0a93133a18c0a217d6eff820b5f322e9271a7
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5a4f251f3ca6eae5e85e4d763074e035039159cb
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662911"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189239"
 ---
 # <a name="common-deployment-scenarios"></a>Gyakori üzembe helyezési forgatókönyvek
 
@@ -25,21 +25,21 @@ ms.locfileid: "115662911"
 
 Az új eszközök üzembe helyezésének kiderítésében nehéz lehet az első próbálkozáskor. Itt különböző módszereket osztunk meg két eszköz Microsoft HoloLens és kezelésére a szervezeten belül.
 
-Nagy méretekben üzembe helyezett megoldásokat szeretne. Szeretnénk odahozni. Először is vegyük át az eszközök( tehát hologramok) üzembe helyezésének lépéseit, hogy értéket teremtsünk a vegyes valóság célhelyzete számára, akár d365 Remote Assist, akár útmutatók, vagy egy Ön által létrehozott Azure Mixed Reality szolgáltatást használó alkalmazás.
+Nagy méretekben üzembe helyezett megoldásokat szeretne. Szeretnénk odahozni. Először is vegyük át az eszközök , tehát a hologramok üzembe helyezésének lépéseit, hogy értéket teremtsünk a vegyes valóság célhelyzete számára, akár d365 Remote Assist, akár útmutatók, vagy egy Ön által létrehozott Azure Mixed Reality szolgáltatást használó alkalmazás.
 
-Ön lehet egy üzleti döntéshozó, it-szakértő vagy egy innovációs csapat, amely vállalaton belül HoloLens vállalaton belül. A koncepció igazolása és a skálázható üzembe helyezés között az üzembe helyezési útmutatóink HoloLens az it-infrastruktúrán belüli fejlesztést – függetlenül attól, hogy mekkora vagy kicsi. A leggyakoribb telepítési forgatókönyvek a következők:
+Ön lehet egy üzleti döntéshozó, it-szakértő vagy innovációs csapat, HoloLens cégen belül. A koncepció igazolása és a skálázható üzembe helyezés között az üzembe helyezési útmutatóink HoloLens az it-infrastruktúrán belül – függetlenül attól, hogy mekkora vagy kicsi. A leggyakoribb telepítési forgatókönyvek a következők:
 
 | Eset |Használat | Kulcsfontosságú pontok |
 |---------|---------|---------|
 | [A forgatókönyv: Felhőhöz csatlakoztatott eszközök](hololens2-cloud-connected-overview.md) | Az üzembe helyezés első megkezdésekor kicsiben kezdhet, és egyetlen, a felhőhöz csatlakoztatott eszközt helyezhet üzembe az alapvető folyamat érdekében. | Az eszközök a felhőszolgáltatásokhoz és a nyilvános internethez lesznek csatlakoztatva. Ez az ügyfélesetek, helyszíni szolgáltatások és a koncepció igazolása esetén a legmegfelelőbb.|
 | [B forgatókönyv: Szervezeti hálózat](hololens2-corp-connected-overview.md) | Amikor nagy léptékben helyez üzembe éles környezetben, előfordulhat, hogy integrálni kell magát a saját szervezet hálózatával. | Az eszközök egy "Céges" Wi-Fi-hálózathoz csatlakoznak. Ez a legmegfelelőbb a belső felhasználók számára, vagy a vállalati környezetben való használatra.|
-| [C forgatókönyv: Offline biztonságos környezet](hololens-common-scenarios-offline-secure.md) | Egyes alapvető fontosságú folyamatok vagy vállalati szabályzatok offline környezetek használatát követelik meg. | Az eszközök egy rendkívül korlátozó hálózathoz fognak kapcsolódni, vagy kizárólag offline eszközök lesznek. Ez a legmegfelelőbb a rendkívül biztonságos környezetekhez vagy távoli helyeken az internetkapcsolattal kapcsolatos korlátozásokhoz. |
+| [C forgatókönyv: Offline biztonságos környezet](hololens-common-scenarios-offline-secure.md) | Egyes alapvető fontosságú folyamatok vagy vállalati szabályzatok offline környezetek használatát követelik meg. | Az eszközök egy rendkívül korlátozó hálózathoz csatlakoznak, vagy kizárólag offline eszközök lesznek. Ez a legmegfelelőbb a rendkívül biztonságos környezetekhez vagy távoli helyeken az internetkapcsolattal kapcsolatos korlátozásokhoz. |
 
 ## <a name="scenario-a-deploy-to-cloud-connected-devices"></a>A forgatókönyv: Üzembe helyezés felhőhöz csatlakoztatott eszközökön
 
-Ez a forgatókönyv hasonló a felügyelt mobileszközök vállalati telepítéséhez. HoloLens 2. üzembe helyezése elsősorban vállalati hálózaton kívülre készült. A vállalati erőforrások nem érhetők el, vagy VPN-en keresztül korlátozhatóak.
+Ez a forgatókönyv hasonló a felügyelt mobileszközök vállalati telepítéséhez. HoloLens 2. helyezett üzembe elsődlegesen vállalati hálózaton kívülre telepített környezetekben. A vállalati erőforrások nem érhetők el, vagy VPN-en keresztül korlátozhatóak.
 
-[![A forgatókönyv ábrája](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
+[![Forgatókönyv Diagram.](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
 
 ### <a name="when-to-use"></a>A következő esetekben használja
 
@@ -59,7 +59,7 @@ Tekintse meg ezt az üzembe helyezési modellt a következő hez:
 
 ### <a name="common-challenges"></a>Gyakori kihívások
 
-* A 2. HoloLens alkalmazható MDM-konfigurációk meghatározása a forgatókönyv követelményei alapján
+* A 2. HoloLens MDM-konfigurációk meghatározása a forgatókönyv követelményei alapján
 
 A megfelelő, felhőhöz csatlakoztatott útmutató bemutatja, hogyan regisztrálható HoloLens 2. lépés az eszközfelügyeletre, hogyan alkalmazhat licenceket szükség szerint, és hogyan ellenőrizheti, hogy a végfelhasználók az eszköz beállításakor azonnal tudják-e használni a Remote Assistet.
 
@@ -73,11 +73,11 @@ A Külső ügyfelek útmutató segítségével rövid vagy hosszú távú küls�
 
 ## <a name="scenario-b-deploy-inside-your-organizations-network"></a>B forgatókönyv: Üzembe helyezés a szervezet hálózatán belül
 
-Ez a forgatókönyv megegyezik a legtöbb számítógép klasszikus Windows 10 esetében. HoloLens 2. pont elsősorban a vállalati hálózaton való használatra van telepítve, és belső vállalati erőforrásokhoz fér hozzá. Az internet és a felhőszolgáltatások korlátozottak lehetnek. 
+Ez a forgatókönyv megegyezik a legtöbb számítógép klasszikus Windows 10 esetében. HoloLens 2. hiba elsősorban a vállalati hálózaton való használatra van telepítve, és belső vállalati erőforrásokhoz fér hozzá. Az internet és a felhőszolgáltatások korlátozottak lehetnek. 
 
-[![A B1 forgatókönyv diagramja](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
+[![A B1 forgatókönyv diagramja.](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
-[![A B2 forgatókönyv diagramja](images/deployment-guides-revised-scenario-b-02-1.png)](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
+[![A B2 forgatókönyv diagramja.](images/deployment-guides-revised-scenario-b-02-1.png)](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
 
 ### <a name="when-to-use"></a>A következő esetekben használja
 
@@ -88,7 +88,7 @@ Tekintse meg ezt az üzembe helyezési modellt a következő hez:
 
 ### <a name="basic-common-configurations"></a>Alapszintű gyakori konfigurációk
 
-* Wi-Fi egy belső vállalati hálózat, amely hozzáfér a belső erőforrásokhoz, és korlátozott hozzáféréssel rendelkezik az internethez vagy a felhőszolgáltatásokhoz.
+* Wi-Fi egy belső vállalati hálózat, amely hozzáféréssel rendelkezik a belső erőforrásokhoz, és korlátozott hozzáféréssel rendelkezik az internethez vagy a felhőszolgáltatásokhoz.
 * Azure AD-csatlakozás automatikus MDM-regisztrációval
 * MDM (Intune) által felügyelt
 * A felhasználók a saját vállalati fiókjukkal (Azure AD) jelentkeznek be
@@ -98,20 +98,20 @@ Tekintse meg ezt az üzembe helyezési modellt a következő hez:
 
 ### <a name="common-challenges"></a>Gyakori kihívások
 
-* HoloLens 2. pont nem támogatja a helyszíni AD-csatlakozást vagy -System Center Configuration Manager (SCCM). Csak az Azure AD-hez csatlakozzon az MDM-hez. Ebben a forgatókönyvben számos vállalat továbbra is Windows 10 számítógépeket helyez üzembe az SCCM által felügyelt helyszíni AD-hez csatlakozott eszközökként, és előfordulhat, hogy nincs telepítve/konfigurálva a belső Windows 10-eszközök felhőalapú MDM-megoldásokon keresztüli kezelésére szolgáló infrastruktúra.
-* Mivel HoloLens 2. verzió egy felhőalapú eszköz, nagy mértékben támaszkodik az internethez és a felhőhöz kapcsolódó szolgáltatásokra a felhasználóhitelesítéshez, az operációs rendszer frissítéséhez, az MDM-felügyelethez stb. Vállalati hálózathoz való csatlakozáskor a proxy-/tűzfalszabályokat nagy valószínűséggel úgy kell módosítani, hogy HoloLens 2. és a rajta futó alkalmazások hozzáférését engedélyezték.
-* A Wi-Fi kapcsolatokhoz általában tanúsítványokra van szükség az eszköz vagy a felhasználó hálózaton való hitelesítéséhez. A tanúsítványok MDM-Windows 10 eszközökre való telepítéséhez szükséges infrastruktúra vagy beállítások konfigurálása kihívást jelenthet.
+* HoloLens 2. pont nem támogatja a helyszíni AD-csatlakozást vagy System Center Configuration Manager (SCCM). Csak az Azure AD-hez csatlakozzon az MDM-hez. Ebben a forgatókönyvben számos vállalat továbbra is Windows 10 számítógépeket helyez üzembe az SCCM által felügyelt helyszíni AD-hez csatlakozott eszközökként, és előfordulhat, hogy nincs telepítve/konfigurálva a belső Windows 10-eszközök felhőalapú MDM-megoldásokkal való felügyeletéhez szükséges infrastruktúra.
+* Mivel HoloLens 2. felhőalapú eszköz, nagy mértékben támaszkodik az internethez és a felhőhöz kapcsolódó szolgáltatásokra a felhasználói hitelesítéshez, az operációs rendszer frissítéséhez, az MDM-felügyelethez stb. Vállalati hálózathoz való csatlakozáskor a proxy-/tűzfalszabályokat valószínűleg úgy kell módosítani, hogy HoloLens 2. vagy a rajta futó alkalmazások hozzáférését engedélyezték.
+* A Wi-Fi kapcsolatokhoz általában tanúsítványokra van szükség az eszköz vagy a felhasználó hálózaton való hitelesítéséhez. A tanúsítványoknak az MDM-Windows 10 való telepítéséhez szükséges infrastruktúra vagy beállítások konfigurálása kihívást jelenthet.
 
-A megfelelő vállalati csatlakoztatott útmutató útmutatást ad a HoloLens 2 regisztrálására a meglévő eszközkezelésben, a licencek szükség szerint történő alkalmazásával és annak ellenőrzésével, hogy a végfelhasználók képesek-e Dynamics 365-útmutatót működtetni, valamint egyéni üzletági alkalmazásokat használni az eszköz beállítása után.
+A megfelelő vállalati csatlakoztatott útmutató útmutatást ad arra, hogyan regisztrálhatja a HoloLens 2-t a meglévő eszközkezelésben, hogyan alkalmazhat licenceket szükség szerint, és hogyan ellenőrizheti, hogy a végfelhasználók képesek-e Dynamics 365-útmutatót működtetni, valamint hogyan használhatnak egyéni üzletági alkalmazásokat az eszköz beállítása után.
 
 > [!div class="nextstepaction"]
 > [Vállalati csatlakoztatott üzembe helyezési útmutató](hololens2-corp-connected-overview.md)
 
 ## <a name="scenario-c-deploy-in-secure-offline-environment"></a>C forgatókönyv: Üzembe helyezés biztonságos offline környezetben
 
-Ez egy tipikus üzembe helyezés a rendkívül biztonságos vagy bizalmas helyeken. HoloLens 2. pont elsősorban offline használatra van telepítve, hálózat és internet-hozzáférés nélkül.
+Ez egy tipikus üzembe helyezés a rendkívül biztonságos vagy bizalmas helyeken. HoloLens 2. pont elsősorban offline használatra van telepítve, hálózat- vagy internet-hozzáférés nélkül.
 
-[![Offline biztonságos diagram 1](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
+[![Offline biztonságos diagram 1.](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
 ### <a name="when-to-use"></a>A következő esetekben használja
 
