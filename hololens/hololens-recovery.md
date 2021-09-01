@@ -7,7 +7,7 @@ ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
 ms.author: mazeller
-ms.date: 04/27/2020
+ms.date: 08/30/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9547545fee4b1e0c8bacf258fa9bea081dec2445
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: e9aad32891bb093cbce18671b76549788b19afcb
+ms.sourcegitcommit: c4fe077e9e19a3b0a9fad8defa4b51547c5ae3c8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189715"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123261923"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Újraindítás, alaphelyzetbe állítás vagy helyreállítás HoloLens 2.
 
@@ -69,18 +69,18 @@ Ha a normál alaphelyzetbe állítási eljárás nem működött, használja a v
 
 1. A Type-C kábel leválasztása az eszköz tápellátásról vagy a gazdaszámítógépről való leválasztása érdekében.
 
-2. Tartsa lenyomva a **hangerőt**  +   15 másodpercig. Az eszköz automatikusan újraindul.
+1. Tartsa lenyomva a **hangerőt**  +   15 másodpercig. Az eszköz automatikusan újraindul.
 
-4. Csatlakozás a gazdagépre.
+1. Csatlakozás a gazdagépre.
 
-
-5. Nyissa Eszközkezelő (Windows 10 nyomja le a **Windows,** majd az **X** billentyűt, majd válassza a **Eszközkezelő).** Győződjön meg arról, hogy az eszköz helyesen számba *veszi Microsoft HoloLens* az alábbi képen látható módon:
+1. Nyissa Eszközkezelő (Windows 10 nyomja le a **Windows,** majd az **X** billentyűt, majd válassza a **Eszközkezelő).** Győződjön meg arról, hogy az eszköz helyesen számba *veszi Microsoft HoloLens* az alábbi képen látható módon:
 
    ![HoloLens 2 MicrosoftHoloLensRecovery eszköz maanger 2.](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## <a name="clean-reflash-the-device"></a>Az eszköz perjelének tisztítása
 
 Rendkívüli helyzetekben előfordulhat, hogy a 2. HoloLens "tiszta flash" (flash) kell. Vegye figyelembe, hogy a perjeles perjel várhatóan nem érinti a következő problémákat:
+
 - [Szín egységességének megjelenítése](hololens2-display.md)
 - Rendszerindítás hanggal, de nem jelenik meg a kimenet
 - [1-3-5 LED minta](hololens2-setup.md#lights-to-indicate-problems)
@@ -92,7 +92,7 @@ Az eszközt két módon lehet újrafedni. Mindkét esetben először telepíteni
 >[!WARNING]
 >Ha újrafűnésbe állítja az eszközt, az összes személyes adata, alkalmazása és beállítása törlődik, beleértve a TPM alaphelyzetbe állítási információit is.
 
-Alapértelmezés szerint az Advanced Recovery Companion a legújabb funkció kiadási build [](hololens-release-notes.md#) letöltésére van beállítva. Itt elolvashatja a kibocsátási megjegyzéseket a legújabb funkció kiadásának megismerése érdekében. A 2 HoloLens Flash Update (FFU) legújabb csomagját úgy töltheti le, hogy az Advanced Recovery Companion segítségével újraféselje az eszközt, kattintson ide a legújabb havi HoloLens 2 rendszerkép [letöltéséhez.](https://aka.ms/hololens2download) Ez a verzió a legújabb általánosan elérhető build.
+Alapértelmezés szerint az Advanced Recovery Companion a legújabb funkció kiadási build letöltésére van beállítva; A legújabb funkció kiadásának megismerésért tekintse meg [a HoloLens 2. kibocsátási megjegyzéseit.](hololens-release-notes.md) A 2 HoloLens Flash Update (FFU) legújabb csomagját úgy töltheti le, hogy az Advanced Recovery Companion alkalmazással újraféselje az eszközt, töltse le a legújabb havi HoloLens 2-es rendszerképet: [https://aka.ms/hololens2download](https://aka.ms/hololens2download) . Ez a verzió a legújabb általánosan elérhető build.
 
 A perjeles eljárás előtt győződjön meg arról, hogy az alkalmazás telepítve van és fut a Windows 10 számítógépen, és készen áll az eszköz észlelésére. Arról is győződjön meg HoloLens hogy a díj összege legalább 40%.
 
@@ -101,16 +101,20 @@ A perjeles eljárás előtt győződjön meg arról, hogy az alkalmazás telepí
 ### <a name="normal-procedure"></a>Normál eljárás
 
 1. Amíg az HoloLens eszköz fut, csatlakoztassa azt Windows 10 számítógéphez, ahol korábban megnyitotta az Advanced Recovery Companion alkalmazást.
- 
+
    A rendszer automatikusan észleli az eszközt, és a Speciális helyreállítást kísérő alkalmazás felhasználói felülete elindítja a frissítési folyamatot:
 
    ![HoloLens 2 tiszta perjeles kezdőképernyő.](images/ARC2.png)
 
-3. Válassza ki HoloLens 2. eszközt az Advanced Recovery Companion alkalmazás felhasználói felületén, és kövesse az utasításokat a perjel befejezéséhez.
+1. Válassza ki HoloLens 2. eszközt az Advanced Recovery Companion alkalmazás felhasználói felületén, és kövesse az utasításokat a perjel befejezéséhez.
 
 ### <a name="manual-procedure"></a>Manuális eljárás
 
-Ha a HoloLens 2. nem indul el megfelelően, vagy ha az Advanced Recovery Companion nem tudja észlelni az eszközt, előfordulhat, hogy helyreállítási módba kell tennie az eszközt:
+Előfordulhat, hogy helyreállítási módba kell tennie az eszközt, ha:
+
+- A HoloLens 2. nem indul el megfelelően
+- Az Advanced Recovery Companion nem tudja észlelni az eszközt
+- Már nem ismeri egy olyan eszköz jelszavát/PIN-kódját, amely csak egyetlen felhasználóval rendelkezik
 
 1. A Type-C kábel leválasztása az eszköz tápellátásról vagy a gazdaszámítógépről való leválasztása érdekében.
 
@@ -132,18 +136,18 @@ Ha a HoloLens 2. nem indul el megfelelően, vagy ha az Advanced Recovery Compani
 
 1. Mielőtt megpróbálkozás a flash eszközzel, győződjön meg arról, hogy az eszköz 40%-os vagy annál nagyobb díjat számít fel.
 
-2. Ellenőrizze, hogy az eszköz nincs-e feloldva.
+1. Ellenőrizze, hogy az eszköz nincs-e feloldva.
 
 1. Ellenőrizze, hogy az eszköz közvetlenül a gazdaszámítógéphez van-e csatlakoztatva, nem hubhoz.
 
 1. Ha az eszköz nem jelenik meg az univerzális serial bus-illesztőprogramok HoloLens/HoloLens helyreállítási eszközként, ellenőrizze a következőt:
     1. **Portok,** Qualcomm HS-USB-eszközként
-    1.   **Egyéb eszközök ,** mint QUSB_BULK eszköz – a gazdaszámítógépről hiányoznak az eszköz észleléséhez szükséges illesztőprogramok HoloLens. Kattintson a jobb gombbal, és válassza az Illesztőprogram frissítése lehetőséget, keressen rá az illesztőprogramok online kifejezésre, vagy jelölje be a Választható frissítések lehetőséget [a Windows beállítások között.](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674) Az illesztőprogram letöltése után az ARC-nak képesnek kell lennie észlelni.
- 
+    1. **Egyéb eszközök ,** mint QUSB_BULK eszköz – a gazdaszámítógépről hiányoznak az eszköz észleléséhez szükséges illesztőprogramok HoloLens. Kattintson a jobb gombbal, és válassza az Illesztőprogram frissítése lehetőséget, keressen rá az illesztőprogramok online kifejezésre, vagy jelölje be a Választható frissítések lehetőséget [a Windows beállítások között.](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674) Az illesztőprogram letöltése után az ARC-nak képesnek kell lennie észlelni.
+
 1. Ha az ARC nem észleli az eszközt, ellenőrizze, hogy tud-e csatlakozni az eszközhöz Fájlkezelő számítógépen található kapcsolaton keresztül. Ha nem tudja;
 
-    1.  Előfordulhat, hogy az eszközön USB-szabályzatok tiltják le ezt a kapcsolatot. Ha igen, próbálja ki [a Manual Flashing mode (Manuális flash mód) módot.](hololens-recovery.md#manual-procedure)
-    2.  Ha nincsenek házirendek, próbálkozzon egy másik USB-kábellel.
+    1. Előfordulhat, hogy az eszközön USB-szabályzatok tiltják le ezt a kapcsolatot. Ha igen, próbálja ki [a Manual Flashing mode (Manuális flash mód) módot.](hololens-recovery.md#manual-procedure)
+    2. Ha nincsenek házirendek, próbálkozzon egy másik USB-kábellel.
 
 1. Ellenőrizze, hogy az eszköz nem [1-3-5 LED-es mintát jelenít-e meg.](hololens2-setup.md#lights-to-indicate-problems)
 
@@ -183,7 +187,7 @@ Az üzembe helyezési útvonal engedélyezéséhez kövesse az alábbi lépések
 > [!TIP]
 > Ha az FFU offline telepítéséhez az Advanced Recovery Companiont tervezi használni, hasznos lehet a flash lemezkép letöltése. [**Töltse le a 2. HoloLens aktuális rendszerképét.**](https://aka.ms/hololens2download)
 
-
 Egyéb erőforrások:
+
 - [Offline alkalmazások terjesztése](/microsoft-store/distribute-offline-apps) 
 - [DISM alkalmazáscsomag (.appx vagy .appxbundle) – karbantartási parancssori beállítások](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)
