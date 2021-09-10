@@ -1,5 +1,5 @@
 ---
-title: A HoloLens frissítései
+title: A HoloLens kezelése
 description: Megtudhatja, hogyan kezelhetik a rendszergazdák a mobileszköz-kezelés segítségével a HoloLens frissítéseit.
 ms.prod: hololens
 ms.sitesec: library
@@ -20,13 +20,13 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.openlocfilehash: 3afe3d2aecd64c2b4724f4805571cb3c46112875
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190038"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428674"
 ---
-# <a name="manage-hololens-updates"></a>A HoloLens frissítései
+# <a name="manage-hololens-updates"></a>A HoloLens kezelése
 
 HoloLens frissítés Windows, ugyanúgy, mint a többi Windows 10. Amikor egy frissítés elérhetővé válik, a rendszer automatikusan letölti és telepíti, amikor az eszköz legközelebb csatlakozik az internethez. Ez a cikk a frissítések vállalati vagy más felügyelt környezetben való kezelését ismerteti. Az egyes eszközök frissítésének kezelésével kapcsolatos HoloLens lásd: [Frissítés HoloLens.](hololens-update-hololens.md)
 
@@ -34,18 +34,18 @@ HoloLens frissítés Windows, ugyanúgy, mint a többi Windows 10. Amikor egy fr
 
 ### <a name="managing-updates-by-using-windows-update-for-business"></a>Frissítések kezelése az Windows Update for Business használatával
 
-Windows Holographic for Business frissítés Windows [frissítéssel kezelheti](/windows/deployment/update/waas-manage-updates-wufb) a frissítéseket. Mind HoloLens 2 eszköz használhatja a Windows Holographic for Business. Győződjön meg arról, hogy a Windows Holographic for Business 10.0.18362.1042-es vagy újabb buildet használják. Ha már HoloLens (1. generációs) eszközzel, frissítenie [](hololens1-upgrade-enterprise.md) kell őket Windows Holographic for Business frissítésre a frissítésük kezeléséhez.
+Windows Holographic for Business frissítés Windows [frissítéssel kezelheti](/windows/deployment/update/waas-manage-updates-wufb) a frissítéseket. Mind HoloLens 2 eszköz használhatja a Windows Holographic for Business. Győződjön meg arról, hogy Windows Holographic for Business 10.0.18362.1042 vagy újabb buildet használ. Ha már HoloLens (1. generációs) eszközökkel, frissítenie [](hololens1-upgrade-enterprise.md) kell őket a Windows Holographic for Business frissítésük kezeléséhez.
 
-Windows Az Update for Business HoloLens az eszközöket közvetlenül a Windows Update szolgáltatáshoz. Az Windows Update for Business használatával a frissítési folyamat több aspektusát is szabályozhatja, vagyis hogy mely eszközök mely frissítéseket &mdash; kapják meg. Például az eszközök egy részéhez is kiadhatja a frissítéseket tesztelésre, majd később a többi eszközre is. De különböző frissítési ütemezéseket is meghatározhat a különböző típusú frissítésekhez.
+Windows Az Update for Business HoloLens az eszközöket közvetlenül az Windows Update szolgáltatáshoz. Az Windows Update for Business használatával a frissítési folyamat több aspektusát is szabályozhatja, vagyis hogy mely eszközök mely frissítéseket &mdash; kapják meg. Például az eszközök egy részéhez is kiadhatja a frissítéseket tesztelésre, majd később a többi eszközre is. De különböző frissítési ütemezéseket is meghatározhat a különböző típusú frissítésekhez.
 
 > [!NOTE]  
 > A HoloLens automatikusan kezelheti a funkciófrissítéseket (évente kétszer jelent meg) és a minőségi frissítéseket (havonta vagy szükség szerint kiadva, beleértve a kritikus fontosságú biztonsági frissítéseket). További információ a frissítéstípusokról: Az Windows Update for Business által kezelt [frissítések típusai.](/windows/deployment/update/waas-manage-updates-wufb#types-of-updates-managed-by-windows-update-for-business)
 
-Az Windows Frissítés vállalati verzióhoz beállítását HoloLens mobile Eszközkezelés-megoldásban (például az MDM-megoldásban) házirendek Microsoft Intune.
+A vállalati Windows frissítésének beállításait HoloLens a Mobile Eszközkezelés (MDM) megoldásban, például a Microsoft Intune.
 
 ### <a name="managing-windows-update-for-business-by-using-microsoft-intune"></a>Vállalati Windows frissítésének kezelése a Microsoft Intune
 
-A Vállalati verziófrissítések Intune-nal való konfigurálásának Windows részletes leírását lásd: Windows 10 frissítései [az Intune-ban.](/intune/protect/windows-update-for-business-configure) A támogatott Intune-funkciókkal kapcsolatos további HoloLens az Intune frissítéskezelési funkcióit, amelyek a [HoloLens támogatják.](#intune-update-management-functions-that-hololens-supports)
+A Vállalati verziófrissítések Intune-nal való konfigurálásának Windows részletes leírását lásd: Windows 10 frissítései az [Intune-ban.](/intune/protect/windows-update-for-business-configure) A támogatott Intune-funkciókkal kapcsolatos további HoloLens az Intune frissítéskezelési funkcióit, amelyek a [HoloLens támogatják.](#intune-update-management-functions-that-hololens-supports)
 
 > [!IMPORTANT]  
 > Az Intune két szabályzattípust biztosít a frissítések kezeléséhez: Windows 10 *frissítési kör* és *Windows 10 funkciófrissítés.* Az Windows 10 funkciófrissítési szabályzattípus jelenleg nyilvános előzetes verzióban érhető el, és nem támogatott a HoloLens.
@@ -54,19 +54,19 @@ A Vállalati verziófrissítések Intune-nal való konfigurálásának Windows r
 
 ### <a name="configure-update-policies-for-hololens-2-or-hololens-1st-gen"></a>Frissítési szabályzatok konfigurálása HoloLens 2. vagy HoloLens (1. generációs) verzióhoz
 
-Ez a szakasz azokat a szabályzatokat ismerteti, amelyek a 2. vagy HoloLens (1. generációs) frissítések HoloLens kezelésére használhatók. További információ a 2. HoloLens elérhető funkciókról: A [2.](#plan-and-configure-update-rollouts-for-hololens-2)HoloLens frissítésének megterve és konfigurálása.
+Ez a szakasz azokat a szabályzatokat ismerteti, amelyek a 2. HoloLens frissítések (1. generációs) HoloLens kezelésére használhatók. További információ a 2. HoloLens elérhető funkciókról: A [2.](#plan-and-configure-update-rollouts-for-hololens-2)HoloLens frissítésének megterve és konfigurálása.
 
-[Házirend CSP – A frissítés](/windows/client-management/mdm/policy-csp-update) határozza meg a vállalati frissítés Windows konfiguráló szabályzatokat.
+[Szabályzat CSP – A](/windows/client-management/mdm/policy-csp-update) frissítés határozza meg a vállalati frissítés Windows konfiguráló szabályzatokat.
 
 > [!NOTE]  
-> A szabályzatkonfigurációs szolgáltatók (CSP-k) listájáért, amelyet a HoloLens adott kiadásai támogatnak, lásd: Az eszközök által támogatott HoloLens [CSP-k.](/windows/client-management/mdm/policy-configuration-service-provider#policy-csps-supported-by-hololens-devices)
+> A szabályzatkonfigurációs szolgáltatók (CSP-k) listájáért, amelyet a HoloLens adott kiadásai támogatnak, lásd: A házirend-konfigurációszolgáltatók által támogatott HoloLens [eszközök.](/windows/client-management/mdm/policy-configuration-service-provider#policy-csps-supported-by-hololens-devices)
 
 #### <a name="configure-automatic-checks-for-updates"></a>Frissítések automatikus ellenőrzései
 
 Az **Update/AllowAutoUpdate** szabályzat segítségével kezelheti az automatikus frissítési viselkedést, például a frissítések keresését, letöltését és telepítését. A szabályzathoz elérhető beállításokkal kapcsolatos további információkért lásd: [Update/AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#update-allowautoupdate).
 
 > [!NOTE]  
-> A Microsoft Intune automatikus frissítési **viselkedéssel** módosíthatja ezt a szabályzatot. További információ: [Manage Windows 10 szoftverfrissítések az Intune-ban.](/intune/windows-update-for-business-configure)
+> A Microsoft Intune automatikus frissítési viselkedéssel módosíthatja ezt a szabályzatot.  További információ: Az Intune [Windows 10 kezelése.](/intune/windows-update-for-business-configure)
 
 #### <a name="configure-an-update-schedule"></a>Frissítési ütemezés konfigurálása
 
@@ -82,21 +82,21 @@ A frissítések alkalmazásának miként és mikor való konfiguráláskor haszn
 #### <a name="configure-active-hours"></a>Aktív órák konfigurálása
 A [Holographic Windows 20H2-es](hololens-release-notes.md#windows-holographic-version-20h2) verziójától kezdve a rendszergazdák megadhatják az aktív órák tartományát HoloLens 2 eszköz számára.
 
-Az aktív órák azt az időszakot azonosítják, amikor az eszköz várhatóan használatban lesz. Automatikus újraindítások, ha a frissítés az aktív órákon kívülre esik. A megadott tartomány az aktív órák kezdési időpontból lesz megszámadva. Az MDM-et az Aktív órák konfigurálása az [MDM-hez leírás szerint használhatja.](/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm) Az MDM a Házirend CSP Update/ActiveHoursStart és Update/ActiveHoursEnd és Update/ActiveHoursMaxRange beállítását használja az aktív órák konfigurálhoz.
+Az aktív órák azt az időszakot azonosítják, amikor az eszköz várhatóan használatban lesz. Automatikus újraindítások, ha a frissítés az aktív órákon kívülre esik. A megadott tartomány az aktív órák kezdési időpontból lesz megszámadva. Az MDM-et az Aktív órák konfigurálása az MDM-hez leírás [szerint használhatja.](/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm) Az MDM a Házirend CSP Update/ActiveHoursStart és Update/ActiveHoursEnd és Update/ActiveHoursMaxRange beállítását használja az aktív órák konfigurálhoz.
 
 -   [Update/ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#update-activehoursend) – Ez az érték határozza meg a záró időt. A kezdési időponttól legfeljebb 12 órás lehet.
-    -   Támogatott értékek: 0–23, ahol a 0 12:00, 1 00 stb.
+    -   Támogatott értékek: 0–23, ahol a 0 12:00, 1:00 stb.
     -   Az alapértelmezett érték 17 (17 óra).
 -   [Update/ActiveHoursMaxRange](/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) – Ez az érték a kezdési időponttól való aktív órák maximális számát állítja be.
     -   A támogatott értékek: 8–18.
     -   Az alapértelmezett érték 18 (óra).
 -   [Update/ActiveHoursStart –](/windows/client-management/mdm/policy-csp-update#update-activehoursstart) Ez az érték határozza meg a kezdési időt. A záró időpont legfeljebb 12 órás lehet.
-    -   Támogatott értékek: 0–23, ahol a 0 12:00, 1 00 stb.
+    -   Támogatott értékek: 0–23, ahol a 0 12:00, 1:00 stb.
     -   Az alapértelmezett érték 8 (8 AM).
 
-#### <a name="for-devices-that-run-windows-10-version-1607-only"></a>Csak a Windows 10 1607-es verziójú eszközök esetén
+#### <a name="for-devices-that-run-windows-10-version-1607-only"></a>Csak az 1607 Windows 10 verziót futtató eszközök esetén
 
-A következő frissítési szabályzatokkal konfigurálhatja az eszközöket úgy, hogy a Windows Server Update Service (WSUS) szolgáltatásból kapják meg a frissítéseket a Windows helyett:
+Az alábbi frissítési szabályzatok segítségével konfigurálhatja az eszközöket, hogy az Windows Server Update Service (WSUS) szolgáltatásból kapják meg a frissítéseket a Windows helyett:
 
 - [Update/AllowUpdateService](/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 - [Update/RequireUpdateApproval](/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
@@ -128,7 +128,7 @@ Tegyük fel például, hogy egy szervezet 1000 eszközzel rendelkezik, és öt h
 
 A halasztó szabályzatok a frissítés elérhetővé válásának dátuma és a frissítés eszköz számára való felkínálásának dátuma között megadott napok számát ják meg.
 
-Különböző halasztásokat konfigurálhat a szolgáltatásfrissítések és a minőségi frissítések számára. Az alábbi táblázat az egyes típusokkal használható házirendeket és azok maximális halasztását sorolja fel.
+Különböző halasztásokat konfigurálhat a szolgáltatásfrissítések és a minőségi frissítések számára. Az alábbi táblázat felsorolja az egyes típusonként használható házirendeket, valamint az egyes típusonkénti maximális halasztásokat.
 
 |Kategória |Szabályzat |Maximális halasztás |
 | --- | --- | --- |
@@ -137,7 +137,7 @@ Különböző halasztásokat konfigurálhat a szolgáltatásfrissítések és a 
 
 #### <a name="pause-updates-via-device"></a>Frissítések felfüggesztése eszközön keresztül
 
-Ha a felhasználó nem rendelkezik hozzáféréssel az MDM-hez, egyenként szüneteltetheti a frissítéseket manuálisan 35 napig manuálisan egy HoloLens 2-es buildelésű eszközön [Windows Holographic 2004-es](hololens-release-notes.md#windows-holographic-version-2004) vagy újabb verzióban. A felhasználók úgy érik el ezt a beállítást, hogy megnyitják a **Gépház > Update & Security > Speciális beállításokat, görgessen** le a Frissítések **felfüggesztése** lehetőséghez, és válassza ki azt a dátumot, amely előtt szüneteltetik a frissítéseket. Ha egy felhasználó elérte a szüneteltetési korlátot, az eszköznek új frissítéseket kell kapnia, mielőtt újra szüneteltetheti. 
+Ha a felhasználó nem rendelkezik hozzáféréssel az MDM-hez, egyenként szüneteltetheti a frissítéseket 35 napig manuálisan egy HoloLens 2-es buildelésű eszközön Windows [Holographic 2004-es](hololens-release-notes.md#windows-holographic-version-2004) vagy újabb verziójában. A felhasználók úgy érik el ezt a beállítást, hogy megnyitják a **Gépház > Update & Security > Speciális beállításokat,** és legörgetnek a Frissítések **felfüggesztése** lehetőséghez, és kiválasztják azt a dátumot, amely előtt szüneteltetik a frissítéseket. Ha egy felhasználó elérte a szüneteltetési korlátot, az eszköznek új frissítéseket kell kapnia, mielőtt újra szüneteltetheti. 
 
 A [Holographic Windows 20H2](hololens-release-notes.md#windows-holographic-version-20h2)verziótól kezdve ez a szünetfrissítési függvény 2 HoloLens kezelhető. 
 - [Update/SetDisablePauseUXAccess](/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).
@@ -148,21 +148,21 @@ A [Holographic Windows 20H2](hololens-release-notes.md#windows-holographic-versi
 
 Az Intune következő frissítéskezelési funkcióival kezelheti a frissítéseket a HoloLens.
 
-- **Létrehozás** és **hozzárendelés:** Ezek a függvények Windows 10 egy frissítési köröket a frissítési körök listájához. További információ: [Frissítési körök létrehozása és hozzárendelése.](/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings)
+- **Létrehozás** és **hozzárendelés:** Ezek a függvények egy Windows 10 a frissítési körök listájához. További információ: [Frissítési körök létrehozása és hozzárendelése.](/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings)
 
-- **Szüneteltetés:** Ha problémába ütközik egy funkció- vagy minőségi frissítés telepítésekor, 35 napig szüneteltetheti a frissítést (a megadott dátumtól kezdődően). Ez a szünet megakadályozza, hogy más eszközök telepítsék a frissítést, amíg meg nem oldja vagy nem oldja meg a problémát. Ha szüneteltet egy funkciófrissítést, a minőségi frissítések továbbra is elérhetőek maradnak az eszközök számára a biztonságuk biztosítása érdekében. Ha egy frissítési típus fel van függesztve, a kör Áttekintés panelje megjeleníti, hogy hány nap van még a frissítési típus folytatása előtt. A megadott idő letelése után a szüneteltetés automatikusan lejár, és a frissítési folyamat folytatódik.
+- **Szüneteltetés:** Ha problémába ütközik egy szolgáltatás vagy minőségi frissítés telepítésekor, a frissítést 35 napig szüneteltetheti (a megadott dátumtól kezdve). Ez a szünet megakadályozza, hogy más eszközök telepítsék a frissítést, amíg el nem hárítja a problémát. Ha felfüggeszt egy funkciófrissítést, a minőségi frissítések továbbra is elérhetőek maradnak az eszközök számára a biztonságuk biztosítása érdekében. Ha egy frissítési típus fel van függesztve, a kör Áttekintés panelje megjeleníti, hogy hány nap van még a frissítési típus folytatása előtt. A megadott idő letelése után a szüneteltetés automatikusan lejár, és a frissítési folyamat folytatódik.
 
-  Amíg a frissítési kör fel van függesztve, a következő lehetőségek közül választhat:
+  Amíg a frissítési kör fel van függesztve, az alábbi lehetőségek közül választhat:
 
-  - **Kiterjesztés:** A frissítési típus szüneteltetési időszakának meghosszabbítása 35 napra.
-  - **Folytatás:** Állítsa vissza a kör frissítéseit az aktív művelethez. Szükség esetén ismét szüneteltetheti a frissítési kört.
+  - **Kiterjesztés:** 35 nappal hosszabbítsa meg a frissítési típus szünetelési időszakát.
+  - **Folytatás:** Állítsa vissza a kör frissítéseit az aktív műveletre. Szükség esetén ismét szüneteltetheti a frissítési kört.
 
   > [!NOTE]  
   > A **frissítési** körök eltávolítási művelete 2 HoloLens nem támogatott.
 
 ### <a name="delivery-optimization-preview"></a>Kézbesítésoptimalizálás előzetes verzió
 
-[Windows Holographic 21H1-es](hololens-release-notes.md#windows-holographic-version-21h1) verziója lehetővé tette a kézbesítésoptimalizálási beállítások korai előzetes verzióját, hogy csökkentse a sávszélesség-használatot több HoloLens eszközről való letöltések esetén. A funkció teljesebb leírása és az ajánlott hálózati konfiguráció itt érhető el: Kézbesítésoptimalizálás [a Windows 10 frissítéséhez.](/windows/deployment/update/waas-delivery-optimization)
+[Windows Holographic 21H1-es](hololens-release-notes.md#windows-holographic-version-21h1) verziója lehetővé tette a kézbesítésoptimalizálási beállítások korai előzetes verzióját, hogy csökkentse a sávszélesség-felhasználást több HoloLens eszközökről. A funkció és az ajánlott hálózati konfiguráció teljesebb leírása itt érhető el: Kézbesítésoptimalizálás [a Windows 10 frissítéséhez.](/windows/deployment/update/waas-delivery-optimization)
 
 Az alábbi beállítások a felügyeleti felület részeként vannak engedélyezve, [és az Intune-ból konfigurálhatóak:](/mem/intune/configuration/delivery-optimization-settings)
 
@@ -183,21 +183,21 @@ Az előzetes verzióval kapcsolatos néhány figyelmeztetés:
 - HoloLens előzetes verzió csak az operációs rendszer frissítéseit támogatja.
 - Windows Holographic for Business a HTTP letöltési módokat és a Microsoft-végpontról [való Csatlakoztatott gyorsítótár letöltéseket támogatja;](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) A társközi letöltési módok és csoport-hozzárendelések jelenleg nem támogatottak HoloLens eszközök esetében.
 - HoloLens nem támogatja az üzembe helyezést vagy a kézbesítés optimalizálását Windows Server Update Services végpontok esetén.
-- A hibaelhárításhoz vagy diagnosztikára van szükség a Csatlakoztatott gyorsítótár-kiszolgálón, vagy nyomkövetést kell gyűjteni a HoloLens-on HoloLens-on Gépház  >  **Update & Security Troubleshooting** Windows Update (Frissítés & biztonsági  >   **hibaelhárítása**  >   **Windows frissítéssel).**
+- A hibaelhárításhoz diagnosztikára van szükség a Csatlakoztatott gyorsítótár-kiszolgálón, vagy nyomkövetést kell gyűjteni a HoloLens HoloLens-on a **Gépház** Update & Security Troubleshooting Windows Update (Frissítés &  >  **biztonsági** hibaelhárítása)  >     >   **Windows frissítésen keresztül.**
 
 ## <a name="manually-check-for-updates"></a>Frissítések manuális ellenőrzése
 
 Bár HoloLens rendszeresen ellenőrzi a rendszerfrissítéseket, előfordulhatnak olyan körülmények, amelyekben manuálisan szeretné ellenőrizni.
 
-A frissítések manuális ellenőrzéséhez tekintse meg az Update Gépház update & Security Check for updates (Frissítések biztonsági  >    >  **ellenőrzése) adatokat.** Ha a Gépház alkalmazás azt jelzi, hogy az eszköz naprakész, akkor az összes jelenleg elérhető frissítés elérhető.
+A frissítések manuális ellenőrzéséhez tekintse meg a Gépház frissítésének &  >    >  **frissítéseit.** Ha a Gépház azt jelzi, hogy az eszköz naprakész, akkor az összes jelenleg elérhető frissítés elérhető.
 
-## <a name="manually-roll-back-an-update"></a>Frissítés manuális visszaállítási lehetőség
+## <a name="manually-roll-back-an-update"></a>Frissítés manuális visszaállítása
 
-Bizonyos esetekben érdemes lehet a szoftver korábbi verziójára HoloLens vissza. Ennek folyamata attól függ, hogy 2-es vagy HoloLens (1. generációs) HoloLens-e.
+Bizonyos esetekben érdemes lehet a szoftver korábbi verziójára HoloLens vissza. Ennek folyamata attól függ, hogy 2-es vagy HoloLens -HoloLens (1. generációs) használ-e.
 
-### <a name="revert-to-a-previous-version-hololens-2"></a>Visszaállítás egy korábbi verzióra (2. HoloLens)
+### <a name="revert-to-a-previous-version-hololens-2"></a>Visszaállítás egy korábbi verzióra (HoloLens 2)
 
-Visszaállíthatja a frissítéseket, és visszatérhet a 2. HoloLens korábbi verziójára az [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) használatával, hogy visszaállítsa a HoloLens korábbi verzióra.
+A frissítések visszaállításához és a 2. HoloLens korábbi verziójára való visszatéréshez használja az [Advanced Recovery Companiont](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) a HoloLens korábbi verzióra való visszaállításához.
 
 > [!NOTE]
 > A korábbi verzióra való visszaállítás törli a személyes fájlokat és beállításokat.
@@ -205,29 +205,29 @@ Visszaállíthatja a frissítéseket, és visszatérhet a 2. HoloLens korábbi v
 A 2. HoloLens korábbi verziójára való visszaállításhoz kövesse az alábbi lépéseket:
 
 1. Győződjön meg arról, hogy nincs telefonja vagy Windows a számítógéphez csatlakoztatva.
-1. A számítógépen töltse le az [Advanced Recovery Companiont a](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) Microsoft Store.
+1. A számítógépen töltse le az [Advanced Recovery Companiont](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) a Microsoft Store.
 1. Töltse le [a 2 HoloLens kiadás legújabb kiadását.](https://aka.ms/hololens2download)
-1. A letöltések befejezése után nyissa meg a **Fájlkezelő** Letöltések parancsát, kattintson a jobb gombbal az előbb letöltött tömörített (.zip) mappára, majd válassza a Extract all Extract all Extract (Összes kibontása) lehetőséget a fájl  >     >   kibontásához.
-1. Usb-A–USB-C kábellel csatlakoztassa HoloLens eszközét a számítógépéhez. Még ha más kábeleket is használt a HoloLens, ez a kábel működik a legjobban.
+1. A letöltések befejezése után nyissa meg a **Fájlkezelő** Letöltések ablakát, kattintson a jobb gombbal az előbb letöltött tömörített (.zip) mappára, majd válassza az Extract all Extract (Összes kibontása) lehetőséget a fájl  >     >   kibontásához.
+1. Usb-A–USB-C kábellel csatlakoztassa HoloLens eszközét a számítógéphez. Még ha más kábeleket is használt a HoloLens, ez a kábel működik a legjobban.
 1. Az Advanced Recovery Companion automatikusan észleli a HoloLens eszközét. Válassza a **Microsoft HoloLens** csempét.
 1. A következő képernyőn válassza a **Manuális csomagválasztás** lehetőséget, majd nyissa meg a korábban kibontott mappát.
 1. Válassza ki a telepítőfájlt (.ffu).
 1. Válassza **a Szoftver telepítése** lehetőséget, majd kövesse az utasításokat.
 
-### <a name="revert-to-a-previous-version-hololens-1st-gen"></a>Visszaállítás egy korábbi verzióra (HoloLens (1. generáció))
+### <a name="revert-to-a-previous-version-hololens-1st-gen"></a>Visszaállítás korábbi verzióra (HoloLens (1. generáció))
 
-Visszaállíthatja a frissítéseket, és visszatérhet az HoloLens (1. generációs) egy korábbi verziójára az [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379) használatával a HoloLens korábbi verzióra való visszaállításához.
+Visszaállíthatja a frissítéseket, és visszatérhet az HoloLens (1. generációs) korábbi verziójára az [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379) használatával a HoloLens korábbi verzióra való visszaállításához.
 
 > [!NOTE]
 > A korábbi verzióra való HoloLens törli a személyes fájlokat és beállításokat.
 
-A (1. gen HoloLens korábbi verziójára való visszaállításhoz kövesse az alábbi lépéseket:
+A (1. generációs) HoloLens korábbi verziójára való visszaállításhoz kövesse az alábbi lépéseket:
 
 1. Győződjön meg arról, hogy nincs telefonja vagy Windows a számítógéphez csatlakoztatva.
 1. A számítógépen töltse le a [Windows Device Recovery Tool (WDRT) eszközt.](https://support.microsoft.com/help/12379)
 1. Töltse le [a HoloLens évfordulós frissítés helyreállítási csomagját.](https://aka.ms/hololensrecovery)
-1. A letöltések befejezése után nyissa meg a **Fájlkezelő** Letöltések ablakát, kattintson a jobb gombbal az előbb letöltött tömörített (.zip) mappára, majd válassza az Extract all Extract all Extract (Összes kibontása) lehetőséget a fájl  >     >   kibontásához.
-1. Az eszközhöz a saját eszközével együtt biztosított mikro-USB HoloLens csatlakoztathatja a HoloLens a számítógépéhez. Ez akkor is működik a legjobban, ha más kábelekkel csatlakoztatta HoloLens eszközét.
+1. A letöltések befejezése után nyissa meg a **Fájlkezelő** Letöltések ablakát, kattintson a jobb gombbal az előbb letöltött tömörített (.zip) mappára, majd válassza az Extract all Extract (Összes kibontása) lehetőséget a fájl  >     >   kibontásához.
+1. A hálózati eszközhöz együtt biztosított mikro USB-kábellel HoloLens a HoloLens eszközét a számítógéphez. Ez akkor is a legjobban működik, ha más kábelekkel csatlakoztatta HoloLens eszközét.
 1. A WDRT automatikusan észleli a HoloLens eszközét. Válassza a **Microsoft HoloLens** csempét.
 1. A következő képernyőn válassza a **Manuális csomagválasztás** lehetőséget, majd nyissa meg a korábban kibontott mappát.
 1. Válassza ki a telepítőfájlt (.ffu).
@@ -235,11 +235,11 @@ A (1. gen HoloLens korábbi verziójára való visszaállításhoz kövesse az a
 
 **Ha a WDRT nem észleli az eszközt**
 
-Ha a WDRT nem észleli a HoloLens eszközt, indítsa újra a számítógépet. Ha ez nem működik, válassza a Saját eszköz **nem** észlelhető lehetőséget, válassza a **Microsoft HoloLens** lehetőséget, majd kövesse az utasításokat.
+Ha a WDRT nem észleli a HoloLens eszközt, próbálja meg újraindítani a számítógépet. Ha ez nem működik, válassza a **Saját eszköz nem** észlelhető lehetőséget, válassza a **Microsoft HoloLens** lehetőséget, majd kövesse az utasításokat.
 
 ## <a name="related-articles"></a>Kapcsolódó cikkek
 
 - [HoloLens 2. kiadási megjegyzések](hololens-release-notes.md)
 - [Mi az Windows Update for Business?](/windows/deployment/update/waas-manage-updates-wufb)
-- [Eszközök hozzárendelése karbantartási csatornákhoz a Windows 10 frissítésekhez](/windows/deployment/update/waas-servicing-channels-windows-10-updates)
+- [Eszközök hozzárendelése karbantartási csatornákhoz Windows 10 frissítésekhez](/windows/deployment/update/waas-servicing-channels-windows-10-updates)
 - [Windows 10-szoftverfrissítések kezelése az Intune-ban](/mem/intune/protect/windows-update-for-business-configure)

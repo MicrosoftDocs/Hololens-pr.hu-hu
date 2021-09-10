@@ -1,6 +1,6 @@
 ---
 title: HoloLens (1. generációs) hardver
-description: Ismerje meg az Microsoft HoloLens (1. generációs) összetevőit, amely egy nem összecsukott holografikus Microsoft-számítógép legújabb Windows 10.
+description: Ismerje meg az Microsoft HoloLens (1. generációs) összetevőit, amely a Windows 10-t futtató, nem összecsukott Microsoft-számítógép legújabb Windows 10.
 ms.assetid: 527d494e-2ab6-46ca-bd5a-bfc6b43cc833
 ms.date: 09/16/2019
 keywords: hololens
@@ -14,17 +14,17 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 587253a7ec3d3959e7861fedc474d6a2e39dd369
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189902"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427246"
 ---
 # <a name="hololens-1st-gen-hardware"></a>HoloLens (1. generációs) hardver
 
 ![Microsoft HoloLens (1. generációs).](images/see-through-400px.jpg)
 
-Microsoft HoloLens (1. generációs) a világ első teljesen le nem oltott holografikus számítógépe. HoloLens újradefiniálja a személyi számítástechnikát a holografikus élmények révén, hogy új módokon tegye lehetővé. HoloLens élvonalbeli optikát és érzékelőket ötvöz, hogy 3D-s hologramokat szállítsunk, amelyek a valós világhoz vannak tűzve.
+Microsoft HoloLens (1. generációs) a világ első teljesen le nem oltott holografikus számítógépe. HoloLens újradefiniálja a személyi számítástechnikát a holografikus élmények révén, hogy új módokon tegye lehetővé. HoloLens élvonalbeli optikát és érzékelőket ötvöz, hogy 3D-s hologramokat biztosítsunk, amelyek a valós világhoz vannak tűzve.
 
 ## <a name="hololens-components"></a>HoloLens összetevők
 
@@ -32,11 +32,11 @@ Microsoft HoloLens (1. generációs) a világ első teljesen le nem oltott holog
 
 A HoloLens a következő funkciókat tartalmazza:
 
-- **Visor**. A HoloLens és kijelzőit tartalmazza. A vizort felfelé forgathatja, amíg a vizort HoloLens.
-- **Headband ( fejsáv)**. A beállítási HoloLens a beállítási kerek segítségével bontsa ki a fejsávot. Ha a HoloLens a beállítási kereket, húzza meg addig, amíg a fejsáv el nem oszlott.
-- **A fényerő gombok.** Ha a kijelzőt HoloLens, a fényerejét jelző gombok az eszköz bal oldalán vannak.
-- **Kötetgombok.** Ha a hangerőszabályzót HoloLens, a hangerőszabályzó gombok az eszköz jobb oldalán vannak.
-- **Eszközkarok.** Amikor felveszi, fel- vagy leveszi a HoloLens, mindig fogja meg vagy tartsa az eszköz karjával.
+- **Visor**. A HoloLens és kijelzőit tartalmazza. A vizort felfelé forgathatja, amíg be nem viseli a HoloLens.
+- **Headband ( fejsáv)**. A két HoloLens a beállítási kerek használatával bontsa ki a fejsávot. A HoloLens után húzza meg a rögzítőkereket, amíg a fejsáv el nem oszlott.
+- **A fényerő gombok.** Ha berakja a HoloLens, a fényerejét jelző gombok az eszköz bal oldalán vannak.
+- **Hangerőgombok.** Ha a hangerőszabályzót HoloLens, a hangerőszabályzó gombok az eszköz jobb oldalán vannak.
+- **Eszközkarok.** Amikor felveszi, fel- vagy levei a HoloLens, mindig fogja meg vagy tartsa az eszköz karjával.
 
 ## <a name="in-the-box"></a>A mezőben
 
@@ -44,22 +44,22 @@ A HoloLens a következő funkciókat tartalmazza:
 
 A HoloLens mező a következő elemeket tartalmazza:
 
-- **Orrpanelek**. Válasszon ki egy orrot, amely az orr alakjához igazodik, és elfér rajta a szemüveg.
-- **Terhelési terhelés**. Ha mozgás közben berakja a HoloLens, használja a terhelési tokot, hogy az eszköz a helyén maradjon. Emellett, ha hosszabb ideig viseli a HoloLens, a terhelési retendék használata kényelmesebbé teszi az eszköz elhasználódását.
+- **Az orrra.** Válassza ki az orrot, amely megfelel az orr alakjának, és elfér rajta a szemüveg.
+- **Terhelési rekent**. Ha mozgás közben berakja a HoloLens, a terhelési szalag segítségével tarthatja a helyén az eszközt. Emellett, ha hosszabb ideig viseli a HoloLens, a terhelési szalag használata kényelmesebbé teszi az eszköz elhasználódását.
 - **Mikro USB-kábel.** A mikro-USB-kábellel csatlakoztassa a HoloLens a tápegységhez a díjszabáshoz, vagy csatlakoztassa a HoloLens számítógépéhez.
-- **Tápellátás.** Egy áramforráshoz csatlakozik.
-- **Mikrofiberos .** A vizor tisztítása a HoloLens használatával.
+- **Tápegység.** Egy áramforráshoz csatlakozik.
+- **Mikrofiber-** és . Használja a tokot a vizor HoloLens tisztítására.
 
 >[!TIP]
->A [clicker egy](hololens1-clicker.md) HoloLens (1. generációs) külön dobozba van ásva.
+>A [kattintásra HoloLens](hololens1-clicker.md) (1. generációs) egy külön mezőben.
 
-### <a name="power-supply-details"></a>Energiaellátási adatok
+### <a name="power-supply-details"></a>Energiaellátás részletei
 
-Az eszköz tápellátása és USB-kábele a leginkább támogatott díjszabási mechanizmus. A tápegység egy 18W-os tápellátás.  9V-t ad meg 2A-n.
+A legjobb díjszabási mechanizmus a tápegység és az eszközhöz csatlakoztatott USB-kábel. A tápegység egy 18W-os kábel.  9V-t ad meg 2A-n.
 
 A díjszabás és a sebesség attól függően változhat, hogy az eszköz milyen környezetben fut.
 
-Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százaléka alatt tartható fenn/haladható meg, legalább 15W-os akkumulátorhoz kell csatlakoztatni.
+Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százaléka alatt is fenntartható/előre haladható legyen, legalább 15W-os kábelre kell csatlakoztatni.
 
 ## <a name="device-specifications"></a>Eszközspecifikációk
 
@@ -70,9 +70,9 @@ Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százal�
 | &nbsp; | &nbsp; |
 |---|---|
 | **Optika** | Átfedő holografikus objektívek (waveguides) |
-| **Holografikus felbontás** | 2 HD 16:9-es fénymotorok, amelyek összesen 2,3 millió fénypontot előállítók |
-| **Holografikus sűrűség** | \>2,5k radiants (radiánonként világos pontok) |
-| **Szemalapú renderelés** | A pupilláris távolság automatikus megszabadul |
+| **Holografikus felbontás** | 2 HD 16:9-es fénymotor, amely 2,3 millió fénypontot gyárt |
+| **Holografikus sűrűség** | \>2,5k radián (radiánonként világos pontok) |
+| **Szemalapú renderelés** | Automatikus pupilláris távolság-szibráció |
 
 ### <a name="sensors"></a>Érzékelők
 
@@ -89,9 +89,9 @@ Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százal�
 ### <a name="input-output-and-connectivity"></a>Bemenet, kimenet és kapcsolat
 
 - Beépített beszélők
-- Hang 3,5 mm-es csatlakozó
+- Audio 3.5mm jack
 - Kötet fel-/le
-- A fényerő felfelé/lefelé
+- Fényerő felfelé/lefelé
 - Bekapcsológomb
 - Akkumulátor állapotJELZŐ LED-ek
 - Wi-Fi 802.11ac
@@ -122,18 +122,18 @@ Annak érdekében, hogy az eszköz a belső akkumulátor töltöttségi százal�
 
 |   | &nbsp; |
 |---|---|
-| **Méretezés** | Egyméretű, állítható sávkal. Szemüvegre illeszkedik |
+| **Méretezés** | Egyetlen méret állítható sávkal. Szemüvegre illeszkedik |
 | **Tömeg** | 579 gramm |
 
 ## <a name="device-capabilities"></a>Eszközképességek
 
 A felhasználói műveleteket a következővel értheti meg:
 
-- Tekintetek nyomon követése
+- Tekintetkövetés
 - Kézmozdulat bemenete
 - Hangalapú támogatás
 
-A környezet átfogása a következővel:
+A környezet a következővel érthető:
 
 - Térbeli hang
 
@@ -153,18 +153,18 @@ A környezet átfogása a következővel:
 
 ### <a name="safety"></a>Biztonság
 
-HoloLens, és úgy találtuk, hogy megfelel az ANSI Z87.1, CSA Z94.3 és EN 166 alapvető hatásvédelmi követelményeinek.
+HoloLens, és úgy találtuk, hogy megfelel az ANSI Z87.1, a CSA Z94.3 és az EN 166 alapvető hatásvédelmi követelményeinek.
 - [SAR-információk](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ## <a name="care-and-cleaning"></a>Ellátás és tisztítás
 
 Körültekintően kezelje HoloLens az 500 000 HoloLens. A rekedt eszköz HoloLens és beállításához használja az eszköz karját, ne a &mdash; terhelési rekedtet. Hogy a vizor ne legyen rajta ujjlenyomat, és ne kelljen megérintenie. Az ismételt tisztítás kárt tehet a vizorban, ezért próbálja meg tisztán tartani az eszközt.
 
-Ne használjon tisztítást vagy HoloLens, és ne használja víz alá, és ne használjon közvetlenül rá vizet.
+Ne használjon tisztítást vagy HoloLens, és ne használja víz alá, és ne alkalmazz közvetlenül vízre.
 
 A vizor megtisztításához távolítson el minden bögret egy camel vagy egy kecskeszőrkefe vagy egy villanykörte stílusú objektívbeszúró segítségével. Kis mennyiségű leszűkített vizet használjon a mikrofiber pára leereszkedő fényében, majd a segítségével körkörös mozgásban törölje a vizor arcot.
 
-Az eszköz többi része, többek között a fej-sáv és az eszközkarok tisztítására használjon lint-mentes, soapot és vizet is megszabadító kátyút. Hagyja, hogy HoloLens teljesen megszivárjon, mielőtt újra felhasználja.
+Az eszköz többi része, többek között a fej-sáv és az eszközkarok tisztítására használjon lint-mentes, soapot és vizet is megszabadító kátyút. Az újra HoloLens használat előtt hagyja teljesen megszivárni.
 
 ![A vizor tisztítását bemutató kép.](images/hololens-cleaning-visor.png)
 
@@ -185,4 +185,4 @@ A sorozatszám egy csatlakoztatott számítógépen is megtalálható:
    <img src="images/hl1-serial-number.png" width="400" height="600" alt="Properties page in Windows 10 for HoloLens-3TNKV"/>
 
 > [!div class="nextstepaction"]
-> [A HoloLens beállítása és HoloLens (1. generációs)](hololens1-setup.md)
+> [A HoloLens beállítása és HoloLens beállítása](hololens1-setup.md)

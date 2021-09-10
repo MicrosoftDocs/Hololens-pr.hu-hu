@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2. áthelyezési platform mód
-description: A HoloLens használata a platformok áthelyezésében
+description: A HoloLens használata mozgó platformokon
 keywords: moving platforms, dynamic motion, hololens, moving platform mode
 author: evmill
 ms.author: v-evmill
@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a0717524cd1f762c92a5b821ae90acb8474dafd2
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: 81b3231827fce9a2ae2d5e3105800685fedb917b
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190395"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427947"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Mozgó platform mód alacsony dinamikus mozgású mozgó platformokon
 
-Az **Insider 20348.1411-es** buildjében bétaverziós támogatást biztosítunk a 2. HoloLens mozgó platformokon való nyomon követéshez. A build telepítése és a Platformáttelepítési mód engedélyezése után használhatja a HoloLens 2-es HoloLens korábban nem elérhető környezetekben, például nagy méretű teherszállítókban és nagy méretű állatokban. Jelenleg a funkció célja ezeknek az adott mozgó platformoknak a engedélyezése. Bár semmi sem akadályozza meg abban, hogy más környezetekben is megpróbálja használni a funkciót, a funkció célja, hogy először támogatást nyújtsunk ezekhez a környezetekhez.
+Az **Insider 20348.1411-es** buildjében bétaverziós támogatást biztosítunk a 2. HoloLens mozgó platformokon való nyomon követéshez. A build telepítése és a Platformáttelepítési mód engedélyezése után a 2. HoloLens-t korábban elérhetetlen környezetekben is használhatja, például nagy méretű teherszállítókban és nagy méretű hatalmasakban. Jelenleg a funkció célja ezeknek az adott mozgó platformoknak a engedélyezése. Bár semmi sem akadályozza meg abban, hogy más környezetekben is megpróbálja használni a funkciót, a funkció célja, hogy először támogatást nyújtsunk ezekhez a környezetekhez.
 
 > [!NOTE]
 > Ez a funkció jelenleg csak az [insiders Windows érhető el.](hololens-insider.md)
@@ -37,14 +37,14 @@ Ez a cikk a következővel foglalkozik:
 
 ## <a name="why-moving-platform-mode-is-necessary"></a>Miért van szükség a platform üzemmód áthelyezésének módjára?
 
-HoloLens a fej pozícióját [6](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) szabadsággal (X, Y, Z, fordítás és dobás, dobás, yaw rotáció) kell tudnia követni a stabil hologramok megjelenítése érdekében. Ehhez a HoloLens két hasonló információt követ nyomon két különböző forrásból:
+HoloLens kell tudnia követni a fej pozícióját [6](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) szabadsági fokban (X, Y, Z, fordítás és dobás, dobás, yaw rotáció) a stabil hologramok megjelenítése érdekében. Ehhez a HoloLens két hasonló információt követ nyomon két különböző forrásból:
 
 1. Látható fénykamerák – nyomon követik a környezetet, például azt a fizikai helyiséget, amelyben a HoloLens
 1. Inertial Measurement Unit (IMU), – egy gyorsulásmérőből, groscope-ból és kilométermérőből áll, amely nyomon követi a fejlelést és a tájolást a Földhez viszonyítva
 
 A két forrásból származó információk összetettek, így alacsony késéssel és nagy gyakorisággal követheti a fej pozícióját, hogy zökkenőmentes hologramokat renderelhessenek.
 
-Ez a megközelítés azonban egy kritikus feltételezésen alapul; A környezet (amelyet a kamerák követnek) a Földhöz viszonyítva marad (amelyhez képest az IMU méréseket tud végezni). Ha ez nem így van, például a víz egy vízparton, a két forrásból származó információk ütköznek egymással, és a követő elveszhet. Ez az ütközés helytelen pozícióinformációkat hoz létre, és a elvesztését vagy akár a elvesztését is nyomon követi.
+Ez a megközelítés azonban egy kritikus feltételezésen alapul; a környezet (amelyet a kamerák követnek) a Földhöz viszonyítva marad (amelyhez képest az IMU méréseket tud végezni). Ha ez nem így van, például a víz egy vízparton, a két forrásból származó információk ütköznek egymással, és a követő elveszhet. Ez az ütközés helytelen pozícióinformációkat hoz létre, és a elvesztését vagy akár a veszteség nyomon követését is okozhatja.
 
 A Platform mód áthelyezésének megoldása. Ha engedélyezi a mozgóplatformos módot, az arra utal, hogy a követőnk nem támaszkodhat az érzékelő bemeneteire, hogy mindig teljesen megegyezhetünk egymással. Ehelyett nagyobb mértékben kell a vizualizációkövetésre hagyatkoznunk, és gyorsan azonosítanunk a nem megbízható inertiális mozgási adatokat, és ennek megfelelően szűrnünk kell őket, mielőtt használhatjuk az IMU-bemenetet.
 
@@ -54,9 +54,9 @@ Bár a Platform mód áthelyezését úgy alakították ki, hogy intelligensen k
 
 ### <a name="known-limitations"></a>Ismert korlátozások
 
-- A platform üzemmód áthelyezésének (MPM) egyetlen támogatott környezete a nagy méretű, alacsony dinamikus mozgást tapasztaló hüggvény. Ez azt jelenti, hogy számos  gyakori környezet/helyzet még nem támogatott a nagy gyakoriságú mozgás, valamint a magas gyorsulás és [gyorsulás](https://en.wikipedia.org/wiki/Jerk_(physics))miatt. Például: síkok, szerelvények, autók, kerékpárok, busz, kis méretű vízi járművek, liftek stb.
-- Hologramok az MPM engedélyezésekor kissé elszabadodhat, különösen akkor, ha önagyú vízen van.
-- Semmi sem akadályozza meg, hogy a felhasználók nem támogatott környezetekben kísérelje meg az MPM használatát, azonban a nem kívánt mellékhatásokat tapasztalhatnak, ha az eszköz képes nyomon követni a nem támogatott térben. Az MPM esetén például a felhasználók azt találhatják, hogy liftben is használhatók az emeletek módosítása közben, míg ez korábban nem volt lehetséges. Sajnos, bár az MPM lehetővé teszi az eszköz nyomon követését, jelenleg nem kezeli a térképkezelést. A felhasználók azt fogják látni, hogy ha egy liftben cseréli az emeletet, az összezavarja az alsó és felső padlót, és negatívan befolyásolja a térkép minőségét.
+- A platform üzemmód áthelyezésének (MPM) egyetlen támogatott környezete a nagy méretű, alacsony dinamikus mozgást tapasztaló hüggvény. Ez azt jelenti, hogy számos  gyakori környezet/helyzet még nem támogatott a nagy gyakoriságú mozgás, valamint a magas gyorsulás és [a](https://en.wikipedia.org/wiki/Jerk_(physics))gyorsulás miatt. Például: síkok, szerelvények, autók, kerékpárok, busz, kis méretű vízi járművek, liftek stb.
+- Hologramok az MPM engedélyezésekor kismértékben is előfordulhat, különösen akkor, ha önagyú vízen van.
+- Semmi sem akadályozza meg, hogy a felhasználók nem támogatott környezetekben kísérelje meg az MPM használatát, azonban a nem kívánt mellékhatásokat tapasztalhatnak, ha az eszköz képes nyomon követni a nem támogatott térben. Az MPM esetén például a felhasználók azt találhatják, hogy liftben is használhatók az emeletek módosítása közben, míg ez korábban nem volt lehetséges. Sajnos, bár az MPM lehetővé teszi az eszköz nyomon követését, jelenleg nem kezeli a térképkezelést. A felhasználók azt fogják látni, hogy ha egy liftben cseréli az emeletet, az összezavarja az alsó és felső emeletet, és negatívan befolyásolja a térkép minőségét.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -75,19 +75,19 @@ A Mozgóplatform mód engedélyezéséhez először engedélyezze [a Eszközport
 
 1. Válassza ki **a System** (Rendszer) elemet a bal oldali menüben
 
-   ![Első kép.](.\images\moving-platform-1w.png)
+   ![Első kép.](.\images\mpm-01.png)
 
 2. Válassza a **Moving Platform Mode (Platform üzemmód mozgatja)** oldalt, és jelölje be **a Moving Platform Mode (Platform üzemmód mozgatja)** jelölőnégyzetet.
 
-    ![Második kép.](.\images\moving-platform-2z.png)
+    ![Második kép.](.\images\mpm-02.png)
 
 3. Ha a rendszer figyelmeztetést kér, kattintson az **OK gombra.**
 
-   ![Harmadik kép.](.\images\moving-platform-3w.png)
+   ![Harmadik kép.](.\images\mpm-03.png)
 
-4. Indítsa újra az eszközt, amely a jobb felső Eszközportál **Power** menüben vagy a következő hangparancs kiadásával indítható el, majd válassza az &quot; Igen &quot; &quot; &quot; lehetőséget.
+4. Indítsa újra az eszközt, amelyet a jobb felső Eszközportál **Power** menüben, vagy a következő hangparancs kiadásával lehet újraindítani az eszközt, és válassza az &quot; Igen &quot; &quot; &quot; lehetőséget.
 
-   ![Negyedik kép.](.\images\moving-platform-4z.png)
+   ![Negyedik kép.](.\images\mpm-04.png)
 
 Ha nem látja a Mozgóplatform mód lehetőséget a Eszközportál, az valószínűleg azt jelenti, hogy még nem a megfelelő buildet használja. Lásd az [Előfeltételek szakaszt.](#prerequisites)
 

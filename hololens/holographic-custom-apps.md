@@ -1,6 +1,6 @@
 ---
 title: Egyéni alkalmazások kezelése HoloLens (1. generációs)
-description: Megtudhatja, hogyan telepíthet, távolíthat el és telepíthet egyéni holografikus alkalmazásokat HoloLens eszközökön a Eszközportál és Visual Studio.
+description: Útmutató egyéni holografikus alkalmazások telepítéséhez, eltávolításához és oldalbetöltéséhez HoloLens eszközökre a Eszközportál és Visual Studio.
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
 ms.date: 12/10/2020
 manager: v-miegge
@@ -17,20 +17,20 @@ ms.custom:
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: b6769c36f821ee3619ac9b62efd637ac561192bb
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123188848"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427222"
 ---
 # <a name="manage-custom-apps-for-hololens-1st-gen"></a>Egyéni alkalmazások kezelése HoloLens (1. generációs)
 
-HoloLens támogatja a Microsoft Store számos meglévő alkalmazást, valamint a kifejezetten a HoloLens. Ez a cikk az egyéni holografikus alkalmazásokkal foglalkozik.  
+HoloLens számos meglévő alkalmazást támogat a Microsoft Store, valamint a kifejezetten a HoloLens. Ez a cikk az egyéni holografikus alkalmazásokkal foglalkozik.  
 
 További információ az áruházbeli alkalmazásokról: [Alkalmazások kezelése az áruházban.](holographic-store-apps.md)
 
 > [!IMPORTANT]
-> Az alábbi információk az HoloLens (1. generációs) kiadáshoz, más néven HoloLens Developer Editionhez készültek. Ezért az alkalmazások eszközportálon keresztüli telepítése és az alkalmazások telepítése Visual Studio gyakori volt. Nagyvállalati környezetek esetén nem javasoljuk a Fejlesztői mód engedélyezését, amelyet mindkét módszer használ. Ha egy biztonságos alkalmazástelepítési módszer érdekli, tekintse át az [Alkalmazáskezelés: Áttekintés témakört.](app-deploy-overview.md)
+> A következő információ jött létre a HoloLens (1. generációs), más néven HoloLens Developer Edition kiadáshoz. Az ilyen alkalmazások eszközportálon keresztüli telepítése és az alkalmazások Visual Studio történő telepítése gyakori volt. Nagyvállalati környezetek esetén nem javasoljuk a Fejlesztői mód engedélyezését, amelyet mindkét módszer használ. Ha érdekli egy biztonságos alkalmazástelepítési módszer, tekintse át az [Alkalmazáskezelés: Áttekintés témakört.](app-deploy-overview.md)
 >
 > Ha az alkalmazástelepítés fejlesztői módszerét keresi HoloLens 2 eszköz esetén, tekintse meg a következőt:
 >
@@ -39,7 +39,7 @@ További információ az áruházbeli alkalmazásokról: [Alkalmazások kezelés
 
 ## <a name="install-custom-apps"></a>Egyedi alkalmazások telepítése
 
-Saját alkalmazásokat telepíthet a HoloLens a Eszközportál vagy az alkalmazások központi telepítésének Visual Studio.
+Saját alkalmazásokat telepíthet a HoloLens a Eszközportál vagy az alkalmazások központi telepítéséhez a Visual Studio.
 
 ### <a name="installing-an-application-package-with-the-device-portal"></a>Alkalmazáscsomag telepítése a Eszközportál
 
@@ -52,7 +52,7 @@ Saját alkalmazásokat telepíthet a HoloLens a Eszközportál vagy az alkalmaz�
    > [!IMPORTANT]
    > Győződjön meg arról, hogy a társított függőségi és tanúsítványfájlokra hivatkozik.
 
-1. Válassza az **Ugrás lehetőséget.**
+1. Válassza a **Go lehetőséget.**
 
    > [!div class="mx-imgBorder"]
    > ![Telepítse az alkalmazásűrlap Windows Eszközportál a Microsoft HoloLens.](images/deviceportal-appmanager.jpg)
@@ -71,10 +71,10 @@ Saját alkalmazásokat telepíthet a HoloLens a Eszközportál vagy az alkalmaz�
    
 1. Készítse el a megoldást.
 
-1. Ha üzembe helyezni az alkalmazást a fejlesztői számítógépről a HoloLens válassza a **Távoli gép lehetőséget.** Ha már létezik build a HoloLens válassza az **Igen** lehetőséget az újabb verzió telepítéséhez.  
+1. Ha a fejlesztői számítógépről telepítenie kell az alkalmazást a HoloLens válassza a **Távoli gép lehetőséget.** Ha már létezik build a HoloLens válassza az **Igen** lehetőséget az újabb verzió telepítéséhez.  
 
    ![Távoli gép üzembe helyezése az alkalmazások Microsoft HoloLens a Visual Studio.](images/vs2015-remotedeployment.jpg)  
    
 1. Az alkalmazás automatikusan telepítve és automatikusan elindul a HoloLens.
 
-Miután telepítette az alkalmazást, a következő listában találja **meg Minden alkalmazás** (**Start**  >  **Minden alkalmazás**).
+Miután telepített egy alkalmazást, az alkalmazás a  Minden alkalmazás listájában található (**Minden alkalmazás**  >  ).

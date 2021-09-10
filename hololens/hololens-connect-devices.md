@@ -14,11 +14,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: d9c8b813ba54edbcfef8d1a32e641dad39a7f193
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189086"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427725"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Csatlakozás usb Bluetooth C-eszközök csatlakoztatása
 
@@ -31,7 +31,7 @@ HoloLens 2. a következő osztályokat támogatja a Bluetooth eszközök esetéb
     - Billentyűzet
 - Hangkimeneti (A2DP) eszközök
 
-HoloLens 2. pont a következő API Bluetooth támogatja:
+HoloLens 2. a következő API Bluetooth támogatja:
 - ANNAK [kiszolgálója](/windows/uwp/devices-sensors/gatt-server) és [ügyfele](/windows/uwp/devices-sensors/gatt-client)
 - [RFCOMM](/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
 >[!IMPORTANT]
@@ -44,7 +44,7 @@ HoloLens (1. generációs) a következő osztályokat támogatja a Bluetooth esz
 - [HoloLens (1. generációs) kattintás](hololens1-clicker.md)
 
 > [!NOTE]
-> Az egyéb típusú Bluetooth eszközök, például a beszélők, a headsetek, az okostelefonok és a játékpanelek a következő beállításokban HoloLens listában. Ezek az eszközök azonban nem támogatottak a HoloLens (1. generációs) esetében. További információ: az [HoloLens Gépház listázza](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)az eszközöket, de az eszközök nem működnek.
+> Más típusú Bluetooth eszközök, például a beszélők, a headsetek, az okostelefonok és a játékpanelek a következő beállításokban HoloLens listában. Ezek az eszközök azonban nem támogatottak a HoloLens (1. generációs) eszközökön. További információ: HoloLens Gépház [listázza az eszközöket, de](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)az eszközök nem működnek.
 
 ### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Billentyűzet vagy Bluetooth párosítása
 
@@ -56,15 +56,15 @@ HoloLens (1. generációs) a következő osztályokat támogatja a Bluetooth esz
 
 1. Ha látja az eszköz nevét, válassza a **Pár** lehetőséget, majd kövesse az utasításokat.
 
-## <a name="disable-bluetooth"></a>Az Bluetooth
+## <a name="disable-bluetooth"></a>A Bluetooth
 
-Ez az eljárás kikapcsolja a Bluetooth RF-összetevőit, és letiltja az összes Bluetooth funkciót a Microsoft HoloLens.
+Ez az eljárás kikapcsolja a Bluetooth RF-összetevőit, és letiltja Bluetooth összes Microsoft HoloLens.
 
-1. A Bloom kézmozdulattal (HoloLens (1. gen)) vagy az indítási kézmozdulattal (HoloLens 2) a **Start** menüben válassza a Gépház   >  **lehetőséget.**
+1. Használja a Bloom kézmozdulatot (HoloLens (1. gen)) vagy az indítási kézmozdulatot (HoloLens 2) a **Start** menüben, majd válassza az **Gépház**  >  **lehetőséget.**
 
 1. Húzza a csúszkakapcsolót **a Bluetooth** a **Ki állásba.**
 
-## <a name="hololens-2-connect-usb-c-devices"></a>HoloLens 2: USB-C Csatlakozás csatlakoztatása
+## <a name="hololens-2-connect-usb-c-devices"></a>HoloLens 2. Csatlakozás USB-C-eszközök
 
 HoloLens 2. a következő USB-C-eszközöket támogatja:
 
@@ -79,12 +79,12 @@ HoloLens 2. a következő USB-C-eszközöket támogatja:
 
 
 > [!NOTE]
-> Az ügyfelek visszajelzésére válaszul korlátozott támogatást engedélyeztünk a közvetlenül a hálózatra csatlakoztatott mobilhálózati HoloLens USB-C-n keresztül. További [Csatlakozás mobilhálózati és 5G-s](hololens-cellular.md) mobilhálózati kapcsolatról.
+> Az ügyfelek visszajelzésére válaszul korlátozott támogatást engedélyeztünk az USB-C-n keresztül közvetlenül a HoloLens csatlakoztatott mobilhálózati kapcsolatokhoz. További [Csatlakozás lásd: Mobilhálózati és 5G-s](hololens-cellular.md) kapcsolat.
 
 ### <a name="usb-c-external-microphone-support"></a>USB-C külső mikrofon támogatása
 
 > [!IMPORTANT]
-> Az USB-mikrofon csatlakoztatása nem lesz automatikusan beállítva **bemeneti eszközként.** AMIKOR USB-C-kábeleket csatlakoztatnak, a felhasználók megfigyelhetik, hogy a mikrofon hanganyaga automatikusan a mikrofonhoz lesz átirányítva, de az HoloLens operációs rendszer a belső mikrofontömböt a többi bemeneti eszköz fölé rangsorítja. **USB-C mikrofon használata érdekében kövesse az alábbi lépéseket.**
+> Az USB-mikrofon csatlakoztatása nem lesz automatikusan beállítva **bemeneti eszközként.** USB-C-kábelek csatlakoztatása esetén a felhasználók megfigyelhetik, hogy a hanganyag automatikusan a mikrofonhoz lesz átirányítva, de az HoloLens operációs rendszer a belső mikrofontömböt a többi bemeneti eszköz fölé rangsorítja. **USB-C mikrofon használata érdekében kövesse az alábbi lépéseket.**
 
 > [!NOTE]
 > A külső mikrofonok nem használhatók a [Holographic Windows 21H1-es](hololens-release-notes.md#windows-holographic-version-21h1) vagy újabb verziójú buildek esetén. 
@@ -110,7 +110,7 @@ Nyissa meg **a Gépház** alkalmazást, és válassza a **System**  >  **Sound l
 
 #### <a name="what-about-bluetooth-microphone-support"></a>Mi a helyzet a Bluetooth támogatással?
 
-Sajnos a Bluetooth mikrofonok jelenleg még nem támogatottak a 2. HoloLens esetén.
+Sajnos a Bluetooth mikrofonok jelenleg nem támogatottak a 2. HoloLens támogatottak.
 
 ### <a name="usb-c-hubs"></a>USB-C hubok
 
@@ -128,7 +128,7 @@ A Miracast kövesse az alábbi lépéseket:
 1. Tegye a következők egyikét:  
 
    - Nyissa meg **a Start menüt,** és válassza a **Megjelenítés ikont.**
-   - Mondja ki a "Csatlakozás" szót, miközben a **Start menüre tekint.**  
+   - Mondja a "Csatlakozás" parancsot, miközben a **Start menüre tekint.**  
 
 1. A megjelenő eszközök listájában válasszon ki egy elérhető eszközt.
 

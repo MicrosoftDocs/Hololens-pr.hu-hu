@@ -1,6 +1,6 @@
 ---
 title: Licenckövetelmények
-description: Maradjon naprakész a mobileszköz-kezeléshez, a mobileszköz-kezeléshez, a HoloLens és a Remote Assisthez szükséges összes licencelési követelményt és útmutatót.
+description: Tartsa naprakészen a mobileszköz-kezeléshez, a mobileszköz-kezeléshez, a HoloLens és a Remote Assisthez szükséges összes licencelési követelményt és útmutatót.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: bradke
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: aae4e1dbbf28906c1f93ac7f29620260023f596bb96fc23a3ee78442e70585fa
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 6224cd5e07794d9fca3c0a406e787d1a3fd88b43
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663296"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427394"
 ---
 # <a name="license-requirements"></a>Licenckövetelmények
 
@@ -42,8 +42,8 @@ Ez az oldal magas szintű áttekintést nyújt a felügyelt és a nem felügyelt
 | Azure AD felhasználói fiók | ✔️ | |
 | [Microsoft-fiók (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)| | ✔️ |
 | [Helyi fiók](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | | ✔️ |
-- <sup>1.</sup> [Automatikus regisztráció az](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) eszköz kezdeti beállítása során, amely regisztrálja a Azure Active Directory, és lehetővé teszi az eszköz Intune-nal való felügyeletét.
-- <sup>2</sup> [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) leegyszerűsíti a kiépítési élményt mind a rendszergazdák, mind a végfelhasználók számára. A rendszergazdák előre konfigurálni HoloLens 2 szabályzatot, és az első rendszerindításkor az eszközök a végfelhasználói beavatkozás nélkül, üzleti használatra kész állapotba lesznek telepítve.
+- <sup>1</sup> [Automatikus regisztráció az](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) eszköz kezdeti beállítása során, amely regisztrálja a Azure Active Directory, és lehetővé teszi az eszköz Intune-nal való felügyeletét.
+- <sup>2</sup> [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) leegyszerűsíti a kiépítési élményt mind a rendszergazdák, mind a végfelhasználók számára. A rendszergazdák előre konfigurálhatnak HoloLens 2 szabályzatot, és az első rendszerindításkor az eszközök a végfelhasználói beavatkozás nélkül, üzleti használatra kész állapotba lesznek telepítve.
 - <sup>3</sup> Ezt a fiókot [előre](hololens-provisioning.md#provisioning-package-hololens-wizard) ki kellépítenünk a Windows Configuration Designer (WCD) használatával.
 
 > [!IMPORTANT]

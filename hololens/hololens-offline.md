@@ -1,6 +1,6 @@
 ---
-title: Kapcsolati végpontok kezelése a HoloLens
-description: Megtudhatja, hogyan állíthat be HoloLens hálózati kapcsolati Wi-Fi kapcsolati végpontok kezelése és konfigurálása közben.
+title: Kapcsolati végpontok kezelése HoloLens
+description: Megtudhatja, hogyan állíthat be HoloLens kapcsolati Wi-Fi kapcsolati végpontok kezelése és konfigurálása közben.
 keywords: hololens, offline, OOBE
 audience: ITPro
 ms.date: 07/01/2019
@@ -18,16 +18,16 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 63c82e5b1a953ee2f69bf4c22a8442c7bca07f073cc13f1e5e573fde0ccc1976
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: f2d9faafac2f84b727b1e10be83d4d1b53a707b4
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662941"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428573"
 ---
-# <a name="manage-connection-endpoints-for-hololens"></a>Kapcsolati végpontok kezelése a HoloLens
+# <a name="manage-connection-endpoints-for-hololens"></a>Kapcsolati végpontok kezelése HoloLens
 
-Egyes HoloLens összetevők, alkalmazások és kapcsolódó szolgáltatások microsoftos hálózati végpontokra továbbítják az adatokat. Ez a cikk felsorolja azokat a különböző végpontokat és URL-címeket, amelyek a hálózati konfigurációban (pl. proxy vagy tűzfal) engedélyezve lesznek az összetevők működőképességét.    
+Egyes HoloLens összetevők, alkalmazások és kapcsolódó szolgáltatások adatokat továbbítnak a Microsoft hálózati végpontjaira. Ez a cikk felsorolja azokat a különböző végpontokat és URL-címeket, amelyek a hálózati konfigurációban (pl. proxy vagy tűzfal) engedélyezve lesznek az összetevők működőképességét.    
 
 ## <a name="near-offline-setup"></a>Közel offline telepítés
 
@@ -40,7 +40,7 @@ HoloLens kapcsolat nélküli élmény korlátozott készletét támogatja a hál
 | AADv9 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/9 |
 | AADv10 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/10 |
 | AAD PIN-kód | https://account.live.com/aadngc?uiflavor=win10&showSuccess=1 |
-| Msa | https://login.live.com/ppsecure/inlineconnect.srf?id=80600 |
+| MSA | https://login.live.com/ppsecure/inlineconnect.srf?id=80600 |
 | MSA Pin | https://account.live.com/msangc?fl=enroll |
 
 ## <a name="endpoint-configuration"></a>Végpont konfigurálása
@@ -152,14 +152,14 @@ A fenti lista mellett a hálózati konfigurációban a HoloLens a következő v�
 ## <a name="references"></a>Hivatkozások
 
 > [!NOTE]
-> Ha a D365 Remote Assistet telepíti, engedélyeznie kell a SharePoint Online és OneDrive Vállalati verzió listában felsorolt végpontokat a Office 365 URL-címek és [IP-címtartományok](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)között.
+> Ha a D365 Remote Assistet telepíti, engedélyeznie kell a SharePoint Online és OneDrive Vállalati verzió szolgáltatásban felsorolt végpontokat a Office 365 URL-címek és IP-címtartományok [között.](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
 
 - [Diagnosztikai Windows konfigurálása a szervezetben](/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
-- [Kapcsolati végpontok kezelése a Windows 10 Enterprise, 1903-as verzió](/windows/privacy/manage-windows-1903-endpoints)
+- [Az 1903-as Windows 10 Enterprise végpontjainak kezelése](/windows/privacy/manage-windows-1903-endpoints)
 - [Az operációs rendszer Windows 10 és az operációs rendszerek közötti kapcsolatok Microsoft-szolgáltatások](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
-- [Az operációsrendszer Windows 10 összetevők és a Microsoft-szolgáltatások közötti kapcsolatok Microsoft Intune MDM-Microsoft Intune kezelése](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
+- [Az MDM-Windows 10 az operációs rendszer összetevői és Microsoft-szolgáltatások közötti Microsoft Intune kezelése](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
 - [Az Intune hálózati konfigurációs követelményei és sávszélessége](/intune/fundamentals/network-bandwidth-use#network-communication-requirements)
-- [Hálózati végpontok Microsoft Intune](/intune/fundamentals/intune-endpoints)
+- [Hálózati végpontok a Microsoft Intune](/intune/fundamentals/intune-endpoints)
 - [Office 365 URL-címek és IP-címtartományok](/office365/enterprise/urls-and-ip-address-ranges)
 - [Az Azure AD Connect előfeltételei](/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
 

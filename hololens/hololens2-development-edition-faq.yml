@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
-  title: HoloLens 2. kiadás – gyakori kérdések
-  description: Maradjon naprakész a HoloLens 2 Development Edition vegyes valóságú eszközzel kapcsolatos leggyakoribb kérdésekről.
+  title: HoloLens 2. kiadás – Gyakori kérdések
+  description: Maradjon naprakész a HoloLens 2. fejlesztői kiadás vegyes valóságú eszközével kapcsolatos leggyakoribb kérdésekről.
   keywords: Hololens 2 purchasing options, HoloLens options, Developer Edition
   author: evmill
   ms.author: v-evmill
@@ -16,11 +16,11 @@ metadata:
   appliesto:
   - HoloLens 2
   ms.openlocfilehash: 85631d756285f4111016e39dc946733bb1e12d3c
-  ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
+  ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
   ms.translationtype: MT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 08/20/2021
-  ms.locfileid: "122610250"
+  ms.lasthandoff: 09/10/2021
+  ms.locfileid: "124428255"
 title: HoloLens 2. kiadás – gyakori kérdések
 summary: ''
 sections:
@@ -29,50 +29,50 @@ sections:
   - question: >
       Mit kapok a HoloLens 2 Development Edition kiadással?
     answer: >
-      Az HoloLens 2 Development Edition tartalmaz egy HoloLens 2, 500 USD Azure-kreditet, egy 3 hónapos Unity Pro-próbaverziót és egy 3 hónapos Pixyz beépülő modul próbaverzióját.
+      A HoloLens 2 Development Edition tartalmaz egy HoloLens 2, 500 USD Azure-kreditet, egy 3 hónapos Unity Pro-próbaverziót és egy 3 hónapos Pixyz beépülő modul próbaverzióját.
   - question: >
-      Mi a különbség a 2. HoloLens és a HoloLens 2. kiadás között?
+      Mi a különbség a 2 HoloLens és HoloLens 2. fejlesztési kiadás között?
     answer: >
-      A HoloLens 2 Development Edition csak olyan belső vállalati alkalmazások fejlesztésére és tesztelésére használható, amelyek éles környezetben a HoloLens 2-es kiadással (kereskedelmi kiadás) használhatók. A Development Edition megvásárlásának részeként a Microsoft saját belátása szerint biztosíthatja a kijelentkezés során azonosított bizonyos jogosultságokat. Ezek a jogosultságok magukban foglalják bizonyos kedvezményekkel kapcsolatos jóváírások vagy próba-hozzáférés beváltása bizonyos Microsoft- vagy harmadik féltől származó szolgáltatásokhoz vagy eszközökhöz való, korlátozott időtartamra vonatkozó jogosultságot. [További információ](hololens2-options-dev-edition.md)
+      A HoloLens 2 Development Edition csak olyan belső vállalati alkalmazások fejlesztésére és tesztelésére használható, amelyek éles környezetben a HoloLens 2(kereskedelmi kiadás) kiadással használhatók. A Development Edition megvásárlásának részeként a Microsoft saját belátása szerint biztosíthatja a kijelentkezés során azonosított bizonyos jogosultságokat. Ezek a jogosultságok magukban foglalják bizonyos kedvezményekkel kapcsolatos jóváírások vagy próba-hozzáférés beváltása bizonyos Microsoft- vagy harmadik féltől származó szolgáltatásokhoz vagy eszközökhöz való korlátozott időtartamra vonatkozó jogosultságot. [További információ](hololens2-options-dev-edition.md)
   - question: >
-      Használható a 2 HoloLens bármelyik kiadása a fejlesztéshez?
+      Használható a 2. HoloLens bármely kiadása a fejlesztéshez?
     answer: >
-      Igen. A 2. HoloLens bármelyik kiadása használható alkalmazások fejlesztéséhez.
+      Igen. A 2. HoloLens bármely kiadása használható alkalmazások fejlesztéséhez.
   - question: >
-      Hogyan és hogyan kapom meg az 500 dolláros Azure-kreditet, a 3 hónapos Unity Pro-próbaverziót és a Pixyz beépülő modul 3 hónapos próbaverzióját?
+      Hogyan és hogyan kapom meg az 500 dolláros Azure-kreditet, a 3 hónapos Unity-Pro próbaverziót és a Pixyz beépülő modul 3 hónapos próbaverzióját?
     answer: >
-      A kedvezményben foglalt kreditek vagy próbaverziós hozzáférés a 2. HoloLens kiadásában lesz elérhető.
+      A kedvezményben foglalt kreditek vagy próbaverziós hozzáférés a 2. HoloLens tartalmazza.
   - question: >
-      Frissíthető a HoloLens 2-es (csak eszközre) eszközöm a HoloLens 2 Development Edition kiadásra a próbaverziós kreditek lekértért?
+      Frissíthető a HoloLens 2-es verzió (csak eszköz) eszközöm a HoloLens 2 Development Edition kiadásra a próba-kreditek lekért?
     answer: >
-      Nem, nem kínálunk eszközátviteli csomagokat. Egyik kiadásból sem lehet másik kiadásba átvitelt.
+      Nem, eszközátviteli csomagokat nem kínálunk. Egyik kiadásból sem lehet átvitelt másik kiadásba.
   - question: >
       Mi az a Unity Pro?
     answer: >
-      A Unity Pro egy valós idejű 3D-platform kis- és középvállalatok számára. Technikai és nem technikai ismereteket is ötvöző csapatok számára készült. [További információ](https://store.unity.com/products/unity-pro)
+      A Unity Pro egy valós idejű 3D-platform kis- és középvállalatok számára. Technikai és nem technikai ismereteket vegyesen csapatok számára tervezték. [További információ](https://store.unity.com/products/unity-pro)
   - question: >
       Mi az a Pixyz beépülő modul?
     answer: >
-      A Pixyz beépülő modul szinte bármilyen formátumot beolvas és konvertál, optimalizálja és a Unitybe helyezi, majd szakaszokba helyezi, hogy használatra kész eszközöket biztosítson a valós idejű alkalmazásokhoz. [További információ](https://unity.com/products/pixyz)
+      A Pixyz beépülő modul szinte bármilyen formátumot beolvas és konvertál, optimalizálja és beteszi a Unitybe, majd szakaszokba helyezi, hogy használatra kész eszközöket biztosítson a valós idejű alkalmazásokhoz. [További információ](https://unity.com/products/pixyz)
   - question: >
       Elérhető a HoloLens 2 Development Edition?
     answer: "Igen, [a HoloLens 2 Development Edition](https://ms.liftforward.com/hololens?product=hololens-development-edition) már csak a Egyesült Államok. \n"
   - question: >
-      Who 2. HoloLens kiadásra vonatkozó jogosultságokkal kapcsolatos kérdéseim vannak?
+      Who 2. fejlesztési HoloLens kiadás jogosultságával kapcsolatos kérdéseim vannak?
     answer: >
-      A jogosultságokkal kapcsolatos kérdéseit a 866-425-4709-es, hétfőtől péntekig, 18:00-18:00-tól 18:00-ig,PST-s értékesítési szakemberrel kell kapcsolatba lépnie.
-  - question: "Vásárolhat a vállalatom több HoloLens 2 Development Edition-eszközt? \n"
+      A jogosultságokkal kapcsolatos kérdések esetén forduljon az értékesítési szakemberhez a 866-425-4709-es, hétfőtől péntekig, 06:00-tól 18:00-ig, PST-től.
+  - question: "A vállalatom vásárolhat több HoloLens 2 Development Edition-eszközt? \n"
     answer: "Ez az eszköz vegyes valóságú megoldásokat fejlesztő fejlesztők számára készült. Ügyféltranzakciónként egy vásárlást korlátozunk. Ha a vállalat több Development Edition-eszközt szeretne vásárolni, külön tranzakciókra lesz szükség HoloLens 2 Development Edition-eszköz megvásárlásához a vállalat nevében. \n"
-  - question: "Meg tudom mutatni a HoloLens 2. kiadású eszközömet az ügyfeleimnek? \n"
+  - question: "Meg tudom mutatni HoloLens 2. fejlesztői kiadású eszközömet az ügyfeleimnek? \n"
     answer: >
-      Igen, ez az eszköz prototípus-vizsgálatot és vegyes valóságot tesztelő megoldásokhoz használható.
-  - question: "Hol vásárolhatom meg a HoloLens 2 Development Edition kiadást? \n"
+      Igen, ezt az eszközt prototípus-oláshoz és vegyes valóságon keresztüli megoldások teszteléséhez tervezték.
+  - question: "Hol vásárolhatom meg a HoloLens 2 Development Editiont? \n"
     answer: "HoloLens 2 Development Edition kizárólag a Microsoft Store.  \n"
-  - question: "Vissza tudom HoloLens 2. fejlesztési kiadást?  \n"
+  - question: "Visszatérhetek a HoloLens 2 Development Edition kiadáshoz?  \n"
     answer: >
-      Minden értékesítés végleges, és a 2. HoloLens kiadásában nem érhető el visszatérítés.
+      Minden értékesítés végleges, és a 2. HoloLens kiadásában nem érhetők el visszatérítések.
   - question: >
-      A Developer Edition különböző hardverkövetelményekkel rendelkezik, amelyek eltérnek a 2 HoloLens követelményeitől?
+      A Developer Edition különböző hardverkövetelményekkel rendelkezik, amelyek eltérnek a HoloLens 2-től?
     answer: "Nem, ez az eszköz a hardverkövetelmények szempontjából azonos. A Development Edition üzembe helyezése az alkalmazások kereskedelmi környezetben való fejlesztésének és/vagy tesztelésének segítésében engedélyezett. \n"
   - question: >
       Hogyan használhatom a Mixed Reality Toolkit – Unityt a HoloLens 2 Development Edition fejlesztéséhez?
@@ -83,13 +83,13 @@ sections:
     answer: >
       MRTK-Unreal a UX Tools első kiadott összetevője, és jelenleg csak a 2. HoloLens támogatott. Az összetevő beépülő modulja kódokat, terveket és példaeszközöket tartalmaz a bemenetszimuláció gyakori felhasználói felületi funkcióihoz, a kéz-interakciós aknákhoz, a gomb megnyomható összetevőihez, a manipulátorösszetevőkhöz és a viselkedési összetevők nyomon követéséhez. [További információ](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/WelcomeToUXTools.html)
   - question: >
-      A HoloLens 2 Development Edition operációsrendszer-kiadásai azonosak a 2 HoloLens kiadással?
+      A HoloLens 2 Development Edition operációsrendszer-kiadásai ugyanazok, mint HoloLens 2-es verzió?
     answer: >
       Igen.
   - question: >
-      Futtatok kiadott (saját fejlesztéshez vagy tároláshoz) alkalmazásokat a HoloLens 2 Development Edition-eszközön?
+      Futtatok kiadott (sideload or store) alkalmazásokat a HoloLens 2 Development Edition-eszközön?
     answer: >
-      Ha a HoloLens 2 Development Edition használati feltételeinek feltételei teljesülnek, igen, bármilyen kiadott alkalmazást futtathat a Developer Editionen. Ehhez a termékváltozathoz nem korlátozható a saját maga által telepített vagy tárolt alkalmazások használata.
+      Ha a HoloLens 2 Development Edition használati feltételei nem engedik, igen, bármilyen kiadott alkalmazást futtathat a Developer Edition kiadáson. Ehhez a termékváltozathoz nem korlátozható a saját használatú vagy tárolt alkalmazások használata.
   - question: >
       Hol kaphatok további információt a HoloLens 2 Development Edition kiadásról?
     answer: >
@@ -97,7 +97,7 @@ sections:
   - question: >
       Hol kaphatok további információt a Mixed Reality fejlesztésről?
     answer: >
-      Látogasson el a Bevezetés Mixed Reality fejlesztési dokumentációba. [További információ](/windows/mixed-reality/develop/development?tabs=unity)
+      Látogasson el a bevezetés Mixed Reality dokumentációba. [További információ](/windows/mixed-reality/develop/development?tabs=unity)
   - question: >
       Hol kaphatok további információt a Mixed Reality tervezésről?
     answer: >
@@ -105,18 +105,18 @@ sections:
   - question: >
       Hol kaphatok támogatást a HoloLens Developer Editionhez?
     answer: >
-      Itt [nyújtunk támogatást.](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=96bfb202-bc79-741b-bf7a-774d8b767782)
+      Itt is segítséget [nyújtunk.](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=96bfb202-bc79-741b-bf7a-774d8b767782)
 - name: Unity
   questions:
   - question: >
       Mit tartalmaz a Unity-próbaverzió?
     answer: >
-      A Unity háromnapos Pro próbaverziója hozzáférést biztosít a Unity&#39;egy teljes megoldáshoz, amellyel szakemberek hozhatnak létre, működtetnek és bevételt hozhatnak létre. A kapcsolódó Unity Pro próbaverziónak nincs beváltási határideje.
+      A Unity háromnapos Pro próbaverziója hozzáférést biztosít a Unity&#39;teljes megoldásához, amellyel szakemberek hozhatnak létre, működtetnek és bevételt hozhatnak létre. A kapcsolódó Unity Pro próbaverziónak nincs határidő a beváltási határidővel.
 
 
-      Ez az ajánlat új felhasználóknak szól, és nem vonatkozik a létrehozott Unity-Pro előfizetésre. A Unity Pro próbaverziójára további feltételek is vonatkozhatnak, amelyek az érvényesítéskor lesznek elérhetők. Tekintse át [a vonatkozó &amp; használati feltételeket és](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) [adatvédelmi szabályzatot.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
+      Ez az ajánlat új felhasználóknak szól, és nem vonatkozik a létrehozott Unity-Pro előfizetésre. A Unity Pro próbaverziójára további feltételek is vonatkozhatnak, amelyek az érvényesítéskor lesznek elérhetők. Tekintse át a [vonatkozó &amp; használati feltételeket és](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) [adatvédelmi szabályzatot.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
   - question: >
-      Hogyan tudom beváltani a Unity-Pro próbaverzióját?
+      Hogyan tudom beváltani a Unity Pro próbaverzióját?
     answer: >
       Beváltható utasítások
 
@@ -127,10 +127,10 @@ sections:
 
       3. Válassza &#39;Termékkód beváltása lehetőséget&#39;
 
-      4. Adja meg a termékkódot, és &#39;Termékkód beváltása lehetőséget&#39;
+      4. Adja meg a termékkódot, majd válassza &#39;Termékkód beváltása lehetőséget&#39;
 
 
-      További HoloLens az HoloLens 2 Development Edition [dokumentációjában](hololens2-options.md?tabs=device)
+      További HoloLens a 2. fejlesztési kiadás [dokumentációjában talál](hololens2-options.md?tabs=device)
   - question: >
       A Pro-licenctől különböző Unity-verzióval is tudok alkalmazásokat építeni?
     answer: >
@@ -144,10 +144,10 @@ sections:
   - question: >
       Mit tartalmaz a Pixyz beépülő modul próbaverziója?
     answer: >
-      Egy háromnapos pixyz beépülő modul próbaverziója, amely hozzáférést biztosít a Pixyzhez, hogy használatra kész eszközöket hozzon létre, amelyek tökéletes kisérletes hálóval, korlátozott sokszögszámmal és automatikus POLYGON-számmal vannak ellátva. A Pixyz beépülő modul kapcsolódó próbaverziója nem rendelkezik beváltási határidővel.
+      A Pixyz beépülő modul háromnapos próbaidőszaka, amely lehetővé teszi a Pixyzhez való hozzáférést, hogy használatra kész eszközöket hozzon létre, amelyek tökéletes kishálóval, korlátozott sokszögszámmal és automatikus MESH-számmal vannak ellátva. A pixyz beépülő modul kapcsolódó próbaverziója nem rendelkezik beváltható határidővel.
 
 
-      Ez az ajánlat új felhasználóknak ajánlott, és nem a már létrehozott Pixyz-előfizetésekbe halmoz. A Pixyz beépülő modulra további feltételek is vonatkozhatnak, amelyek az érvényesítéskor lesznek meghozva. Tekintse át [a vonatkozó &amp; használati feltételeket és](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) [adatvédelmi szabályzatot.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
+      Ez az ajánlat új felhasználók számára ajánlott, és nem a már létrehozott Pixyz-előfizetéseket kínálja. A Pixyz beépülő modulra további feltételek is vonatkozhatnak, amelyek érvényesítéskor lesznek beváltáskor. Tekintse át a [vonatkozó &amp; használati feltételeket és](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) [adatvédelmi szabályzatot.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
   - question: >
       Hogyan tudom beváltani a Pixyz beépülő modul próbaverzióját?
     answer: >
@@ -158,36 +158,36 @@ sections:
 
       2. Jelentkezzen be a Pixyz-fiókjával, vagy hozzon létre egy fiókot
 
-      3. Kattintson &#39;termékkód beváltása elemre&#39;
+      3. Kattintson &#39;Termékkód beváltása lehetőségre&#39;
 
-      4. Adja meg a termékkódot, és &#39;Termékkód beváltása elemre&#39;
+      4. Adja meg a termékkódot, és &#39;Termékkód beváltása&#39;
 
 
-      További HoloLens az HoloLens 2 Development Edition [dokumentációjában](hololens2-options.md?tabs=device)
+      További HoloLens a 2. fejlesztési kiadás [dokumentációjában talál](hololens2-options.md?tabs=device)
   - question: >
       Hogyan Pixyz ügyfélszolgálatához?
     answer: >
       Ha segítségre van szüksége a Unity-azonosítóval, -fiókkal, -szervezettel vagy -előfizetésekkel kapcsolatos kérdésekhez, látogasson el a support.unity3d.com
 
 
-      Pixyz-specifikus támogatásért (a próbaverzió beváltása [](http://pixyz-software.com/support) után) látogasson el a Pixyz-software.com/support
+      Pixyz-specifikus támogatásért (a próba beváltása után) látogasson el a [Pixyz-software.com/support](http://pixyz-software.com/support)
 - name: Azure
   questions:
   - question: >
-      Hogyan tudom beváltani az 500 dolláros Azure-kreditet?
+      Hogyan tudom beváltani az 500 dolláros Azure-kreditemet?
     answer: >
-      Az 500 dolláros Azure-kreditek beváltához váltsa Azure Pass promóciós kódját, és aktiválja az előfizetését. [További információ](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
+      Az 500 dolláros Azure-kreditek beváltához váltsa be Azure Pass promóciós kódját, és aktiválja az előfizetését. [További információ](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
 
 
-      Tekintse át a Azure Pass [szerződését és](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) [az ajánlat részleteit.](https://azure.microsoft.com/en-us/offers/azure-pass/)
+      Tekintse át a Azure Pass [előfizetési szerződést és](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) [az ajánlat részleteit.](https://azure.microsoft.com/en-us/offers/azure-pass/)
   - question: >
       Mikor jár le az 500 dolláros Azure-kreditem?
     answer: >
-      Az 500 dolláros Azure-kredit az Azure-kulcskód aktiválása után 90 nappal lejár.
+      Az 500 dolláros Azure-kredit 90 nappal az Azure-kulcskód aktiválása után lejár.
   - question: >
       Mire használhatom az Azure-krediteket?
     answer: >
-      Az Azure-kreditek használatával megkezdheti az építést a Microsoft&#39;egyre bővülő felhőszolgáltatás-készletének használatával. A HoloLens 2 Development Edition tartalmazza az Azure-krediteket, amelyek lehetővé teszik az ügyfelek számára, hogy gyorsan nekivessnek az Azure-beli vegyes valóságú alkalmazások fejlesztésének és tesztelésének. Az Azure-beli építés részleteiért látogasson el az [Azure-erőforrásokra.](https://azure.microsoft.com/en-us/resources/)
+      Az Azure-kreditekkel megkezdheti a microsoftos&#39;egyre bővülő felhőszolgáltatásokkal. A HoloLens 2 Development Edition tartalmazza az Azure-krediteket, amelyek lehetővé teszik az ügyfelek számára a vegyes valóságú alkalmazások gyors fejlesztését és tesztelését az Azure-ban. Az Azure-beli építés részletes adataiért látogasson el az [Azure-erőforrásokra](https://azure.microsoft.com/en-us/resources/)
   - question: >
-      Hol kaphatok további információt az Azure vegyes valóságú szolgáltatásairól?
+      Hol kaphatok további információt a vegyes valóságú Azure-szolgáltatásokról?
     answer: A Microsoft vegyes valóságú szolgáltatásokat kínál, hogy a fejlesztők vegyes valóságú megoldásokat hoznak létre és tesztelnek. [További információ](/windows/mixed-reality/develop/mixed-reality-cloud-services)

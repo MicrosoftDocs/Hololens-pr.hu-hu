@@ -14,88 +14,88 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 92040019b093c5ef63d74f095dcb3809112ae7a0
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190429"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428006"
 ---
 # <a name="page-settings-visibility"></a>Lap Gépház láthatósága
 
-A felhasználói eszközök egyik felügyelhető HoloLens a [Gépház/PageVisibilityList szabályzat](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) használatával korlátozza a Gépház alkalmazásban látható oldalakat. A PageVisibilityList egy olyan szabályzat, amely lehetővé teszi a rendszergazdák számára, hogy megakadályozzák a System Gépház alkalmazás adott lapjainak láthatóságát vagy akadálymentességét, vagy hogy ezt a megadott oldalak kivételével minden oldalra el tudjanak látni.
+A HoloLens egyik felügyelhető szolgáltatása a [Gépház/PageVisibilityList szabályzat](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) használatával korlátozza a Gépház belüli oldalakat. A PageVisibilityList egy olyan szabályzat, amely lehetővé teszi a rendszergazdák számára, hogy megakadályozzák a System Gépház alkalmazás adott lapjainak láthatóságát vagy akadálymentességét, vagy hogy ezt a megadott oldalak kivételével minden oldalon megtedzék.
 
 > [!NOTE]
-> Ez a funkció csak a [Holographic Windows 20H2-es](hololens-release-notes.md#windows-holographic-version-20h2) vagy újabb verziójában használható 2 HoloLens eszközök esetén. Győződjön meg arról, hogy a használni kívánt eszközök frissítve vannak.
+> Ez a funkció csak a [Holographic Windows 20H2-es](hololens-release-notes.md#windows-holographic-version-20h2) vagy újabb verziójában használható HoloLens 2-es eszközökön. Győződjön meg arról, hogy a használni kívánt eszközök frissítve vannak.
 
 
 ## <a name="examples"></a>Példák
-A lapokat a közzétett URI-k rövid verziója azonosítja, amely az "ms-settings:" előtaggal csökkentett URI.
+A lapokat a közzétett URI-k rövid verziója azonosítja, amely az URI és az "ms-settings:" előtag.
 
-Az alábbi példa egy olyan szabályzatot mutat be, amely csak az About és a Bluetooth-oldalakhoz biztosít hozzáférést, amelyek URI-ja "network-wifi" és "bluetooth" (bluetooth) lehet:
+Az alábbi példa egy olyan szabályzatot mutat be, amely csak a "network-wifi" és a "bluetooth" URI-vel rendelkezik, amely csak az about és a Bluetooth-oldalakhoz engedélyezi a hozzáférést:
 - `showonly:network-wifi;network-proxy;bluetooth`
 
-Az alábbi példa egy olyan szabályzatot mutat be, amely elrejti az operációs rendszer alaphelyzetbe állítása oldalt:
+Az alábbi példa egy olyan szabályzatot mutat be, amely elrejti az Operációs rendszer alaphelyzetbe állítása oldalt:
 - `hide:reset`
 
 
-## <a name="deploying-this-policy-via-intune"></a>A szabályzat telepítése az Intune-on keresztül
+## <a name="deploying-this-policy-via-intune"></a>A szabályzat telepítése az Intune-nal
 
-Az Intune a következő konfigurációs értékeket fogja tartalmazni:
+Az Intune a következő konfigurációs értékeket fogja szolgáltatni:
 
 - **Név:** A profil rendszergazda által előnyben részesített megjelenítendő neve.
 - **OMA-URI:** A beállítási oldal teljes URI-ját, beleértve a [hatókörét is.](/windows/client-management/mdm/policy-configuration-service-provider) Az ezen az oldalon található példák a hatókört `./Device` használják.
-- **Érték:** Egy sztringérték, amely azt jelzi, hogy csak a megadott oldalakat kell-e elrejtenie vagy *csak* meg kell mutatnia. Lehetséges értékek: `hide:<pagename>` és `showonly:<pagename>` . 
+- **Érték:** Sztringérték, amely azt jelzi, hogy csak a megadott oldalakat rejtse el vagy *mutassa.* Lehetséges értékek: `hide:<pagename>` és `showonly:<pagename>` . 
  
 Több oldal is meg lehet adni pontosvesszővel elválasztva, és a gyakori oldalak listája alább található.
 
 1. Hozzon létre **egy egyéni szabályzatot.**
-1. Az **OMA-URI beállításakor** adja meg a teljes hatókörű URI-t. Például: **`./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList`**
-1. Az adat kiválasztásakor válassza a Sztring **lehetőséget**
+1. Az **OMA-URI beállításakor adja** meg a teljes hatókörű URI-t. Például: **`./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList`**
+1. Az adat kiválasztásakor válassza a Sztring **lehetőséget.**
 1. Az Érték **megadásakor** használja a fenti útmutatást. Például: **`showonly:network-wifi;network-proxy;bluetooth`** vagy **`hide:reset`** 
 > [!IMPORTANT]
 > Ügyeljen arra, hogy az egyéni eszközkonfigurációt olyan csoporthoz rendelje, amelybe az eszköznek szánták. Ha ezt a lépést nem végzi el, a rendszer lekedi a szabályzatot, de nem alkalmazza.
 
-Az HoloLens és eszközkonfigurációkról további információt az [MDM-konfigurációk](hololens-mdm-configure.md) konfigurálása oldalon található.
+További HoloLens intune-csoportokkal és eszközkonfigurációval kapcsolatos további információkért lásd: [MDM-konfiguráció](hololens-mdm-configure.md) konfigurálása.
 
 
 ## <a name="deploying-this-policy-via-a-provisioning-package"></a>A szabályzat üzembe helyezése kiépítési csomagon keresztül
 
 A Configuration Designerben a következő konfigurációs értékeket Windows meg:
 
-**Érték:** Egy sztringérték, amely azt jelzi, hogy csak a megadott oldalakat kell-e elrejtenie vagy *csak* meg kell mutatnia. Lehetséges értékek: `hide:<pagename>` és `showonly:<pagename>` . Több oldal is meg lehet adni pontosvesszővel elválasztva, és a gyakori oldalak listája alább található.
+**Érték:** Sztringérték, amely azt jelzi, hogy csak a megadott oldalakat rejtse el vagy *mutassa.* Lehetséges értékek: `hide:<pagename>` és `showonly:<pagename>` . Több oldal is meg lehet adni pontosvesszővel elválasztva, és a gyakori oldalak listája alább található.
 
 
-1. Amikor a csomagot a Configuration Designerben Windows, lépjen a **Szabályzatok lapra, > Gépház > a PageVisibilityList listára.**
+1. Amikor a csomagot a Configuration Designerben Windows, lépjen a **Szabályzatok lapra, > Gépház > PageVisibilityList listára.**
 1. Adja meg a sztringet: **`showonly:network-wifi;network-proxy;bluetooth`**
 1. Exportálja a kiépítési csomagot.
 1. Alkalmazza a csomagot az eszközre.
-A kiépítési csomagok létrehozásáról és alkalmazásról további részleteket a HoloLens [oldalon talál.](hololens-provisioning.md)
+A kiépítési csomagok létrehozásáról és alkalmazásról további részleteket a [kiépítési](hololens-provisioning.md)HoloLens talál.
 
 
-A választott módszertől függetlenül az eszköznek most már fogadnia kell a módosításokat, és a felhasználók számára az alábbi Gépház alkalmazás.
+A kiválasztott módszertől függetlenül az eszköznek most már meg kell kapnia a módosításokat, és a felhasználók számára az alábbi Gépház alkalmazás.
 
-![Képernyőkép a módosított aktív órákról az Gépház alkalmazásban.](images/hololens-page-visibility-list.jpg)
+![Képernyőkép az aktív óráknak a Gépház való módosításról.](images/hololens-page-visibility-list.jpg)
 
-Ha úgy Gépház, hogy az alkalmazásoldalakon saját oldalakat mutasson vagy rejtsen el, nézze meg a Gépház elérhető URI-HoloLens.
+Ha úgy Gépház, hogy az alkalmazásoldalak saját oldalakat mutassanak vagy rejtsenek el, nézze meg a Gépház elérhető URI-HoloLens.
 
 ## <a name="settings-uris"></a>Gépház Uri
 
-HoloLens eszközök és Windows 10 eszközök különböző oldalakat kínálnak a Gépház alkalmazásban. Ezen a lapon csak a meglévő beállításokat fogja HoloLens.
+HoloLens eszközök és Windows 10 különböző oldalakat tartalmaznak a Gépház alkalmazásban. Ezen a lapon csak a meglévő beállításokat fogja HoloLens.
 
 ### <a name="accounts"></a>Fiókok
 | Beállítások lap           | URI                                            |
 |-------------------------|------------------------------------------------|
 | Hozzáférés munkahelyi vagy iskolai rendszerhez | `workplace`                         |
 | Íriszregisztrálás       | `signinoptions-launchirisenrollment` |
-| Bejelentkezési lehetőségek         | ` signinoptions `                   |
+| Bejelentkezési beállítások         | ` signinoptions `                   |
 
 ### <a name="apps"></a>Alkalmazások
 | Beállítások lap | URI                          |
 |---------------|------------------------------|
-| Alkalmazások & funkciók <sup>2</sup>     | `appsfeatures` <br> |
+| Alkalmazások & <sup>funkciók 2</sup>     | `appsfeatures` <br> |
 | Alkalmazások & funkciókkal > <sup>2.</sup> speciális beállítások     | `appsfeatures-app` <br> |
-| Az alkalmazások & offline > 2 Térképek <sup>szolgáltatásokat</sup>     | `maps-maps` <br> |
-| Az alkalmazások & offline > funkciókkal Térképek > Maps <sup>2 letöltése</sup>     | `maps-downloadmaps` <br> |
+| Offline & 2> alkalmazások Térképek <sup>funkciók</sup>     | `maps-maps` <br> |
+| Az & offline > alkalmazások Térképek > Maps <sup>2 letöltése</sup>     | `maps-downloadmaps` <br> |
 
 ### <a name="devices"></a>Eszközök
 | Beállítások lap | URI                          |
@@ -114,11 +114,11 @@ HoloLens eszközök és Windows 10 eszközök különböző oldalakat kínálnak
 | Híváselőzmények             | `privacy-callhistory`                 |
 | Kamera                   | `privacy-webcam`                      |
 | Kapcsolattartók                 | `privacy-contacts`                    |
-| Diagnosztikai & visszajelzés | `privacy-feedback`                    |
+| Diagnosztikai és & visszajelzés | `privacy-feedback`                    |
 | Dokumentumok                | `privacy-documents`                   |
 | E-mail                    | `privacy-email`                       |
 | Fájlrendszer              | `privacy-broadfilesystemaccess`       |
-| <sup>2. általános</sup>             | `privacy-general`       |
+| <sup>Általános 2</sup>             | `privacy-general`       |
 | Ink & személyre szabás <sup>2 gépelése</sup>             | `privacy-speechtyping`       |
 | Hely                 | `privacy-location`                    |
 | Üzenetkezelés                | `privacy-messaging`                   |
@@ -128,7 +128,7 @@ HoloLens eszközök és Windows 10 eszközök különböző oldalakat kínálnak
 | Egyéb eszközök            | `privacy-customdevices`               |
 | Képek                 | `privacy-pictures`                    |
 | Rádiók                   | `privacy-radios`                      |
-| Képernyőkép a <sup>szegélyek 2-ről</sup>             | `privacy-graphicsCaptureWithoutBorder`       |
+| Képernyőkép a <sup>2. szegélyről</sup>             | `privacy-graphicsCaptureWithoutBorder`       |
 | Képernyőképek és alkalmazások <sup>2</sup>             | `privacy-graphicsCaptureProgrammatic`       |
 | Speech                   | `privacy-speech`                      |
 | Feladatok                    | `privacy-tasks`                       |
@@ -165,8 +165,8 @@ HoloLens eszközök és Windows 10 eszközök különböző oldalakat kínálnak
 ### <a name="time--language"></a>Time & Language
 | Beállítások lap | URI                                           |
 |---------------|-----------------------------------------------|
-| Dátum & <sup>2</sup> | `dateandtime`                  |
-| <sup>2. billentyűzet</sup> | `keyboard`                  |
+| 2. & <sup>dátum és idő</sup> | `dateandtime`                  |
+| <sup>2.</sup> billentyűzet | `keyboard`                  |
 | <sup>2. nyelv</sup> | `language`                  |
 | <sup>2. nyelv</sup> | `regionlanguage-languageoptions`                  |
 | Nyelv      | `regionlanguage`<br>`regionlanguage-adddisplaylanguage`<br>`regionlanguage-setdisplaylanguage` |
@@ -182,7 +182,7 @@ HoloLens eszközök és Windows 10 eszközök különböző oldalakat kínálnak
 | Windows Frissítés – Frissítések keresése | `windowsupdate-action`          |
 
 
-- <sup>1</sup> – Az Windows Holographic 21H1-es verziójánál korábbi verziók esetén a következő  két URI valójában nem a Speciális beállítások vagy Beállítások **oldalra** lép; ezek csak a Frissítés Windows blokkolják vagy mutatják.
+- <sup>1</sup> – Az Windows Holographic 21H1-es verziójánál korábbi verziók esetén a következő  két URI valójában nem a Speciális beállítások vagy a Beállítások **oldalra** lép; Csak blokkolják vagy meg fogják jelenni a frissítés Windows főoldalt.
   -  windowsupdate-options
   -  windowsupdate-restartoptions
 

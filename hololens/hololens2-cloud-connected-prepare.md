@@ -1,7 +1,7 @@
 ---
-title: Üzembe helyezési útmutató – HoloLens 2. környezet nagy léptékű üzembe helyezése a Remote Assist segítségével – Előkészítés
+title: Telepítési útmutató – Felhőhöz csatlakoztatott HoloLens 2. példány nagy léptékű üzembe helyezése a Remote Assist segítségével – Előkészítés
 description: Megtudhatja, hogyan készítheti elő a HoloLens eszközök felhőhöz csatlakoztatott hálózaton keresztüli regisztrálására az Azure Active Directory és az identitáskezelés használatával.
-keywords: HoloLens, felügyelet, felhőhöz csatlakoztatott, Remote Assist, AAD, Azure AD, MDM, Mobile Eszközkezelés
+keywords: HoloLens, felügyelet, felhőhöz csatlakoztatott, Remote Assist, AAD, Azure AD, MDM, mobile Eszközkezelés
 author: evmill
 ms.author: v-evmill
 ms.reviewer: aboeger
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f6c2e514024a171661b182a310145e26280e114a1cff65ef5b03b16feae8371a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 21fffdc24f8682bc44779e1cebe8cd6eacb59619
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660176"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427417"
 ---
 # <a name="prepare---cloud-connected-guide"></a>Előkészítés – Felhőhöz csatlakoztatott útmutató
 
@@ -27,14 +27,14 @@ A cikk végére be fogja állítani az Azure AD-t és az MDM-et, és többet fog
 
 ## <a name="infrastructure-essentials"></a>Infrastruktúra – alapvető szolgáltatások
 
-Mind a személyes, mind a vállalati üzembe helyezési forgatókönyvekben az MDM-rendszer az alapvető infrastruktúra, amely az eszközök üzembe helyezéséhez és Windows 10 Holographic kezeléséhez szükséges. A prémium szintű Azure AD-előfizetés használata ajánlott identitásszolgáltatóként, és bizonyos képességek támogatásához szükséges.
+Mind a személyes, mind a vállalati üzembe helyezési forgatókönyvekben az MDM-rendszer az alapvető infrastruktúra, amely az eszközök üzembe helyezéséhez és Windows 10 Holographic szükséges. A prémium szintű Azure AD-előfizetés használata ajánlott identitásszolgáltatóként, és bizonyos képességek támogatásához szükséges.
 
 ### <a name="azure-active-directory"></a>Azure Active Directory
 
 Az Azure AD egy felhőalapú címtárszolgáltatás, amely identitás- és hozzáférés-kezelési funkciókat biztosít. Az Microsoft Office 365 vagy az Intune-t használó szervezetek már használják az Azure AD-t, amely három kiadással rendelkezik: Ingyenes, Prémium P1 és Prémium P2 (lásd: Azure Active Directory [kiadás).)](https://azure.microsoft.com/documentation/articles/active-directory-editions) Minden kiadás támogatja az Azure AD-eszközregisztrációt, de Prémium P1 szükséges az automatikus MDM-regisztráció engedélyezéséhez, amelyet később használni fog ebben az útmutatóban.
 
 > [!IMPORTANT]
-> Fontos, hogy legyen egy Azure Active Directory, HoloLens az eszközök nem támogatják a helyszíni AD-csatlakozást. Ha még&#39;rendelkezik beállított Azure Active Directory, akkor az Új bérlő létrehozása [a](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)Azure Active Directory.
+> Fontos, hogy legyen egy Azure Active Directory, HoloLens az eszközök nem támogatják a helyszíni AD-csatlakozást. Ha még nincs&#39;, Azure Active Directory hozzon létre egy új bérlőt [a Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
 
 ## <a name="identity-management"></a>Identitáskezelés
 
@@ -42,29 +42,29 @@ Az alkalmazottak csak egy fiókot használhatnak egy eszköz inicializálására
 
 Ebben az útmutatóban azt választottuk, hogy a használt [identitáshoz](/hololens/hololens-identity) Azure AD-fiókokat vagy Azure Active Directory használjuk. Az Azure AD-fiókoknak számos előnye van, például:
 
-- Az alkalmazottak Azure AD-fiókjukkal regisztrálják az eszközt az Azure AD-ban, és automatikusan regisztrálják azt a szervezetnél&#39;MDM-megoldásban (Azure AD+MDM – prémium szintű Azure AD).
+- Az alkalmazottak Azure AD-fiókjukkal regisztrálják az eszközt az Azure AD-ban, és automatikusan regisztrálják azt a szervezetnél&#39;MDM-megoldásában (Azure AD+MDM – prémium szintű Azure AD).
 - Az Azure AD-fiókok támogatják [az egyszeri bejelentkezést.](/azure/active-directory/manage-apps/what-is-single-sign-on) Amikor egy felhasználó bejelentkezik a Remote Assist szolgáltatásba, a rendszer felismeri a bejelentkezett Azure AD-felhasználó identitását, és a felhasználó bejelentkezik az alkalmazásba a zökkenőmentes élmény érdekében.
-- Az Azure AD-fiókok további hitelesítési [lehetőségekkel](/hololens/hololens-identity) is Windows Hello [for Business használatával.](/windows/security/identity-protection/hello-for-business/hello-identity-verification) Az Írisz bejelentkezési felhasználója nem csak egy másik eszközről jelentkezhet be, de FIDO biztonsági kulcsokat is használhat.
+- Az Azure AD-fiókok további hitelesítési [lehetőségekkel is](/hololens/hololens-identity) Windows Hello [for Business használatával.](/windows/security/identity-protection/hello-for-business/hello-identity-verification) Az Írisz bejelentkezési felhasználója nem csak egy másik eszközről jelentkezhet be, de FIDO biztonsági kulcsokat is használhat.
 
 ### <a name="mobile-device-management"></a>Mobileszköz-kezelés
 
-A Microsoft [Intune](/mem/intune/fundamentals/what-is-intune)a Enterprise Mobility + Security része, egy felhőalapú MDM-rendszer, amely a bérlőhöz csatlakoztatott eszközöket kezeli. A Office 365 az Intune az Azure AD-t használja az identitáskezeléshez, így az alkalmazottak ugyanazokkal a hitelesítő adatokkal regisztrálják az eszközöket az Intune-ban, amelyekkel bejelentkeznek az Office 365. Az Intune a teljes MDM-megoldás érdekében támogatja az egyéb operációs rendszereket (például iOS és Android) is. Ebben az útmutatóban azt&#39;, hogy az Intune használatával nagy méretekben, a 2. HoloLens üzembe helyezését.
+A Microsoft [Intune](/mem/intune/fundamentals/what-is-intune)a Enterprise Mobility + Security része, egy felhőalapú MDM-rendszer, amely a bérlőhöz csatlakoztatott eszközöket kezeli. A Office 365 az Intune az Azure AD-t használja az identitáskezeléshez, így az alkalmazottak ugyanazokkal a hitelesítő adatokkal regisztrálják az eszközöket az Intune-ban, amelyekkel bejelentkeznek az Office 365. Az Intune a teljes MDM-megoldás érdekében támogatja az egyéb operációs rendszereket (például iOS és Android) is. Ebben az útmutatóban az Intune-&#39;a felhőbeli üzembe helyezés nagy léptékű, 2. HoloLens engedélyezésére.
 
 > [!IMPORTANT]
 > A Mobile Eszközkezelés. Ha még nem&#39;be, kövesse ezt az útmutatót és az Intune első lépések [útmutatóját.](/mem/intune/fundamentals/free-trial-sign-up)
 
 > [!NOTE]
-> Több MDM-rendszer támogatja Windows 10 és a legtöbb támogatja a személyes és vállalati eszközök üzembe helyezését. A szolgáltatást támogató MDM Windows 10 Holographic: AirWatch, MobileIron stb. A legtöbb iparágvezető MDM-szállító már támogatja az Azure AD-integrációt. Az Azure AD-t támogató MDM-szállítókat a következő [Azure Marketplace.](https://azure.microsoft.com/marketplace/)
+> Több MDM-rendszer támogatja Windows 10 és a legtöbb támogatja a személyes és vállalati eszközök üzembe helyezését. A szolgáltatást támogató MDM Windows 10 Holographic jelenleg a következőket tartalmazzák: AirWatch, MobileIron stb. A legtöbb iparágvezető MDM-szállító már támogatja az Azure AD-integrációt. Az Azure AD-t támogató MDM-szállítókat a következő [Azure Marketplace.](https://azure.microsoft.com/marketplace/)
 
 ## <a name="network"></a>Network (Hálózat)
 
-Ebben a beállításban arra számítunk, HoloLens 2 eszköz csatlakozik az internethez bármely elérhető nyitott Wi-Fi hálózatról. Mivel a felhasználóknak a hálózati kapcsolatot hely alapján is módosítaniuk kell, meg kell tanulniuk, hogyan csatlakoztathat HoloLens [eszközöket Wi-Fi-hez.](/hololens/hololens-network)
+Ebben a beállításban arra számítunk, HoloLens 2 eszköz fog csatlakozni az internethez bármely elérhető nyitott Wi-Fi hálózatról. Mivel a felhasználónak a hálózati kapcsolatot hely alapján is módosítania kell, meg kell tanulnia, hogyan csatlakoztathat HoloLens [eszközöket Wi-Fi-hez.](/hololens/hololens-network)
 
 A Dynamics 365 Remote Assist többféle hálózati feltételt biztosít, beleértve a sávszélességet, a késést, a jittert és a csomagvesztést, amelyek hatással lehetnek a videóhívási élményre. Bár a hang- és videohívások kisebb sávszélességű környezetekben is lehetségesek, a funkciók teljesítménycsökkenését tapasztalhatja. A Dynamics 365 Remote Assist HoloLens a hálózati követelményeket kell szem előtt tartani:
 
-**Minimum:** 1,5 Mb/s fel/le sebességet igényel a társközi HD-minőségi videohívások 30 másodperces HD 1080p felbontású hívásához.
+**Minimum:** 1,5 Mb/s fel/le sebességet igényel a társközi HD-minőségi videóhívások 30 másodperces HD 1080p felbontással való hívásához.
 
-**Optimális:** A HD 1080p felbontású, társközi HD-minőségi videóhívások esetén 4–5 Mbps fel/le sebességűnek kell lennie.
+**Optimális:** A HD 1080p felbontású, társközi HD-minőségi videóhívások esetén 4–5 Mbps fel-/le sebességűnek kell lennie.
 
 További információ:
 
@@ -73,7 +73,7 @@ További információ:
 
 ### <a name="optional-connect-your-hololens-to-vpn"></a>Nem kötelező: Csatlakozás VPN HoloLens re való csatlakozás
 
-Az útmutatóhoz csatlakozó eszközök és külső felhőhálózaton keresztül fognak csatlakozni a hálózathoz. Előfordulhat, hogy a vállalati erőforrások eléréséhez vpn&#39;kell csatlakoztatnia az eszközöket. Az eszközöket többféleképpen is csatlakoztathatja VPN-hez, ahol a végfelhasználó az eszköz felhasználói felületén keresztül csatlakozhat, vagy az eszközök kezelhetők, és a PPKG-től vagy MDM-től kaphatják meg a VPN-profilt. A VPN beállítását&#39;ez a cikk nem fedi le, ezért ha többet szeretne megtudni&#39;különböző VPN-protokolljairól vagy a VPN kezelésének módjairól, olvassa el ezeket az útmutatókat a HoloLens és a VPN használatával [kapcsolatban.](/hololens/hololens-network#vpn)
+Az útmutatóhoz csatlakozó eszközök a hálózaton keresztül és külső felhőhálózaton keresztül fognak csatlakozni. Előfordulhat, hogy a vállalati erőforrások eléréséhez vpn&#39;kell csatlakoztatnia az eszközöket. Az eszközöket többféleképpen is csatlakoztathatja VPN-hez, ahol a végfelhasználó az eszköz felhasználói felületén keresztül csatlakozhat, vagy az eszközök kezelhetők, és a PPKG-től vagy MDM-től kaphatják meg a VPN-profilt. A VPN beállítását ez&#39;cikk nem fedi le, ezért ha többet szeretne megtudni&#39;különböző VPN-protokolljairól vagy a VPN kezelésének módjairól, olvassa el ezeket az útmutatókat a HoloLens és a VPN használatával [kapcsolatos információkért.](/hololens/hololens-network#vpn)
 
 ## <a name="next-step"></a>Következő lépés
 

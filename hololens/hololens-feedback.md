@@ -1,6 +1,6 @@
 ---
 title: Visszajelzés küldése
-description: A felhasználói és HoloLens Windows Mixed Reality hozhat létre a Visszajelzési központ.
+description: A felhasználói és fejlesztői HoloLens Windows Mixed Reality hozhat létre a Visszajelzési központ.
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
 author: mattzmsft
 ms.author: mazeller
@@ -18,31 +18,31 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 214b2b9cda33eb074b06a9157429d1f52bfe0716
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189426"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427265"
 ---
 # <a name="feedback-for-hololens"></a>Visszajelzés HoloLens
 
-A Visszajelzési központ meg velünk, hogy mely funkciókat szereti, mely funkciókat nem tudná nélküle használni, és hogy mi lehetne ennél jobb. A mérnöki csapat ugyanezt a mechanizmust használja a hibák belső nyomon követéséhez és kijavítása érdekében, ezért Visszajelzési központ a hibák jelentéséhez. Figyelünk!
+A Visszajelzési központ meg velünk, hogy mely funkciókat szereti, melyek nélküle is lehetne, és hogy mi lehetne ennél jobb. A mérnöki csapat ugyanezt a mechanizmust használja a hibák belső nyomon követéséhez és kijavítása érdekében, ezért Visszajelzési központ a hibák jelentéséhez. Figyelünk!
 
-Visszajelzési központ kiváló módja annak, hogy értesítse a mérnöki csapatot a hibákról, és győződjön meg arról, hogy a jövőbeli frissítések healthierek és konzisztensen mentesek a hibáktól. A Visszajelzési központ azonban nem ad választ. Ha azonnali segítségre van szüksége, írjon visszajelzést, jegyezze fel [a](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) visszajelzéshez megadott összegzést,  majd forduljon HoloLens HoloLens-támogatáshoz – használja a Visszajelzési központ Megosztás funkcióját az URL-címre mutató közvetlen hivatkozás megosztásához. Visszajelzési központ naponta rengeteg adatot kap – az URL-cím segít gyorsan azonosítani a visszajelzéseit.
+Visszajelzési központ kiváló módja annak, hogy értesítse a mérnöki csapatot a hibákról, és győződjön meg arról, hogy a jövőbeli frissítések healthierek és konzisztensen mentesek a hibáktól. A Visszajelzési központ azonban nem ad választ. Ha azonnali segítségre van szüksége, írjon visszajelzést, jegyezze fel a visszajelzéshez megadott összegzést,  majd forduljon az [HoloLens-támogatáshoz](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) – használja a Visszajelzési központ Megosztás funkcióját az URL-címre mutató közvetlen hivatkozás megosztásához. Visszajelzési központ naponta rengeteg adatot kap – az URL-cím segítségével gyorsan azonosíthatja a visszajelzését.
 
 > [!NOTE]  
 >  
 > - Győződjön meg arról, hogy a jelenlegi verzióval Visszajelzési központ. Ehhez válassza a **Start Microsoft Store,** majd a három  >  pont **(...**) lehetőséget. Ezután válassza a **Letöltések és frissítések**  >  **Frissítések betöltése lehetőséget.**  
 >  
-> - Annak érdekében, hogy a lehető legjobb adatokat biztosítsa a problémák megoldásához, erősen ajánlott az eszköztelemetelemetiát opcionálisra **állítani.** Ezt az értéket a OOBE (Out-of-Box-Experience) vagy a Gépház állíthatja be. Ha ezt a következővel Gépház meg, válassza a **Start** Gépház Privacy App Diagnostics On (Adatvédelmi alkalmazás  >  **diagnosztikának**  >    >    >  **kezdete) lehetőséget.**
+> - Annak érdekében, hogy a lehető legjobb adatokat biztosítsa a problémák megoldásához, erősen ajánlott az eszköztelemetelemetiát opcionálisra **állítani.** Ezt az értéket a OOBE (Out-of-Box-Experience) vagy a Gépház állíthatja be. Ha ezt a következővel Gépház meg, válassza a **Start**  >  **Gépház**  >  **Privacy**  >  **App Diagnostics** On  >  **lehetőséget.**
 
 ## <a name="use-the-feedback-hub"></a>A Visszajelzési központ
 
-1. A **Start kézmozdulattal** nyissa meg a **Start menüt,** majd válassza **a** Visszajelzési központ. Az alkalmazás megnyílik a környezetben.
+1. A **Start kézmozdulattal** nyissa meg a **Start menüt,** majd válassza a **Visszajelzési központ.** Az alkalmazás megnyílik a környezetben.
 
    ![Visszajelzési alkalmazás HoloLens Start menü.](./images/hololens2-feedbackhub-tile.png)
    > [!NOTE]  
-   > Ha nem látja a Visszajelzési központ **lehetőséget,** válassza a **Minden** alkalmazás lehetőséget az eszközön található alkalmazások teljes listájának a listájának a listájához.
+   > Ha nem látja a Visszajelzési központ, válassza **a** **Minden** alkalmazás lehetőséget az eszközön található alkalmazások teljes listájának a listájának a listájához.
 
 1. Ha meg szeretne bizonyosodni arról, hogy valaki más is adott-e hasonló visszajelzést, írjon be néhány kulcsszót a témakörről a **Visszajelzés keresőmezőbe.**
 1. Ha hasonló visszajelzést talál, jelölje ki, adjon meg minden további információt a Megjegyzés írása mezőben, majd válassza **a** **Számlázás lehetőséget.**
@@ -63,7 +63,7 @@ Visszajelzési központ kiváló módja annak, hogy értesítse a mérnöki csap
    |Hologram pontossága, stabilitása és megbízhatósága |Visszajelzés arról, hogyan jelennek meg a hologramok a térben. |
    |Alkalmazások elindítása, elhelyezése, beállítása és kilépése |Visszajelzés a 2D- vagy 3D-alkalmazások indításról vagy leállításáról. |
    |Miracast |Visszajelzés a Miracast. |
-   |Szóközök és adatmegőrzés |Visszajelzés arról, HoloLens felismeri a szóközöket, és hogyan őrzi meg a hologramokat a térben. |
+   |Szóközök és adatmegőrzés |Visszajelzés arról, HoloLens felismeri a szóközöket, és hogyan őrzi meg a térben található hologramokat. |
    |Start menü és az összes alkalmazás listája |Visszajelzés a **Start menüről** és az összes alkalmazás listájáról. |
    |Felületleképezés |Visszajelzés a felületleképezéssel kapcsolatban. |
    |Képek és videók megtekintése |Visszajelzés vegyes valóságú rögzítésekkel kapcsolatban. |
@@ -76,7 +76,7 @@ Visszajelzési központ kiváló módja annak, hogy értesítse a mérnöki csap
 
 1. Csatolja a releváns adatokat a visszajelzéshez, vagy reprodukálja a problémát. Az alábbi lehetőségek bármelyikét választhatja:
 
-   - **Csatoljon egy képernyőképet.** Ezt a lehetőséget választva csatolhat egy képernyőképet, amely a leírt helyzetet mutatja be.
+   - **Csatoljon egy képernyőképet.** Válassza ezt a lehetőséget a leírt helyzetet szemléltető képernyőkép csatolására.
    - **Csatoljon egy fájlt.** Ezzel a lehetőséggel csatolhat adatfájlokat. Ha olyan fájljai vannak, amelyek a problémához kapcsolódóak, vagy amelyek segíthetnek a probléma reprodukálásában, csatolja őket.
    - **Hozza létre újra a problémát.** Válassza ezt a lehetőséget, ha saját maga is reprodukálhatja a problémát. Miután a Probléma **újbóli létrehozása lehetőséget választja,** kövesse az alábbi lépéseket:  
 
@@ -86,6 +86,6 @@ Visszajelzési központ kiváló módja annak, hogy értesítse a mérnöki csap
      1. Reprodukálja a problémát. Ne aggódjon, ha ez azt jelenti, hogy be kell lépnie egy modern alkalmazásba. Amikor végzett, vissza fog térni a visszajelzési oldalra.
      1. Válassza a **Rögzítés leállítása lehetőséget.** Miután a felvétel leállt, láthatja a mérnöki csapat visszajelzéséhez csatolt adatokat.
 
-1. Győződjön meg arról, hogy aktív internetkapcsolattal rendelkezik, hogy visszajelzést kapunk. Válassza **a Submit (Küldés)** lehetőséget, és ezzel végzett.
+1. Győződjön meg arról, hogy aktív internetkapcsolattal rendelkezik, hogy visszajelzést kapunk. Válassza **a Küldés** lehetőséget, és ezzel végzett.
 
 1. A Megosztás **gombbal** megoszthatja a rövid URL-címet a Microsoft ügyfélszolgálatával vagy munkatársaival.

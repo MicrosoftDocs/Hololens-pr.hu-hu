@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8b14ebd9639495d2b174678518b4562a2b3c85fa
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: 286e90fab7be0c4132cfab15306cc57c52607ccf
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189443"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427796"
 ---
 # <a name="hololens-2-cleaning-faq"></a>HoloLens 2. tisztítás – GYIK
 
@@ -58,14 +58,14 @@ Nem. Az objektívszűrők a vizoron látható abrásznak. A vizor megtisztítás
 
 ## <a name="can-i-use-disinfecting-wipes-to-clean-the-device"></a>Használhatok törlést az eszköz tisztítására?
 
-Igen, ha a törlés nem tartalmaz 1000-et. A nem nagy rázkú törlésekkel a felületéről is HoloLens [vissza.](#hololens-2-use-and-care)  
+Igen, ha a törlés nem tartalmaz 1000-et. A nem nagy rázkú törlési törlésekkel a felületre HoloLens [vissza.](#hololens-2-use-and-care)  
 
 > [!CAUTION]  
-> A felület megtisztítása érdekében ne használjon olyan törlést, amely HoloLens tartalmaz. Az összes adat törlésének használata kritikus helyzetekben elfogadható, ha semmi más nem érhető el. A sérülés azonban kárt okozhat a HoloLens vagy más felületeken.
+> Ne használjon olyan törlési adatokat, amelyek tartalmaznak az összes HoloLens felületének tisztításához. Az összes adat törlésének használata kritikus helyzetekben elfogadható, ha semmi más nem érhető el. A sérülések azonban károsíthatnak HoloLens vagy más felületeken.
 
 ## <a name="can-i-use-alcohol-to-clean-the-device"></a>Használhatok tisztítást az eszköz tisztítására?
 
-Igen. A "70%-os" isopropyl-et és vizet is használhatja az eszköz merevlemezének megtisztítása érdekében, beleértve a vizort is. Az isopropyl-adenzát és -vizet is felhasználva világosítsa le az üveget, majd végül törölje az eszköz felületét
+Igen. A "70%-os" isopropyl-et és vizet is használhatja az eszköz merevlemezének megtisztítása érdekében, beleértve a vizort is. Az isopropyl-adenzát és -vizet is felhasználva kisjenjen le, majd törölje az eszköz felszínét
 
 ## <a name="is-the-brow-pad-replaceable"></a>Lecserélhető arow pad?
 
@@ -79,10 +79,10 @@ A fogaslap tisztítása érdekében törölje le egy víz és egy pávaszszavasz
 
 ## <a name="can-i-use-ultraviolet-uv-light-to-sanitize-the-device"></a>Használhatok ultravioletes (TOR) világítást az eszköz vírusmentesítéséhez?
 
-A 0,5–0,6mW/cm<sup>2</sup>intenzitási szinten működő, a HoloLens2-t 265nm-es intenzitású, a HoloLens2-t nem bocsátja ki, és nem bocsát ki forditizálást. A kezelésről és a kitettségi időről a gyártó specifikációit kövesse.
+A HoloLens 0,5-0,6mW/cm2 intenzitási szinten működő, a 2. jelű led-ek és a szűrt regiszterek led-ek vagy szűrt mellőcentrálék-jelzőfények nem bocsátanak ki 2.-es led-et. A kezelésről és a kitettségi időről a gyártó specifikációit kövesse.
 
 > [!CAUTION]  
-> Az ESZKÖZ magas szintű AZ ÉS AE-B kitettsége ronthatja az eszköz megjelenítési minőségét, és károsítja a vizor behatását. Az ANNAK-A és a ANNAK-B-sugárzásnak való túlterhelés a következő hatásokkal jár a kitettség időtartama és intenzitása alapján:
+> A MAGAS SZINTŰ A és AZREDB-B kitettség ronthatja az eszköz megjelenítési minőségét, és károsítja a vizor behatását. Az ANNAK-A és a ANNAK-B-sugárzásnak való túlterhelés a következő hatásokkal jár a kitettség időtartama és intenzitása alapján:
 >  
 > 1. Arow pad és az eszköz lezárása elszíneződik.
 > 1. A hibák a visszatükröző (AR) beomlában jelennek meg a vizoron és az érzékelőablakon.
