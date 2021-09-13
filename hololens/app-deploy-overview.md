@@ -15,26 +15,26 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: ca87f34718319d489b69ba33ad24731628d87fac
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427194"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032486"
 ---
 # <a name="app-management-overview"></a>Alkalmazáskezelés: Áttekintés
 
-Az alkalmazásokat négy különböző útvonalon telepítheti: **Mobile Eszközkezelés (MDM),** **Microsoft Store Vállalatoknak**, **Microsoft Store**, vagy telepítésükön **keresztül.**
+Az alkalmazásokat négy különböző útvonalon telepítheti: **Mobile Eszközkezelés (MDM),** **Microsoft Store Vállalatoknak**, **Microsoft Store**, vagy a kiépítéssel **telepítheti őket.**
 
 ## <a name="mobile-device-management-mdm"></a>Mobileszköz-felügyelet (MDM)
 
-Az MDM-megoldások lehetővé teszik az informatikai döntéshozók és a rendszergazdák számára, hogy privát módon, automatikusan telepítik (leküldik) a házon belüli, üzletági alkalmazásokat, vagy alkalmazásokat vásárolnak az áruházon keresztül a felhasználók egy csoportja számára. HoloLens eszközök az alkalmazáskezeléshez Microsoft Endpoint Manager (Intune) [működnek a legjobban.](app-deploy-intune.md) Az Intune emellett lehetővé teszi a felhasználók számára az IT által felügyelt alkalmazások finomhangolt vezérlését a Céges portál felhasználói élményben.
+Az MDM-megoldások lehetővé teszik az informatikai döntéshozók és a rendszergazdák számára, hogy privát módon, automatikusan telepítik (leküldik) a házon belüli, üzletági alkalmazásokat, vagy alkalmazásokat vásárolnak az áruházon keresztül a felhasználók egy csoportja számára. HoloLens eszközök az alkalmazáskezeléshez Microsoft Endpoint Manager (Intune) [működnek a legjobban.](app-deploy-intune.md) Az Intune emellett lehetővé teszi a felhasználók számára az IT által felügyelt alkalmazások finomhangolt vezérlését a Céges portál használatával.
 
 > [!NOTE]
 > Az alábbi utasításokat azok a felhasználók számára ismertetjük, akik az Intune-nal szeretnék kezelni az alkalmazásokat. A Microsoft az Intune használatát javasolja az alkalmazás- és eszközkezeléshez.
 
 A Eszközkezelés (MDM) a következőre vonatkozik:
 
-* Telepített MDM + Céges portál
+* Üzembe helyezett MDM + Céges portál
 * Üzletági (nem nyilvános) alkalmazások
 * Az elérhető alkalmazások manuális telepítése a Céges portál
 * Rendszergazdai leküldés MDM-szabályzaton keresztül
@@ -42,7 +42,7 @@ A Eszközkezelés (MDM) a következőre vonatkozik:
 
 ## <a name="microsoft-store-for-business"></a>Vállalati Microsoft Áruház
 
-A [Microsoft Store Vállalatoknak](app-deploy-store-business.md) üzleti informatikai döntéshozókat és rendszergazdákat biztosít ingyenes és fizetős alkalmazások kereséséhez, megszerzéséhez, kezeléséhez és terjesztéséhez. A rendszergazdák egyetlen Microsoft Store kezelhetik a vállalati alkalmazásokat és a privát üzletági alkalmazásokat, valamint szükség szerint hozzárendelheti és újra felhasználhatja a licenceket. További információ: [Prerequisites for using the Microsoft Store Vállalatoknak.](/microsoft-store/prerequisites-microsoft-store-for-business)
+A [Microsoft Store Vállalatoknak](app-deploy-store-business.md) az informatikai döntéshozók és a vállalkozások rendszergazdái számára ingyenes és fizetős alkalmazások keresését, megszerzését, kezelését és terjesztését teszi lehetővé. A rendszergazdák egyetlen Microsoft Store kezelhetik az alkalmazásokat és a privát üzletági alkalmazásokat, valamint szükség szerint rendelhetnek hozzá és újra felhasználhatnak licenceket. További információ: [Prerequisites for using the Microsoft Store Vállalatoknak.](/microsoft-store/prerequisites-microsoft-store-for-business)
 
 A Microsoft Store Vállalatoknak a következőre vonatkozik:
 
@@ -74,7 +74,7 @@ A kiépítési csomagokkal történő telepítés a következőre vonatkozik:
 * Csak USB-meghajtóról történő oldalbetöltés
 * Nincs automatikus frissítés (manuális frissítéseket igényel a kiépítési csomagon keresztül)
 
-## <a name="install-apps-on-hololens-2-via-app-installer"></a>Alkalmazások telepítése a 2. HoloLens a Alkalmazástelepítő
+## <a name="install-apps-on-hololens-2-via-app-installer"></a>Alkalmazások telepítése HoloLens 2. Alkalmazástelepítő
 
 A [Alkalmazástelepítő](app-deploy-app-installer.md) használatával a felhasználók egyszerűen telepíthet alkalmazásokat helyi eszközökre, vagy megoszthatnak egy alkalmazást egy olyan felhasználóval, aki nem ismeri a többi alkalmazástelepítési módszert a HoloLens. Ez a Fejlesztői mód engedélyezése vagy az alkalmazás használata nélkül Eszközportál. Ez egy egyszerű módszer egy teljesen felépített alkalmazás terjesztésére. Függetlenül attól, hogy az alkalmazást egyszerűen egy másik felhasználónak szeretné HoloLens, vagy egyszerűen üzembe szeretné helyezni az alkalmazást.
 

@@ -14,11 +14,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 92040019b093c5ef63d74f095dcb3809112ae7a0
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428006"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036223"
 ---
 # <a name="page-settings-visibility"></a>Lap Gépház láthatósága
 
@@ -159,13 +159,13 @@ HoloLens eszközök és Windows 10 különböző oldalakat tartalmaznak a Géph�
 | <sup>2. hang</sup>           | `sound`<br>|
 | Hang > alkalmazáskötet és eszköz preferencia <sup>2</sup>           | `apps-volume`<br>|
 | Hang > Hangeszközök kezelése <sup>2</sup>           | `sound-devices`<br>|
-| Tárolás            | `storagesense`           |
+| Storage            | `storagesense`           |
 | Storage > Sense <sup>2</sup> Storage konfigurálása           | `storagepolicies`<br>|
 
 ### <a name="time--language"></a>Time & Language
 | Beállítások lap | URI                                           |
 |---------------|-----------------------------------------------|
-| 2. & <sup>dátum és idő</sup> | `dateandtime`                  |
+| Dátum & <sup>2</sup> | `dateandtime`                  |
 | <sup>2.</sup> billentyűzet | `keyboard`                  |
 | <sup>2. nyelv</sup> | `language`                  |
 | <sup>2. nyelv</sup> | `regionlanguage-languageoptions`                  |
@@ -182,7 +182,7 @@ HoloLens eszközök és Windows 10 különböző oldalakat tartalmaznak a Géph�
 | Windows Frissítés – Frissítések keresése | `windowsupdate-action`          |
 
 
-- <sup>1</sup> – Az Windows Holographic 21H1-es verziójánál korábbi verziók esetén a következő  két URI valójában nem a Speciális beállítások vagy a Beállítások **oldalra** lép; Csak blokkolják vagy meg fogják jelenni a frissítés Windows főoldalt.
+- <sup>1</sup> – A holografikus Windows 21H1-es verziójánál korábbi verziók esetén a  következő két URI valójában nem a Speciális beállítások vagy beállítások **oldalra** lép; Csak blokkolják vagy megmutatják a Windows frissítés lapját.
   -  windowsupdate-options
   -  windowsupdate-restartoptions
 

@@ -20,11 +20,11 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.openlocfilehash: 3afe3d2aecd64c2b4724f4805571cb3c46112875
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428674"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036163"
 ---
 # <a name="manage-hololens-updates"></a>A HoloLens kezelése
 
@@ -56,17 +56,17 @@ A Vállalati verziófrissítések Intune-nal való konfigurálásának Windows r
 
 Ez a szakasz azokat a szabályzatokat ismerteti, amelyek a 2. HoloLens frissítések (1. generációs) HoloLens kezelésére használhatók. További információ a 2. HoloLens elérhető funkciókról: A [2.](#plan-and-configure-update-rollouts-for-hololens-2)HoloLens frissítésének megterve és konfigurálása.
 
-[Szabályzat CSP – A](/windows/client-management/mdm/policy-csp-update) frissítés határozza meg a vállalati frissítés Windows konfiguráló szabályzatokat.
+[Szabályzat CSP – A](/windows/client-management/mdm/policy-csp-update) frissítés határozza meg az üzleti Windows frissítését konfiguráló szabályzatokat.
 
 > [!NOTE]  
-> A szabályzatkonfigurációs szolgáltatók (CSP-k) listájáért, amelyet a HoloLens adott kiadásai támogatnak, lásd: A házirend-konfigurációszolgáltatók által támogatott HoloLens [eszközök.](/windows/client-management/mdm/policy-configuration-service-provider#policy-csps-supported-by-hololens-devices)
+> A szabályzatkonfigurációs szolgáltatók (CSP-k) listájáért, amelyet a HoloLens adott kiadásai támogatnak, lásd: Az eszközök által támogatott HoloLens [CSP-k.](/windows/client-management/mdm/policy-configuration-service-provider#policy-csps-supported-by-hololens-devices)
 
 #### <a name="configure-automatic-checks-for-updates"></a>Frissítések automatikus ellenőrzései
 
 Az **Update/AllowAutoUpdate** szabályzat segítségével kezelheti az automatikus frissítési viselkedést, például a frissítések keresését, letöltését és telepítését. A szabályzathoz elérhető beállításokkal kapcsolatos további információkért lásd: [Update/AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#update-allowautoupdate).
 
 > [!NOTE]  
-> A Microsoft Intune automatikus frissítési viselkedéssel módosíthatja ezt a szabályzatot.  További információ: Az Intune [Windows 10 kezelése.](/intune/windows-update-for-business-configure)
+> A Microsoft Intune automatikus frissítési **viselkedéssel** módosíthatja ezt a szabályzatot. További információ: [Manage Windows 10 software updates in Intune](/intune/windows-update-for-business-configure)..
 
 #### <a name="configure-an-update-schedule"></a>Frissítési ütemezés konfigurálása
 
@@ -80,23 +80,23 @@ A frissítések alkalmazásának miként és mikor való konfiguráláskor haszn
   - Alapértelmezett érték: 3:00
 
 #### <a name="configure-active-hours"></a>Aktív órák konfigurálása
-A [Holographic Windows 20H2-es](hololens-release-notes.md#windows-holographic-version-20h2) verziójától kezdve a rendszergazdák megadhatják az aktív órák tartományát HoloLens 2 eszköz számára.
+A [Holographic Windows 20H2-es](hololens-release-notes.md#windows-holographic-version-20h2) verziójától kezdve a rendszergazdák megadhatják a 2 eszköz HoloLens óratartományát.
 
-Az aktív órák azt az időszakot azonosítják, amikor az eszköz várhatóan használatban lesz. Automatikus újraindítások, ha a frissítés az aktív órákon kívülre esik. A megadott tartomány az aktív órák kezdési időpontból lesz megszámadva. Az MDM-et az Aktív órák konfigurálása az MDM-hez leírás [szerint használhatja.](/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm) Az MDM a Házirend CSP Update/ActiveHoursStart és Update/ActiveHoursEnd és Update/ActiveHoursMaxRange beállítását használja az aktív órák konfigurálhoz.
+Az aktív órák azt az időszakot azonosítják, amikor az eszköz várhatóan használatban lesz. Automatikus újraindítások, ha a frissítés az aktív órákon kívülre esik. A megadott tartomány az aktív órák kezdési időpontból lesz megszámadva. Az MDM-et az Aktív órák konfigurálása az [MDM-hez leírás szerint használhatja.](/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm) Az MDM a Házirend CSP Update/ActiveHoursStart és Update/ActiveHoursEnd és Update/ActiveHoursMaxRange beállítását használja az aktív órák konfigurálhoz.
 
 -   [Update/ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#update-activehoursend) – Ez az érték határozza meg a záró időt. A kezdési időponttól legfeljebb 12 órás lehet.
-    -   Támogatott értékek: 0–23, ahol a 0 12:00, 1:00 stb.
+    -   Támogatott értékek: 0–23, ahol a 0 12:00, 1 00 stb.
     -   Az alapértelmezett érték 17 (17 óra).
 -   [Update/ActiveHoursMaxRange](/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) – Ez az érték a kezdési időponttól való aktív órák maximális számát állítja be.
     -   A támogatott értékek: 8–18.
     -   Az alapértelmezett érték 18 (óra).
 -   [Update/ActiveHoursStart –](/windows/client-management/mdm/policy-csp-update#update-activehoursstart) Ez az érték határozza meg a kezdési időt. A záró időpont legfeljebb 12 órás lehet.
-    -   Támogatott értékek: 0–23, ahol a 0 12:00, 1:00 stb.
+    -   Támogatott értékek: 0–23, ahol a 0 12:00, 1 00 stb.
     -   Az alapértelmezett érték 8 (8 AM).
 
 #### <a name="for-devices-that-run-windows-10-version-1607-only"></a>Csak az 1607 Windows 10 verziót futtató eszközök esetén
 
-Az alábbi frissítési szabályzatok segítségével konfigurálhatja az eszközöket, hogy az Windows Server Update Service (WSUS) szolgáltatásból kapják meg a frissítéseket a Windows helyett:
+A következő frissítési szabályzatok segítségével konfigurálhatja az eszközöket, hogy az Windows Server Update Service (WSUS) szolgáltatásból szerezzék be a frissítéseket a Windows helyett:
 
 - [Update/AllowUpdateService](/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 - [Update/RequireUpdateApproval](/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
@@ -104,7 +104,7 @@ Az alábbi frissítési szabályzatok segítségével konfigurálhatja az eszkö
 
 ### <a name="plan-and-configure-update-rollouts-for-hololens-2"></a>A 2. HoloLens frissítésének megterve és konfigurálása
 
-HoloLens 2. verzió több frissítésautomatizálási funkciót támogat HoloLens mint az (1. generációs) verzió. Ez különösen akkor igaz, ha Microsoft Intune az Windows Update for Business szabályzatok kezeléséhez. Ezekkel a funkciókkal könnyebben tervezheti meg és valósíthatja meg a frissítés-bevezetéseket a szervezeten belül.
+HoloLens 2. verzió több frissítésautomatizálási funkciót támogat HoloLens mint a HoloLens (1. generációs) támogatja. Ez különösen akkor igaz, ha Microsoft Intune az Windows Frissítés üzleti szabályzatok kezeléséhez. Ezekkel a funkciókkal könnyebben tervezheti meg és valósíthatja meg a frissítés-bevezetéseket a szervezeten belül.
 
 #### <a name="plan-the-update-strategy"></a>A frissítési stratégia megterve
 
@@ -137,9 +137,9 @@ Különböző halasztásokat konfigurálhat a szolgáltatásfrissítések és a 
 
 #### <a name="pause-updates-via-device"></a>Frissítések felfüggesztése eszközön keresztül
 
-Ha a felhasználó nem rendelkezik hozzáféréssel az MDM-hez, egyenként szüneteltetheti a frissítéseket 35 napig manuálisan egy HoloLens 2-es buildelésű eszközön Windows [Holographic 2004-es](hololens-release-notes.md#windows-holographic-version-2004) vagy újabb verziójában. A felhasználók úgy érik el ezt a beállítást, hogy megnyitják a **Gépház > Update & Security > Speciális beállításokat,** és legörgetnek a Frissítések **felfüggesztése** lehetőséghez, és kiválasztják azt a dátumot, amely előtt szüneteltetik a frissítéseket. Ha egy felhasználó elérte a szüneteltetési korlátot, az eszköznek új frissítéseket kell kapnia, mielőtt újra szüneteltetheti. 
+Ha a felhasználó nem rendelkezik hozzáféréssel az MDM-hez, egyenként szüneteltetheti a frissítéseket manuálisan 35 napig manuálisan egy HoloLens 2-es buildelésű eszközön Windows [Holographic 2004-es](hololens-release-notes.md#windows-holographic-version-2004) vagy újabb verzióban. Gépház > Ezt a beállítást az Update & Security > Advanced (Frissítésfrissítések & **biztonságának** speciális beállításai) lapra lépve érhetik el a **Frissítések** felfüggesztése lehetőségig, és kiválaszthatja azt a dátumot, amely előtt szüneteltetik a frissítéseket. Ha egy felhasználó elérte a szüneteltetési korlátot, az eszköznek új frissítéseket kell kapnia, mielőtt újra szüneteltetheti. 
 
-A [Holographic Windows 20H2](hololens-release-notes.md#windows-holographic-version-20h2)verziótól kezdve ez a szünetfrissítési függvény 2 HoloLens kezelhető. 
+A [Holographic Windows 20H2](hololens-release-notes.md#windows-holographic-version-20h2)verziótól kezdődően ez a szünetfrissítési függvény 2 HoloLens kezelhető. 
 - [Update/SetDisablePauseUXAccess](/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).
     - 0 (alapértelmezett) – Engedélyezve
     - 1 – Letiltva
@@ -162,7 +162,7 @@ Az Intune következő frissítéskezelési funkcióival kezelheti a frissítése
 
 ### <a name="delivery-optimization-preview"></a>Kézbesítésoptimalizálás előzetes verzió
 
-[Windows Holographic 21H1-es](hololens-release-notes.md#windows-holographic-version-21h1) verziója lehetővé tette a kézbesítésoptimalizálási beállítások korai előzetes verzióját, hogy csökkentse a sávszélesség-felhasználást több HoloLens eszközökről. A funkció és az ajánlott hálózati konfiguráció teljesebb leírása itt érhető el: Kézbesítésoptimalizálás [a Windows 10 frissítéséhez.](/windows/deployment/update/waas-delivery-optimization)
+[Windows Holographic 21H1-es](hololens-release-notes.md#windows-holographic-version-21h1) verziója lehetővé tette a kézbesítésoptimalizálási beállítások előzetes verzióját, így csökkentve a sávszélesség-felhasználást több HoloLens eszközről. Ennek a funkciónak és az ajánlott hálózati konfigurációnak a teljes leírását itt érhetők el: Kézbesítésoptimalizálás [a Windows 10 frissítéséhez.](/windows/deployment/update/waas-delivery-optimization)
 
 Az alábbi beállítások a felügyeleti felület részeként vannak engedélyezve, [és az Intune-ból konfigurálhatóak:](/mem/intune/configuration/delivery-optimization-settings)
 
@@ -181,7 +181,7 @@ Az alábbi beállítások a felügyeleti felület részeként vannak engedélyez
 Az előzetes verzióval kapcsolatos néhány figyelmeztetés:
 
 - HoloLens előzetes verzió csak az operációs rendszer frissítéseit támogatja.
-- Windows Holographic for Business a HTTP letöltési módokat és a Microsoft-végpontról [való Csatlakoztatott gyorsítótár letöltéseket támogatja;](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) A társközi letöltési módok és csoport-hozzárendelések jelenleg nem támogatottak HoloLens eszközök esetében.
+- Windows Holographic for Business a HTTP-letöltési módokat és a Microsoft-végpontról [való Csatlakoztatott gyorsítótár letöltéseket támogatja;](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) A társközi letöltési módok és csoport-hozzárendelések jelenleg nem támogatottak HoloLens eszközök esetében.
 - HoloLens nem támogatja az üzembe helyezést vagy a kézbesítés optimalizálását Windows Server Update Services végpontok esetén.
 - A hibaelhárításhoz diagnosztikára van szükség a Csatlakoztatott gyorsítótár-kiszolgálón, vagy nyomkövetést kell gyűjteni a HoloLens HoloLens-on a **Gépház** Update & Security Troubleshooting Windows Update (Frissítés &  >  **biztonsági** hibaelhárítása)  >     >   **Windows frissítésen keresztül.**
 

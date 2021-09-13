@@ -14,25 +14,25 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 00e99d3f67e9e4371da12612b9b01c3ce58e71bd
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428333"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036027"
 ---
 # <a name="using-3d-viewer-beta-on-hololens-1st-gen"></a>A 3D-megjelenítő bétaverzió használata HoloLens (1. generációs)
 
-3D-megjelenítő Beta lehetővé teszi a 3D modellek megtekintését HoloLens (1. generációs) verzióban. A támogatott  .fbx fájlokat megnyithatja és megtekintheti Microsoft Edge, OneDrive és más alkalmazásokból.
+3D-megjelenítő Bétaverzió lehetővé teszi a 3D modellek megtekintését HoloLens (1. generációs) verzióban. A támogatott  .fbx fájlokat megnyithatja és megtekintheti Microsoft Edge, OneDrive és más alkalmazásokból.
 
 >[!NOTE]
->Ez a cikk a modern Unity **3D-megjelenítő Beta** alkalmazásra vonatkozik, amely támogatja a .fbx fájlokat, és csak HoloLens (1. generációs) verzióban érhető el. Az 3D-megjelenítő  2. 3D-megjelenítő HoloLens előre telepített alkalmazás támogatja az egyéni .glb 3D modellek [](/windows/mixed-reality/creating-3d-models-for-use-in-the-windows-mixed-reality-home#asset-requirements-overview) megnyitását a vegyes valóság kezdőlapon (további részletekért lásd az eszközkövetelmények áttekintését.
+>Ez a cikk a modern Unity **3D-megjelenítő Beta** alkalmazásra vonatkozik, amely támogatja az .fbx fájlokat, és csak HoloLens (1. generációs) verzióban érhető el. Az 3D-megjelenítő  2. HoloLens-ben előre telepített alkalmazás támogatja az egyéni .glb 3D modellek [](/windows/mixed-reality/creating-3d-models-for-use-in-the-windows-mixed-reality-home#asset-requirements-overview) megnyitását a vegyes valóság kezdőlapon (további részletekért lásd az eszközkövetelmények áttekintését.
 
 >[!IMPORTANT]
 >Bár 3D-megjelenítő bétaverzió elérhető maradhat a Microsoft Store for HoloLens (1. generációs) verzióban, a bétaverzió már nem aktív fejlesztés alatt áll, és már nem támogatott.
 
-Ha nem tudja megnyitni a 3D modellt a 3D-megjelenítő Beta kiadásban, vagy a 3D-modell [](#supported-content-specifications) egyes funkciói nem támogatottak, tekintse meg a támogatott tartalomsokajátságokat alább.
+Ha nem tudja megnyitni a 3D modellt a 3D-megjelenítő Beta kiadásban, vagy a 3D-modell [](#supported-content-specifications) bizonyos funkciói nem támogatottak, tekintse meg a támogatott tartalomsokajátságokat alább.
 
-A 3D-modelleknek a 3D-megjelenítő Beta-val való használatra való optimalizálásához lásd az alábbi [3D-modellek 3D-megjelenítő bétaverzióhoz való optimalizálását.](#optimizing-3d-models-for-3d-viewer-beta)
+A 3D-modellek a 3D-megjelenítő Bétaverzióval való használatra való felépítéséhez vagy optimalizálásához lásd az alábbi [3D-modellek 3D-megjelenítő bétaverzióhoz való optimalizálását.](#optimizing-3d-models-for-3d-viewer-beta)
 
 A 3D-s modelleket kétféleképpen nyithatja meg a HoloLens. További [információ: Az FBX-fájlok HoloLens](#viewing-fbx-files-on-hololens) az alábbi táblázatban.
 
@@ -94,7 +94,7 @@ Ha a témakörök elolvasása után problémába fog kerülni, tekintse meg a [h
 
 ### <a name="file-and-model-limitations"></a>Fájl- és modellkorlátozások
 
-A bétaverzióban egyidejűleg megnyitható modellek, csúcsok és hálók száma erősen korlátozza a fájlok méretét, valamint 3D-megjelenítő hálók számát:
+A bétaverzióban egyidejűleg megnyitható modellek, csúcsok és hálók száma erősen korlátozza a fájlok méretét, valamint 3D-megjelenítő számát:
 
 - Modellenként 500 MB maximális fájlméret
 - Csúcsok: 600 000 az összes nyitott modellen kombinálva
@@ -111,9 +111,9 @@ A bétaverzióban egyidejűleg megnyitható modellek, csúcsok és hálók szám
 
 ### <a name="performance-optimization"></a>Teljesítményoptimalizálás
 
-A legjobb eredmények elérése érdekében tartsa szem előtt a teljesítményt, amikor tartalmat hoz 3D-megjelenítő és érvényesít a HoloLens bétaverziós alkalmazásában. 3D-megjelenítő bétaverzió valós időben renderel tartalmat, és a teljesítményt HoloLens hardverképességek biztosítanak.  
+A legjobb eredmények érdekében tartsa szem előtt a teljesítményt, amikor tartalmat hoz 3D-megjelenítő és érvényesít a HoloLens bétaverziós alkalmazásában. 3D-megjelenítő bétaverzió valós időben renderel tartalmat, és a teljesítményre HoloLens hardverképességek vonatkoznak.  
 
-Egy 3D-s modellben számos olyan változó van, amely hatással lehet a teljesítményre. 3D-megjelenítő bétaverzió egy terhelésre vonatkozó figyelmeztetést fog mutatni, ha több mint 150 000 csúcspont vagy több mint 400 háló van. Az animációk hatással lehetnek más nyitott modellek teljesítményére. A bétaverzióban egyidejűleg megnyitható számmodellek, csúcsok és hálók száma 3D-megjelenítő is [](#file-and-model-limitations)korlátozott (lásd a fájl- és modellkorlátozásokat).  
+Egy 3D-s modellben számos olyan változó van, amely hatással lehet a teljesítményre. 3D-megjelenítő bétaverzió egy terhelésre vonatkozó figyelmeztetést fog mutatni, ha több mint 150 000 csúcspont vagy több mint 400 háló van. Az animációk hatással lehetnek más nyitott modellek teljesítményére. A bétaverzióban egyidejűleg megnyitható számmodellek 3D-megjelenítő, csúcsok és hálók teljes száma is [](#file-and-model-limitations)korlátozott (lásd a fájl- és modellkorlátozásokat).  
 
 Ha a 3D modell a modell összetettsége miatt nem fut jól, fontolja meg a következőt:
 
@@ -137,13 +137,13 @@ A modell méretezésének megakadályozásához adjon hozzá egy logikai egyéni
 
 ### <a name="open-an-fbx-file-from-microsoft-edge"></a>FBX-fájl megnyitása a Microsoft Edge
 
-Az FBX-fájlok közvetlenül egy webhelyről nyithatók meg a Microsoft Edge a HoloLens.
+Az FBX-fájlok közvetlenül egy webhelyről nyithatók meg az Microsoft Edge a HoloLens.
 
 1. A Microsoft Edge keresse meg a megtekinteni kívánt FBX-fájlt tartalmazó weblapot.
 1. Válassza ki a fájlt a letöltéshez.
-1. Ha a letöltés befejeződött,  kattintson a Megnyitás gombra a Microsoft Edge a fájlt a bétaverzióban 3D-megjelenítő megnyitásához.
+1. Ha a letöltés befejeződött,  kattintson a Megnyitás gombra a Microsoft Edge a fájl megnyitásához a 3D-megjelenítő Bétaverzióban.
 
-A letöltött fájl később a Letöltések használatával érhető el és nyitható meg Microsoft Edge. A 3D modell mentéséhez és a folyamatos hozzáférés biztosításához töltse le a fájlt a számítógépre, és mentse a OneDrive fiókjába. A fájl ezután az alkalmazás OneDrive a HoloLens.
+A letöltött fájl később a Letöltések használatával érhető el és nyitható meg Microsoft Edge. A 3D modell mentéséhez és a folyamatos hozzáférés biztosításához töltse le a fájlt a számítógépre, és mentse a saját OneDrive fiókjába. A fájl ezután az alkalmazás OneDrive a HoloLens.
 
 > [!NOTE]
 > Egyes letölthető FBX-modellekkel elérhető webhelyek tömörített ZIP formátumban biztosítják őket. 3D-megjelenítő bétaverzió nem tudja közvetlenül megnyitni a ZIP-fájlokat. Ehelyett a számítógépével bontsa ki az FBX-fájlt, és mentse a OneDrive fiókjába. A fájl ezután az alkalmazás OneDrive a HoloLens.

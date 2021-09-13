@@ -1,6 +1,6 @@
 ---
 title: Windows Defender Alkalmazásvezérlés (WDAC)
-description: Az alkalmazásvezérlés Windows Defender, és annak használata vegyes valóságú eszközök HoloLens kezeléséhez.
+description: Az Alkalmazásvezérlés Windows Defender áttekintése, és annak használata vegyes valóságú HoloLens kezelésére.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,11 +13,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: b5c3b55273346f330580b07e5294e7e8e65ea12d
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427897"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032926"
 ---
 # <a name="windows-defender-application-control---wdac"></a>Windows Defender Alkalmazásvezérlés – WDAC
 
@@ -26,13 +26,13 @@ ms.locfileid: "124427897"
 A WDAC segítségével konfigurálhatja a HoloLens, hogy blokkolja az alkalmazások indítását. Ez eltér a Kioszk módtól, ahol a felhasználói felület elrejti az alkalmazásokat, de továbbra is elindíthatóak. A WDAC-val láthatja az alkalmazásokat, de nem indíthatóak el.
 
 > [!NOTE]
-> Amikor a végfelhasználók olyan alkalmazást próbálnak meg elindítani, amelyet a WDAC HoloLens, nem kap értesítést arról, hogy nem tudják elindítani az alkalmazást.
+> Amikor a végfelhasználók olyan alkalmazást próbálnak meg elindítani, amelyet a WDAC blokkol HoloLens, nem kap értesítést arról, hogy nem tudják elindítani az alkalmazást.
 
 Egy eszközhöz több WDAC-szabályzat is hozzárendelhető. Ha több WDAC-házirend van beállítva egy rendszeren, a legszigorúbb házirendek lépnek életbe. 
 
 Az alábbi útmutató segítségével a felhasználók megtudhatják, hogyan engedélyezheti vagy tilthatja le az alkalmazásokat [Windows PowerShell WDAC](/mem/intune/configuration/custom-profile-hololens)és HoloLens 2 eszközön a Microsoft Intune.
 
-Amikor a felhasználók az első példalépéssel rákeresnek a Windows 10 telepített alkalmazásokra, előfordulhat, hogy néhány kísérletet kell tenniük az eredmények szűkítésére.
+Amikor a felhasználók a saját számítógépükre telepített Windows 10 rá az első példalépéssel, előfordulhat, hogy néhány kísérletet kell tenniük az eredmények szűkítésére.
 
 ```powershell
 $package1 = Get-AppxPackage -name *<applicationname>*
@@ -50,7 +50,7 @@ Get-AppxPackage -name *edge*
 
 A fent hivatkozott útmutatóban manuálisan szerkesztheti a newPolicy.xml és szabályokat adhat hozzá olyan alkalmazásokhoz, amelyek csak a HoloLens a csomagjuk családnevekkel. Előfordulhat, hogy olyan alkalmazásokat használ, amelyek nem az asztali számítógépen vannak, és ezeket hozzá szeretné adni a szabályzathoz.
 
-Az alábbi lista a 2 In-Box használt és HoloLens alkalmazások listáját tartalmazza.
+Az alábbi lista a 2 eszköz In-Box használt és HoloLens alkalmazások listáját tartalmazza.
 
 | Alkalmazásnév                   | Csomag családneve                                |
 |----------------------------|----------------------------------------------------|
@@ -75,7 +75,7 @@ Az alábbi lista a 2 In-Box használt és HoloLens alkalmazások listáját tart
 
 ### <a name="how-to-find-a-package-family-name"></a>Csomag családnevének megkeresés
 
-Ha egy alkalmazás nem szerepel a listán, akkor a felhasználó használhatja a Eszközportál-t, amely egy olyan HoloLens 2-hez csatlakozik, amely le szeretné tiltani az alkalmazást, és meghatározza a PackageRelativeID azonosítót, és onnantól a PackageFamilyName megjelenik.
+Ha egy alkalmazás nem szerepel a listán, a felhasználó használhatja a Eszközportál-t, amely egy olyan HoloLens 2-hez csatlakozik, amely le szeretné tiltani az alkalmazást, a PackageRelativeID meghatározásához, és onnan a PackageFamilyName paramétert kapják meg.
 
 1. Telepítse az alkalmazást a HoloLens 2-es eszközön. 
 1. Nyissa meg Gépház -> Updates & Security -> For developers (Biztonsági beállítások fejlesztőknek) gombra, engedélyezze a Fejlesztői módot, majd **az** **Eszközportál gombra.** 

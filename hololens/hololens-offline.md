@@ -1,6 +1,6 @@
 ---
-title: Kapcsolati végpontok kezelése HoloLens
-description: Megtudhatja, hogyan állíthat be HoloLens kapcsolati Wi-Fi kapcsolati végpontok kezelése és konfigurálása közben.
+title: Kapcsolati végpontok kezelése a HoloLens
+description: Megtudhatja, hogyan állíthat be HoloLens hálózati Wi-Fi kapcsolati végpontok kezelése és konfigurálása közben.
 keywords: hololens, offline, OOBE
 audience: ITPro
 ms.date: 07/01/2019
@@ -19,19 +19,19 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: f2d9faafac2f84b727b1e10be83d4d1b53a707b4
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428573"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036181"
 ---
-# <a name="manage-connection-endpoints-for-hololens"></a>Kapcsolati végpontok kezelése HoloLens
+# <a name="manage-connection-endpoints-for-hololens"></a>Kapcsolati végpontok kezelése a HoloLens
 
 Egyes HoloLens összetevők, alkalmazások és kapcsolódó szolgáltatások adatokat továbbítnak a Microsoft hálózati végpontjaira. Ez a cikk felsorolja azokat a különböző végpontokat és URL-címeket, amelyek a hálózati konfigurációban (pl. proxy vagy tűzfal) engedélyezve lesznek az összetevők működőképességét.    
 
 ## <a name="near-offline-setup"></a>Közel offline telepítés
 
-HoloLens kapcsolat nélküli élmény korlátozott készletét támogatja a hálózati környezet korlátozásokkal érintett ügyfelei számára. A HoloLens azonban hálózati kapcsolatra van szükség a kezdeti eszköz beállításához, és engedélyezni kell a következő URL-címeket:
+HoloLens kapcsolat nélküli élmény korlátozott készletét támogatja a hálózati környezet korlátozásokkal nemű ügyfelei számára. A HoloLens azonban hálózati kapcsolatra van szükség a kezdeti eszköz beállításához, és engedélyezni kell a következő URL-címeket:
 
 | Rendeltetés | URL-cím |
 |------|------|

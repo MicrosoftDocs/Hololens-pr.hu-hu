@@ -14,17 +14,17 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 587253a7ec3d3959e7861fedc474d6a2e39dd369
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427246"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032796"
 ---
 # <a name="hololens-1st-gen-hardware"></a>HoloLens (1. generációs) hardver
 
-![Microsoft HoloLens (1. generációs).](images/see-through-400px.jpg)
+![Microsoft HoloLens (1. gen).](images/see-through-400px.jpg)
 
-Microsoft HoloLens (1. generációs) a világ első teljesen le nem oltott holografikus számítógépe. HoloLens újradefiniálja a személyi számítástechnikát a holografikus élmények révén, hogy új módokon tegye lehetővé. HoloLens élvonalbeli optikát és érzékelőket ötvöz, hogy 3D-s hologramokat biztosítsunk, amelyek a valós világhoz vannak tűzve.
+Microsoft HoloLens (1. generációs) a világ első teljesen le nem oltott holografikus számítógépe. HoloLens újradefiniálja a személyi számítástechnikát a holografikus élmények segítségével, hogy új módokon tegye lehetővé. HoloLens élvonalbeli optikát és érzékelőket ötvöz, hogy 3D-s hologramokat biztosítsunk, amelyek a való világhoz vannak tűzve.
 
 ## <a name="hololens-components"></a>HoloLens összetevők
 
@@ -32,8 +32,8 @@ Microsoft HoloLens (1. generációs) a világ első teljesen le nem oltott holog
 
 A HoloLens a következő funkciókat tartalmazza:
 
-- **Visor**. A HoloLens és kijelzőit tartalmazza. A vizort felfelé forgathatja, amíg be nem viseli a HoloLens.
-- **Headband ( fejsáv)**. A két HoloLens a beállítási kerek használatával bontsa ki a fejsávot. A HoloLens után húzza meg a rögzítőkereket, amíg a fejsáv el nem oszlott.
+- **Visor**. A HoloLens és kijelzőit tartalmazza. A vizort felfelé forgathatja, amíg a vizort HoloLens.
+- **Headband ( fejsáv)**. A két HoloLens a beállítási kerek használatával bontsa ki a fejsávot. Ha a HoloLens van, húzza meg a rögzítőkereket, amíg a fejsáv el nem oszlott.
 - **A fényerő gombok.** Ha berakja a HoloLens, a fényerejét jelző gombok az eszköz bal oldalán vannak.
 - **Hangerőgombok.** Ha a hangerőszabályzót HoloLens, a hangerőszabályzó gombok az eszköz jobb oldalán vannak.
 - **Eszközkarok.** Amikor felveszi, fel- vagy levei a HoloLens, mindig fogja meg vagy tartsa az eszköz karjával.
@@ -48,10 +48,10 @@ A HoloLens mező a következő elemeket tartalmazza:
 - **Terhelési rekent**. Ha mozgás közben berakja a HoloLens, a terhelési szalag segítségével tarthatja a helyén az eszközt. Emellett, ha hosszabb ideig viseli a HoloLens, a terhelési szalag használata kényelmesebbé teszi az eszköz elhasználódását.
 - **Mikro USB-kábel.** A mikro-USB-kábellel csatlakoztassa a HoloLens a tápegységhez a díjszabáshoz, vagy csatlakoztassa a HoloLens számítógépéhez.
 - **Tápegység.** Egy áramforráshoz csatlakozik.
-- **Mikrofiber-** és . Használja a tokot a vizor HoloLens tisztítására.
+- **Mikrofiber-** és . Használja a tokot a HoloLens tisztítására.
 
 >[!TIP]
->A [kattintásra HoloLens](hololens1-clicker.md) (1. generációs) egy külön mezőben.
+>A [kattintásra HoloLens](hololens1-clicker.md) (1. generációs) külön mezőben.
 
 ### <a name="power-supply-details"></a>Energiaellátás részletei
 
@@ -153,36 +153,36 @@ A környezet a következővel érthető:
 
 ### <a name="safety"></a>Biztonság
 
-HoloLens, és úgy találtuk, hogy megfelel az ANSI Z87.1, a CSA Z94.3 és az EN 166 alapvető hatásvédelmi követelményeinek.
+HoloLens tesztelték, és úgy találtuk, hogy megfelel az ANSI Z87.1, CSA Z94.3 és EN 166 alapvető hatásvédelmi követelményeinek.
 - [SAR-információk](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ## <a name="care-and-cleaning"></a>Ellátás és tisztítás
 
-Körültekintően kezelje HoloLens az 500 000 HoloLens. A rekedt eszköz HoloLens és beállításához használja az eszköz karját, ne a &mdash; terhelési rekedtet. Hogy a vizor ne legyen rajta ujjlenyomat, és ne kelljen megérintenie. Az ismételt tisztítás kárt tehet a vizorban, ezért próbálja meg tisztán tartani az eszközt.
+Körültekintően HoloLens el. A rekedteszköz fel- és HoloLens a rekedt rekedt &mdash; kart használja. Annak érdekében, hogy a vizor ne maradjon ujjlenyomattal és ujjlenyomattal, és ne érintse azt. Az ismételt tisztítás kárt okozhat a vizorban, ezért próbálja meg tisztán tartani az eszközt.
 
-Ne használjon tisztítást vagy HoloLens, és ne használja víz alá, és ne alkalmazz közvetlenül vízre.
+Ne használjon tisztítást vagy almappát a HoloLens, és ne használja víz alá, és ne használjon közvetlenül rá vizet.
 
-A vizor megtisztításához távolítson el minden bögret egy camel vagy egy kecskeszőrkefe vagy egy villanykörte stílusú objektívbeszúró segítségével. Kis mennyiségű leszűkített vizet használjon a mikrofiber pára leereszkedő fényében, majd a segítségével körkörös mozgásban törölje a vizor arcot.
+A vizor megtisztításához távolítson el minden bögret egy camel vagy egy kecskeszőrkefe vagy egy villanykörte stílusú objektívsorral. Kis mennyiségű szűrt vizet használjon a mikrofiber-pára leereszkedő fényében, majd ezzel törölje körkörös mozgással a vizort.
 
-Az eszköz többi része, többek között a fej-sáv és az eszközkarok tisztítására használjon lint-mentes, soapot és vizet is megszabadító kátyút. Az újra HoloLens használat előtt hagyja teljesen megszivárni.
+Az eszköz többi része, beleértve a fejszalagot és az eszközkart is, tisztításhoz használjon lint-free típusú, soap-val és vízjelekkel felruházható kátyút. Az újra HoloLens használat előtt hagyja teljesen megszivárni.
 
 ![A vizor tisztítását bemutató kép.](images/hololens-cleaning-visor.png)
 
 ## <a name="finding-the-serial-number"></a>A sorozatszám megkeresása
 
-A rendszer a HoloLens (1. generációs) eszközök sorozatszámát a jobb objektív alá nyomtatja.
-1. Tartsa az eszközt Ön előtt, mintha elhasználja a fején. Úgy, hogy az eszköz előre és felfelé néz.
-1. Ha az objektív továbbra is előre néz, fordítsa lefelé az eszközt, hogy az alul látható.
-1. A jobb oldali objektív most a bal oldalon lesz, a sávon a objektív alatt a sorozatszám van kinyomtatva. 
+A rendszer a jobb HoloLens (1. generációs) eszközök sorozatszámát nyomtatja ki.
+1. Tartsa az eszközt Ön előtt, mintha elhasználja a fején. Úgy, hogy az eszköz előre és felfelé halad.
+1. Ha az objektív továbbra is előre néz, fordítsa lefelé az eszközt, hogy lássa az alsót.
+1. A jobb oldali objektív most a bal oldalon lesz, a sávon az objektív alatt a sorozatszám van kinyomtatva. 
 
 A sorozatszám egy csatlakoztatott számítógépen is megtalálható:
 
 1. Az eszköz csatlakoztatása
-1. Nyissa meg **ezt a számítógépet a** fájlkezelőben
+1. Lépjen az **Ez a számítógép a** fájlkezelőben lapra
 1. Kattintson a jobb **gombbal, és válassza** a HoloLens tulajdonságait
 1. Itt megjelenik az eszköz sorozatszáma. Az alábbi képernyőképhez hasonló.
 
    <img src="images/hl1-serial-number.png" width="400" height="600" alt="Properties page in Windows 10 for HoloLens-3TNKV"/>
 
 > [!div class="nextstepaction"]
-> [A HoloLens beállítása és HoloLens beállítása](hololens1-setup.md)
+> [A saját HoloLens beállítása és HoloLens (1. generációs)](hololens1-setup.md)

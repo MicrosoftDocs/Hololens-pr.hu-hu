@@ -1,41 +1,41 @@
 ---
 title: Belső előzetes verzió a Microsoft HoloLens
-description: Megismerheti az Insider-buildek első lépéseit, és értékes visszajelzést adhat a következő jelentős operációsrendszer-frissítésünkről a HoloLens.
+description: Ismerje meg az Insider-buildek első lépéseit, és adjon értékes visszajelzést a következő jelentős operációsrendszer-frissítésünkről a HoloLens.
 ms.prod: hololens
 ms.sitesec: library
-author: scooley
-ms.author: scooley
+author: evmill
+ms.author: v-evmill
 ms.topic: article
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 08/16/2021
+ms.date: 09/10/2021
 ms.reviewer: ''
-manager: laurawi
+manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cabf35d44cdd144151e048d7a6e14e391629d00a
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.openlocfilehash: 84ec45a4bb05eb28106e4bfdc915a18ae6330767
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428110"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032607"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Belső előzetes verzió a Microsoft HoloLens
 
-Üdvözöljük az Insider előzetes verziójának legújabb buildjeiben HoloLens! Az első lépések [egyszerűek,](hololens-insider.md#start-receiving-insider-builds) és értékes visszajelzést biztosítanak az operációs rendszer következő jelentős frissítésével kapcsolatban a HoloLens.
+Üdvözöljük az Insider előzetes verziójának legújabb buildjeiben, HoloLens! Az első lépések [egyszerűek,](hololens-insider.md#start-receiving-insider-builds) és értékes visszajelzést adhatunk a következő jelentős operációsrendszer-frissítésünkről a HoloLens.
 
 ## <a name="windows-insider-release-notes"></a>Windows Belső kibocsátási megjegyzések
 
-Izgatottan várjuk, hogy új funkciókat Windows Insidersbe. Az új buildek a fejlesztői és bétaverziós csatornákra lesznek felkísértve a legújabb frissítéseket. Ezt az oldalt folyamatosan frissítjük, ahogy további funkciókkal és frissítésekkel egészül ki a Windows Insider buildje. Legyen izgatott, és készen áll arra, hogy ezeket a frissítéseket a valóságba keverje.
+Izgatottan várjuk, hogy új funkciókat Windows Insidersbe. Az új buildek a fejlesztői és bétaverziós csatornákra lesznek felkísértve a legújabb frissítéseket. Ezt az oldalt folyamatosan frissítjük, ahogy további funkciókat és frissítéseket adunk hozzá a Windows Insider buildjeinkhez. Legyen izgatott, és készen áll arra, hogy ezeket a frissítéseket a valóságba keverje.
 
 Ez a továbbfejlesztett hibaelhárítási és eszközjelentésekkel, a kioszkmód egyes javított hibáival, a tanúsítványmegjelenítővel, a bővített kezelhetőségi felülettel és a magasabb frissítési megbízhatósággal kapcsolatos. Ennek a funkciófrissítésnek egy új funkciója hamarosan HoloLens a mozgóplatformos mód. Tekintse meg a 2. HoloLens nagyszerű funkcióit!
 
 | Szolgáltatás                 | Leírás                | Felhasználó vagy forgatókönyv | Build bevezetve |
 |-------------------------|----------------------------|--------------|------------------|
-| [Platform mód mozgatás](#moving-platform-mode) | A moving Platform Mode bétaverziót vezet be, amely a konfigurálásakor lehetővé teszi a HoloLens 2 használatát az alacsony dinamikus mozgást tapasztaló nagy méretű állatokon. | Mind | 20348.1411 |
+| [Platform mód mozgatás](#moving-platform-mode) | Bevezeti a Mozgóplatform mód bétaverzióját, amely a konfiguráláskor lehetővé teszi HoloLens 2. használatát az alacsony dinamikus mozgást tapasztaló nagy méretű állatokon. | Mind | 20348.1411 |
 | [PFX-fájl támogatása a Tanúsítványkezelőben](#pfx-file-support-for-certificate-manager) | PFX-tanúsítványok hozzáadása Gépház felhasználói felületen | Végfelhasználó | 20348.1405 |
 | [Speciális diagnosztikai jelentés megtekintése a Gépház a HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | MDM diagnosztikai naplók megtekintése az eszközön | Hibaelhárítás | 20348.1405 |
 | [Offline diagnosztikai értesítések](#offline-diagnostics-notifications) | Visszajelzés a naplógyűjtéssel kapcsolatban | Hibaelhárítás | 20348.1405 |
@@ -51,15 +51,15 @@ Ez a továbbfejlesztett hibaelhárítási és eszközjelentésekkel, a kioszkmó
 ### <a name="it-admin-insider-feature-checklist"></a>Rendszergazdai belső szolgáltatás ellenőrzőlistája
 
 ✔️ Ha egyetlen Azure AD-fiókot szeretne beállítani az automatikus bejelentkezéshez, konfigurálja ezt az új [CSP-t.](#auto-login-policy-controlled-by-csp) <br>
-✔️ Ha úgy szeretné konfigurálni az alkalmazásokat, hogy a frissítés sikertelen frissítése után automatikusan kísérelje meg a frissítést, állítsa be ezt az új CSP-t az intelligens [újrapróbálkozáshoz.](#smart-retry-for-app-updates) <br>
+✔️ Ha úgy szeretné konfigurálni az alkalmazásokat, hogy a frissítés sikertelen frissítése után automatikusan kísérelje meg a frissítést, állítsa be ezt az új [CSP-t intelligens újrapróbálkozáshoz.](#smart-retry-for-app-updates) <br>
 ✔️ Ha jobban szeretné szabályozni az operációs rendszer frissítéseit, tekintse meg az újonnan engedélyezett frissítési [szabályzatokat.](#improved-update-restart-detection-and-notifications) <br>
-✔️ Ha a vállalati alkalmazásokat az Microsoft Store-n keresztül szeretné elérhetővé tenni a vállalati áruházban, de csak a szervezet alkalmazásait szeretné engedélyezni, és nem a teljes áruházat, állítsa be ezt a [szabályzatot.](#use-only-private-store-apps-for-microsoft-store) <br>
-✔️ Ha szeretné tudni a tárterületet, az SSID-t vagy a BSSID-t a HoloLens-eszközein, tekintse meg ezeket a jelentéskészítési [CSP-ket.](#csp-changes-for-reporting-hololens-details) <br>
-✔️ Ha a WDAC használatával szeretné letiltani az alkalmazások vagy folyamatok indítását, de saját alkalmazásokat kell használnia, mostantól engedélyezheti a LOB-t a [WDAC-szabályzatban.](#use-wdac-and-lob-apps)
+✔️ Ha a vállalati alkalmazásokat az Microsoft Store-n keresztül szeretné elérhetővé tenni a vállalati áruházban, de csak a szervezet alkalmazásait szeretné engedélyezni, nem a teljes áruházat, állítsa be ezt a [szabályzatot.](#use-only-private-store-apps-for-microsoft-store) <br>
+✔️ Ha szeretné tudni a szabad tárterületet, az SSID-t vagy a HoloLens BSSID-ját, tekintse meg ezeket a jelentéskészítési [CSP-ket.](#csp-changes-for-reporting-hololens-details) <br>
+✔️ Ha a WDAC használatával szeretné letiltani az alkalmazások vagy folyamatok indítását, de saját használatra kész alkalmazásokat is használnia kell, mostantól engedélyezheti a LOB-t a [WDAC-szabályzatban.](#use-wdac-and-lob-apps)
 
 ### <a name="moving-platform-mode"></a>Platform mód mozgatás
 
-Az **Insider 20348.1411-es** buildjében bétaverzió-támogatással bővült a 2. verzió alacsony dinamikus mozgását indító platformokon való HoloLens támogatása. A build telepítése és a Mozgóplatform mód engedélyezése után a 2. HoloLens-t korábban nem elérhető környezetekben is használhatja, például nagy méretű teherszállítókban és nagy méretű állatokban. Jelenleg a funkció célja ezeknek az adott mozgó platformoknak a engedélyezése. Bár semmi sem akadályozza meg abban, hogy más környezetekben is megpróbálja használni a funkciót, a funkció célja, hogy először támogatást nyújtsunk ezekhez a környezetekhez.
+Az **Insider 20348.1411-es** buildjében bétaverziós támogatást biztosítunk az alacsony dinamikus mozgású mozgó platformok nyomon követéséhez HoloLens 2. verzióban. A build telepítése és a Platformáttelepítési mód engedélyezése után a 2. HoloLens-t korábban nem elérhető környezetekben is használhatja, például nagy méretű teherszállítókban és nagy méretű állatokban. Jelenleg a funkció célja ezeknek az adott mozgó platformoknak a engedélyezése. Bár semmi sem akadályozza meg abban, hogy más környezetekben is megpróbálja használni a funkciót, a funkció célja, hogy először támogatást nyújtsunk ezekhez a környezetekhez.
 
 Ha többet szeretne megtudni a támogatott funkciókról és az új funkció engedélyezéséről, látogasson el [a mozgóplatformra.](hololens2-moving-platform.md)
 
@@ -103,7 +103,7 @@ Az alábbi CSP-k új módokkal frissültek az adatok jelentésére a HoloLens es
 
 #### <a name="devdetail-csp---free-storage"></a>DevDetail CSP – Ingyenes Storage
 
-A DevDetail CSP mostantól a szabad tárterületet is jelenti HoloLens eszközön. Ennek körülbelül egyeznie kell az alkalmazás Gépház lapján látható Storage értékkel. Az alábbiakban az ezt az információt tartalmazó csomópont található.
+A DevDetail CSP mostantól a szabad tárterületet is jelenti HoloLens eszközön. Ennek nagyjából egyeznie kell az alkalmazás Gépház lapján látható Storage értékkel. Az alábbiakban az ezt az információt tartalmazó csomópont található.
 
 - ./DevDetail/Ext/Microsoft/FreeStorage (csak GET művelet)
 
@@ -136,7 +136,7 @@ Példa syncml blobra (MDM-szállítóknak) a NetworkIdentifiers lekérdezéséhe
 
 ### <a name="auto-login-policy-controlled-by-csp"></a>CSP által vezérelt automatikus bejelentkezési szabályzat
 
-Ez az új AutoLogonUser szabályzat szabályozza, hogy a rendszer automatikusan bejelentkeztet-e egy felhasználót. Egyes ügyfelek identitáshoz kötött eszközöket szeretne beállítani, de nem szeretnék a bejelentkezési élményt. Imagine egy eszköz azonnali felvétele és távoli asszisztens használata. Vagy az is előnyös lehet, ha gyorsan el tudja terjeszteni a HoloLens, és lehetővé teszi a végfelhasználók számára a bejelentkezés gyorsítását.
+Ez az új AutoLogonUser szabályzat szabályozza, hogy a rendszer automatikusan bejelentkeztet-e egy felhasználót. Egyes ügyfelek identitáshoz kötött eszközöket szeretne beállítani, de nem szeretnék a bejelentkezési élményt. Imagine eszköz felvétele és azonnali távoli segítségnyújtás használata. Vagy az is előnyös lehet, ha gyorsan el tudja terjeszteni a HoloLens, és lehetővé teszi a végfelhasználók számára a bejelentkezés gyorsítását.
 
 Ha a szabályzat nem üres értékre van állítva, az automatikus bejelentkezési felhasználó e-mail-címét adja meg. Az automatikus bejelentkezés engedélyezéséhez a megadott felhasználónak legalább egyszer be kell jelentkeznie az eszközre.
 
@@ -153,7 +153,7 @@ Egy olyan eszközön, ahol ez a szabályzat konfigurálva van, a szabályzatban 
 
 ### <a name="improved-update-restart-detection-and-notifications"></a>Továbbfejlesztett frissítés-újraindításészlelés és értesítések
 
-Az aktív órák és a telepítési idő házirendje között lehetőség van arra, hogy ne kelljen újraindítani HoloLens eszközöket, amikor használatban vannak. Ha azonban nem történik újraindítás a szükséges frissítések telepítésének befejezéséhez, az késleltetné a frissítések telepítését. Most olyan szabályzatokat adtunk hozzá, amelyek lehetővé teszik az it-ita számára a határidők és a szükséges újraindítások kényszerítése, valamint a frissítések időben való telepítésének befejezését. A felhasználókat az újraindítás megkezdése előtt értesíteni lehet, és az it-szabályzatnak megfelelően késleltetni tudják az újraindítást.
+Az aktív órák és a telepítési idő házirendek között elkerülhető a HoloLens újraindítása, amikor használatban vannak. Ha azonban nem történik újraindítás a szükséges frissítések telepítésének befejezéséhez, az késleltetné a frissítések telepítését. Most olyan szabályzatokat adtunk hozzá, amelyek lehetővé teszik az it-ita számára a határidők és a szükséges újraindítások kényszerítése, valamint a frissítések időben való telepítésének befejezését. A felhasználókat az újraindítás megkezdése előtt értesíteni lehet, és az it-szabályzatnak megfelelően késleltetni tudják az újraindítást.
 
 A következő frissítési szabályzatok hozzáadása:
 
@@ -184,11 +184,13 @@ Mostantól a WDAC használatával letilthatja az alkalmazások vagy folyamatok i
 ### <a name="fixes-and-improvements"></a>Javítások és fejlesztések
 
 - Kijavítottunk egy ismert hibát, Eszközportál amikor nem volt rákérdezés [a zárolt fájlok letöltésére.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
-- Ki van [javítva a fájlfeltöltési és -Eszközportál időkorreklú frissítések ismert problémája.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
+- Kijavítottunk egy ismert hibát a Eszközportál és letöltés [időkorrekta miatt.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - A megfelelőségi tulajdonságok jelentésével kapcsolatos problémák elhárítása HoloLens eszközökről; Előfordulhat, hogy újraindításra van szükség ahhoz, hogy a megfelelő jelentéskészítés aktiválódjon az Insider-buildek esetén.  
-- Engedélyezve van egy hozzárendelt hozzáférési [API,](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) így az alkalmazások mostantól megállapíthatják, hogy egy HoloLens fut-e kioszkmódban a felhasználói fiókba bejelentkezett HoloLens.
+- Engedélyezte a [Hozzárendelt](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) hozzáférés API-t, így az alkalmazások mostantól megállapíthatják, hogy egy HoloLens fut-e kioszkmódban a felhasználói fiókba bejelentkezett HoloLens.
 - Frissítettük a Remote Assist beépített verzióját, amely friss flashre van telepítve.
 - A 2D-alkalmazások gamepad-feldolgozása le lett tiltva az Insider-buildek esetében. Az eltávolítással az alkalmazások mostantól szabadon használhatja közvetlenül a Gamepad API-kat, és hozzáférhetnek a vezérlők teljes készletéhez, és bármit megtesznek, amit csak szeretne. A fejlesztőknek a Gamepad API-kat kell használniuk a Gamepad bemenetének használhatja. Példa a [Gamepad osztályra (Windows. Gaming.Input) – Windows UWP-alkalmazások](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true)
+- Kijavítottunk egy hibát, amely miatt az első felhasználói bejelentkezés után az OOBE leállt olyan esetekben, amikor AAD-csoportalapú kioszkkonfigurációkat használtak.
+- Javítva lett a frissítési értesítések és párbeszédpanelek megjelenítésével kapcsolatos probléma az eszköz újraindításához.
 
 ## <a name="start-receiving-insider-builds"></a>Insider-buildek fogadásának kezdete
 
@@ -196,35 +198,35 @@ Mostantól a WDAC használatával letilthatja az alkalmazások vagy folyamatok i
 > Ha a közelmúltban nem frissített, indítsa újra az eszközt az állapot frissítéséhez, és szerezze be a legújabb buildet.
 >
 > - Az "Eszköz újraindítása" hangparancs jól működik.
-> - Az újraindítási gombot a következő Gépház/Windows Insider Program.
+> - Az újraindítási gombot a Gépház/Windows Insider Program.
 >
 > Előfordulhat, hogy egy hiba történt a háttérben, amely miatt előfordulhatott, hogy ezzel vissza fog menni a útjára.
 
-A 2. HoloLens-eszközön válassza az **Update** Gépház Security &  >  **lehetőséget Windows Insider Program** és válassza az  >   Első **lépések lehetőséget.** Csatolja a regisztrációhoz használt fiókot Windows Insiderben.
+A 2. HoloLens eszközön válassza az **Update** Gépház Security &  >  **lehetőséget Windows Insider Program** és válassza az  >   Első **lépések lehetőséget.** Csatolja a regisztrációhoz használt fiókot Windows Insiderben.
 
-Windows belső csatorna most a Csatornákra van átköltözve. A **Gyors** kör lesz a **fejlesztői** csatorna, a **Lassú** kör lesz a **Béta csatorna,** a kiadási **előnézeti** kör pedig a kiadási **előnézeti csatorna** lesz. A leképezés így néz ki:
+Windows belső csatorna most már a Csatornákra van átköltözve. A **Gyors** kör lesz a  **fejlesztői** csatorna, a lassú kör lesz a **Béta csatorna,** a kiadási **előnézeti** kör pedig a kiadási **előnézeti csatorna** lesz. A leképezés így néz ki:
 
 ![Windows A belső csatornák magyarázata.](images/WindowsInsiderChannels.png)
 
 További információ: [Introducing Windows Insider Channels](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) on Windows Blogs (A belső csatornák Windows blogok).
-Ezután válassza az **Aktív fejlesztés** a Windows lehetőséget, válassza ki, hogy szeretné-e fogadni a **Dev Channelt** vagy **Béta csatorna** buildeket, és tekintse át a program feltételeit.
-A **befejezéshez válassza > Újraindítás most** lehetőséget. Miután az eszköz újraindult, a **Gépház > Update & Security > Frissítések** keresése lapra ásva szerezze be a legújabb buildet.
+Ezután válassza az **Aktív fejlesztés** a Windows lehetőséget, válassza ki, hogy szeretné-e megkapni a **Dev Channelt** vagy Béta csatorna **buildeket,** és tekintse át a program feltételeit.
+A **befejezéshez válassza > Újraindítás most** lehetőséget. Miután az eszköz újraindult, a **Gépház > Update & Security > Frissítések** keresése lapra ásás a legújabb build lekért verziójára.
 
-### <a name="update-error-0x80070490-work-around"></a>A 0x80070490 hiba
+### <a name="update-error-0x80070490-work-around"></a>A 0x80070490 hibakód frissítése
 
 Ha frissítési hibát 0x80070490 fejlesztői vagy bétaverziós csatornán való frissítéskor, próbálkozzon a következő rövid távú munkával. Ez magában foglalja a belső csatorna áthelyezését, a frissítés be- és áthelyezését, majd az Insider-csatorna vissza mozgatát.
 
 #### <a name="stage-one---release-preview"></a>Első fázis – Előzetes verzió
 
-1. Gépház Update & Security (& frissítése) gombra, Windows Insider Program válassza a Release Preview Channel (Előzetes **verziójú csatorna kiadása) lehetőséget.**
+1. Gépház a Security & frissítése, majd Windows Insider Program a Release Preview Channel (Előzetes **verziójú csatorna) lehetőséget.**
 
-2. Gépház, Update & Security, Windows Update, Frissítések **keresése.** A frissítés után folytassa a második fázisra.
+2. Gépház, Update & Security, Windows Update, **Frissítések keresése.** A frissítés után folytassa a második fázisra.
 
 #### <a name="stage-two---dev-channel"></a>Második fázis – Fejlesztői csatorna
 
 1. Gépház Update & Security (Biztonsági frissítés) Windows Insider Program válassza a **Dev Channel (Fejlesztői csatorna) lehetőséget.**
 
-2. Gépház, Update & Security, Windows Update, Frissítések **keresése.**
+2. Gépház, Update & Security, Windows Update, **Frissítések keresése.**
 
 ## <a name="ffu-download-and-flash-directions"></a>FFU letöltési és flash utasítások
 

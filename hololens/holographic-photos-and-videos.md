@@ -16,11 +16,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: daced6fab65f779b7bd670bf1275f99ae5311d3f
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427722"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032610"
 ---
 # <a name="create-mixed-reality-photos-and-videos"></a>Vegyes valóságú fényképek és videók létrehozása
 
@@ -31,7 +31,7 @@ A vegyes valóságú rögzítés személyes nézőpontot használ, hogy mások i
 Bár a videók ismerősök és munkatársak között is megoszthatók, a videók másoknak is segíthetnek megtanítani egy alkalmazás használatát, vagy problémákat kommunikálni az alkalmazásokkal és a felhasználói élményekkel.
 
 > [!NOTE]
-> Ha nem tud vegyes valóságot rögzíteni, és a HoloLens munkahelyi eszköz, forduljon a rendszergazdához. A kamerához való hozzáférés céges szabályzattal korlátozható.
+> Ha nem tud vegyes valóságot rögzíteni, és a HoloLens egy munkahelyi eszköz, forduljon a rendszergazdához. A kamerához való hozzáférés céges szabályzattal korlátozható.
 
 ## <a name="capture-a-mixed-reality-photo"></a>Vegyes valóságú fénykép rögzítése
 
@@ -63,7 +63,7 @@ Használja ismét a Start (Indítás) kézmozdulatot a fényképek rögzítésé
 
 ## <a name="capture-a-mixed-reality-video"></a>Vegyes valóságú videó rögzítése
 
-Többféleképpen rögzíthet vegyes valóságot bemutató videót a HoloLens; használhat hardvergombokat, hanggombokat vagy Start menü.
+Többféleképpen is rögzíthet vegyes valóságot bemutató videót a HoloLens; Használhatja a hardvergombokat, a hangot vagy a Start menü.
 
 ### <a name="hardware-buttons-to-record-videos"></a>Hardvergombok videók rögzítéséhez
 
@@ -74,11 +74,11 @@ A videók rögzítésének leggyorsabb módja, ha  egyidejűleg  nyomja le és t
 
 ### <a name="voice-to-record-videos"></a>Videók hangalapú rögzítésére
 
-A HoloLens 2004-es (és újabb) verzióján mondja el a "Rögzítés elkezd" szót. A rögzítést a "Rögzítés leállítása" szóval állíthatja le.
+A HoloLens 2004-es (és újabb) verziójában mondja el a "Rögzítés kezdete" szót. A rögzítést a "Rögzítés leállítása" szóval állíthatja le.
 
-A HoloLens (1. generációs) vagy HoloLens 2. HoloLens 1903-as verziójában például: "Hey Cortana, start recording". A rögzítést a "Hey Cortana, stop recording" (Hé, Cortana, állítsa le a rögzítést) mondja.
+A HoloLens (1. generációs) vagy HoloLens 2. HoloLens 1903-as verziójában, például: "Hey Cortana, start recording". A rögzítés leállításhoz mondja ki a "Hey Cortana, stop recording" (Hé, Cortana, állítsa le a felvételt).
 
-### <a name="start-menu-to-record-videos"></a>Start menü videók rögzítésének Start menü
+### <a name="start-menu-to-record-videos"></a>Start menü videók rögzítésének a megtekintése
 
 A Start kézmozdulattal váltsa a **Start menüt,** majd válassza a **Videó ikont.** Mutasson a fejre a rögzíteni kívánt adatok irányában, majd koppintson a légi koppintással [a](hololens2-basic-usage.md#touch-holograms-near-you) rögzítéshez. Három másodperces visszaszámlálás lesz, és megkezdődik a felvétel.
 
@@ -147,13 +147,13 @@ Tippek:
 
 A [holografikus Windows 21H1-es](hololens-release-notes.md#windows-holographic-version-21h1)verziója előtt egy vegyes valóságú fénykép vagy videó rögzítése után megjelenik egy előnézet. A **megosztási asszisztenst** az előnézet fölötti Megosztás ikonra kattintva hozhatja meg. Innen kiválaszthatja azt a végpontot, amelyen meg szeretné osztani a fényképet vagy videót.
 
-A Windows Holographic 21H1-es verziójában egy vegyes valóságú fénykép vagy videó rögzítése után megjelenik egy előnézet. A **megosztási asszisztenst** az előnézet fölötti Megosztás ikonra kattintva hozhatja meg. Itt kiválaszthatja azt a végpontot (Mail, OneDrive stb.), amelyre meg szeretné osztani a fényképet vagy videót. A **-HoloLens -Gépház -> -> -experiences**(Rendszer – megosztott élmények) lehetőség HoloLens engedélyezheti a megosztást a közeli eszközökkel. További részletekért olvassa el a Dolgok megosztása a közeli eszközökkel a [Windows 10.](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)
+A Windows Holographic 21H1-es verziójában egy vegyes valóságú fénykép vagy videó rögzítése után megjelenik egy előnézet. A **megosztási asszisztenst** az előnézet fölötti Megosztás ikonra kattintva hozhatja meg. Itt kiválaszthatja azt a végpontot (Mail, OneDrive stb.), amelyre meg szeretné osztani a fényképet vagy videót. Azt is engedélyezheti, HoloLens a közeli eszközökkel való megosztást a **-Gépház -> -> megosztott élmények** között. További részletekért olvassa el a Dolgok megosztása a közeli eszközökkel a [Windows 10.](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)
 
 > [!TIP] 
 > A vegyes valóságú fényképeket és videókat a OneDrive is megoszthatja, ha automatikusan feltölti a vegyes valóságú fényképeket és videókat. Nyissa meg a OneDrive alkalmazást a HoloLens, és jelentkezzen be egy személyes **[Microsoft-fiók,](https://account.microsoft.com)** ha még nem. Válassza a **Gépház** ikont, majd a **Kamera feltöltése lehetőséget.** Kapcsolja be a Kamera feltöltése adatokat. A vegyes valóságú fényképek és videók mostantól fel lesznek töltve OneDrive amikor elindítja az alkalmazást a HoloLens.
 
 > [!NOTE]
-> A kamerafeltöltést csak abban az OneDrive, ha személyes OneDrive van bejelentkezve a Microsoft-fiók. Ha munkahelyi vagy iskolai HoloLens beállította a munkahelyi vagy iskolai fiókkal, hozzáadhat egy személyes Microsoft-fiók a OneDrive alkalmazásban a funkció engedélyezéséhez.
+> Csak akkor engedélyezheti a kamerafeltöltést a OneDrive, ha személyes OneDrive van Microsoft-fiók. Ha munkahelyi HoloLens vagy iskolai fiókkal hoz létre munkahelyi vagy iskolai fiókot, a funkció engedélyezéséhez hozzáadhat egy személyes Microsoft-fiók a OneDrive alkalmazásban.
 
 ## <a name="limitations-of-mixed-reality-capture"></a>A vegyes valóság rögzítésének korlátozásai
 
@@ -162,7 +162,7 @@ A Windows Holographic 21H1-es verziójában egy vegyes valóságú fénykép vag
 
 ### <a name="maximum-recording-length"></a>Rögzítés maximális hossza
 
-Az HoloLens holographic Windows 20H2 verzió előtti 2 eszközön az eszközön rögzített videók hossza legfeljebb öt perc volt.
+A HoloLens Holographic Windows 20H2 verzió előtti 2 eszközön az eszközön rögzített videók legfeljebb öt percig voltak korlátozva.
 
 Az ügyfelek visszajelzései miatt növeltünk a vegyes valóságú [rögzítések hosszát.](holographic-photos-and-videos.md) A vegyes valóságú rögzítések alapértelmezés szerint nem lesznek 5 percre korlátozva, hanem a maximális rögzítési hosszt számítják ki a rendelkezésre álló lemezterület alapján. Az eszköz a teljes lemezterület 80%-ának megfelelő szabad lemezterület alapján megbecsüli a videófelvétel maximális időtartamát.
 

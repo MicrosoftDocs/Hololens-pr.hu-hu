@@ -13,11 +13,11 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: cf3770dd55498dbe98abf88d002247646e4db9be
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427271"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036145"
 ---
 # <a name="getting-around-hololens-2"></a>Tájékozódás a HoloLens 2-ben
 
@@ -35,17 +35,17 @@ A HoloLens a hologramok a fizikai környezettel ötvözik a digitális világot,
 
 A holografikus képkockák olyan pozícióba ékezetesek, ahol a tekintete a legérzékenyebb a részletekre, a átlátó objektívek pedig tisztán hagyják a periférialátást. A térbeli hangokkal a hologramokat akkor is figyelheti, ha az Ön mögött van. És mivel HoloLens a fizikai környezetet, hologramokat is helyezzen valós objektumokra, például táblákra és falakra.
 
-A HoloLens sokban hasonló az intelligens telefonnal való használathoz. A kézzel holografikus ablakokat, menüket és gombokat is megérinthet és kezelhet.  
+A HoloLens való ismerkedni sokban olyan, mint az okostelefonok használata. A kézzel holografikus ablakokat, menüket és gombokat is megérinthet és kezelhet.  
 
-Ha már ismeri ezeket az alapszintű interakciókat, a HoloLens el a problémákat.
+Ha már ismeri ezeket az alapszintű interakciókat, a HoloLens fog tudni ismerkedni.
 
 > [!TIP]
-> Ha jelenleg HoloLens van, a **Tippek** alkalmazás literális gyakorlati oktatóanyagokat biztosít a felhasználókkal való HoloLens.  
+> Ha jelenleg HoloLens van a közelben, a **Tippek** alkalmazás literális gyakorlati oktatóanyagokat biztosít a felhasználókkal való HoloLens.  
 > Használja az indítási kézmozdulatot a **Start menüre,** vagy mondja ki a "Go to Start" (Ugrás az indításhoz) lehetőséget, és válassza a **Tippek.**
 
 ## <a name="the-hand-tracking-frame"></a>A kézkövetési képkocka
 
-HoloLens rendelkezik olyan érzékelőkkel, amelyek néhány lábat látnak Bármelyik oldalon. Ha a kézhasználatot használja, akkor a kereten belül kell tartania őket, különben HoloLens nem fogják látni őket. A képkocka azonban mozgásban van.  
+HoloLens rendelkezik olyan érzékelőkkel, amelyek a két oldaluktól néhány lábat látnak. Ha a kézhasználatot használja, akkor a kereten belül kell tartania őket, különben HoloLens nem fogják látni őket. A képkocka azonban mozgásban van.  
 
 ![Kép a HoloLens-követési képkockáról.](./images/hololens-2-gesture-frame.png)
 
@@ -55,7 +55,7 @@ Ha egy hologram van a közelében, közelről vigye a kézzel, és egy fehér k�
 
 Ha **egy** hologramot fog  a közelében, csippentse össze a hüvelyk- és **index-ujjlenyomatát** a hologramon, és tartsa lenyomva. Hogy engedjen el, engedje el az étkét. Ezzel a **kézmozdulattal** mozgathatja, átméretezheti és elforgathatja a 3D-s objektumokat és alkalmazásablakokat a vegyes valóság kezdőlapon.
 
-A helyi menüt úgy hozhatja meg, mint az alkalmazáscsempéken az Start menü **koppintson** és tartsa lenyomva az érintőképernyőn láthatóakhoz hasonlót.
+Ha a helyi **menüt**(például az alkalmazáscsempéken találhatókat)  szeretné látni az Start menü koppintson és tartsa lenyomva az érintőképernyőn láthatóakhoz hasonlót.
 
 ## <a name="use-hand-ray-for-holograms-out-of-reach"></a>A kéz sugarának használata a hologramok nem elérhető eléréséhez
 
@@ -92,7 +92,7 @@ A **légi koppintással és** lenyomva nyomással végezze el a következő műv
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxng]
 
-A Start kézmozdulat megnyitja a **Start menü.**  A Start kézmozdulat végrehajtásához tartsa a kézmozdulatát az Ön felé néző kezében. Megjelenik egy **Indítás ikon** a belső belső burkolat felett. Koppintson erre az ikonra a másik kézzel.  A Start menü megnyílik **ott, ahol a következőt keresi:**.
+A Start kézmozdulat megnyitja **a Start menü.**  A Start kézmozdulat végrehajtásához tartsa a kézmozdulatát az Ön felé néző kezében. Megjelenik egy **Indítás ikon** a belső belső burkolat felett. Koppintson erre az ikonra a másik kézzel.  A Start menü a következő hely **nyílik meg:**.
 
 > [!TIP]
 >
@@ -103,7 +103,7 @@ A Start kézmozdulat megnyitja a **Start menü.**  A Start kézmozdulat végreha
 
 ![A Start ikont és a Start kézmozdulatot bemutató kép.](./images/hololens-2-start-gesture.png)
 
-A **Start menü** a Start kézmozdulattal zárhatja be, ha a Start menü meg van nyitva.  A következőt is meg Start menü a "Close" (Bezárás) szót.
+A **Start menü** a Start kézmozdulattal zárhatja be, Start menü megnyitott fájl.  Azt is meg lehet nézni, hogy Start menü a "Close" (Bezárás) szót.
 
 ### <a name="one-handed-start-gesture"></a>Egy egy szándékú indítási kézmozdulat
 
@@ -121,17 +121,17 @@ A Start kézmozdulatot egyetlen kézzel is végrehajthatja. Ehhez tartsa a kéz�
 
 Készen áll arra, hogy ezeket a kéz-interakciókat tesztelje?
 
-A telepített alkalmazásokat a [](holographic-home.md) Start menü a következő HoloLens találhatja [meg Microsoft Store:](holographic-store-apps.md).
+A telepített alkalmazásokat a [](holographic-home.md) Start menü a következő HoloLens [találhatja meg Microsoft Store](holographic-store-apps.md).
 
 Ahogy Windows gép mindig az asztalon kezdi a felhasználói élményt, HoloLens mindig a vegyes valóság **kezdőlapon** indul, amikor be van kapcsolva.  A Start menü alkalmazásablakokat, alkalmazásindítókat és 3D-tartalmakat nyithat meg és helyezzen el a vegyes valóság kezdőlapján. A fizikai térben való elhelyezésüket a HoloLens.
 
 Nyissa meg **Start menü** alkalmazást, majd válassza **Gépház** alkalmazás csempéjét. Megnyílik egy alkalmazásablak az Ön előtt.
 
-Gépház egy 2D-s HoloLens használó **alkalmazás.**  Nagyon hasonlít a PC-n Windows alkalmazáshoz.
+Gépház egy 2D-s HoloLens használó **alkalmazásalkalmazás.**  Nagyon hasonlít a pc-n Windows alkalmazáshoz.
 
-Most újra megnyithatja a **Start menü,** és kiválaszthatja **a Tippek** alkalmazás csempéjét. Az alkalmazás **3D-s** alkalmazásindítója megjelenik az Ön előtt. Az alkalmazás megnyitásához válassza a  lejátszás gombot a indítón.
+Most ismét megnyithatja a **Start menü,** és kiválaszthatja **Tippek** alkalmazás csempéjét. Az alkalmazás **3D-s** alkalmazásindítója megjelenik az Ön előtt. Az alkalmazás megnyitásához válassza a  lejátszás gombot a indítón.
 
-Tippek egy példa egy modern **alkalmazásra.** A modern alkalmazások elhoznak a vegyes valóságból, amikor az fut, és az lesz az egyetlen alkalmazás, amit lát.  A kilépéshez meg kell Start menü a mixed **reality kezdőlap** gombját.
+Tippek egy példa egy modern **alkalmazásra.** A modern alkalmazások elhoznak a vegyes valóságból, amikor az fut, és az lesz az egyetlen alkalmazás, amit lát.  A kilépéshez meg kell Start menü a mixed **reality kezdőlapgombot** alul.
 
 ### <a name="power-menu-from-start"></a>A Power menü a Start menüből
 
@@ -147,78 +147,78 @@ Tippek egy példa egy modern **alkalmazásra.** A modern alkalmazások elhoznak 
 
 3. Válassza ki a felhasználói profil képét a saját kezűleg vagy a "Power" hangparancs használatával.
 
-4. Megjelenik egy menü, amely az eszköz kijelentkeztet, újraindítható vagy leállítható beállításait tartalmaz:
+4. Megjelenik egy menü, amely az eszköz kijelentkeztető, újraindítható vagy leállítható beállításait is tartalmaz:
 
    <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
 
-5. Válassza ki a menüelemet, hogy kijelentkezjön, újraindítsa vagy leállítsa HoloLens. Előfordulhat, hogy a Kijelentkezás lehetőség nem érhető el, ha az eszköz egyetlen [Microsoft-fiókhoz (MSA)](hololens-identity.md)vagy helyi fiókhoz van beállítva.
+5. Válassza ki a menüelemet a regisztrációhoz, az újraindításhoz vagy a HoloLens. Előfordulhat, hogy a Kijelentkezás lehetőség nem érhető el, ha az eszköz egyetlen [Microsoft-fiókhoz (MSA)](hololens-identity.md)vagy helyi fiókhoz van beállítva.
 
-6. Zárja be a menüt úgy, hogy máshová Start menü a Start kézmozdulattal.
+6. Zárja be a menüt máshová való érintéssel, vagy zárja Start menü a Start kézmozdulattal.
 
 [Itt további információt olvashat a Start menü](holographic-home.md) vegyes valóság kezdőlapról, beleértve az alkalmazások használatát és kezelését a 2. HoloLens oldalon.
 
 ## <a name="move-resize-and-rotate-holograms"></a>Hologramok áthelyezése, átméretezése és elforgatása
 
-A vegyes valóságú otthonban az alkalmazásablakokat és a 3D-objektumokat kéz-, sugár- és hangparancsokkal mozgathatja, átméretezheti és elforgathatja.
+A vegyes valóságú otthonban az alkalmazásablakok és 3D-objektumok mozgatása, átméretezése és elforgatása a kéz-, kéz-sugár- és hangparancsokkal.
 
-### <a name="moving-holograms"></a>Hologramok mozgatás
+### <a name="moving-holograms"></a>Hologramok mozgatva
 
 Helyezzen át egy hologramot vagy alkalmazást az alábbi lépésekkel:
 
-1. Ragadja meg a hologramot a hologramra rátpintva az indexaját és a ujjlenyomatát, vagy a kézzel lefelé, majd zárja be a kezében.  Ragadjon meg egy 3D hologramot bárhol a kék határolókereten belül.  Alkalmazásablakhoz ragadja meg annak címsorát.
-1. Anélkül, hogy el kellene hagynia a hologramot, mozgassa a kézzel a hologramot. Ha így mozgat egy alkalmazásablakot, az alkalmazás ablaka automatikusan arcot vált a mozgása közben, így könnyebben használható az új pozíciójában.  
-1. Engedje el az ujját, hogy eltenjük.
+1. Ragadja meg a hologramot a hologramon a mutató-ujjlenyomat és -ujjlenyomat csippentésével, vagy a kézzel lefelé, majd zárja be a háta felett.  Ragadjon meg egy 3D hologramot bárhol a kék határolókereten belül.  Alkalmazásablakhoz ragadja meg annak címsorát.
+1. Anélkül, hogy el kellene hagynia, mozgassa a kezében a hologramot. Ha így mozgat egy alkalmazásablakot, az alkalmazás ablaka automatikusan arcot vált a mozgása közben, így könnyebben használhatja az új pozícióját.  
+1. Engedje el az ujját, hogy eltoldja.
 
 ### <a name="resizing-holograms"></a>Hologramok átméretezése
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3ZYIb]
 
-A 3D hologramok és az alkalmazásablakok sarkában megjelenő átméretezési fogópontokat fogja meg és használja az átméretezéshez. 
+A 3D hologramok és alkalmazásablakok sarkában megjelenő átméretezési fogópontokat fogja meg és használja az átméretezéshez. 
 
-Az alkalmazásablakok ezen a módon való átméretezésekor az ablak tartalma ennek megfelelően nő, és könnyebben olvashatóvá válik.
+Az alkalmazásablakok ezen a módon való átméretezésekor az ablak tartalmának mérete ennek megfelelően nő, és könnyebben olvashatóvá válik.
 
-Ha át szeretne méretezni egy  alkalmazásablakot úgy, hogy több tartalom jelenjen meg az ablakban, használja az alkalmazásablak oldalán és alsó szélein található átméretezési fogópontokat.
+Ha át szeretné méretezni az  alkalmazásablakot úgy, hogy több tartalom jelenjen meg az ablakban, használja az alkalmazásablak oldalán és alsó szélén található átméretezési fogópontokat.
 
-Az Öntől távolabbi hologramok átméretezésének két módja van. A hologram két sarkát is megragadhatja, vagy használhatja az átméretezés vezérlőit.
+Az Öntől távolabbi hologramok átméretezésének két módja van. A hologram két sarkát is megragadhatja, vagy használhatja az átméretezési vezérlőket.
 
 ### <a name="rotating-holograms"></a>Rotációs hologramok
 
-3D hologramok esetén ragadja meg és használja a határolókeret függőleges szélein megjelenő elforgatás fogópontokat.
+3D hologramok esetén ragadja meg és használja a határolókeret függőleges szélein megjelenő forgó fogópontokat.
 
-Alkalmazásablakok esetén az alkalmazásablakok áthelyezésének hatására az alkalmazás automatikusan elfordul, és ön előtt jelenik meg.
+Alkalmazásablakok esetén az alkalmazásablakok áthelyezésének hatására az alkalmazás automatikusan elforgatódik, és arccal jelenik meg.
 
-Egy 3D hologramot vagy alkalmazásablakot mindkét kézzel **(vagy** kézzel) egyszerre is megragadhat, majd:
+Egy 3D hologramot vagy alkalmazásablakot mindkét kézzel **(vagy** kézzel sugár) is foghat egyszerre, majd:
 
-- Helyezze közelebb egymáshoz vagy távolról a hologram átméretezését.
+- A hologram átméretezése érdekében helyezze közelebb vagy távolról a kézzel.
 - A hologram elforgatása érdekében mozgassa közelebbről és közelebbről a kézzel a törzsét.
 
 ### <a name="follow-me-stop-following"></a>Kövessen, és ne kövesse tovább
 
-Hologramok alkalmazásablakok és alkalmazásablakok ott maradnak, ahová a világba helyezte őket.  Ez nem mindig kényelmes, ha mozgásban kell lennie, és azt szeretné, hogy az alkalmazás látható maradjon. Ha meg kell kérnie egy alkalmazást, hogy kezdje el vagy állítsa le a követést, válassza az alkalmazás ablakának jobb felső sarkában (a Bezárás gomb mellett) a Követés **gombra** kattintva.   Az ezt követő alkalmazásablakok egy modern alkalmazásba is beemelődnek.
+Hologramok alkalmazásablakok és alkalmazásablakok a világ minden tájáról elérhetőek maradnak.  Ez nem mindig kényelmes, ha mozgásban kell lennie, és azt szeretné, hogy egy alkalmazás látható maradjon. Ha azt kéri egy alkalmazástól,  hogy kezdjen el vagy ne kövessen, válassza az alkalmazás ablakának jobb felső sarkában (a Bezárás gomb mellett) a Követés **gombra** kattintva.  A következő alkalmazásablak egy modern alkalmazásba is beemelődhet.
 
 ## <a name="use-hololens-with-your-voice"></a>A HoloLens használata a hangjával
 
-A hangjával a legtöbb olyan dolgot el tudja tenni, mint a két HoloLens, például egy gyors fényképen vagy egy alkalmazás megnyitásán.
+A hangjával a legtöbb olyan dolgot is meg tudja tenni, mint a két HoloLens, például egy gyors fényképen vagy egy alkalmazás megnyitásán.
 
 | Cél | Mondja el ezt |
 | - | - |
 | A Start menü megnyitása | "Ugrás az indításhoz" |
-| Válassza ezt: | A tekintet kurzorának felfelé mozgatásához mondja a "select" (kijelölés) lehetőséget. Ezután fordítsa el a fejet, hogy a kurzort a kijelölni kívánt dolog fölé helyezze, és mondja ki újra a "select" (kijelölés) lehetőséget. |
+| Válassza ezt: | A tekintet kurzorának felfelé mozgatásához mondja a "select" (kijelölés) lehetőséget. Ezután fordítsa el a fejet, hogy a kurzort a kijelölni kívánt dolog fölé helyezze, és mondja ki ismét a "select" (kijelölés) lehetőséget. |
 | Az elérhető beszédparancsok | "Mit mondjak?" |
 
  [További hangparancsok és beszédfelismerési módszerek HoloLens](hololens-cortana.md)
 
-## <a name="swipe-to-type"></a>Pöccintés a begépelhez
+## <a name="swipe-to-type"></a>Pöccintéssel gépeléssel
 
-Egyes ügyfelek gyorsabban "gépelnek" a virtuális billentyűzeten a begépelni kívánt szó alakjának megformálása által. A [Windows Holographic 21H1](hololens-release-notes.md#windows-holographic-version-21h1)verziójával mostantól pöccintsen egyszerre egy szót az ujjlenyomata hegyének a holografikus billentyűzet síkján való áthúzásával, a szó alakjának áthúzásával, majd az ujjlenyomata csúcsának a billentyűzetsíkról való eltolásával. Pöccintsen a követő szavak között anélkül, hogy le kellene nyomni a szóközt úgy, hogy a szavak között eltávolítja az ujját a billentyűzetről. A funkció akkor működik, ha pöccintés nyomát látja az ujjlenyomata billentyűzeten való mozgása után.
+Egyes ügyfelek gyorsabban "gépelnek" a virtuális billentyűzeten a begépelni kívánt szó alakjának megforgatása által. A [Windows Holographic 21H1](hololens-release-notes.md#windows-holographic-version-21h1)verziójával mostantól pöccintsen egyszerre egy szót úgy, hogy a holografikus billentyűzet síkján végigadja az ujjlenyomata hegyét, elforgatja a szó alakját, majd a billentyűzet síkján eltolást kelti az ujjlenyomata csúcsát. Pöccintéssel anélkül pöccinthet a szavak után, hogy le kellene nyomni a szóközt, ha a szavak között eltávolítja az ujját a billentyűzetről. A funkció akkor működik, ha pöccintéssel követi az ujját a billentyűzeten.
 
-Vegye figyelembe, hogy ez a funkció a holografikus billentyűzet természetéből adódóan nem mindig tud az ujjlenyomatával szemben ellenállást használni (ellentétben a mobiltelefonos kijelzővel). Ezt a funkciót nyilvános kiadásra értékeljük, ezért fontos a visszajelzése; ha hasznosnak találja a funkciót, vagy pozitív visszajelzést szeretne küldeni, kérjük, forduljon hozzánk a [Visszajelzési központ.](hololens-feedback.md)
+Vegye figyelembe, hogy ez a funkció a holografikus billentyűzet természetéből adódóan nem mindig tud az ujjlenyomatával szembeni ellenállást használni és elsajátítani (ellentétben a mobiltelefonos kijelzővel). Ezt a funkciót nyilvános kiadásra értékeljük, ezért fontos visszajelzése; ha hasznosnak találja a funkciót, vagy pozitív visszajelzést szeretne küldeni, kérjük, lépjen velünk velünk a [Visszajelzési központ.](hololens-feedback.md)
 
 ## <a name="next-steps"></a>Következő lépések
 
 Gratulálunk! Készen áll a 2. HoloLens használatára!
 
-Most már konfigurálhatja a 2 HoloLens-es konfigurációt az igényeinek megfelelően.  A következő lehetőségeket is kipróbálhatja:
+Most már konfigurálhatja a 2. HoloLens az igényeinek megfelelően.  Az egyéb lehetőségek, amelyekre szükség lehet, az alábbiak:
 
 - [Bluetooth-eszközök, például egér és billentyűzet csatlakoztatása](hololens-connect-devices.md)
 - [Alkalmazások telepítése az áruházból](holographic-store-apps.md)

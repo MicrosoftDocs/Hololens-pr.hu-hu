@@ -16,11 +16,11 @@ metadata:
   appliesto:
   - HoloLens 2
   ms.openlocfilehash: 85631d756285f4111016e39dc946733bb1e12d3c
-  ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+  ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
   ms.translationtype: MT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 09/10/2021
-  ms.locfileid: "124428255"
+  ms.lasthandoff: 09/13/2021
+  ms.locfileid: "126032676"
 title: HoloLens 2. kiadás – gyakori kérdések
 summary: ''
 sections:
@@ -170,24 +170,24 @@ sections:
       Ha segítségre van szüksége a Unity-azonosítóval, -fiókkal, -szervezettel vagy -előfizetésekkel kapcsolatos kérdésekhez, látogasson el a support.unity3d.com
 
 
-      Pixyz-specifikus támogatásért (a próba beváltása után) látogasson el a [Pixyz-software.com/support](http://pixyz-software.com/support)
+      Pixyz-specifikus támogatásért (a próbaverzió beváltása [](http://pixyz-software.com/support) után) látogasson el a Pixyz-software.com/support
 - name: Azure
   questions:
   - question: >
-      Hogyan tudom beváltani az 500 dolláros Azure-kreditemet?
+      Hogyan tudom beváltani az 500 dolláros Azure-kreditet?
     answer: >
-      Az 500 dolláros Azure-kreditek beváltához váltsa be Azure Pass promóciós kódját, és aktiválja az előfizetését. [További információ](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
+      Az 500 dolláros Azure-kreditek beváltához váltsa Azure Pass promóciós kódját, és aktiválja az előfizetését. [További információ](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
 
 
-      Tekintse át a Azure Pass [előfizetési szerződést és](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) [az ajánlat részleteit.](https://azure.microsoft.com/en-us/offers/azure-pass/)
+      Tekintse át Azure Pass [előfizetési szerződést és](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) [az ajánlat részleteit.](https://azure.microsoft.com/en-us/offers/azure-pass/)
   - question: >
       Mikor jár le az 500 dolláros Azure-kreditem?
     answer: >
-      Az 500 dolláros Azure-kredit 90 nappal az Azure-kulcskód aktiválása után lejár.
+      Az 500 dolláros Azure-kredit az Azure-kulcskód aktiválása után 90 nappal lejár.
   - question: >
       Mire használhatom az Azure-krediteket?
     answer: >
-      Az Azure-kreditekkel megkezdheti a microsoftos&#39;egyre bővülő felhőszolgáltatásokkal. A HoloLens 2 Development Edition tartalmazza az Azure-krediteket, amelyek lehetővé teszik az ügyfelek számára a vegyes valóságú alkalmazások gyors fejlesztését és tesztelését az Azure-ban. Az Azure-beli építés részletes adataiért látogasson el az [Azure-erőforrásokra](https://azure.microsoft.com/en-us/resources/)
+      Az Azure-kreditek használatával megkezdheti a microsoftos&#39;egyre bővülő felhőszolgáltatásokkal. A HoloLens 2 Development Edition tartalmazza az Azure-krediteket, amelyek lehetővé teszik az ügyfelek számára, hogy gyorsan nekivessnek az Azure-beli vegyes valóságú alkalmazások fejlesztésének és tesztelésének. Az Azure-beli építés részleteiért látogasson el az [Azure-erőforrásokra.](https://azure.microsoft.com/en-us/resources/)
   - question: >
-      Hol kaphatok további információt a vegyes valóságú Azure-szolgáltatásokról?
+      Hol kaphatok további információt az Azure vegyes valóságú szolgáltatásairól?
     answer: A Microsoft vegyes valóságú szolgáltatásokat kínál, hogy a fejlesztők vegyes valóságú megoldásokat hoznak létre és tesztelnek. [További információ](/windows/mixed-reality/develop/mixed-reality-cloud-services)

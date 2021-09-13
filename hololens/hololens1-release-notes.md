@@ -1,6 +1,6 @@
 ---
 title: HoloLens első (gen) kibocsátási megjegyzései
-description: Ismerje meg az új verziókban HoloLens frissítéseket.
+description: Ismerje meg az új verziók frissítéseit HoloLens frissítéseket.
 author: evmill
 ms.author: v-evmill
 manager: yannisle
@@ -13,11 +13,11 @@ audience: ITPro
 appliesto:
 - HoloLens 1
 ms.openlocfilehash: 0fb6c9ed1cd8d3ecc23975052eed54512a465bfb
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428347"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032787"
 ---
 # <a name="hololens-1st-gen-release-notes"></a>HoloLens első (gen) kibocsátási megjegyzései
 
@@ -32,14 +32,14 @@ A fejlesztők számára ez azt jelenti, HoloLens (1. generációs) alkalmazások
 
 | Szolgáltatás | Részletek |
 |---|---|
-| **Gyorsműveletek menü** | Ha egy alkalmazásban van, a Bloom-kézmozdulat megnyit egy Gyorsműveletek menüt, amely gyors hozzáférést biztosít a gyakran használt rendszer funkcióihoz anélkül, hogy el kell hagynia az alkalmazást. <br> A [Gyorsművel HoloLens etek kioszkmódban](hololens-kiosk.md) való gyorsműveletek menüjéről a Kioszk módban való gyorsműveletek beállítását és a kioszkmódban való beállítását lásd: Az adatok beállítása kioszkmódban.<br><br> |
-| **A videórögzítés leállítása a Start vagy a Gyorsműveletek menüből** | Ha a videórögzítést a Start menü vagy a gyorsműveletek menüből indítja el, akkor ugyanott leállíthatja a rögzítést. (Ne feledje, ezt hangparancsokkal is meg lehet tenni.) |
-| **Project egy Miracast-kompatibilis eszközre** | Project a HoloLens egy közeli Surface-eszközre vagy TV-re/monitorra, ha Microsoft Megjelenítési adaptert használ.  A **Start menüben** válassza **Csatlakozás** lehetőséget, majd válassza ki azt az eszközt, amelybe kivetíteni szeretné. **Megjegyzés:** Üzembe helyezheti a HoloLens, hogy a Miracast a fejlesztői mód engedélyezése nélkül használva. |
-| **Új értesítések** | A bejelentések megtekintése és megválaszolása a HoloLens, ahogy a számítógépeken is. Tekintet a válaszra vagy elvetni őket (vagy ha magával ragadó élményben van része, használja a Bloom-kézmozdulatot). |
+| **Gyorsműveletek menü** | Ha egy alkalmazásban van, a Bloom-kézmozdulat megnyit egy Gyorsműveletek menüt, amely gyors hozzáférést biztosít a gyakran használt rendszer funkcióihoz anélkül, hogy el kell hagynia az alkalmazást. <br> A [Gyorsműveletek kioszkmódban](hololens-kiosk.md) való beállítását HoloLens a Gyorsműveletek menüről a Kioszk módban.<br><br> |
+| **A videórögzítés leállítása a Start vagy a Gyorsműveletek menüből** | Ha a videórögzítést a Start menü vagy a gyorsműveletek menüből indítja el, leállíthatja a rögzítést ugyanott. (Ne feledje, ezt hangparancsokkal is meg lehet tenni.) |
+| **Project egy Miracast-kompatibilis eszközre** | Project a HoloLens egy közeli Surface-eszközre vagy TV-re/monitorra, ha Microsoft Megjelenítési adaptert használ.  A **Start menüben** válassza **Csatlakozás** lehetőséget, majd válassza ki azt az eszközt, amelybe kivetíteni szeretne. **Megjegyzés:** Üzembe helyezheti a HoloLens, hogy a Miracast a fejlesztői mód engedélyezése nélkül használva. |
+| **Új értesítések** | Tekintse meg a bejelentési bejelentéseket a HoloLens, ahogy a számítógépeken is. Tekintet a válaszra vagy elvetni őket (vagy ha magával ragadó élményben van része, használja a Bloom-kézmozdulatot). |
 | **HoloLens átfedések**<br>(fájlválasztó, billentyűzet, párbeszédpanelek stb.) | Olyan átfedéseket láthat, mint például a billentyűzet, a párbeszédpanelek, a fájlválasztó stb. a modern alkalmazások használata esetén. |
-| **Vizuális visszajelzési felület a kötetváltozáshoz** | A kötet fel-/le gombjainak HoloLens megjelenik a kötetszint vizualizációja. |
+| **Vizuális visszajelzési felület a kötetváltozáshoz** | A kötet fel-/le gombjainak HoloLens a kötetszint vizualizációja jelenik meg. |
 | **Új felhasználói felület az eszközindításhoz** | A rendszerindítási folyamat során egy betöltési jelzőt adtunk hozzá, amely vizuális visszajelzést ad a rendszer betöltéséről. Indítsa újra az eszközt, hogy megjelenik az új betöltési jelző – ez a "Hello" üzenet és a rendszerindítási embléma Windows között van. |
-| **Közeli megosztás** | A Közeli megosztás Windows kiegészítő lehetőség, amely lehetővé teszi, hogy a rögzítést egy közeli Windows eszközével ossza meg. Amikor fényképet vagy videót rögzít a HoloLens (vagy használja egy alkalmazás megosztás gombját, például az Microsoft Edge-t), válasszon ki egy közeli Windows eszközt a megosztáshoz. |
+| **Közeli megosztás** | A Közeli megosztás Windows kiegészítő lehetőség, amely lehetővé teszi, hogy a rögzítést egy közeli Windows eszközével ossza meg. Amikor fényképet vagy videót rögzít a HoloLens (vagy használja a megosztás gombot egy alkalmazásból, például Microsoft Edge), válasszon ki egy közeli Windows eszközt, amelyvel meg fogja osztani. |
 | **Megosztás Microsoft Edge** | A Megosztás gomb mostantól elérhető Microsoft Edge a HoloLens. A Microsoft Edge válassza a **Megosztás lehetőséget.** A webes HoloLens megosztásához használja a megosztásválasztót. |
 
 #### <a name="for-international-customers"></a>Nemzetközi ügyfelek számára
@@ -57,19 +57,19 @@ A fejlesztők számára ez azt jelenti, HoloLens (1. generációs) alkalmazások
 | Hozzárendelt hozzáférés Azure AD-csoportokkal | Mostantól használhatja az Azure AD-csoportokat a hozzárendelt Windows konfigurálhatók egy- vagy többalkalmazásos kioszkkonfiguráció beállítására. |
 | PIN-kódos bejelentkezés profilváltás a bejelentkezési képernyőről | Mostantól elérhető a PIN-kódos bejelentkezés az **Egyéb felhasználó számára.** |
 | Bejelentkezés webalkalmazással Hitelesítőadat-szolgáltató jelszóval | Most már kiválaszthatja a Globe bejelentkezési lehetőséget, hogy elindítsa a webes bejelentkezést a jelszavával. A bejelentkezési képernyőn válassza  a Bejelentkezési lehetőségek lehetőséget, majd a Földgömb lehetőséget a webes bejelentkezés indításához. Szükség esetén adja meg a felhasználónevét, majd a jelszavát. <br>**Megjegyzés:** Ha a rendszer a webes bejelentkezés során kéri, kihagyhatja a PIN-kód/intelligens kártya beállításait. |
-| Az eszköz hardverinformációinak beolvassa az MDM-et, hogy az eszközök nyomon követhetők legyen sorozatszám alapján | A rendszergazdák az MDM-konzolon HoloLens eszköz sorozatszáma alapján láthatják és követhetik az adatokat. A funkciók rendelkezésre állását és utasításait az MDM-dokumentációban találhatja meg. |
+| Az eszköz hardverinformációinak beolvassa az MDM-et, hogy az eszközök nyomon követhetők legyen sorozatszám alapján | A rendszergazdák az MDM-konzolon HoloLens eszköz sorozatszáma alapján láthatják és követhetik a adatokat. A funkciók rendelkezésre állását és utasításait az MDM-dokumentációban találhatja meg. |
 | Eszköznév HoloLens MDM-en keresztül (átnevezés) | A rendszergazdák az MDM-HoloLens láthatják és átnevezik az eszközöket. A funkciók rendelkezésre állását és utasításait az MDM-dokumentációban találhatja meg. |
 
 ### <a name="windows-10-version-1803-for-microsoft-hololens"></a>Windows 10 1803-as verziója a Microsoft HoloLens
 
 > **A következőkre vonatkozik:** HoloLens (1. generációs)
 
-Windows 10 1803-as verzió az első funkciófrissítés, Windows Holographic for Business az 1607-es Windows 10 kiadás óta. Ez a frissítés a következő módosításokat vezet be:
+Windows 10 1803-as verzió az első szolgáltatásfrissítés, Windows Holographic for Business az 1607-es Windows 10 kiadás óta. Ez a frissítés a következő módosításokat vezet be:
 
-- Korábban csak azt lehetett ellenőrizni, hogy a Commercial Suite frissítési licence alkalmazva lett-e a HoloLens-eszközre, ha ellenőrzi, hogy a VPN elérhető-e az eszközön. A **Gépház** rendszer a frissítési  >   **licenc Windows Holographic for Business** után megjelenik. [Ismerje meg, hogyan oldhatja fel a Windows Holographic for Business funkcióit.](hololens1-upgrade-enterprise.md)
+- Korábban csak azt lehetett ellenőrizni, hogy a Commercial Suite frissítési licence alkalmazva lett-e a HoloLens-eszközre, ha ellenőrizte, hogy a VPN elérhető-e az eszközön. A **Gépház** rendszer a frissítési  >   **licenc Windows Holographic for Business** után jelenik meg. [Ismerje meg, hogyan oldhatja fel a Windows Holographic for Business funkcióit.](hololens1-upgrade-enterprise.md)
 
 - Az operációs rendszer buildszámát a Fájlkezelő alkalmazásban és a [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq)eszköztulajdonságában tudja megtekinteni.
-- A HoloLens eszköz üzembe HoloLens Configuration Designer eszköz új **Provision HoloLens devices** Windows varázslójával. A varázslóban konfigurálhatja a telepítési élményt és a hálózati kapcsolatokat, beállíthatja a fejlesztői módot, és tömeges Azure AD-jogkivonatokat szerezhet be. [Ismerje meg, hogyan használhatja az egyszerű kiépítési varázslót a HoloLens.](hololens-provisioning.md#provisioning-package-hololens-wizard)
+- A HoloLens eszköz üzembe HoloLens a Configuration Designer eszköz új **HoloLens** varázslójával Windows. A varázslóban konfigurálhatja a telepítési élményt és a hálózati kapcsolatokat, beállíthatja a fejlesztői módot, és tömeges Azure AD-jogkivonatokat szerezhet be. [Ismerje meg, hogyan használhatja az egyszerű kiépítési varázslót a HoloLens.](hololens-provisioning.md#provisioning-package-hololens-wizard)
 
 - Amikor helyi fiókot hoz létre egy kiépítési csomagban, a jelszó már nem jár le 42 naponta.
 
@@ -77,14 +77,14 @@ Windows 10 1803-as verzió az első funkciófrissítés, Windows Holographic for
 
 - A Media Transfer Protocol (MTP) engedélyezve van, így csatlakoztathatja az HoloLens-eszközt a számítógéphez USB-kapcsolaton keresztül, és fájlokat továbbíthat a HoloLens és a számítógép között. A Fájlkezelő alkalmazással fájlokat is áthelyezhet és törölhet a HoloLens.
 
-- Korábban, miután Azure Active Directory- (Azure AD-) fiókkal jelentkezett be az  eszközre,  a Gépház-ban hozzá kellett adni a munkahelyi hozzáférést a vállalati erőforrásokhoz való hozzáféréshez. Most jelentkezzen be egy Azure AD-fiókkal, és a regisztráció automatikusan megtörténik.
+- Korábban, miután bejelentkezett az eszközre egy Azure Active Directory- (Azure AD-)  fiókkal,  munkahelyi hozzáférést kellett hozzáadnia a Gépház-ban a vállalati erőforrásokhoz való hozzáféréshez. Most jelentkezzen be egy Azure AD-fiókkal, és a regisztráció automatikusan megtörténik.
 
 - Bejelentkezés előtt a jelszó mező alatti hálózat ikont választva választhat egy másik hálózati Wi-Fi, amelyhez csatlakozni szeretne. Vendéghálózathoz is csatlakozhat, például egy szállodai, konferenciaközpontban vagy üzletben.
 
-- Mostantól egyszerűen [megoszthat](hololens-multiple-users.md) több HoloLens Azure AD-fiókkal.
+- Mostantól egyszerűen megoszthat több HoloLens [Azure](hololens-multiple-users.md) AD-fiókkal.
 
 - Ha a beállítás vagy a bejelentkezés sikertelen, válassza az új **Adatok gyűjtése** lehetőséget a diagnosztikai naplók lekért hibaelhárításához.
 
 - Az egyéni felhasználók anélkül szinkronizálják a vállalati e-maileket, hogy regisztrálják eszközüket a mobileszköz-felügyeletben (MDM). Az eszközt Microsoft-fiókkal is használhatja, letöltheti és telepítheti a Mail alkalmazást, és közvetlenül hozzáadhat egy e-mail fiókot.
 
-- Az eszköz MDM-szinkronizálási állapotát az Gépház munkahelyi vagy iskolai adatok elérése lapon  >    >    >  **ellenőrizheti.** Az **Eszközszinkronizálás állapota** szakaszban elindíthatja a szinkronizálást, láthatja az MDM által kezelt területeket, és speciális diagnosztikai jelentést hozhat létre és exportálhat.
+- Az eszköz MDM-szinkronizálási állapotát a Gépház munkahelyi vagy iskolai adatok elérése lapon  >    >    >  **ellenőrizheti.** Az **Eszközszinkronizálás állapota** szakaszban elindíthatja a szinkronizálást, láthatja az MDM által kezelt területeket, és speciális diagnosztikai jelentést hozhat létre és exportálhat.

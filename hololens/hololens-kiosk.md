@@ -18,11 +18,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: e856ac74e959743e8d05ea6acf583700a6450373
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032560"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>A HoloLens beállítása kioszkként
 
@@ -91,13 +91,13 @@ A [forgatókönyv alapján tekintse](hololens-kiosk-reference.md#kiosk-xml-code-
 | Minden bejelentkező felhasználó kioszkélményt kap, kivéve bizonyos felhasználókat. | [Konfiguráljon több alkalmazáshoz globálisan hozzárendelt hozzáférési profilt](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile-excluding-device-owners)úgy, hogy kizár bizonyos felhasználókat (akiknek eszköztulajdonosoknak kell lennie). | • [Microsoft Intune sablon létrehozása](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Futásidejű kiépítés – Több alkalmazás](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | A globálisan hozzárendelt [hozzáféréshez 20H2 és újabb build szükséges](hololens-release-notes.md#windows-holographic-version-20h2) |
 | Minden AAD-felhasználó külön kioszkélményt kap az adott felhasználó számára. | [Konfigurálja a hozzárendelt hozzáférési konfigurációt minden felhasználóhoz, aki megadja az AAD-fiók nevét.](hololens-kiosk-reference.md#multiple-app-assigned-access-profiles-for-two-aad-users-or-more) | • [Microsoft Intune sablon létrehozása](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Futásidejű kiépítés – Több alkalmazás](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | &nbsp; |
 | A különböző AAD-csoportok felhasználói csak a saját csoportjukhoz használható kioszkmódot tapasztalnak. | [Konfigurálja a hozzárendelt hozzáférési konfigurációt az egyes kívánt AAD-csoportokhoz.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune sablon létrehozása](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Futásidejű kiépítés – Több alkalmazás](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | • Ha egy felhasználó bejelentkezik és HoloLens csatlakozik az internethez, és a felhasználó olyan AAD-csoport tagja, amelyhez kioszkkonfiguráció tartozik, a felhasználó az adott AAD-csoport teljes kioszkját tapasztalja. <br> • Ha nincs elérhető internet a felhasználói bejelentkezés során, a felhasználó hiba HoloLens [tapasztalja.](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode) <br> • Ha az internet rendelkezésre állása nem garantált, amikor a felhasználó bejelentkezik, és AAD-csoportalapú kioszkot kell használnia, fontolja meg az [AADGroupMembershipCacheValidityInDayspolicy függvényt.](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk) <br> • Az AAD-csoportokkal való optimális bejelentkezéshez az [AADGroupMembershipCacheValidityInDayspolicy](/hololens/hololens-release-notes#cache-azure-ad-group-membership-for-offline-kiosk) használata ajánlott |
-| Azok a felhasználók, akiknek ideiglenes HoloLens kell használniuk, kioszkélményt tapasztalnak. | [A látogatókhoz hozzárendelt hozzáférési konfiguráció konfigurálása](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune sablon létrehozása](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Futásidejű kiépítés – Egyetlen alkalmazás](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • Az ideiglenes felhasználói fiókot a rendszer automatikusan HoloLens a bejelentkezéshez, és az ideiglenes felhasználó kijelentkeztével eltávolítja. <br> • Fontolja meg a [látogató automatikus bejelentkezési szabályzatának engedélyezését.](#how-can-visitor-accounts-automatically-logon-to-kiosk-experience) |
+| Azok a felhasználók, akiknek ideiglenes HoloLens kell használniuk, teljes kioszkélményt tapasztalnak. | [A látogatókhoz hozzárendelt hozzáférési konfiguráció konfigurálása](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune sablon létrehozása](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Futásidejű kiépítés – Egyetlen alkalmazás](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • Az ideiglenes felhasználói fiókot a rendszer HoloLens a bejelentkezéshez, és az ideiglenes felhasználó kijelentkeztével eltávolítja. <br> • Fontolja meg a [látogató automatikus bejelentkezési szabályzatának engedélyezését.](#how-can-visitor-accounts-automatically-logon-to-kiosk-experience) |
 
 ## <a name="steps-in-configuring-kiosk-mode-for-hololens"></a>A kioszkmód konfigurálásához szükséges lépések HoloLens
 
 A kioszkkonfigurációk a következő módokon lehet létrehozni és alkalmazni:
 
-1. Az MDM-kiszolgáló felhasználói felületén, például az Intune kioszksablonjaival vagy egyéni OMA-URI konfigurációival, amelyeket a rendszer távolról alkalmaz a HoloLens.
+1. Az MDM-kiszolgáló felhasználói felületén, például az Intune kioszksablonjaival vagy egyéni OMA-URI-konfigurációival, amelyeket a rendszer távolról alkalmaz a HoloLens.
 2. A futásidejű kiépítési csomagokkal, amelyeket a rendszer közvetlenül a HoloLens.
 
 A konfigurálás következő módjai: válassza ki a használni kívánt folyamatnak megfelelő lapot.
@@ -114,21 +114,21 @@ A konfigurálás következő módjai: válassza ki a használni kívánt folyama
 
 ### <a name="how-can-visitor-accounts-automatically-logon-to-kiosk-experience"></a>Hogyan jelentkezhetnek be automatikusan a látogatói fiókok a kioszkélménybe?
 
-A [Holographic Windows 21H1-es](hololens-release-notes.md#windows-holographic-version-21h1) és újabb verziójú buildek:
+A [Holographic Windows 21H1-es](hololens-release-notes.md#windows-holographic-version-21h1) és újabb verziókban:
 
 - Az AAD- és a nem ADD-konfigurációk egyaránt támogatják a látogatói fiókok automatikus bejelentkezését a kioszkmódokhoz.
 
 [!INCLUDE[](includes/kiosk-autologin.md)]
 
-### <a name="is-kiosk-experience-supported-on-hololens-1st-gen"></a>Támogatott a teljes HoloLens (1. generációs)?
+### <a name="is-kiosk-experience-supported-on-hololens-1st-gen"></a>Támogatott a kioszkélmény HoloLens (1. generációs)?
 
 A kioszkmód csak akkor érhető el, ha az eszköz Windows Holographic for Business. Minden HoloLens 2 eszköz Windows Holographic for Business, és nincs más kiadás. Minden HoloLens 2 eszköz képes kioszkmódban is futni.
 
-HoloLens (1. generációs) eszközöket az operációs rendszer buildszáma és az operációs rendszer kiadása szempontjából is frissíteni kell. Az itt található további információ a HoloLens (1. generációs) frissítéséről [Windows Holographic for Business](hololens1-upgrade-enterprise.md) kiadásra. Egy HoloLens (1. generációs) eszköz kioszkmód használatára való frissítéséhez először meg kell győződnie arról, hogy az eszköz Windows 10, 1803-as vagy újabb verziót futtat. Ha az Windows Device Recovery eszközt használta az HoloLens-eszköz (1. generációs) alapértelmezett buildre való helyreállításához, vagy ha telepítette a legújabb frissítéseket, az eszköz készen áll a konfigurálására.
+HoloLens (1. generációs) eszközöket az operációs rendszer buildszáma és az operációs rendszer kiadása szempontjából is frissíteni kell. Az itt található további információ a HoloLens (1. generációs) frissítéséről [Windows Holographic for Business](hololens1-upgrade-enterprise.md) kiadásra. Egy HoloLens (1. generációs) eszköz kioszkmód használatára való frissítéséhez először meg kell győződnie arról, hogy az eszköz Windows 10, 1803-as vagy újabb verziót futtat. Ha az Windows Device Recovery eszközt használta a HoloLens-eszköz (1. generációs) alapértelmezett buildre való helyreállításához, vagy ha telepítette a legújabb frissítéseket, az eszköz készen áll a konfigurálására.
 
 ### <a name="how-to-use-device-portal-to-configure-kiosk-in-non-production-environments"></a>Hogyan használható az eszközportál a kioszk nem éles környezetben való konfigurálását?
 
-Állítsa be [a HoloLens eszközt a következő Windows Eszközportál.](/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) A Eszközportál egy webkiszolgáló a HoloLens, amelyhez a számítógép webböngészőjéből csatlakozhat.
+Állítsa be [a HoloLens eszközt a Windows Eszközportál.](/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) A Eszközportál egy webkiszolgáló a HoloLens, amelyhez a számítógépén található webböngészőből csatlakozhat.
 
  > [!CAUTION]
  > Amikor beállít egy HoloLens a Eszközportál, engedélyeznie kell a Fejlesztői módot az eszközön. A fejlesztői mód olyan eszközön, Windows Holographic for Business lehetővé teszi az alkalmazások saját ről való betöltését. Ez a beállítás azonban azzal a kockázattal jár, hogy a felhasználó olyan alkalmazásokat telepíthet, amelyek nem voltak a Microsoft Store. A rendszergazdák letilthatják a fejlesztői mód engedélyezését az **ApplicationManagement/AllowDeveloper Unlock** beállítással a Házirend [CSP-ben.](/windows/client-management/mdm/policy-configuration-service-provider) [További információ a fejlesztői módról.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)

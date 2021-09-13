@@ -14,11 +14,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: d9c8b813ba54edbcfef8d1a32e641dad39a7f193
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036026"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Csatlakozás usb Bluetooth C-eszközök csatlakoztatása
 
@@ -31,11 +31,11 @@ HoloLens 2. a következő osztályokat támogatja a Bluetooth eszközök esetéb
     - Billentyűzet
 - Hangkimeneti (A2DP) eszközök
 
-HoloLens 2. a következő API Bluetooth támogatja:
+HoloLens 2. száma a következő Bluetooth API-kat támogatja:
 - ANNAK [kiszolgálója](/windows/uwp/devices-sensors/gatt-server) és [ügyfele](/windows/uwp/devices-sensors/gatt-client)
 - [RFCOMM](/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
 >[!IMPORTANT]
-> Előfordulhat, hogy telepítenie kell a megfelelő társalkalmazásokat a Microsoft Store a HID és a FOG ESZKÖZÖK használatának ténylegesen alkalmazásához.
+> Előfordulhat, hogy telepítenie kell a megfelelő társalkalmazásokat a Microsoft Store a HID és a KÉSZÜLÉK eszközök ténylegesen való használatához.
 
 HoloLens (1. generációs) a következő osztályokat támogatja a Bluetooth eszközök esetében:
 
@@ -44,7 +44,7 @@ HoloLens (1. generációs) a következő osztályokat támogatja a Bluetooth esz
 - [HoloLens (1. generációs) kattintás](hololens1-clicker.md)
 
 > [!NOTE]
-> Más típusú Bluetooth eszközök, például a beszélők, a headsetek, az okostelefonok és a játékpanelek a következő beállításokban HoloLens listában. Ezek az eszközök azonban nem támogatottak a HoloLens (1. generációs) eszközökön. További információ: HoloLens Gépház [listázza az eszközöket, de](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)az eszközök nem működnek.
+> Más típusú Bluetooth eszközök, például a beszélők, a headsetek, az okostelefonok és a játékpanelek a következő beállításokban HoloLens listában. Ezek az eszközök azonban nem támogatottak a HoloLens (1. generációs) eszközökön. További információért tekintse meg az [HoloLens Gépház elérhetőként listázza az eszközöket, de](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)az eszközök nem működnek.
 
 ### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Billentyűzet vagy Bluetooth párosítása
 
@@ -52,13 +52,13 @@ HoloLens (1. generációs) a következő osztályokat támogatja a Bluetooth esz
 
 1. Használja a Bloom kézmozdulatot (HoloLens (1. gen)) vagy az indítási kézmozdulatot (HoloLens 2) a **Start** menüre való ugráshoz, majd válassza a **Gépház.**
 
-1. Válassza **az Eszközök** lehetőséget, és győződjön meg arról, Bluetooth be van-e ásva.  
+1. Válassza **az Eszközök** lehetőséget, és győződjön meg arról, Bluetooth be van-e va.  
 
 1. Ha látja az eszköz nevét, válassza a **Pár** lehetőséget, majd kövesse az utasításokat.
 
-## <a name="disable-bluetooth"></a>A Bluetooth
+## <a name="disable-bluetooth"></a>Az Bluetooth letiltása
 
-Ez az eljárás kikapcsolja a Bluetooth RF-összetevőit, és letiltja Bluetooth összes Microsoft HoloLens.
+Ez az eljárás kikapcsolja a Bluetooth RF-összetevőit, és letiltja az összes Bluetooth funkciót Microsoft HoloLens.
 
 1. Használja a Bloom kézmozdulatot (HoloLens (1. gen)) vagy az indítási kézmozdulatot (HoloLens 2) a **Start** menüben, majd válassza az **Gépház**  >  **lehetőséget.**
 

@@ -13,23 +13,23 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: c6d1225dc6da1c039a34fc2782f23330ae40f280
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428498"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032779"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>A Windows Holographic for Business funkcióinak feloldása
 
 > [!IMPORTANT]
-> Ez az oldal csak az első HoloLens vonatkozik.
+> Ez a lap csak az első HoloLens vonatkozik.
 
-Microsoft HoloLens a Development *Edition* kiadásban érhető el, amely a Windows Holographic (a HoloLens-hez tervezett Windows 10-kiadás) [](hololens-commercial-features.md)és a Kereskedelmi csomag kiadásában érhető el, amely további üzleti funkciókat biztosít.
+Microsoft HoloLens a Development *Edition* kiadásban érhető el, amely a Windows Holographic (a Windows 10 HoloLens-hez tervezett kiadása) és a Commercial [Suite](hololens-commercial-features.md)kiadásában fut, amely további üzleti funkciókat biztosít.
 
 A kereskedelmi csomag megvásárlásakor kap egy licencet, amely a Holographic Windows frissít a Windows Holographic for Business. Ezt a licencet a szervezet mobileszköz-kezelési [(MDM)](#edition-upgrade-by-using-mdm) szolgáltatójával vagy egy kiépítési csomaggal [alkalmazhatja az eszközre.](#edition-upgrade-by-using-a-provisioning-package)
 
 > [!TIP]
-> A Windows 10 1803-as verziójában a Rendszer Gépház ellenőrizheti, hogy a HoloLens frissítve **lett-e az üzleti**  >  **kiadásra.**
+> A Windows 10 1803-as verziójában a rendszer HoloLens lehetőség kiválasztásával ellenőrizheti, hogy a HoloLens frissítve **lett-e az Gépház üzleti**  >  **kiadásra.**
 
 ## <a name="edition-upgrade-by-using-mdm"></a>Kiadásfrissítés MDM használatával
 
@@ -88,7 +88,7 @@ A kiépítési csomagok olyan fájlok, Windows Configuration Designer eszköz á
 1. Az USB-kábellel csatlakoztassa az eszközt egy számítógéphez. Indítsa el az eszközt, de  ne haladjon tovább a kezdeti beállítási folyamat illesztésoldalán (az első oldalon a kék mezővel). A számítógépen a HoloLens eszközként jelenik meg a Fájlkezelő.
 
     > [!NOTE]
-    > Ha a HoloLens eszközön Windows 10 1607-es vagy korábbi verzió fut, nyissa meg az Fájlkezelő-t úgy, hogy rövid időre lenyomja és egyszerre kiadja a **Volume Down** és a **Power** gombok egyidejűleg az eszközön.
+    > Ha az HoloLens eszközön Windows 10 1607-es vagy korábbi verzió fut, nyissa meg az Fájlkezelő-t úgy, hogy rövid időre lenyomja és egyszerre kiadja a **Volume Down** és a **Power** gombokat az eszközön.
 
 1. A Fájlkezelő húzza a kiépítési csomagot (.ppkg) az eszköz tárhelyére.
 

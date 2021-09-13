@@ -14,17 +14,17 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: b312f9d20c9a75c5e4c1906c4ec55f42fda977f6
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032425"
 ---
 # <a name="configure-csps-and-device-management-overview"></a>CsP-k és Eszközkezelés konfigurálása – áttekintés
 
 A rendszergazdák a 2. HoloLens határozhatják meg és valósíthatják meg a házirend-beállításokat. A használt konfigurációs beállítások a telepítési forgatókönyvtől függően különböznek, és a vállalati eszközök a legszélesebb körű vezérlést kínálják az it-itának. A Windows 10 konfigurációszolgáltatók (CSP-k) az eszköz konfigurációs beállításainak olvasására, beállítására, módosítására vagy törlésére való felületek. Ezek a beállítások beállításkulcsra vagy fájlokra vannak leképezve. Egyes konfigurációs szolgáltatók támogatják a WAP formátumot, némelyik támogatja a SyncML-t, néhány pedig mindkettőt.
 
-Az eszközkezelési CSP Windows 10 Holographic król további információt az eszközök által támogatott [CSP-k teljes HoloLens tartalmaz.](/windows/client-management/mdm/configuration-service-provider-reference#hololens)
+Az eszközkezelési CSP-Windows 10 Holographic kapcsolatos további információkért tekintse meg az eszközök által támogatott [CSP HoloLens teljes listáját.](/windows/client-management/mdm/configuration-service-provider-reference#hololens)
 A rendszergazdák az eszközökön is kezelhetik a házirendek CSP-ját. Lásd a 2. HoloLens által támogatott [házirend-CSP-k teljes listáját.](/windows/client-management/mdm/policy-csps-supported-by-hololens2)
 
 ## <a name="configuration-methods"></a>Konfigurációs módszerek
@@ -35,7 +35,7 @@ A CSP-k és szabályzatok egyszerűen kezelhetők az MDM-rendszerekben regisztr�
 
 ### <a name="configure-with-provisioning-packages"></a>Konfigurálás kiépítési csomagokkal
 
-HoloLens 2., támogatja a CSP-konfigurációk korlátozott készletének beállítását HoloLens 2 eszköz egyéni kiépítési csomagokon keresztül. A kiépítési csomagokat általában nem MDM által felügyelt eszközökhöz használják, és manuálisan kell alkalmazni őket az egyes eszközökre. Olvassa el az egyéni [kiépítési csomagok létrehozásáról a](hololens-provisioning.md)HoloLens.
+HoloLens 2. cikk támogatja a CSP-konfigurációk korlátozott készletének beállítását HoloLens 2 eszköz egyéni kiépítési csomagokon keresztül. A kiépítési csomagokat általában nem MDM által felügyelt eszközökhöz használják, és manuálisan kell alkalmazni őket az egyes eszközökre. Olvassa el az egyéni [kiépítési csomagok létrehozásáról a](hololens-provisioning.md)HoloLens.
 
 ## <a name="configurations"></a>Konfigurációk
 

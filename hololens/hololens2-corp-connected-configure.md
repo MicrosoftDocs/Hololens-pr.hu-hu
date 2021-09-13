@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 9457acd2f53d0d3127d6c68d620b660f6e09866d
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428769"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032724"
 ---
 # <a name="configure---corporate-connected-guide"></a>Konfigurálás – Vállalati csatlakoztatott útmutató
 
@@ -152,31 +152,31 @@ Ebben az útmutatóban [microsoftos adatverzum-környezetet hozhat létre:](/dyn
 3. Fontos a Create a **database for this environment (Adatbázis létrehozása ehhez a környezethez) kapcsolóval?**  kapcsolót **igenre.**
 4. Az Adatbázis  **hozzáadása párbeszédpanelen**  állítsa a  **Dynamics 365-alkalmazások**  engedélyezése beállítást Igen  **lehetőségre.**
 
-Az adatverem elemeinek maximális fájlméretét is növelni kell. A maximális fájlméret növelésével nagyobb 3D-s modelleket vagy videofájlokat tölthet fel, amelyekre később az útmutatókban is lesz majd példa. A feltöltési fájl maximális méretének módosításhoz kövesse a következő rövid [útmutatót:](/dynamics365/mixed-reality/guides/setup-step-two#change-the-maximum-upload-file-size).
+Az adatverem elemeinek maximális fájlméretét szeretné növelni. A maximális fájlméret növelésével nagyobb 3D-s modelleket vagy videofájlokat tölthet fel, amelyekre később az útmutatókban lesz majd majd használni. Kövesse egy rövid útmutatót a [fájl maximális méretének a módosításhoz.](/dynamics365/mixed-reality/guides/setup-step-two#change-the-maximum-upload-file-size)
 
-Végül telepítenie és konfigurálnia kell a [megoldást.](/dynamics365/mixed-reality/guides/setup-step-two#install-and-configure-the-solution) A [Power Platform felügyeleti központja](https://admin.powerplatform.microsoft.com/environments)válassza az **Erőforrások** \& gt; lehetőséget.  **Dynamics 365-alkalmazások,** válassza ki a **Dynamics 365-útmutatók listában,** majd válassza a **Telepítés lehetőséget.**  
+Végül telepítenie és konfigurálnia kell a [megoldást.](/dynamics365/mixed-reality/guides/setup-step-two#install-and-configure-the-solution) A [Power Platform felügyeleti központja](https://admin.powerplatform.microsoft.com/environments)válassza az **Erőforrások** \& gt; lehetőséget.  **Dynamics 365-alkalmazások:**, válassza a **Dynamics 365-útmutatók** lehetőséget a listában, majd válassza a **Telepítés lehetőséget.**  
 
 Az alkalmazások használata előtt [hozzá](/dynamics365/mixed-reality/guides/assign-role) kell adni egy Útmutatók biztonsági szerepkört.
 
-### <a name="create-a-test-guide-on-your-pc-via-authoring"></a>Tesztelési útmutató létrehozása a számítógépen szerzői útmutatóval
+### <a name="create-a-test-guide-on-your-pc-via-authoring"></a>Tesztelési útmutató létrehozása a számítógépen a Szerzői írással
 
-Az útmutatók létrehozásakor mindig a számítógépen fog elindulni. A lépések létrehozása, a modellek kiválasztása és az útmutató rögzítésének útmutatója. Ezt az útmutató tartalmának későbbi, szerzői módban való elhelyezése követi majd a HoloLens eszközén. Ebben az útmutatóban egy rövid, minimális lépéseket és modelleket is tartalmazó tesztelési útmutatót javasolunk.
+Az útmutatók létrehozásakor mindig a számítógépen fog elindulni. A lépések létrehozása, a modellek kiválasztása és az útmutató rögzítésének útmutatója. Ezt követően az útmutató tartalmát később szerzői módban helyezi el az HoloLens eszközén. Ebben az útmutatóban egy rövid, minimális lépéseket és modelleket is tartalmazó tesztelési útmutatót javasolunk.
 
-Ha az útmutatók írásával szeretne kezdeni, kezdje itt a [szerzői áttekintéssel.](/dynamics365/mixed-reality/guides/authoring-overview) Vagy a gyors nyomon követhetőségért tekintse meg ezt a rövid videót.
+Ha az útmutatók szerzőiről szeretne tanulni, kezdje itt a [szerzői áttekintéssel.](/dynamics365/mixed-reality/guides/authoring-overview) Vagy a gyors nyomon követhetőségért tekintse meg ezt a rövid videót.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EC24dMlAy90" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## <a name="optional-kiosk-mode"></a>Nem kötelező: Kioszk mód
+## <a name="optional-kiosk-mode"></a>Nem kötelező: Kioszkmód
 
-A kioszkmód egy olyan mód, amely lehetővé vált, hogy a rendszergazda úgy konfigurálja a Start menü felhasználói felületét, hogy csak egyetlen alkalmazást vagy alkalmazásokat mutasson. A kioszkok adott felhasználókra, csoportokra vagy eszközszinten is alkalmazhatók; és bizonyos esetekben kizárhat bizonyos felhasználókat a kioszkból, így továbbra is hozzáférhetnek a normál Start menühöz.
+A kioszkmód egy olyan mód, amely lehetővé vált, hogy a rendszergazda úgy konfigurálja a Start menü felhasználói felületét, hogy csak egyetlen alkalmazást vagy alkalmazásokat mutasson. A kioszk adott felhasználókra, csoportokra vagy eszközszinten is alkalmazható; és bizonyos esetekben kizárhat bizonyos felhasználókat a kioszkból, így továbbra is hozzáférhetnek a normál Start menühöz.
 
-A kioszkmód számos különböző változóval rendelkezik mind a hatókörben, mind a konfigurációkban, amelyek beállíthatók, valamint a kioszk üzembe helyezésének HoloLens. A fenti változók miatt a kioszkmód nem kötelezőként lesz meghagyva _ehhez_ az útmutatóhoz, és a rendszer nem használja újra. Ha úgy véli, hogy üzleti cél a rendelkezésre álló alkalmazások felhasználókra való korlátozása, vagy szeretne többet megtudni, nyugodtan megtudhatja, hogyan állíthatja be a HoloLens [kioszkként.](/hololens/hololens-kiosk)
+A kioszkmód számos különböző változóval rendelkezik, mind a hatókörben, mind a konfigurációkban, amelyek beállíthatók, valamint a kioszk üzembe helyezésének HoloLens. Ezen változók miatt a kioszkmód nem  kötelezőként lesz meghagyva ehhez az útmutatóhoz, és a rendszer nem használja újra. Ha úgy véli, hogy üzleti cél az elérhető alkalmazások felhasználókra való korlátozása, vagy ha szeretne többet megtudni, nyugodtan megtudhatja, hogyan állíthatja be a HoloLens [kioszkként.](/hololens/hololens-kiosk)
 
 ## <a name="optional-wdac"></a>Nem kötelező: WDAC
 
-A WDAC lehetővé teszi, hogy a rendszergazda úgy konfigurálja az eszközeit, hogy letiltsa az alkalmazások elindítását az eszközökön. Ez eltér az eszközkorlátozási módszerektől, például a Kioszk módtól, ahol a felhasználó számára egy olyan felhasználói felület van meg, amely elrejti az eszközön található alkalmazásokat, de továbbra is elindítható. Bár a WDAC van megvalósítva, az alkalmazások továbbra is láthatók a Minden alkalmazás listában, de a WDAC megakadályozza, hogy ezeket az alkalmazásokat és folyamatokat az eszköz felhasználója elindítsa.
+A WDAC lehetővé teszi, hogy a rendszergazda úgy konfigurálja az eszközeit, hogy letiltsa az alkalmazások elindítását az eszközökön. Ez eltér az eszközkorlátozási módszerektől, például a Kioszk módtól, ahol a felhasználó egy olyan felhasználói felületet kap, amely elrejti az eszközön található alkalmazásokat, de továbbra is elindítható. Bár a WDAC van megvalósítva, az alkalmazások továbbra is láthatók a Minden alkalmazás listában, de megakadályozza, hogy az eszköz felhasználója elindítsa ezeket az alkalmazásokat és folyamatokat.
 
-További információ: [Use WDAC and Windows PowerShell to allow](/mem/intune/configuration/custom-profile-hololens)or block apps on HoloLens 2 devices with Microsoft Intune .
+További információ: [Use WDAC and Windows PowerShell to allow](/mem/intune/configuration/custom-profile-hololens)or block apps on HoloLens 2 devices with Microsoft Intune.
 
 [Windows Defender Alkalmazásvezérlés – WDAC](/hololens/windows-defender-application-control-wdac)
 

@@ -17,11 +17,11 @@ manager: jarrettr
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: e9aad32891bb093cbce18671b76549788b19afcb
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427829"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036169"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Újraindítás, alaphelyzetbe állítás vagy helyreállítás HoloLens 2.
 
@@ -151,27 +151,27 @@ Előfordulhat, hogy helyreállítási módba kell tennie az eszközt, ha:
 
 1. Ellenőrizze, hogy az eszköz nem [1-3-5 LED-es mintát jelenít-e meg.](hololens2-setup.md#lights-to-indicate-problems)
 
-## <a name="download-arc-without-using-the-app-store"></a>AZ ARC letöltése az alkalmazás-áruház használata nélkül
+## <a name="download-arc-without-using-the-app-store"></a>Az ARC letöltése az Alkalmazás-áruház használata nélkül
 
-Ha az it-környezet megakadályozza a Windows Store alkalmazás használatát, vagy korlátozza a kiskereskedelmi áruházhoz való hozzáférést, a rendszergazda "offline" telepítési útvonalon keresztül elérhetővé tudja tenni az alkalmazást.
+Ha az IT-környezet megakadályozza a Windows Store alkalmazás használatát, vagy korlátozza a kiskereskedelmi áruházhoz való hozzáférést, a rendszergazda "offline" telepítési útvonalon elérhetővé tudja tenni az alkalmazást.
 
  >[!NOTE]
- > - A rendszergazdák az alkalmazást a System Center Configuration Manager (SCCM) vagy az Intune használatával is terjesztheti.
- > - Ez az útmutató az Advanced Recovery Companion funkcióval foglalkozik, de a folyamat más "offline" alkalmazásokhoz is használható.
+ > - A rendszergazdák az alkalmazást a System Center Configuration Manager (SCCM) vagy az Intune segítségével is terjesztheti.
+ > - Ez az útmutató a Speciális helyreállítási segédre összpontosít, de a folyamat más "offline" alkalmazásokhoz is használható.
 
 Az üzembe helyezési útvonal engedélyezéséhez kövesse az alábbi lépéseket:
 
-1. A Microsoft Store Vállalatoknak [jelentkezzen](https://businessstore.microsoft.com) be egy Azure Active Directory identitással.
+1. A [Microsoft Store Vállalatoknak,](https://businessstore.microsoft.com) és jelentkezzen be egy Azure Active Directory identitással.
 
-1. A Kezelés **– Gépház.** A Vásárlási élmény alatt kapcsolja be az **Offline alkalmazások** megjelenítése **et.**
+1. A Kezelés **– Gépház.** Kapcsolja be a **Show offline apps (Offline alkalmazások megjelenítése) et** **a Shopping experience (Vásárlási élmény) alatt.**
 
-1. Keresse fel **a csoportomért való vásárlást,** és keressen rá az [**_Advanced Recovery Companion kifejezésre._**](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)
+1. Keresse meg **az áruházban a csoportomat,** és keressen rá az [**_Advanced Recovery Companion kifejezésre._**](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)
 
-1. Módosítsa a **Licenc típusa beállítását** **_offline _,_*majd válassza a _ Kezelés* lehetőséget.**
+1. Módosítsa a **Licenctípust** **_offline _- típusra,_*majd válassza a _* Kezelés lehetőséget.**
 
-1. A **Csomag letöltése offline használatra alatt** válassza a második kék Letöltés **gombot.** Győződjön meg arról, hogy a *fájlkiterjesztés .appxbundle.*
+1. A **Csomag letöltése offline használatra alatt válassza** a második kék Letöltés **gombot.** Győződjön meg arról, hogy a *fájlkiterjesztés .appxbundle.*
 
-    - Ha az asztali számítógép jelenleg rendelkezik internet-hozzáféréssel, kattintson duplán a csomagra az alkalmazás telepítéséhez.
+    - Ha az asztali számítógépnek jelenleg van internet-hozzáférése, kattintson duplán a csomagra az alkalmazás telepítéséhez.
 
     - Ha a célszámítógépen nincs internetkapcsolat, kövesse az alábbi lépéseket:
        1. Válassza ki a nem kódolatlan licencet, majd válassza a **Licenc létrehozása lehetőséget.**
@@ -182,12 +182,12 @@ Az üzembe helyezési útvonal engedélyezéséhez kövesse az alábbi lépések
           C:\WINDOWS\system32>dism /online /Add-ProvisionedAppxPackage /PackagePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_1.19050.1301.0_neutral_~_8wekyb3d8bbwe.appxbundle" /DependencyPackagePath:"C:\ARCoffline\Microsoft.VCLibs.140.00.UWPDesktop_14.0.27629.0_x86__8wekyb3d8bbwe.appx" /LicensePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_8wekyb3d8bbwe_f72ce112-dd2e-d771-8827-9cbcbf89f8b5.xml" /Region:all
           ```
           > [!NOTE]
-          > Előfordulhat, hogy a példakódban lévő verziószám nem egyezik a jelenleg elérhető verzióval. Előfordulhat, hogy más letöltési helyet választott, mint a példában. Szükség szerint módosítja a parancsot.
+          > Előfordulhat, hogy a kódban lévő verziószám nem egyezik a jelenleg elérhető verzióval. Előfordulhat, hogy más letöltési helyet választott, mint a példában. Szükség szerint módosítsa a parancsot.
 
 > [!TIP]
-> Ha az FFU offline telepítéséhez az Advanced Recovery Companiont tervezi használni, hasznos lehet a flash lemezkép letöltése. [**Töltse le a 2. HoloLens aktuális rendszerképét.**](https://aka.ms/hololens2download)
+> Ha az FFU offline telepítéséhez advanced Recovery Companiont tervez használni, hasznos lehet a flash lemezkép letöltése. [**Töltse le a 2. HoloLens aktuális rendszerképét.**](https://aka.ms/hololens2download)
 
 Egyéb erőforrások:
 
 - [Offline alkalmazások terjesztése](/microsoft-store/distribute-offline-apps) 
-- [DISM alkalmazáscsomag (.appx vagy .appxbundle) – karbantartási parancssori beállítások](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)
+- [DISM alkalmazáscsomag (.appx vagy .appxbundle) karbantartási parancssori beállításai](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)

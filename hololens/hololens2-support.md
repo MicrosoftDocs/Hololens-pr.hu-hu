@@ -8,11 +8,11 @@ ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
 ms.openlocfilehash: 17aaf8627384098de240d2c2e79c1ed9b0d39165
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427572"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032617"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>Milyen támogatási Mixed Reality és súgó lehetőségek állnak rendelkezésre?
 
@@ -118,9 +118,9 @@ Ha új kérdést küld be a Stack Overflow, használja a következő címkéket 
 
 ## <a name="azure-mixed-reality-services-support"></a>Vegyes valóságú Azure-szolgáltatások támogatása
 
-### <a name="open-an-azure-portal-technical-support-ticket"></a>Nyisson meg egy Azure Portal támogatási jegyet
+### <a name="open-an-azure-portal-technical-support-ticket"></a>Nyisson egy Azure Portal támogatási jegyet
 
-Műszaki támogatási jegy megnyitása az Azure Azure Portal, Spatial Anchors vagy Azure Object Anchors Azure Remote Rendering:
+Műszaki támogatási jegy megnyitása az Azure Azure Portal, Spatial Anchors vagy Azure Object Anchors támogatási Azure Remote Rendering:
 
 1. A [Azure Portal](https://azure.microsoft.com/account/) válassza a felső menüsáv súgóikonját, majd a **Súgó és támogatás** gombot.
 
@@ -145,7 +145,7 @@ Műszaki támogatási jegy megnyitása az Azure Azure Portal, Spatial Anchors va
 
 ### <a name="provide-documentation-content-feedback"></a>Dokumentációval kapcsolatos tartalommal kapcsolatos visszajelzés küldése
 
-Az egyes tartalomcikkek alján megnyithatja a probléma GitHub, és visszajelzést küldhet bármilyen vegyes valóságú dokumentációs adattár tartalmáról. 
+Az egyes tartalomcikkek alján megnyithatja a probléma GitHub, és visszajelzést küldhet a vegyes valóságú dokumentáció bármely adattárában található tartalmakról. 
 
 ### <a name="provide-product-feedback"></a>Termékkel kapcsolatos visszajelzés küldése
 
@@ -163,6 +163,6 @@ Ha visszajelzést szeretne küldeni, ötleteket vagy javaslatokat szeretne megos
 
 - HoloLens 2. lépéshez tekintse meg [HoloLens hibaelhárítást bemutató oldalt](../hololens/hololens-troubleshooting.md)
 - Windows Mixed Reality gyik oldal [](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
-- Azure Remote Rendering tekintse meg a gyakori [kérdéseket](/azure/remote-rendering/resources/troubleshoot)
+- Azure Remote Rendering gyik [oldal](/azure/remote-rendering/resources/troubleshoot)
 - Azure Spatial Anchors, tekintse meg a gyakori [kérdéseket](/azure/spatial-anchors/spatial-anchor-faq)
 - Azure Object Anchors gyik oldal [](/azure/object-anchors/faq)

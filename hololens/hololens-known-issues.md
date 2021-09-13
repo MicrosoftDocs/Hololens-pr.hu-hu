@@ -15,11 +15,11 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 ms.openlocfilehash: 5c942bae91c7684f2c2d36aca6ace6306b5fed54
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124429003"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032497"
 ---
 # <a name="known-issues-for-hololens-1st-gen"></a>A HoloLens (1. generációs) ismert problémái
 
@@ -67,7 +67,7 @@ Workarounds:
 
 Visual Studio megjelent a VS 2019 16.2-es verziója, amely tartalmazza a probléma megoldását. Javasoljuk, hogy a hiba elkerülése érdekében frissítsen erre a legújabb verzióra.
 
-Probléma kiváltó oka: A probléma kihat az Visual Studio 2015 Visual Studio 2015-ös vagy korai kiadását használó felhasználókra, akik az HoloLens-on telepítettek és hibakeresést végezni az alkalmazásokon, majd ezt követően az Visual Studio 2017-es vagy 2019-es Visual Studio 2019 legújabb verzióit használták ugyanazokkal az HoloLens-val. A Visual Studio újabb verziói egy összetevő új verzióját telepítik, de a régebbi verzió fájljai az eszközön maradnak, ami az újabb verzió meghiúsulását okozza.  Ez a következő hibaüzenetet okozza: DEP0100: Győződjön meg arról, hogy a céleszközön engedélyezve van a fejlesztői mód. Hiba miatt nem sikerült fejlesztői licencet beszerezni \<ip\> a(80004005.
+A probléma kiváltó oka: Azok a felhasználók, akik Visual Studio 2015 vagy a 2017-es Visual Studio 2017 korai verzióit használták alkalmazások telepítésére és hibakeresésére az HoloLens-ban, majd ezt követően az Visual Studio 2017-es vagy 2019-es Visual Studio 2019 legújabb verzióit használták ugyanazokkal az HoloLens-val. A Visual Studio újabb verziói egy összetevő új verzióját telepítik, de a régebbi verzió fájljai az eszközön maradnak, ami az újabb verzió meghiúsulását okozza.  Ez a következő hibaüzenetet okozza: DEP0100: Győződjön meg arról, hogy a céleszközön engedélyezve van a fejlesztői mód. Hiba miatt nem sikerült fejlesztői licencet beszerezni \<ip\> a(80004005.
 
 #### <a name="workaround"></a>Áthidaló megoldás
 
@@ -77,9 +77,9 @@ Csapatunk jelenleg a javításon dolgozik. Addig is a következő lépésekkel m
 
 1. Válassza **a Fájl Új**  >    >  **Project** lehetőséget.
 
-1. Válassza **a Visual C#**  >  **Windows Desktop** Console App  >  **(.NET-keretrendszer)** lehetőséget.
+1. Válassza **a Visual C#**  >  **Windows Desktop** Console App  >  **(.NET-keretrendszer) lehetőséget.**
 
-1. Nevezze el a projektet (például "HoloLensDeploymentFix"), és győződjön meg arról, hogy a keretrendszer legalább 4.5-ös vagy .NET-keretrendszer, majd kattintson az **OK gombra.**
+1. Nevezze el a projektet (például "HoloLensDeploymentFix"), és győződjön meg arról, hogy a keretrendszer legalább .NET-keretrendszer 4.5-ös, majd kattintson az **OK gombra.**
 
 1. Kattintson a jobb gombbal a hivatkozások **csomópontra** a Megoldáskezelő és adja hozzá a következő hivatkozásokat (válassza a Tallózás **szakaszt,** majd válassza a Tallózás **lehetőséget):**
 
@@ -94,9 +94,9 @@ Csapatunk jelenleg a javításon dolgozik. Addig is a következő lépésekkel m
 
 1. Kattintson a jobb gombbal a projektre a Megoldáskezelő válassza a **Meglévő elem** hozzáadása  >  **lehetőséget.**
 
-1. Keresse meg a C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86 fájlt, és módosítsa a szűrőt a **Következőre: Minden fájl ( . \* \* ).**.
+1. Keresse meg a C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86 fájlt, és módosítsa a szűrőt a **Következőre: Minden fájl ( \* . \* )**.
 
-1. Jelölje ki a SirepClient.dll és a SshClient.dll, majd válassza a **Hozzáadás lehetőséget.**
+1. Jelölje ki a SirepClient.dll és SshClient.dll, majd válassza a **Hozzáadás lehetőséget.**
 
 1. Keresse meg és válassza ki a Megoldáskezelő mindkét fájlt (a fájlok listájának  alján kell lennie), és módosítsa a Másolás kimeneti könyvtárba a **Tulajdonságok** ablakban a Copy always (Mindig másolás) **beállításra.**
 
@@ -123,22 +123,22 @@ Csapatunk jelenleg a javításon dolgozik. Addig is a következő lépésekkel m
 
 1. Nyisson meg egy parancssori ablakot, és cd-vel nyissa meg a lefordított .exe-fájlt tartalmazó mappát (például C:\MyProjects\HoloLensDeploymentFix\bin\Debug).
 
-1. Futtassa a végrehajtható fájlt, és adja meg az eszköz IP-címét parancssori argumentumként. (Ha USB-kapcsolattal csatlakozik, használhatja a 127.0.0.1-es portot, ellenkező esetben pedig az eszköz Wi-Fi IP-címét.)  Például: "HoloLensDeploymentFix 127.0.0.1".
+1. Futtassa a végrehajtható fájlt, és adja meg az eszköz IP-címét parancssori argumentumként. (Ha USB-kapcsolaton keresztül csatlakozik, használhatja a 127.0.0.1-es portot, ellenkező esetben pedig az eszköz Wi-Fi IP-címét.)  Például: "HoloLensDeploymentFix 127.0.0.1".
 
-1. Miután az eszköz üzenetek nélkül kilépt (ez csak néhány másodpercet vegyen igénybe), üzembe helyezheti az eszközt, és hibakeresést Visual Studio 2017-es vagy újabb Visual Studio után.  Az eszköz további használata nem szükséges.
+1. Miután az eszköz üzenetek nélkül kilépt (ez csak néhány másodpercet vegyen igénybe), a 2017-es vagy újabb Visual Studio üzembe helyezését és hibakeresését.  Az eszköz további használata nem szükséges.
 
 Amint elérhetővé válnak, további frissítéseket is biztosítanak.
 
-### <a name="issues-launching-the-microsoft-store-and-apps-on-hololens"></a>Problémák a Microsoft Store és alkalmazások a HoloLens
+### <a name="issues-launching-the-microsoft-store-and-apps-on-hololens"></a>Problémák a Microsoft Store és az alkalmazások HoloLens
 
 > [!NOTE]
 > Utolsó frissítés: 4/2 @ 10:00 – A probléma megoldva.
 
-Problémákat tapasztalhat, amikor megpróbálja elindítani a Microsoft Store alkalmazást a HoloLens. Megállapítottuk, hogy a probléma akkor fordul elő, ha a háttéralkalmazás frissítései adott sorrendben telepítik a keretrendszer-csomagok újabb verzióját, miközben egy vagy több függő alkalmazásuk még mindig fut. Ebben az esetben egy automatikus alkalmazásfrissítés a .NET Native Framework új verzióját (10.0.25531–10.0.27413) hozta létre, ami miatt a futó alkalmazások nem frissülnek megfelelően a keretrendszer korábbi verzióját fogyasztó összes futó alkalmazáshoz.  A keretrendszer frissítésének folyamata a következő:
+Problémákat tapasztalhat, amikor megpróbálja elindítani a Microsoft Store alkalmazásokat a HoloLens. Megállapítottuk, hogy a probléma akkor fordul elő, ha a háttéralkalmazás frissítései adott sorrendben telepítik a keretrendszer-csomagok újabb verzióját, miközben egy vagy több függő alkalmazás továbbra is fut. Ebben az esetben az automatikus alkalmazásfrissítés a .NET Native Framework új verzióját (10.0.25531–10.0.27413) hozta létre, ami miatt a futó alkalmazások nem megfelelően frissülnek a keretrendszer korábbi verzióját fogyasztó összes futó alkalmazás esetében.  A keretrendszer frissítésének folyamata a következő:
 
 1. A rendszer letölti az új keretrendszercsomagot az áruházból, és telepíti.
 
-1. Minden alkalmazás régebbi keretrendszer "frissítve" lett az újabb verzió használatára.
+1. Minden alkalmazás régebbi keretrendszert használó verziók "frissítve" vannak az újabb verzió használatára.
 
 Ha a 2. lépés megszakad a befejezés előtt, akkor az újabb keretrendszert nem regisztráló alkalmazások nem indulnak el a Start menüből.  Úgy véljük, hogy a HoloLens bármelyik alkalmazást érintheti ez a probléma.
 
@@ -176,15 +176,15 @@ Ha az eszköz továbbra sem tud alkalmazásokat betölteni, a .NET Native Framew
 
 1. A Windows Eszközportál után "be kell töltenie" a letöltött két fájlt. Ezt a bal oldali sávon kell megtennie, amíg el nem jut az **Alkalmazások szakaszhoz,** és válassza az **Alkalmazások lehetőséget.**
 
-1. Ekkor az alábbihoz hasonló képernyő jelenik meg.  Lépjen az Install **App** (Alkalmazás telepítése) szakaszra, és keresse meg a két APPX-fájl kibontott helyét. Egyszerre csak egyet tud megtenni, ezért miután kiválasztotta az elsőt, kattintson az Üzembe helyezés szakasz "Ugrás" gombjára. Ezután tegye ezt a második APPX-fájlhoz.
+1. Ekkor az alábbihoz hasonló képernyő jelenik meg.  Lépjen az Install **App** (Alkalmazás telepítése) szakaszra, és keresse meg a két APPX-fájl kibontott helyét. Egyszerre csak egyet tud megtenni, ezért miután kiválasztotta az elsőt, kattintson az Üzembe helyezés szakasz "Ugrás" gombjára. Ezután tegye meg ezt a második APPX-fájlhoz.
 
-   ![Windows Eszközportál az Install Side-Loaded app (Alkalmazás telepítése) gombra.](images/20190322-DevicePortal.png)
+   ![Windows Eszközportál az Alkalmazás Side-Loaded telepítéséhez.](images/20190322-DevicePortal.png)
 
-1. Úgy véljük, hogy ezen a ponton az alkalmazásoknak újra kell kezdeniük a munkát, és hogy az Áruházat is el tudja látni.
+1. Úgy véljük, hogy ezen a ponton az alkalmazásoknak újra kell kezdeniük a munkát, és hogy a Store-t is el tudja látni.
 
 1. Bizonyos esetekben az érintett alkalmazások indítása előtt le kell futtatni a 3D-megjelenítő elindításának további lépését.
 
-Nagyra értékeljük türelmét, mivel végigmentünk a probléma megoldásának folyamatán, és várjuk, hogy továbbra is együtt dolgozunk a közösséggel a sikeres és sikeres Mixed Reality érdekében.
+Nagyra értékeljük türelmét, mivel végigmentünk a probléma megoldásán, és várjuk, hogy továbbra is együtt dolgozunk a közösséggel a sikeres és sikeres Mixed Reality érdekében.
 
 ### <a name="device-update"></a>Eszközfrissítés
 
@@ -192,13 +192,13 @@ Nagyra értékeljük türelmét, mivel végigmentünk a probléma megoldásának
 
 ### <a name="visual-studio"></a>Visual Studio
 
-- Lásd: [A](/windows/mixed-reality/install-the-tools) Visual Studio legújabb verziójának eszközeinek telepítése HoloLens telepítése.
+- [Lásd:](/windows/mixed-reality/install-the-tools) Az eszközök telepítése a Visual Studio legújabb verziójának telepítéséhez, amely HoloLens ajánlott.
 
-- Amikor alkalmazást helyez Visual Studio a HoloLens-re, a következő hibaüzenet jelenhet meg: A kért művelet nem hajtható végre olyan fájlon, amely megnyit egy felhasználó által **leképezett szakaszt. (Kivétel HRESULT-ból: 0x800704C8)**. Ha ez történik, próbálkozzon újra, és az üzembe helyezés általában sikeres lesz.
+- Amikor alkalmazást telepít egy Visual Studio a HoloLens, a következő hibaüzenet jelenhet meg: A kért művelet nem hajtható végre olyan fájlon, amely megnyit egy felhasználó által **leképezett szakaszt. (Kivétel HRESULT-ból: 0x800704C8)**. Ha ez történik, próbálkozzon újra, és az üzembe helyezés általában sikeres lesz.
 
 ### <a name="api"></a>API
 
-- Ha az alkalmazás [](/windows/mixed-reality/focus-point-in-unity) beállítja a fókuszpontot a felhasználó mögött, vagy a szokásos kamera-továbbítást, a hologramok nem jelennek meg Vegyes valóság rögzítése fényképeken vagy videókban. Amíg ez a hiba nincs kijavítva a [](/windows/mixed-reality/focus-point-in-unity) Windows, ha az alkalmazások aktívan beállítják a fókuszpontot, meg kell győződni arról, hogy a sík normál értéke a kamera ellenkező irányában van beállítva (például normal = -camera.forward).
+- Ha az alkalmazás [](/windows/mixed-reality/focus-point-in-unity) beállítja a fókuszpontot a felhasználó mögött, vagy a normál kamera.forward, a hologramok nem jelennek meg Vegyes valóság rögzítése fényképeken vagy videókban. Amíg ez a hiba nincs kijavítva a Windows, ha az alkalmazások aktívan beállítják a fókuszpontot, meg kell győződni arról, hogy a sík normál értéke a kamera ellenkező irányában van beállítva (például normal = -camera.forward). [](/windows/mixed-reality/focus-point-in-unity)
 
 ### <a name="xbox-wireless-controller"></a>Xbox vezeték nélküli vezérlő
 
@@ -206,5 +206,5 @@ Nagyra értékeljük türelmét, mivel végigmentünk a probléma megoldásának
 
 - Ha az Xbox vezeték nélküli HoloLens közben újraindítja a rendszert, a vezérlő nem fog automatikusan újracsatlakozni a HoloLens. Az Útmutató gomb fénye lassan villog, amíg a vezérlő 3 perc után ki nem indul. Ha azonnal újra csatlakoztatnia kell a vezérlőt, kikapcsolja a vezérlőt úgy, hogy az Útmutató gombot addig tartja, amíg a világítás ki nem vált. Amikor újra bekapcsolja a vezérlőt, az újracsatlakozik a HoloLens.
 
-- Ha a HoloLens az Xbox vezeték nélküli vezérlő csatlakoztatva van, a vezérlő minden bemenete felébreszti a HoloLens. Ezt úgy előzheti meg, ha kikapcsolja a vezérlőt, amikor már nem használja.
+- Ha a HoloLens készenléti állapotba lép, miközben az Xbox vezeték nélküli vezérlő csatlakoztatva van, a vezérlő minden bemenete felébreszti a HoloLens. Ezt úgy előzheti meg, ha kikapcsolja a vezérlőt, amikor már nem használja.
 

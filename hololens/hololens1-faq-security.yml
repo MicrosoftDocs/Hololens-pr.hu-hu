@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: Gyakori biztonsági kérdések
-  description: Maradjon naprakész a vegyes valóságú eszközökre vonatkozó gyakori biztonsági HoloLens válaszokkal kapcsolatban.
+  description: Maradjon naprakész a vegyes valóságú eszközökkel kapcsolatos gyakori biztonsági kérdések és válaszok HoloLens kapcsolatban.
   ms.assetid: bd55ecd1-697a-4b09-8274-48d1499fcb0b
   author: pawinfie
   ms.author: pawinfie
@@ -17,11 +17,11 @@ metadata:
   - CSSTroubleshooting
   manager: bradke
   ms.openlocfilehash: 108f2e4c0aa9af251ecb6bc5185c7803ae51b5f7
-  ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+  ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
   ms.translationtype: MT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 09/10/2021
-  ms.locfileid: "124428805"
+  ms.lasthandoff: 09/13/2021
+  ms.locfileid: "126032811"
 title: Gyakori kérdések HoloLens (1. generációs) biztonsági kérdések
 summary: ''
 sections:
@@ -38,7 +38,7 @@ sections:
   - question: >
       Milyen típusú architektúra van beépítve?  Például: rámutatás, háló vagy valami más?
     answer: >
-      * Wi-Fi infrastruktúra módban használható más vezeték nélküli hozzáférési pontokkal való kommunikációhoz.
+      * Wi-Fi módban használhatók más vezeték nélküli hozzáférési pontokkal való kommunikációhoz.
 
       * Bluetooth társviszony létesíthet társviszonyt több HoloLens között, ha az ügyfél alkalmazása támogatja azt, vagy más Bluetooth között.
   - question: >
@@ -48,7 +48,7 @@ sections:
   - question: >
       Milyen gyakorisági tartományon és csatornákon működik az eszköz, és konfigurálható?
     answer: >
-      * Wi-Fi: A gyakorisági tartomány nem konfigurálható a felhasználó számára, és a használat országától függ. Az Egyesült Államok Wi-Fi 2,4 GHz-es (1–11) és 5 GHz-es (36–64, 100–165) csatornákat is használ.
+      * Wi-Fi: A gyakorisági tartomány nem konfigurálható a felhasználó számára, és a használat országától függ. Az Egyesült Államok Wi-Fi 2,4 GHz-es (1–11) és 5 GHz-es (36–64, 100–165) csatornákat használ.
 
       * Bluetooth: Bluetooth standard 2,4–2,48 GHz-es tartományt használja.
   - question: >
@@ -58,7 +58,7 @@ sections:
   - question: >
       Mi az átvitel és a fogadás energiaszintje? Módosítható? Mi a működési tartomány?
     answer: >
-      * A kibocsátástesztelési szabványok itt [találhatók.](https://fccid.io/C3K1688) A működési tartomány nagy mértékben függ a hozzáférési ponttól és a környezettől, de nagyjából egyenértékű más kiváló minőségű telefonokkal, táblagépekkel vagy számítógépekkel.
+      * A kibocsátástesztelési szabványok itt [találhatók.](https://fccid.io/C3K1688) A működési tartomány nagy mértékben függ a hozzáférési ponttól és a környezettől, de nagyjából megegyezik más kiváló minőségű telefonokkal, táblagépekkel vagy számítógépekkel.
   - question: >
       Mi a normál működés feladatciklusa/élettartama?
     answer: >
@@ -66,15 +66,15 @@ sections:
 
       * Az akkumulátor élettartama nem érhető el.
   - question: >
-      Mit jelent az átvitel és a fogadás viselkedése, ha egy eszköz nem esik a tartományba?
+      Mi az átviteli és fogadási viselkedés, ha egy eszköz nem a tartományon belül van?
     answer: >
-      * HoloLens továbbítás/fogadás a szabványos Wi-Fi/Bluetooth mintát követi. A tartomány szélén valószínűleg észreveheti, hogy a bemenet egészen addig áramol, amíg teljesen le nem bontja a kapcsolatot, de miután visszatért a tartományba, gyorsan újracsatlakozhat.
+      * HoloLens továbbítás/fogadás a szabványos Wi-Fi/Bluetooth mintát követi. A tartomány peremén valószínűleg észreveheti, hogy a bemenet egészen a teljes leválasztásig le nem szakad, de ha visszatér a tartományhoz, gyorsan újra kell csatlakoznia.
   - question: >
-      Mi az üzembe helyezés négyzetlábankénti sűrűsége?
+      Mi az üzemelő példány négyzetlábankénti sűrűsége?
     answer: >
       * Ez a hálózati infrastruktúrától függ.
   - question: >
-      Az eszköz használhatja-e ügyfélként az infrastruktúrát?
+      Az eszköz használhatja az infrastruktúrát ügyfélként?
     answer: >
       * Yes
   - question: >
@@ -84,48 +84,48 @@ sections:
   - question: >
       Operációs rendszer frissítési gyakorisága – Milyen gyakorisággal frissülnek a HL operációs rendszer frissítései?  Van beállított ütemezés?  A Microsoft szükség szerint ad ki biztonsági javításokat stb.
     answer: >
-      * A Microsoft az operációs rendszer frissítéseit HoloLens ugyanúgy biztosítja, mint a Windows 10. Általában évente két fő frissítés van, egy tavaszi, egy pedig ősszel. Mivel HoloLens eszköz Windows, a frissítés fogalma megegyezik a többi Windows eszközével. A Microsoft szükség szerint kiadja a biztonsági javításokat, és ugyanazt a fogalmat követi, mint bármely Windows eszközön.
+      * A Microsoft pontosan ugyanúgy biztosítja az operációs HoloLens frissítéseit, mint a Windows 10. Általában évente két fő frissítés van, egy tavaszi, egy pedig ősszel. Mivel HoloLens egy Windows eszköz, a frissítési fogalom ugyanaz, mint bármely más Windows eszközben. A Microsoft szükség szerint kiadja a biztonsági javításokat, és ugyanazt a fogalmat követi, mint bármely Windows eszközön.
   - question: >
       Az operációs rendszer megsokosodása – Milyen lehetőségek állnak rendelkezésre az operációs rendszer megsokosodása gombra?  Eltávolítható vagy leállítható a szükségtelen alkalmazások vagy szolgáltatások?
     answer: >
-      * HoloLens okostelefonként viselkedik. Ez más modern Windows hasonló. HoloLens a mobileszközök vagy Microsoft Intune Modern Eszközkezelés-megoldások, például a MobileIron, az Airwatch vagy a Soti segítségével kezelhetők. Ezekben a felügyeleti rendszerekben olyan szabályzatokat állíthat be, amelyek biztonsági házirendeket rendelnek az eszközhöz, és az eszköz biztonságát is megszibadítják. Szükség esetén lehetőség van a szükségtelen alkalmazások törlésére is.
+      * HoloLens okostelefonként viselkedik. Ez hasonló a többi modern Windows eszközéhez. HoloLens a mobileszközök vagy Microsoft Intune modern Eszközkezelés megoldások, például a MobileIron, az Airwatch vagy a Soti segítségével kezelhetők. Ezekben a felügyeleti rendszerekben olyan szabályzatokat állíthat be, amelyek biztonsági szabályzatokat rendelnek az eszközhöz, és az eszköz biztonságát is megsokosítják. Szükség esetén lehetőség van a szükségtelen alkalmazások törlésére is.
   - question: >
-      Hogyan kezelik és frissítik a szoftveralkalmazásokat? Milyen vezérlővel határozható meg, hogy mely alkalmazások töltődnek be, és melyek az alkalmazások frissítési folyamata a Microsoft Áruházban élő alkalmazások esetében?
+      Hogyan lesznek a szoftveralkalmazások kezelése és frissítése? Milyen vezérlővel határozható meg, hogy mely alkalmazások töltődnek be, és milyen alkalmazásfrissítési folyamat legyen elérhető a Microsoft Áruházban élő alkalmazásokhoz?
     answer: >
-      * HoloLens szoftveralkalmazásokat csak a Windows keresztül kapja meg. Csak Appx-alkalmazáscsomagok telepíthetők, amelyek a szoftveres HoloLens. Ezt láthatja a Microsoft Store egy kis emblémával az alkalmazás mellett, amely megjeleníti a HoloLens eszközt. Az Áruházbeli alkalmazások felügyeletére vonatkozó bármilyen szabályozás az áruházbeli alkalmazásokra is HoloLens. Használhatja a hivatalos áruház vagy az üzleti áruház fogalmát. Az alkalmazások manuálisan is betölthetőek (manuálisan egy alkalmazás egy Windows-eszközre való betöltéséhez), vagy egy MDM-ben kezelhetők, így az alkalmazások szükség esetén automatikusan leküldhetőek az áruházból.
+      * HoloLens a szoftveralkalmazásokat csak a Windows kapja meg. Csak az Appx alkalmazáscsomagok telepíthetők, amelyek a HoloLens. Ezt a táblázatban láthatja, Microsoft Store mellett egy kis embléma látható, amely a HoloLens látható. Az Áruházbeli alkalmazások felügyeletére vonatkozó bármilyen szabályozás az áruházbeli alkalmazásokra is HoloLens. Használhatja a hivatalos áruház vagy az üzleti áruház fogalmát. Az alkalmazások manuálisan is betölthetőek (manuálisan tölthetők be egy alkalmazás egy Windows-eszközre), vagy egy MDM-ben kezelhetők, így az alkalmazások szükség esetén automatikusan leküldhetőek az áruházból.
   - question: >
-      Milyen gyakorisággal frissülnek az áruházbeli alkalmazások a HoloLens?
+      Milyen gyakorisággal frissülnek az áruházban elérhető alkalmazások a HoloLens?
     answer: >
-      * Ahogy ugyanazt a fogalmat követjük, Microsoft Store alkalmazásokat onnan lekértünk, a frissítési ciklust az alkalmazás fejlesztője határozza meg. Az áruházban a frissítési mechanizmus vezérléséhez rendelkezésre álló összes felügyeleti lehetőség a HoloLens is vonatkozik.
+      * Mivel ugyanazt a fogalmat követjük, Microsoft Store alkalmazásokat onnan lekértünk, a frissítési ciklust az alkalmazás fejlesztője határozza meg. Az áruházban a frissítési mechanizmus vezérléséhez rendelkezésre álló összes felügyeleti lehetőség a HoloLens is vonatkozik.
   - question: >
       Van biztonságos rendszerindítási képesség a HoloLens?
     answer: >
       * Yes
   - question: >
-      Van lehetőség a periféria támogatásának letiltására vagy az eszközről való leválasztására?
+      Van lehetőség a periféria támogatásának letiltására vagy leválasztására az eszközről?
     answer: >
       * Yes
   - question: >
-      Van lehetőség a portok használatának vezérlésére vagy letiltására az eszközön?
+      Szabályozható vagy letiltható a portok használata az eszközön?
     answer: >
-      * A HoloLens csak két portot tartalmaz (egyet a mikrofonokhoz, egyet pedig a díjszabáshoz vagy a számítógépekhez való csatlakozáshoz). A port funkció- és helyreállítási okokból nem tiltható le.
+      * A HoloLens csak két portot tartalmaz (egyet a akkumulátorokhoz, egyet pedig a díjszabáshoz vagy a számítógépekhez való csatlakozáshoz). A port funkció- és helyreállítási okokból nem tiltható le.
   - question: >
       Víruskereső, végpontészlelés, IPS, alkalmazásvezérlési engedélyezőlista – Bármilyen víruskereső, végpontészlelés, IPS, alkalmazásvezérlési engedélyezőlista stb. futtatásának lehetősége.
     answer: >
-      * Windows Holographic for Business (kereskedelmi csomag) támogatja az Windows Defender Smart Screen-t. Ha egy víruskereső vállalat létrehoz és közzétesz egy alkalmazást az Univerzális Windows platformon, akkor az a HoloLens. Ezt jelenleg egyetlen vállalat sem tette meg HoloLens.
+      * Windows Holographic for Business (kereskedelmi csomag) támogatja az Windows Defender Smart Screent. Ha egy víruskereső vállalat az Univerzális Windows platformon hozza létre és teszi közzé az alkalmazását, akkor az a HoloLens. Ezt jelenleg egyetlen vállalat sem tette meg HoloLens.
 
-      * Az alkalmazások engedélyezéséhez használhatja a Microsoft Nagyvállalati Áruházat, ahol csak azt választhatja ki, hogy mely alkalmazások tölthetők le. Emellett az MDM segítségével zárolhatja, hogy mely alkalmazások futtathatók vagy láthatók az eszközön.
+      * Az alkalmazások engedélyezéséhez használhatja a Microsoft Enterprise Store áruházat, ahol csak azt választhatja ki, hogy mely alkalmazások tölthetők le. Emellett az MDM segítségével zárolhatja, hogy mely alkalmazások futtathatók vagy láthatók az eszközön.
   - question: >
-      Karanténba lehet helyezni az eszközt a prod hálózatról, amíg az eszközt nem frissítik, ha az hosszabb ideje offline állapotban van?  Pl. Az eszköz egy ideig (hat hónapja) nem működik a fiókok között, és nem kapott frissítéseket, javításokat stb.  Ha a hálózatra próbál csatlakozni, megjelölheti, és tudathatja velünk, hogy egy másik hálózaton kell frissítenie, mielőtt a hálózatra való csatlakozásra panaszkodna.
+      Karanténba tudjuk helyezni az eszközt a prod hálózatról, amíg az eszközt nem frissítjük, ha az már hosszabb ideje offline állapotban van?  Pl. Az eszköz egy ideig (hat hónapja) nem működik a fiókok között, és nem kapott frissítéseket, javításokat stb.  Amikor a hálózatra próbál csatlakozni, megjelölheti, és tudathatja velünk, hogy frissítenie kell egy másik hálózaton, mielőtt a hálózathoz való csatlakozásra panaszkodna.
     answer: >
-      * Ez az infrastruktúra szintjén kezelhető MDM- vagy egy on-prem-kiszolgálóval. Az eszköz akkor lehet nem megfelelőként megjelölve, ha nem felel meg a megadott frissítési verziónak.
+      * Ez olyan dolog, amely infrastruktúraszinten kezelhető MDM-ként vagy egy saját kiszolgálóval. Az eszköz nem megfelelőként is megjelölve lehet, ha nem felel meg a megadott frissítési verziónak.
   - question: >
-      Tartalmaz a Microsoft olyan hátsó ajtókat vagy szolgáltatásokat, amelyek lehetővé teszik a Microsoft számára, hogy csatlakozzon az eszközhöz képernyőmegosztás vagy távoli támogatás érdekében?
+      Tartalmaz a Microsoft olyan hátsó kapukat vagy olyan szolgáltatásokat, amelyek lehetővé teszik a Microsoft számára, hogy csatlakozzon az eszközhöz képernyőmegosztás vagy távoli támogatás érdekében?
     answer: >
       * No
   - question: >
-      Ha megbízható kommunikációhoz hoz létre PKI-tanúsítványt, azt szeretnénk, ha a tanúsítvány az eszközön jön létre, hogy tudjuk, hogy az csak az eszközön található, és csak az eszközön található, és nem exportálható és nem használható az eszköz megszemélyesítésére. Ez igaz a HoloLens? Ha nem, van lehetséges megoldás?
+      Ha megbízható kommunikációhoz hoz létre PKI-tanúsítványt, azt szeretnénk, hogy a tanúsítvány az eszközön legyen létrehozva, hogy tudjuk, hogy az csak az eszközön található, és csak az eszközön található, és nem exportálható vagy használható az eszköz megszemélyesítéséhez. Ez igaz a HoloLens? Ha nem, van lehetséges megoldás?
     answer: >-
-      * Az SCEP-hez létrehozott CSR az eszközön jön létre. Az Intune és a on-premise SCEP-összekötő maguk is biztosítják a kérések biztonságát azáltal, hogy hozzáadnak és ellenőriznek egy, az ügyfélnek elküldött ellenőrző sztringet.
+      * Az SCEP CSR-ját a rendszer magában az eszközön generálja. Az Intune és a on-premise SCEP-összekötő magukat a kéréseket is biztonságossá teszi azáltal, hogy hozzáad és ellenőriz egy, az ügyfélnek küldött ellenőrző sztringet.
 
-      * Mivel HoloLens (első és második generációs) egy TPM-modullal is bír, ezeket a tanúsítványokat a rendszer a TPM-modulban tárolja, és nem lehet kinyerni. Emellett még ha ki is lehetne őket bontani, a feladat sztringek nem ellenőrizhetők egy másik eszközön, így a tanúsítványok/kulcsok használhatatlanná válnak a különböző eszközökön.
+      * Mivel HoloLens (első és második generációs) egy TPM-modullal is bír, ezeket a tanúsítványokat a rendszer a TPM-modulban tárolja, és nem lehet kinyerni. Emellett még ha ki is lehetne őket bontani, a feladat-sztringek nem ellenőrizhetők egy másik eszközön, így a tanúsítványok/kulcsok használhatatlanná válnak a különböző eszközökön.

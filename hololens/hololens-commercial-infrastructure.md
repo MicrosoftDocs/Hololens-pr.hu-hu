@@ -1,6 +1,6 @@
 ---
-title: Infrastruktúra-irányelvek a HoloLens
-description: Ismerje meg a hálózati eszközök infrastruktúra-HoloLens, beleértve a vezeték nélküli hálózat támogatását, a távsegítség és a mobileszköz-kezelés útmutatóját.
+title: Infrastruktúra-irányelvek HoloLens
+description: Ismerje meg a hálózati eszközök infrastruktúrával kapcsolatos irányelveit HoloLens beleértve a vezeték nélküli hálózat támogatását, a távsegítség és a mobileszköz-kezelés kezelését.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -15,11 +15,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: e23bd458e26668f1f4a9a361ffaadf8fc377933e
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428720"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036051"
 ---
 # <a name="configure-your-network-for-hololens"></a>A hálózat konfigurálása HoloLens
 
@@ -31,14 +31,14 @@ A dokumentum ezen részében a következő személyekre lesz szükség:
 
 ## <a name="infrastructure-requirements"></a>Infrastruktúrakövetelmények
 
-HoloLens lényegében egy azure Windows integrált mobileszköz.  Kereskedelmi környezetekben működik a legjobban vezeték nélküli hálózattal (Wi-Fi) és hozzáféréssel az Microsoft-szolgáltatások.
+HoloLens lényegében egy azure Windows integrált mobileszköz.  Kereskedelmi környezetekben működik a legjobban vezeték nélküli hálózattal (Wi-Fi) és hozzáféréssel a Microsoft-szolgáltatások.
 
 A kritikus fontosságú felhőszolgáltatások közé tartoznak a következők:
 
 - Azure active directory (Azure AD)
 - Windows Frissítés (WU)
 
-A kereskedelmi ügyfeleknek nagyvállalati mobilitási felügyeleti (EMM) vagy mobileszköz-kezelési (MDM) infrastruktúrára van szükségük a nagy HoloLens felügyeletéhez.  Ez az útmutató [Microsoft Intune,](https://www.microsoft.com/enterprise-mobility-security/microsoft-intune) bár a Microsoft Policyt teljes mértékben támogató bármely szolgáltató támogathatja a HoloLens.  Kérdezze meg mobileszköz-felügyeleti szolgáltatóját, hogy támogatja-e HoloLens 2.
+A kereskedelmi ügyfeleknek nagyvállalati mobilitási felügyeleti (EMM) vagy mobileszköz-kezelési (MDM) infrastruktúrára van szükségük a nagy HoloLens felügyeletéhez.  Ez az útmutató [Microsoft Intune,](https://www.microsoft.com/enterprise-mobility-security/microsoft-intune) bár a Microsoft Policy teljes körű támogatásával minden szolgáltató támogathatja a HoloLens.  Kérdezze meg mobileszköz-kezelő szolgáltatóját, hogy támogatják-e HoloLens 2.
 
 HoloLens nem támogatja a felhővel nem leválasztott élmények egy korlátozott készletét.
 
@@ -64,7 +64,7 @@ Győződjön meg arról, [hogy a végpontok](hololens-offline.md) listája enged
 1. Győződjön meg arról, hogy ezek a portok és URL-címek engedélyezve vannak a hálózati tűzfalon a Microsoft Teams működéséhez. Maradjon naprakész a legújabb [portlistával.](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
 
 - További információ a [Remote Assist konkrét hálózati követelményeiről.](/dynamics365/mixed-reality/remote-assist/requirements#network-requirements) 
-- További információ arról, hogyan [készítheti elő a](/MicrosoftTeams/prepare-network) szervezet hálózatát a Microsoft Teams
+- További információ arról, hogyan készítheti elő a szervezet [hálózatát a Microsoft Teams](/MicrosoftTeams/prepare-network)
 
 ### <a name="guides-specific-network-requirements"></a>Útmutatók konkrét hálózati követelményekhez
 
@@ -90,7 +90,7 @@ A felhasználók [hozzáadásához kövesse](/azure/active-directory/fundamental
 1. Győződjön meg arról, hogy a vállalat felhasználóihoz (vagy felhasználói csoportjához) hozzá van rendelve a szükséges licencek.
 Ha licenceket kell hozzárendelni, kövesse az [alábbi utasításokat.](/azure/active-directory/fundamentals/license-users-groups)
 
-1. Ezt a lépést csak akkor tegye meg, ha a felhasználóknak regisztrálniuk kell a HoloLens/Mobile-eszközüket az Ön számára (három lehetőség van). Ezek a lépések biztosítják, hogy a vállalat felhasználói (vagy felhasználói csoportok) hozzáadhatnak eszközöket.
+1. Ezt a lépést csak akkor tegye meg, ha a felhasználóknak regisztrálniuk kell HoloLens/Mobile-eszközüket az Ön számára (három lehetőség van). Ezek a lépések biztosítják, hogy a vállalat felhasználói (vagy felhasználói csoportok) eszközöket adhatnak hozzá.
     1. **1. lehetőség:** Adjon engedélyt minden felhasználónak az eszközök Azure AD-hez való csatlakozásához.
 **Jelentkezzen be a Azure Portal rendszergazdaként**  >  **Azure Active Directory**  >  **Eszközök**  >  **Eszköz Gépház**  >
  **Állítsa a Users may join devices to Azure AD (Felhasználók csatlakozhatnak az eszközökhöz az Azure AD-be) *beállítását All (Mind) beállításra***
@@ -167,11 +167,11 @@ A kereskedelmi csomagra való frissítésre vonatkozó utasításokat a [hologra
 1. Szinkronizálás Microsoft Store Intune-nal (lásd az alábbi [utasításokat).](/intune/apps/windows-store-for-business)
 
 1. Az alkalmazásbeállítások ellenőrzése
-    1. Jelentkezzen be Microsoft Store üzleti fiókjába
-    1. **Az >-termékek és -szolgáltatások kezelése > Alkalmazások és szoftverszolgáltatások > Válassza ki azt az alkalmazást, amely szinkronizálni szeretné > Privát áruház rendelkezésre állási > Válassza > "Mindenki" vagy "Adott csoportok" lehetőséget.**
+    1. Jelentkezzen be Microsoft Store vállalati fiókjába
+    1. **Az >-termékek és -szolgáltatások kezelése > Alkalmazások és szoftverszolgáltatások > Válassza ki azt az alkalmazást, amely szinkronizálni szeretné > Privát áruház rendelkezésre állási > Válassza a "Mindenki" vagy "Adott csoportok" lehetőséget.**
         >[!NOTE]
-        >Ha nem látja a kívánt alkalmazást, az áruházban való kereséssel "le kell szereznie" az alkalmazást. **A jobb felső sarokban** kattintson a "Keresés" > begépelheti az alkalmazás nevét, majd > az alkalmazásra, és > a "Get" lehetőséget.
-    1. Ha nem látja az alkalmazásait az **Intune-ban > Ügyfélalkalmazások** > Apps alkalmazásban, előfordulhat, hogy újra [szinkronizálni](/intune/apps/windows-store-for-business#synchronize-apps) kell az alkalmazásokat.
+        >Ha nem látja a kívánt alkalmazást, az áruházban való kereséssel "le kell szereznie" az alkalmazást. Kattintson a jobb felső sarokban található "Keresés" > az alkalmazás nevére, majd > az alkalmazásra, és > **a "Bekeresés" lehetőséget.**
+    1. Ha nem látja az alkalmazásait az **Intune-ban > ügyfélalkalmazások** > Apps alkalmazásban, előfordulhat, hogy újra [szinkronizálni](/intune/apps/windows-store-for-business#synchronize-apps) kell az alkalmazásokat.
 
 1. [Eszközprofil létrehozása kioszkmódhoz](/intune/configuration/kiosk-settings#create-the-profile)
 
@@ -180,11 +180,11 @@ A kereskedelmi csomagra való frissítésre vonatkozó utasításokat a [hologra
 
 ![A kioszkmód Intune-nal való konfigurálást bemutató kép.](images/aad-kioskmode.png)
 
-Más MDM-szolgáltatásokhoz a szolgáltató dokumentációjában talál útmutatást. Ha egyéni HoloLens beállítást és teljes XML-konfigurációt kell használnia az MDM-szolgáltatás teljes képernyős beállításának beállítására, tekintse meg a teljes képernyős [kioszkra](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) vonatkozó utasításokat.
+Más MDM-szolgáltatásokhoz a szolgáltató dokumentációjában talál útmutatást. Ha egyéni HoloLens beállítást és teljes XML-konfigurációt kell használnia az MDM-szolgáltatás teljes kioszkbeállításának beállítására, tekintse meg a teljes képernyős [kioszkra](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) vonatkozó utasításokat.
 
 ## <a name="certificates-and-authentication"></a>Tanúsítványok és hitelesítés
 
-A tanúsítványok az MDM-en keresztül helyezhetők üzembe (lásd a "tanúsítványok" részt az [MDM szakaszban).](hololens-commercial-infrastructure.md#mobile-device-manager-guidance) A tanúsítványok a csomag kiépítése HoloLens is üzembe helyezhetők. További [információt HoloLens provisioning (Kiépítés)](hololens-provisioning.md) oldalon.
+A tanúsítványok az MDM-en keresztül helyezhetők üzembe (lásd a "tanúsítványok" részt az [MDM szakaszban).](hololens-commercial-infrastructure.md#mobile-device-manager-guidance) A tanúsítványok a csomag kiépítése HoloLens is üzembe helyezhetők. További információt [HoloLens provisioning (Kiépítés)](hololens-provisioning.md) oldalon.
 
 ### <a name="additional-intune-quick-links"></a>Az Intune további gyorshivatkozásai
 

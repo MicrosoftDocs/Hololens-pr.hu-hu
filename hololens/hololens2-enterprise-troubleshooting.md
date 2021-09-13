@@ -13,11 +13,11 @@ ms.reviewer: ''
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 9f3950de51e4bfa2a76431a2a070d87aa81ed443
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427458"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036136"
 ---
 # <a name="troubleshooting-implementation-and-managed-devices"></a>Megvalósítási és felügyelt eszközök hibaelhárítása 
 
@@ -85,13 +85,13 @@ A Fiddler egy webes hibakeresési proxy, amely a HTTP(S) problémák elhárítá
 3. A 2. HoloLens konfigurálja a Fiddlert<sup>1. proxykiszolgálóként:</sup>
     1. Nyissa meg a Start menü, és válassza a Gépház
     1. Válassza a Hálózati & internet lehetőséget, majd a bal oldali menü proxybeállítását
-    1. Görgessen le a Manual proxy setup (Manuális proxybeállítás) elemre, és a Use a proxy server (Proxykiszolgáló használata) kapcsolót a On (Be) beállításra.
+    1. Görgessen le a Manual proxy setup (Manuális proxybeállítás) elemre, és a Use a proxy server (Proxykiszolgáló használata) kapcsolót a On (Be) kapcsolóra
     1. Adja meg annak a számítógépnek az IP-címét, ahol a Fiddler telepítve van
     1. Adja meg a fent feljegyzett portszámot (az alapértelmezett érték: 8866)
     1. Kattintson a Save (Mentés) gombra.
 
 <sup>1</sup> A 20279.1006+ buildek (insiders és a következő kiadás) esetén a következő lépésekkel konfigurálhatja a proxyt:
-1. Nyissa meg Start menü, és nyissa meg Wi-Fi hálózat Tulajdonságok lapját 
+1. Nyissa meg Start menü, és nyissa meg Wi-Fi hálózat Tulajdonságok lapját. 
 1. Görgessen le a Proxyhoz
 1. Módosítás manuális beállításra
 1. Adja meg annak a számítógépnek az IP-címét, ahol a Fiddler telepítve van
@@ -106,7 +106,7 @@ A Fiddler egy webes hibakeresési proxy, amely a HTTP(S) problémák elhárítá
     3. Helyezze át a tanúsítványt a 2. HoloLens mappájába
 
 2.  A 2. HoloLens – importálja a Fiddler-tanúsítványt.
-    1. Ugrás a Gépház -> Update and Security -> Certificates (Frissítés és biztonság –> tanúsítványok) hez
+    1. Ugrás a Gépház -> és biztonság -> tanúsítványokra
     2. Kattintson a Tanúsítvány telepítése elemre, keresse meg a Letöltések mappát, és válassza ki a Fiddler-tanúsítványt
     3. Az Áruház helyének módosítása helyi gépre
     4. Tanúsítványtároló módosítása a főtanúsítványra
@@ -115,10 +115,10 @@ A Fiddler egy webes hibakeresési proxy, amely a HTTP(S) problémák elhárítá
 
 #### <a name="inspect-https-sessions"></a>HTTP(S) munkamenetek vizsgálata
 
-A számítógépen a Fiddler HoloLens 2. élő HTTP(S) munkameneteit. A Fiddler Vizsgálók panelje a HTTP(S) kéréseket/válaszokat különböző nézetekben jeleníti meg – például a "Nyers" nézet egyszerű szövegként jeleníti meg a nyers kérést vagy választ. 
+A Számítógépen a Fiddler HoloLens 2. élő HTTP-munkameneteit. A Fiddler Vizsgálók panelje különböző nézetekben is képes HTTP(S) kérést/választ mutatni – például a "Nyers" nézet egyszerű szövegként jeleníti meg a nyers kérést vagy választ. 
 
 ### <a name="configure-wireshark-to-capture-network-traffic"></a>A Wireshark konfigurálása a hálózati forgalom rögzítésére
-A Wireshark egy hálózati protokollelemző, amely a 2. eszközről és a HoloLens UDP-forgalmának vizsgálatához használható. Ez megkönnyíti annak azonosítását, hogy milyen forgalom halad át a HoloLens 2., mekkora része, milyen gyakran, mekkora késés van bizonyos ugrások között stb.
+A Wireshark egy hálózati protokollelemző, amely a 2. eszközről és a HoloLens UDP-forgalom vizsgálatához használható. Ez megkönnyíti annak azonosítását, hogy milyen forgalom halad át a HoloLens 2., mekkora része, milyen gyakran, mekkora késés van bizonyos ugrások között stb.
 
 #### <a name="prerequisites"></a>Előfeltételek:
 - A számítógépnek internet-hozzáféréssel kell rendelkezik, és támogatnia kell az internetes megosztást Wi-Fi
@@ -126,8 +126,8 @@ A Wireshark egy hálózati protokollelemző, amely a 2. eszközről és a HoloLe
 #### <a name="install-and-configure-wireshark"></a>A Wireshark telepítése és konfigurálása
 1. A [Wireshark telepítése a számítógépen](https://www.wireshark.org/#download) 
 1. A számítógépen – engedélyezze a Mobil elérési pont számára az internetkapcsolat megosztását a Wi-Fi-ről.
-1. A számítógépén – indítsa el a Wiresharkot, és rögzítse a mobil elérési pont felületéről származó forgalmat. 
-1. A 2. HoloLens módosítsa a Wi-Fi a számítógép Mobil elérési útjára. HoloLens 2 IP-forgalmat a Wiresharkban fog mutatni.
+1. A számítógépén indítsa el a Wiresharkot, és rögzítse a mobil elérési pont felületéről származó forgalmat. 
+1. A HoloLens 2- Wi-Fi a számítógép mobil elérési útjára. HoloLens 2 IP-forgalmat a Wiresharkban fog mutatni.
 
 #### <a name="analyze-wireshark-logs"></a>Wireshark-naplók elemzése
 A Wireshark szűrői segíthetnek kiszűrni az érdeklődési köröket. 

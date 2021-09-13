@@ -15,15 +15,15 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: a368c622c137374ea9cc544490d3492fa9d3f8c1
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428510"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032422"
 ---
 # <a name="enroll-hololens-in-mdm"></a>Regisztráció HoloLens MDM-be
 
-Egyidejűleg több Microsoft HoloLens is felügyelhet olyan megoldásokkal, mint a [Microsoft Intune.](/intune/windows-holographic-for-business) Kezelheti a beállításokat, kiválaszthatja a telepíteni kívánt alkalmazásokat, és beállíthatja a szervezet igényeihez igazított biztonsági konfigurációkat. Lásd: A [Holographic Windows-t](/intune/windows-holographic-for-business)futtató eszközök kezelése a Microsoft Intune segítségével, a Windows Holographic által támogatott konfigurációs szolgáltatókkal [(CSP-kkal),](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens)valamint a [Windows Holographic for Business.](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies)
+Egyidejűleg több Microsoft HoloLens is felügyelhet olyan megoldásokkal, mint a [Microsoft Intune.](/intune/windows-holographic-for-business) Kezelheti a beállításokat, kiválaszthatja a telepíteni kívánt alkalmazásokat, és beállíthatja a szervezet igényeihez igazított biztonsági konfigurációkat. Lásd: A [Holographic Windows-t](/intune/windows-holographic-for-business)futtató eszközök kezelése a Microsoft Intune segítségével, a Windows Holographic által támogatott konfigurációszolgáltatók [(CSP-k)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens)és a [Windows Holographic for Business.](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies)
 
 > [!NOTE]
 > A mobileszköz-kezelés (MDM), beleértve a VPN, a Bitlocker és a [](hololens1-upgrade-enterprise.md)kioszkmód funkciókat is, csak akkor érhető el, ha a(Windows Holographic for Business.
@@ -45,20 +45,20 @@ Az OOBE [vagy](hololens-identity.md) a bejelentkezés után választott identit�
 
 - Ha az Identity az MSA, akkor használja **Gépház Alkalmazás-hozzáférés** munkahelyi vagy iskolai  ->    ->  **Csatlakozás** gombot.
     - Más néven Munkahelyi fiók hozzáadása (AWA) folyamat.
-- Ha az Identitás helyi felhasználó, akkor Gépház **alkalmazás-hozzáférés** munkahelyi vagy iskolai  ->    ->  **regisztrációja csak az eszközkezelési hivatkozáson keresztül.**
+- Ha az Identitás helyi felhasználó, akkor Gépház **alkalmazás-hozzáférés** munkahelyi vagy iskolai regisztrációja csak az  ->    ->  **eszközkezelési hivatkozáson keresztül.**
     - Más néven tiszta MDM-regisztrációs folyamat.
 
 Miután regisztrálta az eszközt az MDM-kiszolgálóval, az Gépház azt fogja tükrözni, hogy az eszköz regisztrálva van az eszközkezelésben.
 
 ## <a name="auto-enrollment-in-mdm"></a>Automatikus regisztráció az MDM-be
 
-Ha a szervezet [](https://azure.microsoft.com/overview/)azure Prémium-előfizetéssel rendelkezik, az Azure Active Directory (Azure AD) és egy MDM-megoldást használ, amely elfogad egy Azure AD-jogkivonatot a hitelesítéshez (jelenleg csak az Microsoft Intune-ban és az AirWatchban támogatott), a rendszergazda konfigurálhatja az Azure AD-t úgy, hogy automatikusan engedélyezze az MDM-regisztrációt, miután a felhasználó bejelentkezett az Azure AD-fiókjával. [Megtudhatja, hogyan konfigurálhatja az Azure AD-regisztrációt.](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+Ha a szervezet rendelkezik Azure Prémium-előfizetéssel, a Azure Active Directory (Azure AD) és egy MDM-megoldást használ, amely elfogad egy [Azure](https://azure.microsoft.com/overview/)AD-tokent a hitelesítéshez (jelenleg csak az Microsoft Intune és az AirWatch támogatja), a rendszergazda konfigurálhatja az Azure AD-t úgy, hogy automatikusan engedélyezze az MDM-regisztrációt, miután a felhasználó bejelentkezett az Azure AD-fiókjával. [Megtudhatja, hogyan konfigurálhatja az Azure AD-regisztrációt.](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
 
 Ha az automatikus regisztráció engedélyezve van, nincs szükség további manuális regisztrációra. Amikor a felhasználó Azure AD-fiókkal jelentkezik be, az eszköz az első futtatási folyamat befejezése után regisztrálva lesz az MDM-be.
 
 Ha egy eszköz Csatlakozik az Azure AD-hez, az hatással lehet arra, hogy ki tekinthető [az eszköz tulajdonosának.](security-adminless-os.md#device-owner)
 
-## <a name="unenroll-hololens-from-intune"></a>A HoloLens Intune-ból való HoloLens-
+## <a name="unenroll-hololens-from-intune"></a>A HoloLens Intune-ból
 
 A regisztrációs módszertől függően előfordulhat, hogy az eszköz regisztrációja nem lesz elérhető.
 

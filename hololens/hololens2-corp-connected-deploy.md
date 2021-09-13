@@ -1,6 +1,6 @@
 ---
-title: Üzembe helyezési útmutató – Vállalati 2. HoloLens Dynamics 365-útmutatók – Üzembe helyezés
-description: A Dynamics 365-útmutatók segítségével megtudhatja, hogyan állíthatja be HoloLens 2. eszköz üzembe helyezését egy vállalati csatlakoztatott hálózaton.
+title: Telepítési útmutató – Vállalati 2. HoloLens Dynamics 365-útmutatók – Üzembe helyezés
+description: A Dynamics 365-útmutatók segítségével megtudhatja, hogyan állíthatja be HoloLens 2. eszköz üzembe helyezését egy vállalati csatlakoztatott hálózaton keresztül.
 keywords: HoloLens, felügyelet, vállalati csatlakoztatható, Dynamics 365-útmutatók, AAD, Azure AD, MDM, Mobile Eszközkezelés
 author: joyjaz
 ms.author: v-jjaswinski
@@ -15,17 +15,17 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 7df2b00b2d87be7b9ad4a5d84c83251ec0ebec4d
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427437"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032723"
 ---
 # <a name="deploy---corporate-connected-guide"></a>Üzembe helyezés – Vállalati csatlakoztatott útmutató
 
 Az egyes üzembe helyezések fontos részét képezi annak biztosítása, hogy az üzemelő példány megfelelően legyen beállítva, mielőtt saját maga teszteli azt, így zökkenőmentes felhasználói élményt biztosít a végfelhasználó számára.
 
-Mivel az Wi-Fi-tanúsítványT MDM-en keresztül telepítjük, először be kell álltatnunk az HoloLens-t, és regisztrálni kell az eszközöket egy nyílt Wi-Fi-hálózaton vagy egy olyan hálózaton, amely nem igényli a tanúsítványt. Miután a HoloLens OOBE és Enrolled befejeződött, az eszköz megkapja a korábban konfigurált hálózati tanúsítványt és LOB-t, és ellenőrizjük, hogy mindkét eszközt megkapta-e az eszköz.
+Mivel az Wi-Fi-tanúsítványt MDM-en keresztül telepítjük, először be kell álltatnunk az HoloLens-t, és regisztrálni kell az eszközöket egy nyílt Wi-Fi-hálózaton vagy egy olyan hálózaton, amely nem igényli a tanúsítványt. Miután a HoloLens OOBE és Enrolled befejeződött, az eszköz megkapja a korábban konfigurált hálózati tanúsítványt és LOB-t, és ellenőrizjük, hogy mindkét eszközt megkapta-e az eszköz.
 
 Ezt követően meg tudja erősíteni, hogy a tesztelési útmutatót is meg tudja-e tenni és üzemeltetni tudja.
 
@@ -43,9 +43,9 @@ Ha az eszköz jelenleg nem gyári beállításokat használ, ideje újrafésüln
 
 4. Ha a regisztráció sikeres, a rendszer kérni fogja a PIN-kód beállítását. Ez a PIN-kód az eszköz egyedi a felhasználó számára. A rendszer emellett kéri az íriszvizsgálatokat, a hangadatokat és a telemetriai beállításokat, végül pedig megtanulhatja, hogyan nyithatja meg a Start menüt, és hogyan ooBE-t is befejeztet.
 
-5. Miután a Kezdőlapra Mixed Reality, nyissa meg a Start menü az előbb megtanult **Indítás** kézmozdulattal.
+5. Miután a Kezdőlapra Mixed Reality, nyissa meg a Start menü az **előbb** megtanult Indítás kézmozdulattal.
 
-6. Válassza ki **a Gépház** alkalmazást, majd válassza a **Rendszer lehetőséget.** Az első információ, amit látni fog, az eszköz neve, amely a HoloLens 2-es eszközhöz a HOLOLENS lesz, amelyet egy hat karakterből álló sztring &quot; &quot; követ.
+6. Válassza ki **a Gépház** alkalmazást, majd válassza a **Rendszer lehetőséget.** Az első információ, amit látni fog, az eszköz neve, amely a HoloLens 2-es eszközhöz a HOLOLENS lesz, amelyet hat karakterből álló sztring &quot; &quot; követ.
 
 7. Jegyezze fel ezt a nevet.
 
@@ -53,23 +53,23 @@ Ha az eszköz jelenleg nem gyári beállításokat használ, ideje újrafésüln
 
 8. Ellenőrizze, hogy az eszköz sikeresen csatlakozott-e az Azure AD-hez. Kétféleképpen lehet:
 
-    1.  A Gépház alkalmazás. A **Gépház** fiókok   ->  **hozzáférése munkahelyi vagy iskolai fiókhoz lehetőséget.** Ezen a képernyőn ellenőrizheti, hogy sikeresen regisztrált-e. Ehhez megjelenik a &quot; Connected to nameofAAD&#39;azure aD(z) Azure AD-hez való csatlakozás. Csatlakoztatva a *yourusername@nameofAAD.onmicrosoft.com* következővel: . Ez ellenőrzi, hogy az eszköz csatlakozik-e a&#39;Azure AD-hez.
+    1.  A Gépház alkalmazás. A **Gépház** fiókok   ->  **hozzáférése munkahelyi vagy iskolai fiókhoz lehetőséget.** Ezen a képernyőn ellenőrizheti, hogy sikeresen regisztrált-e. Ehhez a Connected to nameofAAD&#39;Azure AD (Csatlakoztatott a következőhöz)&#39;&quot; Azure AD-hez. Csatlakoztatva a *yourusername@nameofAAD.onmicrosoft.com* következővel: . Ez ellenőrzi, hogy az eszköz csatlakozik-e a&#39;Azure AD-hez.
 
-    1. A [Azure Portal.](https://portal.azure.com/#home) Keresse meg **Azure Active Directory**  ->  **Eszközök**  ->  **Minden eszköz adatokat,** és keressen rá az eszköz nevére. Az Összekapcsolás típusa alatt az "Azure AD Joined" (Azure AD-hez csatlakozva) szöveg fog ni.
+    1. A [következő Azure Portal:](https://portal.azure.com/#home). Keresse meg **Azure Active Directory**  ->  **Eszközök**  ->  **Minden eszköz adatokat,** és keressen rá az eszköz nevére. Az Összekapcsolás típusa alatt az "Azure AD Joined" (Azure AD-hez csatlakozva) szöveg fog ni.
         ![Ellenőrizze a Csatlakozás típusát az Azure AD-ban.](./images/hololens2-devices-all-devices.png)
 
 9. Ellenőrizze, hogy az eszköz regisztrálva van-e az MDM-be. Kétféleképpen lehet:
 
-    1. A **Gépház** válassza a **Fiókok**  ->  **hozzáférése munkahelyi vagy iskolai fiókhoz lehetőséget.** Ezen a képernyőn ellenőrizheti, hogy sikeresen regisztrált-e. Ehhez megjelenik a &quot; Connected to nameofAAD&#39;azure aD(z) Azure AD-hez való csatlakozás. Csatlakoztatva a *yourusername@nameofAAD.onmicrosoft.com* következővel: . Ebben a Hozzáférés munkahelyi vagy iskolai fiókban válassza a Connected to nameofAAD&#39;Azure AD (Csatlakoztatva a névhez)&#39;&quot; Azure AD-hez. Csatlakoztatva a yourusername@nameofAAD.onmicrosoft.com &quot; következővel: , és válassza az **Információ** gombot.
+    1. A Gépház válassza **a** **Fiókok Hozzáférés** munkahelyi vagy iskolai  ->  **fiókhoz lehetőséget.** Ezen a képernyőn ellenőrizheti, hogy sikeresen regisztrált-e. Ehhez a Connected to nameofAAD&#39;Azure AD (Csatlakoztatott a következőhöz)&#39;&quot; Azure AD-hez. Csatlakoztatva a *yourusername@nameofAAD.onmicrosoft.com* következővel: . Ebben a Hozzáférés munkahelyi vagy iskolai fiókban válassza a Connected to nameofAAD&#39;Azure AD (Csatlakozás a névhez)&#39;&quot; Azure AD-hez. Csatlakoztatva a yourusername@nameofAAD.onmicrosoft.com &quot; következővel: , és válassza az **Információ** gombot.
 
-    1. [Microsoft Endpoint Manager Felügyeleti központ.](https://endpoint.microsoft.com/#home) Jelentkezzen be, és válassza az **Eszközök,** majd **a Minden eszköz lehetőséget.** Itt kereshet a saját eszközén HoloLens a&#39;nevére. A regisztrált listában meg kell HoloLens Intune-ban.
+    1. [Microsoft Endpoint Manager Felügyeleti központ.](https://endpoint.microsoft.com/#home) Jelentkezzen be, és válassza az **Eszközök,** majd **a Minden eszköz lehetőséget.** Itt kereshet a saját eszközén HoloLens a&#39;nevére. A regisztrált listában meg kell HoloLens az Intune-ban.
 
         ![Ellenőrizze, hogy az Intune kezeli-e az Azure AD-ban.](./images/hololens2-devices-all-devices2.png)
 
 
-## <a name="wi-fi-certificate-validation"></a>Wi-Fi ellenőrzése
+## <a name="wi-fi-certificate-validation"></a>Wi-Fi tanúsítvány érvényesítése
 
-Az eszköznek most már megkapta a Wi-Fi tanúsítványt. A legegyszerűbb ellenőrzés az, ha megpróbál csatlakozni ahhoz a Wi-Fi kapcsolathoz, amelyhez&#39;megkapta a tanúsítványt. Nyissa meg a **Gépház** alkalmazást, lépjen a Hálózati **&amp; internet**  ->  **Wi-Fi gombra,** és válassza ki a Wi-Fi-kapcsolatot. A csatlakozás után nyissa meg a Microsoft Edge alkalmazást, és ellenőrizze, hogy el tud-e navigálni egy webhelyre.
+Az eszköznek most már megkapta a Wi-Fi tanúsítványt. A legegyszerűbb ellenőrzés az, ha megpróbál csatlakozni ahhoz Wi-Fi kapcsolathoz,&#39;megkapta a tanúsítványt. Nyissa meg a **Gépház** alkalmazást, lépjen a Hálózati **&amp; internet**  ->  **Wi-Fi lapra,** és válassza ki a Wi-Fi-kapcsolatot. A csatlakozás után nyissa meg a Microsoft Edge alkalmazást, és ellenőrizze, hogy el tud-e navigálni egy webhelyre.
 
 Annak megerősítéséhez, hogy megkapta a tanúsítványt az eszközön, használhatja a [Tanúsítványkezelőt.](/hololens/certificate-manager)
 
@@ -79,9 +79,9 @@ A felügyelt alkalmazás telepítési folyamatának ellenőrzéséhez ellenőriz
 
 Nyissa meg a Start menü, és válassza a **Minden alkalmazás** lehetőséget. A telepített alkalmazások számától függően előfordulhat, hogy  az oldal felfelé vagy lefelé **gombjait kell használnia.**
 
-Az alkalmazás eszközre való telepítésének ellenőrzéséhez ezt az **Gépház** Accounts Access work or school (Hozzáférés munkahelyi vagy iskolai fiókokhoz) lapon ellenőrizheti. Válassza ki a fiókot, majd az Információ gombot, és görgessen lefelé az eszközre az  ->    ->  MDM-től  alkalmazott különböző konfigurációk és alkalmazások eléréséhez.
+Az alkalmazás eszközre való telepítésének ellenőrzéséhez ezt az **Gépház Accounts** Access work or school (Hozzáférés munkahelyi vagy iskolai fiókhoz) lapon ellenőrizheti. Válassza ki a fiókot, majd az Információ gombot, és görgessen lefelé az eszközre az  ->    ->  MDM-től  alkalmazott különböző konfigurációk és alkalmazások eléréséhez.
 
-Az Intune-ból való telepítés ellenőrzéséhez lépjen a [MEM-portál](https://endpoint.microsoft.com/#home)  ->  **Alkalmazások** -> Minden alkalmazás   -> *TheNameOfYourApp eszköz* telepítési állapota  ->  **lapra.**
+Az Intune-ból való telepítés ellenőrzéséhez lépjen a [MEM-portál](https://endpoint.microsoft.com/#home)Alkalmazások -> Minden alkalmazás  ->     -> *ANeveYourApp* eszköz telepítési  ->  **állapota lapra.**
 
 További információ: [Intune App Deployment for HoloLens](/hololens/app-deploy-intune)
 

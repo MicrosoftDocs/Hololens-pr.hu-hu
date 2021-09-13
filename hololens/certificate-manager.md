@@ -13,11 +13,11 @@ audience: ITPro
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 8b1869e786e3f3324494cecbfd596f61811e1893
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427177"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032433"
 ---
 # <a name="certificate-manager"></a>Tanúsítványkezelő
 
@@ -45,7 +45,7 @@ A tanúsítványtelepítés jelenleg .cer és .crt fájlokat támogat. Az eszkö
 
 A tanúsítványnak most már telepítve kell lennie az eszközön.
 
-![Az alkalmazás tanúsítványmegjelenítője Gépház a Tanúsítványok alatt.](images/certificate-viewer-device.jpg)
+![A tanúsítványmegjelenítő az Gépház a Tanúsítványok alatt.](images/certificate-viewer-device.jpg)
 
 ![Kép arról, hogyan telepíthet tanúsítványt a tanúsítvány felhasználói felületén a Gépház.](images/certificate-device-install.jpg)
 

@@ -1,23 +1,23 @@
 ---
 title: Hozzájárulási utasítások
-description: Megtudhatja, hogyan járulhat hozzá HoloLens a docs.microsoft.com platformon a GitHub Markdown-változatával.
+description: Megtudhatja, hogyan járulhat hozzá HoloLens a docs.microsoft.com platformon a GitHub Markdown-változat használatával.
 author: hferrone
 ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
 ms.openlocfilehash: d511156d6940574deda7448a6f634c0004b8f053
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032438"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>Közreműködés az HoloLens dokumentációjában
 
 Üdvözöljük a HoloLens [dokumentációjában!](https://github.com/MicrosoftDocs/Hololens) Az ebben az adattában létrehozott vagy szerkesztett cikkek nyilvánosan **láthatók lesznek.** 
 
-HoloLens-dokumentumok a docs.microsoft.com platformon jelennek meg, amely GitHub Markdig-funkciókkal GitHub Markdownt használ. Az ebben az adattáraban szerkesztett tartalom stilizált oldalakra lesz formázva, amelyek a /hololens oldalon adatokat tartalmaznak.
+HoloLens dokumentumok a docs.microsoft.com platformon jelennek meg, amely GitHub Markdown-változatot és Markdig-funkciókat használ. Az ebben az adattáraban szerkesztett tartalom stilizált oldalakra lesz formázva, amelyek a /hololens oldalon adatokat tartalmaznak.
 
 Ez az oldal a közreműködés alapvető lépéseit és irányelveit, valamint a Markdown alapjaira mutató hivatkozásokat tartalmazza. Köszönjük a hozzájárulását!
 
@@ -26,26 +26,26 @@ Ez az oldal a közreműködés alapvető lépéseit és irányelveit, valamint a
 | Adattár neve | URL-cím |
 | --- | --- |
 | HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
-| Vegyes valóság | [MicrosoftDocs/mixed-reality](/windows/mixed-reality) |
-| VR-kedvelői útmutató | [MicrosoftDocs/mixed-reality/reality-guide](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
+| Vegyes valóság | [MicrosoftDocs/vegyes valóság](/windows/mixed-reality) |
+| VR-kedvelői útmutató | [MicrosoftDocs/mixed-reality/ügyfélszolgálati útmutató](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 
 ## <a name="before-you-start"></a>Előkészületek
 
 Ha még nem rendelkezik fiókkal, létre kell hoznia egy GitHub [fiókot.](https://github.com/join)
 
 >[!NOTE]
->Ha Ön Microsoft-alkalmazott, csatolja a GitHub-fiókját a [Microsoft-aliashoz a Microsoft Nyílt forráskódú portálon.](https://repos.opensource.microsoft.com/) Csatlakozzon **a "Microsoft" és** a **"MicrosoftDocs" szervezetekhez.**
+>Ha Ön Microsoft-alkalmazott, csatolja a GitHub-fiókját a Microsoft-aliashoz a [Microsoft nyílt forráskódú portálon.](https://repos.opensource.microsoft.com/) Csatlakozzon **a "Microsoft" és** a **"MicrosoftDocs" szervezetekhez.**
 
 A fiók GitHub biztonsági óvintézkedéseket is javasoljuk:
 - Hozzon létre [egy erős jelszót a GitHub fiókjához.](https://github.com/settings/admin)
 - Engedélyezze [a kétfaktoros hitelesítést.](https://github.com/settings/two_factor_authentication/configure)
 - Mentse a [helyreállítási kódokat](https://github.com/settings/auth/recovery-codes) egy biztonságos helyre.
 - Frissítse a [nyilvános profil beállításait.](https://github.com/settings/profile)
-   - Adja meg a nevét, és fontolja meg a Nyilvános e-mail-cím beállításaként *a Ne mutassa az e-mail-címemet beállítást.* 
-   - Javasoljuk, hogy töltsön fel egy profilképet, mert a miniatűr megjelenik a dokumentumok oldalán, amelyekben közreműködik.
+   - Adja meg a nevét, és a Nyilvános e-mail-cím *beállításaként* adja meg a Ne *mutassa az e-mail-címemet beállítást.*
+   - Azt javasoljuk, hogy töltsön fel egy profilképet, mert a miniatűr megjelenik a dokumentumoldalakon, amelyekben közreműködik.
 - Ha a parancssort tervezi használni, fontolja meg a [Git-Hitelesítőadat-kezelő beállítását a Windows.](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest) Így nem kell minden egyes közreműködéskor megadnia a jelszavát.
 
-A közzétételi rendszer a GitHub, ezért ezek a lépések fontosak. Minden cikk szerzőiként vagy közreműködőjeként fog szerepelni az GitHub aliasával.
+A közzétételi rendszer a GitHub, ezért ezek a lépések fontosak. Minden cikk szerzőiként vagy közreműködőjeként fog szerepelni az GitHub használatával.
 
 ## <a name="editing-an-existing-article"></a>Meglévő cikk szerkesztése
 
@@ -60,7 +60,7 @@ A következő munkafolyamattal egy  meglévő cikkre vonatkozó frissítéseket 
    Ez automatikusan elágaztat egy egyszer használatos ágat az alapértelmezett ágról, a _master ágról._
 
    > [!NOTE]
-   > Ez a cikk a _főkiszolgálóra_ mutató hivatkozásokat tartalmaz, a Microsoft által már nem használt kifejezést. Ha eltávolítjuk a kifejezést a szoftverből, eltávolítjuk a cikkből.
+   > Ez a cikk a _főkiszolgálóra_ mutató hivatkozásokat tartalmaz, egy kifejezést, amit a Microsoft már nem használ. Amikor eltávolítjuk a kifejezést a szoftverből, eltávolítjuk a cikkből.
    
 3. Szerkessze a cikk tartalmát a [Markdown alapjainak megfelelően.](#markdown-basics)
 
@@ -69,21 +69,21 @@ A következő munkafolyamattal egy  meglévő cikkre vonatkozó frissítéseket 
    * **title:** A cikk megtekintésekor a böngészőlapon megjelenő oldal címe. Az oldalcímek a keresőoptimalizáló és indexelési szolgáltatásokhoz használatosak, ezért csak szükség esetén módosítsa a címet (bár ez kevésbé fontos a dokumentáció nyilvánosra kerülés előtt).
    * **description:** Írja le a cikk tartalmának rövid leírását, amely növeli a keresőoptimalizáló és a felderítési növelést.
    * **author:** Ha Ön az oldal elsődleges tulajdonosa, adja hozzá GitHub aliast.
-   * **ms.author:** Ha Ön az oldal elsődleges tulajdonosa, adja hozzá a Microsoft-aliasát itt (nincs szükség a @microsoft.com aliasra).
-   * **ms.date:** Frissítse a dátumot, ha nagyobb tartalmat ad hozzá az oldalhoz, de ne olyan javításokhoz, mint a pontosítás, a formázás, a nyelvtan vagy a helyesírás.
-   * **keywords:** Keywords aid in SEO (search engine optimization). Adjon hozzá a cikkhez kapcsolódó kulcsszavakat vesszővel és szóközvel elválasztva, de a lista utolsó kulcsszója után ne adjon hozzá írásjeleket. Nem kell olyan globális kulcsszavakat hozzáadnia, amelyek minden cikkre vonatkoznak, mivel azokat máshol kezelik. 
+   * **ms.author:** Ha Ön az oldal elsődleges tulajdonosa, itt adja hozzá Microsoft-aliasát (nincs szükség a @microsoft.com aliasra).
+   * **ms.date:** Frissítse a dátumot, ha nagyobb tartalmat ad hozzá az oldalhoz, de ne olyan javításokért, mint a pontosítás, a formázás, a nyelvtan vagy a helyesírás.
+   * **keywords:** Keywords aid in SEO (search engine optimization). Adjon hozzá olyan kulcsszavakat, vesszővel és szóközvel elválasztva, amelyek a cikkre jellemzőek, de a lista utolsó kulcsszója után nincs írásjel. Nem kell olyan globális kulcsszavakat hozzáadnia, amelyek minden cikkre vonatkoznak, mivel azokat máshol kezelik. 
    
-5. Ha befejezte a cikk szerkesztését, görgessen le, és válassza a **Propose file change (Fájlváltozás javasolás) lehetőséget.**
+5. Miután befejezte a cikk szerkesztését, görgessen le, és válassza a **Propose file change (Fájl módosítása javasolás) lehetőséget.**
 
-6. A következő oldalon válassza a **Create pull request** (Lekéréses kérelem létrehozása) lehetőséget az automatikusan létrehozott ágnak a master ággal való _egyesítéshez._
+6. A következő oldalon válassza a **Create pull request (Lekéréses** kérelem létrehozása) lehetőséget az automatikusan létrehozott ágnak a master ággal való _egyesítéshez._
 
 7. Ismételje meg a fenti lépéseket a következő szerkeszteni kívánt cikkhez.
 
-## <a name="renaming-or-deleting-an-existing-article"></a>Meglévő cikk átnana- vagy törlése
+## <a name="renaming-or-deleting-an-existing-article"></a>Meglévő cikk átnanamozása vagy törlése
 
-Ha a módosítás átnevez vagy töröl egy meglévő cikket, mindenképpen adjon hozzá átirányítást. Így mindenki, aki a meglévő cikkre mutató hivatkozással van meg, továbbra is jó helyen fog végződni. Az átirányításokat a .openpublishing.redirection.jsa fájlban található fájl kezeli.
+Ha a módosítás átnevez vagy töröl egy meglévő cikket, mindenképpen adjon hozzá átirányítást. Így a meglévő cikkre mutató hivatkozással bárki a megfelelő helyen fog végződni. Az átirányításokat az .openpublishing.redirection.json fájl kezeli az adattúdió gyökerében.
 
-Ha átirányítást szeretne hozzáadni a .openpublishing.redirection.js, adjon hozzá egy bejegyzést a `redirections` tömbhöz:
+Ha átirányítást szeretne hozzáadni az .openpublishing.redirection.json fájlhoz, adjon hozzá egy bejegyzést a `redirections` tömbhöz:
 
 ```json
 {
@@ -95,9 +95,9 @@ Ha átirányítást szeretne hozzáadni a .openpublishing.redirection.js, adjon 
         },
 ```
 
-- A az eltávolított régi cikk relatív `source_path` adattárának elérési útja. Győződjön meg arról, hogy az elérési út a `mixed-reality-docs` következővel kezdődik és végződik: `.md` .
+- A az eltávolított régi cikk relatív `source_path` adattárának elérési útja. Győződjön meg arról, hogy az elérési út a következővel `mixed-reality-docs` kezdődik és végződik: `.md` .
 
-- A a régi cikk és az új cikk relatív nyilvános `redirect_url` URL-címe. Győződjön meg arról, hogy az URL-cím nem tartalmazza **a** vagy a et, mivel a nyilvános URL-címre vonatkozik, és nem `mixed-reality-docs` az `.md` adattár elérési útjára. Az új cikk egy szakaszra mutató hivatkozása a használatával `#section` engedélyezett. Szükség esetén abszolút elérési utat is használhat egy másik webhelyhez.
+- A a régi cikk és az új cikk relatív nyilvános `redirect_url` URL-címe. Győződjön meg arról, hogy az **URL-cím** nem tartalmazza a vagy a címet, mivel a nyilvános URL-címre vonatkozik, és nem az `mixed-reality-docs` `.md` adattár elérési útjára. Az új cikk egy szakaszra mutató hivatkozása a használatával `#section` engedélyezett. Szükség esetén abszolút elérési utat is használhat egy másik webhelyhez.
 
 - `redirect_document_id` Jelzi, hogy szeretné-e megtartani az előző fájlban található dokumentumazonosítót. A mező alapértelmezett értéke: `false`. Akkor használja a értéket, ha meg szeretné őrizni az átirányított cikk `true` `ms.documentid` attribútumértékét. Ha megőrzi a dokumentum azonosítóját, az adatok, például az oldalnézetek és a rangsorolások át lesznek adva a célcikkbe. Ezt akkor tegye, ha az átirányítás elsődlegesen átnevezés, és nem egy másik cikkre mutató mutató, amely csak néhányat fed le ugyanannak a tartalomnak.
 
@@ -107,21 +107,21 @@ Ha átirányítást szeretne hozzáadni a .openpublishing.redirection.js, adjon 
 
 A következő munkafolyamattal *hozhat létre új cikkeket* a dokumentációs adattában GitHub egy webböngészőben:
 
-1. Hozzon létre egy elágaztatást a MicrosoftDocs/mixed-reality alapértelmezett ágán(master) a jobb felső sarokban található **Elágaztatás** gombbal. 
+1. Hozzon létre egy elágaztatást a MicrosoftDocs/mixed-reality alapértelmezett ágán _(master)_ a jobb felső sarokban található **Elágaztatás** gombbal.
 
    ![Ágaztatja el a jelenleg "master" nevű alapértelmezett ágat.](images/forkbranch.png)
 
    > [!NOTE]
-   > Ez a cikk a _főkiszolgálóra_ mutató hivatkozásokat tartalmaz, a Microsoft által már nem használt kifejezést. Ha eltávolítjuk a kifejezést a szoftverből, eltávolítjuk a cikkből.
+   > Ez a cikk a _főkiszolgálóra_ mutató hivatkozásokat tartalmaz, egy kifejezést, amit a Microsoft már nem használ. Amikor eltávolítjuk a kifejezést a szoftverből, eltávolítjuk a cikkből.
    
-2. A "mixed-reality-docs" mappában válassza a jobb felső sarokban **található Új** fájl létrehozása lehetőséget.
+2. A "mixed-reality-docs" mappában válassza a **jobb felső sarokban található Új** fájl létrehozása lehetőséget.
 
-3. Oldalnév létrehozása a cikkhez (szóközök helyett használjon kötőjeleket, és ne használjon írásjeleket vagy aposztrófokat), és fűzse hozzá az ".md" szöveget
+3. Oldalnév létrehozása a cikkhez (szóköz helyett használjon kötőjelet, és ne használjon írásjeleket vagy aposztrófokat), és fűzheti hozzá az ".md" szöveget
 
    ![Nevezze el az új oldalt.](images/newpagetitle.png)
    
    >[!IMPORTANT]
-   >Győződjön meg arról, hogy az új cikket a "mixed-reality-docs" mappában hozza létre. Ezt úgy erősítheti meg, ha az új fájlnév sorban a "/mixed-reality-docs/" et ellenőrzi.
+   >Győződjön meg arról, hogy az új cikket a "mixed-reality-docs" mappában hozza létre. Ezt a "/mixed-reality-docs/" az új fájlnév sorban való ellenőrzését ellenőrizve erősítheti meg.
 
 4. Az új oldal tetején adja hozzá a következő metaadatblokkot:
 
@@ -137,9 +137,9 @@ A következő munkafolyamattal *hozhat létre új cikkeket* a dokumentációs ad
    ---
    ```
 
-5. Töltse ki a releváns metaadat-mezőket a meglévő cikk [szerkesztésével kapcsolatos korábbi cikkben leírtak szerint.](#editing-an-existing-article)
+5. Töltse ki a releváns metaadatmezőket a meglévő cikk [szerkesztésével kapcsolatos korábbi cikkben leírtak szerint.](#editing-an-existing-article)
 
-6. A cikk tartalmát a [Markdown alapszintű használatával írja meg.](#markdown-basics)
+6. Cikktartalom írása a [Markdown alapszintű használatával.](#markdown-basics)
 
 7. Adjon hozzá egy szakaszt a cikk `## See also` alján, amely más kapcsolódó cikkekre mutató hivatkozásokat tartalmaz.
 
@@ -147,7 +147,7 @@ A következő munkafolyamattal *hozhat létre új cikkeket* a dokumentációs ad
 
 9. Válassza **az Új lekéréses** kérelem  lehetőséget, és egyesítheti az elágazás főágát a MicrosoftDocs/mixed-reality főággal (győződjön meg arról, hogy a nyíl a megfelelő célhelyre mutat). 
 
-   ![Hozzon létre lekéréses kérelmet az eloterjből a MicrosoftDocs/mixed-reality szolgáltatásba.](images/pr-to-master.png)
+   ![Hozzon létre lekéréses kérelmet az adattűnésből a MicrosoftDocs/mixed-reality szolgáltatásba.](images/pr-to-master.png)
 
 ## <a name="markdown-basics"></a>A Markdown alapjai
 
@@ -158,9 +158,9 @@ A következő forrásokból megtudhatja, hogyan szerkeszthet dokumentációt a M
 
 ### <a name="adding-tables"></a>Táblák hozzáadása
 
-A stílustáblák docs.microsoft.com miatt nem tartalmaznak szegélyeket vagy egyéni stílusokat, még akkor sem, ha beágyazott CSS-t próbál meg használni. Úgy tűnik, hogy ez egy rövid ideig működik, de a platform végül kiveszi a stílust a táblából. Ezért tervezze meg előre a táblázatokat, és tartsa egyszerűnek a táblákat. Az alábbi webhely megkönnyíti a Markdown-táblákat: [Tables Generator]] ( https://www.tablesgenerator.com/markdown_tables) .
+A stílustáblák docs.microsoft.com nem tartalmaznak szegélyeket vagy egyéni stílusokat, még akkor sem, ha beágyazott CSS-t próbál meg használni. Úgy tűnik, hogy egy rövid ideig működni fog, de a platform végül kiveszi a stílust a táblázatból. Ezért tervezze meg előre a táblázatokat, és tartsa egyszerűnek a táblákat. Az alábbi webhely megkönnyíti a Markdown-táblákat: [Tables Generator]]( https://www.tablesgenerator.com/markdown_tables) .
 
-A Visual Studio Code-hoz használható [Docs Markdown-bővítmény](/teamblog/docs-extension) megkönnyíti a táblázat generálást, ha a Visual Studio Code-et [használja (lásd alább)](#using-visual-studio-code) a dokumentáció szerkesztéséhez.
+Az Visual Studio Code-hoz használható [Docs Markdown-bővítmény](/teamblog/docs-extension) megkönnyíti a táblázat-generálást, ha a Visual Studio Code-et [használja (lásd alább)](#using-visual-studio-code) a dokumentáció szerkesztéséhez.
 
 ### <a name="adding-images"></a>Képek hozzáadása
 
@@ -178,7 +178,7 @@ A képeket fel kell töltenie a "mixed-reality-docs/images" mappába az objektum
 
 ## <a name="previewing-your-work"></a>A munka előnézetének megtekintése
 
-A GitHub böngészőben történő szerkesztéskor az oldal  tetején található Előnézet lapot választva megtekintheti a munka előnézetét a véglegesítés előtt. 
+A GitHub böngészőben való szerkesztés közben az  oldal tetején található Előnézet fülre használhatja a munka előnézetét a véglegesítés előtt. 
 
 >[!NOTE]
 >A módosítások előnézete a review.docs.microsoft.com csak a Microsoft alkalmazottai számára érhető el
@@ -193,7 +193,7 @@ A gyors módosítások legegyszerűbb módja a böngészőben való szerkesztés
 - Más cikkekre mutató intelligens hivatkozásokat nem kap (manuálisan kell begépelni a cikk fájlnevét).
 - A képek feltöltése és hivatkozása nagy probléma lehet.
 
-Ha nem szeretné kezelni ezeket a problémákat, a közreműködéshez használjon olyan asztali ügyfelet, mint a [Visual Studio Code,](https://code.visualstudio.com/) és használjon néhány [hasznos bővítményt.](#useful-extensions)
+Ha inkább nem szeretne foglalkozni ezekkel a problémákkal, a közreműködéshez használjon olyan asztali ügyfelet, mint a [Visual Studio Code,](https://code.visualstudio.com/) és használjon néhány hasznos [bővítményt.](#useful-extensions)
 
 ## <a name="using-visual-studio-code"></a>A Visual Studio Code használata
 
@@ -201,7 +201,7 @@ A fent felsorolt [okokból](#editing-in-the-browser-vs-editing-with-a-desktop-cl
 
 ### <a name="setup"></a>Telepítés
 
-Az alábbi lépésekkel konfigurálhatja a Visual Studio Code-kódot az ilyen kódtokkal való munkához:
+Az alábbi lépésekkel konfigurálhatja a Visual Studio Code-kódot az alábbi kódhoz:
 
 1. Webböngészőben:
     1. Telepítse a [Gitet a számítógépére.](https://git-scm.com/downloads)
@@ -217,7 +217,7 @@ Az alábbi lépésekkel konfigurálhatja a Visual Studio Code-kódot az ilyen k�
 
 ### <a name="editing-documentation"></a>Dokumentáció szerkesztése
 
-A következő munkafolyamattal módosításokat eszközlhat a dokumentáción az Visual Studio Code használatával:
+A következő munkafolyamattal módosítja a dokumentációt az Visual Studio Code használatával:
 
 >[!NOTE]
 >A cikkek [szerkesztésére](#editing-an-existing-article) és létrehozására vonatkozó összes útmutató, valamint a [Markdown](#markdown-basics)szerkesztésének alapjai a fentiekben a kód Visual Studio vonatkoznak. [](#creating-a-new-article)
@@ -228,7 +228,7 @@ A következő munkafolyamattal módosításokat eszközlhat a dokumentáción az
       
       ![Szinkronizálja a MicrosoftDocs-/mixed-reality-módosításokat az eloterjébe.](images/sync-repos.png)
       
-   2. A Visual Studio a szinkronizálási gombra kattintva szinkronizálja a frissen frissített elválasztót a helyi klónnal.
+   2. A Visual Studio a szinkronizálási gombra kattintva szinkronizálja a frissen frissített elkulát a helyi klónnal.
       
       ![Kattintson a szinkronizálási gombra.](images/sync-clone.png)
       
@@ -244,7 +244,7 @@ A következő munkafolyamattal módosításokat eszközlhat a dokumentáción az
    
       ![Válassza az "Összes véglegesítése" lehetőséget a Forrásvezérlőben](images/source-control-commit.png)
       
-   4. A **szinkronizálási gombra** kattintva szinkronizálhatja a módosításokat a forráshoz (a GitHub).
+   4. A **szinkronizálási gomb** kiválasztásával szinkronizálhatja a módosításokat a forráshoz (a GitHub).
       
       ![Kattintson a szinkronizálás gombra.](images/sync-back.png)
       

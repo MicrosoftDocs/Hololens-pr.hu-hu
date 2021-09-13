@@ -1,7 +1,7 @@
 ---
 title: Üzembe helyezési útmutató – Vállalati csatlakoztatott HoloLens 2 Dynamics 365-útmutatók – Áttekintés
 description: Ismerje meg, hogyan regisztrálható HoloLens 2 eszköz a Dynamics 365-útmutatók segítségével egy vállalati csatlakoztatott hálózaton.
-keywords: HoloLens, felügyelet, vállalati kapcsolat, Dynamics 365-útmutatók, AAD, Azure AD, MDM, Mobile Eszközkezelés
+keywords: HoloLens, felügyelet, vállalati csatlakoztatható, Dynamics 365-útmutatók, AAD, Azure AD, MDM, Mobile Eszközkezelés
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
@@ -15,15 +15,15 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 541c1080d7f5fe9491d6cb11179ea98b160f687c
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032691"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Telepítési útmutató – Vállalati csatlakoztatott HoloLens 2 Dynamics 365-útmutatók – Áttekintés
 
-Ez az útmutató segít az informatikai szakembereknek a Dynamics 365-útmutatók (útmutatók) segítségével Microsoft HoloLens 2-es eszközök tervezésében és üzembe helyezésében a szervezetben. Ez az útmutató nagyszerű a próba- és éles környezetek üzembe helyezéséhez, és hasonló a B forgatókönyvhöz: Üzembe helyezés a szervezet hálózati [útmutatója alapján.](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) A koncepció igazolásának tesztelése után ennek az útmutatónak a segítségével integrálhat HoloLens a szervezetbe.
+Ez az útmutató segít az informatikai szakembereknek a Dynamics 365-útmutatók (útmutatók) segítségével Microsoft HoloLens 2 eszköz tervezésében és üzembe helyezésében a szervezetben. Ez az útmutató nagyszerű a próba- és éles környezetek üzembe helyezéséhez, és hasonló a B forgatókönyvhöz: Üzembe helyezés a szervezet hálózati [útmutatója alapján.](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) A koncepció igazolásának tesztelése után ennek az útmutatónak a segítségével integrálja a HoloLens a szervezetbe.
 
 Ebben az útmutatóban azt ismertetjük, hogyan regisztrálhatóak az eszközök a meglévő eszközkezelésben, hogyan alkalmazhat licenceket szükség szerint, és hogyan ellenőrizheti, hogy a végfelhasználók képesek-e Dynamics 365-útmutatót üzemeltetni, valamint hogyan használhatnak egyéni üzletági alkalmazásokat az eszköz beállítása után. 
 
@@ -63,7 +63,7 @@ A következő infrastruktúrának már a helyén kell lennie:
 >- [Ismerje meg a 2 eszköz HoloLens alapvető infrastruktúráját.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
 >- [Tudjon meg többet az Azure AD-ről, és állítson be egyet, ha még nincs ilyen.](hololens2-corp-connected-prepare.md#azure-active-directory)
 >- [Tudnivalók az identitáskezelésről és az Azure AD-fiókok legjobb beállításáról.](hololens2-corp-connected-prepare.md#identity-management)
->- [További információ az MDM-ről és az Intune beállításról, ha még nem rendelkezik ilyennal.](hololens2-corp-connected-prepare.md#mobile-device-management)
+>- [További információ az MDM-ről és az Intune beállításról, ha még nincs kész.](hololens2-corp-connected-prepare.md#mobile-device-management)
 >- [Ismerkedjen meg a tanúsítványalapú Wi-Fi-vel.](hololens2-corp-connected-prepare.md#certificates)
 >- [Ismerkedjen meg a Proxyval.](hololens2-corp-connected-prepare.md#proxy)
 >- [Az üzletági alkalmazások használatának a saját maga által használt mottója.](hololens2-corp-connected-prepare.md#line-of-business-apps)
@@ -80,7 +80,7 @@ A következő infrastruktúrának már a helyén kell lennie:
 ### <a name="deploy"></a>Üzembe helyezés
 > [!div class="checklist"]
 >-  [Az eszköz és az MDM segítségével történő regisztráció ellenőrzése.](hololens2-corp-connected-deploy.md#enrollment-validation)
->-  [Ellenőrizze a Wi-Fi tanúsítványokat.](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation)
+>-  [Ellenőrizze Wi-Fi tanúsítványokat.](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation)
 >-  [Ellenőrizze az LOB-alkalmazás telepítését.](hololens2-corp-connected-deploy.md#validate-lob-app-install)
 >-  [Útmutatók érvényesítése szerzői és üzemeltetési útmutatóval.](hololens2-corp-connected-deploy.md#validate-dynamics-365-guides)
 ### <a name="maintain"></a>Karbantartás

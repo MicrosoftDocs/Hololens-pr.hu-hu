@@ -18,20 +18,20 @@ manager: jarrettr
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: dc3de0c95f17c821816bad278de5717bc24a2c29
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428568"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032660"
 ---
 # <a name="supported-languages-for-hololens-2"></a>A 2. HoloLens támogatott nyelvei
 
-HoloLens 2. nyelv a következő nyelvekre van honosított. A honosítási funkciók közé tartoznak a beszédparancsok, a diktálás, a billentyűzetkiosztások és az alkalmazások OCR-felismerése.
+HoloLens 2. nyelv a következő nyelvekre van honosított. A honosítási funkciók közé tartoznak a beszédparancsok és a diktálás, a billentyűzetkiosztások és az alkalmazáson belüli OCR-felismerés.
 
 - Egyszerűsített kínai (Kína)
 - Angol (Ausztrália)
 - Angol (Kanada)
-- Angol (Egyesült Királyság)
+- angol (Egyesült Királyság)
 - angol (Egyesült Államok)
 - Francia (Kanada)
 - Francia (Franciaország)
@@ -46,7 +46,7 @@ HoloLens 2. a következő nyelveket is támogatja. Ez a támogatás azonban nem 
 - Holland (Hollandia)
 - Koreai (Dél-Korea)
 
-A 2. HoloLens egyes funkciói a Windows nyelvet használják. A Windows nyelv a következő beállításokra van hatással a Windows és a honosítást támogató alkalmazások esetében:
+A 2. HoloLens egyes funkciói a Windows nyelvet használják. A Windows nyelv a következő beállításokra van hatással a Windows és a honosítást támogató alkalmazások esetén:
 
 - A felhasználói felület szövegnyelve.
 - A beszéd nyelve.
@@ -54,15 +54,15 @@ A 2. HoloLens egyes funkciói a Windows nyelvet használják. A Windows nyelv a 
 
 ## <a name="change-the-language-or-keyboard-layout"></a>A nyelv vagy a billentyűzet elrendezésének módosítása
 
-A telepítési folyamat konfigurálja a HoloLens egy adott régióhoz és nyelvhez. Ezt a konfigurációt az & **Time Gépház című** szakaszában **módosíthatja.**
+A telepítési folyamat konfigurálja a HoloLens egy adott régióhoz és nyelvhez. Ezt a konfigurációt az alábbi cikk **Time & language** (Idő és **Gépház) szakaszában Gépház.**
 
 > [!NOTE]  
 > A beszéd és a diktálás nyelve a megjelenítési nyelvtől függ (és megegyezik) Windows nyelvtől.
 
 ### <a name="to-change-the-windows-display-language"></a>A megjelenítési nyelv Windows módosítása
 
-1. Nyissa meg **a Start menüt,** majd válassza **a** Gépház  >  **és nyelvi**  >  **nyelv lehetőséget.**
-2. Válassza **Windows megjelenítési nyelvet,** majd válasszon ki egy nyelvet.  
+1. Nyissa meg **a Start menüt,** majd válassza a **Gépház** és  >  **nyelvi nyelv**  >  **lehetőséget.**
+2. Válassza **Windows nyelvet,** majd válasszon nyelvet.  
 
 Ha a keresett támogatott nyelv nem található a menüben, kövesse az alábbi lépéseket:  
 
@@ -72,9 +72,9 @@ Ha a keresett támogatott nyelv nem található a menüben, kövesse az alábbi 
 
 ### <a name="to-change-the-keyboard-layout"></a>A billentyűzetkiosztás módosítása
 
-Billentyűzetkiosztás hozzáadásához vagy eltávolításához nyissa meg a  **Start** menüt, majd válassza a Gépház  >  **a & billentyűzet**  >  **lehetőséget.**
+Billentyűzetkiosztás hozzáadásához vagy eltávolításához nyissa meg a  **Start** menüt, majd válassza a Gépház a &  >  **billentyűzet**  >  **lehetőséget.**
 
-Ha a HoloLens több billentyűzetkiosztása is van, váltson közöttük az Elrendezés billentyűvel.  Az **Elrendezés** billentyű a képernyőn megjelenő billentyűzet jobb alsó sarkában található.
+Ha a HoloLens több billentyűzetkiosztása is van, az **Elrendezés** billentyűvel válthat közöttük. Az **Elrendezés** billentyű a képernyő billentyűzetének jobb alsó sarkában található.
 
 > [!NOTE]  
 > A képernyőn megjelenő billentyűzet az Input Method Editor (IME) használatával karaktereket ír be nyelveken, például japán nyelven. A HoloLens azonban nem támogatja az IME-t Bluetooth billentyűzeteket.
