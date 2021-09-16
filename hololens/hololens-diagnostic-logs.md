@@ -1,6 +1,6 @@
 ---
 title: Diagnosztikai adatok gyűjtése és használata HoloLens eszközökről
-description: Megtudhatja, hogyan gyűjthetőek, használhatók és őrizhetőek meg a diagnosztikai HoloLens eszközökről.
+description: Megtudhatja, hogyan gyűjti, használhatja és őrizze meg a diagnosztikai adatokat a HoloLens eszközökről.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 10/15/2020
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2cbf3005293f4fde91b22f3ff87edc6041e53336
-ms.sourcegitcommit: 16897df83c309acecf04e2bcfea310891cb6681b
+ms.openlocfilehash: e977d0d42831760749bb5c6c469d2482e2ca72e7
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "127817276"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833522"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Diagnosztikai adatok gyűjtése és használata HoloLens eszközökről
 
@@ -35,7 +35,7 @@ HoloLens felhasználók és rendszergazdák négy különböző módszer közül
 - Offline diagnosztika
 
 > [!IMPORTANT]  
-> Az eszközdiagnosztikai naplók személyes azonosításra alkalmas adatokat (PII-ket) tartalmaznak, például azt, hogy a felhasználó milyen folyamatokat vagy alkalmazásokat kezd el a tipikus műveletek során. Ha egy HoloLens-eszközön több felhasználó is osztozik (például a felhasználók különböző Microsoft Azure Active Directory- (Azure AD-) fiókkal jelentkeznek be ugyanannak az eszköznek), a diagnosztikai naplók több felhasználóra vonatkozó, PII-adatokat tartalmazhatnak. További információ: [A Microsoft adatvédelmi nyilatkozata.](https://privacy.microsoft.com/privacystatement)
+> Az eszközdiagnosztikai naplók személyes azonosításra alkalmas adatokat (PII-ket) tartalmaznak, például azt, hogy a felhasználó milyen folyamatokat vagy alkalmazásokat kezd el a tipikus műveletek során. Ha több felhasználó osztozik egy HoloLens-eszközön (például a felhasználók különböző Microsoft Azure Active Directory- (Azure AD-) fiókkal jelentkeznek be ugyanannak az eszköznek), a diagnosztikai naplók több felhasználóra vonatkozó, PII-adatokat tartalmazhatnak. További információ: [Microsoft Adatvédelmi nyilatkozat.](https://privacy.microsoft.com/privacystatement)
 
 Az alábbi táblázat a különböző gyűjtési módszereket hasonlítja össze. A metódusnevek a táblázatot követő szakaszok részletesebb információira hivatkoznak.
 
@@ -50,13 +50,13 @@ Az alábbi táblázat a különböző gyűjtési módszereket hasonlítja össze
 
 ## <a name="feedback-hub"></a>Visszajelzési központ
 
-A HoloLens felhasználók a Microsoft Visszajelzési központ asztali alkalmazással diagnosztikai adatokat küldhetnek a Microsoft ügyfélszolgálata. A részletekért és a teljes útmutatásért lásd: [Visszajelzés küldése.](hololens-feedback.md)  
+A HoloLens felhasználó a Microsoft Visszajelzési központ asztali alkalmazással diagnosztikai adatokat küldhet a Microsoft ügyfélszolgálata. A részletekért és a teljes útmutatásért lásd: [Visszajelzés küldése.](hololens-feedback.md)  
 
 > [!NOTE]  
 > **Kereskedelmi vagy vállalati felhasználók:** Ha a Visszajelzési központ alkalmazással jelenti az MDM-hez, a kiépítéshez vagy bármely más eszközkezelési aspektushoz kapcsolódó problémát, módosítsa az alkalmazáskategóriát Vállalati felügyeleti eszköz  >  **kategóriára.**
 
 >[!IMPORTANT]
-> Annak érdekében, hogy a lehető legjobb adatokat biztosítsa a problémák megoldásához, javasoljuk, hogy az eszköztelemetelemetiát választhatóra **állítsa.** Ezt az értéket a használatra való használatra (OOBE) vagy a használatra Gépház **állíthatja** be. Ha ezt az alkalmazással Gépház, válassza a **Start > Gépház > Privacy > App Diagnostics > lehetőséget.**
+> Annak érdekében, hogy a lehető legjobb adatokat biztosítsa a problémák megoldásához, javasoljuk, hogy az eszköztelemetelemetiát választhatóra **állítsa.** Ezt az értéket a Használatra való használatra (OOBE) vagy az Gépház **meg.** Ha ezt az alkalmazással Gépház, válassza a **Start > Gépház > Privacy > App Diagnostics > lehetőséget.**
 
 ### <a name="prerequisites"></a>Előfeltételek
 
@@ -72,26 +72,27 @@ A Visszajelzési központ két helyet biztosít a felhasználó számára a diag
 - **A Microsoft-felhő.** A felhasználó által a Visszajelzési központ alkalmazással feltöltött adatokat a rendszer a következő generációs adatvédelem (NGP) követelményeinek megfelelő napok számára tárolja. A Microsoft-alkalmazottak NGP-kompatibilis megjelenítővel férhetnek hozzá az információkhoz ebben az időszakban.
 
    > [!NOTE]  
-   > Ezek a követelmények az összes kategória adatainak Visszajelzési központ vonatkoznak.
+   > Ezek a követelmények az összes kategória összes Visszajelzési központ vonatkoznak.
 
-- **A HoloLens eszköz.** Amikor jelentést küld a Visszajelzési központ, a felhasználó kiválaszthatja a Visszajelzés küldésekor létrehozott diagnosztikai és mellékletek helyi **másolatának mentése lehetőséget.** Ha a felhasználó ezt a lehetőséget választja, a Visszajelzési központ tárolja a diagnosztikai adatok másolatát a HoloLens eszközön. Ezek az információk továbbra is elérhetők maradnak a felhasználó (vagy bárki számára, aki ezt a fiókot használja a HoloLens). Az adatok törléséhez a  felhasználónak  Eszköztulajdonos vagy Rendszergazda jogosultsággal kell rendelkeznie az eszközön. A megfelelő engedélyekkel rendelkező felhasználók bejelentkeznek a Visszajelzési központ, kiválasztják **Gépház** Diagnosztikai naplók megtekintése lehetőséget, és  >  törölhetik az adatokat.
+- **A HoloLens eszköz.** Amikor jelentést küld a Visszajelzési központ, a felhasználó kiválaszthatja a Visszajelzés küldésekor létrehozott diagnosztikai és mellékletek helyi **másolatának mentése lehetőséget.** Ha a felhasználó ezt a lehetőséget választja, a Visszajelzési központ a diagnosztikai adatok másolatát tárolja a HoloLens eszközön. Ezek az információk továbbra is elérhetők maradnak a felhasználó (vagy bárki számára, aki ezt a fiókot használja a HoloLens). Az adatok törléséhez a  felhasználónak  Eszköztulajdonos vagy Rendszergazda jogosultsággal kell rendelkeznie az eszközön. A megfelelő engedélyekkel rendelkező felhasználók bejelentkeznek a Visszajelzési központ, Gépház a Diagnosztikai naplók megtekintése lehetőséget, és törölheti  >  az adatokat.
 
 ## <a name="settings-troubleshooter"></a>Gépház Hibaelhárító
 
-A HoloLens felhasználó a Gépház **segítségével** elháríthatja a problémákat, és diagnosztikai adatokat gyűjthet. Ehhez kövesse az alábbi lépéseket:
+A HoloLens felhasználó az eszköz Gépház **segítségével** elháríthatja a problémákat, és diagnosztikai adatokat gyűjthet. Ehhez kövesse az alábbi lépéseket:
 
-1. Nyissa meg a Gépház alkalmazást, és válassza az **Update & Security Troubleshoot**(Biztonsági &  >  **frissítése)** lapot.
+1. Nyissa meg a Gépház alkalmazást, és válassza **az Update & Security Troubleshoot**(Biztonsági &  >  **frissítése)** lapot.
 1. Válassza ki a megfelelő területet, majd válassza az **Indítás lehetőséget.**
 1. Reprodukálja a problémát.
 1. Miután reprodukálta a problémát, térjen vissza a Gépház, majd válassza a **Leállítás lehetőséget.**
 
-A felhasználók a tartalék diagnosztika viselkedését  is konfigurálhatja a Gépház alkalmazásból. A beállítás **konfiguráláshoz lépjen** > Adatvédelem -> lapra.
+A felhasználók a tartalék diagnosztika viselkedését  is konfigurálhatja a Gépház alkalmazásból. A beállítás **konfiguráláshoz lépjen** az Adatvédelmi > Hibaelhárítás lapra.
 > [!NOTE]
 > Ha az eszközhöz MDM-szabályzat van konfigurálva, a felhasználó nem tudja felülbírálni ezt a viselkedést.
 
 ### <a name="os-update-troubleshooter"></a>Operációsrendszer-frissítés hibaelhárítója
-A [Holographic Windows 21H1-es](hololens-release-notes.md#windows-holographic-version-21h1) és újabb verziójú buildek:
-- A Gépház alkalmazás korábbi hibaelhárítói mellett egy új hibaelhárítót is hozzáadtunk az új operációsrendszer-frissítésekhez Gépház alkalmazással. Lépjen a **Gépház -> Update & Security -> Troubleshoot -> Windows Update (Frissítés > Windows) lapra,** és válassza az **Indítás lehetőséget.** Ez lehetővé teszi a nyomkövetések gyűjtését az operációsrendszer-frissítésekkel kapcsolatos probléma reprodukálása során, így jobb hibaelhárítást tud nyújtani az IT-hez vagy a támogatáshoz.
+
+A [Holographic Windows 21H1](hololens-release-notes.md#windows-holographic-version-21h1) és újabb verziókban:
+- A Gépház alkalmazás korábbi hibaelhárítói mellett egy új hibaelhárítót is hozzáadtunk az operációsrendszer-frissítésekhez Gépház alkalmazással. Lépjen **a Gépház -> Update & Security -> Troubleshoot -> Windows Update** (Frissítés hibaelhárítása) lapra, és válassza az Indítás **lehetőséget.** Ez lehetővé teszi a nyomkövetések gyűjtését az operációsrendszer-frissítésekkel kapcsolatos probléma reprodukálása során, hogy az it-it és a támogatással kapcsolatos hibaelhárítást még javítsa.
 
 ### <a name="prerequisites"></a>Előfeltételek
 
@@ -112,15 +113,15 @@ A diagnosztikai adatok ezeken a helyeken maradnak, amíg a felhasználó nem tö
 
 ### <a name="view-diagnostic-report"></a>Diagnosztikai jelentés megtekintése
 
-Az MDM-diagnosztika megtekintéséhez HoloLens 2. oldalon válassza a Wi-Fi ikont, majd lépjen az Gépház Accounts Access work or school (Munkahelyi vagy iskolai **Gépház-fiókok** elérése) pontra, és válassza a Felügyeleti naplók exportálása  ->    >   **lehetőséget.** HoloLens a naplófájlokat a fiókjába, és megjeleníti azok helyét az asztali számítógépen.
+Az MDM-diagnosztika HoloLens 2. lépésében való megtekintéséhez válassza a Wi-Fi ikont, majd lépjen a **Gépház** Accounts Access work or school (Munkahelyi vagy iskolai Gépház-fiókok elérése) pontra, és válassza a Felügyeleti naplók  ->    >   **exportálása lehetőséget.** HoloLens elküldi a naplófájlokat a fiókjába, és megjeleníti azok helyét az asztali számítógépen.
 
 ## <a name="diagnosticlog-csp"></a>DiagnosticLog CSP
 
-Mobilhálózati Eszközkezelés (MDM) környezetben a rendszergazda a DiagnosticLog konfigurációs szolgáltató [(CSP)](/windows/client-management/mdm/diagnosticlog-csp) segítségével konfigurálhatja a diagnosztikai beállításokat a regisztrált HoloLens eszközökön. A rendszergazda konfigurálhatja ezeket a beállításokat, hogy naplókat gyűjtsön a regisztrált eszközökről.
+A Mobile Eszközkezelés (MDM) környezetben a rendszergazda a DiagnosticLog konfigurációs szolgáltató [(CSP)](/windows/client-management/mdm/diagnosticlog-csp) segítségével konfigurálhatja a regisztrált HoloLens beállításait. A rendszergazda konfigurálhatja ezeket a beállításokat, hogy naplókat gyűjtsön a regisztrált eszközökről.
 
 További információ:
 - [Diagnosztika gyűjtése egy Windows eszközről](/mem/intune/remote-actions/collect-diagnostics)
-- [Intune nyilvános előzetes – Windows 10 eszközdiagnosztika](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
+- [Intune nyilvános előzetes verzió – Windows 10 eszközdiagnosztika](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
 
 ### <a name="prerequisites"></a>Előfeltételek
 
@@ -131,44 +132,45 @@ További információ:
 
 Mivel az eszköz a felügyelt környezet része, a felhasználó implicit módon hozzájárul a diagnosztikai információkhoz való rendszergazdai hozzáféréshez.
 
-A rendszergazda a DiagnosticLog CSP segítségével konfigurálja az adattárolási, megőrzési és hozzáférési szabályzatokat, beleértve a következőket szabályozó szabályzatokat:
+A rendszergazda a DiagnosticLog CSP segítségével konfigurálja az adattárolási, -megőrzési és -hozzáférési házirendeket, beleértve a következő házirendeket:
 
 - A diagnosztikai adatokat tároló felhőalapú infrastruktúra.
-- A diagnosztikai adatok megőrzési időtartama.
+- A diagnosztikai adatok megőrzési ideje.
 - A diagnosztikai adatokhoz való hozzáférést vezérlő engedélyek.
 
 ## <a name="offline-diagnostics"></a>Offline diagnosztika
-Olyan helyzetekben, amikor az eszköz nem tud diagnosztikai adatokat gyűjteni a Visszajelzési központ vagy a Gépház hibaelhárító segítségével, manuálisan is gyűjtheti a diagnosztikát. Erre akkor van szükség, ha az eszköz nem tud csatlakozni a Wi-Fi vagy nem fér hozzá a fent említett más módszerekhez. A diagnosztika összeomlási memóriaképeket és naplókat gyűjt az eszközről, amelyek segítségével a Microsoft támogatási szakembere elkülönítheti a problémákat.
 
-Ez akkor működik, amikor az eszköz megjelenik a Fájlkezelő miután USB-kábelen keresztül csatlakoztatta a számítógéphez.
+Olyan esetekben, amikor az eszköz nem tud diagnosztikai adatokat gyűjteni a Visszajelzési központ vagy a Gépház Troubleshooter segítségével, manuálisan is gyűjtheti a diagnosztikát. Erre akkor van szükség, ha az eszköz nem tud csatlakozni Wi-Fi vagy nem fér hozzá a fent említett egyéb módszerekhez. A diagnosztika összeomlási memóriaképeket és naplókat gyűjt az eszközről, amelyek segítségével a Microsoft támogatási szakemberei elkülönítik a problémákat.
+
+Ez akkor működik, ha az eszköz megjelenik a Fájlkezelő miután USB-kábelen keresztül csatlakoztatta a számítógéphez.
 
 > [!NOTE]
-> Az offline diagnosztika létrehozása és kezelése az operációs rendszer verziójától függően eltérő módon történik. Korábban a telemetriabeállítás vezérelte, de most már közvetlenül az MDM-szabályzat vezérli. Ha a beállítás vagy az MDM-szabályzat letiltja, akkor a diagnosztikai naplók nem gyűjthetőek ezzel a mechanizmussal.
+> Az offline diagnosztika létrehozása és kezelése az operációs rendszer verziójától függően eltérő módon történik. Korábban a telemetriabeállítás vezérelte, de most már közvetlenül MDM-szabályzaton keresztül vezérelték. Ha a beállítás vagy az MDM-szabályzat letiltja, akkor a diagnosztikai naplók nem gyűjthetőek ezzel a mechanizmussal.
 
 Viselkedés a [Holographic Windows 20H2 verzió előtt:](hololens-release-notes.md#windows-holographic-version-20h2)
- - Az offline diagnosztika csak akkor engedélyezett, ha a felhasználó az OOBE vagy a [System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) házirend értéke Full (Teljes) értékre van állítva (az alapszintű érték a HoloLens). 
-- Az offline diagnosztika letiltásához válassza az **Gépház App > Adatvédelmi lapját,** és válassza az **Alapszintű** lehetőséget a **Diagnosztikai adatok lapon.** Olyan buildek esetén, ahol az offline diagnosztika a telemetriai beállításoktól függ, csak azt befolyásolja, hogy a rendszer gyűjt-e naplókat. Ez nincs hatással a begyűjtött fájlokra.
+ - Az offline diagnosztika csak akkor engedélyezett, ha a felhasználó az OOBE vagy a [System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) szabályzat értéke Full (Teljes) értékre van állítva (az alapszintű érték a HoloLens). 
+- Az offline diagnosztika letiltásához válassza az Gépház **App > Adatvédelmi lapját,** és válassza az **Alapszintű** lehetőséget a **Diagnosztikai adatok lapon.** Olyan buildek esetén, ahol az offline diagnosztika a telemetriai beállításoktól függ, csak azt befolyásolja, hogy a rendszer gyűjt-e naplókat. Ez nincs hatással a begyűjtött fájlokra.
 - Ha az eszköz zárolva van, a naplók nem jelennek meg.
 
 A [Holographic Windows 20H2](hololens-release-notes.md#windows-holographic-version-20h2) és újabb verziókban:
-- Ha a Tartalék diagnosztika engedélyezve van, a rendszer meghatározott MDM-szabályzattal fogja vezérelni a [MixedReality/FallbackDiagnostics](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics) megfelelő beállításával
+- Ha a Fallback Diagnostics engedélyezve van, egy adott MDM-szabályzat vezérli, a [MixedReality/FallbackDiagnostics](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics) megfelelő beállításával
 - Ha az eszköz zárolva van, a naplók nem jelennek meg.
 
 További információért tekintse meg ezt a videót.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
-A diagnosztikák gyűjtéséhez kövesse az alábbi lépéseket:
+A diagnosztika gyűjtéséhez kövesse az alábbi lépéseket:
 
-1.  Csatlakozás csatlakoztatja az eszközt egy USB-kábellel a számítógéphez.
+1.  Csatlakozás az eszközt egy USB-kábellel a számítógéphez.
 
-2.  A Fájlkezelő gépén lépjen a **"This PC \Internal Storage" (Ez a számítógép \<hololens-device> \Belső számítógép) Storage.**
+2.  A Fájlkezelő nyissa meg az **"Ez a \<hololens-device> számítógép \Belső számítógép" Storage.**
 
-3.  Ha a **Belső Storage** mappa nem jelent meg, az eszköz arra vár, hogy a felhasználó bejelentkeztetsen. Jelentkezzen be vagy tápellátást az eszközön úgy, hogy 10 másodpercig lenyomva tartja a POWER gombot.
+3.  Ha a **Belső Storage** mappa nem jelent meg, az eszköz arra vár, hogy a felhasználó bejelentkeztetsen. Az eszközbe való bejelentkezéshez vagy az energiaciklushoz tartsa lenyomva a POWER gombot 10 másodpercig.
 
 4.  Nyomja le és azonnal engedje el a **Power + Volume Down** gombokat.
 
-5.  Várjon egy percet, amíg az eszköz előkészíti a zip-archívumokat. (Előfordulhat, hogy egy HololensDiagnostics.temp nevű ideiglenes fájl láthatóvá válik, amíg az eszköz létrehozza a zip-archívumokat. Ne fér hozzá a fájlhoz, és ne mentse azt. Ha a folyamat befejeződik, a zip-archívumok váltják fel.)
+5.  Várjon egy percet, amíg az eszköz előkészíti a zip-archívumokat. (Előfordulhat, hogy egy HololensDiagnostics.temp nevű ideiglenes fájl láthatóvá válik, miközben az eszköz létrehozza a zip-archívumokat. Ne fér hozzá a fájlhoz, és ne mentse azt. Amikor a folyamat befejeződik, a zip-archívumok felülírják.)
 
 6.  Frissítse a fájlkezelőt, és keresse meg a **\Documents mappát.**
 
