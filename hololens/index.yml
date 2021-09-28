@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft HoloLens
-summary: Microsoft HoloLens az első teljesen önálló holografikus számítógép, amely a Windows 10. A 2. HoloLens bevezetésével minden HoloLens-eszköz olyan, kereskedelmi használatra kész felügyeleti képességeket biztosít, amelyet a Microsoft felhőalapú és AI-szolgáltatásainak megbízhatósága, biztonsága és méretezhetősége javít.
+summary: Microsoft HoloLens az első teljesen önálló holografikus számítógép, amely a Windows 10. A 2. HoloLens bevezetésével minden HoloLens-eszköz kereskedelmi használatra kész felügyeleti képességeket biztosít, amelyek a Microsoft felhő- és AI-szolgáltatásainak megbízhatóságával, biztonságával és méretezhetőségével egészulnak ki.
 metadata:
   title: Microsoft HoloLens
   description: A Microsoft HoloLens.
@@ -11,12 +11,12 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: c0189c7a75ad27d6d301721e78de6391f6ac76f7
-  ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+  ms.openlocfilehash: 2d0d57406c0d8b1759c53bf5847d8369f98a865e
+  ms.sourcegitcommit: 2b541bacb32279ccec0d7b7caef216626634a2ad
   ms.translationtype: MT
   ms.contentlocale: hu-HU
-  ms.lasthandoff: 09/13/2021
-  ms.locfileid: "126032913"
+  ms.lasthandoff: 09/28/2021
+  ms.locfileid: "129145930"
 landingContent:
 - title: A 2. HoloLens meg
   linkLists:
@@ -54,7 +54,7 @@ landingContent:
     links:
     - text: Gyakori üzembehelyezési forgatókönyvek
       url: common-scenarios.md
-    - text: A HoloLens 2. üzembe helyezésének megtervezése kereskedelmi környezetben
+    - text: A HoloLens 2. környezetben való üzembe helyezés megtervezése kereskedelmi környezetben
       url: hololens-core-components.md
     - text: Autopilot CSS-regisztráció
       url: hololens2-autopilot-registration-support.md
@@ -68,6 +68,22 @@ landingContent:
       url: hololens2-corp-connected-overview.md
     - text: Üzembe helyezési útmutató – Offline biztonságos
       url: hololens-common-scenarios-offline-secure.md
+- title: Mixed Reality-erőforrások
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Mixed Reality-erőforrások
+      url: https://www.microsoft.com/en-us/hololens/mixed-reality-partners
+    - text: Mixed Reality Fórum
+      url: https://techcommunity.microsoft.com/t5/mixed-reality-partners/bd-p/MixedRealityPartnersForum
+    - text: Mixed Reality partner blogja
+      url: https://aka.ms/MRPartnerBlog
+    - text: Tervezés és prototípus-tervezés
+      url: https://docs.microsoft.com/en-us/windows/mixed-reality/design/design
+    - text: Mozgóplatform mód
+      url: /hololens/hololens2-moving-platform
+    - text: Környezeti szempontok
+      url: /hololens/hololens-environment-considerations
 - title: Hibaelhárítás
   linkLists:
   - linkListType: how-to-guide
@@ -82,7 +98,7 @@ landingContent:
       url: hololens2-enterprise-troubleshooting.md
     - text: Diagnosztikai adatok gyűjtése és használata HoloLens eszközökről
       url: hololens-diagnostic-logs.md
-    - text: A 2. HoloLens újraindítása, visszaállítása vagy helyreállítása
+    - text: Újraindítás, visszaállítás vagy helyreállítás HoloLens 2.
       url: hololens-recovery.md
 - title: Források
   linkLists:
@@ -94,13 +110,13 @@ landingContent:
       url: hololens-insider.md
   - linkListType: reference
     links:
-    - text: Hol vásároljon 2 HoloLens vásárláshoz?
+    - text: Hol vásároljon 2 HoloLens?
       url: hololens2-purchase.md
     - text: Támogatási és súgólehetőségek
       url: hololens2-support.md
     - text: Visszajelzés küldése
       url: hololens-feedback.md
-- title: Fejlesztés a 2 HoloLens val
+- title: Fejlesztés a 2 HoloLens vel
   linkLists:
   - linkListType: how-to-guide
     links:
