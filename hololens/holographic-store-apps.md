@@ -15,20 +15,20 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 3442da500e7554d7f97db2178cbaceeecad143ac
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: f7d4ddf41f02b083000c1e57f5140c38527826d7
+ms.sourcegitcommit: b9cd7ed5edb98249c609b547b90587863ea1cb9e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126036063"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "129364419"
 ---
 # <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>Alkalmazások megkeresheti, telepítheti és eltávolíthatja őket a Microsoft Store
 
-A Microsoft Store az alkalmazásokkal és játékokkal HoloLens. Amikor a saját üzletében az Áruházat HoloLens, minden ott látható alkalmazás futni fog rajta.
+A Microsoft Store a forrás az olyan alkalmazásokhoz és játékokhoz, amelyek a HoloLens. Amikor az Áruházat a saját HoloLens, minden ott látható alkalmazás futni fog rajta.
 
-A HoloLens 2D nézetet vagy holografikus nézetet használhatnak. A 2D nézetet használó alkalmazások windowsosak, és az Ön köré is el lehet őket különülni. A holografikus nézetet használó alkalmazások körülveszi, és ön lesz az egyetlen alkalmazás, amit lát.
+A HoloLens 2D nézetet vagy holografikus nézetet használ. A 2D nézetet használó alkalmazások windowsosak, és az Ön köré is el lehet őket különülni. A holografikus nézetet használó alkalmazások körülveszi, és ön lesz az egyetlen alkalmazás, amit lát.
 
-HoloLens számos meglévő alkalmazást támogat a Microsoft Store, valamint a kifejezetten a HoloLens.  Ez a cikk a Microsoft Store.
+HoloLens számos meglévő alkalmazást támogat a Microsoft Store- és a kifejezetten a HoloLens.  Ez a cikk az alkalmazás holografikus alkalmazásait Microsoft Store.
 
 További információ az egyéni alkalmazások telepítéséről és futtatásáról: [Egyéni holografikus alkalmazások.](holographic-custom-apps.md)
 
@@ -37,7 +37,7 @@ További információ az egyéni alkalmazások telepítéséről és futtatásá
 Nyissa meg a Microsoft Store a **Start menüből.** Ezután keresse meg az alkalmazásokat és játékokat. Hangparancsok [](hololens-cortana.md) használatával a kereséshez mondja ki a "Search" (Keresés) üzenetet, a keresőablak megnyitása után a "Start dictating" (Diktálás megkezdése) üzenet jelenik meg, majd amikor a rendszer kéri, kezdje el kiadni a keresési kifejezéseket.
 
 > [!NOTE]
-> A HoloLens rendszerkövetelményei az alkalmazás build architektúrája alapján vannak megszabadulva. Ha az HoloLens-hoz készült alkalmazás buildje (1. generációs) nem lett frissítve az áruházban egy újabb UWP-re, hogy tartalmazza az ARM architektúracsomagot, akkor a 2. generációs HoloLens nem lesz elérhető. Hasonlóképpen, ha egy HoloLens 2-es alkalmazás nem tartalmazza az x86 architektúracsomagot, az nem lesz elérhető HoloLens (1. generációs) eszközökön. HoloLens eszközarchitektúrák:
+> A HoloLens eszközök rendszerkövetelményei az alkalmazás build architektúrája alapján vannak felépítve. Ha az HoloLens-hoz készült alkalmazás buildje (1. generációs) nem lett frissítve az áruházban egy újabb UWP-re, hogy tartalmazza az ARM architektúracsomagot, akkor HoloLens 2 eszköz esetén nem lesz elérhető. Hasonlóképpen, ha egy HoloLens 2-es alkalmazás nem tartalmazza az x86 architektúracsomagot, az nem lesz elérhető HoloLens (1. generációs) eszközökhöz. HoloLens eszközarchitektúrák:
 >
 > - x86 = HoloLens (1. generációs)
 > - ARM = HoloLens 2
@@ -56,13 +56,13 @@ Nyissa meg a Microsoft Store a **Start menüből.** Ezután keresse meg az alkal
 
 ## <a name="install-apps"></a>Alkalmazások telepítése
 
-Az alkalmazások letöltéséhez be kell jelentkeznünk egy Microsoft-fiók. Egyes alkalmazások ingyenesek, és azonnal letölthetők. A vásárlást igénylő alkalmazások esetében be kell jelentkeznie az Áruházba a Microsoft-fiók és érvényes fizetési módgal kell lennie.
+Az alkalmazások letöltéséhez egy fiókkal kell Microsoft-fiók. Egyes alkalmazások ingyenesek, és azonnal letölthetők. A vásárlást igénylő alkalmazások esetében be kell jelentkeznie az Áruházba a Microsoft-fiók és érvényes fizetési módkal kell lennie.
 
 > [!NOTE]
 > A fióknak, Microsoft Store kell lennie a bejelentkezett fiókkal. Ha munkahelyi vagy iskolai fiókot használ a HoloLens akkor előfordulhat, hogy be kell jelentkeznie személyes fiókjával az Áruházbeli alkalmazásban a vásárláshoz.
 
 > [!TIP]
-> A fizetési mód beállításához [](https://account.microsoft.com/) válassza a Fizetési account.microsoft.com **lehetőséget& fizetési** lehetőség Fizetési  >    >  **lehetőség hozzáadása lehetőséget.**
+> A fizetési mód beállításához [](https://account.microsoft.com/) válassza a Fizetési account.microsoft.com **lehetőséget& fizetési** lehetőség  >    >  **Fizetési lehetőség hozzáadása lehetőséget.**
 
 1. A [ **Start menü megnyitásához**](holographic-home.md)hajtson végre egy [Indítás](/hololens/hololens2-basic-usage#start-gesture) kézmozdulatot vagy [bloom](hololens1-basic-usage.md) kézmozdulatot a HoloLens (1. gen).
 
@@ -81,11 +81,11 @@ Előfeltételek: A felhasználó már csatlakozott HoloLens 2. eszközhöz a mun
 
     ![Start menü](images/office-pwa-1.jpg)
 
-1. A saját HoloLens a oldalon, [https://onedrive.live.com/about/signin](https://onedrive.live.com/about/signin) és adja meg a munkahelyi fiók hitelesítő adatait
+1. A munkahelyi HoloLens meg a munkahelyi fiók hitelesítő [https://onedrive.live.com/about/signin](https://onedrive.live.com/about/signin) adatait
 
     ![Munkahelyi bejelentkezés](images/office-pwa-2.jpg)
 
-1. Miután sikeresen bejelentkezett az OneDrive webportálra, várjon 30–60 másodpercet, amíg PWA gombra.
+1. Miután sikeresen bejelentkezett a OneDrive webportálra, várjon 30–60 másodpercet, amíg PWA gombra.
 
     ![PWA telepítés gomb](images/office-pwa-3.jpg)
 
@@ -93,12 +93,12 @@ Előfeltételek: A felhasználó már csatlakozott HoloLens 2. eszközhöz a mun
 
     ![Telepítési kérés](images/office-pwa-4.jpg)
 
-1. Zárja be az Edge böngészőt, és a Start menü kattintson a **Minden** alkalmazás  gombra, és indítsa el a OneDrive PWA címkével Microsoft OneDrive
+1. Zárja be az Edge böngészőt, és a Start menü válassza a **Minden** alkalmazás  gombot, és indítsa el a OneDrive PWA címkével Microsoft OneDrive
 
     ![Minden alkalmazás mindkét alkalmazást.](images/office-pwa-5.jpg)
 
-> [!NOTE]
-> A "Microsoft OneDrive" az a PWA, ahol "OneDrive" a régebbi UWP.
+    > [!NOTE]
+    > A "Microsoft OneDrive" az a PWA, ahol "OneDrive" a régebbi UWP.
 
 1. Ezután láthatja a saját OneDrive fájlokat.
 
@@ -108,7 +108,9 @@ Lásd még: [Az OneDrive feltöltésének engedélyezése](hololens-release-note
 
 ## <a name="update-apps"></a>Alkalmazások frissítése
 
-Ha frissítenie kell egy, a Microsoft Store telepített alkalmazást, frissítheti az alkalmazást a Microsoft Store alkalmazásból. Az alkalmazáshoz telepített Microsoft Store Vállalatoknak frissítheti ezeket az alkalmazásokat a Microsoft Store Vállalatoknak.
+### <a name="manual-updates"></a>Manuális frissítések
+
+Ha frissítenie kell egy, a Microsoft Store telepített alkalmazást, frissítheti az alkalmazást a Microsoft Store alkalmazásból. Az alkalmazáshoz telepített Microsoft Store Vállalatoknak frissítheti is az alkalmazásokat a Microsoft Store Vállalatoknak.
 
 1. A [ **Start menü megnyitásához**](holographic-home.md)hajtson végre egy [Indítás](/hololens/hololens2-basic-usage#start-gesture) kézmozdulatot vagy [bloom](hololens1-basic-usage.md) kézmozdulatot a HoloLens (1. gen).
 
@@ -119,7 +121,7 @@ Ha frissítenie kell egy, a Microsoft Store telepített alkalmazást, frissíthe
 1. Válassza a **"..."** vagy a "További részletek" gombot.
 
    > [!div class="mx-imgBorder"]
-   > ![Microsoft Store alkalmazás képernyőképe.](images/store-update-1.png)
+   > ![Microsoft Store képernyőképe.](images/store-update-1.png)
 
 1. Válassza **a Letöltések és frissítések lehetőséget.**
     1. Ha az eszköz korábban frissítéseket azonosított, előfordulhat, hogy egy lefelé mutató nyíl és egy szám jelöli a függőben lévő frissítéseket.
@@ -134,6 +136,26 @@ Ha frissítenie kell egy, a Microsoft Store telepített alkalmazást, frissíthe
 >
 > Ha egy saját telepítésű vagy üzembe helyezett egyéni alkalmazást szeretne frissíteni, ugyanezt a módszert kell használnia az alkalmazás frissített verziójával is. Az egyéni alkalmazások telepítésével és futtatásával kapcsolatos további információkért olvassa el az [egyéni holografikus alkalmazásokat.](holographic-custom-apps.md)
 
+### <a name="automatic-app-updates"></a>Automatikus alkalmazásfrissítések
+
+Az automatikus frissítések Microsoft Store alkalmazásokra Microsoft Store Vállalatoknak, és csak akkor frissíthetők automatikusan, ha közvetlenül az Áruházból telepítették őket. Ha az Intune-ból telepíti, az it-csoport leküldheti a frissítéseket az MDM-ről úgy, hogy Microsoft Store Vállalatoknak az alkalmazás legújabb elérhető verziójának frissítéseit.
+
+> [!NOTE]
+> A Microsoft Store Vállalatoknak származó alkalmazások esetében be kell jelentkeznie az Áruházba, és ugyanazokkal a bérlővel kell hitelesítenie magát, mint amely az eszközön használt Microsoft Store Vállalatoknak katalógushoz van társítva.
+
+#### <a name="how-automatic-updates-work"></a>Az automatikus frissítések működik
+
+Az automatikus alkalmazásfrissítések napi (körülbelül 24 óránkénti) frissítésre vannak ütemezve, a hálózati rendelkezésre állás függvényében. A frissítések fogadása érdekében tartsa az eszközt aktívnak vagy AC-hez csatlakoztatva. Még ha az alkalmazásfrissítéseket az aktív napi használat során is letöltik, csak akkor lesznek alkalmazva, ha a frissíthető alkalmazás már nincs használatban.
+
+> [!TIP]
+> Ha lehetséges, töltse fel az eszközt egyik napról a másikra, amíg az a vállalati hálózathoz csatlakozik. Ha a frissítések egyik napról a másikra tölthetők le és telepíthetők, kisebb valószínűséggel szakítják meg az aktív eszközhasználatot.
+
+#### <a name="how-it-administrators-can-control-automatic-updates"></a>Hogyan szabályozhatják a rendszergazdák az automatikus frissítéseket?
+
+A rendszergazdák az [ApplicationManagement/AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) szabályzat segítségével szabályozhatják az automatikus alkalmazásfrissítéseket. Ez a szabályzat lehetővé teszi az automatikus alkalmazásfrissítések teljes engedélyezését vagy letiltását, de nem szabályozhatja a frissítések bekövetkeztét.
+
+A [21H2](hololens-release-notes.md#windows-holographic-version-21h1)verziótól a rendszergazdák a [ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures) szabályzattal is szabályozhatják, hogy a korábban használt, de a korábbi kísérletek során nem frissíthető alkalmazásokat kényszerített módon újra kell indítani.
+
 ## <a name="uninstall-apps"></a>Alkalmazások eltávolítása
 
 Az alkalmazások háromféleképpen távolíthatók el. Az alkalmazásokat eltávolíthatja a Microsoft Store, Start menü vagy a Gépház.
@@ -142,7 +164,7 @@ Az alkalmazások háromféleképpen távolíthatók el. Az alkalmazásokat eltá
 > Nem távolíthat el rendszeralkalmazást vagy a Microsoft Store magát.
 
 > [!IMPORTANT]
-> Ha a HoloLens 2 felhasználója több felhasználóval rendelkezik, az alkalmazás eltávolításához be kell jelentkeznie az alkalmazást telepítő felhasználóként.
+> Ha a HoloLens 2 felhasználója több felhasználóval rendelkezik, az eltávolításhoz az alkalmazást telepített felhasználóként kell bejelentkeznie.
 
 ### <a name="uninstall-from-the-microsoft-store"></a>Eltávolítás a Microsoft Store
 
@@ -156,4 +178,4 @@ A **Start menüben** vagy a **Minden alkalmazás** nyissa meg az alkalmazást. V
 
 A **Start menüben** válassza az Alkalmazások **Gépház > lehetőséget.** Keresse meg az alkalmazást a listában, jelölje ki, majd kattintson az **Eltávolítás gombra.**
 
-Ha nem sikerül eltávolítania egy alkalmazást, [visszajelzést](/hololens/hololens-feedback) küldhet a Visszajelzési központ.
+Ha nem tud eltávolítani egy alkalmazást, [visszajelzést](/hololens/hololens-feedback) küldhet a Visszajelzési központ.
