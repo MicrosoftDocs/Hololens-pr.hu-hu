@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problémák, hiba, hibaelhárítás, javítás, súgó, támogatás, HoloLens, emulátor
-ms.openlocfilehash: ceb6f2670b15f46d17a0cb36f6602ae3d4e3ec1d
-ms.sourcegitcommit: 8a3f925d2bda13c095b35f14d80afdd876aa859c
+ms.openlocfilehash: afbbc1ab0e018f668381137849738ec7d274fe37
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "129800538"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924383"
 ---
 # <a name="device-troubleshooting"></a>Eszköz hibaelhárítása
 
@@ -32,6 +32,7 @@ Ez a cikk több gyakori probléma megoldását HoloLens ismerteti.
 **Ismert problémák**
 - [Minden alkalommal, amikor az energia 18%-ra kapcsol, az eszköz hirtelen automatikusan leáll](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [OneDrive Az UWP-alkalmazás nem működik az Azure AD-felhasználók számára](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
+- [Miért látom a 0x80180014 Autopilot alatt?](#why-do-i-see-0x80180014-during-autopilot)
 - [A Remote Assist videó 20 perc után lefagy](#remote-assist-video-freezes-after-20-minutes)
 - [Az automatikus bejelentkezés bejelentkezést kér](#auto-login-asks-for-log-in)
 - [Microsoft Edge nem indul el](#microsoft-edge-fails-to-launch)
@@ -60,7 +61,7 @@ Ez a cikk több gyakori probléma megoldását HoloLens ismerteti.
 **Külső eszközök** 
 - [Bluetooth eszközök nem párosítása](#bluetooth-devices-arent-pairing)
 - [Az USB-C mikrofon nem működik](#usb-c-microphone-isnt-working)
-- [A nem működnek a Gépház listában szereplő eszközök](#devices-listed-as-available-in-settings-dont-work)
+- [A Gépház felsorolt eszközök nem működnek](#devices-listed-as-available-in-settings-dont-work)
 
 ## <a name="every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically"></a>Minden alkalommal, amikor az energia 18%-ra kapcsol, az eszköz hirtelen automatikusan leáll
 
@@ -76,18 +77,24 @@ Ismert probléma, hogy amikor az eszköz eléri a 18%-os akkumulátort, az vára
 
 ## <a name="onedrive-uwp-app-doesnt-work-for-azure-ad-users"></a>OneDrive Az UWP-alkalmazás nem működik az Azure AD-felhasználók számára
 
-Ha az Azure AD OneDrive fiókkal használja a vállalati OneDrive, akkor előfordulhat, hogy hibába ütközött, amikor bejelentkezett a beérkezett OneDrive alkalmazásba. Ha nem tud bejelentkezni az alkalmazásba OneDrive nincs hatással a Kamera alkalmazás által rögzített képek és videók automatikus feltöltésére. A fájlok továbbra is menthetők és elérhetők a felhőalapú OneDrive Vállalati verzió tárolóból. A OneDrive és HoloLens csapatok dolgoznak a probléma megoldásán.
+Ha a vállalati OneDrive használja az Azure AD-fiókját, előfordulhat, hogy hibába ütközött, amikor bejelentkezett OneDrive alkalmazásba. Ha nem tud bejelentkezni az alkalmazásba OneDrive nincs hatással a Kamera alkalmazás által rögzített képek és videók automatikus feltöltésére. A fájlok továbbra is menthetők és elérhetők a felhőalapú OneDrive Vállalati verzió tárolóból. A OneDrive és HoloLens csapatok dolgoznak a probléma megoldásán.
 
 ### <a name="workarounds"></a>Kerülő megoldások
 
-Előfeltétel: Az ügyfelek a Microsoft Edge és az eszköz operációs rendszerének frissítése egy Windows Holographic, 21H1 build vagy újabb verzióra van frissítve.
+Előfeltétel: Az ügyfelek használhatnak Microsoft Edge és az eszköz operációs rendszerének frissítése egy Windows Holographic, 21H1 build vagy újabb verzióra van frissítve.
 
 Ha ezt a problémát tapasztalja, próbálkozzon a következők valamelyikével:
 
-- A felhasználók közvetlenül hozzáférhetnek OneDrive Vállalati verzióhoz a Microsoft Edge, és a böngészőjükből használhatja a webhely fájljaikat.
+- A felhasználók közvetlenül hozzáférhetnek OneDrive Vállalati verzióhoz a Microsoft Edge, és a böngészőjükből férhetnek hozzá a webhely fájljaikhoz.
 - A felhasználók úgy telepítheti a OneDrive PWA alkalmazást, HoloLens letöltik a Microsoft Edge. Így a felhasználók ismét megtekinthetik és kezelhetik az eszközön lévő fájlokat. Olvassa el és kövesse ezeket az utasításokat a OneDrive PWA [alkalmazás telepítéséhez a HoloLens.](holographic-store-apps.md#install-microsoft-onedrive-pwa-app)
 
 [Vissza a listához](#list)
+
+## <a name="why-do-i-see-0x80180014-during-autopilot"></a>Miért látom a 0x80180014 Autopilot alatt?
+
+Ez a hiba általában az eszköz alaphelyzetbe állítása és a folyamatok újrahasználata során merül fel, amikor egy HoloLens eszköz legalább egyszer végigment az Autopiloton. A probléma megoldásához törölje az eszközt a Microsoft Intune [majd](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) állítsa vissza az AutoPilot-folyamat befejezéséhez.
+
+További információért tekintse meg az [AutoPilot oldalán található hibaelhárítási lépéseket.](hololens2-autopilot.md#why-do-i-see-0x80180014-during-autopilot)
 
 ## <a name="remote-assist-video-freezes-after-20-minutes"></a>A Remote Assist videó 20 perc után lefagy
 
@@ -147,10 +154,10 @@ Nincsenek ismert megkerülő megoldások, mivel eddig nem sikerült megoldani a 
 
 Az OOBE során probléma lép fel, amikor a felhasználó kiválasztott egy munkahelyi vagy iskolai fiókot, és megadta a jelszavát, és a billentyűzeten lévő speciális karakterekre próbál átváltani az &123 gombra koppintva, nem változik különleges karakterekre. Ez egy **ismert probléma.**
 
-A következőt kell körül kell dolgozni:
+A következőt kell körülveszenni:
 
 - Zárja be a billentyűzetet, és nyissa meg újra a szövegmezőre koppintva.
-- Helytelenül adja meg a jelszót. Amikor a billentyűzetet a következő alkalommal újraindítják, az a várt módon fog működni.
+- Helytelenül adja meg a jelszót. Ha a billentyűzetet legközelebb újraindítják, az a várt módon fog működni.
 - Webes hitelesítés, zárja be a billentyűzetet, és válassza **a Bejelentkezés másik eszközről lehetőséget.**
 - Ha csak számokat ad meg, a felhasználó megnyomhat és lenyomva tarthat bizonyos kulcsokat egy kibontott menü megnyitásához.
 - USB-billentyűzet használata.
@@ -164,61 +171,61 @@ Ez nincs hatással a következőre:
 ## <a name="downloading-locked-files-doesnt-error"></a>A zárolt fájlok letöltése nem hibás
 
 > [!NOTE]
-> Ez egy ismert **hiba,** amely a [Holographic Windows 21H1 - 2021. júliusi frissítésében javítva lett.](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update)
+> Ez egy ismert **probléma,** amely ki lett javítva [Windows Holographic 21H1 - 2021.](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update)júliusi frissítésében.
 
-A Holographic Windows korábbi buildjeiben zárolt fájl letöltésekor az eredmény egy HTTP-hibalap lenne. A Windows Holographic 21H1-es verziójának frissítésében a zárolt fájl letöltésének a kipróbálása azt jelenti, hogy semmi sem látható– a fájl nem tölt le, és nem jelenik meg hiba.
+A Holographic Windows korábbi buildje során egy zárolt fájl letöltésekor az eredmény egy HTTP-hibalap lesz. A Windows Holographic 21H1-es verziójának frissítésében a zárolt fájl letöltésével semmi nem látható – a fájl nem tölt le és nem jelenik meg hiba.
 
 [Vissza a listához](#list)
 
-## <a name="device-portal-file-uploaddownload-times-out"></a>Eszközportál feltöltése/letöltése időkorrekta
+## <a name="device-portal-file-uploaddownload-times-out"></a>Eszközportál feltöltés/letöltés időkorrekta
 > [!NOTE]
-> Ez egy ismert **hiba,** amely a [Holographic Windows 21H1 - 2021. júliusi frissítésében javítva lett.](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update) Ha az áthidaló megoldás részeként korábban letiltotta az SSL-kapcsolatot, erősen ajánlott újra engedélyezni.
+> Ez egy ismert **probléma,** amely ki lett javítva [Windows Holographic 21H1 - 2021.](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update)júliusi frissítésében. Ha az áthidaló megoldás részeként korábban letiltotta az SSL-kapcsolatot, javasoljuk, hogy engedélyezze újra.
 
-Egyes ügyfelek azt találták, hogy amikor fájlokat próbálnak feltölteni vagy letölteni, a művelet lefagyhat, majd időkorrekciót vagy soha nem fejeződik be. Ez elkülönül a "fájl[zárolt"](#downloading-locked-files-doesnt-error) ismert problémától – ez a Windows Holographic 2004-es, 20H2-es és 21H1-es piaci buildeket érinti. A problémát az okozza, hogy Eszközportál bizonyos kérések kezelése során hiba történt, és a https használata esetén a legnagyobb konzisztens találat, amely az alapértelmezett beállítás.
+Egyes ügyfelek azt találták, hogy amikor fájlokat próbálnak feltölteni vagy letölteni, a művelet lefagyhat, majd időkorrekciót vagy soha nem fejeződik be. Ez elkülönül a "fájl[zárolt"](#downloading-locked-files-doesnt-error) ismert problémától – ez a Windows Holographic 2004-es, 20H2-es és 21H1-es piaci buildeket érinti. A problémát egy olyan hiba okozza, Eszközportál bizonyos kérések kezelése során, és https használata esetén a legnagyobb konzisztensen ad vissza találatot, amely az alapértelmezett beállítás.
 
 ### <a name="workaround"></a>Áthidaló megoldás
 
-Ez az áthidaló megoldás, amely ugyanúgy vonatkozik a Wi-Fi az UsbNcm-re, a "kötelező" beállítás letiltása az "SSL-kapcsolat" alatt. Lépjen a következő oldalra: **Eszközportál, System**( Rendszer) és válassza a **Preferences (Beállítások)** lapot. Az **Eszközbiztonság szakaszban** keresse meg az **SSL-kapcsolatot,** és törölje a jelölését a **Kötelező letiltásához.**
+Ez az áthidaló megoldás, amely ugyanúgy vonatkozik a Wi-Fi és az UsbNcm protokollra, a "kötelező" beállítás letiltása az SSL-kapcsolat alatt. Navigáljon a Eszközportál, a System (Rendszer) **lapra,** és válassza a **Preferences (Beállítások)** lapot. Az **Eszközbiztonság szakaszban** keresse meg az **SSL-kapcsolatot,** és törölje a jelölését a Kötelező **letiltásához.**
 
-A felhasználónak ekkor az http:// kell lennie, https:// (IP-cím) és olyan funkciók, mint a fájlok feltöltése és letöltése működni fog.
+A felhasználónak ekkor az http:// kell lennie, nem https:// (IP-cím), és az olyan funkciók, mint a fájlfeltöltés és a letöltés működni fognak.
 
 [Vissza a listához](#list)
 
-## <a name="blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build"></a>Kék képernyő, miután az Insider előzetes verzióból való igénylést egy Insider buildeléses flash() módban megjelenő eszközön
+## <a name="blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build"></a>Kék képernyő az Insider előzetes verzióból való eltolás után egy Insider buildtel flashdolt eszközön
 
-Ez a probléma olyan felhasználókra van hatással, akik egy Insider előzetes verziójú builden voltak, új belső előzetes verziójú buildelték újra az HoloLens 2-es verziójukat, majd nem regisztrálták őket az Insider programból. Ez egy **ismert probléma.**
+Ez olyan problémát jelent, amely olyan felhasználókat érint, akik egy Insider előzetes verziójú builden voltak, új belső előzetes verziójú buildelték újra a HoloLens 2-es verziójukat, majd nem regisztrálták őket az Insider programból. Ez egy **ismert probléma.**
 
 Ez nincs hatással a következőre:
 
-- Az Insiderben nem regisztrált Windows
+- A Windows Insiderben nem regisztrált felhasználók
 - Bennfentesek:
-    - Ha egy eszköz az Insider buildek óta regisztrálva lett, az 18362.x verziójú volt
-    - Ha egy Insider 19041.x buildet írt alá, és regisztrálva kell maradnia az Insider programban
+    - Ha az insider buildek óta regisztrált egy eszközt, az 18362.x verziójú volt
+    - Ha egy Insider által aláírt 19041.x buildet flashltek, és regisztrálva kell maradnia az Insider programban
 
-Időző:
+Körül kell dolgozni:
 
 - A probléma elkerülése
-    - Flash egy nem belső build. A rendszeres havi frissítések egyike.
+    - Flash egy nem belső build. Az egyik rendszeres havi frissítés.
     - Maradjon az Insider előzetes kiadásában
-- Az eszköz perjelének átfedő perjele
+- Az eszköz átfedő perjele
 
-    1. Helyezze [a HoloLens 2-](hololens-recovery.md) et flash (flash) módba manuálisan úgy, hogy teljesen lekapcsolód, miközben nem csatlakozik. Ezután a Kötet lenyomva tartási gombra koppintva koppintson a Bekapcsoló gombra.
+    1. Helyezze [a HoloLens 2- et flash (flash)](hololens-recovery.md) módba manuálisan úgy, hogy teljesen leáll, miközben nem csatlakozik. Ezután a Kötet lenyomva tartási gombra koppintva koppintson a Bekapcsoló gombra.
 
-    1. Csatlakozás nyissa meg a számítógépet, és nyissa meg az Advanced Recovery Companion gombra.
+    1. Csatlakozás nyissa meg a számítógépet, és nyissa meg az Advanced Recovery Companiont.
 
-    1. A 2. HoloLens az alapértelmezett buildhez.
+    1. A 2. HoloLens az alapértelmezett buildre.
 
 [Vissza a listához](#list)
 
 ## <a name="onedrive-doesnt-automatically-upload-pictures"></a>OneDrive nem tölt fel automatikusan képeket
 
-A OneDrive alkalmazás HoloLens támogatja a munkahelyi vagy iskolai fiókok automatikus kamerafeltöltését. Ez egy **ismert probléma.**
+A OneDrive alkalmazás nem HoloLens támogatja a munkahelyi vagy iskolai fiókok automatikus kamerafeltöltését. Ez egy **ismert probléma.**
 
 Workarounds:
 
-- Ha a vállalkozása számára is elérhető, a fogyasztói Microsoft-fiókok támogatják az automatikus kamerafeltöltést. A munkahelyi vagy iskolai fiók Microsoft-fiók is bejelentkezhet a fiókba (a OneDrive alkalmazás támogatja a kettős bejelentkezést). A profil Microsoft-fiók a OneDrive engedélyezheti az automatikus, háttérkamerás kameratekercs-feltöltést.
+- Ha ez a vállalkozása számára is elérhető, a fogyasztói Microsoft-fiókok támogatják az automatikus kamerafeltöltést. Munkahelyi vagy iskolai fiókján kívül Microsoft-fiók is bejelentkezhet a munkahelyi vagy iskolai fiókjába (a OneDrive az alkalmazás támogatja a kettős bejelentkezést). A profil Microsoft-fiók a OneDrive engedélyezheti az automatikus, háttérkamerás kameratekercs-feltöltést.
 
-- Ha nem tudja biztonságosan használni a Microsoft-fiók a fényképek automatikus feltöltéséhez, manuálisan feltölthet fényképeket a munkahelyi vagy iskolai fiókjába a OneDrive alkalmazásból. Ennek érdekében győződjön meg arról, hogy bejelentkezett a munkahelyi vagy iskolai fiókjába a OneDrive alkalmazásban. Kattintson a **+** gombra, majd válassza a **Feltöltés lehetőséget.** Keresse meg a feltölteni kívánt fényképeket vagy videókat a **Pictures (Képek) és a Camera Roll (>) között.** Válassza ki a feltölteni kívánt fényképeket vagy videókat, majd kattintson a **Megnyitás gombra.**
+- Ha nem tud biztonságosan használni egy fogyasztói Microsoft-fiók a fényképek automatikus feltöltéséhez, manuálisan feltölthet fényképeket a munkahelyi vagy iskolai fiókjába a OneDrive alkalmazásból. Győződjön meg arról, hogy be van jelentkezve munkahelyi vagy iskolai fiókjába a OneDrive alkalmazásban. Kattintson a **+** gombra, majd válassza a **Feltöltés lehetőséget.** Keresse meg a feltölteni kívánt fényképeket vagy videókat a **Pictures (Képek) és a Camera Roll (>) között.** Válassza ki a feltölteni kívánt fényképeket vagy videókat, majd kattintson a **Megnyitás gombra.**
 
 [Vissza a listához](#list)
 
@@ -227,7 +234,7 @@ Workarounds:
 Ha a HoloLens nem indul el:
 
 - Ha a bekapcsológomb melletti LED-ek nem világadnak meg, vagy csak egy LED villog rövid időre, előfordulhat, hogy fel kell töltenie a [HoloLens.](hololens2-charging.md#charging-the-device)
-- Ha a LED-ek bekapcsolódnak, amikor megnyomja a bekapcsológombot, de nem lát semmit a kijelzőkön, állítsa alaphelyzetbe [az eszközt.](hololens-recovery.md#hard-reset-procedure)
+- Ha a bekapcsológomb megnyomása után a LED-ek kigyűjnek, de nem lát semmit a kijelzőkön, állítsa alaphelyzetbe [az eszközt.](hololens-recovery.md#hard-reset-procedure)
 
 Ha a HoloLens lefagy vagy nem válaszol:
 
@@ -239,9 +246,9 @@ Ha ezek a lépések nem működnek, megpróbálhatja helyreállítani [HoloLens 
 
 ## <a name="low-disk-space-error"></a>"Kevés lemezterület" hiba
 
-Az alábbiak közül egyet vagy többet is el kell szabadítanunk egy vagy több tárolóhelyen:
+Az alábbiak közül egy vagy több megoldással szabadíthat fel tárhelyet:
 
-- Töröljön néhány nem használt szóközt. A **Gépház**  >    >  **gombra,** válasszon ki egy olyan helyet, amelyre már nincs szüksége, majd válassza az Eltávolítás **lehetőséget.**
+- Töröljön néhány nem használt szóközt. Válassza a **Gépház** lehetőséget, válasszon ki egy olyan területet, amelyre már nincs  >    >  szüksége, majd válassza az **Eltávolítás lehetőséget.**
 - Távolítsa el a elhelyezett hologramokat.
 - Töröljön néhány képet és videót a Photos alkalmazásból.
 - Távolítsa el az alkalmazásokat a HoloLens. A **Minden alkalmazás** koppintson és tartsa lenyomva az eltávolítani kívánt alkalmazást, majd válassza az **Eltávolítás lehetőséget.**
@@ -250,31 +257,31 @@ Az alábbiak közül egyet vagy többet is el kell szabadítanunk egy vagy több
 
 ## <a name="calibration-fails"></a>A meghiúsulás
 
-A legtöbb ember számára működnie kell, de vannak olyan esetek, amikor a besziratás meghiúsul.
+A legtöbb ember számára működnie kell, de vannak olyan esetek, amikor a hiba nem sikerül.
   
 Néhány lehetséges ok a meghibásodásra:
 
-- Elvonja a figyelmet, és nem követi a célokat
-- Nem megfelelően el van állítva a trágár vagy karcolt eszköz vizora vagy az eszköz vizora
+- Elvonják a figyelmet, és nem követik a célokat
+- Nem megfelelően el van állítva a trágár vagy karcolt eszköz- vagy eszköz-vizor
 - Trágár vagy karcolt szemüveg
-- Bizonyos típusú kapcsolattartási objektívek és szemüveg (színes kapcsolattartó objektívek, némi toric contact lenses, IR-blokkoló szemüveg, néhány magas szemüveg, napszemüveg vagy hasonló)
-- Jobban kiejtve és perjeles mellékek
-- Haj vagy vastag szemüveg, ha nem látják a tekintetét az eszközön
-- Bizonyos szemfiziológia, szemkörülmények vagy szemműveletek, például keskeny szem, hosszú szempillák, amblyegymáshoz hasonlók, nystagmus, a LASIK vagy más szemműveletek néhány esete
+- Bizonyos típusú névjegy objektívek és szemüveg (színes kapcsolattartó objektívek, néhány toric contact lenses, IR-blokkoló szemüveg, néhány magas szemüveg, napszemüveg vagy hasonló)
+- Pontosabban kiejtve és perjeles bővítmények
+- Haj vagy vastag szemüveg, ha blokkolja az eszközt a szemének
+- Bizonyos szemfizika, szemkörülmények vagy szemműveletek, például keskeny szem, hosszú perjel, amblyphy, nystagmus, a LASIK vagy más szemműveletek bizonyos esetekben
 
 Sikertelen kísérlet esetén próbálkozzon a következővel:
 
 - Az eszköz vizorának tisztítása
 - Szemüveg tisztítása
-- Az eszköz vizorának lehető legnagyobb közelében való eltolás
+- Az eszköz vizorának a lehető legnagyobb egymáshoz zárásával
 - Objektumok (például haj) mozgatása a vizorban
 - Világítás bekapcsolása a helyiségben, vagy a közvetlen világításból való eltálás
 
-Ha minden útmutatót követte, és a tiltása továbbra sem sikerül, a figyelmeztetést a következő Gépház. Visszajelzést is küldhet a [Visszajelzési központ.](hololens-feedback.md)
+Ha követte az összes útmutatót, és a tiltás továbbra sem sikerül, a figyelmeztetést a következő Gépház. Visszajelzést is küldhet a [Visszajelzési központ.](hololens-feedback.md)
 
 A képszínekkel vagy a fényerejével kapcsolatos [hibaelhárítással kapcsolatos információkat is itt láthatja.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
 
-A 2. HoloLens IPD beállítása nem alkalmazható, mivel a szem pozícióit a rendszer számítja ki. 
+Az IPD beállítása a 2. HoloLens nem alkalmazható, mivel a szem pozícióit a rendszer számítja ki. 
 
 [Vissza a listához](#list)
 
@@ -288,17 +295,17 @@ Az eszközt [flash **(Flashing)**](hololens-recovery.md#clean-reflash-the-device
 ## <a name="unity-isnt-working"></a>A Unity nem működik
 
 - Lásd: [Install the tools](/windows/mixed-reality/install-the-tools) for the most-to-date version of Unity recommended for HoloLens development (A Unity legújabb verziójának telepítése a HoloLens érdekében.
-- A Unityvel kapcsolatos ismert HoloLens Technical Preview-val kapcsolatban a következő Unity-fórumokon [HoloLens dokumentáljuk:](https://forum.unity3d.com/threads/known-issues.394627/).
+- A Unity és a Technical Preview HoloLens ismert problémáit az [HoloLens Unity fórumain találhatja.](https://forum.unity3d.com/threads/known-issues.394627/)
 
 [Vissza a listához](#list)
 
 ## <a name="windows-device-portal-isnt-working-correctly"></a>Windows Eszközportál nem működik megfelelően
 
-- A rögzítési funkció Live Preview Mixed Reality néhány másodpercnyi késést is mutathat.
+- A Rögzítés funkció Live Preview Mixed Reality néhány másodpercnyi késést is mutathat.
 
 - A Virtuális bemenet lapon a Virtuális kézmozdulatok szakasz Kézmozdulatok és Görgetés vezérlői nem működnek. A használatuknak nincs hatása. A virtuális beviteli oldalon található virtuális billentyűzet megfelelően működik.
 
-- A fejlesztői mód Gépház után néhány másodpercet is igénybe vehet, amíg a kapcsoló bekapcsolja a Eszközportál beállítást.
+- Miután engedélyezte a fejlesztői módot Gépház módban, a kapcsoló bekapcsolása néhány másodpercet is igénybe Eszközportál előtt.
 
 [Vissza a listához](#list)
 
@@ -307,7 +314,7 @@ Az eszközt [flash **(Flashing)**](hololens-recovery.md#clean-reflash-the-device
 A HoloLens emulátorról a fejlesztői dokumentációnkban tájékozódhat.  További információ [a HoloLens emulátor hibaelhárításáról.](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting)
 
 
-- Nem minden alkalmazás kompatibilis Microsoft Store az emulátorsal. Young Conker és a Fragments például nem lejátszható az emulátoron.
+- Nem minden alkalmazás kompatibilis Microsoft Store az emulátorral. A Young Conker és a Fragments például nem lejátszható az emulátoron.
 - A számítógép webkameráját nem használhatja a Emulator.
 - A szolgáltatás Live Preview Windows Eszközportál nem működik az emulátorral. Továbbra is rögzíthet Mixed Reality videókat és képeket.
 
@@ -315,70 +322,70 @@ A HoloLens emulátorról a fejlesztői dokumentációnkban tájékozódhat.  Tov
 
 ## <a name="voice-commands-arent-working"></a>A hangparancsok nem működnek
 
-Ha Cortana nem válaszol a hangparancsra, győződjön meg arról, hogy Cortana be van kapcsolva. A Minden alkalmazás a Módosítások Cortana menü jegyzetfüzet  >    >    >  **Gépház** lehetőséget. További információ a beszédről: [Use your voice with HoloLens](hololens-cortana.md).
+Ha Cortana nem válaszol a hangparancsra, győződjön meg arról, hogy Cortana be van kapcsolva. A Minden alkalmazás a Módosítások Cortana   >  **menü**  >    >  **jegyzetfüzet-Gépház** lehetőséget. További információ a beszédről: A hang használata a [HoloLens.](hololens-cortana.md)
 
-A HoloLens (1. generációs) beépített beszédfelismerés nem konfigurálható. Mindig be van kapcsolva. A 2. HoloLens megadhatja, hogy bekapcsolja-e a beszédfelismerést és a Cortana az eszköz beállítása során.
+A HoloLens (1. generációs) beépített beszédfelismerés nem konfigurálható. Mindig be van kapcsolva. A HoloLens 2-es Cortana megadhatja, hogy bekapcsolja-e a beszédfelismerést és a Cortana az eszköz beállítása során.
 
-Ha a HoloLens 2. nem válaszol a hangjára, győződjön meg arról, hogy a Beszédfelismerés be van kapcsolva. A **Start Gépház** Privacy Speech  >    >  **(Beszédfelismerési beszéd)**  >  **menüben** kapcsolja be a **Beszédfelismerést.**
+Ha a HoloLens 2 nem válaszol a hangjára, győződjön meg arról, hogy a Beszédfelismerés be van kapcsolva. A **Start Gépház** Privacy Speech  >    >  **(Beszédfelismerési szolgáltatás)**  >  **menüben** kapcsolja be a **Beszédfelismerést.**
 
 [Vissza a listához](#list)
 
 ## <a name="hand-input-isnt-working"></a>A kézi bevitel nem működik
 
-Ahhoz, HoloLens a kézmozdulatok láthatóak, kézmozdulatok keretében kell tartania őket.  A Mixed Reality Kezdőlap visszajelzést küld, amely tudatja, mikor követik nyomon a kézzel.  A visszajelzések eltérőek a HoloLens:
+Ahhoz, hogy HoloLens a kézmozdulatokat, kézmozdulatok keretében kell tartania azokat.  A Mixed Reality Kezdőlap visszajelzést ad, amely tudatja, mikor követik nyomon a kézzel kapcsolatos információkat.  A visszajelzések eltérőek a következő HoloLens:
 
 - A HoloLens (1. generációs) esetében a tekintet kurzora pontról gyűrűre változik
-- A 2. HoloLens kurzor akkor jelenik meg, ha a kéz egy lappal közelebb van, és egy kéz sugár jelenik meg, ha a belók távolodnak
+- A 2. HoloLens kurzor akkor jelenik meg, ha a kéz egy laphoz közel van, és egy kéz sugár jelenik meg, ha a belátsó oldal távol van
 
-Számos modern alkalmazás a Kezdőlaphoz hasonló bemeneti mintákat Mixed Reality követ.  További információ a kézi bevitelnek a HoloLens [(1. generációs)](hololens1-basic-usage.md#use-hololens-with-your-hands) és [a 2. HoloLens való használatával kapcsolatban.](hololens2-basic-usage.md#the-hand-tracking-frame)
+Számos modern alkalmazás a Kezdőlaphoz hasonló bemeneti mintákat Mixed Reality követ.  További információ a kézi bevitelről a [HoloLens (1. gen)](hololens1-basic-usage.md#use-hololens-with-your-hands) és [a 2. HoloLens használatával](hololens2-basic-usage.md#the-hand-tracking-frame)kapcsolatban.
 
-Vegye figyelembe, hogy a kézkövetés bizonyos típusú kézkövetési funkcióval nem működik.  Gyakori példa a fekete védőkesztyűk, amelyek általában befogadják a világítást, és a mélységi kamera nem tudja felvenni őket.  Ha a munkája során védőkesztyűt is kell tenni, javasoljuk, hogy egy világosabb színt, például kéket vagy szürkét próbáljon ki.  Egy másik példa a nagy méretű, nagy méretű, kézbegyűség. Ez általában elfedi a kéz alakját. Javasoljuk, hogy a legjobb eredmény érdekében a lehető legjobban illeszkedő, jól illeszkedő védőkét használja.
+Vegye figyelembe, hogy a kézkövetés bizonyos típusú kézkövetéssel nem működik.  Gyakori példa a fekete védőkesztyűk, amelyek általában befogadják a világítást, és nem a mélységi kamera érzékeli őket.  Ha a munkája során védőkesztyűt is bevet, javasoljuk, hogy egy világosabb színt( például kék vagy szürke) próbáljon ki.  Egy másik példa a nagy méretű, zacskós kézkesztyű, amely általában elfedi a kéz formáját. Javasoljuk, hogy a legjobb eredmény érdekében a lehető legjobban illeszkedő, formában illeszkedő védőkét használja.
 
-Ha a vizor ujjlenyomattal vagy elmosott lenyomattal rendelkezik, használja a vizorhoz érkezett mikrofiberos tisztítási HoloLens a vizorok megtisztítására.
+Ha a vizor ujjlenyomattal vagy elmosott lenyomattal rendelkezik, használja a vizorhoz készült mikrofiberos tisztítási HoloLens a vizorok tisztítására.
 
 [Vissza a listához](#list)
 
 ## <a name="cant-connect-to-wi-fi"></a>Nem lehet csatlakozni a Wi-Fi
 
-Ha nem tud csatlakozni a HoloLens egy Wi-Fi hálózathoz:
+Ha nem tud csatlakozni a HoloLens egy Wi-Fi hálózathoz, az Wi-Fi próbálkozhat:
 
-- Ellenőrizze, hogy Wi-Fi be van-e kapcsolva. Az ellenőrzéshez használja a Start kézmozdulatot, majd válassza **Gépház**  >  **Hálózati &amp; internet**  >  **Wi-Fi lehetőséget.** Ha Wi-Fi be van kapcsolva, próbálja meg kikapcsolni, majd újra bekapcsolni.
+- Győződjön meg arról, Wi-Fi be van kapcsolva. Az ellenőrzéshez használja a Start (Indítás) kézmozdulatot, majd válassza Gépház  >  **Network &amp; Internet**  >  **Wi-Fi (Hálózati internet Wi-Fi) lehetőséget.** Ha Wi-Fi be van kapcsolva, próbálja meg kikapcsolni, majd újra bekapcsolni.
 - Lépjen közelebb az útválasztóhoz vagy a hozzáférési ponthoz.
-- Indítsa újra a Wi-Fi útválasztót, majd [indítsa újra HoloLens.](hololens-recovery.md) Próbáljon meg újból csatlakozni.
-- Ha ezek közül egyik sem működik, ellenőrizze, hogy az útválasztó a legújabb belső vezérlőprogramot használja-e. Ezt az információt a gyártó webhelyén találja.
+- Indítsa újra a Wi-Fi útválasztót, majd [indítsa újra a HoloLens.](hololens-recovery.md) Próbáljon meg újból csatlakozni.
+- Ha ezek egyike sem működik, ellenőrizze, hogy az útválasztó a legújabb belső vezérlőprogramot használja-e. Ezt az információt a gyártó webhelyén találja.
 
 [Vissza a listához](#list)
 
 ## <a name="bluetooth-devices-arent-pairing"></a>Bluetooth eszközök nem párosítása
 
-Ha problémába merült fel [a Bluetooth való párosítása,](hololens-connect-devices.md)próbálkozzon a következő megoldásokkal:
+Ha problémába merült fel [a Bluetooth párosítása,](hololens-connect-devices.md)próbálkozzon a következővel:
 
-- Az Eszközök **Gépház,** és győződjön meg arról, hogy Bluetooth  >  be van kapcsolva. Ha igen, kapcsolja ki és be újra.
-- Győződjön meg arról, Bluetooth az eszköz teljesen fel van töltve, vagy friss akkumulátorokkal rendelkezik.
+- Az Eszközök **Gépház,** és győződjön meg arról, Bluetooth be  >  van kapcsolva. Ha igen, kapcsolja ki és be újra.
+- Ellenőrizze, hogy a Bluetooth teljesen fel van-e töltve vagy friss akkumulátorokkal rendelkezik-e.
 - Ha továbbra sem tud csatlakozni, indítsa [újra a HoloLens.](hololens-recovery.md)
 
 [Vissza a listához](#list)
 
 ## <a name="usb-c-microphone-isnt-working"></a>Az USB-C mikrofon nem működik
 
-Vegye figyelembe, hogy egyes USB-C-mikrofonok helytelenül jelentik magukat mikrofonként és *beszélőként* is. Ez a mikrofonnal, és nem a mikrofonnal HoloLens. Ha ezen mikrofonok valamelyikét csatlakoztatja HoloLens, a hang elveszhet. Szerencsére van egy egyszerű javítás.  
+Vegye figyelembe, hogy egyes USB-C-mikrofonok helytelenül, mikrofonként és *beszélőként is* jelentik magukat. Ez a mikrofonnal, és nem a HoloLens. Ha ezen mikrofonok valamelyikét csatlakoztatja HoloLens, előfordulhat, hogy a hang elveszett. Szerencsére van egy egyszerű javítás.  
 
 A **Gépház** a System Soundban explicit módon állítsa be a beépített beszélők  ->    ->   **(Analog Feature Audio Driver)** alapértelmezett eszközként való **beállítását.** HoloLens a beállítást akkor is meg kell jegyezni, ha a mikrofont eltávolítják, majd később újracsatlakoztatják.
 
-![USB-C-mikrofonok hibaelhárítása.](images/usbc-mic-4.png)
+![USB-C mikrofonok hibaelhárítása.](images/usbc-mic-4.png)
 
-## <a name="devices-listed-as-available-in-settings-dont-work"></a>A Gépház felsorolt eszközök nem működnek
+## <a name="devices-listed-as-available-in-settings-dont-work"></a>Nem működnek a Gépház-ban elérhetőként felsorolt eszközök
 
-HoloLens (1. generációs) nem támogatja a Bluetooth hangprofilokat. Bluetooth hangeszközök, például a beszélők és a headsetek elérhetőként jelennek meg a HoloLens beállításaiban, de ezek nem támogatottak.
+HoloLens (1. generációs) nem támogatja a Bluetooth hangprofilokat. Bluetooth hangeszközök, például a beszélők és a headsetek elérhetőként jelennek meg HoloLens beállításokban, de nem támogatottak.
 
-HoloLens 2. Bluetooth A2DP hangprofilt támogatja a lejátszáshoz. A Bluetooth-profil, amely lehetővé teszi a mikrofon rögzítését egy Bluetooth periféria nem támogatott a 2. HoloLens esetén.
+HoloLens 2. Bluetooth támogatja a Bluetooth A2DP hangprofilt a audio lejátszáshoz. A Bluetooth-kéz nélküli profil, amely lehetővé teszi a mikrofon rögzítését egy Bluetooth periféria nem támogatott a 2. HoloLens támogatja.
 
-Ha problémába fog kerülni egy Bluetooth eszköz használata, ellenőrizze, hogy támogatott eszköz-e. A támogatott eszközök a következők:
+Ha problémája van egy Bluetooth eszköz használatával, győződjön meg arról, hogy az támogatott eszköz. A támogatott eszközök a következők:
 
 - Az angol nyelvű QWERTY Bluetooth billentyűzeteket (ezeket bárhol használhatja, ahol a holografikus billentyűzetet használja).
 - Bluetooth mice.
 - A [HoloLens gombra.](hololens1-clicker.md)
 
-Más HID és BLUETOOTH eszköz is párosíthatja a HoloLens. Előfordulhat azonban, hogy a megfelelő társalkalmazásokat a Microsoft Store kell telepítenie az eszközök ténylegesen való használatához.
+Más HID és BLUETOOTH eszközöket is párosíthat a HoloLens. Előfordulhat azonban, hogy a megfelelő társalkalmazásokat a Microsoft Store kell telepítenie az eszközök ténylegesen való használatához.
 
 [Vissza a listához](#list)
