@@ -13,18 +13,18 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Robotpilóta
 manager: sekerawa
-ms.openlocfilehash: 46b57e44186b8944e58e68da66306bbe445b704a
-ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
+ms.openlocfilehash: 05eb629e05395f04ddb8723d58d41db4161896fa
+ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
 ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/13/2021
-ms.locfileid: "129924464"
+ms.locfileid: "129964581"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot HoloLens 2-höz
 
 ## <a name="overview"></a>Áttekintés
 
-Nagy léptékű üzembe helyezéshez javasoljuk, hogy ismerkedés az Autopilot Windows szolgáltatásával. Az "alacsony érintés" abban az esetben tekinthető "kevésnek", mert jelentősen leegyszerűsíti az it-HoloLens és a végfelhasználók számára is. 
+Nagy léptékű üzembe helyezéshez javasoljuk, hogy ismerkedés az Autopilot Windows első lépésekvel. Az "alacsony érintés" abban a mértékben tekinthető "kevésnek", mert jelentősen leegyszerűsíti az it-HoloLens és a végfelhasználók számára való beállítását. 
 
 Magas szinten a rendszergazda általában üzleti használatra kész konfigurációkat hoz létre, és HoloLens 2 eszközt regisztrál az MDM-portálon. Ha HoloLens 2 eszköz használatra kész felülettel (OOBE) indul el, és csatlakozik az internethez, a regisztrált HoloLens 2 eszköz üzleti használatra kész konfigurációit a rendszer automatikusan letölti és alkalmazza, hogy az eszközök felhasználói beavatkozás nélkül, üzleti használatra készek.
 
@@ -33,11 +33,11 @@ További információ: [Az Autopilot-Windows áttekintése | Microsoft Docs](/me
 ## <a name="supported-autopilot-scenario-on-hololens-2"></a>A 2. HoloLens támogatott Autopilot-forgatókönyv
 
 > [!NOTE]
-> Az autopilot HoloLens konfigurációja Microsoft Endpoint Manager nyilvános előzetes verzióról általánosan elérhetőre **áll át.**  Minden bérlő be tudja majd állítva az Autopilotot a MEM felügyeleti központban.
+> A szolgáltatásban HoloLens Autopilot-Microsoft Endpoint Manager nyilvános előzetes verzióról általánosan elérhetőre **áll át.**  Minden bérlő be tudja majd állítva az Autopilotot a MEM felügyeleti központban.
 
-A Windows Holographic 2004-es verziójától kezdődően a HoloLens 2.) [](/mem/autopilot/self-deploying) támogatja az Windows autopilot önkiszolgáló üzembe helyezési módját az Microsoft Intune-val (a harmadik féltől származó MDM-ek nem támogatottak). Ez a konfiguráció csökkenti a leltárkezeléshez szükséges többletterhelést, a gyakorlati eszköz-előkészítési költségeket és az alkalmazottak támogatási hívásait a beállítási folyamat során. További információt a Windows [Autopilot dokumentációjában](/mem/autopilot/windows-autopilot) talál.
+A Windows Holographic 2004-es verziójától kezdődően a HoloLens 2. verziója támogatja az Microsoft Intune-val használható Windows Autopilot [self-Deploying Mode](/mem/autopilot/self-deploying) módot (a harmadik féltől származó MDM-ek nem támogatottak). Ez a konfiguráció csökkenti a leltárkezeléshez szükséges többletterhelést, a gyakorlati eszköz-előkészítési költségeket és az alkalmazottak támogatási hívásait a beállítási folyamat során. További információt a Windows [Autopilot dokumentációjában](/mem/autopilot/windows-autopilot) talál.
 
-A Surface-eszközökhöz hasonló, azt javasoljuk, hogy az ügyfelek a Microsoft [Felhőszolgáltató](https://partner.microsoft.com/cloud-solution-provider) (viszonteladó vagy terjesztő) segítségével regisztrálják az Autopilot szolgáltatásban regisztrált eszközöket a Partnerközpont.
+A Surface-eszközökhöz hasonló ajánlott, hogy az ügyfelek a Microsoft [Felhőszolgáltató](https://partner.microsoft.com/cloud-solution-provider) (viszonteladó vagy terjesztő) segítségével regisztrálják az eszközöket az Autopilot szolgáltatásban a Partnerközpont.
 
 Amikor egy felhasználó elindítja az AutoPilot önkiszolgáló üzembe helyezési folyamatát, az Autopilot a következő lépéseket teszi:
 
@@ -53,11 +53,11 @@ Amikor egy felhasználó elindítja az AutoPilot önkiszolgáló üzembe helyez�
 
 A környezet beállításhoz kövesse az alábbi lépéseket:
 
-1. [Tekintse át az Autopilot Windows 2. HoloLens követelményeit.](#1-review-requirements-for-windows-autopilot-for-hololens-2)
+1. [Tekintse át a 2. Windows Autopilot HoloLens követelményeit.](#1-review-requirements-for-windows-autopilot-for-hololens-2)
 
 1. [Automatikus MDM-regisztráció engedélyezése](#2-enable-automatic-mdm-enrollment)
 
-1. (Csak Intune esetén) [Győződjön meg arról, hogy az MDM-regisztráció nincs](/mem/intune/enrollment/enrollment-restrictions-set) letiltva a Windows eszközökön.
+1. (Csak Intune esetén) [Győződjön meg arról, hogy az MDM-regisztráció nincs Windows eszközökön.](/mem/intune/enrollment/enrollment-restrictions-set)
 
 1. [Eszközök regisztrálása Windows Autopilotban.](#4-register-devices-in-windows-autopilot)
 
@@ -77,18 +77,18 @@ A környezet beállításhoz kövesse az alábbi lépéseket:
 - [Licenckövetelmények](/mem/autopilot/licensing-requirements)  
 - [Konfigurációs követelmények](/mem/autopilot/configuration-requirements)
 
-**Tekintse át [a](/windows/deployment/windows-autopilot/self-deploying#requirements)Windows Autopilot Self-Deploying móddal kapcsolatos cikk "Követelmények" szakaszát.** A környezetnek meg kell felelnie ezeknek a követelményeknek és a szabványos Windows Autopilot követelményeinek. Nem kell áttekintenünk a cikk "Lépésről lépésre" és "Ellenőrzés" szakaszát. A cikk későbbi cikkei a megfelelő lépéseket biztosítanak a HoloLens.
+**Tekintse át [a](/windows/deployment/windows-autopilot/self-deploying#requirements)Windows Autopilot Self-Deploying cikk "Követelmények" szakaszát.** A környezetnek meg kell felelnie ezeknek a követelményeknek és a szabványos Windows Autopilot követelményeinek. Nem kell áttekintenünk a cikk "Lépésről lépésre" és "Ellenőrzés" szakaszát. A cikk későbbi lépései a megfelelő lépéseket biztosítanak a HoloLens.
 
 Győződjön meg arról, hogy az eszközök még nem tagjai az Azure AD-nek, és nincsenek regisztrálva az Intune-ban (vagy más MDM-rendszerben). Az Autopilot önkiszolgáló üzembe helyezési folyamata ezeket a lépéseket is végreveszi. Annak érdekében, hogy az eszközzel kapcsolatos összes információ  el legyen ásva, ellenőrizze az Eszközök lapot az Azure AD-portálon és az Intune-portálon is. A "Convert all targeted devices to Autopilot" (Az összes megcélzott eszköz Autopilot-eszközre konvertálása) funkció jelenleg HoloLens nem támogatott.
 
 #### <a name="review-hololens-os-requirements"></a>Tekintse át HoloLens operációs rendszer követelményeit:
 
-Az eszközön található buildverzió megerősítéséhez vagy a legújabb operációs rendszerre való átfedéshez használja az [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=2&activetab=pivot:overviewtab) eszközt és az eszköz perjeles [utasításait.](hololens-recovery.md) A 2020. szeptember végéig kézbesített eszközökre Windows Holographic 1903-as verziója van előre telepítve. Lépjen kapcsolatba a viszonteladóval, és győződjön meg arról, hogy az Autopilot-kompatibilis eszközök ki vannak szállítva.
+Az eszközön található buildverzió megerősítéséhez vagy a legújabb operációs rendszerre való átfedéshez használja az [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=2&activetab=pivot:overviewtab) eszközt és az eszköz perjeles [utasításait.](hololens-recovery.md) A 2020. szeptember végéig kézbesített eszközök Windows Holographic 1903-as verziója már előre telepítve van. Lépjen kapcsolatba a viszonteladóval, és győződjön meg arról, hogy az Autopilot-kompatibilis eszközök ki vannak szállítva.
 
  Az operációs rendszer minimális verziószáma | Támogatott funkció | Megjegyzések
  ------ | ------ | ------  
- [Windows Holographic, 2004-es](hololens-release-notes.md#windows-holographic-version-2004) (19041.1103-as build) vagy újabb verzió | 1. Az AutoPilot önkiszolgáló üzembe helyezési forgatókönyve a 2. HoloLens 2. | Az Autopilot-profilok letöltése csak Etherneten keresztül támogatott. Mielőtt bekapcsolja HoloLens, győződjön meg arról, hogy a hálózati adapter csatlakoztatva van az Ethernethez egy "USB-C–Ethernet" **adapterrel.**  Ha egy Autopilot-bevezetést tervez számos HoloLens eszközön, javasoljuk, hogy tervezze meg az adapter-infrastruktúrát. Az USB Hubok nem ajánlottak, mivel gyakran külső gyártótól származó illesztőprogramok telepítését igénylik, amelyek nem támogatottak a HoloLens.
- [Windows Holographic, 20H2-es](hololens-release-notes.md#windows-holographic-version-20h2) (19041.1128-as build) vagy újabb verzió | 1. Autopilot-profil letöltése Wi-Fi-n keresztül. <br> 2. [Bérlői zárolási CSP és Autopilot](#tenant-lockdown-csp-and-autopilot) az AutoPilot által megadott bérlővel zárolt eszközökhöz. | Szükség esetén továbbra is használhat Ethernet-adaptereket. A Wi-Fi-n keresztül csatlakoztatott eszközök esetében a felhasználónak csak a következőre van engedélye: <ul> <li> Végig kell mennie a jeleneten. </li> <li> Válassza ki a nyelvet és a területi beállításokat. </li> <li> Futtatassa a szemredúsztásokat. </li> <li> Sikeres csatlakozás a kívánt Wi-Fi-hálózathoz. </li> </ul>
+ [Windows Holographic, 2004-es](hololens-release-notes.md#windows-holographic-version-2004) (19041.1103-as build) vagy újabb verzió | 1. Az AutoPilot önkiszolgáló üzembe helyezési forgatókönyve a 2. HoloLens 2. | Az Autopilot-profilok letöltése csak Etherneten keresztül támogatott. Mielőtt bekapcsolja HoloLens, győződjön meg arról, hogy a hálózati adapter csatlakoztatva van az Ethernethez egy "USB-C–Ethernet" **adapterrel.**  Ha autopilot-bevezetést tervez számos HoloLens-eszközön, javasoljuk, hogy tervezze meg az adapter-infrastruktúrát. Az USB Hubok nem ajánlottak, mivel gyakran külső gyártótól származó illesztőprogramok telepítését igénylik, amelyek nem támogatottak a HoloLens.
+ [Windows Holographic, 20H2-es](hololens-release-notes.md#windows-holographic-version-20h2) (19041.1128-as build) vagy újabb verzió | 1. Autopilot-profil letöltése Wi-Fi-n keresztül. <br> 2. [Bérlői zárolási CSP és Autopilot](#tenant-lockdown-csp-and-autopilot) az AutoPilot által megadott bérlővel zárolt eszközökhöz. | Szükség esetén továbbra is használhat Ethernet-adaptereket. A Wi-Fi-n keresztül csatlakoztatott eszközök esetében a felhasználónak csak a következőre van engedélye: <ul> <li> Végig kell mennie a jeleneten. </li> <li> Válassza ki a nyelvet és a területi beállításokat. </li> <li> Futtatassa a szemkontrasztot. </li> <li> Sikeres csatlakozás a kívánt Wi-Fi-hálózathoz. </li> </ul>
 
 ### <a name="2-enable-automatic-mdm-enrollment"></a>2. Az automatikus MDM-regisztráció engedélyezése:
 
@@ -106,7 +106,7 @@ Az első telepítés előtt az eszközöket regisztrálni kell Windows Autopilot
 
 Az eszközök regisztrálásának három elsődleges HoloLens módja van:
 
- - **A viszonteladó regisztrálhatja az eszközöket a Partnerközpont a megrendeléskor.**
+ - **A viszonteladó regisztrálhat eszközöket a Partnerközpont rendeléskor.**
 
    > [!NOTE]  
    > Ez az ajánlott elérési út az eszközök AutoPilot-szolgáltatáshoz való hozzáadásához. [További információ](/mem/autopilot/partner-registration).  
@@ -119,7 +119,7 @@ Az eszközök regisztrálásának három elsődleges HoloLens módja van:
 A hardver kivonatát lekérheti az eszközről. Az eszköz rögzíti a hardver kivonatát egy CSV-fájlban az OOBE folyamat során, vagy később, amikor az eszköz tulajdonosa elindítja a diagnosztikai naplók gyűjtésének folyamatát (lásd az alábbi eljárást). Általában az eszköz tulajdonosa az első felhasználó, aki bejelentkezik az eszközre.
 
 > [!WARNING]
-> A 20H2 előtti buildek esetén, ha már végigment az OOBE-ban, és a telemetria Kötelezőre lett állítva, ezzel a módszerrel nem gyűjthet hardver-kivonatot az Autopilothoz. Ha ezzel a módszerrel gyűjti össze a hardver-kivonatot, állítsa a telemetria beállítást Teljesre a Gépház alkalmazáson keresztül, majd válassza az **Adatvédelmi**  >  **diagnosztika lehetőséget.**
+> A 20H2 előtti buildek esetén, ha már végigment az OOBE-ban, és a telemetria Kötelezőre lett állítva, ezzel a módszerrel nem gyűjthet hardver-kivonatot az Autopilothoz. Ha ezzel a módszerrel gyűjti össze a hardver-kivonatot, állítsa a Telemetria beállítást Teljesre a Gépház alkalmazáson keresztül, majd válassza az **Adatvédelmi**  >  **diagnosztika lehetőséget.**
 
 1. Indítsa el HoloLens 2-es eszközt.
 
@@ -132,7 +132,7 @@ A hardver kivonatát lekérheti az eszközről. Az eszköz rögzíti a hardver k
 1. A számítógépen nyissa meg a Fájlkezelő. Nyissa <b>meg \\ ezt</b>a < *HoloLens belső eszköznevet* a Dokumentumok > <b> \\ \\ Storage,</b>és keresse meg a AutopilotDiagnostics.zip fájlt.  
 
    > [!NOTE]  
-   > Előfordulhat.zip hogy a fájl nem lesz azonnal elérhető. Ha a fájl még nem áll készen, egy HoloLensDiagnostics.temp fájlt láthat a Dokumentumok mappában. A fájlok listájának frissítéséhez frissítse az ablakot.
+   > Előfordulhat.zip hogy a fájl nem érhető el azonnal. Ha a fájl még nem áll készen, egy HoloLensDiagnostics.temp fájlt láthat a Dokumentumok mappában. A fájlok listájának frissítéséhez frissítse az ablakot.
 
 1. Bontsa ki a AutopilotDiagnostics.zip tartalmát.
 
@@ -147,7 +147,7 @@ A hardver kivonatát lekérheti az eszközről. Az eszköz rögzíti a hardver k
 
 #### <a name="register-device-through-mem"></a>Eszköz regisztrálása MEM-en keresztül
 
-1. A [Microsoft Endpoint Manager központban](https://endpoint.microsoft.com)válassza az **Eszközök Windows** Windows lehetőséget, majd válassza a Program Windows Autopilot Deployment Eszközök  >    >     >   **importálása lehetőséget.**
+1. A [Microsoft Endpoint Manager központban](https://endpoint.microsoft.com)válassza az **Eszközök** Windows Windows lehetőséget, majd válassza a Program Windows Autopilot Deployment Eszközök  >    >     >   **importálása lehetőséget.**
 
 1. Az **Autopilot Windows hozzáadása** alatt válassza ki a DeviceHash CSV-fájlt, válassza a **Megnyitás** lehetőséget, majd az Importálás **lehetőséget.**  
 
@@ -181,7 +181,7 @@ A hardver kivonatát lekérheti az eszközről. Az eszköz rögzíti a hardver k
 
 ### <a name="6-create-autopilot-profile-and-assign-it-to-the-device-group"></a>6. AutoPilot-profil létrehozása és hozzárendelése az eszközcsoporthoz
 
-1. A [Microsoft Endpoint Manager központban](https://endpoint.microsoft.com)válassza az **Eszközök Windows**  >    >  **Windows**  >  **autopilot Windows telepítési**  >    >  profilok Profil létrehozása HoloLens.
+1. A [Microsoft Endpoint Manager központban](https://endpoint.microsoft.com)válassza az **Eszközök Windows**  >    >  **Windows**  >  **autopilot Windows telepítési**  >    >  profilok Profil létrehozása HoloLens lehetőséget.
    ![A Profil létrehozása legördülő menü tartalmaz egy HoloLens elemet.](./images/hololens-ap-enrollment-profiles.png)
 
 1. Adja meg a profil nevét és leírását, majd válassza a Tovább **lehetőséget.**  
@@ -228,9 +228,9 @@ További információ az ESP-ről: Regisztrációs állapotlap beállítása [�
 
 ### <a name="8-verify-the-profile-status-of-the-hololens-devices"></a>8. A profil állapotának ellenőrzése HoloLens eszközökön
 
-1. A Microsoft Endpoint Manager központban válassza az **Eszközök és** Windows  >    >  **Windows**  >  **lehetőséget.**
+1. A Microsoft Endpoint Manager központban válassza az **Eszközök Windows**  >    >  **Windows lehetőséget.**  >  
 
-1. Ellenőrizze, hogy a HoloLens a listában, és hogy a profiljuk állapota **Hozzárendelve.**  
+1. Ellenőrizze, hogy a HoloLens megjelenik-e, és hogy a profiljuk állapota **Hozzárendelve.**  
 
    > [!NOTE]  
    > Eltarthat néhány percig, hogy a profil hozzá legyen rendelve az eszközhöz.  
@@ -248,7 +248,7 @@ A fenti utasítások befejezése után a HoloLens 2 felhasználó a következő 
 
     - Csatlakozás "USB-C–Ethernet" adapterek használatával csatlakoztathatja az eszközt Ethernet-kapcsolattal a vezetékes internetkapcsolat érdekében, és HoloLens 2 teljes Autopilot-élményt biztosít automatikusan.
 
-    - Csatlakozás "USB-C–Wi-Fi" adapterekkel támogatja a vezeték nélküli internetkapcsolatot, és HoloLens 2 teljes AutoPilot-élményt biztosít automatikusan.
+    - Csatlakozás "USB-C–Wi-Fi" adapterekkel támogatja a vezeték nélküli internetkapcsolatot, és HoloLens 2 teljes Autopilot-élményt biztosít automatikusan.
 
         > [!IMPORTANT]  
        > Az Autopilothoz Wi-Fi OOBE-ban az új hálózatokat használni próbáló eszközöknek a [Holographic 20H2-es](hololens-release-notes.md#windows-holographic-version-20h2)verzióján Windows kell lennie.
@@ -298,7 +298,7 @@ Az OMA-URI értékének ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE kell l
 
 Ellenőrizze az Intune-portálon, hogy sikeresen megtörtént-e az eszközkonfiguráció alkalmazása. Miután ez az eszközkonfiguráció sikeresen alkalmazva lett HoloLens 2. eszközön, a TenantLockdown hatása aktív lesz.
 
-#### <a name="how-to-unset-tenantlockdowns-requirenetworkinoobe-on-hololens-2-using-intune"></a>A TenantLockdown RequireNetworkInOOBE szolgáltatásának a 2. HoloLens az Intune használatával való eltolásának a megszabadulása
+#### <a name="how-to-unset-tenantlockdowns-requirenetworkinoobe-on-hololens-2-using-intune"></a>A TenantLockdown RequireNetworkInOOBE 2. HoloLens-e az Intune használatával?
 
 1. Távolítsa el HoloLens 2. adatokat arról az eszközcsoportról, amelyhez korábban hozzárendelték a fent létrehozott eszközkonfigurációt.
 
@@ -314,7 +314,7 @@ Az OMA-URI értékének ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE kell l
 
 Ellenőrizze az Intune-portálon, hogy sikeresen megtörtént-e az eszközkonfiguráció alkalmazása. Miután ez az eszközkonfiguráció sikeresen alkalmazva lett HoloLens 2. eszközön, a TenantLockdown hatásai inaktívak lesznek.
 
-#### <a name="what-would-happen-during-oobe-if-autopilot-profile-is-unassigned-on-a-hololens-after-tenantlockdown-was-set-to-true"></a>Mi történne az OOBE során, ha az Autopilot-profil nincs hozzárendelve egy HoloLens miután a TenantLockdown igazra lett állítva?
+#### <a name="what-would-happen-during-oobe-if-autopilot-profile-is-unassigned-on-a-hololens-after-tenantlockdown-was-set-to-true"></a>Mi történne az OOBE során, ha az Autopilot-profil nincs hozzárendelve egy HoloLens a TenantLockdown true (igaz) beállítása után?
 
 Az OOBE határozatlan ideig vár az Autopilot-profil letöltésére, és megjelenik a következő párbeszédpanel. A TenantLockdown hatásainak eltávolításához az eszközt először az autopilot használatával kell regisztrálni az eredeti bérlővel, és a RequireNetworkInOOBE-t az előző lépésben leírtak szerint meg kell szüntetni a TenantLockdown CSP által bevezetett korlátozások eltávolítása előtt.
 
@@ -341,12 +341,16 @@ A felhasználói élmény az, hogy az AutoPilot egy adott hibával meghiúsul.
 
 Milyen lépéseket kell tenni a hiba elhárításához?
 
-1. Az eszköz Intune-ból való eltávolításához kövesse az [Autopilot-eszközök](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) importálásának és regisztrálásának hibaelhárításával kapcsolatos témakör lépéseit.
-1. [Alaphelyzetbe állítása/perjeles HoloLens,](hololens-recovery.md) majd próbálja meg az Autopilotot.
+1. Az eszköz Intune-ból való eltávolításához kövesse az [Autopilot-eszközök](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode) importálásának és regisztrálásának hibaelhárításával kapcsolatos témakör lépéseit. (Ezt a feladatot az Intune-rendszergazdának kell elvégeznie)
+1. Az 1. lépés befejezése után indítsa újra az eszközt, és jelentkezzen be.
+1. Lépjen a **Gépház**  ->  **frissítésének &**  ->  **visszaállítási &, és** válassza az Első lépések **lehetőséget.**
+    1. Ha problémák merülnek fel a 2. & 3. lépésével kapcsolatban, tekintse meg az eszköz alaphelyzetbe állításával kapcsolatos alternatív megoldásokat a [Reset /Reflash (Alaphelyzetbe állítás/Perjeles visszaállítás) HoloLens.](hololens-recovery.md)
+
+Az AutoPilotnak ezután sikeresen regisztrálnia kell.
 
 ### <a name="troubleshooting"></a>Hibaelhárítás
 
-A következő cikkek hasznos forrást hatnak az AutoPilot-problémák további információinak elsajátítása és hibaelhárítása során, azonban ezek a cikkek az Windows 10 Desktopon alapulnak, és nem minden információ vonatkozhat a HoloLens:
+Az alábbi cikkek hasznos forrást hatnak az AutoPilot-problémák további információinak elsajátítása és hibaelhárítása során, azonban ezek a cikkek az Windows 10 Desktopon alapulnak, és nem minden információ vonatkozhat a HoloLens:
 
 - [Windows Autopilot – ismert problémák](/mem/autopilot/known-issues)
 - [Eszközregisztrációs Windows hibaelhárítása a Microsoft Intune](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
@@ -359,7 +363,7 @@ Ha visszajelzést szeretne küldeni vagy problémákat szeretne jelenteni, haszn
 - Az eszközregisztrációval kapcsolatban forduljon a viszonteladóhoz vagy a terjesztőhöz.
 - Az Autopilot használatával Windows kapcsolatos általános támogatási kérdésekért, illetve a profil-hozzárendeléssel, csoport létrehozásával vagy a MEM-portál vezérlőivel kapcsolatos problémák esetén forduljon a [Microsoft Endpoint Manager ügyfélszolgálatához](/mem/get-support)  
 - Ha az eszköze regisztrálva van az Autopilot szolgáltatásban, és a profil hozzá van rendelve a MEM portálon, lépjen kapcsolatba a HoloLens [támogatási](/hololens/) szolgálatával (lásd a "Támogatás" kártyát). Nyisson meg egy támogatási jegyet, és ha lehetséges, csatolja a képernyőképeket és naplókat az [offline](hololens-diagnostic-logs.md#offline-diagnostics) diagnosztikai naplóknak a használatra (OOBE) való rögzítésével.
-- A probléma eszközről való bejelentéséhez használja a Visszajelzési központ alkalmazást a HoloLens. A Visszajelzési központ válassza a **Vállalati felügyeleti eszköz**  >  **kategóriát.**
+- A probléma eszközről való bejelentéséhez használja a Visszajelzési központ alkalmazást a HoloLens. A Visszajelzési központ válassza a **Vállalati felügyeleti**  >  **eszköz kategóriát.**
 - Ha általános visszajelzést szeretne küldeni az Autopilot for HoloLens, elküldheti ezt a [felmérést](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7vUmjNI0XhCp1T72ODD84xUMEM3TVJPOURBRkNVWkYwM0RWWEhJNVdJSi4u&wdLOR=cEF1F57F6-AD9B-4CCE-B919-AB5AE320A993)
 
 ## <a name="delete-autopilot-devices"></a>AutoPilot-eszközök törlése
