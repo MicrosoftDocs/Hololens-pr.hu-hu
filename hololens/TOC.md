@@ -1,9 +1,9 @@
 # [Microsoft HoloLens](index.yml)
 
 # Eszközök áttekintése
-## [A HoloLens 2.](hololens2-hardware.md)
-## [Mire képes HoloLens 2?](hololens-commercial-features.md)
-## 2. HoloLens felderítése
+## [A 2 HoloLens ről](hololens2-hardware.md)
+## [Mit HoloLens a 2.](hololens-commercial-features.md)
+## A HoloLens 2 kiadás felderítése
 ### [Két HoloLens összehasonlítása](hololens2-options.md)
 ### [Csak eszközre készült kiadás](hololens2-options-device-only.md)
 ### [Remote Assist kiadás](hololens2-options-remote-assist.md)
@@ -34,20 +34,20 @@
 #### [A vizualizáció minőségének és kényelmi javítására](hololens-calibration.md)
 #### [Fizikai terek leképezés HoloLens](hololens-spaces.md)
 #### [HoloLens környezettel kapcsolatos szempontok](hololens-environment-considerations.md)
-#### [Mozgó platformok](hololens2-moving-platform.md)
-### Csatlakozás 2-es HoloLens meg
+#### [Platformok mozgatás](hololens2-moving-platform.md)
+### Csatlakozás 2. HoloLens meg
 #### [Csatlakozás HoloLens hálózatra](hololens-network.md)
 #### [Csatlakozás usb Bluetooth C-eszközök csatlakoztatása](hololens-connect-devices.md)
 #### [Csatlakozás mobilhálózatra és 5G-re](hololens-cellular.md)
 ### [HoloLens 2 akkumulátor és az akkumulátortöltés](hololens2-charging.md)
-### [HoloLens 2 illeszkedés és kényelem – gyakori kérdések](hololens2-fit-comfort-faq.md)
-### [HoloLens 2. tisztítás – GYAKORI KÉRDÉSEK](hololens2-maintenance.md)
+### [HoloLens 2 illeszkedés és kényelmi gyakori kérdések](hololens2-fit-comfort-faq.md)
+### [HoloLens 2. tisztítás – GYIK](hololens2-maintenance.md)
 
 # A 2 HoloLens üzembe helyezése
 ## [Gyakori üzembehelyezési forgatókönyvek](hololens-requirements.md)
 ## [2 HoloLens telepítés megtervezése](hololens-core-components.md)
 ## Üzembe helyezési útmutatók
-### Felhőhöz csatlakoztatott környezet üzembe helyezési útmutatója
+### Útmutató a felhőhöz csatlakoztatott környezet üzembe helyezéséhez
 #### [Áttekintés](hololens2-cloud-connected-overview.md)
 #### [Előkészítés](hololens2-cloud-connected-prepare.md)
 #### [Konfigurálás](hololens2-cloud-connected-configure.md)
@@ -63,7 +63,7 @@
 ### [Offline biztonságos környezet üzembe helyezési útmutatója](hololens-common-scenarios-offline-secure.md)
 ### [Licenckövetelmények](hololens-licenses-requirements.md)
 ## Identitás
-### [Felhasználói identitás és bejelentkezés kezelése a HoloLens](hololens-identity.md)
+### [Felhasználói identitás és bejelentkezés kezelése HoloLens](hololens-identity.md)
 ### [Megosztás HoloLens több felhasználóval](hololens-multiple-users.md)
 ## Biztonság
 ### [Biztonsági áttekintés](security-overview.md)
@@ -75,7 +75,7 @@
 ### [Titkosítás és adatvédelem](security-encryption-data-protection.md)
 ### [Hálózati biztonság](security-network-security.md)
 ### [Biztonsági tervezés ](security-engineering.md)
-### [HoloLens 2. adatvédelmi nyilatkozat](hololens2-privacy.md)
+### [HoloLens 2. adatvédelmi és adatvédelmi](hololens2-privacy.md)
 ## Eszközök beléptetése
 ### [Regisztráció HoloLens MDM-be](hololens-enroll-mdm.md)
 ### [Windows Autopilot HoloLens 2-höz](hololens2-autopilot.md) 
@@ -88,19 +88,19 @@
 ### [Alkalmazástelepítő](app-deploy-app-installer.md)
 ## Szabályzatok (CSP-k)
 ### [CsP-k és Eszközkezelés konfigurálása – áttekintés](hololens-csp-policy-overview.md)
-### [MDM használata a HoloLens kezeléséhez](hololens-mdm-configure.md)
+### [Az MDM használata a HoloLens kezeléséhez](hololens-mdm-configure.md)
 ### [Az HoloLens konfigurálása kiépítési csomagok használatával](hololens-provisioning.md)
 ### [Gyakori eszközkorlátozások](hololens-common-device-restrictions.md)
 ### [A HoloLens beállítása kioszkként](hololens-kiosk.md)
-### [HoloLens Kioszkhivatkozási információk](hololens-kiosk-reference.md)
+### [HoloLens Kioszk referenciainformációk](hololens-kiosk-reference.md)
 ### [Windows Defender Alkalmazásvezérlés – WDAC](windows-defender-application-control-wdac.md)
 ### [Lap Gépház CSP és URI-k a HoloLens](settings-uri-list.md)
-## Hálózati & kapcsolatok
+## Hálózati & kapcsolat
 ### [A hálózat konfigurálása HoloLens](hololens-commercial-infrastructure.md)
 ### [Tanúsítványok és hálózati profilok előkészítése HoloLens 2. HoloLens számára](hololens-certificates-network.md)
-### [Kapcsolati végpontok kezelése a HoloLens](hololens-offline.md)
+### [Kapcsolati végpontok kezelése HoloLens](hololens-offline.md)
 ### [Tanúsítványkezelő](certificate-manager.md)
-## [A HoloLens kezelése](hololens-updates.md)
+## [A HoloLens frissítései](hololens-updates.md)
 
 # Hibaelhárítás
 ## [Eszköz](hololens-troubleshooting.md)
@@ -111,13 +111,13 @@
 ## [2. HoloLens alaphelyzetbe állítása](hololens-recovery.md)
 
 # Források
-## [Hol vásároljon 2 HoloLens?](hololens2-purchase.md)
+## [2. HoloLens vásárlásának hely](hololens2-purchase.md)
 ## [Támogatási és súgólehetőségek](hololens2-support.md)
 ## [Autopilot támogatási kérések](hololens2-autopilot-registration-support.md)
-## [HoloLens 2. kiadási megjegyzések](hololens-release-notes.md)
+## [HoloLens 2. kiadási megjegyzés](hololens-release-notes.md)
 ## [Belső előzetes verzió a Microsoft HoloLens](hololens-insider.md)
 ## [Támogatott nyelvek](hololens2-language-support.md)
-## [Fejlesztés a Microsoft Mesh-sel (előzetes verzió)](/mesh/overview)
+## [Tudnivalók a Microsoft Meshről (előzetes verzió)](/mesh/overview)
 ## HoloLens (1. generációs)
 ### Első használat
 #### [A HoloLens (1. generációs)](hololens1-hardware.md)
@@ -125,13 +125,13 @@
 #### [Alapszintű használat áttekintése](hololens1-setup.md)
 #### [A HoloLens beállítása (1. generációs)](hololens1-start.md)
 ### Napi használat
-#### [Az HoloLens (1. generációs) kattintás használata](hololens1-clicker.md)
+#### [A HoloLens (1. generációs) clicker használata](hololens1-clicker.md)
 #### [A 3D-megjelenítő használata HoloLens (1. generációs)](holographic-3d-viewer-beta.md)
 #### [Ismerkedás HoloLens (1. generációs)](hololens1-basic-usage.md)
 #### [Egyéni alkalmazások kezelése HoloLens](holographic-custom-apps.md)
-#### [Az HoloLens honosított verziójának telepítése (1. generációs)](hololens1-install-localized.md)
+#### [A HoloLens honosított verziójának telepítése (1. generációs)](hololens1-install-localized.md)
 #### [A Windows Holographic for Business funkcióinak feloldása](hololens1-upgrade-enterprise.md)
-#### [Új HoloLens (1. generációs)](hololens1-recovery.md)
+#### [Visszaállítás HoloLens (1. generációs)](hololens1-recovery.md)
 ### HoloLens (1. generációs) biztonság
 #### [Gyakori kérdések HoloLens (1. generációs) biztonsági kérdések](hololens1-faq-security.yml)
 #### [HoloLens (1. generációs) BitLocker-titkosítás](hololens1-encryption.md)
@@ -139,5 +139,5 @@
 ### [HoloLens (1. generációs) kibocsátási megjegyzések](hololens1-release-notes.md)
 
 # Visszajelzés küldése
-## [Visszajelzés küldése a Visszajelzési központ](hololens-feedback.md)
+## [Visszajelzés küldése Visszajelzési központ](hololens-feedback.md)
 ## [HoloLens közreműködői útmutató](contributing.md)
