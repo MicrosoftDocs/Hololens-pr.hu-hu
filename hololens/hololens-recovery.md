@@ -1,13 +1,13 @@
 ---
-title: Újraindítás, alaphelyzetbe állítás vagy helyreállítás HoloLens
+title: Újraindítás, alaphelyzetbe állítás vagy helyreállítás HoloLens 2.
 ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
 description: Az Advanced Recovery Companion használata kép flash funkcióval való HoloLens 2.
 keywords: how-to, reboot, reset, recover, hard reset, soft reset, power cycle, HoloLens, shut down, arc, advanced recovery companion
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
-ms.author: mazeller
-ms.date: 08/30/2021
+ms.author: v-beehanson
+ms.date: 10/15/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -16,41 +16,41 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 9f8969d018059a3b38d2b3001f8bc983b72d58c7
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034228"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151653"
 ---
-# <a name="restart-reset-or-recover-hololens-2"></a>A 2. HoloLens újraindítása, visszaállítása vagy helyreállítása
+# <a name="restart-reset-or-recover-hololens-2"></a>Újraindítás, alaphelyzetbe állítás vagy helyreállítás HoloLens 2.
 
 >[!IMPORTANT]
 > A hibaelhárítási eljárás elkezdése előtt győződjön meg arról, hogy az eszköz **20–40%-os** akkumulátor-kapacitással rendelkezik, ha lehetséges. A [tápkapcsoló alatt](hololens2-setup.md#lights-that-indicate-the-battery-level) található akkumulátorjelző világítással gyorsan ellenőrizheti az akkumulátor kapacitását anélkül, hogy bejelentkezik az eszközre.
 
-Használja a kábellel és az [USB Type-C](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) kábellel együtt a HoloLens 2-es portot, mivel ez a legjobb módszer az eszköz feltöltésére. A akkumulátor 18W energiát ad (9V at 2A). A mellékelt fali akkumulátor használatával HoloLens 2 eszköz kevesebb mint 65 perc alatt megtelhet, amikor az eszköz készenléti állapotban van. Ha ezek a kiegészítők nem érhetők el, győződjön meg arról, hogy a rendelkezésre álló tápegység legalább 15W energiát képes támogatni.
+Használja a kábellel és az [USB Type-C](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) kábellel együtt a HoloLens 2-es portot, mivel ez a legjobb módszer az eszköz feltöltésére. A akkumulátor 18W energiát ad (9V at 2A). A mellékelt fali akkumulátor használatával HoloLens 2 eszköz kevesebb mint 65 perc alatt megtelhet, amikor az eszköz készenléti állapotban van. Ha ezek a kiegészítők nem érhetők el, győződjön meg arról, hogy a rendelkezésre álló készülék legalább 15W energiát képes támogatni.
 
 > [!NOTE]
 > Ha lehetséges, kerülje a számítógép usb-kapcsolaton keresztüli feltöltését, ami lassú.
 
-Ha az eszköz megfelelően elindult és fut, az akkumulátor töltöttségi szintjét háromféleképpen ellenőrizheti:
+Ha az eszköz megfelelően elindult és fut, háromféleképpen ellenőrizheti az akkumulátor töltöttségi szintjét:
 
 - Az eszköz felhasználói felületének főmenü HoloLens meg.
 - Tekintse meg a LED-et a bekapcsológomb közelében (40%-os díjért legalább két folytonos LED-et kell látnia).
-    - Ha az eszköz töltődik, az akkumulátor kijelzője felgyúgyítással jelzi az aktuális töltöttségi szintet.  Az utolsó világítás ki- és behalványul, ami aktív díjszabást jelez.
+    - Ha az eszköz töltődik, az akkumulátor kijelzője felgyúgyítással jelzi az aktuális töltöttségi szintet.  Az utolsó világítás elhalványul, és kihalványul, ami aktív díjszabást jelez.
     - Ha a HoloLens be van stb., az akkumulátor kijelzője öt növekményben jeleníti meg az akkumulátor töltöttségi szintjét.
-    - Ha az öt világítás közül csak az egyik van bekapcsolva, az akkumulátor töltöttségi szintje 20% alatt van.
+    - Ha az öt fény közül csak az egyik van bekapcsolva, az akkumulátor töltöttségi szintje 20% alatt van.
     - Ha az akkumulátor töltöttségi szintje kritikusan alacsony, és megpróbálja bekapcsolni az eszközt, az egyik világítás rövid időre villog, majd kiússik.
-- A gazdagépen nyissa meg a **Fájlkezelő,** és keresse meg a HoloLens 2 eszközt a bal oldalon az Ez a **számítógép alatt.** Kattintson a jobb gombbal az eszközre, majd válassza a **Tulajdonságok lehetőséget.** Egy párbeszédpanelen megjelenik az akkumulátor töltöttségi szintje.
+- A gazdagépen nyissa meg a **Fájlkezelő,** és keresse meg a HoloLens 2-es eszközt a bal oldalon az Ez a **számítógép alatt.** Kattintson a jobb gombbal az eszközre, majd válassza a **Tulajdonságok lehetőséget.** Egy párbeszédpanelen megjelenik az akkumulátor töltöttségi szintje.
 
-   ![A HoloLens 2 tulajdonság képernyőjén az akkumulátor töltöttségi szintje látható.](images/ResetRecovery2.png)
+   ![A HoloLens 2 tulajdonságot bemutató képernyő az akkumulátor töltöttségi szintjét mutatja.](images/ResetRecovery2.png)
 
-Ha az eszköz nem indítható el az indítási menüben, jegyezze fel a LED megjelenését és az eszköz enumerálását a gazdagépen. Ezután kövesse [a hibaelhárítási útmutatót.](hololens-troubleshooting.md) Ha az eszköz állapota nem egyezik a hibaelhárítási útmutatóban felsorolt állapotokkal, a merevlemez-visszaállítási eljárást úgy hajtsa végre, hogy az eszköz a tápellátáshoz, nem pedig a gazdagéphez csatlakozik. [](hololens-recovery.md#hard-restart-procedure) Várjon legalább egy órát, amíg az eszköz díjat számít fel.
+Ha az eszköz nem indítható el az indítási menüben, jegyezze fel a LED megjelenését és az eszköz enumerálását a gazdagépen. Ezután kövesse [a hibaelhárítási útmutatót.](hololens-troubleshooting.md) Ha az eszköz állapota nem egyezik a hibaelhárítási útmutatóban felsorolt állapotokkal, hajtsa végre a merevlemez-újraindítási eljárást úgy, hogy az eszköz a tápellátáshoz, nem pedig a gazdagéphez csatlakozik. [](hololens-recovery.md#hard-restart-procedure) Várjon legalább egy órát, amíg az eszköz díjat számít fel.
 
 > [!NOTE]
 > Kezdjük a kifejezések meghatározásával.\
 > Az "Újraindítás" egyszerűen azt jelenti, hogy ki- és bekapcsolja az eszközt.\
-> A "Visszaállítás" azt jelenti, hogy az eszköz a felhasználói felületen Gépház vissza az aktuális rendszerkép újratelepítéséhez.\
+> A "Visszaállítás" azt jelenti, hogy az eszköz alapértelmezett Gépház a felhasználói felületen az aktuális rendszerkép újratelepítéséhez.\
 > A "perjel" azt jelenti, hogy az eszköz csatlakozik egy számítógéphez, és új (opcionálisan egy másik) rendszerképet kell telepíteni.
 
 ## <a name="restart-the-device"></a>Az eszköz újraindítása
@@ -65,13 +65,13 @@ Bizonyos körülmények között előfordulhat, hogy manuálisan kell újraindí
 
 3. Várjon 2–3 másodpercet, majd nyomja le röviden a **bekapcsológombot.** A bekapcsológombhoz közeli LED-ek kigyűjnek, és az eszköz elindul.
 
-4. Csatlakozás a gazdagépre, majd nyissa meg a Eszközkezelő. (A Windows 10 nyomja le a **Windows,** majd az **X** billentyűt, és válassza a Eszközkezelő **lehetőséget.)** Győződjön meg arról, hogy az eszköz helyesen számba veszi *Microsoft HoloLens* az alábbi képen látható módon:
+4. Csatlakozás a gazdagépre, majd nyissa meg a Eszközkezelő. (A Windows 10 nyomja le a **Windows,** majd az **X** billentyűt, majd válassza a Eszközkezelő **lehetőséget.)** Győződjön meg arról, hogy az eszköz helyesen számba veszi *Microsoft HoloLens* az alábbi képen látható módon:
 
-   ![HoloLens 2. MicrosoftHoloLensRecovery devive manager.](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2. microsoftholoLensRecovery eszközkezelő.](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### <a name="hard-restart-procedure"></a>Újraindítási művelet nem érvénybe lépő eljárás
 
-Ha a normál alaphelyzetbe állítási eljárás nem működött, használja a visszaállítható visszaállítási eljárást:
+Ha a normál alaphelyzetbe állítási eljárás nem működött, használja a hard-restart eljárást:
 
 1. A Type-C kábel leválasztása az eszköz tápellátásról vagy a gazdaszámítógépről való leválasztása érdekében.
 
@@ -79,13 +79,21 @@ Ha a normál alaphelyzetbe állítási eljárás nem működött, használja a v
 
 1. Csatlakozás a gazdagépre.
 
-1. Nyissa Eszközkezelő (Windows 10 nyomja le a **Windows,** majd az **X** billentyűt, majd válassza a **Eszközkezelő).** Győződjön meg arról, hogy az eszköz helyesen számba veszi *Microsoft HoloLens* az alábbi képen látható módon:
+1. Nyissa Eszközkezelő a Windows 10 (Windows 10 nyomja le a **Windows,** majd az **X** billentyűt, majd válassza a **Eszközkezelő).** Győződjön meg arról, hogy az eszköz helyesen számba veszi *Microsoft HoloLens* az alábbi képen látható módon:
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery eszköz maanger 2.](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2. microsoftholoLensRecovery eszközkezelő 2.](images/MicrosoftHoloLens_DeviceManager.png)
+
+## <a name="reset-the-device"></a>Az eszköz alaphelyzetbe állítása
+
+Az eszközt közvetlenül a headsetből is alaphelyzetbe állíthatja. Válassza **Gépház** lehetőséget, majd válassza az Update & Security > Reset & recovery > reset this device (Az eszköz alaphelyzetbe állítása) **lehetőséget.**
+
+   ![HoloLens a headset alaphelyzetbe állítása.](images/headset-reset-recovery.png)
+
+Az így alaphelyzetbe állításkor a rendszer az összes felhasználói fiókot eltávolítja, és az összes adatot törli.
 
 ## <a name="clean-reflash-the-device"></a>Az eszköz perjelének tisztítása
 
-Rendkívül helyzetekben előfordulhat, hogy a 2- es HoloLens kell. Vegye figyelembe, hogy a perjeles perjel várhatóan nem érinti a következő problémákat:
+Rendkívül helyzetekben előfordulhat, hogy a 2. HoloLens "tiszta flash" HoloLens meg. Vegye figyelembe, hogy a perjeles perjel várhatóan nem érinti a következő problémákat:
 
 - [Szín egységességének megjelenítése](hololens2-display.md)
 - Rendszerindítás hanggal, de nem jelenik meg a kimenet
@@ -93,16 +101,16 @@ Rendkívül helyzetekben előfordulhat, hogy a 2- es HoloLens kell. Vegye figyel
 - [Túlmelegedés](hololens-environment-considerations.md#temperature-and-regulatory-information) 
 - Operációsrendszer-összeomlások (amelyek eltérnek az alkalmazás-összeomlástól)
 
-Az eszközt két módon lehet újrafedni. Mindkét esetben először telepítenie kell az Advanced Recovery Companiont a [Windows áruházból.](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
+Az eszközt két módon lehet újrafedni. Mindkét esetben először telepítenie kell az [Advanced Recovery Companiont a Windows tárolóból.](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
 
 >[!WARNING]
 >Ha újrafűnésbe állítja az eszközt, az összes személyes adata, alkalmazása és beállítása törlődik, beleértve a TPM alaphelyzetbe állítási információit is.
 
-Alapértelmezés szerint az Advanced Recovery Companion a legújabb funkció kiadási build letöltésére van beállítva. A legújabb funkció kiadásának megismerésért tekintse meg [a HoloLens 2. kibocsátási megjegyzéseit.](hololens-release-notes.md) A 2.HoloLens Flash Update (FFU) legújabb csomagját úgy töltheti le, hogy az Advanced Recovery Companion segítségével újraféselje az eszközt, töltse le a legújabb havi HoloLens 2-es rendszerképet: [https://aka.ms/hololens2download](https://aka.ms/hololens2download) . Ez a verzió a legújabb általánosan elérhető build.
+Alapértelmezés szerint az Advanced Recovery Companion a legújabb funkció kiadási build letöltésére van beállítva. A legújabb funkció kiadásának megismerésért tekintse meg [a HoloLens 2. kibocsátási megjegyzéseit.](hololens-release-notes.md) A 2 HoloLens Flash Update (FFU) legújabb csomagját úgy töltheti le, hogy az Advanced Recovery Companion segítségével újraféselje az eszközt, töltse le a legújabb havi HoloLens 2-es rendszerképet: [https://aka.ms/hololens2download](https://aka.ms/hololens2download) . Ez a verzió a legújabb általánosan elérhető build.
 
-A perjeles eljárás előtt győződjön meg arról, hogy az alkalmazás telepítve van és fut a Windows 10 számítógépen, és készen áll az eszköz észlelésére. Arról is győződjön meg HoloLens hogy a díj legalább 40%-os legyen.
+A perjeles eljárás előtt győződjön meg arról, hogy az alkalmazás telepítve van és fut a Windows 10 számítógépen, és készen áll az eszköz észlelésére. Arról is győződjön meg, HoloLens a díj legalább 40%-os legyen.
 
-![HoloLens 2 tiszta perjeles képernyőfelvétel.](images/ARC1.png)
+![HoloLens 2 tiszta perjeles képernyőfelvételt.](images/ARC1.png)
 
 ### <a name="normal-flashing-procedure"></a>Normál flash() eljárás
 
@@ -128,9 +136,9 @@ Előfordulhat, hogy helyreállítási módba kell tennie az eszközt, ha:
 
 3. A hangerőszabályzó **gomb megnyomása** közben nyomja le és engedje el a **bekapcsológombot** az eszköz elindítani. Várjon 15 másodpercet, majd engedje fel **a kötet fel gombját.** Csak az öt LED középső LED-e lesz begyűjteve.
 
-4. Csatlakozás a gazdagépre, és nyissa meg a Eszközkezelő. (A Windows 10 nyomja le a **Windows,** majd az **X** billentyűt, majd válassza a Eszközkezelő **lehetőséget.)** Győződjön meg arról, hogy az eszköz helyesen számba veszi Microsoft HoloLens az alábbi képen látható módon:
+4. Csatlakozás az eszközt a gazdagépre, és nyissa meg Eszközkezelő. (A Windows 10 nyomja le **a Windows,** majd az **X** billentyűt, majd válassza a Eszközkezelő **lehetőséget.)** Győződjön meg arról, hogy az eszköz helyesen számba veszi Microsoft HoloLens az alábbi képen látható módon:
 
-   ![HoloLens 2. microsoftholoLensRecovery.](images/MicrosoftHoloLensRecovery.png)
+   ![HoloLens MicrosoftHoloLensRecovery 2.](images/MicrosoftHoloLensRecovery.png)
 
    A rendszer automatikusan észleli az eszközt, és a Speciális helyreállítást kísérő alkalmazás felhasználói felülete elindítja a frissítési folyamatot:
 
@@ -140,13 +148,13 @@ Előfordulhat, hogy helyreállítási módba kell tennie az eszközt, ha:
 
 ## <a name="troubleshoot-advanced-recovery-companion"></a>Az Advanced Recovery Companion hibaelhárítása
 
-1. A flash kísérlet előtt győződjön meg arról, hogy az eszköz 40%-os vagy annál nagyobb díjat számít fel.
+1. Mielőtt megpróbálkozás a flash eszközzel, győződjön meg arról, hogy az eszköz 40%-os vagy annál nagyobb díjat számít fel.
 
 1. Ellenőrizze, hogy az eszköz nincs-e feloldva.
 
-1. Ellenőrizze, hogy az eszköz közvetlenül a gazdaszámítógéphez van-e csatlakoztatva, nem pedig hubhoz.
+1. Ellenőrizze, hogy az eszköz közvetlenül a gazdaszámítógéphez van-e csatlakoztatva, nem hubhoz.
 
-1. Ha az eszköz nem jelenik meg HoloLens/HoloLens Recovery eszközként az Univerzális Serial Bus-illesztőprogramok alatt, ellenőrizze a következőt:
+1. Ha az eszköz nem jelenik meg az univerzális serial bus-illesztőprogramok HoloLens/HoloLens helyreállítási eszközként, ellenőrizze a következőt:
     1. **Portok,** Qualcomm HS-USB-eszközként
     1. **Egyéb eszközök**, mint QUSB_BULK eszköz – a gazdaszámítógépről hiányoznak az eszköz észleléséhez szükséges illesztőprogramok HoloLens. Kattintson a jobb gombbal, és válassza az Illesztőprogram frissítése lehetőséget, keressen rá az illesztőprogramok online kifejezésre, vagy jelölje be a Választható frissítések lehetőséget [a Windows beállítások között.](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674) Az illesztőprogram letöltése után az ARC-nak képesnek kell lennie észlelni.
 
@@ -162,7 +170,7 @@ Előfordulhat, hogy helyreállítási módba kell tennie az eszközt, ha:
 Ha az it-környezet megakadályozza a Windows Store alkalmazás használatát, vagy korlátozza a kiskereskedelmi áruházhoz való hozzáférést, a rendszergazda "offline" telepítési útvonalon keresztül elérhetővé tudja tenni az alkalmazást.
 
  >[!NOTE]
- > - A rendszergazdák ezt az alkalmazást a System Center Configuration Manager (SCCM) vagy az Intune-ban is terjeszthetik.
+ > - A rendszergazdák az alkalmazást a System Center Configuration Manager (SCCM) vagy az Intune használatával is terjesztheti.
  > - Ez az útmutató az Advanced Recovery Companion funkcióval foglalkozik, de a folyamat más "offline" alkalmazásokhoz is használható.
 
 Az üzembe helyezési útvonal engedélyezéséhez kövesse az alábbi lépéseket:
@@ -175,7 +183,7 @@ Az üzembe helyezési útvonal engedélyezéséhez kövesse az alábbi lépések
 
 1. Módosítsa a **Licenc típusa beállítását** **_offline _,_*majd válassza a _ Kezelés* lehetőséget.**
 
-1. A **Csomag letöltése offline használatra alatt válassza** a második kék Letöltés **gombot.** Győződjön meg arról, hogy a *fájlkiterjesztés .appxbundle.*
+1. A **Csomag letöltése offline használatra alatt** válassza a második kék Letöltés **gombot.** Győződjön meg arról, hogy a *fájlkiterjesztés .appxbundle.*
 
     - Ha az asztali számítógép jelenleg rendelkezik internet-hozzáféréssel, kattintson duplán a csomagra az alkalmazás telepítéséhez.
 
@@ -188,7 +196,7 @@ Az üzembe helyezési útvonal engedélyezéséhez kövesse az alábbi lépések
           C:\WINDOWS\system32>dism /online /Add-ProvisionedAppxPackage /PackagePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_1.19050.1301.0_neutral_~_8wekyb3d8bbwe.appxbundle" /DependencyPackagePath:"C:\ARCoffline\Microsoft.VCLibs.140.00.UWPDesktop_14.0.27629.0_x86__8wekyb3d8bbwe.appx" /LicensePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_8wekyb3d8bbwe_f72ce112-dd2e-d771-8827-9cbcbf89f8b5.xml" /Region:all
           ```
           > [!NOTE]
-          > Előfordulhat, hogy a jelen példakódban lévő verziószám nem egyezik a jelenleg elérhető verzióval. Előfordulhat, hogy más letöltési helyet választott, mint a példában. Szükség szerint módosítja a parancsot.
+          > Előfordulhat, hogy a példakódban lévő verziószám nem egyezik a jelenleg elérhető verzióval. Előfordulhat, hogy más letöltési helyet választott, mint a példában. Szükség szerint módosítja a parancsot.
 
 > [!TIP]
 > Ha az FFU offline telepítéséhez az Advanced Recovery Companiont tervezi használni, hasznos lehet a flash lemezkép letöltése. [**Töltse le a 2. HoloLens aktuális rendszerképét.**](https://aka.ms/hololens2download)
