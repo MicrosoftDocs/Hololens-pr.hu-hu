@@ -28,14 +28,14 @@
 #### [Új Gépház alkalmazás](hololens-new-settings.md)
 #### [Új Microsoft Edge](hololens-new-edge.md)
 ### Alkalmazások felügyelete
-#### [Áruházbeli alkalmazások megkerese, telepítése és eltávolítása](holographic-store-apps.md)
-#### [Egyéni alkalmazások kezelése a HoloLens 2-ben](hololens2-holographic-custom-apps.md)
+#### [Áruházbeli alkalmazások megkeresheti, telepítheti és eltávolíthatja őket](holographic-store-apps.md)
+#### [Egyéni alkalmazások kezelése a 2. HoloLens számára](hololens2-holographic-custom-apps.md)
 ### Hologramoptikák és elhelyezés a térben
 #### [A vizualizáció minőségének és kényelmi javítására](hololens-calibration.md)
 #### [Fizikai terek leképezés HoloLens](hololens-spaces.md)
 #### [HoloLens környezettel kapcsolatos szempontok](hololens-environment-considerations.md)
 #### [Platformok mozgatás](hololens2-moving-platform.md)
-### Csatlakozás 2-es HoloLens meg
+### Csatlakozás 2. HoloLens meg
 #### [Csatlakozás HoloLens hálózatra](hololens-network.md)
 #### [Csatlakozás usb Bluetooth C-eszközök csatlakoztatása](hololens-connect-devices.md)
 #### [Csatlakozás mobilhálózatra és 5G-re](hololens-cellular.md)
@@ -98,9 +98,9 @@
 ## Hálózati & kapcsolat
 ### [A hálózat konfigurálása HoloLens](hololens-commercial-infrastructure.md)
 ### [Tanúsítványok és hálózati profilok előkészítése HoloLens 2. HoloLens számára](hololens-certificates-network.md)
-### [Kapcsolati végpontok kezelése a HoloLens](hololens-offline.md)
+### [Kapcsolati végpontok kezelése HoloLens](hololens-offline.md)
 ### [Tanúsítványkezelő](certificate-manager.md)
-## [A HoloLens frissítések kezelése](hololens-updates.md)
+## [A HoloLens kezelése](hololens-updates.md)
 
 # Hibaelhárítás
 ## [Eszköz](hololens-troubleshooting.md)
@@ -108,28 +108,28 @@
 ## [Megjelenítés](hololens2-display.md)
 ## [Implementáció és felügyelt eszközök](hololens2-enterprise-troubleshooting.md#)
 ## [Diagnosztikai naplók engedélyezése](hololens-diagnostic-logs.md)
-## [Újraindítás, alaphelyzetbe állítás vagy helyreállítás HoloLens 2.](hololens-recovery.md)
+## [Újraindítás, alaphelyzetbe állítás vagy helyreállítás HoloLens 2](hololens-recovery.md)
 
 # Források
-## [2. HoloLens vásárlásának hely](hololens2-purchase.md)
+## [Hol vásároljon 2 HoloLens?](hololens2-purchase.md)
 ## [Támogatási és súgólehetőségek](hololens2-support.md)
 ## [Autopilot támogatási kérések](hololens2-autopilot-registration-support.md)
-## [HoloLens 2. kiadási megjegyzés](hololens-release-notes.md)
+## [HoloLens 2. kibocsátási megjegyzések](hololens-release-notes.md)
 ## [Belső előzetes verzió a Microsoft HoloLens](hololens-insider.md)
 ## [Támogatott nyelvek](hololens2-language-support.md)
 ## [Tudnivalók a Microsoft Meshről (előzetes verzió)](/mesh/overview)
 ## HoloLens (1. generációs)
 ### Első használat
-#### [A HoloLens (1. generációs)](hololens1-hardware.md)
+#### [Az HoloLens (1. generációs)](hololens1-hardware.md)
 #### [HoloLens (1. generációs) illeszkedés és kényelem](hololens1-fit-comfort-faq.md)
 #### [Alapszintű használat áttekintése](hololens1-setup.md)
 #### [A HoloLens beállítása (1. generációs)](hololens1-start.md)
 ### Napi használat
-#### [A HoloLens (1. generációs) clicker használata](hololens1-clicker.md)
+#### [Az HoloLens (1. generációs) kattintás használata](hololens1-clicker.md)
 #### [A 3D-megjelenítő használata HoloLens (1. generációs)](holographic-3d-viewer-beta.md)
 #### [Ismerkedás HoloLens (1. generációs)](hololens1-basic-usage.md)
 #### [Egyéni alkalmazások kezelése HoloLens](holographic-custom-apps.md)
-#### [A HoloLens honosított verziójának telepítése (1. generációs)](hololens1-install-localized.md)
+#### [Az HoloLens honosított verziójának telepítése (1. generációs)](hololens1-install-localized.md)
 #### [A Windows Holographic for Business funkcióinak feloldása](hololens1-upgrade-enterprise.md)
 #### [Újraindítás, alaphelyzetbe állítás vagy helyreállítás HoloLens (1. generációs)](hololens1-recovery.md)
 ### HoloLens (1. generációs) biztonság
@@ -139,5 +139,5 @@
 ### [HoloLens (1. generációs) kibocsátási megjegyzések](hololens1-release-notes.md)
 
 # Visszajelzés küldése
-## [Visszajelzés küldése Visszajelzési központ](hololens-feedback.md)
-## [HoloLens közreműködői útmutató](contributing.md)
+## [Visszajelzés küldése a Visszajelzési központ](hololens-feedback.md)
+## [HoloLens útmutató a közreműködők számára](contributing.md)
